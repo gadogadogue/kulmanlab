@@ -1,24 +1,22 @@
 ---
-title: "Trim Command — Cut Line Segments at Intersections"
-description: "Amri ya Trim huondoa sehemu ya Line kati ya nukta mbili za karibu za makutano zilizo karibu zaidi na kishale. Hakiki ya hover nyekundu inaonyesha hasa sehemu gani itakatwa kabla ya kubonyeza. Trim inafanya kazi kwenye vipande vya Line pekee — si arcs, circles, au polylines."
-keywords: [CAD trim command, trim line CAD, cut line intersection, hover trim preview, line only trim, kulmanlab]
+title: "Amri ya Trim — Kata Sehemu kwenye Makutano"
+description: "Amri ya Trim huondoa sehemu ya Line, Arc, Circle, Ellipse, Polyline au Spline kati ya nukta mbili za karibu za makutano zilizo karibu zaidi na kishale. Hakiki inaonyesha hasa sehemu gani itakatwa kabla ya kubonyeza."
+keywords: [CAD trim command, kata mstari CAD, kata duara CAD, kata arc CAD, kata elipse CAD, kata polyline CAD, kata spline CAD, cut line intersection, hover trim preview, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-Amri ya `trim` huondoa sehemu ya [Line](../line/) inayolala kati ya nukta mbili za karibu za makutano, ikigawanya mstari katika sehemu moja au mbili fupi zaidi. Sehemu ya kukata inatambuliwa na nafasi ya kishale — elea juu ya sehemu unayotaka kuondoa na ubonyeze kukata.
+Amri ya `trim` huondoa sehemu ya [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) au Spline inayolala kati ya nukta mbili za karibu za makutano, ikigawanya kipande katika sehemu moja au zaidi zilizobaki. Sehemu ya kukata inatambuliwa na nafasi ya kishale — elea juu ya sehemu unayotaka kuondoa na ubonyeze kukata.
 
-Trim inafanya kazi kwenye **vipande vya Line pekee**. Kwa arcs, circles, polylines, na aina nyingine za vipande tumia [Delete](../delete/) au uhariri wa kushika badala yake.
-
-## Kukata mstari
+## Kukata kipande
 
 1. Andika `trim` kwenye terminal au bonyeza kitufe cha **Trim** kwenye upau wa zana.
-2. **Elea juu ya sehemu ya mstari** unayotaka kuondoa — hakiki nyekundu inaonyesha hasa sehemu itakayokatwa.
+2. **Elea juu ya sehemu** unayotaka kuondoa — hakiki inaonyesha hasa sehemu itakayokatwa.
 3. **Bonyeza** kuondoa sehemu hiyo.
 
-Amri inabaki hai baada ya kila kukata, hivyo unaweza kuendelea kuelea na kubonyeza kukata sehemu zaidi. Bonyeza **Escape** kutoka.
+Amri inabaki hai baada ya kila kukata, hivyo unaweza kuendelea kuelea na kubonyeza kukata sehemu zaidi — kwenye kipande hicho hicho au kingine. Bonyeza **Escape** kutoka.
 
 ```
   Kabla:                     Baada ya kukata sehemu ya kati:
@@ -30,12 +28,22 @@ Amri inabaki hai baada ya kila kukata, hivyo unaweza kuendelea kuelea na kubonye
 
 ## Jinsi sehemu ya kukata inavyotambuliwa
 
-Amri inasukuma nafasi ya kishale kwenye mstari ulioeleweka na kupata nukta zote za makutano ambazo mstari una na vipande vingine. Vigezo hivi vya makutano hugawanya mstari katika sehemu. Sehemu ambayo kipindi chake kina makadirio ya kishale inawekwa alama na itaondolewa ukibonyeza.
+Amri inasukuma nafasi ya kishale kwenye kipande kilichoeleweka na kupata nukta zote za makutano ambazo kipande hicho kina na vipande vingine. Makutano haya hugawanya kipande katika sehemu — kwa Line, Arc, Polyline iliyo wazi, au Spline, nukta za mwisho za kipande chenyewe hufanya kazi kama mipaka ya ziada iliyowekwa. Circle au Ellipse kamili, au Polyline iliyofungwa (ikiwemo Rectangle), hazina nukta za mwisho zenyewe, hivyo nukta mbili za makutano angalau zinahitajika kabla ya kukatwa hata kidogo. Sehemu ambayo kipindi chake kina makadirio ya kishale inawekwa alama na itaondolewa ukibonyeza.
 
-- Kama kishale kiko **kabla ya makutano ya kwanza**: sehemu hiyo ya mwanzo wa mstari huondolewa.
-- Kama kishale kiko **kati ya makutano mawili**: sehemu hiyo ya kati huondolewa; mstari hugawanywa katika mbili.
-- Kama kishale kiko **baada ya makutano ya mwisho**: sehemu hiyo ya mwisho huondolewa.
-- Kama mstari **hauna makutano** na kipande kingine chochote: hakuna hakiki inayoonyeshwa na kubonyeza hakufanyi chochote.
+- **Line, Arc, Polyline iliyo wazi na Spline** — sehemu inayoondolewa inaweza kuwa sehemu ya mwanzo (kabla ya makutano ya kwanza), sehemu ya kati (kati ya makutano mawili, ikigawanya kipande katika mbili), au sehemu ya mwisho (baada ya makutano ya mwisho).
+- **Circle, Ellipse na Polyline iliyofungwa/Rectangle** — kwa kuwa hakuna mwanzo au mwisho uliowekwa, ni upinde tu kati ya *nukta mbili za makutano* unaoweza kuondolewa. Ikiwa makutano ni chini ya mawili, hakuna hakiki inayoonyeshwa na kubonyeza hakufanyi chochote. Sehemu iliyobaki ya umbo inakuwa sehemu pekee iliyobaki.
+
+## Kukata hutoa nini
+
+| Kipande | Matokeo baada ya kukata |
+|--------|------------------------|
+| Line | Hadi vipande viwili vifupi zaidi vya Line |
+| Arc | Hadi vipande viwili vifupi zaidi vya Arc |
+| Circle | Kipande kimoja cha [Arc](../arc/) — umbo lililofungwa la duara hupotea, hivyo sehemu iliyobaki huhifadhiwa kama upinde |
+| Ellipse | Kipande kimoja cha Ellipse chenye pembe ya mwanzo na mwisho — sehemu iliyobaki inabaki kuwa Ellipse, sasa ya sehemu |
+| Polyline (iliyo wazi) | Hadi vipande viwili vifupi zaidi vya Polyline |
+| Polyline (iliyofungwa) / Rectangle | Kipande kimoja cha Polyline kilicho wazi — umbo lililofungwa hupotea, hivyo sehemu iliyobaki huhifadhiwa ikiwa wazi |
+| Spline | Hadi vipande viwili vifupi zaidi vya Spline, vilivyorekebishwa upya kutoka nukta za sampuli kwenye mkondo asili |
 
 ## Marejeo ya kibodi
 
@@ -48,17 +56,21 @@ Amri inasukuma nafasi ya kishale kwenye mstari ulioeleweka na kupata nukta zote 
 | Kipande | Kinaweza kukatwa? |
 |---------|------------------|
 | Line | Ndiyo |
-| Arc, Circle, Ellipse | Hapana |
-| Polyline / Rectangle | Hapana |
-| Text, Spline, Dimension, Leader | Hapana |
+| Arc | Ndiyo |
+| Circle | Ndiyo — inahitaji nukta 2 au zaidi za makutano |
+| Ellipse | Ndiyo — inahitaji nukta 2 au zaidi za makutano |
+| Polyline (iliyo wazi) | Ndiyo |
+| Polyline (iliyofungwa) / Rectangle | Ndiyo — inahitaji nukta 2 au zaidi za makutano |
+| Spline | Ndiyo |
+| Text, Dimension, Leader | Hapana |
 
-Vipande vinavyotumika kama **mipaka ya kukata** vinaweza kuwa aina yoyote — ni mstari unaookatwa tu ambao lazima uwe kipande cha Line.
+Vipande vinavyotumika kama **mipaka ya kukata** vinaweza kuwa Line, Arc, Circle, Ellipse, Polyline au Spline. Vipande vya Text, Dimension, na Leader havisajili makutano kamwe, hivyo pia haviwezi kufanya kazi kama mipaka.
 
 ## Trim dhidi ya Extend
 
 | | Trim | Extend |
 |---|------|--------|
-| Kinachofanya | Huondoa sehemu ya mstari | Hunyoosha nukta ya mwisho ya mstari hadi mpaka |
+| Kinachofanya | Huondoa sehemu ya kipande | Hunyoosha nukta ya mwisho ya mstari hadi mpaka |
 | Kichocheo | Elea juu ya sehemu ya kukata | Elea karibu na nukta ya mwisho ya kupanua |
-| Matokeo | Mstari hugawanywa au kufupishwa | Nukta ya mwisho ya mstari husogea hadi mpaka |
-| Zote | Mistari pekee | Mistari pekee |
+| Matokeo | Kipande hugawanywa au kufupishwa | Nukta ya mwisho ya mstari husogea hadi mpaka |
+| Vipande vinavyosaidiwa | Line, Arc, Circle, Ellipse, Polyline, Spline | Mstari pekee |

@@ -1,24 +1,22 @@
 ---
-title: Commande Trim — Couper des segments de ligne aux intersections
-description: La commande Trim supprime la portion d'une Ligne entre deux points d'intersection adjacents les plus proches du curseur. Un aperçu de survol rouge montre exactement quel segment sera coupé avant de cliquer. Trim fonctionne sur les entités Line uniquement — pas sur les arcs, cercles ou polylignes.
-keywords: [commande trim CAO, raccorder ligne CAO, couper ligne intersection, aperçu trim survol, trim ligne uniquement, kulmanlab]
+title: Commande Trim — Couper des segments aux intersections
+description: La commande Trim supprime la portion d'une Line, Arc, Circle, Ellipse, Polyline ou Spline entre deux points d'intersection adjacents les plus proches du curseur. Un aperçu montre exactement quel segment sera coupé avant de cliquer.
+keywords: [commande trim CAO, raccorder ligne CAO, raccorder cercle CAO, raccorder arc CAO, raccorder ellipse CAO, raccorder polyligne CAO, raccorder spline CAO, couper ligne intersection, aperçu trim survol, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-La commande `trim` supprime la portion d'une [Line](../line/) qui se trouve entre deux points d'intersection adjacents, divisant la ligne en un ou deux segments plus courts. Le segment à couper est déterminé par la position du curseur — survolez la partie que vous voulez supprimer et cliquez pour la raccorder.
+La commande `trim` supprime la portion d'une [Line](../line/), d'un [Arc](../arc/), [Circle](../circle/), d'une [Ellipse](../ellipse/), [Polyline](../polyline/) ou Spline qui se trouve entre deux points d'intersection adjacents, divisant l'entité en une ou plusieurs parties restantes. Le segment à couper est déterminé par la position du curseur — survolez la partie que vous voulez supprimer et cliquez pour la raccorder.
 
-Trim fonctionne sur les **entités Line uniquement**. Pour les arcs, cercles, polylignes et autres types d'entités, utilisez [Delete](../delete/) ou l'édition par poignées.
-
-## Raccorder une ligne
+## Raccorder une entité
 
 1. Tapez `trim` dans le terminal ou cliquez sur le bouton **Trim** de la barre d'outils.
-2. **Survolez le segment de ligne** que vous souhaitez supprimer — un aperçu rouge met en surbrillance exactement la portion qui sera coupée.
+2. **Survolez le segment** que vous souhaitez supprimer — un aperçu met en surbrillance exactement la portion qui sera coupée.
 3. **Cliquez** pour supprimer ce segment.
 
-La commande reste active après chaque raccord, pour que vous puissiez continuer à survoler et cliquer pour couper d'autres segments. Appuyez sur **Échap** pour quitter.
+La commande reste active après chaque raccord, pour que vous puissiez continuer à survoler et cliquer pour couper d'autres segments — sur la même entité ou une autre. Appuyez sur **Échap** pour quitter.
 
 ```
   Avant :                     Après raccord du segment central :
@@ -30,12 +28,22 @@ La commande reste active après chaque raccord, pour que vous puissiez continuer
 
 ## Comment le segment de raccord est déterminé
 
-La commande projette la position du curseur sur la ligne survolée et trouve tous les points d'intersection que la ligne a avec d'autres entités. Ces paramètres d'intersection divisent la ligne en segments. Le segment dont l'intervalle contient la projection du curseur est mis en surbrillance et sera supprimé au clic.
+La commande projette la position du curseur sur l'entité survolée et trouve tous les points d'intersection qu'elle a avec d'autres entités. Ces intersections divisent l'entité en segments — pour une Line, un Arc, une Polyline ouverte ou une Spline, les extrémités propres de l'entité servent de limites fixes supplémentaires. Un Circle ou une Ellipse complets, ou une Polyline fermée (y compris un Rectangle), n'ont pas d'extrémités propres, donc au moins deux points d'intersection sont nécessaires avant de pouvoir les raccorder. Le segment dont l'intervalle contient la projection du curseur est mis en surbrillance et sera supprimé au clic.
 
-- Si le curseur est **avant la première intersection** : cette portion de tête de la ligne est supprimée.
-- Si le curseur est **entre deux intersections** : cette portion centrale est supprimée ; la ligne se divise en deux.
-- Si le curseur est **après la dernière intersection** : cette portion de queue est supprimée.
-- Si la ligne **n'a pas d'intersections** avec une autre entité : aucun aperçu n'est affiché et cliquer ne fait rien.
+- **Line, Arc, Polyline ouverte et Spline** — le segment supprimé peut être la portion de tête (avant la première intersection), une portion centrale (entre deux intersections, divisant l'entité en deux parties), ou la portion de queue (après la dernière intersection).
+- **Circle, Ellipse et Polyline fermée/Rectangle** — comme il n'y a pas de début ou de fin fixe, seul l'arc entre deux *points d'intersection* peut être supprimé. Avec moins de deux intersections, aucun aperçu n'apparaît et cliquer ne fait rien. Le reste de la forme devient l'unique partie restante.
+
+## Ce que produit le raccord
+
+| Entité | Résultat après raccord |
+|--------|------------------------|
+| Line | Jusqu'à deux entités Line plus courtes |
+| Arc | Jusqu'à deux entités Arc plus courtes |
+| Circle | Une entité [Arc](../arc/) — la forme fermée du cercle disparaît, la partie restante est donc stockée comme un arc |
+| Ellipse | Une entité Ellipse avec un angle de début et de fin — la partie restante reste une Ellipse, désormais partielle |
+| Polyline (ouverte) | Jusqu'à deux entités Polyline plus courtes |
+| Polyline (fermée) / Rectangle | Une entité Polyline ouverte — la forme fermée disparaît, la partie restante est donc stockée ouverte |
+| Spline | Jusqu'à deux entités Spline plus courtes, recalculées à partir de points échantillonnés le long de la courbe d'origine |
 
 ## Référence clavier
 
@@ -48,17 +56,21 @@ La commande projette la position du curseur sur la ligne survolée et trouve tou
 | Entité | Peut être raccordée ? |
 |--------|----------------------|
 | Line | Oui |
-| Arc, Circle, Ellipse | Non |
-| Polyline / Rectangle | Non |
-| Text, Spline, Dimension, Leader | Non |
+| Arc | Oui |
+| Circle | Oui — nécessite 2 points d'intersection ou plus |
+| Ellipse | Oui — nécessite 2 points d'intersection ou plus |
+| Polyline (ouverte) | Oui |
+| Polyline (fermée) / Rectangle | Oui — nécessite 2 points d'intersection ou plus |
+| Spline | Oui |
+| Text, Dimension, Leader | Non |
 
-Les entités utilisées comme **limites de coupe** peuvent être de n'importe quel type — seule la ligne en cours de raccord doit être une entité Line.
+Les entités utilisées comme **limites de coupe** peuvent être une Line, un Arc, Circle, une Ellipse, Polyline ou Spline. Les entités Text, Dimension et Leader n'enregistrent jamais d'intersections, elles ne peuvent donc pas non plus servir de limites.
 
 ## Trim vs Extend
 
 | | Trim | Extend |
 |---|------|--------|
-| Ce qu'elle fait | Supprime un segment d'une ligne | Prolonge un point final de ligne jusqu'à une limite |
+| Ce qu'elle fait | Supprime un segment d'une entité | Prolonge un point final de ligne jusqu'à une limite |
 | Déclencheur | Survoler le segment à couper | Survoler près du point final à prolonger |
-| Résultat | La ligne se divise ou se raccourcit | Le point final de la ligne se déplace jusqu'à la limite |
-| Les deux | Lines uniquement | Lines uniquement |
+| Résultat | L'entité se divise ou se raccourcit | Le point final de la ligne se déplace jusqu'à la limite |
+| Entités supportées | Line, Arc, Circle, Ellipse, Polyline, Spline | Line uniquement |

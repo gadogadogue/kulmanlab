@@ -1,24 +1,22 @@
 ---
-title: Trim Komutu — Kesişimlerde Çizgi Segmentlerini Kırp
-description: Trim komutu, imlece en yakın iki komşu kesişim noktası arasındaki Çizgi kısmını kaldırır. Kırmızı imleç üzerine gelme önizlemesi, tıklamadan önce tam olarak hangi segmentin kesileceğini gösterir. Trim yalnızca Çizgi nesnelerinde çalışır — yay, daire veya çoklu çizgide çalışmaz.
-keywords: [CAD trim komutu, çizgiyi kırp CAD, kesişimde çizgi kes, imleç üzerine gelme kırp önizleme, yalnızca çizgi kırp, kulmanlab]
+title: Trim Komutu — Kesişimlerde Segment Kırpma
+description: Trim komutu, imlece en yakın iki komşu kesişim noktası arasındaki Line, Arc, Circle, Ellipse, Polyline veya Spline kısmını kaldırır. Önizleme, tıklamadan önce tam olarak hangi segmentin kesileceğini gösterir.
+keywords: [CAD trim komutu, çizgiyi kırp CAD, daireyi kırp CAD, yayı kırp CAD, elipsi kırp CAD, çoklu çizgiyi kırp CAD, spline'ı kırp CAD, kesişimde çizgi kes, imleç üzerine gelme kırp önizleme, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-`trim` komutu, iki komşu kesişim noktası arasında kalan [Çizgi](../line/) kısmını kaldırarak çizgiyi bir veya iki daha kısa segmente böler. Kesilecek segment imleç konumuna göre belirlenir — kaldırılmasını istediğiniz kısmın üzerine gelin ve kırpmak için tıklayın.
+`trim` komutu, iki komşu kesişim noktası arasında kalan [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) veya Spline kısmını kaldırarak nesneyi bir veya daha fazla kalan parçaya böler. Kesilecek segment imleç konumuna göre belirlenir — kaldırılmasını istediğiniz kısmın üzerine gelin ve kırpmak için tıklayın.
 
-Trim yalnızca **Çizgi nesnelerinde** çalışır. Yaylar, daireler, çoklu çizgiler ve diğer nesne türleri için bunun yerine [Delete](../delete/) veya tutamaç düzenlemeyi kullanın.
-
-## Çizgi Kırpma
+## Bir nesneyi kırpma
 
 1. Terminale `trim` yazın veya araç çubuğundaki **Trim** düğmesine tıklayın.
-2. Kaldırmak istediğiniz **çizgi segmentinin üzerine gelin** — kırmızı önizleme tam olarak kesilecek kısmı vurgular.
+2. Kaldırmak istediğiniz **segmentin üzerine gelin** — önizleme tam olarak kesilecek kısmı vurgular.
 3. O segmenti kaldırmak için **tıklayın**.
 
-Komut, her kırpmanın ardından aktif kalır, böylece daha fazla segment kesmek için üzerine gelip tıklamaya devam edebilirsiniz. Çıkmak için **Escape** tuşuna basın.
+Komut, her kırpmanın ardından aktif kalır, böylece aynı nesne üzerinde veya farklı bir nesnede daha fazla segment kesmek için üzerine gelip tıklamaya devam edebilirsiniz. Çıkmak için **Escape** tuşuna basın.
 
 ```
   Önce:                     Orta segment kırpıldıktan sonra:
@@ -30,12 +28,22 @@ Komut, her kırpmanın ardından aktif kalır, böylece daha fazla segment kesme
 
 ## Kırpma Segmentinin Nasıl Belirlendiği
 
-Komut, imleç konumunu üzerine gelinen çizgiye yansıtır ve çizginin diğer nesnelerle tüm kesişim noktalarını bulur. Bu kesişim parametreleri çizgiyi segmentlere böler. İmleç yansımasını içeren aralığa sahip segment vurgulanır ve tıklamada kaldırılır.
+Komut, imleç konumunu üzerine gelinen nesneye yansıtır ve nesnenin diğer nesnelerle tüm kesişim noktalarını bulur. Bu kesişimler nesneyi segmentlere böler — bir Line, Arc, açık Polyline veya Spline için, nesnenin kendi uç noktaları ek sabit sınırlar olarak işlev görür. Tam bir Circle veya Ellipse, ya da kapalı bir Polyline (Rectangle dahil), kendi uç noktalarına sahip değildir, bu yüzden kırpılabilmesi için önce en az iki kesişim noktası gerekir. İmleç yansımasını içeren aralığa sahip segment vurgulanır ve tıklamada kaldırılır.
 
-- İmleç **ilk kesişimden önceyse**: çizginin o baştaki kısmı kaldırılır.
-- İmleç **iki kesişim arasındaysa**: o orta kısım kaldırılır; çizgi ikiye bölünür.
-- İmleç **son kesişimden sonraysa**: çizginin o sondaki kısmı kaldırılır.
-- Çizginin başka herhangi bir nesneyle **kesişimi yoksa**: önizleme görünmez ve tıklamak hiçbir şey yapmaz.
+- **Line, Arc, açık Polyline ve Spline** — kaldırılan segment, baştaki kısım (ilk kesişimden önce), ortadaki bir kısım (iki kesişim arasında, nesneyi iki parçaya bölerek) veya sondaki kısım (son kesişimden sonra) olabilir.
+- **Circle, Ellipse ve kapalı Polyline/Rectangle** — sabit bir başlangıç veya bitiş olmadığından, yalnızca iki *kesişim noktası* arasındaki yay kaldırılabilir. İkiden az kesişim varsa önizleme görünmez ve tıklamak hiçbir şey yapmaz. Şeklin geri kalanı tek kalan parça olur.
+
+## Kırpma Ne Üretir
+
+| Nesne | Kırpma Sonrası Sonuç |
+|--------|------------------------|
+| Line | En fazla iki daha kısa Line nesnesi |
+| Arc | En fazla iki daha kısa Arc nesnesi |
+| Circle | Bir [Arc](../arc/) nesnesi — dairenin kapalı şekli ortadan kalkar, bu yüzden kalan parça bir yay olarak saklanır |
+| Ellipse | Başlangıç ve bitiş açısına sahip bir Ellipse nesnesi — kalan parça bir Ellipse olarak kalır, artık kısmi bir şekilde |
+| Polyline (açık) | En fazla iki daha kısa Polyline nesnesi |
+| Polyline (kapalı) / Rectangle | Bir açık Polyline nesnesi — kapalı şekil ortadan kalkar, bu yüzden kalan parça açık olarak saklanır |
+| Spline | En fazla iki daha kısa Spline nesnesi, orijinal eğri boyunca örneklenen noktalardan yeniden oluşturulur |
 
 ## Klavye Referansı
 
@@ -47,18 +55,22 @@ Komut, imleç konumunu üzerine gelinen çizgiye yansıtır ve çizginin diğer 
 
 | Nesne | Kırpılabilir mi? |
 |--------|----------------|
-| Çizgi | Evet |
-| Yay, Daire, Elips | Hayır |
-| Çoklu Çizgi / Dikdörtgen | Hayır |
-| Metin, Spline, Ölçü, Gösterge | Hayır |
+| Line | Evet |
+| Arc | Evet |
+| Circle | Evet — 2 veya daha fazla kesişim noktası gerektirir |
+| Ellipse | Evet — 2 veya daha fazla kesişim noktası gerektirir |
+| Polyline (açık) | Evet |
+| Polyline (kapalı) / Rectangle | Evet — 2 veya daha fazla kesişim noktası gerektirir |
+| Spline | Evet |
+| Metin, Ölçü, Gösterge | Hayır |
 
-**Kesim sınırları** olarak kullanılan nesneler herhangi bir tür olabilir — yalnızca kırpılan nesnenin Çizgi nesnesi olması gerekir.
+**Kesim sınırları** olarak kullanılan nesneler bir Line, Arc, Circle, Ellipse, Polyline veya Spline olabilir. Metin, Ölçü ve Gösterge nesneleri hiçbir zaman kesişim kaydetmez, bu yüzden onlar da sınır olarak işlev göremez.
 
 ## Trim - Extend Karşılaştırması
 
 | | Trim | Extend |
 |---|------|--------|
-| Ne yapar | Çizginin bir segmentini kaldırır | Çizgi ucunu bir sınıra uzatır |
+| Ne yapar | Bir nesnenin segmentini kaldırır | Çizgi ucunu bir sınıra uzatır |
 | Tetikleyici | Kesilecek segmentin üzerine gel | Uzatılacak ucun yakınına gel |
-| Sonuç | Çizgi bölünür veya kısalır | Çizgi ucu sınıra taşınır |
-| Her ikisi | Yalnızca çizgiler | Yalnızca çizgiler |
+| Sonuç | Nesne bölünür veya kısalır | Çizgi ucu sınıra taşınır |
+| Desteklenen nesneler | Line, Arc, Circle, Ellipse, Polyline, Spline | Yalnızca Line |

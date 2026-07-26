@@ -1,24 +1,22 @@
 ---
-title: Comando Trim — Tagliare Segmenti di Linea alle Intersezioni
-description: Il comando Trim rimuove la porzione di una Linea tra due punti di intersezione adiacenti più vicini al cursore. Un'anteprima in rosso al passaggio del cursore mostra esattamente quale segmento verrà tagliato prima del clic. Trim funziona solo sulle entità Linea — non su archi, cerchi o polilinee.
-keywords: [CAD comando trim, taglia linea CAD, taglia linea intersezione, anteprima trim hover, trim solo linea, kulmanlab]
+title: Comando Trim — Tagliare Segmenti alle Intersezioni
+description: Il comando Trim rimuove la porzione di una Line, Arc, Circle, Ellipse, Polyline o Spline tra due punti di intersezione adiacenti più vicini al cursore. Un'anteprima mostra esattamente quale segmento verrà tagliato prima del clic.
+keywords: [CAD comando trim, taglia linea CAD, taglia cerchio CAD, taglia arco CAD, taglia ellisse CAD, taglia polilinea CAD, taglia spline CAD, taglia linea intersezione, anteprima trim hover, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-Il comando `trim` rimuove la porzione di una [Linea](../line/) che si trova tra due punti di intersezione adiacenti, dividendo la linea in uno o due segmenti più corti. Il segmento da tagliare è determinato dalla posizione del cursore — passa sul tratto da rimuovere e clicca per tagliarlo.
+Il comando `trim` rimuove la porzione di una [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) o Spline che si trova tra due punti di intersezione adiacenti, dividendo l'entità in una o più parti rimanenti. Il segmento da tagliare è determinato dalla posizione del cursore — passa sul tratto da rimuovere e clicca per tagliarlo.
 
-Trim funziona **solo sulle entità Linea**. Per archi, cerchi, polilinee e altri tipi di entità usa [Delete](../delete/) o la modifica con grip.
-
-## Tagliare una linea
+## Tagliare un'entità
 
 1. Digita `trim` nel terminale o clicca il pulsante **Trim** nella barra degli strumenti.
-2. **Passa il cursore sul segmento di linea** che vuoi rimuovere — un'anteprima rossa evidenzia esattamente la porzione che verrà tagliata.
+2. **Passa il cursore sul segmento** che vuoi rimuovere — un'anteprima evidenzia esattamente la porzione che verrà tagliata.
 3. **Clicca** per rimuovere quel segmento.
 
-Il comando rimane attivo dopo ogni taglio, quindi puoi continuare a passare il cursore e cliccare per tagliare altri segmenti. Premi **Esc** per uscire.
+Il comando rimane attivo dopo ogni taglio, quindi puoi continuare a passare il cursore e cliccare per tagliare altri segmenti — sulla stessa entità o su un'altra. Premi **Esc** per uscire.
 
 ```
   Prima:                        Dopo il taglio del segmento centrale:
@@ -30,12 +28,22 @@ Il comando rimane attivo dopo ogni taglio, quindi puoi continuare a passare il c
 
 ## Come viene determinato il segmento da tagliare
 
-Il comando proietta la posizione del cursore sulla linea passata e trova tutti i punti di intersezione della linea con altre entità. Questi parametri di intersezione dividono la linea in segmenti. Il segmento il cui intervallo contiene la proiezione del cursore viene evidenziato e sarà rimosso al clic.
+Il comando proietta la posizione del cursore sull'entità passata e trova tutti i punti di intersezione che ha con altre entità. Queste intersezioni dividono l'entità in segmenti — per una Line, un Arc, una Polyline aperta o una Spline, gli estremi propri dell'entità fungono da confini fissi aggiuntivi. Un Circle o un'Ellipse completi, o una Polyline chiusa (incluso un Rectangle), non hanno estremi propri, quindi sono necessari almeno due punti di intersezione prima di poter essere tagliati. Il segmento il cui intervallo contiene la proiezione del cursore viene evidenziato e sarà rimosso al clic.
 
-- Se il cursore è **prima della prima intersezione**: quella porzione iniziale della linea viene rimossa.
-- Se il cursore è **tra due intersezioni**: quella porzione centrale viene rimossa; la linea si divide in due.
-- Se il cursore è **dopo l'ultima intersezione**: quella porzione finale viene rimossa.
-- Se la linea **non ha intersezioni** con nessun'altra entità: non viene mostrata nessuna anteprima e cliccare non fa nulla.
+- **Line, Arc, Polyline aperta e Spline** — il segmento rimosso può essere la porzione iniziale (prima della prima intersezione), una porzione centrale (tra due intersezioni, dividendo l'entità in due parti), o la porzione finale (dopo l'ultima intersezione).
+- **Circle, Ellipse e Polyline chiusa/Rectangle** — poiché non c'è un inizio o una fine fissi, può essere rimosso solo l'arco tra due *punti di intersezione*. Con meno di due intersezioni, non appare nessuna anteprima e cliccare non fa nulla. Il resto della forma diventa l'unica parte rimanente.
+
+## Cosa produce il taglio
+
+| Entità | Risultato dopo il taglio |
+|--------|------------------------|
+| Line | Fino a due entità Line più corte |
+| Arc | Fino a due entità Arc più corte |
+| Circle | Un'entità [Arc](../arc/) — la forma chiusa del cerchio scompare, quindi la parte rimanente viene memorizzata come arco |
+| Ellipse | Un'entità Ellipse con angolo iniziale e finale — la parte rimanente resta un'Ellipse, ora parziale |
+| Polyline (aperta) | Fino a due entità Polyline più corte |
+| Polyline (chiusa) / Rectangle | Un'entità Polyline aperta — la forma chiusa scompare, quindi la parte rimanente viene memorizzata aperta |
+| Spline | Fino a due entità Spline più corte, ricalcolate a partire da punti campionati lungo la curva originale |
 
 ## Riferimento tastiera
 
@@ -47,18 +55,22 @@ Il comando proietta la posizione del cursore sulla linea passata e trova tutti i
 
 | Entità | Può essere tagliata? |
 |--------|---------------------|
-| Linea | Sì |
-| Arco, Cerchio, Ellisse | No |
-| Polilinea / Rettangolo | No |
-| Testo, Spline, Quota, Leader | No |
+| Line | Sì |
+| Arc | Sì |
+| Circle | Sì — richiede 2 o più punti di intersezione |
+| Ellipse | Sì — richiede 2 o più punti di intersezione |
+| Polyline (aperta) | Sì |
+| Polyline (chiusa) / Rectangle | Sì — richiede 2 o più punti di intersezione |
+| Spline | Sì |
+| Text, Dimension, Leader | No |
 
-Le entità usate come **bordi di taglio** possono essere di qualsiasi tipo — solo la linea da tagliare deve essere un'entità Linea.
+Le entità usate come **bordi di taglio** possono essere una Line, un Arc, Circle, un'Ellipse, Polyline o Spline. Le entità Text, Dimension e Leader non registrano mai intersezioni, quindi non possono nemmeno fungere da bordi.
 
 ## Trim vs Extend
 
 | | Trim | Extend |
 |---|------|--------|
-| Cosa fa | Rimuove un segmento di una linea | Allunga un endpoint di una linea fino a un bordo |
+| Cosa fa | Rimuove un segmento di un'entità | Allunga un endpoint di una linea fino a un bordo |
 | Trigger | Passa il cursore sul segmento da tagliare | Passa il cursore vicino all'endpoint da estendere |
-| Risultato | La linea si divide o si accorcia | L'endpoint della linea si sposta fino al bordo |
-| Entrambi | Solo linee | Solo linee |
+| Risultato | L'entità si divide o si accorcia | L'endpoint della linea si sposta fino al bordo |
+| Entità supportate | Line, Arc, Circle, Ellipse, Polyline, Spline | Solo Line |

@@ -1,24 +1,22 @@
 ---
-title: Arahan Trim — Potong Segmen Garis pada Persimpangan
-description: Arahan Trim membuang bahagian Line antara dua titik persimpangan bersebelahan yang paling hampir dengan kursor. Pratonton hover merah menunjukkan tepat segmen yang akan dipotong sebelum anda mengklik. Trim hanya berfungsi pada entiti Line — bukan lengkok, bulatan, atau poliline.
-keywords: [arahan potong CAD, potong garis CAD, potong garis persimpangan, pratonton hover potong, garis sahaja potong, kulmanlab]
+title: Arahan Trim — Potong Segmen di Persimpangan
+description: Arahan Trim membuang bahagian Line, Arc, Circle, Ellipse, Polyline atau Spline antara dua titik persimpangan bersebelahan yang paling hampir dengan kursor. Pratonton menunjukkan tepat segmen yang akan dipotong sebelum anda mengklik.
+keywords: [arahan potong CAD, potong garis CAD, potong bulatan CAD, potong lengkok CAD, potong elips CAD, potong polyline CAD, potong spline CAD, potong garis persimpangan, pratonton hover potong, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-Arahan `trim` membuang bahagian [Line](../line/) yang terletak antara dua titik persimpangan bersebelahan, membelah garis menjadi satu atau dua segmen lebih pendek. Segmen yang dipotong ditentukan oleh kedudukan kursor — tuding ke bahagian yang ingin anda buang dan klik untuk memotongnya.
+Arahan `trim` membuang bahagian [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) atau Spline yang terletak antara dua titik persimpangan bersebelahan, membelah entiti menjadi satu atau lebih bahagian yang tinggal. Segmen yang dipotong ditentukan oleh kedudukan kursor — tuding ke bahagian yang ingin anda buang dan klik untuk memotongnya.
 
-Trim hanya berfungsi pada **entiti Line**. Untuk lengkok, bulatan, poliline, dan jenis entiti lain gunakan [Delete](../delete/) atau pengeditan grip sebagai gantinya.
-
-## Memotong garis
+## Memotong entiti
 
 1. Taip `trim` dalam terminal atau klik butang bar alat **Trim**.
-2. **Tuding ke segmen garis** yang ingin anda buang — pratonton merah menyerlahkan tepat bahagian yang akan dipotong.
+2. **Tuding ke segmen** yang ingin anda buang — pratonton menyerlahkan tepat bahagian yang akan dipotong.
 3. **Klik** untuk membuang segmen tersebut.
 
-Arahan kekal aktif selepas setiap potongan, jadi anda boleh terus menuding dan mengklik untuk memotong lebih banyak segmen. Tekan **Escape** untuk keluar.
+Arahan kekal aktif selepas setiap potongan, jadi anda boleh terus menuding dan mengklik untuk memotong lebih banyak segmen — pada entiti yang sama atau entiti lain. Tekan **Escape** untuk keluar.
 
 ```
   Sebelum:                     Selepas memotong segmen tengah:
@@ -30,12 +28,22 @@ Arahan kekal aktif selepas setiap potongan, jadi anda boleh terus menuding dan m
 
 ## Bagaimana segmen potong ditentukan
 
-Arahan mengunjurkan kedudukan kursor ke atas garis yang dituding dan mencari semua titik persimpangan yang ada dengan entiti lain. Parameter persimpangan ini membahagikan garis kepada segmen. Segmen yang selangnya mengandungi unjuran kursor diserlahkan dan akan dibuang semasa diklik.
+Arahan mengunjurkan kedudukan kursor ke atas entiti yang dituding dan mencari semua titik persimpangan yang ada dengan entiti lain. Persimpangan ini membahagikan entiti kepada segmen — untuk Line, Arc, Polyline terbuka, atau Spline, titik akhir entiti itu sendiri berfungsi sebagai sempadan tetap tambahan. Circle atau Ellipse penuh, atau Polyline tertutup (termasuk Rectangle), tidak mempunyai titik akhir sendiri, jadi sekurang-kurangnya dua titik persimpangan diperlukan sebelum ia boleh dipotong sama sekali. Segmen yang selangnya mengandungi unjuran kursor diserlahkan dan akan dibuang semasa diklik.
 
-- Jika kursor berada **sebelum persimpangan pertama**: bahagian hadapan garis itu dibuang.
-- Jika kursor berada **antara dua persimpangan**: bahagian tengah itu dibuang; garis berpecah menjadi dua.
-- Jika kursor berada **selepas persimpangan terakhir**: bahagian belakang itu dibuang.
-- Jika garis **tidak mempunyai persimpangan** dengan mana-mana entiti lain: tiada pratonton ditunjukkan dan mengklik tidak membuat apa-apa.
+- **Line, Arc, Polyline terbuka dan Spline** — segmen yang dibuang boleh menjadi bahagian hadapan (sebelum persimpangan pertama), bahagian tengah (antara dua persimpangan, membahagikan entiti kepada dua), atau bahagian belakang (selepas persimpangan terakhir).
+- **Circle, Ellipse dan Polyline tertutup/Rectangle** — kerana tiada permulaan atau penghujung tetap, hanya lengkok antara dua *titik persimpangan* boleh dibuang. Jika persimpangan kurang daripada dua, tiada pratonton ditunjukkan dan mengklik tidak membuat apa-apa. Baki bentuk menjadi satu-satunya bahagian yang tinggal.
+
+## Apa yang dihasilkan oleh pemotongan
+
+| Entiti | Hasil selepas dipotong |
+|--------|------------------------|
+| Line | Sehingga dua entiti Line yang lebih pendek |
+| Arc | Sehingga dua entiti Arc yang lebih pendek |
+| Circle | Satu entiti [Arc](../arc/) — bentuk tertutup bulatan hilang, jadi bahagian yang tinggal disimpan sebagai lengkok |
+| Ellipse | Satu entiti Ellipse dengan sudut permulaan dan penghujung — bahagian yang tinggal kekal sebagai Ellipse, kini separa |
+| Polyline (terbuka) | Sehingga dua entiti Polyline yang lebih pendek |
+| Polyline (tertutup) / Rectangle | Satu entiti Polyline terbuka — bentuk tertutup hilang, jadi bahagian yang tinggal disimpan terbuka |
+| Spline | Sehingga dua entiti Spline yang lebih pendek, disesuaikan semula daripada titik sampel di sepanjang lengkung asal |
 
 ## Rujukan papan kekunci
 
@@ -48,17 +56,21 @@ Arahan mengunjurkan kedudukan kursor ke atas garis yang dituding dan mencari sem
 | Entiti | Boleh dipotong? |
 |--------|----------------|
 | Line | Ya |
-| Arc, Circle, Ellipse | Tidak |
-| Polyline / Rectangle | Tidak |
-| Text, Spline, Dimension, Leader | Tidak |
+| Arc | Ya |
+| Circle | Ya — memerlukan 2 atau lebih titik persimpangan |
+| Ellipse | Ya — memerlukan 2 atau lebih titik persimpangan |
+| Polyline (terbuka) | Ya |
+| Polyline (tertutup) / Rectangle | Ya — memerlukan 2 atau lebih titik persimpangan |
+| Spline | Ya |
+| Text, Dimension, Leader | Tidak |
 
-Entiti yang digunakan sebagai **sempadan pemotongan** boleh menjadi mana-mana jenis — hanya garis yang dipotong mestilah entiti Line.
+Entiti yang digunakan sebagai **sempadan pemotongan** boleh menjadi Line, Arc, Circle, Ellipse, Polyline atau Spline. Entiti Text, Dimension dan Leader tidak pernah mencatat persimpangan, jadi ia juga tidak boleh berfungsi sebagai sempadan.
 
 ## Trim berbanding Extend
 
 | | Trim | Extend |
 |---|------|--------|
-| Fungsinya | Membuang segmen garis | Meregangkan titik akhir garis ke sempadan |
+| Fungsinya | Membuang segmen entiti | Meregangkan titik akhir garis ke sempadan |
 | Pencetus | Tuding ke segmen yang ingin dipotong | Tuding berhampiran titik akhir untuk dipanjangkan |
-| Hasil | Garis berpecah atau memendek | Titik akhir garis bergerak ke sempadan |
-| Kedua-duanya | Garis sahaja | Garis sahaja |
+| Hasil | Entiti berpecah atau memendek | Titik akhir garis bergerak ke sempadan |
+| Entiti yang disokong | Line, Arc, Circle, Ellipse, Polyline, Spline | Garis sahaja |
