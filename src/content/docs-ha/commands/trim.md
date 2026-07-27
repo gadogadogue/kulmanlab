@@ -1,14 +1,14 @@
 ---
 title: Trim — Yanke Sassa a Mahaɗai
-description: Umarnin Trim yana cire sashen Line, Arc, Circle, Ellipse, Polyline ko Spline tsakanin tabon mahaɗa biyu makwabta mafi kusa da mai nuni. Preview yana nuna daidai wace sashe za a yanke kafin ka danna.
-keywords: [umarnin trim CAD, yanke layi CAD, yanke da'ira CAD, yanke baka CAD, yanke ellipse CAD, yanke polyline CAD, yanke spline CAD, yanke mahaɗar layi, preview trim na riƙe, kulmanlab]
+description: Umarnin Trim yana cire sashen Line, Arc, Circle, Ellipse ko Polyline tsakanin tabon mahaɗa biyu makwabta mafi kusa da mai nuni. Preview yana nuna daidai wace sashe za a yanke kafin ka danna.
+keywords: [umarnin trim CAD, yanke layi CAD, yanke da'ira CAD, yanke baka CAD, yanke ellipse CAD, yanke polyline CAD, yanke mahaɗar layi, preview trim na riƙe, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-Umarnin `trim` yana cire sashen [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) ko Spline wanda ke tsakanin tabon mahaɗa biyu makwabta, yana rabe abu zuwa sashi ɗaya ko fiye da suka rage. Ana tantance sashen da za a yanke ta matsayin mai nuni — riƙe a kan sashen da kake son cirewa ka danna don yanke ta.
+Umarnin `trim` yana cire sashen [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/) ko [Polyline](../polyline/) wanda ke tsakanin tabon mahaɗa biyu makwabta, yana rabe abu zuwa sashi ɗaya ko fiye da suka rage. Ana tantance sashen da za a yanke ta matsayin mai nuni — riƙe a kan sashen da kake son cirewa ka danna don yanke ta.
 
 ## Yanke abu
 
@@ -28,9 +28,9 @@ Umarnin yana ci gaba da zama a aiki bayan kowace yankewa, don haka za ka iya ci 
 
 ## Yadda ake tantance sashen yankewa
 
-Umarnin yana projekta matsayin mai nuni a kan abin da aka riƙe kuma yana samun dukkan tabon mahaɗa da abin ke da su tare da wasu abubuwa. Waɗannan mahaɗai suna rabe abin zuwa sassa — ga Line, Arc, Polyline mai buɗewa, ko Spline, ƙarshen abin kansa yana aiki a matsayin iyakoki na ƙari da aka gyara. Cikakken Circle ko Ellipse, ko Polyline rufaffiya (ciki har da Rectangle), ba shi da nasa ƙarshe, don haka ana buƙatar aƙalla tabon mahaɗa biyu kafin a iya yanke shi ko kaɗan. Ana haskaka sashin da tsakaninsa ke ɗauke da projeciyar mai nuni kuma za a cire shi a dannawa.
+Umarnin yana projekta matsayin mai nuni a kan abin da aka riƙe kuma yana samun dukkan tabon mahaɗa da abin ke da su tare da wasu abubuwa. Waɗannan mahaɗai suna rabe abin zuwa sassa — ga Line, Arc, ko Polyline mai buɗewa, ƙarshen abin kansa yana aiki a matsayin iyakoki na ƙari da aka gyara. Cikakken Circle ko Ellipse, ko Polyline rufaffiya (ciki har da Rectangle), ba shi da nasa ƙarshe, don haka ana buƙatar aƙalla tabon mahaɗa biyu kafin a iya yanke shi ko kaɗan. Ana haskaka sashin da tsakaninsa ke ɗauke da projeciyar mai nuni kuma za a cire shi a dannawa.
 
-- **Line, Arc, Polyline mai buɗewa da Spline** — sashen da aka cire zai iya zama bangaren farko (kafin mahaɗa na farko), bangaren tsakiya (tsakanin mahaɗai biyu, yana rabe abin zuwa biyu), ko bangaren ƙarshe (bayan mahaɗa na ƙarshe).
+- **Line, Arc, da Polyline mai buɗewa** — sashen da aka cire zai iya zama bangaren farko (kafin mahaɗa na farko), bangaren tsakiya (tsakanin mahaɗai biyu, yana rabe abin zuwa biyu), ko bangaren ƙarshe (bayan mahaɗa na ƙarshe).
 - **Circle, Ellipse da Polyline rufaffiya/Rectangle** — tunda babu farawa ko ƙarewa da aka gyara, kawai baka tsakanin tabon *mahaɗa biyu* za a iya cirewa. Idan mahaɗai sun kasa biyu, babu preview da ke bayyana kuma dannawa ba ya yin komai. Sauran siffar yana zama kaɗai sashin da ya rage.
 
 ## Abin da yankewa ke haifarwa
@@ -43,7 +43,6 @@ Umarnin yana projekta matsayin mai nuni a kan abin da aka riƙe kuma yana samun 
 | Ellipse | Abu ɗaya na Ellipse mai kusurwar farawa da ƙarewa — sashin da ya rage yana ci gaba da zama Ellipse, yanzu na sashi |
 | Polyline (mai buɗewa) | Har zuwa abubuwan Polyline guntu biyu |
 | Polyline (rufaffiya) / Rectangle | Abu ɗaya na Polyline mai buɗewa — siffar rufaffiya tana ɓacewa, don haka ana adana sashin da ya rage a buɗe |
-| Spline | Har zuwa abubuwan Spline guntu biyu, an sake dacewa daga wuraren samfur a tare da asalin lanƙwasa |
 
 ## Marfe na maɓallan madannai
 
@@ -61,10 +60,9 @@ Umarnin yana projekta matsayin mai nuni a kan abin da aka riƙe kuma yana samun 
 | Ellipse | Eh — yana buƙatar tabon mahaɗa 2 ko fiye |
 | Polyline (mai buɗewa) | Eh |
 | Polyline (rufaffiya) / Rectangle | Eh — yana buƙatar tabon mahaɗa 2 ko fiye |
-| Spline | Eh |
-| Text, Dimension, Leader | Aʼa |
+| Text, Spline, Dimension, Leader | Aʼa |
 
-Abubuwan da ake amfani da su a matsayin **iyakokin yankewa** za su iya kasancewa Line, Arc, Circle, Ellipse, Polyline ko Spline. Abubuwan Text, Dimension, da Leader ba sa taɓa yin rijistar mahaɗa, don haka su ma ba za su iya zama iyaka ba.
+Abubuwan da ake amfani da su a matsayin **iyakokin yankewa** za su iya kasancewa Line, Arc, Circle, Ellipse ko Polyline. Abubuwan Text, Spline, Dimension, da Leader ba sa taɓa yin rijistar mahaɗa, don haka su ma ba za su iya zama iyaka ba.
 
 ## Trim da Extend
 
@@ -73,4 +71,4 @@ Abubuwan da ake amfani da su a matsayin **iyakokin yankewa** za su iya kasancewa
 | Abin da yake yi | Yana cire sashen abu | Yana tsawaita ƙarshen layi zuwa iyaka |
 | Kunnawa | Riƙe a kan sashen don yanke | Riƙe kusa da ƙarshen don tsawaita |
 | Sakamako | Abu yana rabuwa ko guntuwa | Ƙarshen layi yana motsawa zuwa iyaka |
-| Abubuwan da ake goyon baya | Line, Arc, Circle, Ellipse, Polyline, Spline | Line kaɗai |
+| Abubuwan da ake goyon baya | Line, Arc, Circle, Ellipse, Polyline | Line kaɗai |

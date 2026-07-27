@@ -1,14 +1,14 @@
 ---
 title: Perintah Trim — Memotong Segmen di Perpotongan
-description: Perintah Trim menghapus bagian dari Line, Arc, Circle, Ellipse, Polyline, atau Spline antara dua titik perpotongan yang berdekatan paling dekat dengan kursor. Pratinjau menampilkan dengan tepat segmen mana yang akan dipotong sebelum Anda klik.
-keywords: [perintah potong CAD, memotong garis CAD, potong lingkaran CAD, potong busur CAD, potong elips CAD, potong polyline CAD, potong spline CAD, potong perpotongan garis, pratinjau hover potong, kulmanlab]
+description: Perintah Trim menghapus bagian dari Line, Arc, Circle, Ellipse, atau Polyline antara dua titik perpotongan yang berdekatan paling dekat dengan kursor. Pratinjau menampilkan dengan tepat segmen mana yang akan dipotong sebelum Anda klik.
+keywords: [perintah potong CAD, memotong garis CAD, potong lingkaran CAD, potong busur CAD, potong elips CAD, potong polyline CAD, potong perpotongan garis, pratinjau hover potong, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-Perintah `trim` menghapus bagian dari [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/), atau Spline yang terletak di antara dua titik perpotongan yang berdekatan, membagi entitas menjadi satu atau lebih bagian yang tersisa. Segmen yang akan dipotong ditentukan oleh posisi kursor — arahkan kursor ke bagian yang ingin dihapus dan klik untuk memotongnya.
+Perintah `trim` menghapus bagian dari [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), atau [Polyline](../polyline/) yang terletak di antara dua titik perpotongan yang berdekatan, membagi entitas menjadi satu atau lebih bagian yang tersisa. Segmen yang akan dipotong ditentukan oleh posisi kursor — arahkan kursor ke bagian yang ingin dihapus dan klik untuk memotongnya.
 
 ## Memotong entitas
 
@@ -28,9 +28,9 @@ Perintah tetap aktif setelah setiap pemotongan, sehingga Anda dapat terus mengar
 
 ## Cara segmen pemotongan ditentukan
 
-Perintah memproyeksikan posisi kursor ke entitas yang di-hover dan menemukan semua titik perpotongan yang dimiliki entitas tersebut dengan entitas lain. Perpotongan ini membagi entitas menjadi segmen — untuk Line, Arc, Polyline terbuka, atau Spline, titik akhir entitas itu sendiri berfungsi sebagai batas tetap tambahan. Circle atau Ellipse penuh, atau Polyline tertutup (termasuk Rectangle), tidak memiliki titik akhir sendiri, sehingga diperlukan setidaknya dua titik perpotongan sebelum dapat dipotong sama sekali. Segmen yang intervalnya berisi proyeksi kursor disorot dan akan dihapus saat diklik.
+Perintah memproyeksikan posisi kursor ke entitas yang di-hover dan menemukan semua titik perpotongan yang dimiliki entitas tersebut dengan entitas lain. Perpotongan ini membagi entitas menjadi segmen — untuk Line, Arc, atau Polyline terbuka, titik akhir entitas itu sendiri berfungsi sebagai batas tetap tambahan. Circle atau Ellipse penuh, atau Polyline tertutup (termasuk Rectangle), tidak memiliki titik akhir sendiri, sehingga diperlukan setidaknya dua titik perpotongan sebelum dapat dipotong sama sekali. Segmen yang intervalnya berisi proyeksi kursor disorot dan akan dihapus saat diklik.
 
-- **Line, Arc, Polyline terbuka, dan Spline** — segmen yang dihapus bisa berupa bagian terdepan (sebelum perpotongan pertama), bagian tengah (di antara dua perpotongan, membagi entitas menjadi dua), atau bagian ekor (setelah perpotongan terakhir).
+- **Line, Arc, dan Polyline terbuka** — segmen yang dihapus bisa berupa bagian terdepan (sebelum perpotongan pertama), bagian tengah (di antara dua perpotongan, membagi entitas menjadi dua), atau bagian ekor (setelah perpotongan terakhir).
 - **Circle, Ellipse, dan Polyline tertutup/Rectangle** — karena tidak ada awal atau akhir yang tetap, hanya busur di antara dua *titik perpotongan* yang dapat dihapus. Jika perpotongan kurang dari dua, tidak ada pratinjau yang muncul dan mengklik tidak melakukan apa-apa. Sisa bentuknya menjadi satu-satunya bagian yang tersisa.
 
 ## Hasil pemotongan
@@ -43,7 +43,6 @@ Perintah memproyeksikan posisi kursor ke entitas yang di-hover dan menemukan sem
 | Ellipse | Satu entitas Ellipse dengan sudut awal dan akhir — bagian yang tersisa tetap berupa Ellipse, sekarang parsial |
 | Polyline (terbuka) | Hingga dua entitas Polyline yang lebih pendek |
 | Polyline (tertutup) / Rectangle | Satu entitas Polyline terbuka — bentuk tertutup hilang, sehingga bagian yang tersisa disimpan terbuka |
-| Spline | Hingga dua entitas Spline yang lebih pendek, disesuaikan ulang dari titik-titik sampel di sepanjang kurva asli |
 
 ## Referensi keyboard
 
@@ -61,10 +60,9 @@ Perintah memproyeksikan posisi kursor ke entitas yang di-hover dan menemukan sem
 | Ellipse | Ya — memerlukan 2 atau lebih titik perpotongan |
 | Polyline (terbuka) | Ya |
 | Polyline (tertutup) / Rectangle | Ya — memerlukan 2 atau lebih titik perpotongan |
-| Spline | Ya |
-| Text, Dimension, Leader | Tidak |
+| Text, Spline, Dimension, Leader | Tidak |
 
-Entitas yang digunakan sebagai **batas pemotongan** dapat berupa Line, Arc, Circle, Ellipse, Polyline, atau Spline. Entitas Text, Dimension, dan Leader tidak pernah mencatat perpotongan, sehingga juga tidak dapat berfungsi sebagai batas.
+Entitas yang digunakan sebagai **batas pemotongan** dapat berupa Line, Arc, Circle, Ellipse, atau Polyline. Entitas Text, Spline, Dimension, dan Leader tidak pernah mencatat perpotongan, sehingga juga tidak dapat berfungsi sebagai batas.
 
 ## Trim vs Extend
 
@@ -73,4 +71,4 @@ Entitas yang digunakan sebagai **batas pemotongan** dapat berupa Line, Arc, Circ
 | Fungsi | Menghapus segmen entitas | Meregangkan titik akhir garis ke batas |
 | Pemicu | Arahkan kursor ke segmen yang akan dipotong | Arahkan kursor dekat titik akhir yang akan diperpanjang |
 | Hasil | Entitas terpecah atau memendek | Titik akhir garis berpindah ke batas |
-| Entitas yang didukung | Line, Arc, Circle, Ellipse, Polyline, Spline | Hanya Line |
+| Entitas yang didukung | Line, Arc, Circle, Ellipse, Polyline | Hanya Line |

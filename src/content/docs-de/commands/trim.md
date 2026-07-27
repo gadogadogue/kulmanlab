@@ -1,14 +1,14 @@
 ---
 title: Trim-Befehl — Segmente an Schnittpunkten kürzen
-description: Der Trim-Befehl entfernt den Abschnitt einer Line, eines Arc, Circle, einer Ellipse, Polyline oder Spline zwischen zwei benachbarten, dem Cursor nächstgelegenen Schnittpunkten. Eine Vorschau zeigt genau, welches Segment geschnitten wird, bevor Sie klicken.
-keywords: [CAD Trim-Befehl, Linie kürzen CAD, Kreis kürzen CAD, Bogen kürzen CAD, Ellipse kürzen CAD, Polylinie kürzen CAD, Spline kürzen CAD, Linie am Schnittpunkt schneiden, Hover-Trim-Vorschau, kulmanlab]
+description: Der Trim-Befehl entfernt den Abschnitt einer Line, eines Arc, Circle, einer Ellipse oder Polyline zwischen zwei benachbarten, dem Cursor nächstgelegenen Schnittpunkten. Eine Vorschau zeigt genau, welches Segment geschnitten wird, bevor Sie klicken.
+keywords: [CAD Trim-Befehl, Linie kürzen CAD, Kreis kürzen CAD, Bogen kürzen CAD, Ellipse kürzen CAD, Polylinie kürzen CAD, Linie am Schnittpunkt schneiden, Hover-Trim-Vorschau, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-Der `trim`-Befehl entfernt den Abschnitt einer [Line](../line/), eines [Arc](../arc/), [Circle](../circle/), einer [Ellipse](../ellipse/), [Polyline](../polyline/) oder Spline, der zwischen zwei benachbarten Schnittpunkten liegt, und teilt die Entität in ein oder mehrere verbleibende Teile. Das zu schneidende Segment wird durch die Cursorposition bestimmt — fahren Sie mit dem Cursor über den Teil, den Sie entfernen möchten, und klicken Sie zum Kürzen.
+Der `trim`-Befehl entfernt den Abschnitt einer [Line](../line/), eines [Arc](../arc/), [Circle](../circle/), einer [Ellipse](../ellipse/) oder [Polyline](../polyline/), der zwischen zwei benachbarten Schnittpunkten liegt, und teilt die Entität in ein oder mehrere verbleibende Teile. Das zu schneidende Segment wird durch die Cursorposition bestimmt — fahren Sie mit dem Cursor über den Teil, den Sie entfernen möchten, und klicken Sie zum Kürzen.
 
 ## Eine Entität kürzen
 
@@ -28,9 +28,9 @@ Der Befehl bleibt nach jedem Trim aktiv, sodass Sie weiterhin über weitere Segm
 
 ## Wie das Trim-Segment bestimmt wird
 
-Der Befehl projiziert die Cursorposition auf die überfahrene Entität und findet alle Schnittpunkte, die sie mit anderen Entitäten hat. Diese Schnittpunkte teilen die Entität in Segmente auf — bei einer Line, einem Arc, einer offenen Polyline oder einer Spline dienen die eigenen Endpunkte der Entität als zusätzliche feste Grenzen. Ein vollständiger Circle oder eine vollständige Ellipse sowie eine geschlossene Polyline (einschließlich eines Rectangle) haben keine eigenen Endpunkte, daher sind mindestens zwei Schnittpunkte nötig, bevor überhaupt gekürzt werden kann. Das Segment, dessen Intervall die Projektion des Cursors enthält, wird hervorgehoben und beim Klicken entfernt.
+Der Befehl projiziert die Cursorposition auf die überfahrene Entität und findet alle Schnittpunkte, die sie mit anderen Entitäten hat. Diese Schnittpunkte teilen die Entität in Segmente auf — bei einer Line, einem Arc oder einer offenen Polyline dienen die eigenen Endpunkte der Entität als zusätzliche feste Grenzen. Ein vollständiger Circle oder eine vollständige Ellipse sowie eine geschlossene Polyline (einschließlich eines Rectangle) haben keine eigenen Endpunkte, daher sind mindestens zwei Schnittpunkte nötig, bevor überhaupt gekürzt werden kann. Das Segment, dessen Intervall die Projektion des Cursors enthält, wird hervorgehoben und beim Klicken entfernt.
 
-- **Line, Arc, offene Polyline und Spline** — das entfernte Segment kann der führende Abschnitt (vor dem ersten Schnittpunkt), ein mittlerer Abschnitt (zwischen zwei Schnittpunkten, wodurch die Entität in zwei Teile geteilt wird) oder der abschließende Abschnitt (nach dem letzten Schnittpunkt) sein.
+- **Line, Arc und offene Polyline** — das entfernte Segment kann der führende Abschnitt (vor dem ersten Schnittpunkt), ein mittlerer Abschnitt (zwischen zwei Schnittpunkten, wodurch die Entität in zwei Teile geteilt wird) oder der abschließende Abschnitt (nach dem letzten Schnittpunkt) sein.
 - **Circle, Ellipse und geschlossene Polyline/Rectangle** — da es keinen festen Anfang oder Ende gibt, kann nur der Bogen zwischen zwei *Schnittpunkten* entfernt werden. Bei weniger als zwei Schnittpunkten wird keine Vorschau angezeigt und Klicken hat keine Wirkung. Der Rest der Form wird zum einzigen verbleibenden Teil.
 
 ## Was das Kürzen erzeugt
@@ -43,7 +43,6 @@ Der Befehl projiziert die Cursorposition auf die überfahrene Entität und finde
 | Ellipse | Eine Ellipse-Entität mit Start- und Endwinkel — der verbleibende Teil bleibt eine Ellipse, nun eine teilweise |
 | Polyline (offen) | Bis zu zwei kürzere Polyline-Entitäten |
 | Polyline (geschlossen) / Rectangle | Eine offene Polyline-Entität — die geschlossene Form ist verschwunden, daher wird der verbleibende Teil offen gespeichert |
-| Spline | Bis zu zwei kürzere Spline-Entitäten, neu angepasst anhand abgetasteter Punkte entlang der ursprünglichen Kurve |
 
 ## Tastaturübersicht
 
@@ -61,10 +60,9 @@ Der Befehl projiziert die Cursorposition auf die überfahrene Entität und finde
 | Ellipse | Ja — erfordert 2 oder mehr Schnittpunkte |
 | Polyline (offen) | Ja |
 | Polyline (geschlossen) / Rectangle | Ja — erfordert 2 oder mehr Schnittpunkte |
-| Spline | Ja |
-| Text, Bemaßung, Leader | Nein |
+| Text, Spline, Bemaßung, Leader | Nein |
 
-Die als **Schnittgrenzen** verwendeten Entitäten können eine Line, ein Arc, Circle, eine Ellipse, Polyline oder Spline sein. Text-, Bemaßungs- und Leader-Entitäten registrieren nie Schnittpunkte, sie können also ebenfalls nicht als Grenzen dienen.
+Die als **Schnittgrenzen** verwendeten Entitäten können eine Line, ein Arc, Circle, eine Ellipse oder Polyline sein. Text-, Spline-, Bemaßungs- und Leader-Entitäten registrieren nie Schnittpunkte, sie können also ebenfalls nicht als Grenzen dienen.
 
 ## Trim vs. Extend
 
@@ -73,4 +71,4 @@ Die als **Schnittgrenzen** verwendeten Entitäten können eine Line, ein Arc, Ci
 | Funktion | Entfernt ein Segment einer Entität | Verlängert einen Linienendpunkt bis zu einer Grenze |
 | Auslöser | Cursor über das zu schneidende Segment fahren | Cursor nahe dem zu verlängernden Endpunkt |
 | Ergebnis | Entität wird geteilt oder verkürzt | Linienendpunkt bewegt sich zur Grenze |
-| Unterstützte Entitäten | Line, Arc, Circle, Ellipse, Polyline, Spline | Nur Line |
+| Unterstützte Entitäten | Line, Arc, Circle, Ellipse, Polyline | Nur Line |

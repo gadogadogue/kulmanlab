@@ -1,14 +1,14 @@
 ---
 title: Polecenie Trim — Cięcie segmentów na przecięciach
-description: Polecenie Trim usuwa część Line, Arc, Circle, Ellipse, Polyline lub Spline między dwoma sąsiednimi punktami przecięcia najbliższymi kursorowi. Podgląd pokazuje dokładnie, który segment zostanie wycięty przed kliknięciem.
-keywords: [polecenie przytnij CAD, przycinanie linii CAD, przycinanie okręgu CAD, przycinanie łuku CAD, przycinanie elipsy CAD, przycinanie polilinii CAD, przycinanie splajnu CAD, cięcie linii na przecięciu, podgląd przycinania po najechaniu, kulmanlab]
+description: Polecenie Trim usuwa część Line, Arc, Circle, Ellipse lub Polyline między dwoma sąsiednimi punktami przecięcia najbliższymi kursorowi. Podgląd pokazuje dokładnie, który segment zostanie wycięty przed kliknięciem.
+keywords: [polecenie przytnij CAD, przycinanie linii CAD, przycinanie okręgu CAD, przycinanie łuku CAD, przycinanie elipsy CAD, przycinanie polilinii CAD, cięcie linii na przecięciu, podgląd przycinania po najechaniu, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-Polecenie `trim` usuwa część [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) lub Spline leżącą między dwoma sąsiednimi punktami przecięcia, dzieląc element na jedną lub więcej pozostałych części. Segment do wycięcia jest określany przez pozycję kursora — najedź kursorem na część, którą chcesz usunąć, i kliknij, aby ją przyciąć.
+Polecenie `trim` usuwa część [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/) lub [Polyline](../polyline/) leżącą między dwoma sąsiednimi punktami przecięcia, dzieląc element na jedną lub więcej pozostałych części. Segment do wycięcia jest określany przez pozycję kursora — najedź kursorem na część, którą chcesz usunąć, i kliknij, aby ją przyciąć.
 
 ## Przycinanie elementu
 
@@ -28,9 +28,9 @@ Polecenie pozostaje aktywne po każdym przycięciu, dzięki czemu możesz kontyn
 
 ## Jak jest określany segment przycinania
 
-Polecenie rzutuje pozycję kursora na wskazywany element i znajduje wszystkie punkty przecięcia, które ten element ma z innymi elementami. Te przecięcia dzielą element na segmenty — w przypadku Line, Arc, otwartej Polyline lub Spline, własne punkty końcowe elementu pełnią rolę dodatkowych stałych granic. Pełny Circle lub Ellipse, albo zamknięta Polyline (w tym Rectangle), nie mają własnych punktów końcowych, więc do ich przycięcia potrzeba co najmniej dwóch punktów przecięcia. Segment, którego przedział zawiera rzutowanie kursora, jest podświetlany i zostanie usunięty po kliknięciu.
+Polecenie rzutuje pozycję kursora na wskazywany element i znajduje wszystkie punkty przecięcia, które ten element ma z innymi elementami. Te przecięcia dzielą element na segmenty — w przypadku Line, Arc lub otwartej Polyline, własne punkty końcowe elementu pełnią rolę dodatkowych stałych granic. Pełny Circle lub Ellipse, albo zamknięta Polyline (w tym Rectangle), nie mają własnych punktów końcowych, więc do ich przycięcia potrzeba co najmniej dwóch punktów przecięcia. Segment, którego przedział zawiera rzutowanie kursora, jest podświetlany i zostanie usunięty po kliknięciu.
 
-- **Line, Arc, otwarta Polyline i Spline** — usuwany segment może być częścią wiodącą (przed pierwszym przecięciem), środkową (między dwoma przecięciami, dzielącą element na dwie części) lub końcową (po ostatnim przecięciu).
+- **Line, Arc i otwarta Polyline** — usuwany segment może być częścią wiodącą (przed pierwszym przecięciem), środkową (między dwoma przecięciami, dzielącą element na dwie części) lub końcową (po ostatnim przecięciu).
 - **Circle, Ellipse i zamknięta Polyline/Rectangle** — ponieważ nie ma stałego początku ani końca, można usunąć tylko łuk między dwoma *punktami przecięcia*. Jeśli przecięć jest mniej niż dwa, podgląd się nie pojawia, a kliknięcie nic nie robi. Reszta kształtu staje się jedyną pozostałą częścią.
 
 ## Co daje przycinanie
@@ -43,7 +43,6 @@ Polecenie rzutuje pozycję kursora na wskazywany element i znajduje wszystkie pu
 | Ellipse | Jeden element Ellipse z kątem początkowym i końcowym — pozostała część pozostaje elementem Ellipse, teraz częściowym |
 | Polyline (otwarta) | Do dwóch krótszych elementów Polyline |
 | Polyline (zamknięta) / Rectangle | Jeden otwarty element Polyline — zamknięty kształt znika, więc pozostała część jest przechowywana jako otwarta |
-| Spline | Do dwóch krótszych elementów Spline, dopasowanych ponownie na podstawie próbkowanych punktów wzdłuż oryginalnej krzywej |
 
 ## Skróty klawiaturowe
 
@@ -61,10 +60,9 @@ Polecenie rzutuje pozycję kursora na wskazywany element i znajduje wszystkie pu
 | Ellipse | Tak — wymaga 2 lub więcej punktów przecięcia |
 | Polyline (otwarta) | Tak |
 | Polyline (zamknięta) / Rectangle | Tak — wymaga 2 lub więcej punktów przecięcia |
-| Spline | Tak |
-| Tekst, Wymiar, Linia prowadząca | Nie |
+| Tekst, Splajn, Wymiar, Linia prowadząca | Nie |
 
-Elementy używane jako **granice cięcia** mogą być typu Line, Arc, Circle, Ellipse, Polyline lub Spline. Elementy Tekst, Wymiar i Linia prowadząca nigdy nie rejestrują przecięć, więc również nie mogą pełnić roli granicy.
+Elementy używane jako **granice cięcia** mogą być typu Line, Arc, Circle, Ellipse lub Polyline. Elementy Tekst, Splajn, Wymiar i Linia prowadząca nigdy nie rejestrują przecięć, więc również nie mogą pełnić roli granicy.
 
 ## Przytnij a Przedłuż
 
@@ -73,4 +71,4 @@ Elementy używane jako **granice cięcia** mogą być typu Line, Arc, Circle, El
 | Co robi | Usuwa segment elementu | Rozciąga punkt końcowy linii do granicy |
 | Wyzwalacz | Najedź kursorem na segment do wycięcia | Najedź kursorem blisko punktu końcowego do rozciągnięcia |
 | Wynik | Element dzieli się lub skraca | Punkt końcowy linii przesuwa się do granicy |
-| Obsługiwane elementy | Line, Arc, Circle, Ellipse, Polyline, Spline | Tylko Line |
+| Obsługiwane elementy | Line, Arc, Circle, Ellipse, Polyline | Tylko Line |

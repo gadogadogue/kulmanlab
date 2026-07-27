@@ -1,14 +1,14 @@
 ---
 title: Trim命令 — 在交点处切割图元线段
-description: 修剪命令删除 Line、Arc、Circle、Ellipse、Polyline 或 Spline 在两个最近交点之间的部分。预览在单击前精确显示将被切割的段。
-keywords: [CAD Trim 命令, 修剪直线 CAD, 修剪圆 CAD, 修剪圆弧 CAD, 修剪椭圆 CAD, 修剪多段线 CAD, 修剪样条线 CAD, 切割线交点, 悬停修剪预览, kulmanlab]
+description: 修剪命令删除 Line、Arc、Circle、Ellipse 或 Polyline 在两个最近交点之间的部分。预览在单击前精确显示将被切割的段。
+keywords: [CAD Trim 命令, 修剪直线 CAD, 修剪圆 CAD, 修剪圆弧 CAD, 修剪椭圆 CAD, 修剪多段线 CAD, 切割线交点, 悬停修剪预览, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-`trim`（修剪）命令删除[Line](../line/)、[Arc](../arc/)、[Circle](../circle/)、[Ellipse](../ellipse/)、[Polyline](../polyline/) 或 Spline 位于两个相邻交点之间的部分，将图元分割为一个或多个剩余部分。要切割的线段由光标位置决定 — 将光标悬停在要删除的部分上并单击以修剪。
+`trim`（修剪）命令删除[Line](../line/)、[Arc](../arc/)、[Circle](../circle/)、[Ellipse](../ellipse/) 或 [Polyline](../polyline/) 位于两个相邻交点之间的部分，将图元分割为一个或多个剩余部分。要切割的线段由光标位置决定 — 将光标悬停在要删除的部分上并单击以修剪。
 
 ## 修剪图元
 
@@ -28,9 +28,9 @@ order: 8
 
 ## 如何确定修剪线段
 
-命令将光标位置投影到悬停的图元上，并找到该图元与其他图元的所有交点。这些交点将图元分成若干段——对于 Line、Arc、开放的 Polyline 或 Spline，图元自身的端点作为额外的固定边界。完整的 Circle 或 Ellipse，或闭合的 Polyline（包括 Rectangle），没有自身的端点，因此至少需要两个交点才能进行修剪。光标投影所在区间对应的线段被高亮显示，单击后将被删除。
+命令将光标位置投影到悬停的图元上，并找到该图元与其他图元的所有交点。这些交点将图元分成若干段——对于 Line、Arc 或开放的 Polyline，图元自身的端点作为额外的固定边界。完整的 Circle 或 Ellipse，或闭合的 Polyline（包括 Rectangle），没有自身的端点，因此至少需要两个交点才能进行修剪。光标投影所在区间对应的线段被高亮显示，单击后将被删除。
 
-- **Line、Arc、开放 Polyline 和 Spline** — 被删除的线段可以是前导部分（第一个交点之前）、中间部分（两个交点之间，将图元分成两部分），或尾随部分（最后一个交点之后）。
+- **Line、Arc 和开放 Polyline** — 被删除的线段可以是前导部分（第一个交点之前）、中间部分（两个交点之间，将图元分成两部分），或尾随部分（最后一个交点之后）。
 - **Circle、Ellipse 和闭合 Polyline/Rectangle** — 由于没有固定的起点或终点，只能删除两个*交点*之间的弧。如果交点少于两个，不会显示预览，单击也不会产生任何效果。图形的其余部分将成为唯一剩余的部分。
 
 ## 修剪产生的结果
@@ -43,7 +43,6 @@ order: 8
 | Ellipse | 一个带有起始角和终止角的 Ellipse 图元 — 剩余部分仍是 Ellipse，现在是部分椭圆 |
 | Polyline（开放） | 最多两个更短的 Polyline 图元 |
 | Polyline（闭合）/ Rectangle | 一个开放的 Polyline 图元 — 闭合形状消失，因此剩余部分以开放形式存储 |
-| Spline | 最多两个更短的 Spline 图元，根据原始曲线上的采样点重新拟合 |
 
 ## 键盘参考
 
@@ -61,10 +60,9 @@ order: 8
 | Ellipse | 是 — 需要 2 个或更多交点 |
 | Polyline（开放） | 是 |
 | Polyline（闭合）/ Rectangle | 是 — 需要 2 个或更多交点 |
-| Spline | 是 |
-| 文字、标注、引线 | 否 |
+| 文字、样条线、标注、引线 | 否 |
 
-用作**切割边界**的图元可以是 Line、Arc、Circle、Ellipse、Polyline 或 Spline。文字、标注和引线图元永远不会产生交点，因此它们也不能作为边界。
+用作**切割边界**的图元可以是 Line、Arc、Circle、Ellipse 或 Polyline。文字、样条线、标注和引线图元永远不会产生交点，因此它们也不能作为边界。
 
 ## Trim vs Extend
 
@@ -73,4 +71,4 @@ order: 8
 | 功能 | 删除图元的一段 | 将直线端点延伸到边界 |
 | 触发方式 | 悬停在要切割的线段上 | 悬停在要延伸的端点附近 |
 | 结果 | 图元分割或缩短 | 直线端点移动到边界 |
-| 支持的图元 | Line、Arc、Circle、Ellipse、Polyline、Spline | 仅 Line |
+| 支持的图元 | Line、Arc、Circle、Ellipse、Polyline | 仅 Line |

@@ -1,14 +1,14 @@
 ---
 title: Comando Trim — Cortar Segmentos en Intersecciones
-description: El comando Trim elimina la porción de una Line, Arc, Circle, Ellipse, Polyline o Spline entre dos puntos de intersección adyacentes más cercanos al cursor. Una vista previa muestra exactamente qué segmento se cortará antes de hacer clic.
-keywords: [comando trim CAD, recortar línea CAD, recortar círculo CAD, recortar arco CAD, recortar elipse CAD, recortar polilínea CAD, recortar spline CAD, cortar línea intersección, vista previa hover trim, kulmanlab]
+description: El comando Trim elimina la porción de una Line, Arc, Circle, Ellipse o Polyline entre dos puntos de intersección adyacentes más cercanos al cursor. Una vista previa muestra exactamente qué segmento se cortará antes de hacer clic.
+keywords: [comando trim CAD, recortar línea CAD, recortar círculo CAD, recortar arco CAD, recortar elipse CAD, recortar polilínea CAD, cortar línea intersección, vista previa hover trim, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-El comando `trim` elimina la porción de una [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) o Spline que se encuentra entre dos puntos de intersección adyacentes, dividiendo la entidad en una o más partes restantes. El segmento a cortar se determina por la posición del cursor — pasa el cursor sobre la parte que deseas eliminar y haz clic para recortarla.
+El comando `trim` elimina la porción de una [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/) o [Polyline](../polyline/) que se encuentra entre dos puntos de intersección adyacentes, dividiendo la entidad en una o más partes restantes. El segmento a cortar se determina por la posición del cursor — pasa el cursor sobre la parte que deseas eliminar y haz clic para recortarla.
 
 ## Recortar una entidad
 
@@ -28,9 +28,9 @@ El comando permanece activo después de cada recorte, por lo que puedes continua
 
 ## Cómo se determina el segmento a recortar
 
-El comando proyecta la posición del cursor sobre la entidad sobre la que se pasa el cursor y encuentra todos los puntos de intersección que tiene con otras entidades. Estas intersecciones dividen la entidad en segmentos — en una Line, Arc, Polyline abierta o Spline, los propios extremos de la entidad actúan como límites fijos adicionales. Un Circle o una Ellipse completos, o una Polyline cerrada (incluido un Rectangle), no tienen extremos propios, por lo que se necesitan al menos dos puntos de intersección antes de poder recortarlos. El segmento cuyo intervalo contiene la proyección del cursor se resalta y se eliminará al hacer clic.
+El comando proyecta la posición del cursor sobre la entidad sobre la que se pasa el cursor y encuentra todos los puntos de intersección que tiene con otras entidades. Estas intersecciones dividen la entidad en segmentos — en una Line, Arc o Polyline abierta, los propios extremos de la entidad actúan como límites fijos adicionales. Un Circle o una Ellipse completos, o una Polyline cerrada (incluido un Rectangle), no tienen extremos propios, por lo que se necesitan al menos dos puntos de intersección antes de poder recortarlos. El segmento cuyo intervalo contiene la proyección del cursor se resalta y se eliminará al hacer clic.
 
-- **Line, Arc, Polyline abierta y Spline** — el segmento eliminado puede ser la porción inicial (antes de la primera intersección), una porción intermedia (entre dos intersecciones, dividiendo la entidad en dos partes) o la porción final (después de la última intersección).
+- **Line, Arc y Polyline abierta** — el segmento eliminado puede ser la porción inicial (antes de la primera intersección), una porción intermedia (entre dos intersecciones, dividiendo la entidad en dos partes) o la porción final (después de la última intersección).
 - **Circle, Ellipse y Polyline cerrada/Rectangle** — como no hay un inicio o fin fijo, solo se puede eliminar el arco entre dos *puntos de intersección*. Con menos de dos intersecciones, no aparece vista previa y hacer clic no hace nada. El resto de la forma se convierte en la única parte restante.
 
 ## Qué produce el recorte
@@ -43,7 +43,6 @@ El comando proyecta la posición del cursor sobre la entidad sobre la que se pas
 | Ellipse | Una entidad Ellipse con ángulo inicial y final — la parte restante sigue siendo una Ellipse, ahora parcial |
 | Polyline (abierta) | Hasta dos entidades Polyline más cortas |
 | Polyline (cerrada) / Rectangle | Una entidad Polyline abierta — la forma cerrada desaparece, por lo que la parte restante se almacena abierta |
-| Spline | Hasta dos entidades Spline más cortas, reajustadas a partir de puntos muestreados a lo largo de la curva original |
 
 ## Referencia de teclado
 
@@ -61,10 +60,9 @@ El comando proyecta la posición del cursor sobre la entidad sobre la que se pas
 | Ellipse | Sí — requiere 2 o más puntos de intersección |
 | Polyline (abierta) | Sí |
 | Polyline (cerrada) / Rectangle | Sí — requiere 2 o más puntos de intersección |
-| Spline | Sí |
-| Text, Dimension, Leader | No |
+| Text, Spline, Dimension, Leader | No |
 
-Las entidades usadas como **bordes de corte** pueden ser una Line, Arc, Circle, Ellipse, Polyline o Spline. Las entidades Text, Dimension y Leader nunca registran intersecciones, por lo que tampoco pueden actuar como bordes.
+Las entidades usadas como **bordes de corte** pueden ser una Line, Arc, Circle, Ellipse o Polyline. Las entidades Text, Spline, Dimension y Leader nunca registran intersecciones, por lo que tampoco pueden actuar como bordes.
 
 ## Trim vs Extend
 
@@ -73,4 +71,4 @@ Las entidades usadas como **bordes de corte** pueden ser una Line, Arc, Circle, 
 | Qué hace | Elimina un segmento de una entidad | Estira un extremo de línea hasta un borde |
 | Activación | Pasar cursor sobre el segmento a cortar | Pasar cursor cerca del extremo a extender |
 | Resultado | La entidad se divide o acorta | El extremo de la línea se mueve hasta el borde |
-| Entidades compatibles | Line, Arc, Circle, Ellipse, Polyline, Spline | Solo Line |
+| Entidades compatibles | Line, Arc, Circle, Ellipse, Polyline | Solo Line |

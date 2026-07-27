@@ -1,14 +1,14 @@
 ---
 title: Trim 명령어 — 교차점에서 세그먼트 자르기
-description: Trim 명령어는 커서에 가장 가까운 두 인접 교차점 사이에 있는 Line, Arc, Circle, Ellipse, Polyline 또는 Spline의 부분을 제거합니다. 미리보기가 클릭 전에 정확히 어떤 세그먼트가 잘릴지 보여줍니다.
-keywords: [CAD Trim 명령어, 선 자르기 CAD, 원 자르기 CAD, 호 자르기 CAD, 타원 자르기 CAD, 폴리선 자르기 CAD, 스플라인 자르기 CAD, 교차점에서 선 자르기, 호버 자르기 미리보기, kulmanlab]
+description: Trim 명령어는 커서에 가장 가까운 두 인접 교차점 사이에 있는 Line, Arc, Circle, Ellipse 또는 Polyline의 부분을 제거합니다. 미리보기가 클릭 전에 정확히 어떤 세그먼트가 잘릴지 보여줍니다.
+keywords: [CAD Trim 명령어, 선 자르기 CAD, 원 자르기 CAD, 호 자르기 CAD, 타원 자르기 CAD, 폴리선 자르기 CAD, 교차점에서 선 자르기, 호버 자르기 미리보기, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-`trim` 명령어는 두 인접 교차점 사이에 있는 [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) 또는 Spline의 부분을 제거하여 객체를 하나 이상의 남은 부분으로 분할합니다. 자를 세그먼트는 커서 위치로 결정됩니다 — 제거하려는 부분 위에 커서를 올리고 클릭하여 자릅니다.
+`trim` 명령어는 두 인접 교차점 사이에 있는 [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/) 또는 [Polyline](../polyline/)의 부분을 제거하여 객체를 하나 이상의 남은 부분으로 분할합니다. 자를 세그먼트는 커서 위치로 결정됩니다 — 제거하려는 부분 위에 커서를 올리고 클릭하여 자릅니다.
 
 ## 객체 자르기
 
@@ -28,9 +28,9 @@ order: 8
 
 ## 자르기 세그먼트가 결정되는 방법
 
-명령어는 커서 위치를 호버된 객체에 투영하고 해당 객체가 다른 객체와 갖는 모든 교차점을 찾습니다. 이러한 교차점이 객체를 세그먼트로 나눕니다 — Line, Arc, 열린 Polyline 또는 Spline의 경우 객체 자체의 끝점이 추가 고정 경계 역할을 합니다. 완전한 Circle 또는 Ellipse, 또는 닫힌 Polyline(Rectangle 포함)은 자체 끝점이 없으므로 애초에 자르려면 최소 두 개의 교차점이 필요합니다. 커서의 투영이 포함된 세그먼트가 강조 표시되고 클릭 시 제거됩니다.
+명령어는 커서 위치를 호버된 객체에 투영하고 해당 객체가 다른 객체와 갖는 모든 교차점을 찾습니다. 이러한 교차점이 객체를 세그먼트로 나눕니다 — Line, Arc 또는 열린 Polyline의 경우 객체 자체의 끝점이 추가 고정 경계 역할을 합니다. 완전한 Circle 또는 Ellipse, 또는 닫힌 Polyline(Rectangle 포함)은 자체 끝점이 없으므로 애초에 자르려면 최소 두 개의 교차점이 필요합니다. 커서의 투영이 포함된 세그먼트가 강조 표시되고 클릭 시 제거됩니다.
 
-- **Line, Arc, 열린 Polyline, Spline** — 제거되는 세그먼트는 앞부분(첫 번째 교차점 이전), 중간 부분(두 교차점 사이, 객체를 둘로 분할), 또는 뒷부분(마지막 교차점 이후)일 수 있습니다.
+- **Line, Arc, 열린 Polyline** — 제거되는 세그먼트는 앞부분(첫 번째 교차점 이전), 중간 부분(두 교차점 사이, 객체를 둘로 분할), 또는 뒷부분(마지막 교차점 이후)일 수 있습니다.
 - **Circle, Ellipse, 닫힌 Polyline/Rectangle** — 고정된 시작점이나 끝점이 없으므로 두 *교차점* 사이의 호만 제거할 수 있습니다. 교차점이 두 개 미만이면 미리보기가 나타나지 않고 클릭해도 아무 일도 일어나지 않습니다. 도형의 나머지 부분이 유일하게 남는 부분이 됩니다.
 
 ## 자르기 결과
@@ -43,7 +43,6 @@ order: 8
 | Ellipse | 시작각과 끝각을 가진 하나의 Ellipse 객체 — 남은 부분은 Ellipse로 유지되지만 이제 부분적입니다 |
 | Polyline (열린) | 최대 두 개의 더 짧은 Polyline 객체 |
 | Polyline (닫힌) / Rectangle | 하나의 열린 Polyline 객체 — 닫힌 형태가 사라지므로 남은 부분은 열린 상태로 저장됩니다 |
-| Spline | 최대 두 개의 더 짧은 Spline 객체, 원래 곡선을 따라 샘플링된 점에서 다시 맞춰집니다 |
 
 ## 키보드 참고
 
@@ -61,10 +60,9 @@ order: 8
 | Ellipse | 예 — 교차점 2개 이상 필요 |
 | Polyline (열린) | 예 |
 | Polyline (닫힌) / Rectangle | 예 — 교차점 2개 이상 필요 |
-| Spline | 예 |
-| 텍스트, 치수, 지시선 | 아니오 |
+| 텍스트, 스플라인, 치수, 지시선 | 아니오 |
 
-**절단 경계**로 사용되는 객체는 Line, Arc, Circle, Ellipse, Polyline 또는 Spline일 수 있습니다. 텍스트, 치수, 지시선 객체는 교차점을 등록하지 않으므로 경계로도 작동할 수 없습니다.
+**절단 경계**로 사용되는 객체는 Line, Arc, Circle, Ellipse 또는 Polyline일 수 있습니다. 텍스트, 스플라인, 치수, 지시선 객체는 교차점을 등록하지 않으므로 경계로도 작동할 수 없습니다.
 
 ## 자르기 vs 연장
 
@@ -73,4 +71,4 @@ order: 8
 | 하는 일 | 객체의 세그먼트 제거 | 선 끝점을 경계까지 늘리기 |
 | 트리거 | 자를 세그먼트 위에 커서 올리기 | 연장할 끝점 근처에 커서 올리기 |
 | 결과 | 객체가 분할되거나 짧아짐 | 선 끝점이 경계로 이동 |
-| 지원되는 객체 | Line, Arc, Circle, Ellipse, Polyline, Spline | Line만 해당 |
+| 지원되는 객체 | Line, Arc, Circle, Ellipse, Polyline | Line만 해당 |

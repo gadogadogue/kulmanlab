@@ -1,14 +1,14 @@
 ---
 title: Trim-kommando — Skær Segmenter ved Skæringspunkter
-description: Trim-kommandoen fjerner den del af en Line, Arc, Circle, Ellipse, Polyline eller Spline der ligger mellem to tilstødende skæringspunkter nærmest markøren. Forhåndsvisningen viser nøjagtigt hvilket segment der vil blive skåret, før du klikker.
-keywords: [CAD trim-kommando, trim linje CAD, trim cirkel CAD, trim bue CAD, trim ellipse CAD, trim polylinje CAD, trim spline CAD, skær linjeskæring, hover trim-forhåndsvisning, kulmanlab]
+description: Trim-kommandoen fjerner den del af en Line, Arc, Circle, Ellipse eller Polyline der ligger mellem to tilstødende skæringspunkter nærmest markøren. Forhåndsvisningen viser nøjagtigt hvilket segment der vil blive skåret, før du klikker.
+keywords: [CAD trim-kommando, trim linje CAD, trim cirkel CAD, trim bue CAD, trim ellipse CAD, trim polylinje CAD, skær linjeskæring, hover trim-forhåndsvisning, kulmanlab]
 group: edit
 order: 8
 ---
 
 # Trim
 
-Kommandoen `trim` fjerner den del af en [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/), [Polyline](../polyline/) eller Spline, der ligger mellem to tilstødende skæringspunkter, og deler entiteten i én eller flere resterende dele. Segmentet der skal skæres, bestemmes af markørpositionen — hold markøren over den del, du vil fjerne, og klik for at trimme den.
+Kommandoen `trim` fjerner den del af en [Line](../line/), [Arc](../arc/), [Circle](../circle/), [Ellipse](../ellipse/) eller [Polyline](../polyline/), der ligger mellem to tilstødende skæringspunkter, og deler entiteten i én eller flere resterende dele. Segmentet der skal skæres, bestemmes af markørpositionen — hold markøren over den del, du vil fjerne, og klik for at trimme den.
 
 ## Trimme en entitet
 
@@ -28,9 +28,9 @@ Kommandoen forbliver aktiv efter hver trimning, så du kan fortsætte med at hol
 
 ## Hvordan trim-segmentet bestemmes
 
-Kommandoen projicerer markørpositionen på entiteten, den holder over, og finder alle skæringspunkter, entiteten har med andre entiteter. Disse skæringspunkter deler entiteten i segmenter — for en Line, Arc, åben Polyline eller Spline fungerer entitetens egne endepunkter som ekstra faste grænser. En fuldstændig Circle eller Ellipse, eller en lukket Polyline (inklusive en Rectangle), har ingen egne endepunkter, så der kræves mindst to skæringspunkter, før den overhovedet kan trimmes. Segmentet, hvis interval indeholder markørens projektion, fremhæves og vil blive fjernet ved klik.
+Kommandoen projicerer markørpositionen på entiteten, den holder over, og finder alle skæringspunkter, entiteten har med andre entiteter. Disse skæringspunkter deler entiteten i segmenter — for en Line, Arc eller åben Polyline fungerer entitetens egne endepunkter som ekstra faste grænser. En fuldstændig Circle eller Ellipse, eller en lukket Polyline (inklusive en Rectangle), har ingen egne endepunkter, så der kræves mindst to skæringspunkter, før den overhovedet kan trimmes. Segmentet, hvis interval indeholder markørens projektion, fremhæves og vil blive fjernet ved klik.
 
-- **Line, Arc, åben Polyline og Spline** — det fjernede segment kan være den ledende del (før det første skæringspunkt), en midterste del (mellem to skæringspunkter, hvilket deler entiteten i to), eller den efterfølgende del (efter det sidste skæringspunkt).
+- **Line, Arc og åben Polyline** — det fjernede segment kan være den ledende del (før det første skæringspunkt), en midterste del (mellem to skæringspunkter, hvilket deler entiteten i to), eller den efterfølgende del (efter det sidste skæringspunkt).
 - **Circle, Ellipse og lukket Polyline/Rectangle** — da der ikke findes en fast start eller slutning, kan kun buen mellem to *skæringspunkter* fjernes. Med færre end to skæringspunkter vises ingen forhåndsvisning, og et klik gør ingenting. Resten af formen bliver den eneste resterende del.
 
 ## Hvad trimningen giver
@@ -43,7 +43,6 @@ Kommandoen projicerer markørpositionen på entiteten, den holder over, og finde
 | Ellipse | Én Ellipse-entitet med start- og slutvinkel — den resterende del forbliver en Ellipse, nu delvis |
 | Polyline (åben) | Op til to kortere Polyline-entiteter |
 | Polyline (lukket) / Rectangle | Én åben Polyline-entitet — den lukkede form forsvinder, så den resterende del gemmes åben |
-| Spline | Op til to kortere Spline-entiteter, tilpasset igen ud fra samplede punkter langs den oprindelige kurve |
 
 ## Tastaturreference
 
@@ -61,10 +60,9 @@ Kommandoen projicerer markørpositionen på entiteten, den holder over, og finde
 | Ellipse | Ja — kræver 2 eller flere skæringspunkter |
 | Polyline (åben) | Ja |
 | Polyline (lukket) / Rectangle | Ja — kræver 2 eller flere skæringspunkter |
-| Spline | Ja |
-| Text, Dimension, Leader | Nej |
+| Text, Spline, Dimension, Leader | Nej |
 
-Entiteterne der bruges som **skæregrænser** kan være Line, Arc, Circle, Ellipse, Polyline eller Spline. Text-, Dimension- og Leader-entiteter registrerer aldrig skæringspunkter, så de kan heller ikke fungere som grænser.
+Entiteterne der bruges som **skæregrænser** kan være Line, Arc, Circle, Ellipse eller Polyline. Text-, Spline-, Dimension- og Leader-entiteter registrerer aldrig skæringspunkter, så de kan heller ikke fungere som grænser.
 
 ## Trim vs Extend
 
@@ -73,4 +71,4 @@ Entiteterne der bruges som **skæregrænser** kan være Line, Arc, Circle, Ellip
 | Hvad den gør | Fjerner et segment af en entitet | Strækker et linjeendepunkt til en grænse |
 | Udløser | Hold markøren over segmentet for at skære | Hold markøren nær endepunktet for at forlænge |
 | Resultat | Entiteten deles eller forkortes | Linjeendepunktet flytter til grænsen |
-| Understøttede entiteter | Line, Arc, Circle, Ellipse, Polyline, Spline | Kun Line |
+| Understøttede entiteter | Line, Arc, Circle, Ellipse, Polyline | Kun Line |
