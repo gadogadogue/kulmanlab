@@ -7,6 +7,19 @@ export type Release = {
 
 export const releases: Release[] = [
   {
+    version: '2026.07.26.70984c6',
+    date: 'July 26, 2026',
+    title: 'Trim: Arc, Circle, Ellipse & Polyline support',
+    highlights: [
+      'Trim now works on Arc, Circle, Ellipse, and Polyline, not just Line — hover the segment between two intersection points and click to cut it, exactly like Line trimming already worked',
+      'Circle, Ellipse, and a closed Polyline (including Rectangle) have no natural start or end, so trimming one now requires at least two intersection points; the piece between whichever pair the cursor is nearest becomes the removed segment, and a Circle trims down into an Arc',
+      'Fixed several intersection bugs surfaced while building this: Line trim no longer deletes the whole line on a touching (non-crossing) intersection, Circle/Ellipse intersections no longer miss a point that lands exactly on the other shape\'s endpoint or drift after repeated trims, and Circle/Arc no longer trims straight through an Ellipse without leaving the gap',
+      'Ellipse previews for Mirror, Rotate, and Trim now render at the correct orientation instead of resetting to the un-rotated axis',
+      'Legacy DXF POLYLINE entities (the format that predates LWPOLYLINE) now import correctly, including malformed or mesh-style data that previously failed to parse',
+      'Shapes toolbar reordered (Ellipse, stacked Splines, Arc last), markup toolbar icons grouped by tool family, the Array button restored, and the Dimension Linear icon\'s grip/arrow sizing fixed',
+    ],
+  },
+  {
     version: '2026.07.23.49fac9a',
     date: 'July 23, 2026',
     title: 'Text editor: paragraph alignment, underline & rotated-text fixes',
@@ -354,6 +367,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   en: releases.map(r => ({ title: r.title, highlights: r.highlights })),
   de: [
     {
+      title: 'Trim: Unterstützung für Arc, Circle, Ellipse & Polyline',
+      highlights: [
+        'Trim funktioniert jetzt auch mit Arc, Circle, Ellipse und Polyline, nicht nur mit Line — fahren Sie über das Segment zwischen zwei Schnittpunkten und klicken Sie, um es zu kürzen, genau wie beim bisherigen Line-Trim',
+        'Circle, Ellipse und eine geschlossene Polyline (einschließlich Rectangle) haben keinen natürlichen Anfang oder Ende, daher erfordert das Kürzen jetzt mindestens zwei Schnittpunkte; das Stück zwischen dem Paar, dem der Cursor am nächsten ist, wird entfernt, und ein Circle wird dabei zu einem Arc gekürzt',
+        'Mehrere beim Bau entdeckte Schnittpunkt-Fehler behoben: Line-Trim löscht bei einer berührenden (nicht kreuzenden) Überschneidung nicht mehr die ganze Linie, Circle/Ellipse-Schnittpunkte übersehen keinen Punkt mehr, der genau auf dem Endpunkt der anderen Form liegt, oder driften nicht mehr bei wiederholtem Kürzen, und Circle/Arc schneidet nicht mehr ohne Lücke direkt durch eine Ellipse',
+        'Ellipse-Vorschauen für Mirror, Rotate und Trim werden jetzt in der korrekten Ausrichtung gerendert, statt auf die ungedrehte Achse zurückzuspringen',
+        'Ältere DXF-POLYLINE-Entitäten (das Format vor LWPOLYLINE) werden jetzt korrekt importiert, einschließlich fehlerhafter oder Mesh-artiger Daten, die zuvor nicht geparst werden konnten',
+        'Formen-Werkzeugleiste neu angeordnet (Ellipse, gestapelte Splines, Arc zuletzt), Markup-Werkzeugleistensymbole nach Werkzeugfamilie gruppiert, die Array-Schaltfläche wiederhergestellt und die Griff-/Pfeilgröße des Dimension-Linear-Symbols korrigiert',
+      ],
+    },
+    {
       title: 'Texteditor: Absatzausrichtung, Unterstreichung & Korrekturen für gedrehten Text',
       highlights: [
         'Neue Schaltflächen zur Absatzausrichtung in der Texteditor-Symbolleiste — Align Left, Align Center, Align Right und Justify — als Überschreibung über der vom Attachment Point vorgegebenen Spalte; nur für Text-Entitäten verfügbar, nicht für Multileader oder Bemaßungsbeschriftungen',
@@ -649,6 +673,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   es: [
+    {
+      title: 'Trim: soporte para Arc, Circle, Ellipse y Polyline',
+      highlights: [
+        'Trim ahora funciona con Arc, Circle, Ellipse y Polyline, no solo con Line — pasa el cursor sobre el segmento entre dos intersecciones y haz clic para recortarlo, igual que siempre ha funcionado con Line',
+        'Circle, Ellipse y una Polyline cerrada (incluido Rectangle) no tienen un inicio o fin natural, así que recortarlos ahora requiere al menos dos intersecciones; la parte entre el par más cercano al cursor se elimina, y un Circle se recorta hasta convertirse en un Arc',
+        'Se corrigieron varios errores de intersección detectados al construir esto: Trim en Line ya no elimina toda la línea en una intersección que solo toca (sin cruzar), las intersecciones de Circle/Ellipse ya no pasan por alto un punto que cae exactamente sobre el extremo de la otra forma ni se desvían tras recortes repetidos, y Circle/Arc ya no atraviesan una Ellipse sin dejar el hueco',
+        'Las vistas previas de Ellipse para Mirror, Rotate y Trim ahora se renderizan con la orientación correcta en lugar de volver al eje sin rotar',
+        'Las entidades DXF POLYLINE antiguas (el formato anterior a LWPOLYLINE) ahora se importan correctamente, incluidos datos malformados o de tipo malla que antes no se podían analizar',
+        'Barra de herramientas de formas reordenada (Ellipse, Splines apiladas, Arc al final), iconos de la barra de marcado agrupados por familia de herramienta, botón de Array restaurado, y corregido el tamaño de agarre/flecha del icono de Dimension Linear',
+      ],
+    },
     {
       title: 'Editor de texto: alineación de párrafo, subrayado y correcciones de texto rotado',
       highlights: [
@@ -946,6 +981,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   fr: [
     {
+      title: 'Trim : prise en charge de Arc, Circle, Ellipse et Polyline',
+      highlights: [
+        'Trim fonctionne désormais aussi sur Arc, Circle, Ellipse et Polyline, pas seulement sur Line — survolez le segment entre deux intersections et cliquez pour le raccorder, exactement comme pour Line',
+        'Circle, Ellipse et une Polyline fermée (y compris Rectangle) n\'ont pas de début ou de fin naturel, donc les raccorder nécessite désormais au moins deux intersections ; la partie entre la paire la plus proche du curseur est supprimée, et un Circle se raccorde en un Arc',
+        'Plusieurs bugs d\'intersection découverts en construisant cette fonctionnalité ont été corrigés : le raccord d\'une Line ne supprime plus la ligne entière lors d\'une intersection tangente (sans croisement), les intersections Circle/Ellipse ne manquent plus un point tombant exactement sur l\'extrémité de l\'autre forme et ne dérivent plus lors de raccords répétés, et Circle/Arc ne traverse plus une Ellipse sans laisser l\'écart',
+        'Les aperçus d\'Ellipse pour Mirror, Rotate et Trim s\'affichent désormais dans la bonne orientation au lieu de revenir à l\'axe non pivoté',
+        'Les entités DXF POLYLINE historiques (le format antérieur à LWPOLYLINE) s\'importent désormais correctement, y compris les données malformées ou de type maillage qui échouaient auparavant à l\'analyse',
+        'Barre d\'outils des formes réorganisée (Ellipse, Splines empilées, Arc en dernier), icônes de la barre d\'annotation regroupées par famille d\'outils, bouton Array restauré, et taille de poignée/flèche de l\'icône Dimension Linear corrigée',
+      ],
+    },
+    {
       title: 'Éditeur de texte : alignement de paragraphe, soulignement et corrections de texte pivoté',
       highlights: [
         'Nouveaux boutons d\'alignement de paragraphe dans la barre d\'outils de l\'éditeur de texte — Align Left, Align Center, Align Right et Justify — en substitution de la colonne impliquée par le point d\'attache ; disponible uniquement pour les entités Text, pas pour Multileader ni les étiquettes de cote',
@@ -1240,6 +1286,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   it: [
+    {
+      title: 'Trim: supporto per Arc, Circle, Ellipse e Polyline',
+      highlights: [
+        'Trim ora funziona anche su Arc, Circle, Ellipse e Polyline, non solo su Line — passa il cursore sul segmento tra due intersezioni e clicca per tagliarlo, esattamente come già avveniva con Line',
+        'Circle, Ellipse e una Polyline chiusa (incluso Rectangle) non hanno un inizio o una fine naturali, quindi tagliarli ora richiede almeno due intersezioni; la parte tra la coppia più vicina al cursore viene rimossa, e un Circle viene tagliato fino a diventare un Arc',
+        'Corretti diversi bug di intersezione emersi durante lo sviluppo: il taglio di una Line non elimina più l\'intera linea in caso di intersezione tangente (senza incrocio), le intersezioni Circle/Ellipse non perdono più un punto che cade esattamente sull\'estremità dell\'altra forma né derivano più con tagli ripetuti, e Circle/Arc non attraversa più un\'Ellipse senza lasciare l\'interruzione',
+        'Le anteprime di Ellipse per Mirror, Rotate e Trim ora vengono renderizzate con l\'orientamento corretto invece di tornare all\'asse non ruotato',
+        'Le entità DXF POLYLINE storiche (il formato precedente a LWPOLYLINE) ora vengono importate correttamente, compresi i dati malformati o in stile mesh che prima non venivano analizzati',
+        'Barra degli strumenti delle forme riordinata (Ellipse, Spline impilate, Arc per ultimo), icone della barra di markup raggruppate per famiglia di strumenti, pulsante Array ripristinato, e corretta la dimensione di grip/freccia dell\'icona Dimension Linear',
+      ],
+    },
     {
       title: 'Editor di testo: allineamento paragrafo, sottolineato e correzioni per testo ruotato',
       highlights: [
@@ -1537,6 +1594,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   pt: [
     {
+      title: 'Trim: suporte para Arc, Circle, Ellipse e Polyline',
+      highlights: [
+        'O Trim agora funciona também com Arc, Circle, Ellipse e Polyline, não apenas com Line — passe o cursor sobre o segmento entre duas interseções e clique para cortá-lo, exatamente como já funcionava com Line',
+        'Circle, Ellipse e uma Polyline fechada (incluindo Rectangle) não têm um início ou fim natural, então cortá-los agora exige pelo menos duas interseções; a parte entre o par mais próximo do cursor é removida, e um Circle é cortado até virar um Arc',
+        'Corrigidos vários bugs de interseção encontrados ao construir isso: o corte de uma Line não apaga mais a linha inteira numa interseção apenas tangente (sem cruzamento), as interseções de Circle/Ellipse não perdem mais um ponto que cai exatamente no extremo da outra forma nem desviam mais em cortes repetidos, e Circle/Arc não corta mais direto através de uma Ellipse sem deixar a lacuna',
+        'As prévias de Ellipse para Mirror, Rotate e Trim agora são renderizadas na orientação correta, em vez de voltar ao eixo não rotacionado',
+        'Entidades DXF POLYLINE legadas (o formato anterior ao LWPOLYLINE) agora são importadas corretamente, incluindo dados malformados ou no estilo mesh que antes falhavam ao processar',
+        'Barra de ferramentas de formas reorganizada (Ellipse, Splines empilhadas, Arc por último), ícones da barra de marcação agrupados por família de ferramenta, botão Array restaurado, e corrigido o tamanho de grip/seta do ícone Dimension Linear',
+      ],
+    },
+    {
       title: 'Editor de texto: alinhamento de parágrafo, sublinhado e correções de texto rotacionado',
       highlights: [
         'Novos botões de alinhamento de parágrafo na barra de ferramentas do editor de texto — Align Left, Align Center, Align Right e Justify — como substituição sobre a coluna implícita pelo ponto de fixação; disponível apenas para entidades Text, não para Multileader ou rótulos de cota',
@@ -1832,6 +1900,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   uk: [
+    {
+      title: 'Trim: підтримка Arc, Circle, Ellipse та Polyline',
+      highlights: [
+        'Trim тепер працює також з Arc, Circle, Ellipse та Polyline, а не лише з Line — наведіть на сегмент між двома перетинами та клацніть, щоб відрізати його, точно так само як раніше працювало підрізання Line',
+        'Circle, Ellipse та замкнена Polyline (включно з Rectangle) не мають природного початку чи кінця, тому підрізання тепер вимагає щонайменше двох точок перетину; частина між парою, найближчою до курсора, видаляється, а Circle підрізається до Arc',
+        'Виправлено кілька помилок перетину, виявлених під час розробки: підрізання Line більше не видаляє всю лінію при дотичному (без перетину) перетині, перетини Circle/Ellipse більше не пропускають точку, що потрапляє точно на кінцеву точку іншої форми, і не дрейфують при повторних підрізаннях, а Circle/Arc більше не підрізає наскрізь через Ellipse без залишення розриву',
+        'Попередній перегляд Ellipse для Mirror, Rotate та Trim тепер відображається у правильній орієнтації замість повернення до неповернутої осі',
+        'Застарілі DXF-об\'єкти POLYLINE (формат, що передував LWPOLYLINE) тепер імпортуються коректно, включно з некоректними або mesh-подібними даними, які раніше не вдавалося розібрати',
+        'Панель інструментів фігур перевпорядкована (Ellipse, складені Spline, Arc останнім), піктограми панелі розмітки згруповано за родиною інструментів, кнопку Array відновлено, а розмір ручки/стрілки піктограми Dimension Linear виправлено',
+      ],
+    },
     {
       title: 'Текстовий редактор: вирівнювання абзацу, підкреслення та виправлення для повернутого тексту',
       highlights: [
@@ -2129,6 +2208,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   tr: [
     {
+      title: 'Trim: Arc, Circle, Ellipse ve Polyline desteği',
+      highlights: [
+        'Trim artık yalnızca Line değil, Arc, Circle, Ellipse ve Polyline üzerinde de çalışıyor — iki kesişim noktası arasındaki segmentin üzerine gelin ve kırpmak için tıklayın, tıpkı Line kırpmanın her zaman çalıştığı gibi',
+        'Circle, Ellipse ve kapalı bir Polyline (Rectangle dahil) doğal bir başlangıcı veya bitişi olmadığından, artık kırpmak için en az iki kesişim noktası gerekir; imlecin en yakın olduğu çift arasındaki parça kaldırılır ve bir Circle kırpılarak bir Arc\'a dönüşür',
+        'Bunu oluştururken ortaya çıkan birkaç kesişim hatası düzeltildi: Line kırpma artık yalnızca değen (kesişmeyen) bir kesişimde tüm çizgiyi silmiyor, Circle/Ellipse kesişimleri artık diğer şeklin uç noktasına tam denk gelen bir noktayı kaçırmıyor veya tekrarlanan kırpmalarda kaymıyor, ve Circle/Arc artık bir Ellipse\'i boşluk bırakmadan doğrudan kesmiyor',
+        'Mirror, Rotate ve Trim için Ellipse önizlemeleri artık döndürülmemiş eksene sıfırlanmak yerine doğru yönde çiziliyor',
+        'Eski DXF POLYLINE nesneleri (LWPOLYLINE\'dan önceki format) artık, önceden ayrıştırılamayan bozuk veya mesh tarzı veriler dahil olmak üzere doğru şekilde içe aktarılıyor',
+        'Şekiller araç çubuğu yeniden sıralandı (Ellipse, üst üste Spline\'lar, Arc en sonda), işaretleme araç çubuğu simgeleri araç ailesine göre gruplandı, Array düğmesi geri yüklendi ve Dimension Linear simgesinin tutamaç/ok boyutu düzeltildi',
+      ],
+    },
+    {
       title: 'Metin düzenleyici: paragraf hizalama, altı çizili ve döndürülmüş metin düzeltmeleri',
       highlights: [
         'Metin düzenleyici araç çubuğuna yeni paragraf hizalama düğmeleri eklendi — Align Left, Align Center, Align Right ve Justify — tutturma noktasının ima ettiği sütunun üzerine bir geçersiz kılma olarak; yalnızca Text nesneleri için kullanılabilir, Multileader veya ölçü etiketleri için değil',
@@ -2424,6 +2514,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   zh: [
+    {
+      title: 'Trim：支持 Arc、Circle、Ellipse 和 Polyline',
+      highlights: [
+        'Trim 现在不仅支持 Line，还支持 Arc、Circle、Ellipse 和 Polyline — 将光标悬停在两个交点之间的线段上并单击即可修剪，与 Line 修剪的方式完全相同',
+        'Circle、Ellipse 以及闭合的 Polyline（包括 Rectangle）没有自然的起点或终点，因此修剪它们现在至少需要两个交点；光标最接近的一对交点之间的部分将被删除，Circle 会被修剪成 Arc',
+        '修复了开发过程中发现的多个交点问题：Line 修剪在仅相切（不相交）的交点处不再删除整条线，Circle/Ellipse 的交点计算不再遗漏正好落在另一图形端点上的交点，也不再在重复修剪时出现漂移，Circle/Arc 也不再在没有留下缺口的情况下直接穿过 Ellipse',
+        'Mirror、Rotate 和 Trim 的 Ellipse 预览现在会以正确的方向渲染，而不是重置为未旋转的轴向',
+        '旧版 DXF POLYLINE 图元（LWPOLYLINE 之前的格式）现在可以正确导入，包括以前无法解析的格式错误或网格样式数据',
+        '重新排列了形状工具栏（Ellipse、堆叠的 Spline、Arc 放在最后），标记工具栏图标按工具类别分组，恢复了 Array 按钮，并修复了 Dimension Linear 图标的控制点/箭头大小问题',
+      ],
+    },
     {
       title: '文字编辑器：段落对齐、下划线与旋转文字修复',
       highlights: [
@@ -2721,6 +2822,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   hi: [
     {
+      title: 'Trim: Arc, Circle, Ellipse और Polyline समर्थन',
+      highlights: [
+        'Trim अब केवल Line ही नहीं, बल्कि Arc, Circle, Ellipse और Polyline पर भी काम करता है — दो प्रतिच्छेदन बिंदुओं के बीच के खंड पर होवर करें और उसे काटने के लिए क्लिक करें, बिल्कुल वैसे ही जैसे Line ट्रिम हमेशा से काम करता रहा है',
+        'Circle, Ellipse और एक बंद Polyline (Rectangle सहित) का कोई प्राकृतिक आरंभ या अंत नहीं होता, इसलिए इन्हें ट्रिम करने के लिए अब कम से कम दो प्रतिच्छेदन बिंदु आवश्यक हैं; कर्सर के सबसे नज़दीकी जोड़े के बीच का हिस्सा हटा दिया जाता है, और एक Circle ट्रिम होकर एक Arc बन जाता है',
+        'इसे बनाते समय सामने आई कई प्रतिच्छेदन बग्स ठीक की गईं: Line ट्रिम अब केवल छूने वाले (न कि क्रॉस करने वाले) प्रतिच्छेदन पर पूरी लाइन नहीं हटाता, Circle/Ellipse प्रतिच्छेदन अब किसी ऐसे बिंदु को नहीं छोड़ते जो ठीक दूसरी आकृति के एंडपॉइंट पर पड़ता है, न ही बार-बार ट्रिम करने पर बहकते हैं, और Circle/Arc अब बिना गैप छोड़े सीधे किसी Ellipse से होकर नहीं कटता',
+        'Mirror, Rotate और Trim के लिए Ellipse प्रीव्यू अब बिना घुमाई गई धुरी पर वापस जाने के बजाय सही ओरिएंटेशन में रेंडर होते हैं',
+        'पुराने DXF POLYLINE ऑब्जेक्ट (LWPOLYLINE से पहले का फॉर्मैट) अब सही तरीके से इम्पोर्ट होते हैं, जिसमें वह विकृत या मेश-शैली डेटा भी शामिल है जो पहले पार्स नहीं हो पाता था',
+        'शेप्स टूलबार को फिर से क्रमबद्ध किया गया (Ellipse, स्टैक्ड Splines, अंत में Arc), मार्कअप टूलबार आइकनों को टूल फैमिली के अनुसार समूहीकृत किया गया, Array बटन बहाल किया गया, और Dimension Linear आइकन के ग्रिप/एरो आकार को ठीक किया गया',
+      ],
+    },
+    {
       title: 'टेक्स्ट एडिटर: पैराग्राफ अलाइनमेंट, अंडरलाइन और घुमाए गए टेक्स्ट की खामियां ठीक कीं',
       highlights: [
         'टेक्स्ट एडिटर टूलबार में नए पैराग्राफ अलाइनमेंट बटन — Align Left, Align Center, Align Right, और Justify — अटैचमेंट पॉइंट से निहित कॉलम के ऊपर एक ओवरराइड के रूप में; केवल Text ऑब्जेक्ट के लिए उपलब्ध, Multileader या आयाम लेबल के लिए नहीं',
@@ -3016,6 +3128,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ar: [
+    {
+      title: 'Trim: دعم Arc وCircle وEllipse وPolyline',
+      highlights: [
+        'يعمل Trim الآن أيضاً على Arc وCircle وEllipse وPolyline، وليس فقط على Line — مرّر المؤشر فوق المقطع الواقع بين نقطتَي تقاطع وانقر لقصه، تماماً كما كان يعمل قص Line دائماً',
+        'ليس لدى Circle وEllipse وPolyline المغلقة (بما في ذلك Rectangle) بداية أو نهاية طبيعية، لذا يتطلب قصها الآن نقطتَي تقاطع على الأقل؛ يُحذف الجزء الواقع بين أقرب زوج من نقاط التقاطع إلى المؤشر، ويُقص Circle ليصبح Arc',
+        'تم إصلاح عدة أخطاء في التقاطع ظهرت أثناء بناء هذه الميزة: لم يعد قص Line يحذف الخط بأكمله عند تقاطع مماس فقط (دون عبور)، ولم تعد تقاطعات Circle وEllipse تفوّت نقطة تقع بالضبط على طرف الشكل الآخر أو تنحرف بعد عمليات قص متكررة، ولم يعد Circle أو Arc يقطع مباشرة عبر Ellipse دون ترك الفجوة',
+        'تُعرض الآن معاينات Ellipse لأوامر Mirror وRotate وTrim بالاتجاه الصحيح بدلاً من العودة إلى المحور غير المُدار',
+        'تُستورد الآن عناصر DXF من نوع POLYLINE القديمة (الصيغة السابقة لـ LWPOLYLINE) بشكل صحيح، بما في ذلك البيانات المشوهة أو على شكل شبكي التي كانت تفشل في التحليل سابقاً',
+        'أُعيد ترتيب شريط أدوات الأشكال (Ellipse، منحنيات Spline المكدّسة، ثم Arc أخيراً)، وتم تجميع أيقونات شريط أدوات التعليقات حسب عائلة الأداة، واستُعيد زر Array، وأُصلح حجم مقبض/سهم أيقونة Dimension Linear',
+      ],
+    },
     {
       title: 'محرر النص: محاذاة الفقرة، التسطير وإصلاحات النص المُدار',
       highlights: [
@@ -3313,6 +3436,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   id: [
     {
+      title: 'Trim: dukungan Arc, Circle, Ellipse & Polyline',
+      highlights: [
+        'Trim sekarang bekerja pada Arc, Circle, Ellipse, dan Polyline, tidak hanya Line — arahkan kursor ke segmen di antara dua titik perpotongan dan klik untuk memotongnya, persis seperti cara Line selalu dipotong',
+        'Circle, Ellipse, dan Polyline tertutup (termasuk Rectangle) tidak memiliki awal atau akhir alami, sehingga memotongnya sekarang memerlukan setidaknya dua titik perpotongan; bagian di antara pasangan yang paling dekat dengan kursor akan dihapus, dan Circle dipotong menjadi Arc',
+        'Memperbaiki beberapa bug perpotongan yang ditemukan saat membangun ini: pemotongan Line tidak lagi menghapus seluruh garis pada perpotongan yang hanya bersentuhan (tidak menyilang), perpotongan Circle/Ellipse tidak lagi melewatkan titik yang jatuh tepat di titik akhir bentuk lain atau bergeser setelah pemotongan berulang, dan Circle/Arc tidak lagi memotong langsung menembus Ellipse tanpa meninggalkan celah',
+        'Pratinjau Ellipse untuk Mirror, Rotate, dan Trim sekarang dirender dengan orientasi yang benar, bukan kembali ke sumbu yang belum diputar',
+        'Entitas DXF POLYLINE lama (format sebelum LWPOLYLINE) sekarang diimpor dengan benar, termasuk data yang tidak valid atau bergaya mesh yang sebelumnya gagal diproses',
+        'Toolbar bentuk diurutkan ulang (Ellipse, Spline bertumpuk, Arc terakhir), ikon toolbar markup dikelompokkan berdasarkan keluarga alat, tombol Array dipulihkan, dan ukuran grip/panah ikon Dimension Linear diperbaiki',
+      ],
+    },
+    {
       title: 'Text editor: perataan paragraf, garis bawah & perbaikan teks berputar',
       highlights: [
         'Tombol perataan paragraf baru di toolbar text editor — Align Left, Align Center, Align Right, dan Justify — sebagai penggantian di atas kolom yang tersirat oleh titik lampiran; tersedia hanya untuk entitas Text, bukan Multileader atau label dimensi',
@@ -3608,6 +3742,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ja: [
+    {
+      title: 'Trim：Arc、Circle、Ellipse、Polyline に対応',
+      highlights: [
+        'Trim が Line だけでなく Arc、Circle、Ellipse、Polyline でも使えるようになりました — 2つの交差点の間のセグメントの上にカーソルを移動し、クリックしてカットします。これまでの Line のトリムと全く同じ操作です',
+        'Circle、Ellipse、および閉じた Polyline（Rectangle を含む）には自然な始点や終点がないため、トリムには少なくとも2つの交差点が必要になりました。カーソルに最も近い交点のペアの間の部分が削除され、Circle は Arc にトリムされます',
+        'この機能の開発中に見つかったいくつかの交差点のバグを修正しました：Line のトリムは、接するだけ（交差しない）の交差点で直線全体を削除しなくなりました。Circle/Ellipse の交差点は、他の図形の端点にちょうど重なる点を見逃したり、繰り返しトリムした際にずれたりしなくなりました。また、Circle/Arc は隙間を残さず Ellipse をそのまま突き抜けてカットすることがなくなりました',
+        'Mirror、Rotate、Trim の Ellipse プレビューが、回転していない軸にリセットされることなく、正しい向きで描画されるようになりました',
+        'レガシーな DXF POLYLINE エンティティ（LWPOLYLINE 以前の形式）が正しくインポートされるようになりました。以前は解析に失敗していた不正な形式やメッシュ形式のデータも含まれます',
+        'シェイプツールバーを並べ替え（Ellipse、重なったスプライン、最後に Arc）、マークアップツールバーのアイコンをツールファミリーごとにグループ化、Array ボタンを復元、Dimension Linear アイコンのグリップ/矢印のサイズを修正しました',
+      ],
+    },
     {
       title: 'テキストエディター：段落の配置、下線、回転したテキストの修正',
       highlights: [
@@ -3905,6 +4050,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   pl: [
     {
+      title: 'Trim: obsługa Arc, Circle, Ellipse i Polyline',
+      highlights: [
+        'Trim działa teraz również na Arc, Circle, Ellipse i Polyline, nie tylko na Line — najedź kursorem na segment między dwoma punktami przecięcia i kliknij, aby go wyciąć, dokładnie tak jak zawsze działało przycinanie Line',
+        'Circle, Ellipse oraz zamknięta Polyline (w tym Rectangle) nie mają naturalnego początku ani końca, więc ich przycinanie wymaga teraz co najmniej dwóch punktów przecięcia; usuwana jest część między parą punktów najbliższą kursorowi, a Circle zostaje przycięty do Arc',
+        'Naprawiono kilka błędów przecięcia wykrytych podczas budowania tej funkcji: przycinanie Line nie usuwa już całej linii przy stycznym (nieprzecinającym się) przecięciu, przecięcia Circle/Ellipse nie pomijają już punktu leżącego dokładnie na końcu drugiego kształtu ani nie dryfują przy wielokrotnym przycinaniu, a Circle/Arc nie przecina już Ellipse na wskroś bez pozostawienia przerwy',
+        'Podglądy Ellipse dla Mirror, Rotate i Trim renderują się teraz w poprawnej orientacji zamiast wracać do nieobróconej osi',
+        'Starsze elementy DXF POLYLINE (format sprzed LWPOLYLINE) są teraz poprawnie importowane, w tym błędnie sformatowane lub siatkowe dane, których wcześniej nie dało się przetworzyć',
+        'Zmieniono kolejność paska narzędzi kształtów (Ellipse, ułożone Spline, Arc na końcu), pogrupowano ikony paska narzędzi opisów według rodziny narzędzi, przywrócono przycisk Array oraz naprawiono rozmiar uchwytu/strzałki ikony Dimension Linear',
+      ],
+    },
+    {
       title: 'Edytor tekstu: wyrównanie akapitu, podkreślenie i poprawki dla obróconego tekstu',
       highlights: [
         'Nowe przyciski wyrównania akapitu na pasku narzędzi edytora tekstu — Align Left, Align Center, Align Right i Justify — jako nadpisanie kolumny sugerowanej przez punkt zaczepienia; dostępne tylko dla elementów Text, nie dla Multileader ani etykiet wymiarów',
@@ -4200,6 +4356,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ko: [
+    {
+      title: 'Trim: Arc, Circle, Ellipse, Polyline 지원',
+      highlights: [
+        'Trim이 이제 Line뿐만 아니라 Arc, Circle, Ellipse, Polyline에서도 작동합니다 — 두 교차점 사이의 세그먼트 위에 커서를 올리고 클릭하여 자르면, Line 자르기가 항상 작동했던 방식과 정확히 동일합니다',
+        'Circle, Ellipse, 그리고 닫힌 Polyline(Rectangle 포함)은 자연스러운 시작점이나 끝점이 없으므로, 이제 자르려면 최소 두 개의 교차점이 필요합니다. 커서에 가장 가까운 교차점 쌍 사이의 부분이 제거되며, Circle은 잘려서 Arc가 됩니다',
+        '이 기능을 만들면서 발견된 여러 교차점 버그를 수정했습니다: Line 자르기는 이제 접하기만 하고 교차하지 않는 지점에서 선 전체를 삭제하지 않습니다. Circle/Ellipse 교차점은 이제 다른 도형의 끝점과 정확히 겹치는 점을 놓치거나 반복 자르기 후 어긋나지 않습니다. 그리고 Circle/Arc는 이제 간격을 남기지 않고 Ellipse를 그대로 관통해 자르지 않습니다',
+        'Mirror, Rotate, Trim의 Ellipse 미리보기가 이제 회전되지 않은 축으로 재설정되지 않고 올바른 방향으로 렌더링됩니다',
+        '레거시 DXF POLYLINE 객체(LWPOLYLINE 이전 형식)가 이제 올바르게 가져와지며, 이전에는 파싱에 실패했던 잘못된 형식이나 메시 스타일 데이터도 포함됩니다',
+        '도형 도구 모음 순서 변경(Ellipse, 겹쳐진 Spline, 마지막에 Arc), 마크업 도구 모음 아이콘을 도구 계열별로 그룹화, Array 버튼 복원, Dimension Linear 아이콘의 그립/화살표 크기 수정',
+      ],
+    },
     {
       title: '텍스트 편집기: 단락 정렬, 밑줄, 회전된 텍스트 수정',
       highlights: [
@@ -4497,6 +4664,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   vi: [
     {
+      title: 'Trim: hỗ trợ Arc, Circle, Ellipse và Polyline',
+      highlights: [
+        'Trim giờ đây hoạt động trên cả Arc, Circle, Ellipse và Polyline, không chỉ Line — di chuyển con trỏ qua đoạn giữa hai giao điểm và nhấp để cắt, giống hệt cách cắt Line đã luôn hoạt động',
+        'Circle, Ellipse và Polyline đóng (bao gồm Rectangle) không có điểm đầu hoặc cuối tự nhiên, vì vậy việc cắt chúng giờ đây cần ít nhất hai giao điểm; phần giữa cặp giao điểm gần con trỏ nhất sẽ bị xóa, và Circle được cắt thành Arc',
+        'Đã sửa một số lỗi giao điểm phát hiện được trong quá trình xây dựng tính năng này: cắt Line không còn xóa toàn bộ đường thẳng khi chỉ chạm (không cắt qua) một giao điểm, giao điểm Circle/Ellipse không còn bỏ sót điểm rơi đúng vào điểm cuối của hình kia hoặc trôi sau nhiều lần cắt lặp lại, và Circle/Arc không còn cắt xuyên thẳng qua Ellipse mà không để lại khoảng hở',
+        'Bản xem trước Ellipse cho Mirror, Rotate và Trim giờ đây hiển thị đúng hướng thay vì quay về trục chưa xoay',
+        'Các thực thể DXF POLYLINE cũ (định dạng có trước LWPOLYLINE) giờ đây được nhập đúng cách, bao gồm cả dữ liệu bị lỗi định dạng hoặc dạng lưới mà trước đây không phân tích được',
+        'Sắp xếp lại thanh công cụ hình khối (Ellipse, các Spline xếp chồng, Arc ở cuối), nhóm các biểu tượng thanh công cụ đánh dấu theo nhóm công cụ, khôi phục nút Array, và sửa kích thước tay nắm/mũi tên của biểu tượng Dimension Linear',
+      ],
+    },
+    {
       title: 'Trình soạn thảo văn bản: căn chỉnh đoạn văn, gạch chân & sửa lỗi văn bản xoay',
       highlights: [
         'Các nút căn chỉnh đoạn văn mới trên thanh công cụ trình soạn thảo văn bản — Align Left, Align Center, Align Right, và Justify — là một ghi đè trên cột được ngụ ý bởi điểm gắn; chỉ khả dụng cho thực thể Text, không dành cho Multileader hoặc nhãn kích thước',
@@ -4792,6 +4970,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   th: [
+    {
+      title: 'Trim: รองรับ Arc, Circle, Ellipse และ Polyline',
+      highlights: [
+        'Trim ตอนนี้ทำงานกับ Arc, Circle, Ellipse และ Polyline ได้แล้ว ไม่ใช่แค่ Line เท่านั้น — วาง cursor บนส่วนระหว่างจุดตัดสองจุดแล้วคลิกเพื่อตัด เหมือนกับที่การตัด Line ทำงานมาโดยตลอด',
+        'Circle, Ellipse และ Polyline แบบปิด (รวมถึง Rectangle) ไม่มีจุดเริ่มต้นหรือจุดสิ้นสุดตามธรรมชาติ ดังนั้นการตัดจึงต้องมีจุดตัดอย่างน้อยสองจุด ส่วนที่อยู่ระหว่างคู่จุดตัดที่ใกล้ cursor ที่สุดจะถูกลบ และ Circle จะถูกตัดจนกลายเป็น Arc',
+        'แก้ไขข้อบกพร่องเกี่ยวกับจุดตัดหลายรายการที่พบระหว่างการพัฒนาฟีเจอร์นี้: การตัด Line จะไม่ลบเส้นทั้งเส้นอีกต่อไปเมื่อมีจุดตัดที่แค่สัมผัส (ไม่ตัดผ่าน) จุดตัดของ Circle/Ellipse จะไม่พลาดจุดที่ตรงกับจุดปลายของรูปทรงอื่นพอดี หรือคลาดเคลื่อนหลังจากตัดซ้ำหลายครั้งอีกต่อไป และ Circle/Arc จะไม่ตัดทะลุผ่าน Ellipse โดยไม่เว้นช่องว่างอีกต่อไป',
+        'ตัวอย่างของ Ellipse สำหรับ Mirror, Rotate และ Trim ตอนนี้แสดงผลในทิศทางที่ถูกต้อง แทนที่จะรีเซ็ตกลับไปที่แกนที่ยังไม่ได้หมุน',
+        'วัตถุ DXF POLYLINE แบบเก่า (รูปแบบก่อน LWPOLYLINE) ตอนนี้นำเข้าได้อย่างถูกต้องแล้ว รวมถึงข้อมูลที่ผิดรูปแบบหรือแบบ mesh ที่ก่อนหน้านี้แยกวิเคราะห์ไม่ได้',
+        'จัดเรียงแถบเครื่องมือรูปทรงใหม่ (Ellipse, Spline ที่ซ้อนกัน, Arc อยู่ท้ายสุด) จัดกลุ่มไอคอนแถบเครื่องมือ markup ตามกลุ่มเครื่องมือ กู้คืนปุ่ม Array และแก้ไขขนาด grip/ลูกศรของไอคอน Dimension Linear',
+      ],
+    },
     {
       title: 'Text editor: การจัดแนวย่อหน้า ขีดเส้นใต้ และการแก้ไขข้อความที่หมุน',
       highlights: [
@@ -5089,6 +5278,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   ms: [
     {
+      title: 'Trim: sokongan Arc, Circle, Ellipse & Polyline',
+      highlights: [
+        'Trim kini berfungsi pada Arc, Circle, Ellipse dan Polyline, bukan hanya Line — tuding ke segmen antara dua titik persimpangan dan klik untuk memotongnya, sama seperti cara pemotongan Line sentiasa berfungsi',
+        'Circle, Ellipse, dan Polyline tertutup (termasuk Rectangle) tidak mempunyai permulaan atau penghujung semula jadi, jadi memotongnya kini memerlukan sekurang-kurangnya dua titik persimpangan; bahagian antara pasangan yang paling hampir dengan kursor akan dibuang, dan Circle dipotong menjadi Arc',
+        'Membaiki beberapa pepijat persimpangan yang ditemui semasa membina ciri ini: pemotongan Line tidak lagi membuang keseluruhan garis pada persimpangan yang hanya bersentuhan (tidak melintasi), persimpangan Circle/Ellipse tidak lagi terlepas titik yang jatuh tepat pada titik akhir bentuk lain atau melencong selepas pemotongan berulang, dan Circle/Arc tidak lagi memotong terus menembusi Ellipse tanpa meninggalkan jurang',
+        'Pratonton Ellipse untuk Mirror, Rotate dan Trim kini dipaparkan dalam orientasi yang betul dan bukannya kembali ke paksi yang belum diputar',
+        'Entiti DXF POLYLINE lama (format sebelum LWPOLYLINE) kini diimport dengan betul, termasuk data yang tidak sah atau bergaya mesh yang sebelum ini gagal dihurai',
+        'Bar alat bentuk disusun semula (Ellipse, Spline bertindan, Arc terakhir), ikon bar alat markup dikumpulkan mengikut keluarga alat, butang Array dipulihkan, dan saiz pemegang/anak panah ikon Dimension Linear dibaiki',
+      ],
+    },
+    {
       title: 'Text editor: penjajaran perenggan, garis bawah & pembetulan teks berputar',
       highlights: [
         'Butang penjajaran perenggan baharu pada bar alat text editor — Align Left, Align Center, Align Right, dan Justify — sebagai pengatasan ke atas lajur yang tersirat oleh titik lampiran; tersedia hanya untuk entiti Text, bukan Multileader atau label dimensi',
@@ -5384,6 +5584,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   bn: [
+    {
+      title: 'Trim: Arc, Circle, Ellipse ও Polyline সমর্থন',
+      highlights: [
+        'Trim এখন শুধু Line নয়, Arc, Circle, Ellipse এবং Polyline-এও কাজ করে — দুটি ছেদবিন্দুর মধ্যবর্তী সেগমেন্টের উপরে হোভার করুন এবং কাটতে ক্লিক করুন, ঠিক যেভাবে Line ট্রিম সবসময় কাজ করে এসেছে',
+        'Circle, Ellipse এবং একটি বদ্ধ Polyline (Rectangle সহ)-এর কোনো স্বাভাবিক শুরু বা শেষ নেই, তাই এগুলো ট্রিম করতে এখন কমপক্ষে দুটি ছেদবিন্দু প্রয়োজন; কার্সরের সবচেয়ে কাছের জোড়ার মধ্যবর্তী অংশ সরানো হয়, এবং একটি Circle ট্রিম হয়ে একটি Arc-এ পরিণত হয়',
+        'এটি তৈরি করার সময় সামনে আসা বেশ কয়েকটি ছেদবিন্দু বাগ ঠিক করা হয়েছে: Line ট্রিম এখন শুধু স্পর্শকারী (ক্রস না করা) ছেদবিন্দুতে পুরো লাইন মুছে ফেলে না, Circle/Ellipse ছেদবিন্দুগুলি আর অন্য আকৃতির এন্ডপয়েন্টে ঠিক পড়া কোনো বিন্দু বাদ দেয় না বা বারবার ট্রিম করার পরে সরে যায় না, এবং Circle/Arc আর কোনো ফাঁক না রেখে সরাসরি একটি Ellipse-এর মধ্য দিয়ে কাটে না',
+        'Mirror, Rotate এবং Trim-এর জন্য Ellipse প্রিভিউ এখন ঘোরানো হয়নি এমন অক্ষে ফিরে যাওয়ার পরিবর্তে সঠিক ওরিয়েন্টেশনে রেন্ডার হয়',
+        'পুরনো DXF POLYLINE এন্টিটি (LWPOLYLINE-এর আগের ফরম্যাট) এখন সঠিকভাবে ইম্পোর্ট হয়, যার মধ্যে রয়েছে সেই বিকৃত বা মেশ-স্টাইল ডেটাও যা আগে পার্স করা যেত না',
+        'শেপ টুলবার পুনর্বিন্যাস করা হয়েছে (Ellipse, স্ট্যাকড Splines, শেষে Arc), মার্কআপ টুলবার আইকনগুলো টুল ফ্যামিলি অনুযায়ী গ্রুপ করা হয়েছে, Array বাটন পুনরুদ্ধার করা হয়েছে, এবং Dimension Linear আইকনের গ্রিপ/অ্যারো আকার ঠিক করা হয়েছে',
+      ],
+    },
     {
       title: 'টেক্সট এডিটর: প্যারাগ্রাফ অ্যালাইনমেন্ট, আন্ডারলাইন এবং ঘোরানো টেক্সটের সংশোধন',
       highlights: [
@@ -5700,6 +5911,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   sw: [
+    {
+      title: 'Trim: msaada wa Arc, Circle, Ellipse na Polyline',
+      highlights: [
+        'Trim sasa inafanya kazi kwenye Arc, Circle, Ellipse, na Polyline, si Line pekee — elea juu ya sehemu kati ya makutano mawili na ubonyeze kukata, kama vile ukataji wa Line umekuwa ukifanya kazi kila wakati',
+        'Circle, Ellipse, na Polyline iliyofungwa (ikiwemo Rectangle) hazina mwanzo au mwisho wa asili, hivyo kukata moja sasa kunahitaji angalau nukta mbili za makutano; sehemu iliyo kati ya jozi iliyo karibu zaidi na kishale huondolewa, na Circle hukatwa hadi kuwa Arc',
+        'Imerekebisha hitilafu kadhaa za makutano zilizojitokeza wakati wa kujenga hii: ukataji wa Line hauondoi tena mstari mzima kwenye makutano yanayogusana tu (bila kukatiza), makutano ya Circle/Ellipse hayakosi tena nukta inayoangukia hasa kwenye ncha ya umbo lingine wala hayatelezi baada ya ukataji unaorudiwa, na Circle/Arc haikati tena moja kwa moja kupitia Ellipse bila kuacha pengo',
+        'Hakiki za Ellipse kwa Mirror, Rotate, na Trim sasa zinaonyeshwa kwa mwelekeo sahihi badala ya kurudi kwenye mhimili usiozungushwa',
+        'Vipande vya zamani vya DXF POLYLINE (muundo uliotangulia LWPOLYLINE) sasa vinaingizwa kwa usahihi, ikiwemo data iliyoharibika au ya mtindo wa mesh ambayo hapo awali ilishindwa kuchambuliwa',
+        'Upau wa zana za maumbo umepangwa upya (Ellipse, Spline zilizorundikwa, Arc mwishoni), aikoni za upau wa zana za markup zimepangwa kwa kikundi cha zana, kitufe cha Array kimerejeshwa, na ukubwa wa kishikio/mshale wa aikoni ya Dimension Linear umerekebishwa',
+      ],
+    },
     {
       title: 'Kihariri cha maandishi: ulinganifu wa aya, mstari wa chini na marekebisho ya maandishi yaliyozungushwa',
       highlights: [
@@ -6018,6 +6240,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   ur: [
     {
+      title: 'Trim: Arc، Circle، Ellipse اور Polyline کی سپورٹ',
+      highlights: [
+        'Trim اب صرف Line ہی نہیں بلکہ Arc، Circle، Ellipse اور Polyline پر بھی کام کرتا ہے — دو چوراہا نقاط کے درمیان سیگمنٹ پر ہوور کریں اور کاٹنے کے لیے کلک کریں، بالکل ویسے ہی جیسے Line ٹرم ہمیشہ سے کام کرتا رہا ہے',
+        'Circle، Ellipse اور بند Polyline (بشمول Rectangle) کا کوئی قدرتی آغاز یا اختتام نہیں ہوتا، اس لیے انہیں ٹرم کرنے کے لیے اب کم از کم دو چوراہا نقاط درکار ہیں؛ کرسر کے قریب ترین جوڑے کے درمیان کا حصہ ہٹا دیا جاتا ہے، اور ایک Circle ٹرم ہو کر Arc بن جاتا ہے',
+        'اسے بناتے وقت سامنے آنے والی کئی چوراہا خرابیاں ٹھیک کر دی گئیں: Line ٹرم اب صرف چھونے والے (نہ کہ کاٹنے والے) چوراہے پر پوری لائن نہیں ہٹاتا، Circle/Ellipse چوراہے اب کسی ایسے پوائنٹ کو نظرانداز نہیں کرتے جو دوسری شکل کے اینڈ پوائنٹ پر بالکل پڑتا ہے، نہ ہی بار بار ٹرم کرنے پر بہکتے ہیں، اور Circle/Arc اب بغیر خلا چھوڑے سیدھا Ellipse کے آر پار نہیں کٹتا',
+        'Mirror، Rotate اور Trim کے لیے Ellipse پیش نظارے اب گھمائے نہ گئے محور پر واپس جانے کی بجائے درست سمت میں رینڈر ہوتے ہیں',
+        'پرانے DXF POLYLINE اینٹیٹیز (وہ فارمیٹ جو LWPOLYLINE سے پہلے تھا) اب درست طریقے سے درآمد ہوتے ہیں، بشمول وہ بگڑا ہوا یا میش طرز کا ڈیٹا جو پہلے پارس نہیں ہو پاتا تھا',
+        'شیپس ٹول بار کو دوبارہ ترتیب دیا گیا (Ellipse، تہہ شدہ Splines، آخر میں Arc)، مارک اپ ٹول بار آئیکنز کو ٹول فیملی کے مطابق گروپ کیا گیا، Array بٹن بحال کیا گیا، اور Dimension Linear آئیکن کے گرپ/تیر کا سائز درست کیا گیا',
+      ],
+    },
+    {
       title: 'ٹیکسٹ ایڈیٹر: پیراگراف الائنمنٹ، انڈر لائن اور گھمائے گئے متن کی اصلاحات',
       highlights: [
         'ٹیکسٹ ایڈیٹر ٹول بار میں نئے پیراگراف الائنمنٹ بٹن — Align Left، Align Center، Align Right، اور Justify — اٹیچمنٹ پوائنٹ کے اشارہ کردہ کالم پر ایک اوور رائیڈ کے طور پر؛ صرف Text اینٹیٹیز کے لیے دستیاب، Multileader یا پیمائش لیبلز کے لیے نہیں',
@@ -6072,6 +6305,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   el: [
     {
+      title: 'Trim: υποστήριξη Arc, Circle, Ellipse & Polyline',
+      highlights: [
+        'Το Trim λειτουργεί πλέον και σε Arc, Circle, Ellipse και Polyline, όχι μόνο σε Line — τοποθετήστε τον κέρσορα πάνω από το τμήμα μεταξύ δύο σημείων τομής και κάντε κλικ για να το κόψετε, ακριβώς όπως λειτουργούσε πάντα το κόψιμο Line',
+        'Το Circle, η Ellipse και μια κλειστή Polyline (συμπεριλαμβανομένου ενός Rectangle) δεν έχουν φυσική αρχή ή τέλος, οπότε το κόψιμό τους απαιτεί πλέον τουλάχιστον δύο σημεία τομής· το τμήμα μεταξύ του ζεύγους που είναι πλησιέστερο στον κέρσορα αφαιρείται, και ένα Circle κόβεται σε Arc',
+        'Διορθώθηκαν αρκετά σφάλματα τομής που εντοπίστηκαν κατά την ανάπτυξη αυτής της λειτουργίας: το κόψιμο Line δεν διαγράφει πλέον ολόκληρη τη γραμμή σε μια τομή που απλώς εφάπτεται (χωρίς να διασταυρώνεται), οι τομές Circle/Ellipse δεν χάνουν πλέον ένα σημείο που πέφτει ακριβώς στο άκρο του άλλου σχήματος ούτε παρεκκλίνουν μετά από επαναλαμβανόμενα κοψίματα, και το Circle/Arc δεν κόβει πλέον κατευθείαν μέσα από μια Ellipse χωρίς να αφήνει το κενό',
+        'Οι προεπισκοπήσεις Ellipse για Mirror, Rotate και Trim αποδίδονται πλέον στον σωστό προσανατολισμό αντί να επανέρχονται στον μη περιστραμμένο άξονα',
+        'Παλαιότερες οντότητες DXF POLYLINE (η μορφή πριν από το LWPOLYLINE) εισάγονται πλέον σωστά, συμπεριλαμβανομένων δεδομένων με λανθασμένη μορφή ή τύπου πλέγματος που παλαιότερα απέτυχαν να αναλυθούν',
+        'Αναδιατάχθηκε η γραμμή εργαλείων σχημάτων (Ellipse, στοιβαγμένα Splines, Arc τελευταίο), ομαδοποιήθηκαν τα εικονίδια της γραμμής εργαλείων σημειώσεων ανά οικογένεια εργαλείου, επαναφέρθηκε το κουμπί Array και διορθώθηκε το μέγεθος λαβής/βέλους του εικονιδίου Dimension Linear',
+      ],
+    },
+    {
       title: 'Επεξεργαστής κειμένου: στοίχιση παραγράφου, υπογράμμιση & διορθώσεις για περιστραμμένο κείμενο',
       highlights: [
         'Νέα κουμπιά στοίχισης παραγράφου στη γραμμή εργαλείων του επεξεργαστή κειμένου — Align Left, Align Center, Align Right και Justify — ως παράκαμψη πάνω από τη στήλη που υποδηλώνεται από το σημείο προσάρτησης· διαθέσιμο μόνο για οντότητες Text, όχι για Multileader ή ετικέτες διαστάσεων',
@@ -6124,6 +6368,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     { title: 'Αναβάθμιση Angular, τεκμηρίωση & προσαρμοστικό πλέγμα', highlights: ['Αναβάθμιση Angular 19 → 20 → 21', 'Πλήρης ιστότοπος τεκμηρίωσης εντολών', 'Προσαρμοστικό πλέγμα CAD', 'Πίνακας ιστορικού (Αναίρεση / Ιστορικό / Επανάληψη)'] },
   ],
   pa: [
+    {
+      title: 'Trim: Arc, Circle, Ellipse ਅਤੇ Polyline ਸਮਰਥਨ',
+      highlights: [
+        'Trim ਹੁਣ ਸਿਰਫ਼ Line ਹੀ ਨਹੀਂ, ਸਗੋਂ Arc, Circle, Ellipse ਅਤੇ Polyline ਉੱਤੇ ਵੀ ਕੰਮ ਕਰਦਾ ਹੈ — ਦੋ ਇੰਟਰਸੈਕਸ਼ਨ ਬਿੰਦੂਆਂ ਵਿਚਕਾਰ ਸੈਗਮੈਂਟ ਉੱਤੇ ਹੋਵਰ ਕਰੋ ਅਤੇ ਕੱਟਣ ਲਈ ਕਲਿੱਕ ਕਰੋ, ਬਿਲਕੁਲ ਉਸੇ ਤਰ੍ਹਾਂ ਜਿਵੇਂ Line ਟ੍ਰਿਮ ਹਮੇਸ਼ਾ ਤੋਂ ਕੰਮ ਕਰਦਾ ਰਿਹਾ ਹੈ',
+        'Circle, Ellipse ਅਤੇ ਇੱਕ ਬੰਦ Polyline (Rectangle ਸਮੇਤ) ਦਾ ਕੋਈ ਕੁਦਰਤੀ ਸ਼ੁਰੂਆਤ ਜਾਂ ਅੰਤ ਨਹੀਂ ਹੁੰਦਾ, ਇਸ ਲਈ ਇਨ੍ਹਾਂ ਨੂੰ ਟ੍ਰਿਮ ਕਰਨ ਲਈ ਹੁਣ ਘੱਟੋ-ਘੱਟ ਦੋ ਇੰਟਰਸੈਕਸ਼ਨ ਬਿੰਦੂ ਲੋੜੀਂਦੇ ਹਨ; ਕਰਸਰ ਦੇ ਸਭ ਤੋਂ ਨੇੜੇ ਦੇ ਜੋੜੇ ਵਿਚਕਾਰਲਾ ਹਿੱਸਾ ਹਟਾਇਆ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਇੱਕ Circle ਟ੍ਰਿਮ ਹੋ ਕੇ Arc ਬਣ ਜਾਂਦਾ ਹੈ',
+        'ਇਹ ਬਣਾਉਂਦੇ ਸਮੇਂ ਸਾਹਮਣੇ ਆਈਆਂ ਕਈ ਇੰਟਰਸੈਕਸ਼ਨ ਬੱਗਸ ਠੀਕ ਕੀਤੀਆਂ ਗਈਆਂ: Line ਟ੍ਰਿਮ ਹੁਣ ਸਿਰਫ਼ ਛੂਹਣ ਵਾਲੇ (ਨਾ ਕਿ ਕੱਟਣ ਵਾਲੇ) ਇੰਟਰਸੈਕਸ਼ਨ ਉੱਤੇ ਪੂਰੀ ਲਾਈਨ ਨਹੀਂ ਹਟਾਉਂਦਾ, Circle/Ellipse ਇੰਟਰਸੈਕਸ਼ਨ ਹੁਣ ਕਿਸੇ ਅਜਿਹੇ ਬਿੰਦੂ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਨਹੀਂ ਕਰਦੇ ਜੋ ਦੂਜੀ ਸ਼ਕਲ ਦੇ ਅੰਤ ਬਿੰਦੂ ਉੱਤੇ ਬਿਲਕੁਲ ਪੈਂਦਾ ਹੈ, ਨਾ ਹੀ ਵਾਰ-ਵਾਰ ਟ੍ਰਿਮ ਕਰਨ ਉੱਤੇ ਭਟਕਦੇ ਹਨ, ਅਤੇ Circle/Arc ਹੁਣ ਬਿਨਾਂ ਪਾੜਾ ਛੱਡੇ ਸਿੱਧਾ Ellipse ਦੇ ਆਰ-ਪਾਰ ਨਹੀਂ ਕੱਟਦਾ',
+        'Mirror, Rotate ਅਤੇ Trim ਲਈ Ellipse ਪ੍ਰੀਵਿਊ ਹੁਣ ਬਿਨਾਂ ਘੁੰਮਾਏ ਧੁਰੇ ਉੱਤੇ ਵਾਪਸ ਜਾਣ ਦੀ ਬਜਾਏ ਸਹੀ ਦਿਸ਼ਾ ਵਿੱਚ ਰੈਂਡਰ ਹੁੰਦੇ ਹਨ',
+        'ਪੁਰਾਣੀਆਂ DXF POLYLINE ਐਂਟਿਟੀਆਂ (LWPOLYLINE ਤੋਂ ਪਹਿਲਾਂ ਦਾ ਫਾਰਮੈਟ) ਹੁਣ ਸਹੀ ਢੰਗ ਨਾਲ ਇੰਪੋਰਟ ਹੁੰਦੀਆਂ ਹਨ, ਜਿਸ ਵਿੱਚ ਉਹ ਖਰਾਬ ਜਾਂ ਮੈਸ਼-ਸ਼ੈਲੀ ਡਾਟਾ ਵੀ ਸ਼ਾਮਲ ਹੈ ਜੋ ਪਹਿਲਾਂ ਪਾਰਸ ਨਹੀਂ ਹੋ ਪਾਉਂਦਾ ਸੀ',
+        'ਸ਼ੇਪਸ ਟੂਲਬਾਰ ਨੂੰ ਮੁੜ ਕ੍ਰਮਬੱਧ ਕੀਤਾ ਗਿਆ (Ellipse, ਸਟੈਕਡ Splines, ਅੰਤ ਵਿੱਚ Arc), ਮਾਰਕਅੱਪ ਟੂਲਬਾਰ ਆਈਕਨਾਂ ਨੂੰ ਟੂਲ ਫੈਮਿਲੀ ਅਨੁਸਾਰ ਗਰੁੱਪ ਕੀਤਾ ਗਿਆ, Array ਬਟਨ ਬਹਾਲ ਕੀਤਾ ਗਿਆ, ਅਤੇ Dimension Linear ਆਈਕਨ ਦੇ ਗ੍ਰਿਪ/ਤੀਰ ਦਾ ਆਕਾਰ ਠੀਕ ਕੀਤਾ ਗਿਆ',
+      ],
+    },
     {
       title: 'ਟੈਕਸਟ ਐਡੀਟਰ: ਪੈਰਾਗ੍ਰਾਫ ਸੰਰੇਖਣ, ਅੰਡਰਲਾਈਨ ਅਤੇ ਘੁੰਮਾਏ ਟੈਕਸਟ ਦੀਆਂ ਸੁਧਾਈਆਂ',
       highlights: [
@@ -6421,6 +6676,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   sv: [
     {
+      title: 'Trim: stöd för Arc, Circle, Ellipse & Polyline',
+      highlights: [
+        'Trim fungerar nu även på Arc, Circle, Ellipse och Polyline, inte bara Line — håll markören över segmentet mellan två skärningspunkter och klicka för att klippa det, precis som Line-klippning alltid har fungerat',
+        'Circle, Ellipse och en stängd Polyline (inklusive Rectangle) har ingen naturlig start eller slut, så att klippa en sådan kräver nu minst två skärningspunkter; delen mellan paret närmast markören tas bort, och en Circle klipps ner till en Arc',
+        'Flera skärningsbuggar som upptäcktes under byggandet har åtgärdats: Line-klippning tar inte längre bort hela linjen vid en tangerande (icke-korsande) skärning, Circle/Ellipse-skärningar missar inte längre en punkt som hamnar exakt på den andra formens ändpunkt eller driver iväg efter upprepade klipp, och Circle/Arc klipper inte längre rakt igenom en Ellipse utan att lämna mellanrummet',
+        'Ellipse-förhandsvisningar för Mirror, Rotate och Trim renderas nu i rätt orientering istället för att återgå till den orginella, icke-roterade axeln',
+        'Äldre DXF POLYLINE-entiteter (formatet som föregick LWPOLYLINE) importeras nu korrekt, inklusive felformad eller mesh-liknande data som tidigare misslyckades att tolkas',
+        'Formverktygsfältet har ordnats om (Ellipse, staplade Splines, Arc sist), ikoner i markeringsverktygsfältet har grupperats efter verktygsfamilj, Array-knappen har återställts, och grepp-/pilstorleken för Dimension Linear-ikonen har korrigerats',
+      ],
+    },
+    {
       title: 'Texteditor: styckejustering, understrykning & korrigeringar för roterad text',
       highlights: [
         'Nya knappar för styckejustering i texteditorns verktygsfält — Align Left, Align Center, Align Right och Justify — som en åsidosättning ovanpå kolumnen som antyds av förankringspunkten; tillgängligt endast för Text-entiteter, inte Multileader eller måttsättningsetiketter',
@@ -6716,6 +6982,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   tl: [
+    {
+      title: 'Trim: suporta sa Arc, Circle, Ellipse at Polyline',
+      highlights: [
+        'Gumagana na ngayon ang Trim sa Arc, Circle, Ellipse, at Polyline, hindi lang Line — mag-hover sa segment sa pagitan ng dalawang intersection point at mag-click para putulin ito, eksaktong tulad ng dati nang paggana ng pag-trim sa Line',
+        'Ang Circle, Ellipse, at saradong Polyline (kasama ang Rectangle) ay walang natural na simula o wakas, kaya ang pag-trim ngayon ay nangangailangan ng hindi bababa sa dalawang intersection point; ang bahaging nasa pagitan ng pares na pinakamalapit sa cursor ang tatanggalin, at ang Circle ay puputulin patungong Arc',
+        'Naayos ang ilang intersection bug na natuklasan habang ginagawa ito: hindi na tinatanggal ng pag-trim sa Line ang buong linya sa isang intersection na dumadampi lang (hindi tumatawid), hindi na nakakaligtaan ng mga intersection ng Circle/Ellipse ang puntong eksaktong tumatapat sa endpoint ng kabilang hugis o lumilihis pagkatapos ng paulit-ulit na pag-trim, at hindi na direktang pumuputol ang Circle/Arc sa isang Ellipse nang hindi iniiwan ang puwang',
+        'Ang mga preview ng Ellipse para sa Mirror, Rotate, at Trim ay nag-re-render na ngayon sa tamang oryentasyon sa halip na bumalik sa hindi pa naikot na axis',
+        'Maayos na ngayon na-i-import ang mga legacy DXF POLYLINE entity (ang format bago ang LWPOLYLINE), kasama na ang sirang o mesh-style na data na noon ay nabibigo sa pag-parse',
+        'Muling inayos ang shapes toolbar (Ellipse, nakapatong na Spline, Arc sa huli), pinagsama-sama ang mga icon ng markup toolbar ayon sa pamilya ng tool, naibalik ang Array button, at naayos ang laki ng grip/arrow ng Dimension Linear icon',
+      ],
+    },
     {
       title: 'Text editor: pag-align ng parapo, underline & mga ayos para sa naikot na text',
       highlights: [
@@ -7014,6 +7291,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   nl: [
     {
+      title: 'Trim: ondersteuning voor Arc, Circle, Ellipse & Polyline',
+      highlights: [
+        'Trim werkt nu ook op Arc, Circle, Ellipse en Polyline, niet alleen op Line — beweeg over het segment tussen twee snijpunten en klik om het te snijden, precies zoals Line-trim altijd al werkte',
+        'Circle, Ellipse en een gesloten Polyline (inclusief Rectangle) hebben geen natuurlijk begin of einde, dus het snijden ervan vereist nu minstens twee snijpunten; het deel tussen het paar dat het dichtst bij de cursor ligt wordt verwijderd, en een Circle wordt gesneden tot een Arc',
+        'Verschillende snijpuntbugs opgelost die tijdens de ontwikkeling naar voren kwamen: Line-trim verwijdert niet langer de hele lijn bij een rakend (niet-kruisend) snijpunt, Circle/Ellipse-snijpunten missen niet langer een punt dat precies op het eindpunt van de andere vorm valt en drijven niet langer af na herhaald snijden, en Circle/Arc snijdt niet langer recht door een Ellipse zonder de opening over te laten',
+        'Ellipse-previews voor Mirror, Rotate en Trim worden nu in de juiste oriëntatie weergegeven in plaats van terug te vallen op de niet-geroteerde as',
+        'Verouderde DXF POLYLINE-entiteiten (het formaat van vóór LWPOLYLINE) worden nu correct geïmporteerd, inclusief misvormde of mesh-achtige data die voorheen niet kon worden verwerkt',
+        'Vormen-werkbalk opnieuw geordend (Ellipse, gestapelde Splines, Arc als laatste), markup-werkbalkpictogrammen gegroepeerd per gereedschapsfamilie, de Array-knop hersteld, en de grip-/pijlgrootte van het Dimension Linear-pictogram gecorrigeerd',
+      ],
+    },
+    {
       title: 'Teksteditor: alineauitlijning, onderstrepen & correcties voor geroteerde tekst',
       highlights: [
         'Nieuwe knoppen voor alineauitlijning in de werkbalk van de teksteditor — Align Left, Align Center, Align Right en Justify — als overschrijving boven de kolom die wordt geïmpliceerd door het aanhechtingspunt; alleen beschikbaar voor Text-entiteiten, niet voor Multileader of maatvoeringslabels',
@@ -7310,6 +7598,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   he: [
+    {
+      title: 'Trim: תמיכה ב-Arc, Circle, Ellipse ו-Polyline',
+      highlights: [
+        'Trim פועלת כעת גם על Arc, Circle, Ellipse ו-Polyline, לא רק על Line — רחפו מעל הקטע שבין שתי נקודות חיתוך ולחצו כדי לגזור אותו, בדיוק כפי שגיזום Line תמיד עבד',
+        'ל-Circle, Ellipse ו-Polyline סגורה (כולל Rectangle) אין התחלה או סוף טבעיים, כך שגיזום שלהם דורש כעת לפחות שתי נקודות חיתוך; הקטע שבין הזוג הקרוב ביותר לסמן מוסר, ו-Circle נגזר לכדי Arc',
+        'תוקנו מספר באגי חיתוך שהתגלו במהלך בניית התכונה: גיזום Line כבר לא מוחק את כל הקו בחיתוך שרק נוגע (ולא חוצה), חיתוכי Circle/Ellipse כבר לא מפספסים נקודה שנופלת בדיוק על קצה הצורה האחרת ולא סוטים לאחר גזירות חוזרות, ו-Circle/Arc כבר לא חותכים ישר דרך Ellipse בלי להשאיר את הפער',
+        'תצוגות מקדימות של Ellipse עבור Mirror, Rotate ו-Trim מוצגות כעת בכיוון הנכון במקום לחזור לציר הלא-מסובב',
+        'ישויות DXF POLYLINE ישנות (הפורמט שקדם ל-LWPOLYLINE) מיובאות כעת כראוי, כולל נתונים פגומים או בסגנון רשת שבעבר נכשלו בניתוח',
+        'סרגל כלי הצורות סודר מחדש (Ellipse, Splines מוערמים, Arc אחרון), אייקוני סרגל הסימון קובצו לפי משפחת כלי, כפתור Array שוחזר, וגודל האחיזה/החץ של אייקון Dimension Linear תוקן',
+      ],
+    },
     {
       title: 'עורך טקסט: יישור פסקאות, קו תחתון ותיקונים לטקסט מסובב',
       highlights: [
@@ -7608,6 +7907,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   ha: [
     {
+      title: 'Trim: tallafi na Arc, Circle, Ellipse da Polyline',
+      highlights: [
+        'Trim yanzu tana aiki akan Arc, Circle, Ellipse, da Polyline, ba Line kaɗai ba — riƙe a kan sashen da ke tsakanin tabon mahaɗa biyu ka danna don yanke shi, daidai yadda yankewar Line ta kasance tana aiki koyaushe',
+        'Circle, Ellipse, da Polyline rufaffiya (ciki har da Rectangle) ba su da farawa ko ƙarewa ta zahiri, don haka yankewarsu yanzu tana buƙatar aƙalla tabon mahaɗa biyu; sashen da ke tsakanin nau\'in mafi kusa da mai nuni ana cirewa, kuma ana yanke Circle zuwa Arc',
+        'An gyara kurakuran mahaɗa da dama da aka gano yayin gina wannan: yankewar Line ba ya ƙara share dukan layin a mahaɗar da take shafa kawai (ba ta ƙetarewa) ba, mahaɗai na Circle/Ellipse ba sa ƙara rasa wata nukta da ke faɗuwa daidai a ƙarshen wani siffa ko yin gefe bayan yankewa maimaitawa, kuma Circle/Arc ba ya ƙara yankewa kai tsaye ta cikin Ellipse ba tare da barin gibin ba',
+        'Preview na Ellipse don Mirror, Rotate, da Trim yanzu suna zana a daidai shugabanci maimakon komawa ga axis wanda ba a juya ba',
+        'Abubuwan DXF POLYLINE na dā (tsarin da ya gabaci LWPOLYLINE) yanzu ana shigo da su daidai, ciki har da bayanan da suka lalace ko na salon mesh waɗanda a baya suka kasa fassarawa',
+        'An sake tsara toolbar na siffofi (Ellipse, Spline masu tarawa, Arc na ƙarshe), an haɗa gumakan toolbar na markup bisa ga iyalin kayan aiki, an dawo da maɓallin Array, kuma an gyara girman riƙo/kibiya na gunkin Dimension Linear',
+      ],
+    },
+    {
       title: 'Naʼurar Gyaran Rubutu: daidaitawar sakin layi, layin ƙasa da gyare-gyaren rubutu mai jujjuyawa',
       highlights: [
         'Sabbin maɓallan daidaitawar sakin layi a kayan aiki na naʼurar gyaran rubutu — Align Left, Align Center, Align Right, da Justify — a matsayin canji a kan ginshiƙin da maki na haɗi ke nunawa; ana samu ga abubuwan Text kaɗai, ba don Multileader ko alamun girma-girma ba',
@@ -7904,6 +8214,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   no: [
+    {
+      title: 'Trim: støtte for Arc, Circle, Ellipse & Polyline',
+      highlights: [
+        'Trim fungerer nå også på Arc, Circle, Ellipse og Polyline, ikke bare Line — hold markøren over segmentet mellom to skjæringspunkter og klikk for å kutte det, akkurat slik Line-trimming alltid har fungert',
+        'Circle, Ellipse og en lukket Polyline (inkludert Rectangle) har ikke noe naturlig start eller slutt, så å trimme en slik krever nå minst to skjæringspunkter; delen mellom paret nærmest markøren fjernes, og en Circle trimmes ned til en Arc',
+        'Fikset flere skjæringsfeil som dukket opp under byggingen: Line-trimming sletter ikke lenger hele linjen ved et tangerende (ikke-kryssende) skjæringspunkt, Circle/Ellipse-skjæringer går ikke lenger glipp av et punkt som havner nøyaktig på den andre formens endepunkt, og driver ikke lenger etter gjentatt trimming, og Circle/Arc kutter ikke lenger rett gjennom en Ellipse uten å etterlate åpningen',
+        'Ellipse-forhåndsvisninger for Mirror, Rotate og Trim vises nå i riktig orientering i stedet for å tilbakestilles til den urolerte aksen',
+        'Eldre DXF POLYLINE-entiteter (formatet som kom før LWPOLYLINE) importeres nå riktig, inkludert feilformatert eller mesh-lignende data som tidligere ikke kunne tolkes',
+        'Formverktøylinjen er omorganisert (Ellipse, stablede Splines, Arc sist), markup-verktøylinjeikoner er gruppert etter verktøyfamilie, Array-knappen er gjenopprettet, og grep-/pilstørrelsen på Dimension Linear-ikonet er korrigert',
+      ],
+    },
     {
       title: 'Tekstredigering: avsnittsjustering, understreking og fikser for rotert tekst',
       highlights: [
@@ -8202,6 +8523,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   da: [
     {
+      title: 'Trim: understøttelse af Arc, Circle, Ellipse & Polyline',
+      highlights: [
+        'Trim fungerer nu også på Arc, Circle, Ellipse og Polyline, ikke kun Line — hold markøren over segmentet mellem to skæringspunkter, og klik for at skære det, præcis som Line-trimning altid har fungeret',
+        'Circle, Ellipse og en lukket Polyline (inklusive Rectangle) har ikke en naturlig start eller slutning, så at trimme en sådan kræver nu mindst to skæringspunkter; delen mellem det par, der er tættest på markøren, fjernes, og en Circle trimmes ned til en Arc',
+        'Rettet flere skæringsfejl, der dukkede op under udviklingen: Line-trimning sletter ikke længere hele linjen ved et tangerende (ikke-krydsende) skæringspunkt, Circle/Ellipse-skæringer springer ikke længere et punkt over, der lander præcis på den anden forms endepunkt, og driver ikke længere ved gentagen trimning, og Circle/Arc skærer ikke længere lige igennem en Ellipse uden at efterlade mellemrummet',
+        'Ellipse-forhåndsvisninger for Mirror, Rotate og Trim gengives nu i den korrekte retning i stedet for at nulstille til den urolerede akse',
+        'Ældre DXF POLYLINE-entiteter (formatet forud for LWPOLYLINE) importeres nu korrekt, inklusive fejlformateret eller mesh-lignende data, der tidligere ikke kunne fortolkes',
+        'Formværktøjslinjen er omarrangeret (Ellipse, stablede Splines, Arc sidst), markup-værktøjslinjeikoner er grupperet efter værktøjsfamilie, Array-knappen er genoprettet, og greb-/pilestørrelsen på Dimension Linear-ikonet er rettet',
+      ],
+    },
+    {
       title: 'Teksteditor: afsnitsjustering, understregning og fix for roteret tekst',
       highlights: [
         'Nye afsnitsjusteringsknapper i teksteditorens værktøjslinje — Align Left, Align Center, Align Right og Justify — lagt oven på fastgørelsespunkt-kolonnen; tilgængelig kun for Text-entiteter, ikke Multileader eller mål-etiketter',
@@ -8498,6 +8830,17 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   fi: [
+    {
+      title: 'Trim: tuki Arc-, Circle-, Ellipse- ja Polyline-entiteeteille',
+      highlights: [
+        'Trim toimii nyt myös Arc-, Circle-, Ellipse- ja Polyline-entiteeteillä, ei vain Line-entiteetillä — pidä kohdistinta kahden leikkauspisteen välisen segmentin päällä ja napsauta leikataksesi sen, aivan kuten Line-trimmaus on aina toiminut',
+        'Circle-, Ellipse- ja suljetulla Polyline-entiteetillä (mukaan lukien Rectangle) ei ole luonnollista alkua tai loppua, joten niiden leikkaaminen vaatii nyt vähintään kaksi leikkauspistettä; kohdistinta lähinnä olevan parin välinen osa poistetaan, ja Circle leikataan Arc-muotoon',
+        'Korjattu useita tätä ominaisuutta rakennettaessa löytyneitä leikkauspisteiden vikoja: Line-trimmaus ei enää poista koko viivaa vain sivuavassa (ei-risteävässä) leikkauspisteessä, Circle/Ellipse-leikkauspisteet eivät enää ohita pistettä, joka osuu tarkalleen toisen muodon päätepisteeseen, eivätkä ne enää ajaudu toistuvassa trimmauksessa, ja Circle/Arc ei enää leikkaa suoraan Ellipse-muodon läpi jättämättä väliä',
+        'Mirror-, Rotate- ja Trim-toimintojen Ellipse-esikatselut piirtyvät nyt oikeassa suunnassa sen sijaan, että palautuisivat kiertämättömälle akselille',
+        'Vanhat DXF POLYLINE -entiteetit (LWPOLYLINE-muotoa edeltävä formaatti) tuodaan nyt oikein, mukaan lukien virheellisesti muotoillut tai verkkomaiset tiedot, joita ei aiemmin pystytty jäsentämään',
+        'Muototyökalurivi järjestettiin uudelleen (Ellipse, pinotut Splinet, Arc viimeisenä), merkintätyökalurivin kuvakkeet ryhmiteltiin työkaluperheittäin, Array-painike palautettiin, ja Dimension Linear -kuvakkeen kahvan/nuolen kokoa korjattiin',
+      ],
+    },
     {
       title: 'Tekstieditori: kappaleen tasaus, alleviivaus ja korjaukset kierretylle tekstille',
       highlights: [
