@@ -71,4 +71,4 @@ order: 8
 | 功能 | 删除图元的一段 | 将直线端点延伸到边界 |
 | 触发方式 | 悬停在要切割的线段上 | 悬停在要延伸的端点附近 |
 | 结果 | 图元分割或缩短 | 直线端点移动到边界 |
-| 支持的图元 | Line、Arc、Circle、Ellipse、Polyline | 仅 Line |
+| 支持的图元 | Line、Arc、Circle、Ellipse、Polyline | Line、Arc、Ellipse、Polyline |

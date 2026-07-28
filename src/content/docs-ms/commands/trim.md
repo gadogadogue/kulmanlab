@@ -71,4 +71,4 @@ Entiti yang digunakan sebagai **sempadan pemotongan** boleh menjadi Line, Arc, C
 | Fungsinya | Membuang segmen entiti | Meregangkan titik akhir garis ke sempadan |
 | Pencetus | Tuding ke segmen yang ingin dipotong | Tuding berhampiran titik akhir untuk dipanjangkan |
 | Hasil | Entiti berpecah atau memendek | Titik akhir garis bergerak ke sempadan |
-| Entiti yang disokong | Line, Arc, Circle, Ellipse, Polyline | Garis sahaja |
+| Entiti yang disokong | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

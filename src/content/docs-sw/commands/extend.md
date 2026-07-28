@@ -1,24 +1,24 @@
 ---
-title: Extend — Nyoosha Mwisho wa Mstari Hadi Mpaka wa Karibu Zaidi
-description: "Amri ya Extend hunyoosha mwisho wa karibu wa Mstari ulioegemewa hadi makutano ya karibu zaidi na kiumbe kingine. Hakikisho la moja kwa moja linaonyesha mstari ulionyooshwa kabla ya kubonyeza. Extend inafanya kazi kwenye viumbe vya Line pekee na hupuuza Text, Spline, na Multileader kama mipaka."
-keywords: [CAD extend command, extend line CAD, stretch line to boundary, line endpoint extend, hover extend preview, kulmanlab]
+title: Extend — Nyoosha Kipande Hadi Mpaka wa Karibu
+description: Amri ya Extend hunyoosha mwisho wa karibu wa Line, Arc, Ellipse au Polyline iliyo wazi iliyoegemewa hadi makutano ya karibu zaidi na kipande kingine. Hakikisho la moja kwa moja linaonyesha kipande kilichonyooshwa kabla ya kubonyeza.
+keywords: [CAD extend command, nyoosha mstari CAD, nyoosha arc CAD, nyoosha elipse CAD, nyoosha polyline CAD, nyoosha kipande hadi mpaka, hover extend preview, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-Amri ya `extend` hunyoosha mwisho wa karibu wa [Line](../line/) hadi makutano ya karibu zaidi ambayo yangeundwa na kiumbe kingine katika mchoro. Egemea karibu na mwisho unaotaka kunyoosha — hakikisho linaonyesha mstari ulionyooshwa — kisha bonyeza kutekeleza.
+Amri ya `extend` hunyoosha mwisho wa karibu wa [Line](../line/), [Arc](../arc/), [Ellipse](../ellipse/) au Polyline iliyo wazi iliyoegemewa hadi makutano ya karibu zaidi ambayo yangeundwa na kipande kingine katika mchoro. Egemea karibu na mwisho unaotaka kunyoosha — hakikisho linaonyesha kipande kilichonyooshwa — kisha bonyeza kutekeleza.
 
-Extend inafanya kazi kwenye **viumbe vya Line pekee**. Mipaka ambayo mstari unanyooshwa kwake inaweza kuwa aina yoyote nyingine ya kiumbe isipokuwa Text, Mtext, Multileader, na Spline.
+Ni vipande vyenye mwisho halisi tu vinavyoweza kunyooshwa. [Circle](../circle/) na Ellipse kamili (360°) daima ni maumbo yaliyofungwa bila mwisho, hivyo haviwezi kunyooshwa kamwe — vivyo hivyo kwa Polyline iliyofungwa au Rectangle. Ellipse ya sehemu (upinde wa duaradufu) na Arc vina miisho na vinanyooshwa kwa njia sawa na Line.
 
-## Kunyoosha mstari
+## Kunyoosha kipande
 
 1. Andika `extend` kwenye terminal au bonyeza kitufe cha **Extend** kwenye upau wa zana.
-2. **Egemea karibu na mwisho mmoja wa mstari** — hakikisho linaonyesha mstari ulionyooshwa hadi mpaka wa karibu zaidi katika mwelekeo huo.
+2. **Egemea karibu na mwisho mmoja** wa kipande unachotaka kunyoosha — hakikisho linakionyesha kikiwa kimenyooshwa hadi mpaka wa karibu zaidi katika mwelekeo huo.
 3. **Bonyeza** kutekeleza upanuzi.
 
-Amri inabaki hai baada ya kila upanuzi ili uweze kunyoosha mistari mingi kwa mfululizo. Bonyeza **Escape** kutoka.
+Amri inabaki hai baada ya kila upanuzi, hivyo unaweza kuendelea kuelea na kubonyeza kunyoosha vipande zaidi. Bonyeza **Escape** kutoka.
 
 ```
   Kabla:                       Baada:
@@ -31,16 +31,16 @@ Amri inabaki hai baada ya kila upanuzi ili uweze kunyoosha mistari mingi kwa mfu
 
 Amri inaangalia ni mwisho gani kishale kiko karibu nazo:
 
-- Kishale **kiko karibu zaidi na pointi ya mwisho** → mwisho unyooshwa mbele kwenye mwelekeo wa mstari.
-- Kishale **kiko karibu zaidi na pointi ya mwanzo** → mwanzo unyooshwa nyuma (katika mwelekeo kinyume).
+- **Line na Polyline iliyo wazi** — kishale kiko karibu zaidi na pointi ya mwisho hunyoosha mwisho mbele; kishale kiko karibu zaidi na pointi ya mwanzo hunyoosha mwanzo nyuma.
+- **Arc na Ellipse ya sehemu** — kishale kiko karibu zaidi na mmoja wa miisho ya pembe hufanya upinde ukue katika mwelekeo huo, ukizunguka kituo na radi sawa (au umbo sawa la duaradufu), hadi kufikia mpaka unaofuata.
 
-Mwali hutupwa kutoka mwisho uliochaguliwa kwenye mwelekeo wa mstari, na **makutano ya karibu zaidi** kwenye mwali huo na kiumbe kingine chochote (isipokuwa mstari wenyewe na aina zilizopuuzwa) unakuwa mwisho mpya.
+Mwali — au, kwa Arc na Ellipse, duara au mkondo wa msingi wa kipande chenyewe — hutupwa kutoka mwisho uliochaguliwa, na **makutano ya karibu zaidi** na kipande kingine chochote (isipokuwa kipande chenyewe na aina zilizopuuzwa) unakuwa mwisho mpya.
 
 Ikiwa hakuna makutano yanayopatikana katika mwelekeo huo, hakuna hakikisho linaloonekana na kubonyeza hakufanyi chochote.
 
 ## Mipaka iliyotengwa
 
-Aina zifuatazo za viumbe hupuuzwa kama mipaka — mstari haуnyooshwi kukutana nazo:
+Aina zifuatazo za vipande hupuuzwa kama mipaka — kipande hakinyooshwi kukutana nazo:
 
 - Text / Mtext
 - Multileader
@@ -54,20 +54,23 @@ Aina zingine zote (Line, Arc, Circle, Ellipse, Polyline, Dimension) hutumika kam
 |-----|--------|
 | `Escape` | Toka hali ya extend |
 
-## Viumbe vinavyotumika
+## Vipande vinavyotumika
 
-| Kiumbe | Kinaweza kunyooshwa? |
+| Kipande | Kinaweza kunyooshwa? |
 |--------|----------------|
 | Line | Ndiyo |
-| Arc, Circle, Ellipse | Hapana |
-| Polyline / Rectangle | Hapana |
+| Arc | Ndiyo |
+| Ellipse | Ndiyo — tu ikiwa tayari ni upinde wa sehemu; duaradufu kamili haina mwisho |
+| Circle | Hapana — daima umbo lililofungwa bila mwisho |
+| Polyline (iliyo wazi) | Ndiyo |
+| Polyline (iliyofungwa) / Rectangle | Hapana — daima umbo lililofungwa bila mwisho |
 | Text, Spline, Dimension, Leader | Hapana |
 
 ## Extend dhidi ya Trim
 
 | | Extend | Trim |
 |---|--------|------|
-| Kinachofanyika | Hunyoosha mwisho wa mstari hadi mpaka | Huondoa kipande cha mstari |
-| Kichocheo | Egemea karibu na mwisho wa kunyoosha | Egemea juu ya kipande cha kukata |
-| Matokeo | Mwisho wa mstari unahamia nje | Mstari unagawanywa au kufupishwa |
-| Zote | Mistari pekee | Mistari pekee |
+| Kinachofanyika | Hunyoosha mwisho wa kipande hadi mpaka | Huondoa sehemu ya kipande |
+| Kichocheo | Egemea karibu na mwisho wa kunyoosha | Egemea juu ya sehemu ya kukata |
+| Matokeo | Mwisho unahamia nje | Kipande kinagawanywa au kufupishwa |
+| Vipande vinavyotumika | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

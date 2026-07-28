@@ -71,4 +71,4 @@ Las entidades usadas como **bordes de corte** pueden ser una Line, Arc, Circle, 
 | Qué hace | Elimina un segmento de una entidad | Estira un extremo de línea hasta un borde |
 | Activación | Pasar cursor sobre el segmento a cortar | Pasar cursor cerca del extremo a extender |
 | Resultado | La entidad se divide o acorta | El extremo de la línea se mueve hasta el borde |
-| Entidades compatibles | Line, Arc, Circle, Ellipse, Polyline | Solo Line |
+| Entidades compatibles | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

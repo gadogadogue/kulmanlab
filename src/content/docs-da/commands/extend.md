@@ -1,24 +1,24 @@
 ---
-title: Extend-kommando — Forlæng en Linjeende til Nærmeste Grænse
-description: Extend-kommandoen forlænger det nærmeste endepunkt af en linje, du holder markøren over, til det nærmeste skæringspunkt med en anden entitet. En levende forhåndsvisning viser den forlængede linje, før du klikker. Extend fungerer kun på Line-entiteter og ignorerer Text, Spline og Multileader som grænser.
-keywords: [CAD extend-kommando, forlæng linje CAD, forlæng linje til grænse, linjeendepunkt forlængelse, hover extend-forhåndsvisning, kulmanlab]
+title: Extend-kommando — Forlæng en Entitet til Nærmeste Grænse
+description: Extend-kommandoen forlænger det nærmeste endepunkt af en Line, Arc, Ellipse eller åben Polyline, du holder markøren over, til det nærmeste skæringspunkt med en anden entitet. En levende forhåndsvisning viser den forlængede entitet, før du klikker.
+keywords: [CAD extend-kommando, forlæng linje CAD, forlæng bue CAD, forlæng ellipse CAD, forlæng polylinje CAD, forlæng entitet til grænse, hover extend-forhåndsvisning, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-Kommandoen `extend` forlænger det nærmeste endepunkt af en [Line](../line/) til det nærmeste skæringspunkt, den ville danne med en anden entitet i tegningen. Hold markøren nær det endepunkt, du vil forlænge — en forhåndsvisning viser den forlængede linje — klik derefter for at anvende.
+Kommandoen `extend` forlænger det nærmeste endepunkt af en [Line](../line/), [Arc](../arc/), [Ellipse](../ellipse/) eller åben [Polyline](../polyline/), du holder markøren over, til det nærmeste skæringspunkt, den ville danne med en anden entitet i tegningen. Hold markøren nær det endepunkt, du vil forlænge — en forhåndsvisning viser den forlængede entitet — klik derefter for at anvende.
 
-Extend fungerer kun på **Line-entiteter**. Grænserne linjen forlænges mod kan være en hvilken som helst anden entitetstype undtagen Text, Mtext, Multileader og Spline.
+Kun entiteter med et reelt endepunkt kan forlænges. En [Circle](../circle/) og en fuldstændig (360°) Ellipse er altid lukkede former uden endepunkt, så de kan aldrig forlænges — det samme gælder en lukket Polyline eller Rectangle. En delvis Ellipse (en elliptisk bue) og en Arc har endepunkter og forlænges på samme måde som en Line.
 
-## Forlænge en linje
+## Forlænge en entitet
 
 1. Skriv `extend` i terminalen eller klik på **Extend**-knappen i værktøjslinjen.
-2. **Hold markøren nær den ene ende af en linje** — forhåndsvisningen viser linjen forlænget til nærmeste grænse i den retning.
+2. **Hold markøren nær den ene ende** af entiteten, du vil forlænge — forhåndsvisningen viser den forlænget til nærmeste grænse i den retning.
 3. **Klik** for at anvende forlængelsen.
 
-Kommandoen forbliver aktiv efter hver forlængelse, så du kan forlænge flere linjer i rækkefølge. Tryk **Escape** for at afslutte.
+Kommandoen forbliver aktiv efter hver forlængelse, så du kan fortsætte med at holde markøren over og klikke for at forlænge flere entiteter. Tryk **Escape** for at afslutte.
 
 ```
   Før:                          Efter:
@@ -29,18 +29,18 @@ Kommandoen forbliver aktiv efter hver forlængelse, så du kan forlænge flere l
 
 ## Hvordan endepunktet vælges
 
-Kommandoen ser på, hvilket endepunkt markøren er tættest på:
+Kommandoen ser på, hvilken ende markøren er tættest på:
 
-- Markør **nærmere slutpunktet** → slutningen forlænges fremad langs linjeretningen.
-- Markør **nærmere startpunktet** → starten forlænges bagud (i modsat retning).
+- **Line og åben Polyline** — markør tættere på slutpunktet forlænger slutningen fremad; markør tættere på startpunktet forlænger starten bagud.
+- **Arc og delvis Ellipse** — markør tættere på en af de vinklede ender får buen til at vokse i den retning, omkring samme centrum og radius (eller samme ellipseform), indtil den når den næste grænse.
 
-En stråle kastes fra det valgte endepunkt langs linjeretningen, og det **nærmeste skæringspunkt** langs den stråle med en hvilken som helst anden entitet (undtagen selve linjen og de ignorerede typer) bliver det nye endepunkt.
+En stråle — eller, for Arc og Ellipse, entitetens egen underliggende cirkel eller kurve — kastes fra den valgte ende, og det **nærmeste skæringspunkt** med en hvilken som helst anden entitet (undtagen entiteten selv og de ignorerede typer) bliver det nye endepunkt.
 
 Hvis intet skæringspunkt findes i den retning, vises ingen forhåndsvisning, og et klik gør ingenting.
 
 ## Grænseundtagelser
 
-Følgende entitetstyper ignoreres som grænser — en linje forlænges ikke for at møde dem:
+Følgende entitetstyper ignoreres som grænser — en entitet forlænges ikke for at møde dem:
 
 - Text / Mtext
 - Multileader
@@ -59,15 +59,18 @@ Alle andre typer (Line, Arc, Circle, Ellipse, Polyline, Dimension) fungerer som 
 | Entitet | Kan forlænges? |
 |--------|----------------|
 | Line | Ja |
-| Arc, Circle, Ellipse | Nej |
-| Polyline / Rectangle | Nej |
+| Arc | Ja |
+| Ellipse | Ja — kun hvis den allerede er en delvis bue; en fuldstændig ellipse har intet endepunkt |
+| Circle | Nej — altid en lukket form uden endepunkt |
+| Polyline (åben) | Ja |
+| Polyline (lukket) / Rectangle | Nej — altid en lukket form uden endepunkt |
 | Text, Spline, Dimension, Leader | Nej |
 
 ## Extend vs Trim
 
 | | Extend | Trim |
 |---|--------|------|
-| Hvad den gør | Forlænger et linjeendepunkt til en grænse | Fjerner et segment af en linje |
+| Hvad den gør | Forlænger en entitets endepunkt til en grænse | Fjerner et segment af en entitet |
 | Udløser | Hold markøren nær endepunktet for at forlænge | Hold markøren over segmentet for at skære |
-| Resultat | Linjeendepunktet flytter sig udad | Linjen deles eller forkortes |
-| Begge | Kun linjer | Kun linjer |
+| Resultat | Endepunktet flytter sig udad | Entiteten deles eller forkortes |
+| Understøttede entiteter | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

@@ -71,4 +71,4 @@ The entities used as **cutting boundaries** can be a Line, Arc, Circle, Ellipse,
 | What it does | Removes a segment of an entity | Stretches a line endpoint to a boundary |
 | Trigger | Hover over the segment to cut | Hover near the endpoint to extend |
 | Result | Entity splits or shortens | Line endpoint moves to the boundary |
-| Supported entities | Line, Arc, Circle, Ellipse, Polyline | Line only |
+| Supported entities | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

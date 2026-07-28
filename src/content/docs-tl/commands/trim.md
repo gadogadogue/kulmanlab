@@ -71,4 +71,4 @@ Ang mga entity na ginagamit bilang **cutting boundary** ay puwedeng Line, Arc, C
 | Ano ang ginagawa | Tinatanggal ang segment ng isang entity | Iniuunat ang endpoint ng linya papunta sa isang boundary |
 | Trigger | Mag-hover sa segment na puputulin | Mag-hover malapit sa endpoint para i-extend |
 | Resulta | Nahahati o napapaikli ang entity | Gumagalaw ang endpoint ng linya papunta sa boundary |
-| Mga suportadong entity | Line, Arc, Circle, Ellipse, Polyline | Line lang |
+| Mga suportadong entity | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

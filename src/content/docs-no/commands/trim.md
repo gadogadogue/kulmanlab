@@ -71,4 +71,4 @@ Entitetene som brukes som **kuttgrenser** kan være Line, Arc, Circle, Ellipse e
 | Hva den gjør | Fjerner et segment av en entitet | Strekker et linjeendepunkt til en grense |
 | Utløser | Hold markøren over segmentet for å kutte | Hold markøren nær endepunktet for å forlenge |
 | Resultat | Entiteten deles eller forkortes | Linjeendepunktet flyttes til grensen |
-| Støttede entiteter | Line, Arc, Circle, Ellipse, Polyline | Kun Line |
+| Støttede entiteter | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

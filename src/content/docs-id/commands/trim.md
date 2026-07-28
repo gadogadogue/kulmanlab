@@ -71,4 +71,4 @@ Entitas yang digunakan sebagai **batas pemotongan** dapat berupa Line, Arc, Circ
 | Fungsi | Menghapus segmen entitas | Meregangkan titik akhir garis ke batas |
 | Pemicu | Arahkan kursor ke segmen yang akan dipotong | Arahkan kursor dekat titik akhir yang akan diperpanjang |
 | Hasil | Entitas terpecah atau memendek | Titik akhir garis berpindah ke batas |
-| Entitas yang didukung | Line, Arc, Circle, Ellipse, Polyline | Hanya Line |
+| Entitas yang didukung | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

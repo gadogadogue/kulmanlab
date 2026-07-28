@@ -71,4 +71,4 @@ Các thực thể dùng làm **ranh giới cắt** có thể là Line, Arc, Circ
 | Tác dụng | Xóa đoạn của thực thể | Kéo dài điểm cuối đường thẳng đến ranh giới |
 | Kích hoạt | Di chuyển qua đoạn cần cắt | Di chuyển gần điểm cuối cần kéo dài |
 | Kết quả | Thực thể chia hoặc rút ngắn | Điểm cuối đường thẳng di chuyển đến ranh giới |
-| Thực thể được hỗ trợ | Line, Arc, Circle, Ellipse, Polyline | Chỉ Line |
+| Thực thể được hỗ trợ | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

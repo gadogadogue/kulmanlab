@@ -71,4 +71,4 @@ Le entità usate come **bordi di taglio** possono essere una Line, un Arc, Circl
 | Cosa fa | Rimuove un segmento di un'entità | Allunga un endpoint di una linea fino a un bordo |
 | Trigger | Passa il cursore sul segmento da tagliare | Passa il cursore vicino all'endpoint da estendere |
 | Risultato | L'entità si divide o si accorcia | L'endpoint della linea si sposta fino al bordo |
-| Entità supportate | Line, Arc, Circle, Ellipse, Polyline | Solo Line |
+| Entità supportate | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

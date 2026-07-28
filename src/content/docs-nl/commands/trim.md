@@ -71,4 +71,4 @@ De entiteiten die als **snijgrenzen** worden gebruikt, kunnen Line, Arc, Circle,
 | Wat het doet | Verwijdert een segment van een entiteit | Rekt een lijneindpunt uit tot een grens |
 | Trigger | Beweeg over het te snijden segment | Beweeg bij het eindpunt om te verlengen |
 | Resultaat | Entiteit wordt gesplitst of verkort | Lijneindpunt verplaatst naar de grens |
-| Ondersteunde entiteiten | Line, Arc, Circle, Ellipse, Polyline | Alleen Line |
+| Ondersteunde entiteiten | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

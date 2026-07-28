@@ -1,24 +1,24 @@
 ---
-title: Extend Komutu — KulmanLab CAD'de Çizgi Ucunu En Yakın Sınıra Uzat
-description: Extend komutu, üzerine gelinmiş bir Çizginin en yakın ucunu başka bir nesneyle oluşturacağı en yakın kesişime kadar uzatır. Tıklamadan önce canlı önizleme uzatılmış çizgiyi gösterir. Extend yalnızca Çizgi nesnelerinde çalışır ve Metin, Spline ile Çoklu Göstergeni sınır olarak yok sayar.
-keywords: [CAD extend komutu, çizgiyi uzat CAD, çizgiyi sınıra uzat, çizgi ucu uzatma, üzerine gelme uzatma önizlemesi, kulmanlab]
+title: Extend Komutu — Nesneyi En Yakın Sınıra Uzatma
+description: Extend komutu, üzerine gelinen bir Line, Arc, Ellipse veya açık Polyline'ın en yakın ucunu başka bir nesneyle oluşturacağı en yakın kesişime kadar uzatır. Canlı önizleme, tıklamadan önce uzatılmış nesneyi gösterir.
+keywords: [CAD extend komutu, çizgiyi uzat CAD, yayı uzat CAD, elipsi uzat CAD, çoklu çizgiyi uzat CAD, nesneyi sınıra uzat, üzerine gelme uzatma önizlemesi, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-`extend` komutu, bir [Çizgi](../line/)nin en yakın ucunu, çizimdeki başka bir nesneyle oluşturacağı en yakın kesişime kadar uzatır. Uzatmak istediğiniz ucun yakınına gelin — bir önizleme uzatılmış çizgiyi gösterir — ardından uygulamak için tıklayın.
+`extend` komutu, üzerine gelinen bir [Line](../line/), [Arc](../arc/), [Ellipse](../ellipse/) veya açık [Polyline](../polyline/)'ın en yakın ucunu, çizimdeki başka bir nesneyle oluşturacağı en yakın kesişime kadar uzatır. Uzatmak istediğiniz ucun yakınına gelin — bir önizleme uzatılmış nesneyi gösterir — ardından uygulamak için tıklayın.
 
-Extend yalnızca **Çizgi nesnelerinde** çalışır. Çizginin uzandığı sınırlar, Metin, Mtext, Çoklu Gösterge ve Spline dışındaki herhangi bir nesne türü olabilir.
+Yalnızca gerçek bir ucu olan nesneler uzatılabilir. Bir [Circle](../circle/) ve tam (360°) bir Ellipse her zaman ucu olmayan kapalı şekillerdir, bu yüzden asla uzatılamazlar — kapalı bir Polyline veya Rectangle için de aynı geçerlidir. Kısmi bir Ellipse (eliptik bir yay) ve bir Arc'ın uçları vardır ve tıpkı bir Line gibi uzatılırlar.
 
-## Çizgi Uzatma
+## Bir nesneyi uzatma
 
 1. Terminale `extend` yazın veya araç çubuğundaki **Extend** düğmesine tıklayın.
-2. **Bir çizginin bir ucuna yakın gelin** — önizleme, çizgiyi o yöndeki en yakın sınıra kadar uzatılmış gösterir.
+2. Uzatmak istediğiniz nesnenin **bir ucunun yakınına gelin** — önizleme, o yöndeki en yakın sınıra kadar uzatılmış halini gösterir.
 3. Uzatmayı uygulamak için **tıklayın**.
 
-Komut, her uzatmanın ardından aktif kalır, böylece birden fazla çizgiyi sırayla uzatabilirsiniz. Çıkmak için **Escape** tuşuna basın.
+Komut, her uzatmanın ardından aktif kalır, böylece daha fazla nesneyi uzatmak için üzerine gelip tıklamaya devam edebilirsiniz. Çıkmak için **Escape** tuşuna basın.
 
 ```
   Önce:                      Sonra:
@@ -27,26 +27,26 @@ Komut, her uzatmanın ardından aktif kalır, böylece birden fazla çizgiyi sı
   (kısa çizgi)     (sınır)  (sınıra uzatıldı)
 ```
 
-## Uç Nokta Seçim Mantığı
+## Uç nokta nasıl seçilir
 
 Komut, imlecin hangi uca daha yakın olduğuna bakar:
 
-- İmleç **bitiş noktasına daha yakınsa** → uç, çizgi yönü boyunca ileri uzatılır.
-- İmleç **başlangıç noktasına daha yakınsa** → başlangıç, geriye doğru uzatılır (zıt yönde).
+- **Line ve açık Polyline** — imleç bitiş noktasına daha yakınsa uç ileri uzatılır; imleç başlangıç noktasına daha yakınsa başlangıç geriye uzatılır.
+- **Arc ve kısmi Ellipse** — imleç açısal uçlardan birine daha yakınsa, yay o yönde aynı merkez ve yarıçap (veya aynı elips şekli) etrafında bir sonraki sınıra ulaşana kadar büyür.
 
-Seçilen uç noktadan çizgi yönü boyunca bir ışın yayılır ve bu ışın boyunca herhangi bir başka nesneyle (çizginin kendisi ve yok sayılan türler hariç) oluşan **en yakın kesişim** yeni uç nokta olur.
+Seçilen uçtan bir ışın — Arc ve Ellipse için nesnenin kendi altındaki daire veya eğrisi — yayılır ve başka herhangi bir nesneyle (nesnenin kendisi ve yok sayılan türler hariç) oluşan **en yakın kesişim** yeni uç nokta olur.
 
 O yönde kesişim bulunamazsa, önizleme görünmez ve tıklamak hiçbir şey yapmaz.
 
-## Sınır Dışlamaları
+## Sınır dışlamaları
 
-Aşağıdaki nesne türleri sınır olarak yok sayılır — bir çizgi bunlarla karşılaşmak için uzanmaz:
+Aşağıdaki nesne türleri sınır olarak yok sayılır — bir nesne bunlarla karşılaşmak için uzanmaz:
 
 - Metin / Mtext
 - Çoklu Gösterge
 - Spline
 
-Diğer tüm türler (Çizgi, Yay, Daire, Elips, Çoklu Çizgi, Ölçü) geçerli sınır olarak işlev görür.
+Diğer tüm türler (Line, Arc, Circle, Ellipse, Polyline, Dimension) geçerli sınır olarak işlev görür.
 
 ## Klavye Referansı
 
@@ -58,16 +58,19 @@ Diğer tüm türler (Çizgi, Yay, Daire, Elips, Çoklu Çizgi, Ölçü) geçerli
 
 | Nesne | Uzatılabilir mi? |
 |--------|----------------|
-| Çizgi | Evet |
-| Yay, Daire, Elips | Hayır |
-| Çoklu Çizgi / Dikdörtgen | Hayır |
+| Line | Evet |
+| Arc | Evet |
+| Ellipse | Evet — yalnızca zaten kısmi bir yay ise; tam bir elipsin ucu yoktur |
+| Circle | Hayır — her zaman ucu olmayan kapalı bir şekildir |
+| Polyline (açık) | Evet |
+| Polyline (kapalı) / Rectangle | Hayır — her zaman ucu olmayan kapalı bir şekildir |
 | Metin, Spline, Ölçü, Gösterge | Hayır |
 
 ## Extend - Trim Karşılaştırması
 
 | | Extend | Trim |
 |---|--------|------|
-| Ne yapar | Çizgi ucunu sınıra uzatır | Çizginin bir segmentini kaldırır |
+| Ne yapar | Bir nesnenin ucunu sınıra uzatır | Bir nesnenin segmentini kaldırır |
 | Tetikleyici | Uzatılacak ucun yakınına gel | Kesilecek segmentin üzerine gel |
-| Sonuç | Çizgi ucu dışa doğru hareket eder | Çizgi bölünür veya kısalır |
-| Her ikisi | Yalnızca çizgiler | Yalnızca çizgiler |
+| Sonuç | Uç nokta dışa doğru hareket eder | Nesne bölünür veya kısalır |
+| Desteklenen nesneler | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

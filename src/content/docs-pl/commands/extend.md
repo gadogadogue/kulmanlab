@@ -1,24 +1,24 @@
 ---
-title: Extend — Rozciąganie punktu końcowego linii do granicy
-description: Polecenie Extend rozciąga najbliższy punkt końcowy wskazywanej Linii do najbliższego przecięcia z innym elementem. Podgląd na żywo pokazuje przedłużoną linię przed kliknięciem. Przedłużanie działa tylko na elementach Linia i ignoruje Tekst, Splajn i Linie wielokierunkowe jako granice.
-keywords: [polecenie przedłużania CAD, przedłużanie linii CAD, rozciąganie linii do granicy, przedłużanie punktu końcowego linii, podgląd przedłużania, kulmanlab]
+title: Extend — Rozciąganie elementu do granicy
+description: Polecenie Extend rozciąga najbliższy punkt końcowy wskazywanej Line, Arc, Ellipse lub otwartej Polyline do najbliższego przecięcia z innym elementem. Podgląd na żywo pokazuje przedłużony element przed kliknięciem.
+keywords: [polecenie przedłużania CAD, przedłużanie linii CAD, przedłużanie łuku CAD, przedłużanie elipsy CAD, przedłużanie polilinii CAD, rozciąganie elementu do granicy, podgląd przedłużania, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-Polecenie `extend` rozciąga najbliższy punkt końcowy wskazywanej [Line](../line/) do najbliższego przecięcia, które tworzyłaby z innym elementem w rysunku. Najedź kursorem blisko punktu końcowego, który chcesz przedłużyć — podgląd pokazuje przedłużoną linię — a następnie kliknij, aby zastosować.
+Polecenie `extend` rozciąga najbliższy punkt końcowy wskazywanej [Line](../line/), [Arc](../arc/), [Ellipse](../ellipse/) lub otwartej [Polyline](../polyline/) do najbliższego przecięcia, które tworzyłaby z innym elementem w rysunku. Najedź kursorem blisko punktu końcowego, który chcesz przedłużyć — podgląd pokazuje przedłużony element — a następnie kliknij, aby zastosować.
 
-Przedłużanie działa **tylko na elementach Linia**. Granice, do których linia się przedłuża, mogą być dowolnym innym typem elementu z wyjątkiem Tekstu, Mtext, Linii wielokierunkowych i Splajnów.
+Tylko elementy z rzeczywistym punktem końcowym mogą być przedłużane. [Circle](../circle/) i pełna (360°) Ellipse są zawsze kształtami zamkniętymi bez punktu końcowego, więc nigdy nie można ich przedłużyć — to samo dotyczy zamkniętej Polyline lub Rectangle. Częściowa Ellipse (łuk eliptyczny) i Arc mają punkty końcowe i są przedłużane tak samo jak Line.
 
-## Przedłużanie linii
+## Przedłużanie elementu
 
 1. Wpisz `extend` w terminalu lub kliknij przycisk **Przedłuż** na pasku narzędzi.
-2. **Najedź kursorem blisko jednego końca linii** — podgląd pokazuje linię przedłużoną do najbliższej granicy w tym kierunku.
+2. **Najedź kursorem blisko jednego końca** elementu, który chcesz przedłużyć — podgląd pokazuje go przedłużonego do najbliższej granicy w tym kierunku.
 3. **Kliknij**, aby zastosować przedłużenie.
 
-Polecenie pozostaje aktywne po każdym przedłużeniu, dzięki czemu możesz przedłużać wiele linii po kolei. Naciśnij **Escape**, aby wyjść.
+Polecenie pozostaje aktywne po każdym przedłużeniu, dzięki czemu możesz kontynuować najeżdżanie kursorem i klikanie, aby przedłużać więcej elementów. Naciśnij **Escape**, aby wyjść.
 
 ```
   Przed:                      Po:
@@ -29,24 +29,24 @@ Polecenie pozostaje aktywne po każdym przedłużeniu, dzięki czemu możesz prz
 
 ## Jak jest wybierany punkt końcowy
 
-Polecenie sprawdza, do którego punktu końcowego jest bliżej kursor:
+Polecenie sprawdza, do którego końca jest bliżej kursor:
 
-- Kursor **bliżej punktu końcowego** → koniec jest przedłużany do przodu wzdłuż kierunku linii.
-- Kursor **bliżej punktu startowego** → start jest przedłużany do tyłu (w przeciwnym kierunku).
+- **Line i otwarta Polyline** — kursor bliżej punktu końcowego przedłuża koniec do przodu; kursor bliżej punktu startowego przedłuża start do tyłu.
+- **Arc i częściowa Ellipse** — kursor bliżej jednego z końców kątowych powoduje wzrost łuku w tym kierunku, wokół tego samego środka i promienia (lub tego samego kształtu elipsy), aż do osiągnięcia następnej granicy.
 
-Promień jest rzucany od wybranego punktu końcowego wzdłuż kierunku linii, a **najbliższe przecięcie** wzdłuż tego promienia z dowolnym innym elementem (z wyłączeniem samej linii i ignorowanych typów) staje się nowym punktem końcowym.
+Promień — lub, dla Arc i Ellipse, własny okrąg lub krzywa elementu — jest rzucany od wybranego końca, a **najbliższe przecięcie** z dowolnym innym elementem (z wyłączeniem samego elementu i ignorowanych typów) staje się nowym punktem końcowym.
 
 Jeśli w tym kierunku nie zostanie znalezione żadne przecięcie, podgląd nie pojawia się i kliknięcie nic nie robi.
 
 ## Wyłączenia granic
 
-Następujące typy elementów są ignorowane jako granice — linia nie przedłuża się, aby je spotkać:
+Następujące typy elementów są ignorowane jako granice — element nie przedłuża się, aby je spotkać:
 
 - Tekst / Mtext
 - Linia wielokierunkowa
 - Splajn
 
-Wszystkie inne typy (Linia, Łuk, Okrąg, Elipsa, Polilinia, Wymiar) służą jako prawidłowe granice.
+Wszystkie inne typy (Line, Arc, Circle, Ellipse, Polyline, Wymiar) służą jako prawidłowe granice.
 
 ## Skróty klawiaturowe
 
@@ -58,16 +58,19 @@ Wszystkie inne typy (Linia, Łuk, Okrąg, Elipsa, Polilinia, Wymiar) służą ja
 
 | Element | Można przedłużyć? |
 |---------|----------------|
-| Linia | Tak |
-| Łuk, Okrąg, Elipsa | Nie |
-| Polilinia / Prostokąt | Nie |
+| Line | Tak |
+| Arc | Tak |
+| Ellipse | Tak — tylko jeśli jest już łukiem częściowym; pełna elipsa nie ma punktu końcowego |
+| Circle | Nie — zawsze kształt zamknięty bez punktu końcowego |
+| Polyline (otwarta) | Tak |
+| Polyline (zamknięta) / Rectangle | Nie — zawsze kształt zamknięty bez punktu końcowego |
 | Tekst, Splajn, Wymiar, Linia prowadząca | Nie |
 
 ## Przedłuż a Przytnij
 
 | | Przedłuż | Przytnij |
 |---|--------|------|
-| Co robi | Rozciąga punkt końcowy linii do granicy | Usuwa segment linii |
+| Co robi | Rozciąga punkt końcowy elementu do granicy | Usuwa segment elementu |
 | Wyzwalacz | Najedź kursorem blisko punktu końcowego do rozciągnięcia | Najedź kursorem na segment do cięcia |
-| Wynik | Punkt końcowy linii przesuwa się na zewnątrz | Linia dzieli się lub skraca |
-| Oba | Tylko linie | Tylko linie |
+| Wynik | Punkt końcowy przesuwa się na zewnątrz | Element dzieli się lub skraca |
+| Obsługiwane elementy | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

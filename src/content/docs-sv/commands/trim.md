@@ -71,4 +71,4 @@ Entiteterna som används som **klippgränser** kan vara Line, Arc, Circle, Ellip
 | Vad det gör | Tar bort ett segment av en entitet | Sträcker en linjeändpunkt till en gräns |
 | Utlösare | Håll markören över segmentet som ska klippas | Håll markören nära ändpunkten som ska förlängas |
 | Resultat | Entiteten delas eller kortas av | Linjens ändpunkt flyttas till gränsen |
-| Entiteter som stöds | Line, Arc, Circle, Ellipse, Polyline | Endast Line |
+| Entiteter som stöds | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

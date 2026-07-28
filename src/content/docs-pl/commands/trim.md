@@ -71,4 +71,4 @@ Elementy używane jako **granice cięcia** mogą być typu Line, Arc, Circle, El
 | Co robi | Usuwa segment elementu | Rozciąga punkt końcowy linii do granicy |
 | Wyzwalacz | Najedź kursorem na segment do wycięcia | Najedź kursorem blisko punktu końcowego do rozciągnięcia |
 | Wynik | Element dzieli się lub skraca | Punkt końcowy linii przesuwa się do granicy |
-| Obsługiwane elementy | Line, Arc, Circle, Ellipse, Polyline | Tylko Line |
+| Obsługiwane elementy | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

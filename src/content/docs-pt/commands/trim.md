@@ -71,4 +71,4 @@ As entidades usadas como **bordas de corte** podem ser uma Line, Arc, Circle, El
 | O que faz | Remove um segmento de uma entidade | Estica um endpoint de uma linha até uma borda |
 | Trigger | Passe o cursor sobre o segmento a cortar | Passe o cursor próximo ao endpoint a estender |
 | Resultado | A entidade se divide ou encurta | O endpoint da linha se move até a borda |
-| Entidades suportadas | Line, Arc, Circle, Ellipse, Polyline | Apenas Line |
+| Entidades suportadas | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

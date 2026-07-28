@@ -71,4 +71,4 @@ Les entités utilisées comme **limites de coupe** peuvent être une Line, un Ar
 | Ce qu'elle fait | Supprime un segment d'une entité | Prolonge un point final de ligne jusqu'à une limite |
 | Déclencheur | Survoler le segment à couper | Survoler près du point final à prolonger |
 | Résultat | L'entité se divise ou se raccourcit | Le point final de la ligne se déplace jusqu'à la limite |
-| Entités supportées | Line, Arc, Circle, Ellipse, Polyline | Line uniquement |
+| Entités supportées | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

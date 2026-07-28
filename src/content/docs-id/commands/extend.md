@@ -1,24 +1,24 @@
 ---
-title: Perintah Extend — Meregangkan Titik Akhir Garis ke Batas Terdekat
-description: Perintah Extend meregangkan titik akhir terdekat dari Line yang di-hover ke perpotongan terdekat dengan entitas lain. Pratinjau langsung menampilkan garis yang diperpanjang sebelum Anda klik. Extend hanya bekerja pada entitas Line dan mengabaikan Text, Spline, dan Multileader sebagai batas.
-keywords: [perintah perpanjang CAD, memperpanjang garis CAD, meregangkan garis ke batas, perpanjang titik akhir garis, pratinjau hover perpanjang, kulmanlab]
+title: Perintah Extend — Meregangkan Entitas ke Batas Terdekat
+description: Perintah Extend meregangkan titik akhir terdekat dari Line, Arc, Ellipse, atau Polyline terbuka yang di-hover ke perpotongan terdekat dengan entitas lain. Pratinjau langsung menampilkan entitas yang diperpanjang sebelum Anda klik.
+keywords: [perintah perpanjang CAD, memperpanjang garis CAD, memperpanjang busur CAD, memperpanjang elips CAD, memperpanjang polyline CAD, meregangkan entitas ke batas, pratinjau hover perpanjang, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-Perintah `extend` meregangkan titik akhir terdekat dari [Line](../line/) ke perpotongan terdekat yang akan terbentuk dengan entitas lain dalam gambar. Arahkan kursor dekat titik akhir yang ingin diperpanjang — pratinjau menampilkan garis yang diperpanjang — kemudian klik untuk menerapkannya.
+Perintah `extend` meregangkan titik akhir terdekat dari [Line](../line/), [Arc](../arc/), [Ellipse](../ellipse/), atau Polyline terbuka yang di-hover ke perpotongan terdekat yang akan terbentuk dengan entitas lain dalam gambar. Arahkan kursor dekat titik akhir yang ingin diperpanjang — pratinjau menampilkan entitas yang diperpanjang — kemudian klik untuk menerapkannya.
 
-Extend hanya bekerja pada **entitas Line**. Batas yang dituju garis dapat berupa tipe entitas lain mana pun kecuali Text, Mtext, Multileader, dan Spline.
+Hanya entitas dengan titik akhir sebenarnya yang dapat diperpanjang. [Circle](../circle/) dan Ellipse penuh (360°) selalu berupa bentuk tertutup tanpa titik akhir, sehingga tidak pernah bisa diperpanjang — begitu juga Polyline tertutup atau Rectangle. Ellipse parsial (busur elips) dan Arc memiliki titik akhir dan diperpanjang dengan cara yang sama seperti Line.
 
-## Memperpanjang garis
+## Memperpanjang entitas
 
 1. Ketik `extend` di terminal atau klik tombol toolbar **Extend**.
-2. **Arahkan kursor dekat salah satu ujung garis** — pratinjau menampilkan garis yang diperpanjang ke batas terdekat dalam arah tersebut.
+2. **Arahkan kursor dekat salah satu ujung** entitas yang ingin diperpanjang — pratinjau menampilkannya diperpanjang ke batas terdekat dalam arah tersebut.
 3. **Klik** untuk menerapkan perpanjangan.
 
-Perintah tetap aktif setelah setiap perpanjangan sehingga Anda dapat memperpanjang beberapa garis secara berurutan. Tekan **Escape** untuk keluar.
+Perintah tetap aktif setelah setiap perpanjangan, sehingga Anda dapat terus mengarahkan kursor dan mengklik untuk memperpanjang lebih banyak entitas. Tekan **Escape** untuk keluar.
 
 ```
   Sebelum:                      Sesudah:
@@ -29,18 +29,18 @@ Perintah tetap aktif setelah setiap perpanjangan sehingga Anda dapat memperpanja
 
 ## Cara titik akhir dipilih
 
-Perintah melihat titik akhir mana yang lebih dekat dengan kursor:
+Perintah melihat ujung mana yang lebih dekat dengan kursor:
 
-- Kursor **lebih dekat ke titik akhir** → ujung diperpanjang ke depan sepanjang arah garis.
-- Kursor **lebih dekat ke titik awal** → awal diperpanjang ke belakang (dalam arah berlawanan).
+- **Line dan Polyline terbuka** — kursor lebih dekat ke titik akhir memperpanjang ujung ke depan; kursor lebih dekat ke titik awal memperpanjang awal ke belakang.
+- **Arc dan Ellipse parsial** — kursor lebih dekat ke salah satu ujung sudut membuat busur tumbuh ke arah tersebut, mengelilingi pusat dan radius yang sama (atau bentuk elips yang sama) hingga mencapai batas berikutnya.
 
-Sinar dikirimkan dari titik akhir yang dipilih sepanjang arah garis, dan **perpotongan terdekat** sepanjang sinar tersebut dengan entitas lain (kecuali garis itu sendiri dan tipe yang diabaikan) menjadi titik akhir baru.
+Sinar — atau, untuk Arc dan Ellipse, lingkaran atau kurva dasar entitas itu sendiri — dikirimkan dari ujung yang dipilih, dan **perpotongan terdekat** dengan entitas lain (kecuali entitas itu sendiri dan tipe yang diabaikan) menjadi titik akhir baru.
 
 Jika tidak ditemukan perpotongan dalam arah tersebut, tidak ada pratinjau yang muncul dan mengklik tidak melakukan apa-apa.
 
 ## Pengecualian batas
 
-Tipe entitas berikut diabaikan sebagai batas — garis tidak diperpanjang untuk bertemu dengannya:
+Tipe entitas berikut diabaikan sebagai batas — entitas tidak diperpanjang untuk bertemu dengannya:
 
 - Text / Mtext
 - Multileader
@@ -59,15 +59,18 @@ Semua tipe lain (Line, Arc, Circle, Ellipse, Polyline, Dimension) berfungsi seba
 | Entitas | Dapat diperpanjang? |
 |--------|----------------|
 | Line | Ya |
-| Arc, Circle, Ellipse | Tidak |
-| Polyline / Rectangle | Tidak |
+| Arc | Ya |
+| Ellipse | Ya — hanya jika sudah berupa busur parsial; ellipse penuh tidak memiliki titik akhir |
+| Circle | Tidak — selalu berupa bentuk tertutup tanpa titik akhir |
+| Polyline (terbuka) | Ya |
+| Polyline (tertutup) / Rectangle | Tidak — selalu berupa bentuk tertutup tanpa titik akhir |
 | Text, Spline, Dimension, Leader | Tidak |
 
 ## Extend vs Trim
 
 | | Extend | Trim |
 |---|--------|------|
-| Fungsi | Meregangkan titik akhir garis ke batas | Menghapus segmen garis |
+| Fungsi | Meregangkan titik akhir entitas ke batas | Menghapus segmen entitas |
 | Pemicu | Arahkan kursor dekat titik akhir yang akan diregangkan | Arahkan kursor ke segmen yang akan dipotong |
-| Hasil | Titik akhir garis berpindah ke luar | Garis terpecah atau memendek |
-| Keduanya | Hanya garis | Hanya garis |
+| Hasil | Titik akhir berpindah ke luar | Entitas terpecah atau memendek |
+| Entitas yang didukung | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

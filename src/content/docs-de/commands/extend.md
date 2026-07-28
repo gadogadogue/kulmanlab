@@ -1,24 +1,24 @@
 ---
-title: Extend-Befehl — Linienendpunkt bis zur nächsten Begrenzung dehnen
-description: Der Extend-Befehl dehnt den nächsten Endpunkt einer gehoverten Linie bis zum nächsten Schnittpunkt mit einem anderen Element. Eine Live-Vorschau zeigt die verlängerte Linie vor dem Klicken. Extend funktioniert nur mit Line-Elementen und ignoriert Text, Spline und Multileader als Begrenzungen.
-keywords: [CAD-Extend-Befehl, Linie verlängern CAD, Linie zur Begrenzung dehnen, Linienendpunkt verlängern, Hover-Verlängerungs-Vorschau, kulmanlab]
+title: Extend-Befehl — Entität bis zur nächsten Begrenzung dehnen
+description: Der Extend-Befehl dehnt den nächsten Endpunkt einer gehoverten Line, Arc, Ellipse oder offenen Polyline bis zum nächsten Schnittpunkt mit einem anderen Element. Eine Live-Vorschau zeigt das verlängerte Element vor dem Klicken.
+keywords: [CAD-Extend-Befehl, Linie verlängern CAD, Bogen verlängern CAD, Ellipse verlängern CAD, Polylinie verlängern CAD, Element zur Begrenzung dehnen, Hover-Verlängerungs-Vorschau, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-Der `extend`-Befehl dehnt den nächsten Endpunkt einer [Line](../line/) bis zum nächsten Schnittpunkt, den sie mit einem anderen Element in der Zeichnung bilden würde. Hovern Sie nahe dem Endpunkt, den Sie verlängern möchten — eine Vorschau zeigt die verlängerte Linie — dann klicken Sie, um anzuwenden.
+Der `extend`-Befehl dehnt den nächsten Endpunkt einer gehoverten [Line](../line/), eines [Arc](../arc/), einer [Ellipse](../ellipse/) oder einer offenen [Polyline](../polyline/) bis zum nächsten Schnittpunkt, den sie mit einem anderen Element in der Zeichnung bilden würde. Hovern Sie nahe dem Endpunkt, den Sie verlängern möchten — eine Vorschau zeigt das verlängerte Element — dann klicken Sie, um anzuwenden.
 
-Extend funktioniert **nur mit Line-Elementen**. Die Begrenzungen, bis zu denen die Linie verlängert wird, können jeder andere Elementtyp außer Text, Mtext, Multileader und Spline sein.
+Nur Elemente mit einem tatsächlichen Endpunkt können verlängert werden. Ein [Circle](../circle/) und eine vollständige (360°) Ellipse sind immer geschlossene Formen ohne Endpunkt, daher können sie nie verlängert werden — dasselbe gilt für eine geschlossene Polyline oder ein Rectangle. Eine teilweise Ellipse (ein elliptischer Bogen) und ein Arc haben Endpunkte und werden genauso verlängert wie eine Line.
 
-## Eine Linie verlängern
+## Ein Element verlängern
 
 1. Geben Sie `extend` im Terminal ein oder klicken Sie auf die Schaltfläche **Extend** in der Symbolleiste.
-2. **Nahe einem Ende einer Linie hovern** — die Vorschau zeigt die Linie, verlängert bis zur nächsten Begrenzung in dieser Richtung.
+2. **Hovern Sie nahe einem Ende** des Elements, das Sie verlängern möchten — die Vorschau zeigt es bis zur nächsten Begrenzung in dieser Richtung verlängert.
 3. **Klicken**, um die Verlängerung anzuwenden.
 
-Der Befehl bleibt nach jeder Verlängerung aktiv, sodass Sie mehrere Linien nacheinander verlängern können. Drücken Sie **Escape**, um zu beenden.
+Der Befehl bleibt nach jeder Verlängerung aktiv, sodass Sie weiterhin hovern und klicken können, um weitere Elemente zu verlängern. Drücken Sie **Escape**, um zu beenden.
 
 ```
   Vorher:                      Nachher:
@@ -29,18 +29,18 @@ Der Befehl bleibt nach jeder Verlängerung aktiv, sodass Sie mehrere Linien nach
 
 ## Wie der Endpunkt ausgewählt wird
 
-Der Befehl prüft, welchem Endpunkt der Mauszeiger näher ist:
+Der Befehl prüft, welchem Ende der Mauszeiger näher ist:
 
-- Mauszeiger **näher am Endpunkt** → das Ende wird vorwärts entlang der Linienrichtung verlängert.
-- Mauszeiger **näher am Startpunkt** → der Start wird rückwärts verlängert (in entgegengesetzter Richtung).
+- **Line und offene Polyline** — Mauszeiger näher am Endpunkt verlängert das Ende vorwärts; Mauszeiger näher am Startpunkt verlängert den Start rückwärts.
+- **Arc und teilweise Ellipse** — Mauszeiger näher an einem der beiden Winkel-Enden lässt den Bogen in diese Richtung wachsen, entlang desselben Mittelpunkts und Radius (bzw. derselben Ellipsenform), bis er die nächste Begrenzung erreicht.
 
-Ein Strahl wird vom gewählten Endpunkt entlang der Linienrichtung ausgeworfen, und der **nächste Schnittpunkt** entlang dieses Strahls mit jedem anderen Element (ausgenommen die Linie selbst und die ignorierten Typen) wird zum neuen Endpunkt.
+Ein Strahl — oder bei Arc und Ellipse der zugrunde liegende Kreis bzw. die zugrunde liegende Kurve des Elements — wird vom gewählten Ende ausgeworfen, und der **nächste Schnittpunkt** mit jedem anderen Element (ausgenommen das Element selbst und die ignorierten Typen) wird zum neuen Endpunkt.
 
 Wenn in dieser Richtung kein Schnittpunkt gefunden wird, erscheint keine Vorschau und das Klicken hat keine Wirkung.
 
 ## Begrenzungsausschlüsse
 
-Die folgenden Elementtypen werden als Begrenzungen ignoriert — eine Linie verlängert sich nicht bis zu ihnen:
+Die folgenden Elementtypen werden als Begrenzungen ignoriert — ein Element verlängert sich nicht bis zu ihnen:
 
 - Text / Mtext
 - Multileader
@@ -59,15 +59,18 @@ Alle anderen Typen (Line, Arc, Circle, Ellipse, Polyline, Dimension) dienen als 
 | Element | Kann verlängert werden? |
 |---------|------------------------|
 | Line | Ja |
-| Arc, Circle, Ellipse | Nein |
-| Polyline / Rectangle | Nein |
-| Text, Spline, Dimension, Leader | Nein |
+| Arc | Ja |
+| Ellipse | Ja — nur wenn sie bereits ein teilweiser Bogen ist; eine vollständige Ellipse hat keinen Endpunkt |
+| Circle | Nein — immer eine geschlossene Form ohne Endpunkt |
+| Polyline (offen) | Ja |
+| Polyline (geschlossen) / Rectangle | Nein — immer eine geschlossene Form ohne Endpunkt |
+| Text, Spline, Bemaßung, Leader | Nein |
 
 ## Extend vs Trim
 
 | | Extend | Trim |
 |---|--------|------|
-| Was es tut | Dehnt einen Linienendpunkt bis zu einer Begrenzung | Entfernt ein Segment einer Linie |
+| Was es tut | Dehnt den Endpunkt eines Elements bis zu einer Begrenzung | Entfernt ein Segment eines Elements |
 | Auslöser | Hovern nahe dem zu dehnenden Endpunkt | Hovern über dem zu schneidenden Segment |
-| Ergebnis | Linienendpunkt bewegt sich nach außen | Linie teilt sich oder wird kürzer |
-| Beide | Nur Linien | Nur Linien |
+| Ergebnis | Endpunkt bewegt sich nach außen | Element teilt sich oder wird kürzer |
+| Unterstützte Elemente | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

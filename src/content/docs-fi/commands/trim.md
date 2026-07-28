@@ -71,4 +71,4 @@ Entiteetit, joita käytetään **leikkausrajoina**, voivat olla Line, Arc, Circl
 | Mitä se tekee | Poistaa entiteetin segmentin | Venyttää viivan päätepisteen rajaan |
 | Laukaisin | Pidä kohdistinta segmentin päällä leikataksesi | Pidä kohdistinta lähellä päätepistettä jatkaaksesi |
 | Tulos | Entiteetti jakautuu tai lyhenee | Viivan päätepiste siirtyy rajaan |
-| Tuetut entiteetit | Line, Arc, Circle, Ellipse, Polyline | Vain Line |
+| Tuetut entiteetit | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

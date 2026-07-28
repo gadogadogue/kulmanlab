@@ -71,4 +71,4 @@ Abubuwan da ake amfani da su a matsayin **iyakokin yankewa** za su iya kasancewa
 | Abin da yake yi | Yana cire sashen abu | Yana tsawaita ƙarshen layi zuwa iyaka |
 | Kunnawa | Riƙe a kan sashen don yanke | Riƙe kusa da ƙarshen don tsawaita |
 | Sakamako | Abu yana rabuwa ko guntuwa | Ƙarshen layi yana motsawa zuwa iyaka |
-| Abubuwan da ake goyon baya | Line, Arc, Circle, Ellipse, Polyline | Line kaɗai |
+| Abubuwan da ake goyon baya | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

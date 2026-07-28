@@ -71,4 +71,4 @@ Entiteterne der bruges som **skæregrænser** kan være Line, Arc, Circle, Ellip
 | Hvad den gør | Fjerner et segment af en entitet | Strækker et linjeendepunkt til en grænse |
 | Udløser | Hold markøren over segmentet for at skære | Hold markøren nær endepunktet for at forlænge |
 | Resultat | Entiteten deles eller forkortes | Linjeendepunktet flytter til grænsen |
-| Understøttede entiteter | Line, Arc, Circle, Ellipse, Polyline | Kun Line |
+| Understøttede entiteter | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

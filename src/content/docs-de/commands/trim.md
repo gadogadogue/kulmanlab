@@ -71,4 +71,4 @@ Die als **Schnittgrenzen** verwendeten Entitäten können eine Line, ein Arc, Ci
 | Funktion | Entfernt ein Segment einer Entität | Verlängert einen Linienendpunkt bis zu einer Grenze |
 | Auslöser | Cursor über das zu schneidende Segment fahren | Cursor nahe dem zu verlängernden Endpunkt |
 | Ergebnis | Entität wird geteilt oder verkürzt | Linienendpunkt bewegt sich zur Grenze |
-| Unterstützte Entitäten | Line, Arc, Circle, Ellipse, Polyline | Nur Line |
+| Unterstützte Entitäten | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

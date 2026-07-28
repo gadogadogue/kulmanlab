@@ -71,4 +71,4 @@ order: 8
 | 機能 | エンティティのセグメントを削除 | 直線の端点を境界まで伸ばす |
 | トリガー | カットするセグメントの上にカーソル | 延長する端点の近くにカーソル |
 | 結果 | エンティティが分割または短くなる | 直線の端点が境界まで移動 |
-| サポートされるエンティティ | Line、Arc、Circle、Ellipse、Polyline | Line のみ |
+| サポートされるエンティティ | Line、Arc、Circle、Ellipse、Polyline | Line、Arc、Ellipse、Polyline |

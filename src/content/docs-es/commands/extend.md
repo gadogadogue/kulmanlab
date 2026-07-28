@@ -1,24 +1,24 @@
 ---
-title: Extend — Estirar un Extremo de Línea hasta el Límite Más Cercano
-description: El comando Extend estira el extremo más cercano de una línea sobre la que se pasa el cursor hasta la intersección más próxima con otra entidad. Una vista previa en vivo muestra la línea extendida antes de hacer clic. Extend funciona solo con entidades Line e ignora Text, Spline y Multileader como límites.
-keywords: [comando extend CAD, extender línea CAD, estirar línea hasta límite, extremo de línea extend, vista previa extend al pasar el cursor, kulmanlab]
+title: Extend — Estirar una Entidad hasta el Límite Más Cercano
+description: El comando Extend estira el extremo más cercano de una Line, Arc, Ellipse o Polyline abierta sobre la que se pasa el cursor hasta la intersección más próxima con otra entidad. Una vista previa en vivo muestra la entidad extendida antes de hacer clic.
+keywords: [comando extend CAD, extender línea CAD, extender arco CAD, extender elipse CAD, extender polilínea CAD, estirar entidad hasta límite, vista previa extend al pasar el cursor, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-El comando `extend` estira el extremo más cercano de una [Line](../line/) hasta la intersección más próxima que formaría con otra entidad del dibujo. Pasa el cursor cerca del extremo que quieres extender — una vista previa muestra la línea extendida — luego haz clic para aplicar.
+El comando `extend` estira el extremo más cercano de una [Line](../line/), [Arc](../arc/), [Ellipse](../ellipse/) o Polyline abierta sobre la que se pasa el cursor hasta la intersección más próxima que formaría con otra entidad del dibujo. Pasa el cursor cerca del extremo que quieres extender — una vista previa muestra la entidad extendida — luego haz clic para aplicar.
 
-Extend funciona **solo con entidades Line**. Los límites hacia los que se extiende la línea pueden ser cualquier otro tipo de entidad excepto Text, Mtext, Multileader y Spline.
+Solo las entidades con un extremo real pueden extenderse. Un [Circle](../circle/) y una Ellipse completa (360°) son siempre formas cerradas sin extremo, así que nunca pueden extenderse — lo mismo ocurre con una Polyline cerrada o un Rectangle. Una Ellipse parcial (un arco elíptico) y un Arc sí tienen extremos y se extienden igual que una Line.
 
-## Extender una línea
+## Extender una entidad
 
 1. Escribe `extend` en el terminal o haz clic en el botón **Extend** de la barra de herramientas.
-2. **Pasa el cursor cerca de un extremo de una línea** — la vista previa muestra la línea extendida hasta el límite más cercano en esa dirección.
+2. **Pasa el cursor cerca de un extremo** de la entidad que quieres extender — la vista previa la muestra extendida hasta el límite más cercano en esa dirección.
 3. **Haz clic** para aplicar la extensión.
 
-El comando permanece activo después de cada extensión para que puedas extender múltiples líneas en secuencia. Presiona **Escape** para salir.
+El comando permanece activo después de cada extensión, así que puedes seguir pasando el cursor y haciendo clic para extender más entidades. Presiona **Escape** para salir.
 
 ```
   Antes:                       Después:
@@ -29,18 +29,18 @@ El comando permanece activo después de cada extensión para que puedas extender
 
 ## Cómo se elige el extremo
 
-El comando observa qué extremo está más cerca del cursor:
+El comando observa de qué extremo está más cerca el cursor:
 
-- El cursor está **más cerca del punto final** → el final se extiende hacia adelante en la dirección de la línea.
-- El cursor está **más cerca del punto inicial** → el inicio se extiende hacia atrás (en la dirección opuesta).
+- **Line y Polyline abierta** — cursor más cerca del punto final extiende el final hacia adelante; cursor más cerca del punto inicial extiende el inicio hacia atrás.
+- **Arc y Ellipse parcial** — cursor más cerca de uno de los extremos angulares hace crecer el arco en esa dirección, recorriendo el mismo centro y radio (o la misma forma de elipse) hasta alcanzar el siguiente límite.
 
-Se lanza un rayo desde el extremo elegido en la dirección de la línea, y la **intersección más cercana** a lo largo de ese rayo con cualquier otra entidad (excluyendo la propia línea y los tipos ignorados) se convierte en el nuevo extremo.
+Se lanza un rayo — o, en el caso de Arc y Ellipse, la propia circunferencia o curva subyacente de la entidad — desde el extremo elegido, y la **intersección más cercana** con cualquier otra entidad (excluyendo la propia entidad y los tipos ignorados) se convierte en el nuevo extremo.
 
 Si no se encuentra ninguna intersección en esa dirección, no aparece ninguna vista previa y hacer clic no hace nada.
 
 ## Exclusiones de límites
 
-Los siguientes tipos de entidades se ignoran como límites — una línea no se extiende para encontrarlos:
+Los siguientes tipos de entidades se ignoran como límites — una entidad no se extiende para encontrarlos:
 
 - Text / Mtext
 - Multileader
@@ -59,15 +59,18 @@ Todos los demás tipos (Line, Arc, Circle, Ellipse, Polyline, Dimension) sirven 
 | Entidad | ¿Se puede extender? |
 |---------|---------------------|
 | Line | Sí |
-| Arc, Circle, Ellipse | No |
-| Polyline / Rectangle | No |
+| Arc | Sí |
+| Ellipse | Sí — solo si ya es un arco parcial; una elipse completa no tiene extremo |
+| Circle | No — siempre es una forma cerrada sin extremo |
+| Polyline (abierta) | Sí |
+| Polyline (cerrada) / Rectangle | No — siempre es una forma cerrada sin extremo |
 | Text, Spline, Dimension, Leader | No |
 
 ## Extend vs Trim
 
 | | Extend | Trim |
 |---|--------|------|
-| Qué hace | Estira un extremo de línea hasta un límite | Elimina un segmento de una línea |
+| Qué hace | Estira el extremo de una entidad hasta un límite | Elimina un segmento de una entidad |
 | Activación | Pasar el cursor cerca del extremo a estirar | Pasar el cursor sobre el segmento a cortar |
-| Resultado | El extremo de la línea se mueve hacia afuera | La línea se divide o acorta |
-| Ambos | Solo líneas | Solo líneas |
+| Resultado | El extremo se mueve hacia afuera | La entidad se divide o acorta |
+| Entidades compatibles | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

@@ -1,24 +1,24 @@
 ---
-title: Extend — I-stretch ang Endpoint ng Linya sa Malapit na Boundary
-description: Ini-stretch ng Extend command ang pinakamalapit na endpoint ng ho-hover na Line papunta sa pinakamalapit na intersection nito sa ibang entity. May live preview na nagpapakita ng extended line bago ka mag-click. Gumagana lang ang Extend sa Line entities at hindi kinikilala ang Text, Spline, at Multileader bilang boundaries.
-keywords: [CAD extend command, extend line CAD, i-stretch ang linya papunta sa boundary, line endpoint extend, hover extend preview, kulmanlab]
+title: Extend — I-stretch ang Entity sa Pinakamalapit na Boundary
+description: Ini-stretch ng Extend command ang pinakamalapit na endpoint ng ho-hover na Line, Arc, Ellipse, o bukas na Polyline papunta sa pinakamalapit na intersection nito sa ibang entity. May live preview na nagpapakita ng extended entity bago ka mag-click.
+keywords: [CAD extend command, i-extend ang linya CAD, i-extend ang arc CAD, i-extend ang ellipse CAD, i-extend ang polyline CAD, i-stretch ang entity papunta sa boundary, hover extend preview, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-Ini-stretch ng `extend` command ang pinakamalapit na endpoint ng isang [Line](../line/) papunta sa pinakamalapit na intersection na maaari nitong mabuo sa ibang entity sa drawing. I-hover malapit sa endpoint na gusto mong i-extend — may preview na magpapakita ng extended line — pagkatapos ay i-click para i-apply.
+Ini-stretch ng `extend` command ang pinakamalapit na endpoint ng isang [Line](../line/), [Arc](../arc/), [Ellipse](../ellipse/), o bukas na [Polyline](../polyline/) na ho-hover papunta sa pinakamalapit na intersection na maaari nitong mabuo sa ibang entity sa drawing. I-hover malapit sa endpoint na gusto mong i-extend — may preview na magpapakita ng extended entity — pagkatapos ay i-click para i-apply.
 
-Gumagana lang ang Extend sa **Line entities**. Ang mga boundary na pupuntahan ng linya ay puwedeng anumang ibang entity type maliban sa Text, Mtext, Multileader, at Spline.
+Mga entity lang na may tunay na endpoint ang puwedeng i-extend. Ang isang [Circle](../circle/) at kumpletong (360°) Ellipse ay laging saradong hugis na walang endpoint, kaya hindi kailanman puwedeng i-extend — gayundin sa saradong Polyline o Rectangle. Ang bahagyang Ellipse (isang elliptical arc) at isang Arc ay may mga endpoint at ine-extend sa parehong paraan tulad ng Line.
 
-## Pag-extend ng Linya
+## Pag-extend ng isang entity
 
 1. I-type ang `extend` sa terminal o i-click ang **Extend** button sa toolbar.
-2. **I-hover malapit sa isang dulo ng linya** — ipapakita ng preview ang linyang na-extend papunta sa pinakamalapit na boundary sa direksyong iyon.
+2. **I-hover malapit sa isang dulo** ng entity na gusto mong i-extend — ipapakita ng preview itong na-extend papunta sa pinakamalapit na boundary sa direksyong iyon.
 3. **I-click** para i-apply ang extension.
 
-Nananatiling aktibo ang command pagkatapos ng bawat extension kaya puwede kang mag-extend ng maraming linya nang sunod-sunod. Pindutin ang **Escape** para lumabas.
+Nananatiling aktibo ang command pagkatapos ng bawat extension, kaya puwede kang magpatuloy sa pag-hover at pag-click para mag-extend ng higit pang entity. Pindutin ang **Escape** para lumabas.
 
 ```
   Before:                      After:
@@ -27,20 +27,20 @@ Nananatiling aktibo ang command pagkatapos ng bawat extension kaya puwede kang m
   (short line)     (boundary)  (extended to boundary)
 ```
 
-## Paano Napipili ang Endpoint
+## Paano napipili ang endpoint
 
-Tinitingnan ng command kung aling endpoint ang mas malapit sa cursor:
+Tinitingnan ng command kung aling dulo ang mas malapit sa cursor:
 
-- Cursor na **mas malapit sa end point** → ang end ang na-e-extend pasulong sa direksyon ng linya.
-- Cursor na **mas malapit sa start point** → ang start ang na-e-extend pabalik (sa kabaligtaran na direksyon).
+- **Line at bukas na Polyline** — cursor na mas malapit sa end point ang nag-e-extend sa dulo pasulong; cursor na mas malapit sa start point ang nag-e-extend sa simula pabalik.
+- **Arc at bahagyang Ellipse** — cursor na mas malapit sa isa sa mga angular na dulo ang nagpapalaki sa arc sa direksyong iyon, sa paligid ng parehong sentro at radius (o parehong hugis ng ellipse), hanggang maabot ang susunod na boundary.
 
-May ray na itinatapon mula sa napiling endpoint patungo sa direksyon ng linya, at ang **pinakamalapit na intersection** sa ray na iyon sa alinmang ibang entity (maliban sa linya mismo at sa mga ignored types) ang magiging bagong endpoint.
+May ray — o, para sa Arc at Ellipse, ang sariling circle o curve ng entity — na itinatapon mula sa napiling dulo, at ang **pinakamalapit na intersection** sa alinmang ibang entity (maliban sa entity mismo at sa mga ignored types) ang magiging bagong endpoint.
 
 Kung walang nahanap na intersection sa direksyong iyon, walang lalabas na preview at wala ring mangyayari sa pag-click.
 
 ## Boundary Exclusions
 
-Ang mga sumusunod na entity type ay hindi kinikilala bilang boundaries — hindi magpupunta ang linya para makasalubong sa mga ito:
+Ang mga sumusunod na entity type ay hindi kinikilala bilang boundaries — hindi nag-e-extend ang isang entity para makasalubong sa mga ito:
 
 - Text / Mtext
 - Multileader
@@ -59,15 +59,18 @@ Ang lahat ng ibang types (Line, Arc, Circle, Ellipse, Polyline, Dimension) ay ba
 | Entity | Puwedeng i-extend? |
 |--------|----------------|
 | Line | Oo |
-| Arc, Circle, Ellipse | Hindi |
-| Polyline / Rectangle | Hindi |
+| Arc | Oo |
+| Ellipse | Oo — kung ito ay bahagyang arc na; ang kumpletong ellipse ay walang endpoint |
+| Circle | Hindi — laging saradong hugis na walang endpoint |
+| Polyline (bukas) | Oo |
+| Polyline (sarado) / Rectangle | Hindi — laging saradong hugis na walang endpoint |
 | Text, Spline, Dimension, Leader | Hindi |
 
 ## Extend kumpara sa Trim
 
 | | Extend | Trim |
 |---|--------|------|
-| Ano ang ginagawa | Ini-stretch ang endpoint ng linya papunta sa boundary | Tinatanggal ang segment ng linya |
+| Ano ang ginagawa | Ini-stretch ang endpoint ng entity papunta sa boundary | Tinatanggal ang segment ng entity |
 | Trigger | I-hover malapit sa endpoint na i-stretch | I-hover sa segment na puputulin |
-| Resulta | Gumagalaw palabas ang endpoint ng linya | Nahahati o pumapaikli ang linya |
-| Pareho | Lines lang | Lines lang |
+| Resulta | Gumagalaw palabas ang endpoint | Nahahati o pumapaikli ang entity |
+| Mga supported na entity | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

@@ -71,4 +71,4 @@ order: 8
 | 하는 일 | 객체의 세그먼트 제거 | 선 끝점을 경계까지 늘리기 |
 | 트리거 | 자를 세그먼트 위에 커서 올리기 | 연장할 끝점 근처에 커서 올리기 |
 | 결과 | 객체가 분할되거나 짧아짐 | 선 끝점이 경계로 이동 |
-| 지원되는 객체 | Line, Arc, Circle, Ellipse, Polyline | Line만 해당 |
+| 지원되는 객체 | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

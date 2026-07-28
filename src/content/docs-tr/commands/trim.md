@@ -71,4 +71,4 @@ Komut, imleç konumunu üzerine gelinen nesneye yansıtır ve nesnenin diğer ne
 | Ne yapar | Bir nesnenin segmentini kaldırır | Çizgi ucunu bir sınıra uzatır |
 | Tetikleyici | Kesilecek segmentin üzerine gel | Uzatılacak ucun yakınına gel |
 | Sonuç | Nesne bölünür veya kısalır | Çizgi ucu sınıra taşınır |
-| Desteklenen nesneler | Line, Arc, Circle, Ellipse, Polyline | Yalnızca Line |
+| Desteklenen nesneler | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |

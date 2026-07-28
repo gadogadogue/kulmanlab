@@ -1,24 +1,24 @@
 ---
-title: Extend Command — Stretch a Line Endpoint to the Nearest Boundary
-description: The Extend command stretches the nearest endpoint of a hovered Line to the closest intersection with another entity. A live preview shows the extended line before you click. Extend works on Line entities only and ignores Text, Spline, and Multileader as boundaries.
-keywords: [CAD extend command, extend line CAD, stretch line to boundary, line endpoint extend, hover extend preview, kulmanlab]
+title: Extend Command — Stretch an Entity to the Nearest Boundary
+description: The Extend command stretches the nearest endpoint of a hovered Line, Arc, Ellipse, or open Polyline to the closest intersection with another entity. A live preview shows the extended entity before you click.
+keywords: [CAD extend command, extend line CAD, extend arc CAD, extend ellipse CAD, extend polyline CAD, stretch entity to boundary, hover extend preview, kulmanlab]
 group: edit
 order: 9
 ---
 
 # Extend
 
-The `extend` command stretches the nearest endpoint of a [Line](../line/) to the closest intersection it would form with another entity in the drawing. Hover near the endpoint you want to extend — a preview shows the extended line — then click to apply.
+The `extend` command stretches the nearest endpoint of a hovered [Line](../line/), [Arc](../arc/), [Ellipse](../ellipse/), or open [Polyline](../polyline/) to the closest intersection it would form with another entity in the drawing. Hover near the endpoint you want to extend — a preview shows the extended entity — then click to apply.
 
-Extend works on **Line entities only**. The boundaries the line extends toward can be any other entity type except Text, Mtext, Multileader, and Spline.
+Only entities with an actual endpoint can be extended. A [Circle](../circle/) and a full (360°) Ellipse are always closed shapes with no endpoint, so they can never be extended — same for a closed Polyline or Rectangle. A partial Ellipse (an elliptical arc) and an Arc do have endpoints and extend the same way a Line does.
 
-## Extending a line
+## Extending an entity
 
 1. Type `extend` in the terminal or click the **Extend** toolbar button.
-2. **Hover near one end of a line** — the preview shows the line extended to the nearest boundary in that direction.
+2. **Hover near one end** of the entity you want to extend — the preview shows it extended to the nearest boundary in that direction.
 3. **Click** to apply the extension.
 
-The command stays active after each extension so you can extend multiple lines in sequence. Press **Escape** to exit.
+The command stays active after each extension, so you can continue hovering and clicking to extend more entities. Press **Escape** to exit.
 
 ```
   Before:                      After:
@@ -29,18 +29,18 @@ The command stays active after each extension so you can extend multiple lines i
 
 ## How the endpoint is chosen
 
-The command looks at which endpoint the cursor is closer to:
+The command looks at which end the cursor is closer to:
 
-- Cursor **nearer to the end point** → the end is extended forward along the line direction.
-- Cursor **nearer to the start point** → the start is extended backward (in the opposite direction).
+- **Line and open Polyline** — cursor nearer the end point extends the end forward; cursor nearer the start point extends the start backward.
+- **Arc and partial Ellipse** — cursor nearer one angular end grows the arc in that direction, sweeping around the same center and radius (or the same ellipse shape) until it reaches the next boundary.
 
-A ray is cast from the chosen endpoint along the line direction, and the **closest intersection** along that ray with any other entity (excluding the line itself and the ignored types) becomes the new endpoint.
+A ray — or, for Arc and Ellipse, the entity's own underlying circle or curve — is cast from the chosen end, and the **closest intersection** with any other entity (excluding the entity itself and the ignored types) becomes the new endpoint.
 
 If no intersection is found in that direction, no preview appears and clicking does nothing.
 
 ## Boundary exclusions
 
-The following entity types are ignored as boundaries — a line does not extend to meet them:
+The following entity types are ignored as boundaries — an entity does not extend to meet them:
 
 - Text / Mtext
 - Multileader
@@ -59,15 +59,18 @@ All other types (Line, Arc, Circle, Ellipse, Polyline, Dimension) serve as valid
 | Entity | Can be extended? |
 |--------|----------------|
 | Line | Yes |
-| Arc, Circle, Ellipse | No |
-| Polyline / Rectangle | No |
+| Arc | Yes |
+| Ellipse | Yes — only if it's already a partial arc; a full ellipse has no endpoint |
+| Circle | No — always a closed shape with no endpoint |
+| Polyline (open) | Yes |
+| Polyline (closed) / Rectangle | No — always a closed shape with no endpoint |
 | Text, Spline, Dimension, Leader | No |
 
 ## Extend vs Trim
 
 | | Extend | Trim |
 |---|--------|------|
-| What it does | Stretches a line endpoint to a boundary | Removes a segment of a line |
+| What it does | Stretches an entity's endpoint to a boundary | Removes a segment of an entity |
 | Trigger | Hover near the endpoint to stretch | Hover over the segment to cut |
-| Result | Line endpoint moves outward | Line splits or shortens |
-| Both | Lines only | Lines only |
+| Result | Endpoint moves outward | Entity splits or shortens |
+| Supported entities | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |

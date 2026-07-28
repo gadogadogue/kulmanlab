@@ -71,4 +71,4 @@ Vipande vinavyotumika kama **mipaka ya kukata** vinaweza kuwa Line, Arc, Circle,
 | Kinachofanya | Huondoa sehemu ya kipande | Hunyoosha nukta ya mwisho ya mstari hadi mpaka |
 | Kichocheo | Elea juu ya sehemu ya kukata | Elea karibu na nukta ya mwisho ya kupanua |
 | Matokeo | Kipande hugawanywa au kufupishwa | Nukta ya mwisho ya mstari husogea hadi mpaka |
-| Vipande vinavyosaidiwa | Line, Arc, Circle, Ellipse, Polyline | Mstari pekee |
+| Vipande vinavyosaidiwa | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |
