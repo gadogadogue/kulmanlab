@@ -42,6 +42,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Chamfer](./commands/chamfer/) | Ścina prosty ukośny narożnik między dwiema liniami lub poliliniami |
 | [Undo](./commands/undo/) | Cofa ostatnią akcję |
 | [Redo](./commands/redo/) | Ponawia ostatnio cofniętą akcję |
+| [Array Grid](./commands/array-grid/) | Powiela elementy w prostokątnej siatce wierszy i kolumn |
 
 ## Opisy
 
@@ -104,7 +105,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 |-----------|---------|
 | [Import](./commands/import/) | Otwiera plik rysunku DXF lub JSON |
 | [New File](./commands/new-file/) | Tworzy nowy pusty rysunek |
-| [Files](./commands/files/) | Przegląda i przywraca ostatnio używane rysunki |
+| [File Manager](./commands/file-manager/) | Przeglądaj, zmieniaj nazwę lub usuwaj rysunki zapisane w przeglądarce |
 | [Print](./commands/print/) | Eksportuje obszar rysunku jako obraz lub PDF |
 | [Export](./commands/export/) | Pobiera rysunek jako DXF lub JSON |
 | [Wipe Storage](./commands/wipestorage/) | Usuwa wszystkie rysunki z pamięci przeglądarki |

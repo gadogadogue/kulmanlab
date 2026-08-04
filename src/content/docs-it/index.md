@@ -42,6 +42,7 @@ Benvenuto nel riferimento comandi di **KulmanLab CAD**. [KulmanLab CAD](https://
 | [Chamfer](./commands/chamfer/) | Taglia un angolo diagonale tra due linee o polilinee |
 | [Undo](./commands/undo/) | Annulla l'ultima azione |
 | [Redo](./commands/redo/) | Ripristina l'ultima azione annullata |
+| [Array Grid](./commands/array-grid/) | Ripete le entità in una griglia rettangolare di righe e colonne |
 
 ## Annotazione
 
@@ -104,7 +105,7 @@ Benvenuto nel riferimento comandi di **KulmanLab CAD**. [KulmanLab CAD](https://
 |---------|---------|
 | [Import](./commands/import/) | Apre un file di disegno DXF o JSON |
 | [New File](./commands/new-file/) | Avvia un nuovo disegno vuoto |
-| [Files](./commands/files/) | Sfoglia e ripristina i disegni recenti |
+| [File Manager](./commands/file-manager/) | Sfoglia, rinomina o elimina i disegni salvati nel browser |
 | [Print](./commands/print/) | Esporta un'area del disegno come immagine o PDF |
 | [Export](./commands/export/) | Scarica il disegno come DXF o JSON |
 | [Wipe Storage](./commands/wipestorage/) | Cancella tutti i disegni dall'archivio del browser |

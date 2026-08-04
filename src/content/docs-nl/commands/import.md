@@ -47,9 +47,9 @@ Entiteiten die niet-ondersteunde DXF-typen gebruiken, worden stilzwijgend overge
 
 ## Bestandsnaamgeving en opslag
 
-Bij het importeren van een bestand wordt een tijdstempel toegevoegd aan de bestandsnaam (bijvoorbeeld `myplan_May22_14:30:00.dxf`). Zo kunt u meerdere versies van dezelfde tekening bewaren in [Recente bestanden](../files/) zonder naamconflicten. Als de bestandsnaam al een tijdstempel bevat, wordt deze ongewijzigd gebruikt.
+Het geïmporteerde bestand behoudt zijn oorspronkelijke naam. Als die naam al door een ander opgeslagen tekening wordt gebruikt, wordt automatisch een achtervoegsel in Finder/Verkenner-stijl toegevoegd (`myplan (2)`, `myplan (3)`, …), zodat de bestaande vermelding nooit wordt overschreven. U kunt het bestand achteraf hernoemen via [File Manager](../file-manager/#een-bestand-hernoemen).
 
-De tekening wordt na het importeren automatisch opgeslagen in de browseropslag (IndexedDB), zodat deze verschijnt in het paneel [Files](../files/) en paginaherladingen overleeft.
+De tekening wordt na het importeren automatisch opgeslagen in de browseropslag (IndexedDB), zodat deze verschijnt in het paneel [File Manager](../file-manager/) en paginaherladingen overleeft.
 
 ## Wat er met de huidige tekening gebeurt
 
@@ -70,5 +70,5 @@ KulmanLab opent automatisch het meest recent bewerkte bestand opnieuw wanneer de
 ## Gerelateerde commando's
 
 - [Export](../export/) — download de huidige tekening als DXF of JSON
-- [Files](../files/) — blader door en herstel tekeningen die in de browser zijn opgeslagen
+- [File Manager](../file-manager/) — blader door en herstel tekeningen die in de browser zijn opgeslagen
 - [New File](../new-file/) — start een lege tekening

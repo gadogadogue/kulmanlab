@@ -42,6 +42,7 @@ Välkommen till **KulmanLab CAD**-kommandoreferensen. [KulmanLab CAD](https://ku
 | [Chamfer](./commands/chamfer/) | Skär av ett rakt diagonalt hörn mellan två linjer eller polylinjer |
 | [Undo](./commands/undo/) | Ångra den senaste åtgärden |
 | [Redo](./commands/redo/) | Gör om den senast ångrade åtgärden |
+| [Array Grid](./commands/array-grid/) | Upprepa entiteter i ett rektangulärt rutnät av rader och kolumner |
 
 ## Markering
 
@@ -104,7 +105,7 @@ Välkommen till **KulmanLab CAD**-kommandoreferensen. [KulmanLab CAD](https://ku
 |---------|-------------|
 | [Import](./commands/import/) | Öppna en DXF- eller JSON-ritfil |
 | [New File](./commands/new-file/) | Starta en ny tom ritning |
-| [Files](./commands/files/) | Bläddra bland och återställ tidigare ritningar |
+| [File Manager](./commands/file-manager/) | Bläddra bland, byt namn på eller ta bort ritningar sparade i webbläsaren |
 | [Print](./commands/print/) | Exportera ett ritningsområde som en bild eller PDF |
 | [Export](./commands/export/) | Ladda ner ritningen som DXF eller JSON |
 | [WipeStorage](./commands/wipestorage/) | Rensa alla ritningar från webbläsarens lagring |

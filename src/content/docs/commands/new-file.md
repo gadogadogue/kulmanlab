@@ -1,6 +1,6 @@
 ---
 title: New File — Start a Blank Drawing in KulmanLab CAD
-description: The New File command clears the canvas and opens a fresh blank drawing. A timestamped file name is generated automatically and saved to browser storage.
+description: The New File command clears the canvas and opens a fresh blank drawing. A plain file name is generated automatically and saved to browser storage.
 keywords: [new CAD file, new drawing, blank canvas CAD, create new drawing online, start new DXF, KulmanLab new file, reset canvas, clear drawing]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-The **New File** command clears the canvas and starts a fresh blank drawing. A unique file name with a timestamp is generated automatically.
+The **New File** command clears the canvas and starts a fresh blank drawing. A unique file name is generated automatically.
 
 ## How to create a new file
 
@@ -20,9 +20,9 @@ A freshly created file starts with:
 
 - **No entities** on the canvas.
 - **One default layer** named `0` with color white and linetype `Continuous`.
-- A **generated file name** in the format `kulman-Mon01_HH:MM:SS.dxf` (e.g. `kulman-May22_14:30:00.dxf`).
+- A **generated file name**, `kulman.dxf` — or `kulman (2).dxf`, `kulman (3).dxf`, … if that name is already taken.
 
-The file is saved to browser storage automatically and appears in [Recent Files](../files/).
+The file is saved to browser storage automatically and appears in the [File Manager](../file-manager/), and can be [renamed](../file-manager/#renaming-a-file) at any time.
 
 ## Warning — unsaved work is discarded
 
@@ -40,4 +40,4 @@ Clicking **New File** discards all entities on the current canvas without warnin
 
 - [Import](../import/) — open an existing DXF or JSON drawing
 - [Export](../export/) — download the drawing before starting fresh
-- [Files](../files/) — restore a previous drawing from browser storage
+- [File Manager](../file-manager/) — restore a previous drawing from browser storage

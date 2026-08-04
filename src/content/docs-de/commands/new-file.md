@@ -20,9 +20,9 @@ Eine neu erstellte Datei beginnt mit:
 
 - **Keinen Entitäten** auf der Zeichenfläche.
 - **Einem Standard-Layer** namens `0` mit weißer Farbe und Linientyp `Continuous`.
-- Einem **generierten Dateinamen** im Format `kulman-Mon01_HH:MM:SS.dxf` (z.B. `kulman-May22_14:30:00.dxf`).
+- Einem **generierten Dateinamen**, `kulman.dxf` — oder `kulman (2).dxf`, `kulman (3).dxf`, … falls dieser Name bereits vergeben ist.
 
-Die Datei wird automatisch im Browser-Speicher gespeichert und erscheint in [Zuletzt verwendete Dateien](../files/).
+Die Datei wird automatisch im Browser-Speicher gespeichert und erscheint im [File Manager](../file-manager/) und kann jederzeit [umbenannt](../file-manager/#eine-datei-umbenennen) werden.
 
 ## Warnung — nicht gespeicherte Arbeit wird verworfen
 
@@ -40,4 +40,4 @@ Das Klicken auf **New File** verwirft alle Entitäten auf der aktuellen Zeichenf
 
 - [Import](../import/) — eine vorhandene DXF- oder JSON-Zeichnung öffnen
 - [Export](../export/) — die Zeichnung herunterladen, bevor Sie neu beginnen
-- [Dateien](../files/) — eine frühere Zeichnung aus dem Browser-Speicher wiederherstellen
+- [File Manager](../file-manager/) — eine frühere Zeichnung aus dem Browser-Speicher wiederherstellen

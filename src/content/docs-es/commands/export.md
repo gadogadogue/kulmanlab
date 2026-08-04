@@ -50,7 +50,7 @@ Se incluyen entidades de solo geometría:
 
 ## Nombre del archivo exportado
 
-El archivo descargado lleva el nombre del archivo de dibujo actual (p. ej. `myplan_May22_14:30:00.json`). La extensión cambia para coincidir con el formato elegido.
+El archivo descargado lleva el nombre del archivo de dibujo actual (p. ej. `myplan.json`). La extensión cambia para coincidir con el formato elegido.
 
 ## Diferencia entre Export y Print
 
@@ -67,4 +67,4 @@ Usa **Export** cuando necesites un archivo editable. Usa [Print](../print/) cuan
 
 - [Import](../import/) — abrir un archivo DXF o JSON
 - [Print](../print/) — exportar el lienzo como imagen PNG, JPEG, WebP o PDF
-- [Files](../files/) — explorar dibujos guardados en el almacenamiento del navegador
+- [File Manager](../file-manager/) — explorar dibujos guardados en el almacenamiento del navegador

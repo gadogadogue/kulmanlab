@@ -47,9 +47,9 @@ Entitäten mit nicht unterstützten DXF-Typen werden stillschweigend übersprung
 
 ## Dateiname und Speicherung
 
-Beim Import einer Datei wird dem Dateinamen ein Zeitstempel angehängt (zum Beispiel `myplan_May22_14:30:00.dxf`). So können Sie mehrere Versionen derselben Zeichnung in [Zuletzt verwendete Dateien](../files/) aufbewahren, ohne Namenskonflikte zu erzeugen. Enthält der Dateiname bereits einen Zeitstempel, wird er unverändert übernommen.
+Die importierte Datei behält ihren ursprünglichen Namen. Ist dieser Name bereits von einer anderen gespeicherten Zeichnung belegt, wird automatisch ein Suffix im Stil von Finder/Explorer angehängt (`myplan (2)`, `myplan (3)`, …), sodass der bestehende Eintrag niemals überschrieben wird. Sie können die Datei anschließend über den [File Manager](../file-manager/#eine-datei-umbenennen) umbenennen.
 
-Die Zeichnung wird nach dem Import automatisch im Browser-Speicher (IndexedDB) gespeichert, sodass sie im Panel [Dateien](../files/) erscheint und Seitenneulades übersteht.
+Die Zeichnung wird nach dem Import automatisch im Browser-Speicher (IndexedDB) gespeichert, sodass sie im Panel [File Manager](../file-manager/) erscheint und Seitenneulades übersteht.
 
 ## Was mit der aktuellen Zeichnung passiert
 
@@ -70,5 +70,5 @@ KulmanLab öffnet beim Laden der Seite automatisch die zuletzt bearbeitete Datei
 ## Verwandte Befehle
 
 - [Export](../export/) — aktuelle Zeichnung als DXF oder JSON herunterladen
-- [Dateien](../files/) — im Browser gespeicherte Zeichnungen durchsuchen und wiederherstellen
+- [File Manager](../file-manager/) — im Browser gespeicherte Zeichnungen durchsuchen und wiederherstellen
 - [New File](../new-file/) — eine leere Zeichnung starten

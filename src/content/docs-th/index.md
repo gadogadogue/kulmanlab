@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | ตัดมุมเฉียงตรงระหว่างสองเส้นหรือโพลีไลน์ |
 | [Undo](./commands/undo/) | เลิกทำการกระทำล่าสุด |
 | [Redo](./commands/redo/) | ทำซ้ำการกระทำที่เพิ่งเลิกทำ |
+| [Array Grid](./commands/array-grid/) | ทำซ้ำวัตถุเป็นกริดสี่เหลี่ยมของแถวและคอลัมน์ |
 
 ## คำอธิบายประกอบ
 
@@ -104,7 +105,7 @@ order: 1
 |---------|-----------|
 | [Import](./commands/import/) | เปิดไฟล์ภาพวาด DXF หรือ JSON |
 | [New File](./commands/new-file/) | เริ่มภาพวาดเปล่าใหม่ |
-| [Files](./commands/files/) | เรียกดูและกู้คืนภาพวาดล่าสุด |
+| [File Manager](./commands/file-manager/) | เรียกดู เปลี่ยนชื่อ หรือลบภาพวาดที่บันทึกในเบราว์เซอร์ของคุณ |
 | [Print](./commands/print/) | ส่งออกพื้นที่ภาพวาดเป็นรูปภาพหรือ PDF |
 | [Export](./commands/export/) | ดาวน์โหลดภาพวาดเป็น DXF หรือ JSON |
 | [WipeStorage](./commands/wipestorage/) | ล้างภาพวาดทั้งหมดจากหน่วยความจำเบราว์เซอร์ |

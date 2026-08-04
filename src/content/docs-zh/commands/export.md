@@ -50,7 +50,7 @@ order: 5
 
 ## 导出的文件名
 
-下载的文件以当前图形文件命名（例如 `myplan_May22_14:30:00.json`）。扩展名根据所选格式更改。
+下载的文件以当前图形文件命名（例如 `myplan.json`）。扩展名根据所选格式更改。
 
 ## Export vs Print 的区别
 
@@ -67,4 +67,4 @@ order: 5
 
 - [Import](../import/) — 打开 DXF 或 JSON 文件
 - [Print](../print/) — 将画布导出为 PNG、JPEG、WebP 或 PDF 图像
-- [Files](../files/) — 浏览保存在浏览器存储中的图形
+- [File Manager](../file-manager/) — 浏览保存在浏览器存储中的图形

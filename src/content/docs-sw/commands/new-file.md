@@ -1,6 +1,6 @@
 ---
 title: New File — Start a Blank Drawing in KulmanLab CAD
-description: "Amri ya New File husafisha turubai na kufungua mchoro mpya wazi. Jina la faili lenye muhuri wa wakati huzalishwa kiotomatiki na kuhifadhiwa kwenye hifadhi ya kivinjari."
+description: "Amri ya New File husafisha turubai na kufungua mchoro mpya wazi. Jina rahisi la faili huzalishwa kiotomatiki na kuhifadhiwa kwenye hifadhi ya kivinjari."
 keywords: [new CAD file, new drawing, blank canvas CAD, create new drawing online, start new DXF, KulmanLab new file, reset canvas, clear drawing]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-Amri ya **New File** husafisha turubai na kuanza mchoro mpya wazi. Jina la kipekee la faili lenye muhuri wa wakati huzalishwa kiotomatiki.
+Amri ya **New File** husafisha turubai na kuanza mchoro mpya wazi. Jina la kipekee la faili huzalishwa kiotomatiki.
 
 ## Jinsi ya kuunda faili mpya
 
@@ -20,9 +20,9 @@ Faili iliyoundwa upya huanza na:
 
 - **Hakuna vipengele** kwenye turubai.
 - **Safu moja ya chaguo-msingi** iitwayo `0` yenye rangi nyeupe na aina ya mstari `Continuous`.
-- **Jina la faili lililozalishwa** katika muundo `kulman-Mon01_HH:MM:SS.dxf` (mfano `kulman-May22_14:30:00.dxf`).
+- **Jina la faili lililozalishwa**, `kulman.dxf` — au `kulman (2).dxf`, `kulman (3).dxf`, … ikiwa jina hilo tayari linatumika.
 
-Faili huhifadhiwa kwenye hifadhi ya kivinjari kiotomatiki na inaonekana katika [Faili za Hivi Karibuni](../files/).
+Faili huhifadhiwa kwenye hifadhi ya kivinjari kiotomatiki, inaonekana katika [File Manager](../file-manager/), na inaweza [kubadilishwa jina](../file-manager/#kubadilisha-jina-la-faili) wakati wowote.
 
 ## Onyo — kazi ambayo haijahifadhiwa itapotea
 
@@ -40,4 +40,4 @@ Kubonyeza **New File** hutupilia mbali vipengele vyote kwenye turubai ya sasa bi
 
 - [Import](../import/) — fungua mchoro wa DXF au JSON uliopo
 - [Export](../export/) — pakua mchoro kabla ya kuanza upya
-- [Files](../files/) — rejesha mchoro wa awali kutoka kwa hifadhi ya kivinjari
+- [File Manager](../file-manager/) — rejesha mchoro wa awali kutoka kwa hifadhi ya kivinjari

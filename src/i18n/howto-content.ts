@@ -36,7 +36,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import command', slug: 'commands/import' },
-          { label: 'Recent files panel', slug: 'commands/files' },
+          { label: 'Recent files panel', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -146,14 +146,15 @@ export const howtoContent: Record<string, HowToContent> = {
       },
       {
         title: 'Back up and manage saved drawings',
-        intro: 'Drawings live in your browser storage — private, offline, and yours to manage.',
+        intro: 'Drawings live in your browser storage — private, offline, and yours to manage. Browser storage can be cleared or lost, so it is not a backup on its own.',
         steps: [
-          'Open the <strong>Files</strong> panel to see every drawing saved in this browser; restore or delete any of them.',
-          'Before clearing browser data or switching machines, export anything important — <code>.json</code> keeps full fidelity, <code>.dxf</code> maximizes compatibility.',
+          'Open the <strong>File Manager</strong> panel to see every drawing saved in this browser, open one, rename it, or delete it.',
+          'The only reliable way to keep your work safe is to <strong>export</strong> a copy to your own storage — <code>.json</code> is preferred (full fidelity, every entity type), <code>.dxf</code> maximizes compatibility with other CAD tools.',
+          'Do this before clearing browser data, switching browsers or devices, or whenever a drawing matters — browser storage can be wiped by the browser itself (storage limits, private browsing, an OS reinstall) with no warning.',
           'To reset the app completely, type <code>wipestorage</code> and confirm with <code>YES</code> — this permanently deletes all locally saved drawings.',
         ],
         links: [
-          { label: 'Files panel', slug: 'commands/files' },
+          { label: 'File Manager panel', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Wipe storage', slug: 'commands/wipestorage' },
         ],
@@ -213,7 +214,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import-Befehl', slug: 'commands/import' },
-          { label: 'Dateien-Panel', slug: 'commands/files' },
+          { label: 'Dateien-Panel', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -330,7 +331,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Zum vollständigen Zurücksetzen tippen Sie <code>wipestorage</code> und bestätigen mit <code>YES</code> — das löscht alle lokal gespeicherten Zeichnungen unwiderruflich.',
         ],
         links: [
-          { label: 'Dateien-Panel', slug: 'commands/files' },
+          { label: 'Dateien-Panel', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Speicher löschen', slug: 'commands/wipestorage' },
         ],
@@ -390,7 +391,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Comando Import', slug: 'commands/import' },
-          { label: 'Panel de archivos', slug: 'commands/files' },
+          { label: 'Panel de archivos', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -507,7 +508,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Para restablecer la app por completo, escribe <code>wipestorage</code> y confirma con <code>YES</code>: se borran de forma permanente todos los dibujos guardados localmente.',
         ],
         links: [
-          { label: 'Panel de archivos', slug: 'commands/files' },
+          { label: 'Panel de archivos', slug: 'commands/file-manager' },
           { label: 'Exportar', slug: 'commands/export' },
           { label: 'Borrar almacenamiento', slug: 'commands/wipestorage' },
         ],
@@ -567,7 +568,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Commande Import', slug: 'commands/import' },
-          { label: 'Panneau des fichiers', slug: 'commands/files' },
+          { label: 'Panneau des fichiers', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -684,7 +685,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Pour réinitialiser complètement l\'app, tapez <code>wipestorage</code> et confirmez avec <code>YES</code> — tous les dessins enregistrés localement sont supprimés définitivement.',
         ],
         links: [
-          { label: 'Panneau des fichiers', slug: 'commands/files' },
+          { label: 'Panneau des fichiers', slug: 'commands/file-manager' },
           { label: 'Exporter', slug: 'commands/export' },
           { label: 'Effacer le stockage', slug: 'commands/wipestorage' },
         ],
@@ -744,7 +745,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Comando Import', slug: 'commands/import' },
-          { label: 'Pannello file', slug: 'commands/files' },
+          { label: 'Pannello file', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -861,7 +862,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Per azzerare completamente l\'app, digita <code>wipestorage</code> e conferma con <code>YES</code>: tutti i disegni salvati localmente vengono eliminati per sempre.',
         ],
         links: [
-          { label: 'Pannello file', slug: 'commands/files' },
+          { label: 'Pannello file', slug: 'commands/file-manager' },
           { label: 'Esporta', slug: 'commands/export' },
           { label: 'Svuota memoria', slug: 'commands/wipestorage' },
         ],
@@ -921,7 +922,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Comando Import', slug: 'commands/import' },
-          { label: 'Painel de arquivos', slug: 'commands/files' },
+          { label: 'Painel de arquivos', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -1038,7 +1039,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Para zerar o app por completo, digite <code>wipestorage</code> e confirme com <code>YES</code> — todos os desenhos salvos localmente são apagados em definitivo.',
         ],
         links: [
-          { label: 'Painel de arquivos', slug: 'commands/files' },
+          { label: 'Painel de arquivos', slug: 'commands/file-manager' },
           { label: 'Exportar', slug: 'commands/export' },
           { label: 'Limpar armazenamento', slug: 'commands/wipestorage' },
         ],
@@ -1098,7 +1099,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Команда Import', slug: 'commands/import' },
-          { label: 'Панель файлів', slug: 'commands/files' },
+          { label: 'Панель файлів', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -1215,7 +1216,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Щоб повністю скинути застосунок, введіть <code>wipestorage</code> і підтвердьте, набравши <code>YES</code> — усі локально збережені креслення буде видалено назавжди.',
         ],
         links: [
-          { label: 'Панель файлів', slug: 'commands/files' },
+          { label: 'Панель файлів', slug: 'commands/file-manager' },
           { label: 'Експорт', slug: 'commands/export' },
           { label: 'Очистити сховище', slug: 'commands/wipestorage' },
         ],
@@ -1275,7 +1276,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import komutu', slug: 'commands/import' },
-          { label: 'Dosyalar paneli', slug: 'commands/files' },
+          { label: 'Dosyalar paneli', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -1392,7 +1393,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Uygulamayı tamamen sıfırlamak için <code>wipestorage</code> yazın ve <code>YES</code> ile onaylayın — yerelde kayıtlı tüm çizimler kalıcı olarak silinir.',
         ],
         links: [
-          { label: 'Dosyalar paneli', slug: 'commands/files' },
+          { label: 'Dosyalar paneli', slug: 'commands/file-manager' },
           { label: 'Dışa aktar', slug: 'commands/export' },
           { label: 'Depolamayı temizle', slug: 'commands/wipestorage' },
         ],
@@ -1452,7 +1453,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import 命令', slug: 'commands/import' },
-          { label: '文件面板', slug: 'commands/files' },
+          { label: '文件面板', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -1569,7 +1570,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '要彻底重置应用，输入 <code>wipestorage</code> 并输入 <code>YES</code> 确认——所有本地保存的图纸将被永久删除。',
         ],
         links: [
-          { label: '文件面板', slug: 'commands/files' },
+          { label: '文件面板', slug: 'commands/file-manager' },
           { label: '导出', slug: 'commands/export' },
           { label: '清空存储', slug: 'commands/wipestorage' },
         ],
@@ -1629,7 +1630,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import कमांड', slug: 'commands/import' },
-          { label: 'फ़ाइल पैनल', slug: 'commands/files' },
+          { label: 'फ़ाइल पैनल', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -1746,7 +1747,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'ऐप को पूरी तरह रीसेट करने के लिए <code>wipestorage</code> टाइप करें और <code>YES</code> से पुष्टि करें — स्थानीय रूप से सहेजी सभी ड्रॉइंग स्थायी रूप से मिट जाती हैं।',
         ],
         links: [
-          { label: 'फ़ाइल पैनल', slug: 'commands/files' },
+          { label: 'फ़ाइल पैनल', slug: 'commands/file-manager' },
           { label: 'निर्यात', slug: 'commands/export' },
           { label: 'स्टोरेज मिटाएँ', slug: 'commands/wipestorage' },
         ],
@@ -1806,7 +1807,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'أمر Import', slug: 'commands/import' },
-          { label: 'لوحة الملفات', slug: 'commands/files' },
+          { label: 'لوحة الملفات', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -1923,7 +1924,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'لإعادة ضبط التطبيق كليًا، اكتب <code>wipestorage</code> وأكّد بكتابة <code>YES</code> — تُحذف كل الرسومات المحفوظة محليًا نهائيًا.',
         ],
         links: [
-          { label: 'لوحة الملفات', slug: 'commands/files' },
+          { label: 'لوحة الملفات', slug: 'commands/file-manager' },
           { label: 'تصدير', slug: 'commands/export' },
           { label: 'مسح التخزين', slug: 'commands/wipestorage' },
         ],
@@ -1983,7 +1984,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Perintah Import', slug: 'commands/import' },
-          { label: 'Panel file', slug: 'commands/files' },
+          { label: 'Panel file', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -2100,7 +2101,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Untuk mereset aplikasi sepenuhnya, ketik <code>wipestorage</code> dan konfirmasi dengan <code>YES</code> — semua gambar yang tersimpan lokal dihapus permanen.',
         ],
         links: [
-          { label: 'Panel file', slug: 'commands/files' },
+          { label: 'Panel file', slug: 'commands/file-manager' },
           { label: 'Ekspor', slug: 'commands/export' },
           { label: 'Hapus penyimpanan', slug: 'commands/wipestorage' },
         ],
@@ -2160,7 +2161,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import コマンド', slug: 'commands/import' },
-          { label: 'ファイルパネル', slug: 'commands/files' },
+          { label: 'ファイルパネル', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -2277,7 +2278,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'アプリを完全リセットするには <code>wipestorage</code> と入力し <code>YES</code> で確定 — ローカル保存された図面はすべて完全に削除されます。',
         ],
         links: [
-          { label: 'ファイルパネル', slug: 'commands/files' },
+          { label: 'ファイルパネル', slug: 'commands/file-manager' },
           { label: 'エクスポート', slug: 'commands/export' },
           { label: 'ストレージ消去', slug: 'commands/wipestorage' },
         ],
@@ -2337,7 +2338,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Polecenie Import', slug: 'commands/import' },
-          { label: 'Panel plików', slug: 'commands/files' },
+          { label: 'Panel plików', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -2454,7 +2455,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Aby całkowicie zresetować aplikację, wpisz <code>wipestorage</code> i potwierdź, wpisując <code>YES</code> — wszystkie lokalnie zapisane rysunki zostaną trwale usunięte.',
         ],
         links: [
-          { label: 'Panel plików', slug: 'commands/files' },
+          { label: 'Panel plików', slug: 'commands/file-manager' },
           { label: 'Eksport', slug: 'commands/export' },
           { label: 'Czyszczenie pamięci', slug: 'commands/wipestorage' },
         ],
@@ -2514,7 +2515,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import 명령', slug: 'commands/import' },
-          { label: '파일 패널', slug: 'commands/files' },
+          { label: '파일 패널', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -2631,7 +2632,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '앱을 완전히 초기화하려면 <code>wipestorage</code>를 입력하고 <code>YES</code>로 확인합니다 — 로컬에 저장된 모든 도면이 영구 삭제됩니다.',
         ],
         links: [
-          { label: '파일 패널', slug: 'commands/files' },
+          { label: '파일 패널', slug: 'commands/file-manager' },
           { label: '내보내기', slug: 'commands/export' },
           { label: '저장소 비우기', slug: 'commands/wipestorage' },
         ],
@@ -2691,7 +2692,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Lệnh Import', slug: 'commands/import' },
-          { label: 'Bảng tệp', slug: 'commands/files' },
+          { label: 'Bảng tệp', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -2808,7 +2809,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Để đặt lại ứng dụng hoàn toàn, gõ <code>wipestorage</code> và xác nhận bằng <code>YES</code> — mọi bản vẽ lưu cục bộ sẽ bị xóa vĩnh viễn.',
         ],
         links: [
-          { label: 'Bảng tệp', slug: 'commands/files' },
+          { label: 'Bảng tệp', slug: 'commands/file-manager' },
           { label: 'Xuất', slug: 'commands/export' },
           { label: 'Xóa bộ nhớ', slug: 'commands/wipestorage' },
         ],
@@ -2868,7 +2869,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'คำสั่ง Import', slug: 'commands/import' },
-          { label: 'แผงไฟล์', slug: 'commands/files' },
+          { label: 'แผงไฟล์', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -2985,7 +2986,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'หากต้องการรีเซ็ตแอปทั้งหมด พิมพ์ <code>wipestorage</code> แล้วยืนยันด้วย <code>YES</code> — แบบเขียนที่บันทึกในเครื่องทั้งหมดจะถูกลบถาวร',
         ],
         links: [
-          { label: 'แผงไฟล์', slug: 'commands/files' },
+          { label: 'แผงไฟล์', slug: 'commands/file-manager' },
           { label: 'ส่งออก', slug: 'commands/export' },
           { label: 'ล้างพื้นที่จัดเก็บ', slug: 'commands/wipestorage' },
         ],
@@ -3045,7 +3046,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Perintah Import', slug: 'commands/import' },
-          { label: 'Panel fail', slug: 'commands/files' },
+          { label: 'Panel fail', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -3162,7 +3163,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Untuk menetapkan semula aplikasi sepenuhnya, taip <code>wipestorage</code> dan sahkan dengan <code>YES</code> — semua lukisan tersimpan setempat dipadamkan secara kekal.',
         ],
         links: [
-          { label: 'Panel fail', slug: 'commands/files' },
+          { label: 'Panel fail', slug: 'commands/file-manager' },
           { label: 'Eksport', slug: 'commands/export' },
           { label: 'Kosongkan storan', slug: 'commands/wipestorage' },
         ],
@@ -3222,7 +3223,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import কমান্ড', slug: 'commands/import' },
-          { label: 'ফাইল প্যানেল', slug: 'commands/files' },
+          { label: 'ফাইল প্যানেল', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -3339,7 +3340,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'অ্যাপ সম্পূর্ণ রিসেট করতে <code>wipestorage</code> লিখে <code>YES</code> দিয়ে নিশ্চিত করুন — স্থানীয়ভাবে সংরক্ষিত সব অঙ্কন স্থায়ীভাবে মুছে যায়।',
         ],
         links: [
-          { label: 'ফাইল প্যানেল', slug: 'commands/files' },
+          { label: 'ফাইল প্যানেল', slug: 'commands/file-manager' },
           { label: 'রপ্তানি', slug: 'commands/export' },
           { label: 'স্টোরেজ মোছা', slug: 'commands/wipestorage' },
         ],
@@ -3399,7 +3400,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Amri ya Import', slug: 'commands/import' },
-          { label: 'Paneli ya faili', slug: 'commands/files' },
+          { label: 'Paneli ya faili', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -3516,7 +3517,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Kuweka upya programu kabisa, andika <code>wipestorage</code> na uthibitishe kwa <code>YES</code> — michoro yote iliyohifadhiwa ndani hufutwa kabisa.',
         ],
         links: [
-          { label: 'Paneli ya faili', slug: 'commands/files' },
+          { label: 'Paneli ya faili', slug: 'commands/file-manager' },
           { label: 'Hamisha', slug: 'commands/export' },
           { label: 'Futa hifadhi', slug: 'commands/wipestorage' },
         ],
@@ -3576,7 +3577,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import کمانڈ', slug: 'commands/import' },
-          { label: 'فائل پینل', slug: 'commands/files' },
+          { label: 'فائل پینل', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -3693,7 +3694,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'ایپ کو مکمل ری سیٹ کرنے کے لیے <code>wipestorage</code> لکھیں اور <code>YES</code> سے تصدیق کریں — مقامی طور پر محفوظ تمام ڈرائنگز مستقل حذف ہو جاتی ہیں۔',
         ],
         links: [
-          { label: 'فائل پینل', slug: 'commands/files' },
+          { label: 'فائل پینل', slug: 'commands/file-manager' },
           { label: 'برآمد', slug: 'commands/export' },
           { label: 'اسٹوریج صاف کریں', slug: 'commands/wipestorage' },
         ],
@@ -3753,7 +3754,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Εντολή Import', slug: 'commands/import' },
-          { label: 'Πάνελ αρχείων', slug: 'commands/files' },
+          { label: 'Πάνελ αρχείων', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -3870,7 +3871,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Για πλήρη επαναφορά της εφαρμογής, πληκτρολογήστε <code>wipestorage</code> και επιβεβαιώστε με <code>YES</code> — όλα τα τοπικά αποθηκευμένα σχέδια διαγράφονται οριστικά.',
         ],
         links: [
-          { label: 'Πάνελ αρχείων', slug: 'commands/files' },
+          { label: 'Πάνελ αρχείων', slug: 'commands/file-manager' },
           { label: 'Εξαγωγή', slug: 'commands/export' },
           { label: 'Καθαρισμός χώρου', slug: 'commands/wipestorage' },
         ],
@@ -3930,7 +3931,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import ਕਮਾਂਡ', slug: 'commands/import' },
-          { label: 'ਫਾਈਲ ਪੈਨਲ', slug: 'commands/files' },
+          { label: 'ਫਾਈਲ ਪੈਨਲ', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -4047,7 +4048,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'ਐਪ ਪੂਰੀ ਤਰ੍ਹਾਂ ਰੀਸੈੱਟ ਕਰਨ ਲਈ <code>wipestorage</code> ਲਿਖ ਕੇ <code>YES</code> ਨਾਲ ਪੁਸ਼ਟੀ ਕਰੋ — ਸਥਾਨਕ ਸੰਭਾਲੀਆਂ ਸਾਰੀਆਂ ਡਰਾਇੰਗਾਂ ਪੱਕੇ ਤੌਰ ਤੇ ਮਿਟ ਜਾਂਦੀਆਂ ਹਨ।',
         ],
         links: [
-          { label: 'ਫਾਈਲ ਪੈਨਲ', slug: 'commands/files' },
+          { label: 'ਫਾਈਲ ਪੈਨਲ', slug: 'commands/file-manager' },
           { label: 'ਐਕਸਪੋਰਟ', slug: 'commands/export' },
           { label: 'ਸਟੋਰੇਜ ਮਿਟਾਓ', slug: 'commands/wipestorage' },
         ],
@@ -4107,7 +4108,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Kommandot Import', slug: 'commands/import' },
-          { label: 'Filpanelen', slug: 'commands/files' },
+          { label: 'Filpanelen', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -4224,7 +4225,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'För att nollställa appen helt, skriv <code>wipestorage</code> och bekräfta med <code>YES</code> — alla lokalt sparade ritningar raderas permanent.',
         ],
         links: [
-          { label: 'Filpanelen', slug: 'commands/files' },
+          { label: 'Filpanelen', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Rensa lagring', slug: 'commands/wipestorage' },
         ],
@@ -4284,7 +4285,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Command na Import', slug: 'commands/import' },
-          { label: 'Panel ng mga file', slug: 'commands/files' },
+          { label: 'Panel ng mga file', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -4401,7 +4402,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Para ganap na i-reset ang app, i-type ang <code>wipestorage</code> at kumpirmahin gamit ang <code>YES</code> — permanenteng mabubura ang lahat ng lokal na naka-save na drawing.',
         ],
         links: [
-          { label: 'Panel ng mga file', slug: 'commands/files' },
+          { label: 'Panel ng mga file', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Burahin ang storage', slug: 'commands/wipestorage' },
         ],
@@ -4461,7 +4462,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import-commando', slug: 'commands/import' },
-          { label: 'Recente bestanden-paneel', slug: 'commands/files' },
+          { label: 'Recente bestanden-paneel', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -4578,7 +4579,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Om de app volledig te resetten, typt u <code>wipestorage</code> en bevestigt u met <code>YES</code> — dit verwijdert permanent alle lokaal opgeslagen tekeningen.',
         ],
         links: [
-          { label: 'Bestanden-paneel', slug: 'commands/files' },
+          { label: 'Bestanden-paneel', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Opslag wissen', slug: 'commands/wipestorage' },
         ],
@@ -4638,7 +4639,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'פקודת Import', slug: 'commands/import' },
-          { label: 'פאנל קבצים אחרונים', slug: 'commands/files' },
+          { label: 'פאנל קבצים אחרונים', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -4755,7 +4756,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'כדי לאפס את האפליקציה לחלוטין, הקלידו <code>wipestorage</code> ואשרו עם <code>YES</code> — פעולה זו מוחקת לצמיתות את כל השרטוטים השמורים מקומית.',
         ],
         links: [
-          { label: 'פאנל קבצים', slug: 'commands/files' },
+          { label: 'פאנל קבצים', slug: 'commands/file-manager' },
           { label: 'ייצוא', slug: 'commands/export' },
           { label: 'ניקוי אחסון', slug: 'commands/wipestorage' },
         ],
@@ -4815,7 +4816,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Umarnin Import', slug: 'commands/import' },
-          { label: 'Panel na fayiloli na baya-bayan nan', slug: 'commands/files' },
+          { label: 'Panel na fayiloli na baya-bayan nan', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -4932,7 +4933,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Don sake saita manhajar gaba ɗaya, rubuta <code>wipestorage</code> ka tabbatar da <code>YES</code> — wannan yana share dukkan zanen-zanen da aka ajiye a gida na dindindin.',
         ],
         links: [
-          { label: 'Panel na Files', slug: 'commands/files' },
+          { label: 'Panel na Files', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Wipe Storage', slug: 'commands/wipestorage' },
         ],
@@ -4992,7 +4993,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import-kommando', slug: 'commands/import' },
-          { label: 'Panel for nylige filer', slug: 'commands/files' },
+          { label: 'Panel for nylige filer', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -5109,7 +5110,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'For å tilbakestille appen fullstendig, skriv <code>wipestorage</code> og bekreft med <code>YES</code> — dette sletter permanent alle lokalt lagrede tegninger.',
         ],
         links: [
-          { label: 'Files-panel', slug: 'commands/files' },
+          { label: 'Files-panel', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Wipe storage', slug: 'commands/wipestorage' },
         ],
@@ -5169,7 +5170,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import-kommando', slug: 'commands/import' },
-          { label: 'Panel for nylige filer', slug: 'commands/files' },
+          { label: 'Panel for nylige filer', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -5286,7 +5287,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'For at nulstille appen fuldstændigt, skriv <code>wipestorage</code> og bekræft med <code>YES</code> — dette sletter permanent alle lokalt gemte tegninger.',
         ],
         links: [
-          { label: 'Files-panel', slug: 'commands/files' },
+          { label: 'Files-panel', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Wipe storage', slug: 'commands/wipestorage' },
         ],
@@ -5346,7 +5347,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Import-komento', slug: 'commands/import' },
-          { label: 'Viimeisimpien tiedostojen paneeli', slug: 'commands/files' },
+          { label: 'Viimeisimpien tiedostojen paneeli', slug: 'commands/file-manager' },
         ],
       },
       {
@@ -5463,7 +5464,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Nollataksesi sovelluksen kokonaan, kirjoita <code>wipestorage</code> ja vahvista <code>YES</code>:llä — tämä poistaa pysyvästi kaikki paikallisesti tallennetut piirustukset.',
         ],
         links: [
-          { label: 'Files-paneeli', slug: 'commands/files' },
+          { label: 'Files-paneeli', slug: 'commands/file-manager' },
           { label: 'Export', slug: 'commands/export' },
           { label: 'Wipe storage', slug: 'commands/wipestorage' },
         ],

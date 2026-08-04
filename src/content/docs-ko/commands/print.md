@@ -79,4 +79,4 @@ order: 4
 ## 관련 명령어
 
 - [Export](../export/) — 현재 도면을 DXF 또는 JSON으로 다운로드
-- [Files](../files/) — 브라우저 저장소에서 도면 탐색 및 복원
+- [File Manager](../file-manager/) — 브라우저 저장소에서 도면 탐색 및 복원

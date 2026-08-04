@@ -1,6 +1,6 @@
 ---
 title: New File — Avviare un Disegno Vuoto in KulmanLab CAD
-description: Il comando New File svuota il canvas e apre un disegno vuoto. Un nome file con timestamp viene generato automaticamente e salvato nell'archivio del browser.
+description: Il comando New File svuota il canvas e apre un disegno vuoto. Un nome file semplice viene generato automaticamente e salvato nell'archivio del browser.
 keywords: [nuovo file CAD, nuovo disegno, canvas vuoto CAD, crea nuovo disegno online, nuovo DXF, KulmanLab nuovo file, reimposta canvas, cancella disegno]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-Il comando **New File** svuota il canvas e avvia un disegno vuoto. Un nome file univoco con timestamp viene generato automaticamente.
+Il comando **New File** svuota il canvas e avvia un disegno vuoto. Un nome file univoco viene generato automaticamente.
 
 ## Come creare un nuovo file
 
@@ -20,9 +20,9 @@ Un file appena creato inizia con:
 
 - **Nessuna entità** sul canvas.
 - **Un livello predefinito** chiamato `0` con colore bianco e tipo di linea `Continuous`.
-- Un **nome file generato** nel formato `kulman-Lun01_HH:MM:SS.dxf` (es. `kulman-Mag22_14:30:00.dxf`).
+- Un **nome file generato**, `kulman.dxf` — oppure `kulman (2).dxf`, `kulman (3).dxf`, … se quel nome è già in uso.
 
-Il file viene salvato automaticamente nell'archivio del browser e appare in [File Recenti](../files/).
+Il file viene salvato automaticamente nell'archivio del browser e appare nel [File Manager](../file-manager/), e può essere [rinominato](../file-manager/#renaming-a-file) in qualsiasi momento.
 
 ## Attenzione — il lavoro non salvato viene eliminato
 
@@ -40,4 +40,4 @@ Cliccare **New File** elimina tutte le entità sul canvas corrente senza avviso.
 
 - [Importa](../import/) — apri un disegno DXF o JSON esistente
 - [Esporta](../export/) — scarica il disegno prima di iniziarne uno nuovo
-- [Files](../files/) — ripristina un disegno precedente dall'archivio del browser
+- [File Manager](../file-manager/) — ripristina un disegno precedente dall'archivio del browser

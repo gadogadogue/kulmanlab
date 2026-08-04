@@ -47,9 +47,9 @@ Entitas yang menggunakan tipe DXF yang tidak didukung dilewati secara diam-diam 
 
 ## Penamaan file dan penyimpanan
 
-Ketika Anda mengimpor file, cap waktu ditambahkan ke nama file (misalnya `myplan_May22_14:30:00.dxf`). Ini memungkinkan Anda menyimpan beberapa versi gambar yang sama dalam [Recent Files](../files/) tanpa tabrakan nama. Jika nama file sudah berisi cap waktu, itu digunakan apa adanya.
+File yang diimpor mempertahankan nama aslinya. Jika nama tersebut sudah digunakan oleh gambar tersimpan lainnya, akhiran bergaya Finder/Explorer ditambahkan secara otomatis (`myplan (2)`, `myplan (3)`, …) sehingga entri yang ada tidak pernah tertimpa. Anda dapat mengganti nama file nanti dari [File Manager](../file-manager/#mengganti-nama-file).
 
-Gambar secara otomatis disimpan ke penyimpanan browser (IndexedDB) setelah diimpor, sehingga muncul di panel [Files](../files/) dan bertahan setelah halaman dimuat ulang.
+Gambar secara otomatis disimpan ke penyimpanan browser (IndexedDB) setelah diimpor, sehingga muncul di panel [File Manager](../file-manager/) dan bertahan setelah halaman dimuat ulang.
 
 ## Apa yang terjadi pada gambar saat ini
 
@@ -70,5 +70,5 @@ KulmanLab secara otomatis membuka kembali file yang terakhir diedit ketika halam
 ## Perintah terkait
 
 - [Export](../export/) — unduh gambar saat ini sebagai DXF atau JSON
-- [Files](../files/) — jelajahi dan pulihkan gambar yang tersimpan di browser
+- [File Manager](../file-manager/) — jelajahi dan pulihkan gambar yang tersimpan di browser
 - [New File](../new-file/) — mulai gambar kosong

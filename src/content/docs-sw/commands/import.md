@@ -47,9 +47,9 @@ Viumbe vinavyotumia aina za DXF zisizooungwa mkono hupitwa kimya kimya — sehem
 
 ## Kutaja faili na uhifadhi
 
-Unapoingiza faili, muhuri wa wakati huongezwa kwenye jina la faili (kwa mfano `myplan_May22_14:30:00.dxf`). Hii inakuruhusu kuweka matoleo mengi ya mchoro ule ule katika [Faili za Hivi Karibuni](../files/) bila mgongano wa majina. Ikiwa jina la faili tayari lina muhuri wa wakati, linatumika kama lilivyo.
+Faili lililoingizwa huhifadhi jina lake la asili. Ikiwa jina hilo tayari linatumika na mchoro mwingine uliohifadhiwa, kiambatanisho cha mtindo wa Finder/Explorer huongezwa kiotomatiki (`myplan (2)`, `myplan (3)`, …) ili ingizo lililopo lisibadilishwe kamwe. Unaweza kubadilisha jina la faili baadaye kutoka kwa [File Manager](../file-manager/#kubadilisha-jina-la-faili).
 
-Mchoro huhifadhiwa kiotomatiki kwenye hifadhi ya kivinjari (IndexedDB) baada ya kuingizwa, hivyo huonekana katika jopo la [Files](../files/) na hunusurika upakiaji upya wa ukurasa.
+Mchoro huhifadhiwa kiotomatiki kwenye hifadhi ya kivinjari (IndexedDB) baada ya kuingizwa, hivyo huonekana katika jopo la [File Manager](../file-manager/) na hunusurika upakiaji upya wa ukurasa.
 
 ## Kinachotokea kwa mchoro wa sasa
 
@@ -70,5 +70,5 @@ KulmanLab hufungua upya kiotomatiki faili iliyohaririwa hivi karibuni zaidi ukur
 ## Amri zinazohusiana
 
 - [Export](../export/) — pakua mchoro wa sasa kama DXF au JSON
-- [Files](../files/) — tazama na urejeshe michoro iliyohifadhiwa kwenye kivinjari
+- [File Manager](../file-manager/) — tazama na urejeshe michoro iliyohifadhiwa kwenye kivinjari
 - [New File](../new-file/) — anza mchoro tupu

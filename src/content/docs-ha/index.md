@@ -42,6 +42,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Chamfer](./commands/chamfer/) | Yanke kusurwar diagonal madaidaiciya tsakanin layi biyu ko polylines |
 | [Undo](./commands/undo/) | Soke aikin ƙarshe |
 | [Redo](./commands/redo/) | Sake yin aikin ƙarshe da aka soke |
+| [Array Grid](./commands/array-grid/) | Maimaita abubuwa a cikin grid mai kusurwa huɗu na layuka da ginshiƙai |
 
 ## Alama
 
@@ -104,7 +105,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 |---------|-------------|
 | [Import](./commands/import/) | Buɗe fayilin zane na DXF ko JSON |
 | [New File](./commands/new-file/) | Fara sabon zane mai tsabta |
-| [Files](./commands/files/) | Bincika kuma mayar da zanen-zanen kwanan nan |
+| [File Manager](./commands/file-manager/) | Bincika, sake suna, ko share zanen-zanen da aka ajiye a burauzarka |
 | [Print](./commands/print/) | Fitar da yankin zane a matsayin hoto ko PDF |
 | [Export](./commands/export/) | Sauke zanen a matsayin DXF ko JSON |
 | [WipeStorage](./commands/wipestorage/) | Share dukkan zanen-zane daga ajiyar burauza |

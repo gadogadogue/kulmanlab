@@ -42,6 +42,7 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [Chamfer](./commands/chamfer/) | Kata kona ya mstari wa diagonal kati ya mistari miwili au polylines |
 | [Undo](./commands/undo/) | Tendua hatua ya mwisho |
 | [Redo](./commands/redo/) | Rudia hatua ya mwisho iliyotendulewa |
+| [Array Grid](./commands/array-grid/) | Rudia vipengele katika gridi ya mstatili ya safu mlalo na safu wima |
 
 ## Alama
 
@@ -104,7 +105,7 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 |------|------------|
 | [Import](./commands/import/) | Fungua faili ya mchoro ya DXF au JSON |
 | [New File](./commands/new-file/) | Anza mchoro mpya tupu |
-| [Files](./commands/files/) | Vinjari na rejesha michoro ya hivi karibuni |
+| [File Manager](./commands/file-manager/) | Vinjari, badilisha jina, au futa michoro iliyohifadhiwa kwenye kivinjari chako |
 | [Print](./commands/print/) | Safirisha eneo la mchoro kama picha au PDF |
 | [Export](./commands/export/) | Pakua mchoro kama DXF au JSON |
 | [WipeStorage](./commands/wipestorage/) | Futa michoro yote kutoka kwenye hifadhi ya kivinjari |

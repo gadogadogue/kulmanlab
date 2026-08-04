@@ -42,6 +42,7 @@ Bem-vindo à referência de comandos do **KulmanLab CAD**. O [KulmanLab CAD](htt
 | [Chamfer](./commands/chamfer/) | Cria um chanfro diagonal entre duas linhas ou polilinhas |
 | [Undo](./commands/undo/) | Desfaz a última ação |
 | [Redo](./commands/redo/) | Refaz a última ação desfeita |
+| [Array Grid](./commands/array-grid/) | Repete entidades em uma grade retangular de linhas e colunas |
 
 ## Anotação
 
@@ -104,7 +105,7 @@ Bem-vindo à referência de comandos do **KulmanLab CAD**. O [KulmanLab CAD](htt
 |---------|-----------|
 | [Import](./commands/import/) | Abre um arquivo de desenho DXF ou JSON |
 | [New File](./commands/new-file/) | Inicia um novo desenho em branco |
-| [Files](./commands/files/) | Navega e restaura desenhos recentes |
+| [File Manager](./commands/file-manager/) | Navegue, renomeie ou exclua desenhos salvos no navegador |
 | [Print](./commands/print/) | Exporta uma área do desenho como imagem ou PDF |
 | [Export](./commands/export/) | Baixa o desenho como DXF ou JSON |
 | [Wipe Storage](./commands/wipestorage/) | Apaga todos os desenhos do armazenamento do navegador |

@@ -20,9 +20,9 @@ Kliknij przycisk **Nowy plik** na pasku narzędzi (ikona nowej strony) w panelu 
 
 - **Brak elementów** na płótnie.
 - **Jedna domyślna warstwa** o nazwie `0` z białym kolorem i typem linii `Ciągła`.
-- **Wygenerowana nazwa pliku** w formacie `kulman-PonN01_GG:MM:SS.dxf` (np. `kulman-Maj22_14:30:00.dxf`).
+- **Wygenerowana nazwa pliku**, `kulman.dxf` — lub `kulman (2).dxf`, `kulman (3).dxf`, … jeśli ta nazwa jest już zajęta.
 
-Plik jest automatycznie zapisywany w pamięci przeglądarki i pojawia się w [Ostatnich plikach](../files/).
+Plik jest automatycznie zapisywany w pamięci przeglądarki, pojawia się w [File Manager](../file-manager/) i można [zmienić jego nazwę](../file-manager/#zmiana-nazwy-pliku) w dowolnym momencie.
 
 ## Ostrzeżenie — niezapisana praca zostanie odrzucona
 
@@ -40,4 +40,4 @@ Kliknięcie **Nowy plik** odrzuca wszystkie elementy na bieżącym płótnie bez
 
 - [Import](../import/) — otwieranie istniejącego rysunku DXF lub JSON
 - [Export](../export/) — pobieranie rysunku przed rozpoczęciem od nowa
-- [Files](../files/) — przywracanie poprzedniego rysunku z pamięci przeglądarki
+- [File Manager](../file-manager/) — przywracanie poprzedniego rysunku z pamięci przeglądarki

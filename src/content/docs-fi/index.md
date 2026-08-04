@@ -105,7 +105,7 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 |---------|-------------|
 | [Import](./commands/import/) | Avaa DXF- tai JSON-piirustustiedosto |
 | [New File](./commands/new-file/) | Aloita uusi, tyhjä piirustus |
-| [Files](./commands/files/) | Selaa ja palauta viimeaikaisia piirustuksia |
+| [File Manager](./commands/file-manager/) | Selaa, nimeä uudelleen tai poista selaimeen tallennettuja piirustuksia |
 | [Print](./commands/print/) | Vie piirustusalue kuvana tai PDF-tiedostona |
 | [Export](./commands/export/) | Lataa piirustus DXF- tai JSON-muodossa |
 | [WipeStorage](./commands/wipestorage/) | Poista kaikki piirustukset selaimen tallennustilasta |

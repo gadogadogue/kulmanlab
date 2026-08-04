@@ -20,9 +20,9 @@ Un archivo recién creado comienza con:
 
 - **Sin entidades** en el lienzo.
 - **Una capa predeterminada** llamada `0` con color blanco y tipo de línea `Continuous`.
-- Un **nombre de archivo generado** con el formato `kulman-Mon01_HH:MM:SS.dxf` (p. ej. `kulman-May22_14:30:00.dxf`).
+- Un **nombre de archivo generado**, `kulman.dxf` — o `kulman (2).dxf`, `kulman (3).dxf`, … si ese nombre ya está en uso.
 
-El archivo se guarda automáticamente en el almacenamiento del navegador y aparece en [Archivos Recientes](../files/).
+El archivo se guarda automáticamente en el almacenamiento del navegador y aparece en el [File Manager](../file-manager/), y se puede [renombrar](../file-manager/#renombrar-un-archivo) en cualquier momento.
 
 ## Advertencia — el trabajo no guardado se descarta
 
@@ -40,4 +40,4 @@ Hacer clic en **New File** descarta todas las entidades del lienzo actual sin ad
 
 - [Import](../import/) — abrir un dibujo DXF o JSON existente
 - [Export](../export/) — descargar el dibujo antes de comenzar uno nuevo
-- [Files](../files/) — restaurar un dibujo anterior desde el almacenamiento del navegador
+- [File Manager](../file-manager/) — restaurar un dibujo anterior desde el almacenamiento del navegador

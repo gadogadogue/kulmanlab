@@ -50,7 +50,7 @@ Ana haɗa abubuwan geometry kaɗai:
 
 ## Sunan fayil ɗin da aka fitar
 
-Fayil ɗin da aka sauke ana masa suna bisa fayilin zane na yanzu (misali `myplan_May22_14:30:00.json`). Ƙarin yana canzawa don dacewa da tsarin da aka zaɓa.
+Fayil ɗin da aka sauke ana masa suna bisa fayilin zane na yanzu (misali `myplan.json`). Ƙarin yana canzawa don dacewa da tsarin da aka zaɓa.
 
 ## Bambanci tsakanin Export da Print
 
@@ -67,4 +67,4 @@ Yi amfani da **Export** idan kana bukatar fayil da za a iya gyarawa. Yi amfani d
 
 - [Import](../import/) — buɗe fayil na DXF ko JSON
 - [Print](../print/) — fitar da canvas a matsayin hoto na PNG, JPEG, WebP, ko PDF
-- [Files](../files/) — bincika zanen-zanen da aka ajiye a ajiyar burauza
+- [File Manager](../file-manager/) — bincika zanen-zanen da aka ajiye a ajiyar burauza

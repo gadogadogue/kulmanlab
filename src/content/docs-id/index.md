@@ -42,6 +42,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 | [Chamfer](./commands/chamfer/) | Memotong sudut diagonal lurus antara dua garis atau polyline |
 | [Undo](./commands/undo/) | Membatalkan aksi terakhir |
 | [Redo](./commands/redo/) | Mengulangi aksi yang dibatalkan |
+| [Array Grid](./commands/array-grid/) | Mengulang entitas dalam kisi persegi panjang berisi baris dan kolom |
 
 ## Markup
 
@@ -104,7 +105,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 |---------|-------------|
 | [Import](./commands/import/) | Membuka file gambar DXF atau JSON |
 | [New File](./commands/new-file/) | Memulai gambar kosong yang baru |
-| [Files](./commands/files/) | Menjelajahi dan memulihkan gambar terkini |
+| [File Manager](./commands/file-manager/) | Menjelajahi, mengganti nama, atau menghapus gambar yang tersimpan di browser Anda |
 | [Print](./commands/print/) | Mengekspor area gambar sebagai gambar atau PDF |
 | [Export](./commands/export/) | Mengunduh gambar sebagai DXF atau JSON |
 | [WipeStorage](./commands/wipestorage/) | Menghapus semua gambar dari penyimpanan browser |

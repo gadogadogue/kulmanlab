@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | دو لائنوں یا Polylines کے درمیان ایک سیدھا ترچھا کونہ کاٹیں |
 | [Undo](./commands/undo/) | آخری عمل واپس کریں |
 | [Redo](./commands/redo/) | آخری واپس کیے گئے عمل کو دوبارہ کریں |
+| [Array Grid](./commands/array-grid/) | منتخب اشیاء کو قطاروں اور کالموں کے مستطیل گرڈ میں دہرائیں |
 
 ## مارک اپ
 
@@ -104,7 +105,7 @@ order: 1
 |---------|-------------|
 | [Import](./commands/import/) | DXF یا JSON ڈرائنگ فائل کھولیں |
 | [New File](./commands/new-file/) | نئی خالی ڈرائنگ شروع کریں |
-| [Files](./commands/files/) | حالیہ ڈرائنگز براؤز اور بحال کریں |
+| [File Manager](./commands/file-manager/) | اپنے براؤزر میں محفوظ ڈرائنگز کو براؤز کریں، نام تبدیل کریں، یا حذف کریں |
 | [Print](./commands/print/) | ڈرائنگ کا علاقہ تصویر یا PDF کے طور پر برآمد کریں |
 | [Export](./commands/export/) | ڈرائنگ کو DXF یا JSON کے طور پر ڈاؤن لوڈ کریں |
 | [WipeStorage](./commands/wipestorage/) | براؤزر اسٹوریج سے تمام ڈرائنگز صاف کریں |

@@ -42,6 +42,7 @@ Welkom bij de **KulmanLab CAD**-opdrachtreferentie. [KulmanLab CAD](https://kulm
 | [Chamfer](./commands/chamfer/) | Snijd een rechte diagonale hoek tussen twee lijnen of polylijnen |
 | [Undo](./commands/undo/) | Maak de laatste actie ongedaan |
 | [Redo](./commands/redo/) | Herhaal de laatst ongedaan gemaakte actie |
+| [Array Grid](./commands/array-grid/) | Herhaal entiteiten in een rechthoekig raster van rijen en kolommen |
 
 ## Markering
 
@@ -104,7 +105,7 @@ Welkom bij de **KulmanLab CAD**-opdrachtreferentie. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Import](./commands/import/) | Open een DXF- of JSON-tekenbestand |
 | [New File](./commands/new-file/) | Start een nieuwe lege tekening |
-| [Files](./commands/files/) | Blader door en herstel recente tekeningen |
+| [File Manager](./commands/file-manager/) | Blader door, hernoem of verwijder tekeningen die zijn opgeslagen in uw browser |
 | [Print](./commands/print/) | Exporteer een tekengebied als afbeelding of PDF |
 | [Export](./commands/export/) | Download de tekening als DXF of JSON |
 | [WipeStorage](./commands/wipestorage/) | Wis alle tekeningen uit de browseropslag |

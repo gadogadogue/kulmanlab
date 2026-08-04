@@ -47,9 +47,9 @@ Entiteetit, jotka käyttävät tukemattomia DXF-tyyppejä, ohitetaan hiljaisesti
 
 ## Tiedoston nimeäminen ja tallennus
 
-Kun tuot tiedoston, aikaleima lisätään tiedostonimeen (esimerkiksi `myplan_May22_14:30:00.dxf`). Tämä antaa sinun pitää useita versioita samasta piirustuksesta [Viimeisimmissä tiedostoissa](../files/) ilman nimiristiriitoja. Jos tiedostonimi jo sisältää aikaleiman, sitä käytetään sellaisenaan.
+Tuotu tiedosto säilyttää alkuperäisen nimensä. Jos nimi on jo käytössä toisella tallennetulla piirustuksella, Finder/Explorer-tyylinen liite lisätään automaattisesti (`myplan (2)`, `myplan (3)`, …), jotta olemassa olevaa merkintää ei koskaan ylikirjoiteta. Voit nimetä tiedoston uudelleen jälkikäteen [File Managerista](../file-manager/#tiedoston-uudelleennimeäminen).
 
-Piirustus tallennetaan automaattisesti selaimen tallennustilaan (IndexedDB) tuonnin jälkeen, joten se näkyy [Files](../files/)-paneelissa ja säilyy sivun uudelleenlatausten yli.
+Piirustus tallennetaan automaattisesti selaimen tallennustilaan (IndexedDB) tuonnin jälkeen, joten se näkyy [File Manager](../file-manager/)-paneelissa ja säilyy sivun uudelleenlatausten yli.
 
 ## Mitä nykyiselle piirustukselle tapahtuu
 
@@ -70,5 +70,5 @@ KulmanLab avaa automaattisesti uudelleen viimeksi muokatun tiedoston sivun latau
 ## Liittyvät komennot
 
 - [Export](../export/) — lataa nykyinen piirustus DXF- tai JSON-muodossa
-- [Files](../files/) — selaa ja palauta selaimeen tallennettuja piirustuksia
+- [File Manager](../file-manager/) — selaa ja palauta selaimeen tallennettuja piirustuksia
 - [New File](../new-file/) — aloita tyhjä piirustus

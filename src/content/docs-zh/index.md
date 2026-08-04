@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | 在两条直线或多段线之间切出直线斜角 |
 | [Undo](./commands/undo/) | 撤销上一步操作 |
 | [Redo](./commands/redo/) | 重做上一步撤销的操作 |
+| [Array Grid](./commands/array-grid/) | 按行列的矩形网格重复图元 |
 
 ## 标注
 
@@ -104,7 +105,7 @@ order: 1
 |---------|-------------|
 | [Import](./commands/import/) | 打开 DXF 或 JSON 图形文件 |
 | [New File](./commands/new-file/) | 开始一个全新的空白图形 |
-| [Files](./commands/files/) | 浏览并恢复最近的图形 |
+| [File Manager](./commands/file-manager/) | 浏览、重命名或删除保存在浏览器中的图形 |
 | [Print](./commands/print/) | 将图形区域导出为图像或 PDF |
 | [Export](./commands/export/) | 以 DXF 或 JSON 格式下载图形 |
 | [Wipe Storage](./commands/wipestorage/) | 清除浏览器存储中的所有图形 |

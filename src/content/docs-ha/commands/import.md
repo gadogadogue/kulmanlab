@@ -47,9 +47,9 @@ Ana yin banza da abubuwan da ke amfani da nauʼukan DXF marasa goyon baya a shir
 
 ## Sunayen fayiloli da ajiya
 
-Idan ka shigo da fayil, ana ƙara hoton lokaci zuwa sunan fayil (misali `myplan_May22_14:30:00.dxf`). Wannan yana barka ka riƙe sigogi masu yawa na zane ɗaya a [Fayilolin Kwanan Nan](../files/) ba tare da haɗuwar suna ba. Idan sunan fayil ya riga ya ƙunshi hoton lokaci, ana amfani da shi kamar yadda yake.
+Fayil ɗin da aka shigo da shi yana riƙe da sunansa na asali. Idan an riga an yi amfani da wannan suna ta wani zane da aka ajiye, ana ƙara wani ƙari irin na Finder/Explorer kai tsaye (`myplan (2)`, `myplan (3)`, …) don kada a rubuta a kan abin da ke can. Za ka iya sake wa fayil suna daga baya daga [File Manager](../file-manager/#sake-wa-fayil-suna).
 
-Ana ajiye zanen kai tsaye zuwa ajiyar burauza (IndexedDB) bayan shigarwa, don haka yana bayyana a panel na [Files](../files/) kuma yana wanzuwa bayan rananan-shafi.
+Ana ajiye zanen kai tsaye zuwa ajiyar burauza (IndexedDB) bayan shigarwa, don haka yana bayyana a panel na [File Manager](../file-manager/) kuma yana wanzuwa bayan rananan-shafi.
 
 ## Abin da ke faruwa da zanen na yanzu
 
@@ -70,5 +70,5 @@ KulmanLab yana sake buɗe fayil ɗin da aka gyara kwanan nan kai tsaye idan shaf
 ## Umarni masu alaƙa
 
 - [Export](../export/) — sauke zanen na yanzu a matsayin DXF ko JSON
-- [Files](../files/) — bincika kuma mayar da zanen-zanen da aka ajiye a burauza
+- [File Manager](../file-manager/) — bincika kuma mayar da zanen-zanen da aka ajiye a burauza
 - [New File](../new-file/) — fara zane mai tsabta

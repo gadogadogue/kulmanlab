@@ -50,7 +50,7 @@ Alleen geometrie-entiteiten worden meegenomen:
 
 ## Naam van het geëxporteerde bestand
 
-Het gedownloade bestand wordt genoemd naar het huidige tekeningbestand (bijv. `myplan_May22_14:30:00.json`). De extensie verandert overeenkomstig het gekozen formaat.
+Het gedownloade bestand wordt genoemd naar het huidige tekeningbestand (bijv. `myplan.json`). De extensie verandert overeenkomstig het gekozen formaat.
 
 ## Verschil tussen Export en Print
 
@@ -67,4 +67,4 @@ Gebruik **Export** wanneer u een bewerkbaar bestand nodig heeft. Gebruik [Print]
 
 - [Import](../import/) — een DXF- of JSON-bestand openen
 - [Print](../print/) — het canvas exporteren als PNG-, JPEG-, WebP- of PDF-afbeelding
-- [Files](../files/) — tekeningen bladeren die in browseropslag zijn opgeslagen
+- [File Manager](../file-manager/) — tekeningen bladeren die in browseropslag zijn opgeslagen

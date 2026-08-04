@@ -50,7 +50,7 @@ Uwzględniane są tylko elementy geometryczne:
 
 ## Nazwa eksportowanego pliku
 
-Pobrany plik jest nazwany na podstawie bieżącego pliku rysunku (np. `mojplan_Maj22_14:30:00.json`). Rozszerzenie zmienia się zgodnie z wybranym formatem.
+Pobrany plik jest nazwany na podstawie bieżącego pliku rysunku (np. `mojplan.json`). Rozszerzenie zmienia się zgodnie z wybranym formatem.
 
 ## Różnica między Eksportem a Drukowaniem
 
@@ -67,4 +67,4 @@ Użyj **Eksportu**, gdy potrzebujesz edytowalnego pliku. Użyj [Print](../print/
 
 - [Import](../import/) — otwieranie pliku DXF lub JSON
 - [Print](../print/) — eksportowanie płótna jako obraz PNG, JPEG, WebP lub PDF
-- [Files](../files/) — przeglądanie rysunków zapisanych w pamięci przeglądarki
+- [File Manager](../file-manager/) — przeglądanie rysunków zapisanych w pamięci przeglądarki

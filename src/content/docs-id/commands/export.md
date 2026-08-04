@@ -50,7 +50,7 @@ Entitas geometri saja yang disertakan:
 
 ## Nama file yang diekspor
 
-File yang diunduh diberi nama sesuai file gambar saat ini (mis. `myplan_May22_14:30:00.json`). Ekstensi berubah sesuai format yang dipilih.
+File yang diunduh diberi nama sesuai file gambar saat ini (mis. `myplan.json`). Ekstensi berubah sesuai format yang dipilih.
 
 ## Perbedaan antara Export dan Print
 
@@ -67,4 +67,4 @@ Gunakan **Export** ketika Anda membutuhkan file yang dapat diedit. Gunakan [Prin
 
 - [Import](../import/) — buka file DXF atau JSON
 - [Print](../print/) — ekspor kanvas sebagai gambar PNG, JPEG, WebP, atau PDF
-- [Files](../files/) — jelajahi gambar yang tersimpan di penyimpanan browser
+- [File Manager](../file-manager/) — jelajahi gambar yang tersimpan di penyimpanan browser

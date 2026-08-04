@@ -1,6 +1,6 @@
 ---
 title: New File — KulmanLab CAD'de Boş Çizim Başlat
-description: New File komutu, tuvali temizler ve yeni boş çizim açar. Zaman damgalı bir dosya adı otomatik oluşturulur ve tarayıcı deposuna kaydedilir.
+description: New File komutu, tuvali temizler ve yeni boş çizim açar. Bir dosya adı otomatik oluşturulur ve tarayıcı deposuna kaydedilir.
 keywords: [yeni CAD dosyası, yeni çizim, boş tuval CAD, çevrimiçi yeni çizim oluştur, yeni DXF başlat, KulmanLab new file, tuvali sıfırla, çizimi temizle]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-**New File** komutu, tuvali temizler ve yeni boş çizim başlatır. Zaman damgalı benzersiz bir dosya adı otomatik oluşturulur.
+**New File** komutu, tuvali temizler ve yeni boş çizim başlatır. Benzersiz bir dosya adı otomatik oluşturulur.
 
 ## Yeni Dosya Nasıl Oluşturulur
 
@@ -20,9 +20,9 @@ Yeni oluşturulan bir dosya şunlarla başlar:
 
 - Tuvalde **nesne yok**.
 - Rengi beyaz ve çizgi türü `Continuous` olan `0` adında **bir varsayılan katman**.
-- `kulman-Mon01_HH:MM:SS.dxf` biçiminde **oluşturulmuş bir dosya adı** (örneğin `kulman-May22_14:30:00.dxf`).
+- **Oluşturulmuş bir dosya adı**, `kulman.dxf` — veya bu ad zaten kullanılıyorsa `kulman (2).dxf`, `kulman (3).dxf`, …
 
-Dosya tarayıcı deposuna otomatik olarak kaydedilir ve [Son Dosyalar](../files/) bölümünde görünür.
+Dosya tarayıcı deposuna otomatik olarak kaydedilir, [File Manager](../file-manager/)'da görünür ve istediğiniz zaman [yeniden adlandırılabilir](../file-manager/#bir-dosyayı-yeniden-adlandırma).
 
 ## Uyarı — Kaydedilmemiş Çalışma Silinir
 
@@ -40,4 +40,4 @@ Dosya tarayıcı deposuna otomatik olarak kaydedilir ve [Son Dosyalar](../files/
 
 - [Import](../import/) — mevcut DXF veya JSON çizimini açar
 - [Export](../export/) — sıfırdan başlamadan önce çizimi indirir
-- [Files](../files/) — tarayıcı deposundan önceki çizimi geri yükler
+- [File Manager](../file-manager/) — tarayıcı deposundan önceki çizimi geri yükler

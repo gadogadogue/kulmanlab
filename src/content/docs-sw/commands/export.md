@@ -50,7 +50,7 @@ Viumbe vya jiometri pekee vimejumuishwa:
 
 ## Jina la faili lililoorodheshwa
 
-Faili linalopakuliwa lina jina la faili la mchoro wa sasa (mfano: `myplan_May22_14:30:00.json`). Kiendelezi hubadilika kulingana na muundo uliochaguliwa.
+Faili linalopakuliwa lina jina la faili la mchoro wa sasa (mfano: `myplan.json`). Kiendelezi hubadilika kulingana na muundo uliochaguliwa.
 
 ## Tofauti kati ya Export na Print
 
@@ -67,4 +67,4 @@ Tumia **Export** unapohitaji faili linaloweza kuhaririwa. Tumia [Print](../print
 
 - [Import](../import/) — fungua faili la DXF au JSON
 - [Print](../print/) — exporta turubai kama picha ya PNG, JPEG, WebP, au PDF
-- [Files](../files/) — vinjari michoro iliyohifadhiwa katika hifadhi ya kivinjari
+- [File Manager](../file-manager/) — vinjari michoro iliyohifadhiwa katika hifadhi ya kivinjari

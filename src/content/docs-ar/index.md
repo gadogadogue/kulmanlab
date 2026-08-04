@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | شطب زاوية مائلة بين خطين أو خطوط متعددة |
 | [Undo](./commands/undo/) | تراجع عن الإجراء الأخير |
 | [Redo](./commands/redo/) | إعادة الإجراء الأخير الذي تم التراجع عنه |
+| [Array Grid](./commands/array-grid/) | تكرار العناصر في شبكة مستطيلة من الصفوف والأعمدة |
 
 ## التوصيف
 
@@ -104,7 +105,7 @@ order: 1
 |-------|----------|
 | [Import](./commands/import/) | فتح ملف رسم DXF أو JSON |
 | [New File](./commands/new-file/) | بدء رسم فارغ جديد |
-| [Files](./commands/files/) | تصفح الرسومات الأخيرة واستعادتها |
+| [File Manager](./commands/file-manager/) | تصفح الرسومات المحفوظة في متصفحك أو إعادة تسميتها أو حذفها |
 | [Print](./commands/print/) | تصدير منطقة رسم كصورة أو PDF |
 | [Export](./commands/export/) | تنزيل الرسم بصيغة DXF أو JSON |
 | [Wipe Storage](./commands/wipestorage/) | مسح جميع الرسومات من تخزين المتصفح |

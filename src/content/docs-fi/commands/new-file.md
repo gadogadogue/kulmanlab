@@ -1,6 +1,6 @@
 ---
 title: New File — Aloita Tyhjä Piirustus KulmanLab CAD:issa
-description: New File -komento tyhjentää piirtoalueen ja avaa uuden, tyhjän piirustuksen. Aikaleimalla varustettu tiedostonimi luodaan automaattisesti ja tallennetaan selaimen tallennustilaan.
+description: New File -komento tyhjentää piirtoalueen ja avaa uuden, tyhjän piirustuksen. Yksinkertainen tiedostonimi luodaan automaattisesti ja tallennetaan selaimen tallennustilaan.
 keywords: [uusi CAD-tiedosto, uusi piirustus, tyhjä piirtoalue CAD, luo uusi piirustus verkossa, aloita uusi DXF, KulmanLab uusi tiedosto, nollaa piirtoalue, tyhjennä piirustus]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-Komento **New File** tyhjentää piirtoalueen ja aloittaa uuden, tyhjän piirustuksen. Ainutlaatuinen tiedostonimi aikaleimalla luodaan automaattisesti.
+Komento **New File** tyhjentää piirtoalueen ja aloittaa uuden, tyhjän piirustuksen. Ainutlaatuinen tiedostonimi luodaan automaattisesti.
 
 ## Näin luot uuden tiedoston
 
@@ -20,9 +20,9 @@ Vasta luotu tiedosto alkaa seuraavilla:
 
 - **Ei entiteettejä** piirtoalueella.
 - **Yksi oletustaso** nimeltä `0` valkoisella värillä ja linetyypillä `Continuous`.
-- **Luotu tiedostonimi** muodossa `kulman-Mon01_HH:MM:SS.dxf` (esim. `kulman-May22_14:30:00.dxf`).
+- **Luotu tiedostonimi**, `kulman.dxf` — tai `kulman (2).dxf`, `kulman (3).dxf`, … jos nimi on jo käytössä.
 
-Tiedosto tallennetaan automaattisesti selaimen tallennustilaan ja näkyy [Viimeisimmissä tiedostoissa](../files/).
+Tiedosto tallennetaan automaattisesti selaimen tallennustilaan ja näkyy [File Managerissa](../file-manager/), ja sen voi [nimetä uudelleen](../file-manager/#tiedoston-uudelleennimeäminen) milloin tahansa.
 
 ## Varoitus — tallentamaton työ hylätään
 
@@ -40,4 +40,4 @@ Tiedosto tallennetaan automaattisesti selaimen tallennustilaan ja näkyy [Viimei
 
 - [Import](../import/) — avaa olemassa oleva DXF- tai JSON-piirustus
 - [Export](../export/) — lataa piirustus ennen alusta aloittamista
-- [Files](../files/) — palauta aiempi piirustus selaimen tallennustilasta
+- [File Manager](../file-manager/) — palauta aiempi piirustus selaimen tallennustilasta

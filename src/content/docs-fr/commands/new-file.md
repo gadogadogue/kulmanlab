@@ -1,6 +1,6 @@
 ---
 title: New File — Démarrer un dessin vierge dans KulmanLab CAD
-description: La commande New File vide le canevas et ouvre un nouveau dessin vierge. Un nom de fichier avec horodatage est généré automatiquement et sauvegardé dans le stockage du navigateur.
+description: La commande New File vide le canevas et ouvre un nouveau dessin vierge. Un nom de fichier simple est généré automatiquement et sauvegardé dans le stockage du navigateur.
 keywords: [nouveau fichier CAO, nouveau dessin, canevas vierge CAO, créer nouveau dessin en ligne, démarrer nouveau DXF, nouveau fichier KulmanLab, réinitialiser canevas, vider dessin]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-La commande **New File** vide le canevas et commence un nouveau dessin vierge. Un nom de fichier unique avec horodatage est généré automatiquement.
+La commande **New File** vide le canevas et commence un nouveau dessin vierge. Un nom de fichier unique est généré automatiquement.
 
 ## Comment créer un nouveau fichier
 
@@ -20,9 +20,9 @@ Un fichier nouvellement créé commence avec :
 
 - **Aucune entité** sur le canevas.
 - **Un calque par défaut** nommé `0` avec une couleur blanche et un type de ligne `Continuous`.
-- Un **nom de fichier généré** au format `kulman-Mon01_HH:MM:SS.dxf` (ex. `kulman-May22_14:30:00.dxf`).
+- Un **nom de fichier généré**, `kulman.dxf` — ou `kulman (2).dxf`, `kulman (3).dxf`, … si ce nom est déjà pris.
 
-Le fichier est automatiquement sauvegardé dans le stockage du navigateur et apparaît dans [Fichiers Récents](../files/).
+Le fichier est automatiquement sauvegardé dans le stockage du navigateur, apparaît dans le [File Manager](../file-manager/), et peut être [renommé](../file-manager/#renommer-un-fichier) à tout moment.
 
 ## Avertissement — le travail non enregistré est perdu
 
@@ -40,4 +40,4 @@ Cliquer sur **New File** supprime toutes les entités du canevas actuel sans ave
 
 - [Import](../import/) — ouvrir un dessin DXF ou JSON existant
 - [Export](../export/) — télécharger le dessin avant d'en commencer un nouveau
-- [Files](../files/) — restaurer un dessin précédent depuis le stockage du navigateur
+- [File Manager](../file-manager/) — restaurer un dessin précédent depuis le stockage du navigateur

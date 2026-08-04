@@ -50,7 +50,7 @@ Sono incluse solo le entità geometriche:
 
 ## Nome del file esportato
 
-Il file scaricato prende il nome dal file di disegno corrente (es. `miopiano_Mag22_14:30:00.json`). L'estensione cambia in base al formato scelto.
+Il file scaricato prende il nome dal file di disegno corrente (es. `miopiano.json`). L'estensione cambia in base al formato scelto.
 
 ## Differenza tra Export e Print
 
@@ -67,4 +67,4 @@ Usa **Export** quando hai bisogno di un file modificabile. Usa [Print](../print/
 
 - [Import](../import/) — apri un file DXF o JSON
 - [Print](../print/) — esporta il canvas come immagine PNG, JPEG, WebP o PDF
-- [Files](../files/) — sfoglia i disegni salvati nell'archivio del browser
+- [File Manager](../file-manager/) — sfoglia i disegni salvati nell'archivio del browser

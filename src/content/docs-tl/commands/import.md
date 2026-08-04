@@ -47,9 +47,9 @@ Ang mga entity na gumagamit ng unsupported DXF types ay tahimik na nili-skip —
 
 ## Pangalan ng file at storage
 
-Kapag nag-import ka ng file, idinadagdag ang isang timestamp sa pangalan ng file (halimbawa, `myplan_May22_14:30:00.dxf`). Nagbibigay-daan ito para mapanatili mo ang maraming version ng parehong drawing sa [Recent Files](../files/) nang walang name collisions. Kung ang pangalan ng file ay mayroon nang timestamp, ginagamit ito nang as-is.
+Pinapanatili ng na-import na file ang orihinal nitong pangalan. Kung ang pangalang iyon ay ginagamit na ng ibang naka-save na drawing, awtomatikong idinaragdag ang isang suffix na estilong Finder/Explorer (`myplan (2)`, `myplan (3)`, …) para hindi na ma-overwrite ang umiiral na entry. Maaari mong palitan ang pangalan ng file pagkatapos mula sa [File Manager](../file-manager/#pagpapalit-ng-pangalan-ng-file).
 
-Awtomatikong na-save ang drawing sa browser storage (IndexedDB) pagkatapos ng import, kaya lilitaw ito sa [Files](../files/) panel at mananatili kahit mag-reload ang page.
+Awtomatikong na-save ang drawing sa browser storage (IndexedDB) pagkatapos ng import, kaya lilitaw ito sa [File Manager](../file-manager/) panel at mananatili kahit mag-reload ang page.
 
 ## Ano ang mangyayari sa kasalukuyang drawing
 
@@ -70,5 +70,5 @@ Awtomatikong binubuksan muli ng KulmanLab ang huling na-edit na file kapag nag-l
 ## Kaugnay na commands
 
 - [Export](../export/) — i-download ang kasalukuyang drawing bilang DXF o JSON
-- [Files](../files/) — mag-browse at mag-restore ng mga drawing na naka-save sa browser
+- [File Manager](../file-manager/) — mag-browse at mag-restore ng mga drawing na naka-save sa browser
 - [New File](../new-file/) — simulan ang isang blangkong drawing

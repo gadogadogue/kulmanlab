@@ -47,9 +47,9 @@ Le entità che usano tipi DXF non supportati vengono ignorate silenziosamente �
 
 ## Nomi file e archiviazione
 
-Quando importi un file, viene aggiunto un timestamp al nome del file (per esempio `miopiano_Mag22_14:30:00.dxf`). Questo ti permette di tenere più versioni dello stesso disegno nei [File Recenti](../files/) senza conflitti di nomi. Se il nome del file contiene già un timestamp, viene usato così com'è.
+Il file importato mantiene il suo nome originale. Se quel nome è già usato da un altro disegno salvato, viene aggiunto automaticamente un suffisso in stile Finder/Explorer (`miopiano (2)`, `miopiano (3)`, …), così la voce esistente non viene mai sovrascritta. Puoi rinominare il file in seguito dal [File Manager](../file-manager/#renaming-a-file).
 
-Il disegno viene automaticamente salvato nell'archivio del browser (IndexedDB) dopo l'importazione, quindi appare nel pannello [Files](../files/) e sopravvive ai ricaricamenti della pagina.
+Il disegno viene automaticamente salvato nell'archivio del browser (IndexedDB) dopo l'importazione, quindi appare nel pannello [File Manager](../file-manager/) e sopravvive ai ricaricamenti della pagina.
 
 ## Cosa succede al disegno corrente
 
@@ -70,5 +70,5 @@ KulmanLab riapre automaticamente il file più recentemente modificato quando la 
 ## Comandi correlati
 
 - [Export](../export/) — scarica il disegno corrente come DXF o JSON
-- [Files](../files/) — sfoglia e ripristina i disegni salvati nel browser
+- [File Manager](../file-manager/) — sfoglia e ripristina i disegni salvati nel browser
 - [New File](../new-file/) — inizia un disegno vuoto

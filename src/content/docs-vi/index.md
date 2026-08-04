@@ -42,6 +42,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 | [Chamfer](./commands/chamfer/) | Vát góc thẳng giữa hai đường thẳng hoặc đường đa đoạn |
 | [Undo](./commands/undo/) | Hoàn tác thao tác vừa thực hiện |
 | [Redo](./commands/redo/) | Làm lại thao tác vừa hoàn tác |
+| [Array Grid](./commands/array-grid/) | Lặp lại đối tượng trong lưới hình chữ nhật gồm hàng và cột |
 
 ## Chú Thích
 
@@ -104,7 +105,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 |------|-----------|
 | [Import](./commands/import/) | Mở tệp bản vẽ DXF hoặc JSON |
 | [New File](./commands/new-file/) | Bắt đầu bản vẽ trống mới |
-| [Files](./commands/files/) | Duyệt và khôi phục các bản vẽ gần đây |
+| [File Manager](./commands/file-manager/) | Duyệt, đổi tên, hoặc xóa bản vẽ đã lưu trong trình duyệt của bạn |
 | [Print](./commands/print/) | Xuất vùng bản vẽ dưới dạng hình ảnh hoặc PDF |
 | [Export](./commands/export/) | Tải xuống bản vẽ dưới dạng DXF hoặc JSON |
 | [WipeStorage](./commands/wipestorage/) | Xóa tất cả bản vẽ khỏi bộ nhớ trình duyệt |

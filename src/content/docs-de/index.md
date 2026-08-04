@@ -42,6 +42,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 | [Chamfer](./commands/chamfer/) | Gerade diagonale Ecke zwischen zwei Linien oder Polylinien schneiden |
 | [Undo](./commands/undo/) | Letzte Aktion rückgängig machen |
 | [Redo](./commands/redo/) | Zuletzt rückgängig gemachte Aktion wiederherstellen |
+| [Array Grid](./commands/array-grid/) | Elemente in einem rechteckigen Raster aus Zeilen und Spalten wiederholen |
 
 ## Beschriftung
 
@@ -104,7 +105,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 |--------|----------|
 | [Import](./commands/import/) | DXF- oder JSON-Zeichnungsdatei öffnen |
 | [New File](./commands/new-file/) | Neue leere Zeichnung beginnen |
-| [Files](./commands/files/) | Zuletzt verwendete Zeichnungen durchsuchen und wiederherstellen |
+| [File Manager](./commands/file-manager/) | Im Browser gespeicherte Zeichnungen durchsuchen, umbenennen oder löschen |
 | [Print](./commands/print/) | Zeichnungsbereich als Bild oder PDF exportieren |
 | [Export](./commands/export/) | Zeichnung als DXF oder JSON herunterladen |
 | [WipeStorage](./commands/wipestorage/) | Alle Zeichnungen aus dem Browser-Speicher löschen |

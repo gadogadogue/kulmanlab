@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | 2 直線またはポリラインの角を斜め直線で切り取る |
 | [Undo](./commands/undo/) | 直前の操作を取り消す |
 | [Redo](./commands/redo/) | 取り消した操作をやり直す |
+| [Array Grid](./commands/array-grid/) | 選択エンティティを行と列の長方形グリッドに複製する |
 
 ## マークアップ
 
@@ -104,7 +105,7 @@ order: 1
 |---------|------|
 | [Import](./commands/import/) | DXF または JSON 図面ファイルを開く |
 | [New File](./commands/new-file/) | 空白の新しい図面を開始する |
-| [Files](./commands/files/) | 最近の図面を参照して復元する |
+| [File Manager](./commands/file-manager/) | ブラウザに保存された図面を参照、名前変更、または削除する |
 | [Print](./commands/print/) | 図面エリアを画像または PDF としてエクスポートする |
 | [Export](./commands/export/) | 図面を DXF または JSON でダウンロードする |
 | [WipeStorage](./commands/wipestorage/) | ブラウザストレージからすべての図面を削除する |

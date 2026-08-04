@@ -50,7 +50,7 @@ Seules les entités géométriques sont incluses :
 
 ## Nom du fichier exporté
 
-Le fichier téléchargé porte le nom du fichier de dessin actuel (ex. `myplan_May22_14:30:00.json`). L'extension change pour correspondre au format choisi.
+Le fichier téléchargé porte le nom du fichier de dessin actuel (ex. `myplan.json`). L'extension change pour correspondre au format choisi.
 
 ## Différence entre Export et Print
 
@@ -67,4 +67,4 @@ Utilisez **Export** quand vous avez besoin d'un fichier modifiable. Utilisez [Pr
 
 - [Import](../import/) — ouvrir un fichier DXF ou JSON
 - [Print](../print/) — exporter le canevas en image PNG, JPEG, WebP ou PDF
-- [Files](../files/) — parcourir les dessins sauvegardés dans le stockage du navigateur
+- [File Manager](../file-manager/) — parcourir les dessins sauvegardés dans le stockage du navigateur

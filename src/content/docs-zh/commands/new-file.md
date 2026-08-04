@@ -1,6 +1,6 @@
 ---
 title: New File — 在 KulmanLab CAD 中开始空白图形
-description: New File 命令清空画布并开始一个全新的空白图形。带时间戳的文件名自动生成并保存到浏览器存储。
+description: New File 命令清空画布并开始一个全新的空白图形。简单的文件名自动生成并保存到浏览器存储。
 keywords: [新建 CAD 文件, 新建图形, 空白画布 CAD, 在线创建新图形, 开始新 DXF, KulmanLab 新建文件, 重置画布, 清空图形, kulmanlab]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-**New File** 命令清空画布并开始一个全新的空白图形。带时间戳的唯一文件名自动生成。
+**New File** 命令清空画布并开始一个全新的空白图形。唯一的文件名自动生成。
 
 ## 如何创建新文件
 
@@ -20,9 +20,9 @@ order: 2
 
 - 画布上**没有图元**。
 - **一个默认图层**，名称为 `0`，颜色为白色，线型为 `Continuous`（连续）。
-- 格式为 `kulman-Mon01_HH:MM:SS.dxf` 的**自动生成文件名**（例如 `kulman-May22_14:30:00.dxf`）。
+- **自动生成的文件名** `kulman.dxf` — 如果该名称已被占用，则为 `kulman (2).dxf`、`kulman (3).dxf`，……
 
-文件自动保存到浏览器存储，并出现在[最近文件](../files/)中。
+文件自动保存到浏览器存储，出现在 [File Manager](../file-manager/) 中，并可随时[重命名](../file-manager/#重命名文件)。
 
 ## 警告 — 未保存的工作将被丢弃
 
@@ -40,4 +40,4 @@ order: 2
 
 - [Import](../import/) — 打开现有 DXF 或 JSON 图形
 - [Export](../export/) — 在开始新文件前下载图形
-- [Files](../files/) — 从浏览器存储恢复以前的图形
+- [File Manager](../file-manager/) — 从浏览器存储恢复以前的图形

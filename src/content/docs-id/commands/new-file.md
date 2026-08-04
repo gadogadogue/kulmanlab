@@ -1,6 +1,6 @@
 ---
 title: New File — Memulai Gambar Kosong di KulmanLab CAD
-description: Perintah New File membersihkan kanvas dan membuka gambar kosong yang baru. Nama file dengan cap waktu dibuat secara otomatis dan disimpan ke penyimpanan browser.
+description: Perintah New File membersihkan kanvas dan membuka gambar kosong yang baru. Nama file sederhana dibuat secara otomatis dan disimpan ke penyimpanan browser.
 keywords: [file CAD baru, gambar baru, kanvas kosong CAD, buat gambar baru online, mulai DXF baru, KulmanLab new file, reset kanvas, hapus gambar, kulmanlab]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-Perintah **New File** membersihkan kanvas dan memulai gambar kosong yang baru. Nama file unik dengan cap waktu dibuat secara otomatis.
+Perintah **New File** membersihkan kanvas dan memulai gambar kosong yang baru. Nama file unik dibuat secara otomatis.
 
 ## Cara membuat file baru
 
@@ -20,9 +20,9 @@ File yang baru dibuat dimulai dengan:
 
 - **Tidak ada entitas** di kanvas.
 - **Satu layer default** bernama `0` dengan warna putih dan tipe garis `Continuous`.
-- **Nama file yang dihasilkan** dalam format `kulman-Mon01_HH:MM:SS.dxf` (mis. `kulman-May22_14:30:00.dxf`).
+- **Nama file yang dihasilkan**, `kulman.dxf` — atau `kulman (2).dxf`, `kulman (3).dxf`, … jika nama tersebut sudah digunakan.
 
-File secara otomatis disimpan ke penyimpanan browser dan muncul dalam [Recent Files](../files/).
+File secara otomatis disimpan ke penyimpanan browser dan muncul dalam [File Manager](../file-manager/), dan dapat [diganti namanya](../file-manager/#mengganti-nama-file) kapan saja.
 
 ## Peringatan — pekerjaan yang belum disimpan akan dibuang
 
@@ -40,4 +40,4 @@ Mengklik **New File** membuang semua entitas di kanvas saat ini tanpa peringatan
 
 - [Import](../import/) — buka gambar DXF atau JSON yang ada
 - [Export](../export/) — unduh gambar sebelum memulai yang baru
-- [Files](../files/) — pulihkan gambar sebelumnya dari penyimpanan browser
+- [File Manager](../file-manager/) — pulihkan gambar sebelumnya dari penyimpanan browser

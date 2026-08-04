@@ -50,7 +50,7 @@ Apenas entidades geométricas são incluídas:
 
 ## Nome do arquivo exportado
 
-O arquivo baixado é nomeado após o arquivo de desenho atual (ex.: `meuplano_Mai22_14:30:00.json`). A extensão muda para corresponder ao formato escolhido.
+O arquivo baixado é nomeado após o arquivo de desenho atual (ex.: `meuplano.json`). A extensão muda para corresponder ao formato escolhido.
 
 ## Diferença entre Export e Print
 
@@ -67,4 +67,4 @@ Use **Export** quando precisar de um arquivo editável. Use [Print](../print/) q
 
 - [Import](../import/) — abrir um arquivo DXF ou JSON
 - [Print](../print/) — exportar o canvas como imagem PNG, JPEG, WebP ou PDF
-- [Files](../files/) — navegar desenhos salvos no armazenamento do navegador
+- [File Manager](../file-manager/) — navegar desenhos salvos no armazenamento do navegador

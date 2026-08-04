@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | Κόβει ευθεία διαγώνια γωνία μεταξύ δύο γραμμών ή polylines |
 | [Undo](./commands/undo/) | Αναιρεί την τελευταία ενέργεια |
 | [Redo](./commands/redo/) | Επαναλαμβάνει την τελευταία αναιρεμένη ενέργεια |
+| [Array Grid](./commands/array-grid/) | Επαναλαμβάνει οντότητες σε ορθογώνιο πλέγμα γραμμών και στηλών |
 
 ## Σήμανση
 
@@ -104,7 +105,7 @@ order: 1
 |--------|----------|
 | [Import](./commands/import/) | Ανοίγει αρχείο DXF ή JSON |
 | [New File](./commands/new-file/) | Ξεκινά ένα νέο κενό σχέδιο |
-| [Files](./commands/files/) | Περιηγείται και επαναφέρει πρόσφατα σχέδια |
+| [File Manager](./commands/file-manager/) | Περιήγηση, μετονομασία ή διαγραφή σχεδίων αποθηκευμένων στο πρόγραμμα περιήγησης |
 | [Print](./commands/print/) | Εξάγει περιοχή σχεδίου ως εικόνα ή PDF |
 | [Export](./commands/export/) | Κατεβάζει το σχέδιο ως DXF ή JSON |
 | [WipeStorage](./commands/wipestorage/) | Διαγράφει όλα τα σχέδια από την αποθήκευση του browser |

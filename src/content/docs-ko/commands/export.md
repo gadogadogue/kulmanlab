@@ -50,7 +50,7 @@ order: 5
 
 ## 내보낸 파일 이름
 
-다운로드된 파일은 현재 도면 파일의 이름을 따라 지정됩니다(예: `myplan_May22_14:30:00.json`). 확장자는 선택한 형식에 맞게 변경됩니다.
+다운로드된 파일은 현재 도면 파일의 이름을 따라 지정됩니다(예: `myplan.json`). 확장자는 선택한 형식에 맞게 변경됩니다.
 
 ## Export vs Print
 
@@ -67,4 +67,4 @@ order: 5
 
 - [Import](../import/) — DXF 또는 JSON 파일 열기
 - [Print](../print/) — 캔버스를 PNG, JPEG, WebP 또는 PDF 이미지로 내보내기
-- [Files](../files/) — 브라우저 저장소에 저장된 도면 탐색
+- [File Manager](../file-manager/) — 브라우저 저장소에 저장된 도면 탐색

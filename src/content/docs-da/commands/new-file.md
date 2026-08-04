@@ -20,9 +20,9 @@ En nyoprettet fil starter med:
 
 - **Ingen entiteter** på lærredet.
 - **Ét standardlag** kaldet `0` med hvid farve og linetype `Continuous`.
-- Et **genereret filnavn** i formatet `kulman-Mon01_HH:MM:SS.dxf` (f.eks. `kulman-May22_14:30:00.dxf`).
+- Et **genereret filnavn**, `kulman.dxf` — eller `kulman (2).dxf`, `kulman (3).dxf`, … hvis det navn allerede er taget.
 
-Filen gemmes automatisk i browserlagring og vises i [Nylige filer](../files/).
+Filen gemmes automatisk i browserlagring og vises i [File Manager](../file-manager/), og kan [omdøbes](../file-manager/#omdøbning-af-en-fil) når som helst.
 
 ## Advarsel — ugemt arbejde kasseres
 
@@ -40,4 +40,4 @@ At klikke på **New File** kasserer alle entiteter på det aktuelle lærred uden
 
 - [Import](../import/) — åbn en eksisterende DXF- eller JSON-tegning
 - [Export](../export/) — download tegningen, før du starter forfra
-- [Files](../files/) — gendan en tidligere tegning fra browserlagring
+- [File Manager](../file-manager/) — gendan en tidligere tegning fra browserlagring

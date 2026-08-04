@@ -47,9 +47,9 @@ Entiteter som bruker DXF-typer som ikke støttes, hoppes stille over — resten 
 
 ## Filnavngivning og lagring
 
-Når du importerer en fil, legges et tidsstempel til filnavnet (for eksempel `myplan_May22_14:30:00.dxf`). Dette lar deg beholde flere versjoner av samme tegning i [Nylige filer](../files/) uten navnekollisjoner. Hvis filnavnet allerede inneholder et tidsstempel, brukes det som det er.
+Den importerte filen beholder sitt opprinnelige navn. Hvis navnet allerede er i bruk av en annen lagret tegning, legges det automatisk til et Finder/Explorer-stil suffiks (`myplan (2)`, `myplan (3)`, …) slik at den eksisterende oppføringen aldri overskrives. Du kan omdøpe filen i etterkant fra [File Manager](../file-manager/#omdøpe-en-fil).
 
-Tegningen lagres automatisk til nettleserlagring (IndexedDB) etter import, slik at den vises i [Files](../files/)-panelet og overlever sideinnlastinger.
+Tegningen lagres automatisk til nettleserlagring (IndexedDB) etter import, slik at den vises i [File Manager](../file-manager/)-panelet og overlever sideinnlastinger.
 
 ## Hva som skjer med gjeldende tegning
 
@@ -70,5 +70,5 @@ KulmanLab åpner automatisk den sist redigerte filen på nytt når siden lastes 
 ## Relaterte kommandoer
 
 - [Export](../export/) — last ned gjeldende tegning som DXF eller JSON
-- [Files](../files/) — bla gjennom og gjenopprett tegninger lagret i nettleseren
+- [File Manager](../file-manager/) — bla gjennom og gjenopprett tegninger lagret i nettleseren
 - [New File](../new-file/) — start en tom tegning

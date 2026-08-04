@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | İki çizgi veya çoklu çizgi arasına düz köşegen pah kesar |
 | [Undo](./commands/undo/) | Son işlemi geri alır |
 | [Redo](./commands/redo/) | Son geri alınan işlemi yineler |
+| [Array Grid](./commands/array-grid/) | Nesneleri satır ve sütunlardan oluşan dikdörtgen bir ızgarada tekrarlar |
 
 ## Açıklama
 
@@ -104,7 +105,7 @@ order: 1
 |-------|----------|
 | [Import](./commands/import/) | DXF veya JSON çizim dosyası açar |
 | [New File](./commands/new-file/) | Yeni boş çizim başlatır |
-| [Files](./commands/files/) | Son çizimleri görüntüler ve geri yükler |
+| [File Manager](./commands/file-manager/) | Tarayıcınızda kayıtlı çizimlere göz atın, adlarını değiştirin veya silin |
 | [Print](./commands/print/) | Çizim alanını resim veya PDF olarak dışa aktarır |
 | [Export](./commands/export/) | Çizimi DXF veya JSON formatında indirir |
 | [Wipe Storage](./commands/wipestorage/) | Tarayıcı deposundan tüm çizimleri temizler |

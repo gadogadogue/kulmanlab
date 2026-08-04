@@ -47,9 +47,9 @@ Desteklenmeyen DXF türlerini kullanan nesneler sessizce atlanır — çizimin g
 
 ## Dosya Adlandırma ve Depolama
 
-Bir dosyayı içe aktardığınızda, dosya adına zaman damgası eklenir (örneğin `myplan_May22_14:30:00.dxf`). Bu, [Son Dosyalar](../files/) bölümünde aynı çizimin birden fazla sürümünü ad çakışması olmadan saklamanızı sağlar. Dosya adı zaten bir zaman damgası içeriyorsa, olduğu gibi kullanılır.
+İçe aktarılan dosya orijinal adını korur. Bu ad zaten başka bir kaydedilmiş çizim tarafından kullanılıyorsa, mevcut girişin asla üzerine yazılmaması için otomatik olarak bir Finder/Explorer tarzı ek eklenir (`myplan (2)`, `myplan (3)`, …). Dosyayı daha sonra [File Manager](../file-manager/#bir-dosyayı-yeniden-adlandırma) üzerinden yeniden adlandırabilirsiniz.
 
-Çizim içe aktarma sonrasında tarayıcı deposuna (IndexedDB) otomatik olarak kaydedilir, böylece [Files](../files/) panelinde görünür ve sayfa yeniden yüklemelerinde de kaybolmaz.
+Çizim içe aktarma sonrasında tarayıcı deposuna (IndexedDB) otomatik olarak kaydedilir, böylece [File Manager](../file-manager/) panelinde görünür ve sayfa yeniden yüklemelerinde de kaybolmaz.
 
 ## Geçerli Çizime Ne Olur
 
@@ -70,5 +70,5 @@ KulmanLab, sayfa yüklendiğinde en son düzenlenen dosyayı otomatik olarak yen
 ## İlgili Komutlar
 
 - [Export](../export/) — mevcut çizimi DXF veya JSON olarak indirir
-- [Files](../files/) — tarayıcıda kaydedilen çizimlere göz atar ve geri yükler
+- [File Manager](../file-manager/) — tarayıcıda kaydedilen çizimlere göz atar ve geri yükler
 - [New File](../new-file/) — boş çizim başlatır

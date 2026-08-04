@@ -50,7 +50,7 @@ Endast geometrientiteter inkluderas:
 
 ## Exporterat filnamn
 
-Den nedladdade filen namnges efter den aktuella ritningsfilen (t.ex. `myplan_May22_14:30:00.json`). Filändelsen ändras för att matcha det valda formatet.
+Den nedladdade filen namnges efter den aktuella ritningsfilen (t.ex. `myplan.json`). Filändelsen ändras för att matcha det valda formatet.
 
 ## Skillnaden mellan Export och Print
 
@@ -67,4 +67,4 @@ Använd **Export** när du behöver en redigerbar fil. Använd [Print](../print/
 
 - [Import](../import/) — öppna en DXF- eller JSON-fil
 - [Print](../print/) — exportera ritytan som en PNG-, JPEG-, WebP- eller PDF-bild
-- [Files](../files/) — bläddra bland ritningar sparade i webbläsarens lagring
+- [File Manager](../file-manager/) — bläddra bland ritningar sparade i webbläsarens lagring

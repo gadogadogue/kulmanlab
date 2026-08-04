@@ -50,7 +50,7 @@ Geometry-only entities are included:
 
 ## Exported file name
 
-The downloaded file is named after the current drawing file (e.g. `myplan_May22_14:30:00.json`). The extension changes to match the chosen format.
+The downloaded file is named after the current drawing file (e.g. `myplan.json`). The extension changes to match the chosen format.
 
 ## Difference between Export and Print
 
@@ -67,4 +67,4 @@ Use **Export** when you need an editable file. Use [Print](../print/) when you n
 
 - [Import](../import/) — open a DXF or JSON file
 - [Print](../print/) — export the canvas as a PNG, JPEG, WebP, or PDF image
-- [Files](../files/) — browse drawings saved in browser storage
+- [File Manager](../file-manager/) — browse drawings saved in browser storage

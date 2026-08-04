@@ -1,6 +1,6 @@
 ---
 title: New File — Starta en tom ritning i KulmanLab CAD
-description: New File-kommandot rensar ritytan och öppnar en ny tom ritning. Ett tidsstämplat filnamn genereras automatiskt och sparas i webbläsarens lagring.
+description: New File-kommandot rensar ritytan och öppnar en ny tom ritning. Ett enkelt filnamn genereras automatiskt och sparas i webbläsarens lagring.
 keywords: [ny CAD-fil, ny ritning, tom rityta CAD, skapa ny ritning online, starta ny DXF, KulmanLab ny fil, återställ rityta, rensa ritning]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-**New File**-kommandot rensar ritytan och startar en ny tom ritning. Ett unikt filnamn med tidsstämpel genereras automatiskt.
+**New File**-kommandot rensar ritytan och startar en ny tom ritning. Ett unikt filnamn genereras automatiskt.
 
 ## Så här skapar du en ny fil
 
@@ -20,9 +20,9 @@ En nyskapad fil börjar med:
 
 - **Inga entiteter** på ritytan.
 - **Ett standardlager** med namnet `0`, vit färg och linjetypen `Continuous`.
-- Ett **genererat filnamn** i formatet `kulman-Mon01_HH:MM:SS.dxf` (t.ex. `kulman-May22_14:30:00.dxf`).
+- Ett **genererat filnamn**, `kulman.dxf` — eller `kulman (2).dxf`, `kulman (3).dxf`, … om det namnet redan är taget.
 
-Filen sparas automatiskt i webbläsarens lagring och visas i [Recent Files](../files/).
+Filen sparas automatiskt i webbläsarens lagring, visas i [File Manager](../file-manager/), och kan [byta namn](../file-manager/#byta-namn-på-en-fil) när som helst.
 
 ## Varning — osparat arbete kasseras
 
@@ -40,4 +40,4 @@ Att klicka på **New File** kasserar alla entiteter på den aktuella ritytan uta
 
 - [Import](../import/) — öppna en befintlig DXF- eller JSON-ritning
 - [Export](../export/) — ladda ner ritningen innan du börjar om
-- [Files](../files/) — återställ en tidigare ritning från webbläsarens lagring
+- [File Manager](../file-manager/) — återställ en tidigare ritning från webbläsarens lagring

@@ -50,7 +50,7 @@ Nur Geometrieelemente sind enthalten:
 
 ## Name der exportierten Datei
 
-Die heruntergeladene Datei wird nach der aktuellen Zeichnungsdatei benannt (z. B. `myplan_May22_14:30:00.json`). Die Erweiterung ändert sich entsprechend dem gewählten Format.
+Die heruntergeladene Datei wird nach der aktuellen Zeichnungsdatei benannt (z. B. `myplan.json`). Die Erweiterung ändert sich entsprechend dem gewählten Format.
 
 ## Unterschied zwischen Export und Print
 
@@ -67,4 +67,4 @@ Verwenden Sie **Export**, wenn Sie eine bearbeitbare Datei benötigen. Verwenden
 
 - [Import](../import/) — DXF- oder JSON-Datei öffnen
 - [Print](../print/) — Zeichenfläche als PNG, JPEG, WebP oder PDF exportieren
-- [Files](../files/) — im Browser-Speicher gespeicherte Zeichnungen durchsuchen
+- [File Manager](../file-manager/) — im Browser-Speicher gespeicherte Zeichnungen durchsuchen

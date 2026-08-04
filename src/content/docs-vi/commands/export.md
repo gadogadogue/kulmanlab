@@ -54,4 +54,4 @@ Chỉ các thực thể hình học được bao gồm:
 
 - [Import](../import/) — mở tệp DXF hoặc JSON
 - [Print](../print/) — xuất canvas dưới dạng hình ảnh PNG, JPEG, WebP hoặc PDF
-- [Files](../files/) — duyệt bản vẽ được lưu trong bộ nhớ trình duyệt
+- [File Manager](../file-manager/) — duyệt bản vẽ được lưu trong bộ nhớ trình duyệt

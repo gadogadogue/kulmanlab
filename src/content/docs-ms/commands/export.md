@@ -50,7 +50,7 @@ Entiti geometri sahaja disertakan:
 
 ## Nama fail yang dieksport
 
-Fail yang dimuat turun dinamakan mengikut fail lukisan semasa (cth. `myplan_May22_14:30:00.json`). Sambungan berubah mengikut format yang dipilih.
+Fail yang dimuat turun dinamakan mengikut fail lukisan semasa (cth. `myplan.json`). Sambungan berubah mengikut format yang dipilih.
 
 ## Perbezaan antara Export dan Print
 
@@ -67,4 +67,4 @@ Gunakan **Export** apabila anda memerlukan fail yang boleh diedit. Gunakan [Prin
 
 - [Import](../import/) — buka fail DXF atau JSON
 - [Print](../print/) — eksport kanvas sebagai imej PNG, JPEG, WebP, atau PDF
-- [Files](../files/) — semak imbas lukisan yang disimpan dalam storan pelayar
+- [File Manager](../file-manager/) — semak imbas lukisan yang disimpan dalam storan pelayar

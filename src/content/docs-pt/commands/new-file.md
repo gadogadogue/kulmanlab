@@ -1,6 +1,6 @@
 ---
 title: New File — Iniciar um Desenho em Branco no KulmanLab CAD
-description: O comando New File limpa o canvas e abre um desenho em branco. Um nome de arquivo com timestamp é gerado automaticamente e salvo no armazenamento do navegador.
+description: O comando New File limpa o canvas e abre um desenho em branco. Um nome de arquivo simples é gerado automaticamente e salvo no armazenamento do navegador.
 keywords: [novo arquivo CAD, novo desenho, canvas em branco CAD, criar novo desenho online, novo DXF, KulmanLab novo arquivo, redefinir canvas, limpar desenho]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-O comando **New File** limpa o canvas e inicia um desenho em branco. Um nome de arquivo único com timestamp é gerado automaticamente.
+O comando **New File** limpa o canvas e inicia um desenho em branco. Um nome de arquivo único é gerado automaticamente.
 
 ## Como criar um novo arquivo
 
@@ -20,9 +20,9 @@ Um arquivo recém-criado começa com:
 
 - **Nenhuma entidade** no canvas.
 - **Uma camada padrão** chamada `0` com cor branca e tipo de linha `Continuous`.
-- Um **nome de arquivo gerado** no formato `kulman-Seg01_HH:MM:SS.dxf` (ex.: `kulman-Mai22_14:30:00.dxf`).
+- Um **nome de arquivo gerado**, `kulman.dxf` — ou `kulman (2).dxf`, `kulman (3).dxf`, … se esse nome já estiver em uso.
 
-O arquivo é salvo automaticamente no armazenamento do navegador e aparece em [Arquivos Recentes](../files/).
+O arquivo é salvo automaticamente no armazenamento do navegador, aparece no [File Manager](../file-manager/), e pode ser [renomeado](../file-manager/#renomeando-um-arquivo) a qualquer momento.
 
 ## Atenção — trabalho não salvo é descartado
 
@@ -40,4 +40,4 @@ Clicar em **New File** descarta todas as entidades no canvas atual sem aviso. Se
 
 - [Importar](../import/) — abrir um desenho DXF ou JSON existente
 - [Exportar](../export/) — baixar o desenho antes de iniciar um novo
-- [Files](../files/) — restaurar um desenho anterior do armazenamento do navegador
+- [File Manager](../file-manager/) — restaurar um desenho anterior do armazenamento do navegador

@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | 두 선 또는 폴리선 사이의 모서리를 직선으로 경사지게 자르기 |
 | [Undo](./commands/undo/) | 마지막 작업 취소 |
 | [Redo](./commands/redo/) | 마지막으로 취소한 작업 다시 실행 |
+| [Array Grid](./commands/array-grid/) | 객체를 행과 열로 이루어진 직사각형 그리드로 반복 |
 
 ## 마크업
 
@@ -104,7 +105,7 @@ order: 1
 |--------|------|
 | [Import](./commands/import/) | DXF 또는 JSON 도면 파일 열기 |
 | [New File](./commands/new-file/) | 새 빈 도면 시작 |
-| [Files](./commands/files/) | 최근 도면 찾아보기 및 복원 |
+| [File Manager](./commands/file-manager/) | 브라우저에 저장된 도면 찾아보기, 이름 변경, 또는 삭제 |
 | [Print](./commands/print/) | 도면 영역을 이미지 또는 PDF로 내보내기 |
 | [Export](./commands/export/) | 도면을 DXF 또는 JSON으로 다운로드 |
 | [Wipe Storage](./commands/wipestorage/) | 브라우저 저장소에서 모든 도면 지우기 |

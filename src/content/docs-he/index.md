@@ -42,6 +42,7 @@ order: 1
 | [Chamfer](./commands/chamfer/) | חיתוך פינה אלכסונית ישרה בין שני קווים או פוליליינים |
 | [Undo](./commands/undo/) | ביטול הפעולה האחרונה |
 | [Redo](./commands/redo/) | ביצוע חוזר של הפעולה האחרונה שבוטלה |
+| [Array Grid](./commands/array-grid/) | חזרה על ישויות ברשת מלבנית של שורות ועמודות |
 
 ## סימון
 
@@ -104,7 +105,7 @@ order: 1
 |---------|-------------|
 | [Import](./commands/import/) | פתיחת קובץ שרטוט DXF או JSON |
 | [New File](./commands/new-file/) | התחלת שרטוט ריק חדש |
-| [Files](./commands/files/) | עיון ושחזור שרטוטים אחרונים |
+| [File Manager](./commands/file-manager/) | עיון, שינוי שם או מחיקה של שרטוטים השמורים בדפדפן שלכם |
 | [Print](./commands/print/) | ייצוא אזור שרטוט כתמונה או PDF |
 | [Export](./commands/export/) | הורדת השרטוט כ-DXF או JSON |
 | [WipeStorage](./commands/wipestorage/) | ניקוי כל השרטוטים מאחסון הדפדפן |

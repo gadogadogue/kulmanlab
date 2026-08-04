@@ -1,6 +1,6 @@
 ---
 title: New File — Start een Lege Tekening in KulmanLab CAD
-description: Het New File-commando wist het canvas en opent een nieuwe lege tekening. Er wordt automatisch een bestandsnaam met tijdstempel gegenereerd en opgeslagen in browseropslag.
+description: Het New File-commando wist het canvas en opent een nieuwe lege tekening. Er wordt automatisch een eenvoudige bestandsnaam gegenereerd en opgeslagen in browseropslag.
 keywords: [nieuw CAD-bestand, nieuwe tekening, leeg canvas CAD, nieuwe tekening online maken, nieuwe DXF starten, KulmanLab nieuw bestand, canvas resetten, tekening wissen]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-Het commando **New File** wist het canvas en start een nieuwe lege tekening. Er wordt automatisch een unieke bestandsnaam met tijdstempel gegenereerd.
+Het commando **New File** wist het canvas en start een nieuwe lege tekening. Er wordt automatisch een unieke bestandsnaam gegenereerd.
 
 ## Een nieuw bestand maken
 
@@ -20,9 +20,9 @@ Een nieuw aangemaakt bestand begint met:
 
 - **Geen entiteiten** op het canvas.
 - **Eén standaardlaag** genaamd `0` met kleur wit en lijntype `Continuous`.
-- Een **gegenereerde bestandsnaam** in het formaat `kulman-Mon01_HH:MM:SS.dxf` (bijv. `kulman-May22_14:30:00.dxf`).
+- Een **gegenereerde bestandsnaam**, `kulman.dxf` — of `kulman (2).dxf`, `kulman (3).dxf`, … als die naam al bezet is.
 
-Het bestand wordt automatisch opgeslagen in browseropslag en verschijnt in [Recente Bestanden](../files/).
+Het bestand wordt automatisch opgeslagen in browseropslag en verschijnt in [File Manager](../file-manager/), en kan op elk moment worden [hernoemd](../file-manager/#een-bestand-hernoemen).
 
 ## Waarschuwing — niet-opgeslagen werk gaat verloren
 
@@ -40,4 +40,4 @@ Klikken op **New File** verwijdert alle entiteiten op het huidige canvas zonder 
 
 - [Import](../import/) — een bestaande DXF- of JSON-tekening openen
 - [Export](../export/) — de tekening downloaden voordat u opnieuw begint
-- [Files](../files/) — een eerdere tekening herstellen uit browseropslag
+- [File Manager](../file-manager/) — een eerdere tekening herstellen uit browseropslag

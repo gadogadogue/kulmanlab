@@ -50,7 +50,7 @@ Kasama lang ang geometry-only entities:
 
 ## Pangalan ng na-export na file
 
-Ang na-download na file ay pinangalanan ayon sa kasalukuyang drawing file (hal. `myplan_May22_14:30:00.json`). Nagbabago ang extension para tumugma sa napiling format.
+Ang na-download na file ay pinangalanan ayon sa kasalukuyang drawing file (hal. `myplan.json`). Nagbabago ang extension para tumugma sa napiling format.
 
 ## Pagkakaiba ng Export at Print
 
@@ -67,4 +67,4 @@ Gamitin ang **Export** kapag kailangan mo ng editable na file. Gamitin ang [Prin
 
 - [Import](../import/) — buksan ang isang DXF o JSON file
 - [Print](../print/) — i-export ang canvas bilang isang PNG, JPEG, WebP, o PDF na larawan
-- [Files](../files/) — mag-browse ng mga drawing na naka-save sa browser storage
+- [File Manager](../file-manager/) — mag-browse ng mga drawing na naka-save sa browser storage

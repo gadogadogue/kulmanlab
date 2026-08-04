@@ -50,7 +50,7 @@ Vain geometriaentiteetit sisältyvät:
 
 ## Viedyn tiedoston nimi
 
-Ladattu tiedosto nimetään nykyisen piirustustiedoston mukaan (esim. `myplan_May22_14:30:00.json`). Tiedostopääte vaihtuu valitun muodon mukaan.
+Ladattu tiedosto nimetään nykyisen piirustustiedoston mukaan (esim. `myplan.json`). Tiedostopääte vaihtuu valitun muodon mukaan.
 
 ## Ero Export- ja Print-komentojen välillä
 
@@ -67,4 +67,4 @@ Käytä **Export**-komentoa, kun tarvitset muokattavan tiedoston. Käytä [Print
 
 - [Import](../import/) — avaa DXF- tai JSON-tiedosto
 - [Print](../print/) — vie piirtoalue PNG-, JPEG-, WebP- tai PDF-kuvana
-- [Files](../files/) — selaa selaimen tallennustilaan tallennettuja piirustuksia
+- [File Manager](../file-manager/) — selaa selaimen tallennustilaan tallennettuja piirustuksia

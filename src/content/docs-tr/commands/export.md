@@ -50,7 +50,7 @@ Yalnızca geometri nesneleri dahildir:
 
 ## Dışa Aktarılan Dosya Adı
 
-İndirilen dosya, mevcut çizim dosyasından sonra adlandırılır (örneğin `myplan_May22_14:30:00.json`). Uzantı seçilen formatla eşleşecek şekilde değişir.
+İndirilen dosya, mevcut çizim dosyasından sonra adlandırılır (örneğin `myplan.json`). Uzantı seçilen formatla eşleşecek şekilde değişir.
 
 ## Export - Print Farkı
 
@@ -67,4 +67,4 @@ Düzenlenebilir bir dosyaya ihtiyacınız olduğunda **Export** kullanın. Görs
 
 - [Import](../import/) — DXF veya JSON dosyası açar
 - [Print](../print/) — tuvali PNG, JPEG, WebP veya PDF görüntüsü olarak dışa aktarır
-- [Files](../files/) — tarayıcı deposuna kaydedilmiş çizimlere göz atar
+- [File Manager](../file-manager/) — tarayıcı deposuna kaydedilmiş çizimlere göz atar

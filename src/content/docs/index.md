@@ -42,6 +42,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 | [Chamfer](./commands/chamfer/) | Cut a straight diagonal corner between two lines or polylines |
 | [Undo](./commands/undo/) | Undo the last action |
 | [Redo](./commands/redo/) | Redo the last undone action |
+| [Array Grid](./commands/array-grid/) | Repeat entities in a rectangular grid of rows and columns |
 
 ## Markup
 
@@ -104,7 +105,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Import](./commands/import/) | Open a DXF or JSON drawing file |
 | [New File](./commands/new-file/) | Start a fresh blank drawing |
-| [Files](./commands/files/) | Browse and restore recent drawings |
+| [File Manager](./commands/file-manager/) | Browse, rename, or delete drawings saved in your browser |
 | [Print](./commands/print/) | Export a drawing area as an image or PDF |
 | [Export](./commands/export/) | Download the drawing as DXF or JSON |
 | [WipeStorage](./commands/wipestorage/) | Clear all drawings from browser storage |

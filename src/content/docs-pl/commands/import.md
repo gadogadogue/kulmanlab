@@ -47,9 +47,9 @@ Elementy używające nieobsługiwanych typów DXF są po cichu pomijane — resz
 
 ## Nazewnictwo plików i przechowywanie
 
-Podczas importowania pliku do jego nazwy dołączany jest znacznik czasu (na przykład `mojplan_Maj22_14:30:00.dxf`). Pozwala to przechowywać wiele wersji tego samego rysunku w [Ostatnich plikach](../files/) bez kolizji nazw. Jeśli nazwa pliku już zawiera znacznik czasu, jest używana bez zmian.
+Zaimportowany plik zachowuje swoją oryginalną nazwę. Jeśli ta nazwa jest już używana przez inny zapisany rysunek, automatycznie dodawany jest przyrostek w stylu Findera/Eksploratora (`mojplan (2)`, `mojplan (3)`, …), dzięki czemu istniejący wpis nigdy nie zostaje nadpisany. Plik możesz później zmienić nazwę z poziomu [File Manager](../file-manager/#zmiana-nazwy-pliku).
 
-Rysunek jest automatycznie zapisywany w pamięci przeglądarki (IndexedDB) po zaimportowaniu, dzięki czemu pojawia się w panelu [Files](../files/) i przeżywa przeładowania strony.
+Rysunek jest automatycznie zapisywany w pamięci przeglądarki (IndexedDB) po zaimportowaniu, dzięki czemu pojawia się w panelu [File Manager](../file-manager/) i przeżywa przeładowania strony.
 
 ## Co dzieje się z bieżącym rysunkiem
 
@@ -70,5 +70,5 @@ KulmanLab automatycznie ponownie otwiera ostatnio edytowany plik przy ładowaniu
 ## Powiązane polecenia
 
 - [Export](../export/) — pobieranie bieżącego rysunku jako DXF lub JSON
-- [Files](../files/) — przeglądanie i przywracanie rysunków zapisanych w przeglądarce
+- [File Manager](../file-manager/) — przeglądanie i przywracanie rysunków zapisanych w przeglądarce
 - [New File](../new-file/) — tworzenie pustego rysunku

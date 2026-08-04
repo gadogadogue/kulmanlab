@@ -1,6 +1,6 @@
 ---
 title: New File — Fara Sabon Zane mai Tsabta a KulmanLab CAD
-description: Umarnin New File yana wanke canvas ya buɗe sabon zane mai tsabta. Ana ƙirƙirar sunan fayil mai hoton lokaci kai tsaye kuma an ajiye shi a ajiyar burauza.
+description: Umarnin New File yana wanke canvas ya buɗe sabon zane mai tsabta. Ana ƙirƙirar sunan fayil mai sauƙi kai tsaye kuma an ajiye shi a ajiyar burauza.
 keywords: [sabon fayil na CAD, sabon zane, canvas mai tsabta CAD, ƙirƙirar sabon zane ta kan layi, fara sabon DXF, sabon fayil na KulmanLab, wanke canvas, wanke zane]
 group: file
 order: 2
@@ -8,7 +8,7 @@ order: 2
 
 # New File
 
-Umarnin **New File** yana wanke canvas ya fara sabon zane mai tsabta. Ana ƙirƙirar sunan fayil na musamman mai hoton lokaci kai tsaye.
+Umarnin **New File** yana wanke canvas ya fara sabon zane mai tsabta. Ana ƙirƙirar sunan fayil na musamman kai tsaye.
 
 ## Yadda za a ƙirƙiri sabon fayil
 
@@ -20,9 +20,9 @@ Fayil da aka ƙirƙira kwanan nan yana farawa da:
 
 - **Babu abubuwa** a kan canvas.
 - **Layer ɗaya na tsoho** mai suna `0` da launi fari da nauʼin layi `Continuous`.
-- **Sunan fayil da aka ƙirƙira** a tsari na `kulman-Mon01_HH:MM:SS.dxf` (misali `kulman-May22_14:30:00.dxf`).
+- **Sunan fayil da aka ƙirƙira**, `kulman.dxf` — ko `kulman (2).dxf`, `kulman (3).dxf`, … idan an riga an yi amfani da wannan suna.
 
-Ana ajiye fayil zuwa ajiyar burauza kai tsaye kuma yana bayyana a [Fayilolin Kwanan Nan](../files/).
+Ana ajiye fayil zuwa ajiyar burauza kai tsaye kuma yana bayyana a [File Manager](../file-manager/), kuma ana iya [sake masa suna](../file-manager/#sake-wa-fayil-suna) a kowane lokaci.
 
 ## Faɗakarwa — aiki da ba a ajiye ba yana ɓacewa
 
@@ -40,4 +40,4 @@ Dannawa **New File** yana kawar da dukkan abubuwa a kan canvas na yanzu ba tare 
 
 - [Import](../import/) — buɗe zane na DXF ko JSON da ke akwai
 - [Export](../export/) — sauke zanen kafin farawa sake
-- [Files](../files/) — mayar da zane na baya daga ajiyar burauza
+- [File Manager](../file-manager/) — mayar da zane na baya daga ajiyar burauza

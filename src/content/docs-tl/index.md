@@ -42,6 +42,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 | [Chamfer](./commands/chamfer/) | Gumawa ng straight diagonal na sulok sa pagitan ng dalawang linya o polyline |
 | [Undo](./commands/undo/) | I-undo ang huling aksyon |
 | [Redo](./commands/redo/) | I-redo ang huling na-undo na aksyon |
+| [Array Grid](./commands/array-grid/) | Ulitin ang mga entity sa isang rectangular grid ng row at column |
 
 ## Markup
 
@@ -104,7 +105,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 |---------|-------------|
 | [Import](./commands/import/) | Buksan ang DXF o JSON drawing file |
 | [New File](./commands/new-file/) | Simulan ang bagong blangkong drawing |
-| [Files](./commands/files/) | Mag-browse at ibalik ang mga kamakailang drawing |
+| [File Manager](./commands/file-manager/) | Mag-browse, magpalit ng pangalan, o magbura ng mga drawing na naka-save sa iyong browser |
 | [Print](./commands/print/) | I-export ang drawing area bilang image o PDF |
 | [Export](./commands/export/) | I-download ang drawing bilang DXF o JSON |
 | [WipeStorage](./commands/wipestorage/) | Burahin ang lahat ng drawing mula sa browser storage |

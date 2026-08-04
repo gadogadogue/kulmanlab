@@ -44,7 +44,7 @@ Các thực thể sử dụng loại DXF không được hỗ trợ sẽ bị b�
 
 ## Đặt tên tệp và lưu trữ
 
-Khi nhập tệp, dấu thời gian được thêm vào tên tệp. Bản vẽ tự động được lưu vào bộ nhớ trình duyệt (IndexedDB) sau khi nhập.
+Tệp được nhập giữ nguyên tên gốc. Nếu tên đó đã được dùng bởi một bản vẽ đã lưu khác, một hậu tố kiểu Finder/Explorer sẽ được tự động thêm vào (`myplan (2)`, `myplan (3)`, …) để mục hiện có không bao giờ bị ghi đè. Bạn có thể đổi tên tệp sau đó từ [File Manager](../file-manager/#doi-ten-mot-tep). Bản vẽ tự động được lưu vào bộ nhớ trình duyệt (IndexedDB) sau khi nhập, xuất hiện trong bảng [File Manager](../file-manager/) và tồn tại qua các lần tải lại trang.
 
 ## Điều gì xảy ra với bản vẽ hiện tại
 
@@ -60,5 +60,5 @@ Import thay thế canvas hiện tại. Không có tính năng hợp nhất hoặ
 ## Các lệnh liên quan
 
 - [Export](../export/) — tải bản vẽ hiện tại dưới dạng DXF hoặc JSON
-- [Files](../files/) — duyệt và khôi phục bản vẽ đã lưu trong trình duyệt
+- [File Manager](../file-manager/) — duyệt và khôi phục bản vẽ đã lưu trong trình duyệt
 - [New File](../new-file/) — bắt đầu bản vẽ trắng

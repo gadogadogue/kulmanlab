@@ -20,9 +20,9 @@ order: 2
 
 - 캔버스에 **객체 없음**.
 - 색상 흰색과 선종류 `연속`으로 설정된 **`0`이라는 이름의 기본 레이어** 하나.
-- `kulman-Mon01_HH:MM:SS.dxf` 형식의 **생성된 파일 이름**(예: `kulman-May22_14:30:00.dxf`).
+- **생성된 파일 이름** `kulman.dxf` — 그 이름이 이미 사용 중이면 `kulman (2).dxf`, `kulman (3).dxf`, … 등.
 
-파일은 자동으로 브라우저 저장소에 저장되며 [Files](../files/)에 나타납니다.
+파일은 자동으로 브라우저 저장소에 저장되며 [File Manager](../file-manager/)에 나타나고, 언제든 [이름을 변경](../file-manager/#renaming-a-file)할 수 있습니다.
 
 ## 경고 — 저장되지 않은 작업이 삭제됨
 
@@ -40,4 +40,4 @@ order: 2
 
 - [Import](../import/) — 기존 DXF 또는 JSON 도면 열기
 - [Export](../export/) — 새로 시작하기 전에 도면 다운로드
-- [Files](../files/) — 브라우저 저장소에서 이전 도면 복원
+- [File Manager](../file-manager/) — 브라우저 저장소에서 이전 도면 복원

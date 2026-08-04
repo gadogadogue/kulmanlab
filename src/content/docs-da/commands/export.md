@@ -50,7 +50,7 @@ Kun geometri-entiteter inkluderes:
 
 ## Navn på eksporteret fil
 
-Den downloadede fil får navnet fra den aktuelle tegnefil (f.eks. `myplan_May22_14:30:00.json`). Filtypen ændres til at matche det valgte format.
+Den downloadede fil får navnet fra den aktuelle tegnefil (f.eks. `myplan.json`). Filtypen ændres til at matche det valgte format.
 
 ## Forskellen mellem Export og Print
 
@@ -67,4 +67,4 @@ Brug **Export**, når du har brug for en redigerbar fil. Brug [Print](../print/)
 
 - [Import](../import/) — åbn en DXF- eller JSON-fil
 - [Print](../print/) — eksportér lærredet som et PNG-, JPEG-, WebP- eller PDF-billede
-- [Files](../files/) — gennemse tegninger gemt i browserlagring
+- [File Manager](../file-manager/) — gennemse tegninger gemt i browserlagring
