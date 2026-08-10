@@ -16,15 +16,15 @@ O comando `line` desenha segmentos de linha reta individuais armazenados como en
 2. **Clique no ponto de início**, ou digite `X,Y` e pressione **Enter** para uma coordenada exata.
 3. **Clique no ponto final** — o segmento é posicionado e o endpoint vira o próximo ponto de início. A entrada de coordenadas também funciona aqui.
 4. Continue clicando (ou digitando) para encadear mais segmentos.
-5. Pressione **Enter** ou **Escape** para parar.
+5. Pressione **Enter**, **Espaço** ou **Escape** para parar.
 
 ```
   ●──────────●──────────●──────────●
- início   2° clique  3° clique   Enter para terminar
+ início   2° clique  3° clique   Enter/Espaço para terminar
             (vira automaticamente o próximo início)
 ```
 
-Precisa de um único segmento? Pressione **Enter** ou **Escape** logo após o passo 3.
+Precisa de um único segmento? Pressione **Enter**, **Espaço** ou **Escape** logo após o passo 3.
 
 ## Entrada de coordenadas
 
@@ -63,6 +63,7 @@ Mover de volta próximo ao ponto âncora desengata o travamento.
 | `,` | Bloqueia X e move para entrada Y |
 | `Backspace` | Exclui o último caractere digitado |
 | `Enter` | Confirma a coordenada ou comprimento digitado, ou termina a cadeia se nada foi digitado |
+| `Espaço` | O mesmo que `Enter` — termina a cadeia, a menos que um comprimento esteja sendo digitado, caso em que confirma esse comprimento |
 | `Escape` | Termina a cadeia e sai |
 
 ## Edição com grips — esticando endpoints

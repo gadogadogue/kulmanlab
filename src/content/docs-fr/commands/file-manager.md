@@ -15,7 +15,7 @@ La commande `FileManager` ouvre une **grille de miniatures** de tous les dessins
 - Tapez `FileManager` dans le terminal, **ou**
 - Cliquez sur le bouton **File Manager** de la barre d'outils (icône historique) dans le panneau Fichier en haut de l'écran.
 
-Le panneau s'ouvre sur le côté gauche du canevas, et se ferme automatiquement dès que vous démarrez une autre commande.
+Le panneau s'ouvre sur le côté gauche du canevas, et se ferme automatiquement dès que vous démarrez une autre commande ou [importez](../import/) un fichier — il ne reste ainsi jamais affiché au-dessus d'un dessin qu'il ne liste pas encore. Il se rouvre avec une liste à jour à chaque fois.
 
 ## La grille de miniatures
 
@@ -28,6 +28,8 @@ Chaque dessin sauvegardé est une carte affichant une miniature rendue en direct
 | **Supprimer** | Cliquez sur l'icône corbeille, puis confirmez |
 
 Si aucun fichier n'a encore été sauvegardé, le panneau affiche "No files saved". S'il y a plus de fichiers que ce qui tient sur un écran, des contrôles **Page 1 of N** apparaissent sous la grille.
+
+La carte du fichier actuellement ouvert dans l'éditeur est signalée par un anneau de couleur d'accentuation et n'a **aucun bouton de suppression** — supprimer le fichier ouvert effacerait ses données sauvegardées alors que le canevas continuerait de l'afficher, et la prochaine modification le sauvegarderait aussitôt à nouveau. Le renommage reste disponible.
 
 ## Supprimer un fichier
 

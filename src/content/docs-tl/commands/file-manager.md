@@ -15,7 +15,7 @@ Binubuksan ng `FileManager` command ang isang **thumbnail grid** ng bawat drawin
 - I-type ang `FileManager` sa terminal, **o**
 - I-click ang **File Manager** toolbar button (history icon) sa File panel sa tuktok ng screen.
 
-Nagbubukas ang panel sa kaliwang bahagi ng canvas, at awtomatikong nagsasara sa sandaling magsimula ka ng ibang command.
+Nagbubukas ang panel sa kaliwang bahagi ng canvas, at awtomatikong nagsasara sa sandaling magsimula ka ng ibang command o mag-[import](../import/) ng file — kaya hindi ito kailanman naiiwan sa ibabaw ng drawing na hindi pa nito nakalista. Muli itong nagbubukas nang may bagong listahan sa bawat pagkakataon.
 
 ## Ang thumbnail grid
 
@@ -28,6 +28,8 @@ Ang bawat na-save na drawing ay isang card na nagpapakita ng live-rendered na th
 | **Burahin** | I-click ang trash icon, pagkatapos ay kumpirmahin |
 
 Kung wala pang na-save na file, ipinapakita ng panel ang "No files saved". Kung mas marami ang file kaysa sa kasya sa isang screen, lumalabas ang **Page 1 of N** na kontrol sa ilalim ng grid.
+
+Ang card ng file na kasalukuyang bukas sa editor ay minamarkahan ng accent-colored na singsing, at **walang delete button** — ang pagbura sa bukas na file ay mag-wa-wipe sa naka-store nitong data habang ipinapakita pa rin ito ng canvas, at ang susunod na pag-edit ay ise-save lang itong muli agad. Available pa rin ang pagpapalit ng pangalan nito.
 
 ## Pagbura ng file
 

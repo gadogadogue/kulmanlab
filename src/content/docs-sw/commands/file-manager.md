@@ -15,7 +15,7 @@ Amri ya `FileManager` inafungua **gridi ya thumbnail** ya kila mchoro uliohifadh
 - Andika `FileManager` kwenye terminal, **au**
 - Bonyeza kitufe cha upau wa zana **File Manager** (ikoni ya historia) katika jopo la Faili juu ya skrini.
 
-Jopo linafunguka upande wa kushoto wa turubai, na linafungwa kiotomatiki mara tu unapoanza amri nyingine.
+Jopo linafunguka upande wa kushoto wa turubai, na linafungwa kiotomatiki mara tu unapoanza amri nyingine au [kuingiza](../import/) faili — hivyo halibaki juu ya mchoro ambao bado haujaorodhesha. Linafunguka tena na orodha mpya kila wakati.
 
 ## Gridi ya thumbnail
 
@@ -28,6 +28,8 @@ Kila mchoro uliohifadhiwa ni kadi inayoonyesha thumbnail iliyotolewa moja kwa mo
 | **Futa** | Bofya ikoni ya pipa la taka, kisha uthibitishe |
 
 Ikiwa hakuna faili zilizohifadhiwa bado, jopo linaonyesha "No files saved". Ikiwa kuna faili nyingi kuliko zinazoweza kutoshea kwenye skrini moja, vidhibiti vya **Page 1 of N** vinaonekana chini ya gridi.
+
+Kadi ya faili ambayo kwa sasa iko wazi kwenye kihariri imewekwa alama kwa pete yenye rangi ya lafudhi, na **haina kitufe cha kufuta** — kufuta faili iliyo wazi kungefuta data yake iliyohifadhiwa wakati turubai bado inaionyesha, na uhariri unaofuata ungeihifadhi tu papo hapo. Kubadilisha jina lake bado kunapatikana.
 
 ## Kufuta faili
 

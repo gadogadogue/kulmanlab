@@ -16,15 +16,15 @@ Kommandoen `line` tegner enkeltstående rette linjesegmenter lagret som separate
 2. **Klikk startpunktet**, eller skriv `X,Y` og trykk **Enter** for en eksakt koordinat.
 3. **Klikk sluttpunktet** — segmentet plasseres, og endepunktet blir det neste startpunktet. Koordinatinntasting fungerer også her.
 4. Fortsett å klikke (eller skrive) for å kjede flere segmenter.
-5. Trykk **Enter** eller **Escape** for å stoppe.
+5. Trykk **Enter**, **Space** eller **Escape** for å stoppe.
 
 ```
   ●──────────●──────────●──────────●
- start    2. klikk    3. klikk    Enter for å avslutte
+ start    2. klikk    3. klikk    Enter/Space for å avslutte
             (blir automatisk neste start)
 ```
 
-Trenger du bare ett enkelt segment? Trykk **Enter** eller **Escape** rett etter steg 3.
+Trenger du bare ett enkelt segment? Trykk **Enter**, **Space** eller **Escape** rett etter steg 3.
 
 ## Koordinatinntasting
 
@@ -63,6 +63,7 @@ Den akkumulerte verdien vises live i terminalen (f.eks. `click end point or ente
 | `,` | Lås X og gå til Y-inntasting |
 | `Backspace` | Slett sist skrevne tegn |
 | `Enter` | Bekreft inntastet koordinat eller lengde, eller avslutt kjeden hvis ingenting er skrevet |
+| `Space` | Samme som `Enter` — avslutter kjeden, med mindre en lengde er under inntasting, i så fall bekrefter den lengden i stedet |
 | `Escape` | Avslutt kjeden og gå ut |
 
 ## Grep-redigering — strekke endepunkter

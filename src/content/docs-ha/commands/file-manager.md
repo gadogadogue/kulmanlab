@@ -15,7 +15,7 @@ Umarnin `FileManager` yana buɗe **grid na ƙananan hoto** na kowane zane da aka
 - Rubuta `FileManager` a tashar umarni, **ko kuma**
 - Danna maɓallin kayan aiki na **File Manager** (alamar tarihi) a panel na File a saman allo.
 
-Panel yana buɗewa a gefen hagu na canvas, kuma yana rufewa kai tsaye da zaran ka fara wani umarni.
+Panel yana buɗewa a gefen hagu na canvas, kuma yana rufewa kai tsaye da zaran ka fara wani umarni ko ka [shigo da](../import/) wani fayil — don haka bai taɓa dakata a kan zanen da bai riga ya lissafa ba. Yana sake buɗewa da sabon jeri a kowane lokaci.
 
 ## Grid na ƙananan hoto
 
@@ -28,6 +28,8 @@ Kowane zane da aka ajiye katin ne mai nuna ƙaramin hoto na kai tsaye, sunansa, 
 | **Share** | Danna alamar kwandon shara, sannan tabbatar |
 
 Idan babu fayilolin da aka ajiye tukuna, panel yana nuna "No files saved". Idan akwai fayiloli fiye da yadda za su dace a allo ɗaya, sarrafawar **Page 1 of N** tana bayyana ƙarƙashin grid.
+
+Ana yiwa katin fayil ɗin da yake buɗe a editan yanzu alama da zoben launi mai fice, kuma **babu maɓallin sharewa** a kansa — sharewar fayil ɗin da yake buɗe zai share bayanansa da aka ajiye alhali canvas ɗin har yanzu yana nuna shi, kuma gyara na gaba zai sake ajiye shi nan take. Sake masa suna har yanzu ana iya yi.
 
 ## Share fayil
 

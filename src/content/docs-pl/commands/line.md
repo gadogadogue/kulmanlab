@@ -16,15 +16,15 @@ Polecenie `line` rysuje pojedyncze prostoliniowe odcinki przechowywane jako oddz
 2. **Kliknij punkt startowy** lub wpisz `X,Y` i naciśnij **Enter** dla dokładnej współrzędnej.
 3. **Kliknij punkt końcowy** — segment jest umieszczany, a punkt końcowy staje się następnym punktem startowym. Tutaj również działa wprowadzanie współrzędnych.
 4. Kontynuuj klikanie (lub wpisywanie), aby łączyć więcej segmentów.
-5. Naciśnij **Enter** lub **Escape**, aby zatrzymać.
+5. Naciśnij **Enter**, **Space** lub **Escape**, aby zatrzymać.
 
 ```
   ●──────────●──────────●──────────●
- start     2. kliknięcie  3. kliknięcie   Enter aby zakończyć
+ start     2. kliknięcie  3. kliknięcie   Enter/Space aby zakończyć
             (automatycznie staje się następnym startem)
 ```
 
-Potrzebujesz tylko jednego segmentu? Naciśnij **Enter** lub **Escape** zaraz po kroku 3.
+Potrzebujesz tylko jednego segmentu? Naciśnij **Enter**, **Space** lub **Escape** zaraz po kroku 3.
 
 ## Wprowadzanie współrzędnych
 
@@ -63,6 +63,7 @@ Powrót blisko punktu kotwicy rozłącza blokadę.
 | `,` | Zablokuj X i przejdź do wprowadzania Y |
 | `Backspace` | Usuń ostatnio wpisany znak |
 | `Enter` | Potwierdź wpisaną współrzędną lub długość, lub zakończ łańcuch jeśli nic nie jest wpisane |
+| `Space` | To samo co `Enter` — kończy łańcuch, chyba że wpisywana jest długość, w takim przypadku zatwierdza tę długość |
 | `Escape` | Zakończ łańcuch i wyjdź |
 
 ## Edycja uchwytów — rozciąganie punktów końcowych

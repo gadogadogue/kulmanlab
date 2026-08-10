@@ -15,7 +15,7 @@ Komento `FileManager` avaa **pienoiskuvaruudukon** jokaisesta piirustuksesta, jo
 - Kirjoita `FileManager` terminaaliin, **tai**
 - Napsauta **File Manager** -työkalurivin painiketta (historiakuvake) File-paneelissa näytön yläosassa.
 
-Paneeli avautuu piirtoalueen vasemmalle puolelle ja sulkeutuu automaattisesti heti kun aloitat toisen komennon.
+Paneeli avautuu piirtoalueen vasemmalle puolelle ja sulkeutuu automaattisesti heti kun aloitat toisen komennon tai [tuot](../import/) tiedoston — joten se ei koskaan jää roikkumaan piirustuksen päälle, jota se ei vielä listaa. Se avautuu joka kerta tuoreella listalla.
 
 ## Pienoiskuvaruudukko
 
@@ -28,6 +28,8 @@ Jokainen tallennettu piirustus näkyy korttina, jossa on suoraan renderöity pie
 | **Poista** | Napsauta roskakorikuvaketta ja vahvista |
 
 Jos tiedostoja ei ole vielä tallennettu, paneelissa näkyy "No files saved". Jos tiedostoja on enemmän kuin mahtuu yhdelle näytölle, ruudukon alle ilmestyy **Page 1 of N** -ohjaimet.
+
+Tiedoston, joka on parhaillaan avoinna editorissa, kortti on merkitty korostusvärisellä renkaalla, eikä siinä ole **poistopainiketta** — avoinna olevan tiedoston poistaminen tyhjentäisi sen tallennetut tiedot, vaikka piirtoalue näyttäisi sitä edelleen, ja seuraava muokkaus vain tallentaisi sen heti takaisin. Uudelleennimeäminen on edelleen käytettävissä.
 
 ## Tiedoston poistaminen
 

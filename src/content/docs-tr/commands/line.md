@@ -16,15 +16,15 @@ order: 1
 2. **Başlangıç noktasını tıklayın** veya kesin koordinat için `X,Y` yazıp **Enter** tuşuna basın.
 3. **Bitiş noktasını tıklayın** — segment yerleştirilir ve bitiş noktası bir sonraki başlangıç olur. Burada koordinat girişi de çalışır.
 4. Daha fazla segment zincirlemek için tıklamaya (veya yazmaya) devam edin.
-5. Tamamlamak için **Enter** veya **Escape** tuşuna basın.
+5. Tamamlamak için **Enter**, **Space** veya **Escape** tuşuna basın.
 
 ```
   ●──────────●──────────●──────────●
- Başlangıç  2. tıklama  3. tıklama   Tamamlamak için Enter
+ Başlangıç  2. tıklama  3. tıklama   Tamamlamak için Enter/Space
             (otomatik olarak sonraki başlangıç olur)
 ```
 
-Yalnızca bir segment mi gerekiyor? 3. adımdan hemen sonra **Enter** veya **Escape** tuşuna basın.
+Yalnızca bir segment mi gerekiyor? 3. adımdan hemen sonra **Enter**, **Space** veya **Escape** tuşuna basın.
 
 ## Koordinat Girişi
 
@@ -63,6 +63,7 @@ Biriktirilen değer terminalde gerçek zamanlı görüntülenir (örneğin `clic
 | `,` | X'i kilitler ve Y girişine geçer |
 | `Backspace` | Son girilen karakteri siler |
 | `Enter` | Girilen koordinatı veya uzunluğu onaylar ya da giriş yoksa zinciri tamamlar |
+| `Space` | `Enter` ile aynı — bir uzunluk girilmekte olmadığı sürece zinciri tamamlar; girilmekteyse bunun yerine o uzunluğu onaylar |
 | `Escape` | Zinciri tamamlar ve çıkar |
 
 ## Tutamaç Düzenleme — Uç Noktaları Uzatma

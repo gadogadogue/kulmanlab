@@ -16,15 +16,15 @@ order: 1
 2. **Klicka på startpunkten**, eller skriv `X,Y` och tryck **Enter** för en exakt koordinat.
 3. **Klicka på slutpunkten** — segmentet placeras och slutpunkten blir nästa startpunkt. Koordinatinmatning fungerar även här.
 4. Fortsätt klicka (eller skriva) för att kedja fler segment.
-5. Tryck **Enter** eller **Escape** för att avsluta.
+5. Tryck **Enter**, **Space** eller **Escape** för att avsluta.
 
 ```
   ●──────────●──────────●──────────●
- start     2nd click  3rd click   Enter to finish
+ start     2nd click  3rd click   Enter/Space to finish
             (auto-becomes next start)
 ```
 
-Behöver du bara ett enda segment? Tryck **Enter** eller **Escape** direkt efter steg 3.
+Behöver du bara ett enda segment? Tryck **Enter**, **Space** eller **Escape** direkt efter steg 3.
 
 ## Koordinatinmatning
 
@@ -63,6 +63,7 @@ Att flytta tillbaka nära ankarpunkten kopplar ur låsningen.
 | `,` | Lås X och flytta till Y-inmatning |
 | `Backspace` | Ta bort senast skrivna tecken |
 | `Enter` | Bekräfta skriven koordinat eller längd, eller avsluta kedjan om inget är skrivet |
+| `Space` | Samma som `Enter` — avslutar kedjan, såvida inte en längd håller på att skrivas in, i vilket fall den bekräftar den längden istället |
 | `Escape` | Avsluta kedjan och lämna |
 
 ## Grippredigering — sträcka ut slutpunkter

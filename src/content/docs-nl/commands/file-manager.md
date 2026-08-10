@@ -15,7 +15,7 @@ Het commando `FileManager` opent een **miniaturenraster** van elke tekening die 
 - Typ `FileManager` in de terminal, **of**
 - Klik op de werkbalkknop **File Manager** (geschiedenisicoon) in het Bestand-paneel bovenaan het scherm.
 
-Het paneel opent aan de linkerkant van het canvas en sluit automatisch zodra u een ander commando start.
+Het paneel opent aan de linkerkant van het canvas en sluit automatisch zodra u een ander commando start of een bestand [importeert](../import/) — zodat het nooit blijft hangen boven een tekening die het nog niet vermeldt. Het gaat elke keer weer open met een actuele lijst.
 
 ## Het miniaturenraster
 
@@ -28,6 +28,8 @@ Elke opgeslagen tekening is een kaart met een live gegenereerde miniatuur, de na
 | **Verwijderen** | Klik op het prullenbakicoon en bevestig |
 
 Als er nog geen bestanden zijn opgeslagen, toont het paneel "No files saved". Bij meer bestanden dan op één scherm passen, verschijnen onder het raster de bedieningselementen **Page 1 of N**.
+
+De kaart van het bestand dat momenteel in de editor geopend is, is gemarkeerd met een ring in de accentkleur en heeft **geen verwijderknop** — het verwijderen van het geopende bestand zou de opgeslagen gegevens ervan wissen terwijl het canvas het nog steeds toont, en de volgende bewerking zou het meteen weer opslaan. Hernoemen blijft wel mogelijk.
 
 ## Een bestand verwijderen
 

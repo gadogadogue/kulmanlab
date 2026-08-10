@@ -15,7 +15,7 @@ The `FileManager` command opens a **thumbnail grid** of every drawing that has b
 - Type `FileManager` in the terminal, **or**
 - Click the **File Manager** toolbar button (history icon) in the File panel at the top of the screen.
 
-The panel opens on the left side of the canvas, and closes automatically as soon as you start another command.
+The panel opens on the left side of the canvas, and closes automatically as soon as you start another command or [import](../import/) a file — so it never lingers over a drawing it doesn't list yet. It reopens with a fresh list each time.
 
 ## The thumbnail grid
 
@@ -28,6 +28,8 @@ Each saved drawing is a card showing a live-rendered thumbnail, its name, and wh
 | **Delete** | Click the trash icon, then confirm |
 
 If no files have been saved yet, the panel shows "No files saved". With more files than fit on one screen, **Page 1 of N** controls appear below the grid.
+
+The card for whichever file is currently open in the editor is marked with an accent-colored ring, and has **no delete button** — deleting the open file would wipe its stored data while the canvas kept showing it, and the next edit would just save it right back. Renaming it is still available.
 
 ## Deleting a file
 

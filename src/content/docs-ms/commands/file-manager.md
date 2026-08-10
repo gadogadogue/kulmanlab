@@ -15,7 +15,7 @@ Arahan `FileManager` membuka **grid thumbnail** bagi setiap lukisan yang telah d
 - Taip `FileManager` dalam terminal, **atau**
 - Klik butang bar alat **File Manager** (ikon sejarah) dalam panel Fail di bahagian atas skrin.
 
-Panel terbuka di sebelah kiri kanvas, dan tertutup secara automatik sebaik sahaja anda memulakan arahan lain.
+Panel terbuka di sebelah kiri kanvas, dan tertutup secara automatik sebaik sahaja anda memulakan arahan lain atau [mengimport](../import/) sesuatu fail — jadi ia tidak pernah berlengah-lengah di atas lukisan yang belum lagi disenaraikannya. Ia dibuka semula dengan senarai terkini setiap kali.
 
 ## Grid thumbnail
 
@@ -28,6 +28,8 @@ Setiap lukisan yang disimpan adalah satu kad yang menunjukkan thumbnail yang dir
 | **Padam** | Klik ikon tong sampah, kemudian sahkan |
 
 Jika tiada fail yang disimpan lagi, panel menunjukkan "No files saved". Dengan lebih banyak fail daripada yang boleh dimuatkan pada satu skrin, kawalan **Page 1 of N** muncul di bawah grid.
+
+Kad bagi fail yang sedang dibuka dalam editor ditandakan dengan gelang berwarna aksen, dan **tiada butang padam** — memadam fail yang sedang dibuka akan memusnahkan data yang disimpannya sedangkan kanvas masih menunjukkannya, dan suntingan seterusnya hanya akan menyimpannya semula. Menamakannya semula masih tersedia.
 
 ## Memadam fail
 

@@ -16,15 +16,15 @@ Het `line`-commando tekent losse rechte lijnsegmenten, opgeslagen als afzonderli
 2. **Klik op het startpunt**, of typ `X,Y` en druk op **Enter** voor een exact coördinaat.
 3. **Klik op het eindpunt** — het segment wordt geplaatst en het eindpunt wordt het volgende startpunt. Coördinaatinvoer werkt hier ook.
 4. Blijf klikken (of typen) om meer segmenten aaneen te schakelen.
-5. Druk op **Enter** of **Escape** om te stoppen.
+5. Druk op **Enter**, **Space** of **Escape** om te stoppen.
 
 ```
   ●──────────●──────────●──────────●
- start     2e klik     3e klik    Enter om te voltooien
+ start     2e klik     3e klik    Enter/Space om te voltooien
             (wordt automatisch nieuw startpunt)
 ```
 
-Heeft u maar één segment nodig? Druk direct na stap 3 op **Enter** of **Escape**.
+Heeft u maar één segment nodig? Druk direct na stap 3 op **Enter**, **Space** of **Escape**.
 
 ## Coördinaatinvoer
 
@@ -63,6 +63,7 @@ Terugbewegen dicht bij het ankerpunt ontkoppelt de vergrendeling.
 | `,` | X vergrendelen en doorgaan naar Y-invoer |
 | `Backspace` | Laatst getypte teken verwijderen |
 | `Enter` | Getypt coördinaat of lengte bevestigen, of de keten voltooien als er niets is getypt |
+| `Space` | Hetzelfde als `Enter` — voltooit de keten, tenzij er een lengte wordt getypt, in welk geval dit die lengte bevestigt |
 | `Escape` | Keten voltooien en afsluiten |
 
 ## Grip-bewerking — eindpunten uitrekken

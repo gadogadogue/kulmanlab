@@ -16,15 +16,15 @@ Ginuguhit ng `line` command ang mga indibidwal na straight line segment, na naka
 2. **I-click ang starting point**, o i-type ang `X,Y` at pindutin ang **Enter** para sa eksaktong coordinate.
 3. **I-click ang endpoint** — mailalagay ang segment at ang endpoint ang magiging susunod na starting point. Gumagana rin dito ang coordinate input.
 4. Patuloy na mag-click (o mag-type) para magkadena ng mas maraming segment.
-5. Pindutin ang **Enter** o **Escape** para itigil.
+5. Pindutin ang **Enter**, **Space**, o **Escape** para itigil.
 
 ```
   ●──────────●──────────●──────────●
- start     2nd click  3rd click   Enter to finish
+ start     2nd click  3rd click   Enter/Space to finish
             (auto-becomes next start)
 ```
 
-Isang segment lang ba ang kailangan? Pindutin ang **Enter** o **Escape** kaagad pagkatapos ng hakbang 3.
+Isang segment lang ba ang kailangan? Pindutin ang **Enter**, **Space**, o **Escape** kaagad pagkatapos ng hakbang 3.
 
 ## Coordinate Entry
 
@@ -63,6 +63,7 @@ Ang paglipat pabalik palapit sa anchor point ay nagpapatanggal sa lock.
 | `,` | I-lock ang X at lumipat sa Y entry |
 | `Backspace` | Burahin ang huling na-type na character |
 | `Enter` | Kumpirmahin ang na-type na coordinate o length, o tapusin ang chain kung walang na-type |
+| `Space` | Kapareho ng `Enter` — tinatapos ang chain, maliban kung may length na tine-type, sa pagkakataong iyon ay ikinukumpirma nito ang length na iyon sa halip |
 | `Escape` | Tapusin ang chain at lumabas |
 
 ## Grip Editing — Pag-stretch ng mga Endpoint

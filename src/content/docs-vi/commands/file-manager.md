@@ -15,7 +15,7 @@ Lệnh `FileManager` mở một **lưới hình thu nhỏ** của mọi bản v�
 - Nhập `FileManager` trong terminal, **hoặc**
 - Nhấp nút **File Manager** trên thanh công cụ (biểu tượng lịch sử) trong bảng File ở đầu màn hình.
 
-Bảng mở ở phía bên trái canvas, và tự động đóng ngay khi bạn bắt đầu một lệnh khác.
+Bảng mở ở phía bên trái canvas, và tự động đóng ngay khi bạn bắt đầu một lệnh khác hoặc [nhập](../import/) một tệp — vì vậy nó không bao giờ còn đọng lại trên một bản vẽ mà nó chưa liệt kê. Nó mở lại với danh sách mới mỗi lần.
 
 ## Lưới hình thu nhỏ
 
@@ -28,6 +28,8 @@ Mỗi bản vẽ đã lưu là một thẻ hiển thị hình thu nhỏ được
 | **Xóa** | Nhấp biểu tượng thùng rác, sau đó xác nhận |
 
 Nếu chưa có tệp nào được lưu, bảng hiển thị "No files saved". Khi có nhiều tệp hơn số lượng vừa một màn hình, các nút điều khiển **Page 1 of N** xuất hiện bên dưới lưới.
+
+Thẻ của tệp hiện đang mở trong trình soạn thảo được đánh dấu bằng một vòng màu nhấn, và **không có nút xóa** — xóa tệp đang mở sẽ xóa sạch dữ liệu đã lưu của nó trong khi canvas vẫn đang hiển thị nó, và lần chỉnh sửa tiếp theo sẽ chỉ lưu nó trở lại ngay lập tức. Việc đổi tên vẫn khả dụng.
 
 ## Xóa một tệp
 

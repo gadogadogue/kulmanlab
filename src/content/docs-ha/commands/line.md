@@ -16,15 +16,15 @@ Umarnin `line` yana zana sassan layi madaidaici ɗaya-ɗaya, waɗanda ake ajiye 
 2. **Danna tabon farawa**, ko rubuta `X,Y` ka danna **Enter** don daidaitawa madaidaiciya.
 3. **Danna tabon ƙarshe** — ana sanya sashen kuma ƙarshen ya zama sabon tabon farawa. Shigar da daidaitawa yana aiki a nan ma.
 4. Ci gaba da dannawa (ko rubutu) don sarƙa ƙarin sassa.
-5. Danna **Enter** ko **Escape** don tsayawa.
+5. Danna **Enter**, **Space**, ko **Escape** don tsayawa.
 
 ```
   ●──────────●──────────●──────────●
- farawa   dannawa 2  dannawa 3   Enter don kammalawa
+ farawa   dannawa 2  dannawa 3   Enter/Space don kammalawa
             (ya zama sabon farawa kai tsaye)
 ```
 
-Kana bukatar sashi guda ɗaya kawai? Danna **Enter** ko **Escape** nan take bayan mataki na 3.
+Kana bukatar sashi guda ɗaya kawai? Danna **Enter**, **Space**, ko **Escape** nan take bayan mataki na 3.
 
 ## Shigar da daidaitawa
 
@@ -63,6 +63,7 @@ Motsawa baya kusa da tabon tsayayye yana wanke kulle.
 | `,` | Kulle X ka koma shigar da Y |
 | `Backspace` | Share tsohon harafi na ƙarshe da aka rubuta |
 | `Enter` | Tabbatar da daidaitawa ko tsawo da aka rubuta, ko kammala sarƙa idan babu abin da aka rubuta |
+| `Space` | Kamar `Enter` — yana kammala sarƙa, sai dai idan ana rubuta tsawo a wancan lokacin, a wannan yanayin yana tabbatar da wannan tsawon a maimako |
 | `Escape` | Kammala sarƙa ka fita |
 
 ## Gyaran grip — mikewar ƙarshe

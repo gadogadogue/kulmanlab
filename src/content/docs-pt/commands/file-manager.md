@@ -15,7 +15,7 @@ O comando `FileManager` abre uma **grade de miniaturas** de todos os desenhos qu
 - Digite `FileManager` no terminal, **ou**
 - Clique no botão **File Manager** na barra de ferramentas (ícone de histórico) no painel Arquivo no topo da tela.
 
-O painel se abre no lado esquerdo do canvas, e se fecha automaticamente assim que você inicia outro comando.
+O painel se abre no lado esquerdo do canvas, e se fecha automaticamente assim que você inicia outro comando ou [importa](../import/) um arquivo — assim, ele nunca permanece aberto sobre um desenho que ainda não está listado nele. Ele reabre com uma lista atualizada a cada vez.
 
 ## A grade de miniaturas
 
@@ -28,6 +28,8 @@ Cada desenho salvo é um cartão que mostra uma miniatura renderizada ao vivo, s
 | **Excluir** | Clique no ícone de lixeira, depois confirme |
 
 Se nenhum arquivo foi salvo ainda, o painel mostra "No files saved". Com mais arquivos do que cabem em uma tela, controles de **Page 1 of N** aparecem abaixo da grade.
+
+O cartão do arquivo que está aberto no editor no momento é marcado com um anel de cor de destaque, e não tem **botão de exclusão** — excluir o arquivo aberto apagaria seus dados armazenados enquanto o canvas continuasse mostrando-o, e a próxima edição simplesmente o salvaria de volta. Renomeá-lo continua disponível.
 
 ## Excluindo um arquivo
 

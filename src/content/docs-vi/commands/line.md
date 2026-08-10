@@ -15,7 +15,7 @@ Lệnh `line` vẽ các đoạn đường thẳng riêng lẻ được lưu dư�
 2. **Nhấp điểm bắt đầu**, hoặc gõ `X,Y` rồi nhấn **Enter** để nhập tọa độ chính xác.
 3. **Nhấp điểm cuối** — đoạn được đặt và điểm cuối trở thành điểm bắt đầu mới. Có thể nhập tọa độ tương tự.
 4. Tiếp tục nhấp (hoặc gõ) để nối thêm đoạn.
-5. Nhấn **Enter** hoặc **Escape** để dừng.
+5. Nhấn **Enter**, **Space**, hoặc **Escape** để dừng.
 
 ## Khóa góc và nhập độ dài chính xác
 
@@ -44,6 +44,7 @@ Lệnh theo dõi trục bắt điểm 45° (0°, 45°, 90°, 135°, …). Khi b�
 | `,` | Khóa X và chuyển sang nhập Y |
 | `Backspace` | Xóa ký tự cuối |
 | `Enter` | Xác nhận tọa độ hoặc độ dài, hoặc kết thúc chuỗi |
+| `Space` | Giống như `Enter` — kết thúc chuỗi, trừ khi đang nhập độ dài, trong trường hợp đó nó xác nhận độ dài đó thay vào |
 | `Escape` | Kết thúc chuỗi và thoát |
 
 ## Các lệnh chỉnh sửa được hỗ trợ

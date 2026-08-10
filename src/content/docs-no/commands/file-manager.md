@@ -15,7 +15,7 @@ Kommandoen `FileManager` åpner et **miniatyrrutenett** over alle tegninger som 
 - Skriv `FileManager` i terminalen, **eller**
 - Klikk på verktøylinjeknappen **File Manager** (historikkikon) i File-panelet øverst på skjermen.
 
-Panelet åpnes på venstre side av lerretet, og lukkes automatisk så snart du starter en annen kommando.
+Panelet åpnes på venstre side av lerretet, og lukkes automatisk så snart du starter en annen kommando eller [importerer](../import/) en fil — slik at det aldri blir liggende over en tegning det ikke har med i listen ennå. Det åpnes igjen med en fersk liste hver gang.
 
 ## Miniatyrrutenettet
 
@@ -28,6 +28,8 @@ Hver lagret tegning er et kort som viser en direkte gjengitt miniatyr, navnet si
 | **Slett** | Klikk søppelbøtteikonet, og bekreft deretter |
 
 Hvis ingen filer er lagret ennå, viser panelet «No files saved». Med flere filer enn det er plass til på én skjerm vises kontrollene **Page 1 of N** under rutenettet.
+
+Kortet for filen som for øyeblikket er åpen i editoren, er merket med en aksentfarget ring, og har **ingen sletteknapp** — å slette den åpne filen ville visket ut de lagrede dataene mens lerretet fortsatt viste den, og neste redigering ville bare lagret den rett tilbake. Å omdøpe den er fortsatt mulig.
 
 ## Slette en fil
 

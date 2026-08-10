@@ -16,15 +16,15 @@ Komento `line` piirtää yksittäisiä suoria viivasegmenttejä, jotka tallennet
 2. **Napsauta alkupistettä**, tai kirjoita `X,Y` ja paina **Enter** tarkkaa koordinaattia varten.
 3. **Napsauta loppupistettä** — segmentti sijoitetaan ja päätepisteestä tulee seuraava alkupiste. Koordinaattien syöttö toimii myös täällä.
 4. Jatka napsauttamista (tai kirjoittamista) ketjuttaaksesi lisää segmenttejä.
-5. Paina **Enter** tai **Escape** lopettaaksesi.
+5. Paina **Enter**, **Space** tai **Escape** lopettaaksesi.
 
 ```
   ●──────────●──────────●──────────●
- alku    2. napsautus  3. napsautus  Enter lopettaaksesi
+ alku    2. napsautus  3. napsautus  Enter/Space lopettaaksesi
             (muuttuu automaattisesti seuraavaksi alkupisteeksi)
 ```
 
-Tarvitsetko vain yhden segmentin? Paina **Enter** tai **Escape** heti vaiheen 3 jälkeen.
+Tarvitsetko vain yhden segmentin? Paina **Enter**, **Space** tai **Escape** heti vaiheen 3 jälkeen.
 
 ## Koordinaattien syöttö
 
@@ -63,6 +63,7 @@ Siirtyminen takaisin lähelle ankkuripistettä vapauttaa lukituksen.
 | `,` | Lukitse X ja siirry Y:n syöttöön |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
 | `Enter` | Vahvista kirjoitettu koordinaatti tai pituus, tai viimeistele ketju jos mitään ei ole kirjoitettu |
+| `Space` | Sama kuin `Enter` — viimeistelee ketjun, paitsi jos pituutta ollaan parhaillaan kirjoittamassa, jolloin se vahvistaa sen pituuden |
 | `Escape` | Viimeistele ketju ja poistu |
 
 ## Kahvamuokkaus — päätepisteiden venyttäminen

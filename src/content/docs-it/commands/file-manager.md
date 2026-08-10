@@ -15,7 +15,7 @@ Il comando `FileManager` apre una **griglia di miniature** di ogni disegno che �
 - Digita `FileManager` nel terminale, **oppure**
 - Clicca il pulsante **File Manager** nella barra degli strumenti (icona cronologia) nel pannello File in cima allo schermo.
 
-Il pannello si apre sul lato sinistro del canvas e si chiude automaticamente non appena avvii un altro comando.
+Il pannello si apre sul lato sinistro del canvas e si chiude automaticamente non appena avvii un altro comando o [Importa](../import/) un file — così non resta mai aperto sopra un disegno che ancora non elenca. Si riapre con un elenco aggiornato ogni volta.
 
 ## La griglia di miniature
 
@@ -28,6 +28,8 @@ Ogni disegno salvato è una scheda che mostra una miniatura renderizzata al mome
 | **Eliminare** | Clicca l'icona del cestino, poi conferma |
 
 Se non sono stati salvati file, il pannello mostra "Nessun file salvato". Con più file di quanti ne entrino in una schermata, sotto la griglia compaiono i controlli **Pagina 1 di N**.
+
+La scheda del file attualmente aperto nell'editor è contrassegnata da un anello colorato in evidenza e non ha il **pulsante elimina** — eliminare il file aperto cancellerebbe i suoi dati salvati mentre il canvas continuerebbe a mostrarlo, e la modifica successiva lo salverebbe semplicemente di nuovo. Rinominarlo resta comunque possibile.
 
 ## Eliminare un file
 

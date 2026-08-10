@@ -15,7 +15,7 @@ Perintah `FileManager` membuka **grid thumbnail** dari setiap gambar yang telah 
 - Ketik `FileManager` di terminal, **atau**
 - Klik tombol toolbar **File Manager** (ikon riwayat) di panel File di bagian atas layar.
 
-Panel terbuka di sisi kiri kanvas, dan tertutup secara otomatis segera setelah Anda memulai perintah lain.
+Panel terbuka di sisi kiri kanvas, dan tertutup secara otomatis segera setelah Anda memulai perintah lain atau [Impor](../import/) file — sehingga panel tidak pernah tertinggal di atas gambar yang belum didaftarkannya. Panel ini terbuka kembali dengan daftar yang baru setiap kali.
 
 ## Grid thumbnail
 
@@ -28,6 +28,8 @@ Setiap gambar tersimpan adalah kartu yang menampilkan thumbnail yang dirender la
 | **Hapus** | Klik ikon tempat sampah, lalu konfirmasi |
 
 Jika belum ada file yang disimpan, panel menampilkan "No files saved". Jika file lebih banyak daripada yang muat di satu layar, kontrol **Page 1 of N** muncul di bawah grid.
+
+Kartu untuk file yang sedang terbuka di editor ditandai dengan cincin berwarna aksen, dan tidak memiliki **tombol hapus** — menghapus file yang sedang terbuka akan menghapus data tersimpannya sementara kanvas masih menampilkannya, dan pengeditan berikutnya akan langsung menyimpannya kembali. Mengganti nama tetap tersedia.
 
 ## Menghapus file
 

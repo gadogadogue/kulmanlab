@@ -15,7 +15,7 @@ Der Befehl `FileManager` öffnet ein **Miniaturraster** aller Zeichnungen, die i
 - Geben Sie `FileManager` im Terminal ein, **oder**
 - Klicken Sie auf die Schaltfläche **File Manager** (Verlaufssymbol) in der Symbolleiste im Datei-Panel oben auf dem Bildschirm.
 
-Das Panel öffnet sich auf der linken Seite der Zeichenfläche und schließt sich automatisch, sobald Sie einen anderen Befehl starten.
+Das Panel öffnet sich auf der linken Seite der Zeichenfläche und schließt sich automatisch, sobald Sie einen anderen Befehl starten oder eine Datei [importieren](../import/) — sodass es nie über einer Zeichnung stehen bleibt, die es noch nicht auflistet. Es öffnet sich jedes Mal mit einer aktuellen Liste erneut.
 
 ## Das Miniaturraster
 
@@ -28,6 +28,8 @@ Jede gespeicherte Zeichnung ist eine Karte mit einer live gerenderten Miniaturan
 | **Löschen** | Auf das Papierkorbsymbol klicken, dann bestätigen |
 
 Wenn noch keine Dateien gespeichert wurden, zeigt das Panel „No files saved" an. Bei mehr Dateien, als auf einen Bildschirm passen, erscheinen unterhalb des Rasters die Steuerelemente **Page 1 of N**.
+
+Die Karte der Datei, die gerade im Editor geöffnet ist, ist mit einem Ring in der Akzentfarbe markiert und hat **keine Löschschaltfläche** — das Löschen der geöffneten Datei würde ihre gespeicherten Daten entfernen, während die Zeichenfläche sie weiterhin anzeigt, und die nächste Bearbeitung würde sie einfach wieder speichern. Umbenennen ist weiterhin möglich.
 
 ## Eine Datei löschen
 

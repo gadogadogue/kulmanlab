@@ -16,15 +16,15 @@ Der Befehl `line` zeichnet einzelne gerade Liniensegmente, die als separate `LIN
 2. **Klicken Sie auf den Startpunkt** oder geben Sie `X,Y` ein und drücken Sie **Enter** für eine genaue Koordinate.
 3. **Klicken Sie auf den Endpunkt** — das Segment wird platziert und der Endpunkt wird zum nächsten Startpunkt. Koordinateneingabe funktioniert hier ebenfalls.
 4. Klicken (oder tippen) Sie weiter, um weitere Segmente zu verketten.
-5. Drücken Sie **Enter** oder **Escape** zum Beenden.
+5. Drücken Sie **Enter**, **Space** oder **Escape** zum Beenden.
 
 ```
   ●──────────●──────────●──────────●
- Start     2. Klick  3. Klick   Enter zum Beenden
+ Start     2. Klick  3. Klick   Enter/Space zum Beenden
             (wird automatisch nächster Start)
 ```
 
-Benötigen Sie nur ein einzelnes Segment? Drücken Sie **Enter** oder **Escape** direkt nach Schritt 3.
+Benötigen Sie nur ein einzelnes Segment? Drücken Sie **Enter**, **Space** oder **Escape** direkt nach Schritt 3.
 
 ## Koordinateneingabe
 
@@ -63,6 +63,7 @@ Das Zurückbewegen des Cursors in die Nähe des Ankerpunktes hebt die Sperre auf
 | `,` | X sperren und zu Y-Eingabe wechseln |
 | `Backspace` | Letztes getipptes Zeichen löschen |
 | `Enter` | Getippte Koordinate oder Länge bestätigen, oder Kette beenden wenn nichts getippt |
+| `Space` | Wie `Enter` — beendet die Kette, es sei denn, es wird gerade eine Länge eingegeben, dann wird stattdessen diese Länge bestätigt |
 | `Escape` | Kette beenden und beenden |
 
 ## Griffpunkt-Bearbeitung — Endpunkte strecken

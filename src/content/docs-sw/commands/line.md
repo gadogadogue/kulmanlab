@@ -16,15 +16,15 @@ Amri ya `line` inachora sehemu za mstari mzito zinazohifadhiwa kama vipande tofa
 2. **Bonyeza nukta ya kuanzia**, au andika `X,Y` na ubonyeze **Enter** kwa kuratibu sahihi.
 3. **Bonyeza nukta ya mwisho** — sehemu imewekwa na nukta ya mwisho inakuwa nukta ya kuanzia inayofuata. Uingizaji wa kuratibu unafanya kazi hapa pia.
 4. Endelea kubonyeza (au kuandika) kuunganisha sehemu zaidi.
-5. Bonyeza **Enter** au **Escape** kusimama.
+5. Bonyeza **Enter**, **Space**, au **Escape** kusimama.
 
 ```
   ●──────────●──────────●──────────●
- kuanzia   bonyeza 2    bonyeza 3  Enter kumaliza
+ kuanzia   bonyeza 2    bonyeza 3  Enter/Space kumaliza
             (inakuwa kuanzia kinachofuata kiotomatiki)
 ```
 
-Unahitaji sehemu moja tu? Bonyeza **Enter** au **Escape** mara tu baada ya hatua ya 3.
+Unahitaji sehemu moja tu? Bonyeza **Enter**, **Space**, au **Escape** mara tu baada ya hatua ya 3.
 
 ## Uingizaji wa kuratibu
 
@@ -63,6 +63,7 @@ Kurudi karibu na nukta ya nanga kunazima ufungaji.
 | `,` | Funga X na nenda kwa uingizaji wa Y |
 | `Backspace` | Futa herufi ya mwisho iliyoandikwa |
 | `Enter` | Thibitisha kuratibu au urefu ulioandikwa, au maliza mnyororo kama hakuna kilichoandikwa |
+| `Space` | Sawa na `Enter` — humaliza mnyororo, isipokuwa urefu unapoandikwa, ambapo huthibitisha urefu huo badala yake |
 | `Escape` | Maliza mnyororo na toka |
 
 ## Uhariri wa kushika — kunyoosha nukta za mwisho

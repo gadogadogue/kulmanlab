@@ -16,15 +16,15 @@ Kommandoen `line` tegner enkeltstående lige linjesegmenter gemt som separate `L
 2. **Klik startpunktet**, eller skriv `X,Y` og tryk **Enter** for en eksakt koordinat.
 3. **Klik slutpunktet** — segmentet placeres, og endepunktet bliver det næste startpunkt. Koordinatindtastning fungerer også her.
 4. Fortsæt med at klikke (eller skrive) for at kæde flere segmenter.
-5. Tryk **Enter** eller **Escape** for at stoppe.
+5. Tryk **Enter**, **Space** eller **Escape** for at stoppe.
 
 ```
   ●──────────●──────────●──────────●
- start   2. klik    3. klik    Enter for at afslutte
+ start   2. klik    3. klik    Enter/Space for at afslutte
             (bliver automatisk næste start)
 ```
 
-Har du kun brug for ét segment? Tryk **Enter** eller **Escape** lige efter trin 3.
+Har du kun brug for ét segment? Tryk **Enter**, **Space** eller **Escape** lige efter trin 3.
 
 ## Koordinatindtastning
 
@@ -63,6 +63,7 @@ At flytte tilbage tæt på ankerpunktet frigør låsen.
 | `,` | Lås X og gå til Y-indtastning |
 | `Backspace` | Slet sidst skrevne tegn |
 | `Enter` | Bekræft indtastet koordinat eller længde, eller afslut kæden hvis intet er skrevet |
+| `Space` | Samme som `Enter` — afslutter kæden, medmindre en længde er ved at blive skrevet, i så fald bekræfter den længden i stedet |
 | `Escape` | Afslut kæden og gå ud |
 
 ## Grebredigering — strække endepunkter

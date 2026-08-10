@@ -15,7 +15,7 @@ El comando `FileManager` abre una **cuadrícula de miniaturas** de cada dibujo q
 - Escribe `FileManager` en el terminal, **o**
 - Haz clic en el botón **File Manager** de la barra de herramientas (icono de historial) en el panel de Archivo en la parte superior de la pantalla.
 
-El panel se abre en el lado izquierdo del lienzo y se cierra automáticamente en cuanto inicias otro comando.
+El panel se abre en el lado izquierdo del lienzo y se cierra automáticamente en cuanto inicias otro comando o [importas](../import/) un archivo — así nunca permanece sobre un dibujo que todavía no incluye en su lista. Se vuelve a abrir con una lista actualizada cada vez.
 
 ## La cuadrícula de miniaturas
 
@@ -28,6 +28,8 @@ Cada dibujo guardado es una tarjeta que muestra una miniatura renderizada en viv
 | **Eliminar** | Haz clic en el icono de papelera, luego confirma |
 
 Si aún no se ha guardado ningún archivo, el panel muestra "No files saved". Con más archivos de los que caben en una pantalla, aparecen los controles **Page 1 of N** debajo de la cuadrícula.
+
+La tarjeta del archivo que está actualmente abierto en el editor se marca con un anillo de color de acento y **no tiene botón de eliminar** — eliminar el archivo abierto borraría sus datos guardados mientras el lienzo lo sigue mostrando, y la siguiente edición simplemente lo volvería a guardar. Renombrarlo sigue estando disponible.
 
 ## Eliminar un archivo
 

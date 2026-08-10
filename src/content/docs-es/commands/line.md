@@ -16,15 +16,15 @@ El comando `line` dibuja segmentos de línea recta individuales almacenados como
 2. **Haz clic en el punto de inicio**, o escribe `X,Y` y presiona **Enter** para una coordenada exacta.
 3. **Haz clic en el punto final** — el segmento se coloca y el punto final se convierte en el nuevo punto de inicio. La entrada de coordenadas también funciona aquí.
 4. Sigue haciendo clic (o escribiendo) para encadenar más segmentos.
-5. Presiona **Enter** o **Escape** para detener.
+5. Presiona **Enter**, **Espacio** o **Escape** para detener.
 
 ```
   ●──────────●──────────●──────────●
- inicio    2.º clic   3.er clic   Enter para terminar
+ inicio    2.º clic   3.er clic   Enter/Espacio para terminar
             (se convierte automáticamente en el siguiente inicio)
 ```
 
-¿Solo necesitas un único segmento? Presiona **Enter** o **Escape** justo después del paso 3.
+¿Solo necesitas un único segmento? Presiona **Enter**, **Espacio** o **Escape** justo después del paso 3.
 
 ## Entrada de coordenadas
 
@@ -63,6 +63,7 @@ Volver cerca del punto de ancla desactiva el bloqueo.
 | `,` | Bloquear X y pasar a la entrada de Y |
 | `Backspace` | Eliminar el último carácter escrito |
 | `Enter` | Confirmar la coordenada o longitud escrita, o terminar la cadena si no hay nada escrito |
+| `Space` | Igual que `Enter` — termina la cadena, salvo que se esté escribiendo una longitud, en cuyo caso confirma esa longitud |
 | `Escape` | Terminar la cadena y salir |
 
 ## Edición con agarres — estirar puntos finales

@@ -16,15 +16,15 @@ Perintah `line` menggambar segmen garis lurus individual yang disimpan sebagai e
 2. **Klik titik awal**, atau ketik `X,Y` dan tekan **Enter** untuk koordinat tepat.
 3. **Klik titik akhir** — segmen ditempatkan dan titik akhir menjadi titik awal berikutnya. Entri koordinat juga berfungsi di sini.
 4. Terus klik (atau ketik) untuk merangkai lebih banyak segmen.
-5. Tekan **Enter** atau **Escape** untuk berhenti.
+5. Tekan **Enter**, **Space**, atau **Escape** untuk berhenti.
 
 ```
   ●──────────●──────────●──────────●
- awal     klik ke-2  klik ke-3   Enter untuk selesai
+ awal     klik ke-2  klik ke-3   Enter/Space untuk selesai
             (otomatis menjadi awal berikutnya)
 ```
 
-Hanya perlu satu segmen? Tekan **Enter** atau **Escape** segera setelah langkah 3.
+Hanya perlu satu segmen? Tekan **Enter**, **Space**, atau **Escape** segera setelah langkah 3.
 
 ## Entri koordinat
 
@@ -63,6 +63,7 @@ Bergerak kembali dekat titik jangkar menonaktifkan kunci.
 | `,` | Kunci X dan pindah ke entri Y |
 | `Backspace` | Hapus karakter terakhir yang diketik |
 | `Enter` | Konfirmasi koordinat atau panjang yang diketik, atau selesaikan rantai jika tidak ada yang diketik |
+| `Space` | Sama seperti `Enter` — menyelesaikan rantai, kecuali sedang mengetik panjang, dalam hal ini panjang tersebut yang dikonfirmasi |
 | `Escape` | Selesaikan rantai dan keluar |
 
 ## Pengeditan grip — meregangkan titik akhir

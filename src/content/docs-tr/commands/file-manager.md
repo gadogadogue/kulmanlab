@@ -15,7 +15,7 @@ order: 3
 - Terminale `FileManager` yazın, **veya**
 - Ekranın üstündeki Dosya panelindeki **File Manager** araç çubuğu düğmesine (geçmiş simgesi) tıklayın.
 
-Panel tuvalin sol tarafında açılır ve başka bir komut başlatır başlatmaz otomatik olarak kapanır.
+Panel tuvalin sol tarafında açılır ve başka bir komut başlatır başlatmaz ya da bir dosya [içe aktarır](../import/) aktarmaz otomatik olarak kapanır — böylece henüz listelemediği bir çizimin üzerinde asla asılı kalmaz. Her seferinde güncel bir listeyle yeniden açılır.
 
 ## Küçük resim ızgarası
 
@@ -28,6 +28,8 @@ Her kaydedilen çizim; anlık olarak oluşturulmuş bir küçük resim, adı ve 
 | **Silme** | Çöp kutusu simgesine tıklayın, ardından onaylayın |
 
 Henüz kaydedilmiş dosya yoksa panelde "Kaydedilmiş dosya yok" gösterilir. Bir ekrana sığandan fazla dosya olduğunda ızgaranın altında **Sayfa 1 / N** kontrolleri görünür.
+
+Düzenleyicide o anda açık olan dosyanın kartı vurgu renkli bir halkayla işaretlenir ve **silme düğmesi bulunmaz** — açık dosyayı silmek, tuval onu göstermeye devam ederken kaydedilmiş verisini silinmesine yol açar ve bir sonraki düzenleme onu hemen geri kaydeder. Yeniden adlandırma yine de kullanılabilir.
 
 ## Bir dosyayı silme
 

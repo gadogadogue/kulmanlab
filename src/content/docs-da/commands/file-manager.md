@@ -15,7 +15,7 @@ Kommandoen `FileManager` åbner et **miniaturegitter** med alle tegninger, der e
 - Skriv `FileManager` i terminalen, **eller**
 - Klik på **File Manager**-knappen (historikikon) i værktøjslinjen i File-panelet øverst på skærmen.
 
-Panelet åbnes på venstre side af lærredet og lukker automatisk, så snart du starter en anden kommando.
+Panelet åbnes på venstre side af lærredet og lukker automatisk, så snart du starter en anden kommando eller [importerer](../import/) en fil — så det aldrig bliver hængende over en tegning, det endnu ikke lister. Det åbnes igen med en frisk liste hver gang.
 
 ## Miniaturegitteret
 
@@ -28,6 +28,8 @@ Hver gemt tegning er et kort, der viser en levende gengivet miniature, dens navn
 | **Slet** | Klik på papirkurvsikonet, og bekræft derefter |
 
 Hvis ingen filer er gemt endnu, viser panelet "No files saved". Med flere filer, end der er plads til på én skærm, vises **Page 1 of N**-kontroller under gitteret.
+
+Kortet for den fil, der aktuelt er åben i editoren, er markeret med en ring i accentfarve og har **ingen sletteknap** — at slette den åbne fil ville udslette dens gemte data, mens lærredet stadig viste den, og den næste redigering ville blot gemme den lige tilbage igen. Omdøbning er stadig muligt.
 
 ## Sletning af en fil
 

@@ -16,15 +16,15 @@ The `line` command draws individual straight-line segments stored as separate `L
 2. **Click the start point**, or type `X,Y` and press **Enter** for an exact coordinate.
 3. **Click the end point** — the segment is placed and the endpoint becomes the next start point. Coordinate entry works here too.
 4. Keep clicking (or typing) to chain more segments.
-5. Press **Enter** or **Escape** to stop.
+5. Press **Enter**, **Space**, or **Escape** to stop.
 
 ```
   ●──────────●──────────●──────────●
- start     2nd click  3rd click   Enter to finish
+ start     2nd click  3rd click   Enter/Space to finish
             (auto-becomes next start)
 ```
 
-Only need a single segment? Press **Enter** or **Escape** right after step 3.
+Only need a single segment? Press **Enter**, **Space**, or **Escape** right after step 3.
 
 ## Coordinate entry
 
@@ -63,6 +63,7 @@ Moving back close to the anchor point disengages the lock.
 | `,` | Lock X and move to Y entry |
 | `Backspace` | Delete last typed character |
 | `Enter` | Confirm typed coordinate or length, or finish the chain if nothing is typed |
+| `Space` | Same as `Enter` — finishes the chain, unless a length is being typed, in which case it commits that length instead |
 | `Escape` | Finish the chain and exit |
 
 ## Grip editing — stretching endpoints

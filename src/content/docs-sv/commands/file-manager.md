@@ -15,7 +15,7 @@ order: 3
 - Skriv `FileManager` i terminalen, **eller**
 - Klicka på verktygsfältsknappen **File Manager** (historikikon) i File-panelen högst upp på skärmen.
 
-Panelen öppnas på vänster sida av ritytan och stängs automatiskt så snart du startar ett annat kommando.
+Panelen öppnas på vänster sida av ritytan och stängs automatiskt så snart du startar ett annat kommando eller [importerar](../import/) en fil — så den aldrig ligger kvar över en ritning den ännu inte listar. Den öppnas igen med en ny lista varje gång.
 
 ## Miniatyrrutnätet
 
@@ -28,6 +28,8 @@ Varje sparad ritning är ett kort som visar en direktrenderad miniatyr, dess nam
 | **Ta bort** | Klicka på papperskorgsikonen, bekräfta sedan |
 
 Om inga filer har sparats ännu visar panelen "No files saved". Med fler filer än vad som får plats på en skärm visas kontrollerna **Page 1 of N** under rutnätet.
+
+Kortet för filen som för närvarande är öppen i editorn är markerat med en accentfärgad ring och saknar knapp för att ta bort — att ta bort den öppna filen skulle radera dess lagrade data medan ritytan fortfarande visade den, och nästa ändring skulle bara spara tillbaka den direkt. Att byta namn på den går fortfarande bra.
 
 ## Ta bort en fil
 

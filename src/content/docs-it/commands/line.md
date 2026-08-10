@@ -16,15 +16,15 @@ Il comando `line` disegna singoli segmenti di linea retta memorizzati come entit
 2. **Clicca il punto di partenza**, oppure digita `X,Y` e premi **Invio** per una coordinata esatta.
 3. **Clicca il punto finale** — il segmento viene posizionato e l'endpoint diventa il prossimo punto di partenza. Anche qui è disponibile l'inserimento coordinate.
 4. Continua a cliccare (o digitare) per concatenare più segmenti.
-5. Premi **Invio** o **Esc** per fermarti.
+5. Premi **Invio**, **Spazio** o **Esc** per fermarti.
 
 ```
   ●──────────●──────────●──────────●
- inizio   2° clic    3° clic   Invio per terminare
+ inizio   2° clic    3° clic   Invio/Spazio per terminare
             (diventa automaticamente il prossimo inizio)
 ```
 
-Hai bisogno di un solo segmento? Premi **Invio** o **Esc** subito dopo il passo 3.
+Hai bisogno di un solo segmento? Premi **Invio**, **Spazio** o **Esc** subito dopo il passo 3.
 
 ## Inserimento coordinate
 
@@ -63,6 +63,7 @@ Avvicinarsi di nuovo al punto ancora disinserisce il blocco.
 | `,` | Blocca X e passa all'inserimento Y |
 | `Canc ←` | Elimina l'ultimo carattere digitato |
 | `Invio` | Conferma la coordinata o la lunghezza digitata, o termina la catena se nulla è digitato |
+| `Spazio` | Come `Invio` — termina la catena, a meno che sia in corso la digitazione di una lunghezza, nel qual caso la conferma invece |
 | `Esc` | Termina la catena ed esce |
 
 ## Modifica con grip — estendere gli endpoint

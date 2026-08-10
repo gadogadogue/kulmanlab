@@ -16,15 +16,15 @@ Arahan `line` melukis segmen garis lurus individu yang disimpan sebagai entiti `
 2. **Klik titik mula**, atau taip `X,Y` dan tekan **Enter** untuk koordinat tepat.
 3. **Klik titik akhir** — segmen diletakkan dan titik akhir menjadi titik mula seterusnya. Kemasukan koordinat juga berfungsi di sini.
 4. Terus klik (atau taip) untuk merantai lebih banyak segmen.
-5. Tekan **Enter** atau **Escape** untuk berhenti.
+5. Tekan **Enter**, **Space**, atau **Escape** untuk berhenti.
 
 ```
   ●──────────●──────────●──────────●
- mula    klik ke-2  klik ke-3   Enter untuk selesai
+ mula    klik ke-2  klik ke-3   Enter/Space untuk selesai
             (automatik menjadi mula seterusnya)
 ```
 
-Hanya perlu satu segmen? Tekan **Enter** atau **Escape** tepat selepas langkah 3.
+Hanya perlu satu segmen? Tekan **Enter**, **Space**, atau **Escape** tepat selepas langkah 3.
 
 ## Kemasukan koordinat
 
@@ -63,6 +63,7 @@ Menggerak kursor kembali dekat dengan titik sauh akan melepaskan kunci.
 | `,` | Kunci X dan beralih ke kemasukan Y |
 | `Backspace` | Padam aksara terakhir yang ditaip |
 | `Enter` | Sahkan koordinat atau panjang yang ditaip, atau selesaikan rantai jika tiada yang ditaip |
+| `Space` | Sama seperti `Enter` — menyelesaikan rantai, kecuali jika panjang sedang ditaip, dalam hal ini ia mengesahkan panjang tersebut |
 | `Escape` | Selesaikan rantai dan keluar |
 
 ## Pengeditan grip — meregangkan titik akhir

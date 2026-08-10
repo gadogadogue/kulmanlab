@@ -16,15 +16,15 @@ La commande `line` trace des segments de droite individuels stockés comme entit
 2. **Cliquez sur le point de départ**, ou tapez `X,Y` et appuyez sur **Entrée** pour une coordonnée exacte.
 3. **Cliquez sur le point final** — le segment est placé et le point final devient le nouveau point de départ. La saisie de coordonnées fonctionne également ici.
 4. Continuez à cliquer (ou à taper) pour enchaîner d'autres segments.
-5. Appuyez sur **Entrée** ou **Échap** pour arrêter.
+5. Appuyez sur **Entrée**, **Espace** ou **Échap** pour arrêter.
 
 ```
   ●──────────●──────────●──────────●
- début    2e clic    3e clic    Entrée pour terminer
+ début    2e clic    3e clic    Entrée/Espace pour terminer
             (devient automatiquement le prochain départ)
 ```
 
-Vous n'avez besoin que d'un seul segment ? Appuyez sur **Entrée** ou **Échap** juste après l'étape 3.
+Vous n'avez besoin que d'un seul segment ? Appuyez sur **Entrée**, **Espace** ou **Échap** juste après l'étape 3.
 
 ## Saisie de coordonnées
 
@@ -63,6 +63,7 @@ Revenir près du point d'ancre désactive le verrouillage.
 | `,` | Verrouiller X et passer à la saisie Y |
 | `Retour arrière` | Supprimer le dernier caractère saisi |
 | `Entrée` | Confirmer la coordonnée ou longueur saisie, ou terminer la chaîne si rien n'est saisi |
+| `Espace` | Comme `Entrée` — termine la chaîne, sauf si une longueur est en cours de saisie, auquel cas elle valide cette longueur |
 | `Échap` | Terminer la chaîne et quitter |
 
 ## Édition par poignées — étirer les points finaux

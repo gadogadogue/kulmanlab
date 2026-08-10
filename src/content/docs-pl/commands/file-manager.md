@@ -15,7 +15,7 @@ Polecenie `FileManager` otwiera **siatkę miniatur** każdego rysunku zapisanego
 - Wpisz `FileManager` w terminalu, **lub**
 - Kliknij przycisk paska narzędzi **File Manager** (ikona historii) w panelu plików u góry ekranu.
 
-Panel otwiera się po lewej stronie płótna i zamyka się automatycznie, gdy tylko uruchomisz inne polecenie.
+Panel otwiera się po lewej stronie płótna i zamyka się automatycznie, gdy tylko uruchomisz inne polecenie lub [zaimportujesz](../import/) plik — dzięki czemu nigdy nie pozostaje nad rysunkiem, którego jeszcze nie ma na liście. Za każdym razem otwiera się na nowo z odświeżoną listą.
 
 ## Siatka miniatur
 
@@ -28,6 +28,8 @@ Każdy zapisany rysunek to karta pokazująca renderowaną na żywo miniaturę, j
 | **Usuń** | Kliknij ikonę kosza, a następnie potwierdź |
 
 Jeśli żaden plik nie został jeszcze zapisany, panel pokazuje "No files saved". Gdy plików jest więcej niż mieści się na jednym ekranie, pod siatką pojawiają się elementy sterujące **Page 1 of N**.
+
+Karta pliku, który jest obecnie otwarty w edytorze, jest oznaczona pierścieniem w kolorze akcentu i nie ma **przycisku usuwania** — usunięcie otwartego pliku wymazałoby jego zapisane dane, podczas gdy płótno nadal by go wyświetlało, a kolejna edycja po prostu zapisałaby go z powrotem na miejsce. Zmiana nazwy pozostaje dostępna.
 
 ## Usuwanie pliku
 
