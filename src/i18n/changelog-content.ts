@@ -7,6 +7,35 @@ export type Release = {
 
 export const releases: Release[] = [
   {
+    version: '2026.08.11.fa6fa31',
+    date: 'August 11, 2026',
+    title: 'Hatch: pick-a-region fill, pattern library & grip editing',
+    highlights: [
+      'New Hatch command — click inside any closed region (Lines, Arcs, Circles, Ellipses, and Polylines meeting at their ends all enclose one, just like a closed Lwpolyline) and it fills with a pattern; anything closed sitting inside is left alone as an island',
+      'Hatch stays active after filling one area, so a single activation fills as many regions as you like; Escape ends it',
+      'Pick a fill pattern from a swatch grid in the new Hatch Pattern picker — the built-in ANSI/ISO library plus SOLID — and manage it from Hatch Manager, where you can upload your own .pat files',
+      'HATCH entities in imported DXF files now render with their real pattern, scale, and angle instead of being skipped',
+      "Hatches are fully grip-editable — drag a corner or an edge's midpoint to reshape the boundary and the fill follows live; works on straight, arced, elliptical, and now spline edges, including islands",
+      'Fixed: resizing a hatched circle by its rim no longer drags the whole circle, mirroring a hatch keeps its boundary joined up, and a hatch pick that finds nothing now explains why in the command prompt',
+      'Richer property panel for hatches — pattern, scale, angle, and origin are all editable directly',
+    ],
+  },
+  {
+    version: '2026.08.07.ab0f344',
+    date: 'August 7, 2026',
+    title: 'Extend: Arc, Ellipse & Polyline support; redesigned File Manager',
+    highlights: [
+      'Extend now works on Arc, Ellipse, and Polyline, not just Line',
+      'Ellipse/Ellipse intersections now detected (needed by Extend and Trim); Polyline/Polyline intersection cost bounded with a bounding-box reject so large drawings stay fast',
+      'File Manager redesigned as a thumbnail grid — click a thumbnail to open the file, confirm before deleting one, see a placeholder icon for files with no thumbnail yet, and page through large libraries',
+      "Rename files in place and reorder them; the currently open file is highlighted and can't be deleted from the list; the panel now closes automatically whenever a command starts or a file finishes loading",
+      "Thumbnails are generated directly from a file's stored entities and are crash-proof — one malformed entity no longer breaks the whole thumbnail",
+      'Keyboard shortcuts added for text editor formatting; Space now finishes a line chain, not just Enter',
+      'Fixed lineweight parsing and serialization, and DXF parsing for files with bare LF line endings and unpadded group codes',
+      'Removed the unused Google AdSense wiring and the Help panel\'s "Cookie settings" button (ads were never live)',
+    ],
+  },
+  {
     version: '2026.07.26.70984c6',
     date: 'July 26, 2026',
     title: 'Trim: Arc, Circle, Ellipse & Polyline support',
@@ -367,6 +396,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   en: releases.map(r => ({ title: r.title, highlights: r.highlights })),
   de: [
     {
+      title: 'Hatch: Flächenfüllung per Klick, Musterbibliothek & Griff-Bearbeitung',
+      highlights: [
+        'Neuer Hatch-Befehl — klicken Sie in eine beliebige geschlossene Fläche (Line, Arc, Circle, Ellipse und Polyline, die sich an ihren Enden treffen, umschließen eine ebenso wie eine geschlossene Lwpolyline) und sie wird mit einem Muster gefüllt; alles Geschlossene darin bleibt als Insel ausgespart',
+        'Hatch bleibt nach dem Füllen einer Fläche aktiv, sodass eine einzige Aktivierung beliebig viele Flächen füllt; Escape beendet den Befehl',
+        'Wählen Sie ein Füllmuster aus einem Muster-Raster im neuen Hatch-Pattern-Picker — die integrierte ANSI/ISO-Bibliothek plus SOLID — und verwalten Sie es im Hatch Manager, wo Sie eigene .pat-Dateien hochladen können',
+        'HATCH-Entitäten in importierten DXF-Dateien werden jetzt mit ihrem tatsächlichen Muster, Maßstab und Winkel gerendert, statt übersprungen zu werden',
+        'Hatches sind vollständig per Griff bearbeitbar — ziehen Sie eine Ecke oder die Mitte einer Kante, um die Begrenzung neu zu formen, die Füllung folgt live; funktioniert bei geraden, gebogenen, elliptischen und jetzt auch Spline-Kanten, einschließlich Inseln',
+        'Behoben: Das Skalieren eines schraffierten Kreises an seinem Rand verschiebt nicht mehr den ganzen Kreis, das Spiegeln eines Hatch hält seine Begrenzung geschlossen, und eine erfolglose Hatch-Auswahl erklärt jetzt in der Befehlszeile, warum',
+        'Erweitertes Eigenschaftenfenster für Hatches — Muster, Maßstab, Winkel und Ursprung sind alle direkt bearbeitbar',
+      ],
+    },
+    {
+      title: 'Extend: Unterstützung für Arc, Ellipse & Polyline; neu gestalteter File Manager',
+      highlights: [
+        'Extend funktioniert jetzt auch mit Arc, Ellipse und Polyline, nicht nur mit Line',
+        'Ellipse/Ellipse-Schnittpunkte werden jetzt erkannt (benötigt von Extend und Trim); die Kosten für Polyline/Polyline-Schnittpunkte werden durch einen Bounding-Box-Ausschluss begrenzt, damit große Zeichnungen schnell bleiben',
+        'File Manager neu gestaltet als Vorschaubild-Raster — klicken Sie auf ein Vorschaubild, um die Datei zu öffnen, bestätigen Sie vor dem Löschen, sehen Sie ein Platzhaltersymbol für Dateien ohne Vorschaubild und blättern Sie durch große Bibliotheken',
+        'Dateien direkt umbenennen und neu anordnen; die aktuell geöffnete Datei ist hervorgehoben und kann nicht aus der Liste gelöscht werden; das Fenster schließt sich jetzt automatisch, sobald ein Befehl startet oder eine Datei fertig geladen ist',
+        'Vorschaubilder werden direkt aus den gespeicherten Entitäten einer Datei erzeugt und sind absturzsicher — eine fehlerhafte Entität zerstört nicht mehr die ganze Vorschau',
+        'Tastenkürzel für die Textformatierung im Texteditor hinzugefügt; die Leertaste beendet jetzt ebenfalls eine Linienkette, nicht nur Enter',
+        'Lineweight-Parsing und -Serialisierung behoben, ebenso das DXF-Parsing für Dateien mit reinen LF-Zeilenenden und ungepolsterten Gruppencodes',
+        'Die ungenutzte Google-AdSense-Einbindung und die Schaltfläche "Cookie-Einstellungen" im Help-Panel entfernt (Anzeigen waren nie aktiv)',
+      ],
+    },
+    {
       title: 'Trim: Unterstützung für Arc, Circle, Ellipse & Polyline',
       highlights: [
         'Trim funktioniert jetzt auch mit Arc, Circle, Ellipse und Polyline, nicht nur mit Line — fahren Sie über das Segment zwischen zwei Schnittpunkten und klicken Sie, um es zu kürzen, genau wie beim bisherigen Line-Trim',
@@ -673,6 +727,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   es: [
+    {
+      title: 'Hatch: relleno de una región con un clic, biblioteca de patrones y edición por pinzamientos',
+      highlights: [
+        'Nuevo comando Hatch: haz clic dentro de cualquier región cerrada (Line, Arc, Circle, Ellipse y Polyline que se unen por sus extremos la delimitan igual que una Lwpolyline cerrada) y se rellena con un patrón; cualquier elemento cerrado dentro de ella se deja como una isla',
+        'Hatch permanece activo después de rellenar una zona, así que una sola activación rellena tantas regiones como quieras; Escape lo finaliza',
+        'Elige un patrón de relleno en una cuadrícula de muestras en el nuevo selector Hatch Pattern — la biblioteca ANSI/ISO integrada más SOLID — y gestiónalo desde Hatch Manager, donde puedes subir tus propios archivos .pat',
+        'Las entidades HATCH de los archivos DXF importados ahora se renderizan con su patrón, escala y ángulo reales en lugar de omitirse',
+        'Los hatches son totalmente editables por pinzamientos: arrastra una esquina o el punto medio de un borde para remodelar el contorno y el relleno lo sigue en tiempo real; funciona en bordes rectos, arqueados, elípticos y ahora también de spline, incluidas las islas',
+        'Corregido: redimensionar un círculo con hatch por su borde ya no arrastra todo el círculo, reflejar un hatch mantiene su contorno unido, y una selección de hatch que no encuentra nada ahora explica por qué en la línea de comandos',
+        'Panel de propiedades más completo para los hatches — patrón, escala, ángulo y origen son todos editables directamente',
+      ],
+    },
+    {
+      title: 'Extend: soporte para Arc, Ellipse y Polyline; File Manager rediseñado',
+      highlights: [
+        'Extend ahora funciona con Arc, Ellipse y Polyline, no solo con Line',
+        'Ahora se detectan las intersecciones Ellipse/Ellipse (necesarias para Extend y Trim); el coste de las intersecciones Polyline/Polyline se limita con un descarte por caja delimitadora para que los dibujos grandes sigan siendo rápidos',
+        'File Manager rediseñado como una cuadrícula de miniaturas: haz clic en una miniatura para abrir el archivo, confirma antes de eliminarlo, ve un icono de marcador de posición para los archivos sin miniatura y navega por páginas en bibliotecas grandes',
+        'Renombra archivos directamente y reordénalos; el archivo actualmente abierto se resalta y no se puede eliminar de la lista; el panel ahora se cierra automáticamente cada vez que se inicia un comando o termina de cargarse un archivo',
+        'Las miniaturas se generan directamente a partir de las entidades guardadas de un archivo y son resistentes a fallos: una entidad mal formada ya no rompe toda la miniatura',
+        'Se añadieron atajos de teclado para el formato en el editor de texto; la barra espaciadora ahora también termina una cadena de líneas, no solo Enter',
+        'Se corrigió el análisis y la serialización de lineweight, y el análisis de DXF para archivos con finales de línea LF puros y códigos de grupo sin relleno',
+        'Se eliminó la integración no utilizada de Google AdSense y el botón "Configuración de cookies" del panel de ayuda (los anuncios nunca estuvieron activos)',
+      ],
+    },
     {
       title: 'Trim: soporte para Arc, Circle, Ellipse y Polyline',
       highlights: [
@@ -981,6 +1060,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   fr: [
     {
+      title: 'Hatch : remplissage d\'une zone en un clic, bibliothèque de motifs et édition par poignées',
+      highlights: [
+        'Nouvelle commande Hatch — cliquez à l\'intérieur de n\'importe quelle zone fermée (Line, Arc, Circle, Ellipse et Polyline se rejoignant par leurs extrémités la délimitent tout comme une Lwpolyline fermée) et elle se remplit d\'un motif ; tout élément fermé situé à l\'intérieur est laissé de côté comme un îlot',
+        'Hatch reste actif après avoir rempli une zone, de sorte qu\'une seule activation remplit autant de zones que vous le souhaitez ; Échap met fin à la commande',
+        'Choisissez un motif de remplissage dans une grille d\'échantillons du nouveau sélecteur Hatch Pattern — la bibliothèque ANSI/ISO intégrée plus SOLID — et gérez-le depuis Hatch Manager, où vous pouvez importer vos propres fichiers .pat',
+        'Les entités HATCH des fichiers DXF importés s\'affichent désormais avec leur motif, leur échelle et leur angle réels au lieu d\'être ignorées',
+        'Les hatches sont entièrement modifiables par poignées — faites glisser un coin ou le milieu d\'un bord pour remodeler le contour, et le remplissage suit en direct ; fonctionne sur les bords droits, arqués, elliptiques et désormais spline, y compris les îlots',
+        'Corrigé : redimensionner un cercle hachuré par son pourtour ne déplace plus le cercle entier, refléter un hatch garde son contour joint, et une sélection de hatch infructueuse explique désormais pourquoi dans la ligne de commande',
+        'Panneau de propriétés enrichi pour les hatches — motif, échelle, angle et origine sont tous modifiables directement',
+      ],
+    },
+    {
+      title: 'Extend : prise en charge de Arc, Ellipse et Polyline ; File Manager repensé',
+      highlights: [
+        'Extend fonctionne désormais avec Arc, Ellipse et Polyline, pas seulement Line',
+        'Les intersections Ellipse/Ellipse sont désormais détectées (nécessaires pour Extend et Trim) ; le coût des intersections Polyline/Polyline est limité par un rejet par boîte englobante afin que les grands dessins restent rapides',
+        'File Manager repensé sous forme de grille de vignettes — cliquez sur une vignette pour ouvrir le fichier, confirmez avant de le supprimer, affichez une icône par défaut pour les fichiers sans vignette, et parcourez les grandes bibliothèques par pages',
+        'Renommez les fichiers directement et réorganisez-les ; le fichier actuellement ouvert est mis en évidence et ne peut pas être supprimé de la liste ; le panneau se ferme désormais automatiquement dès qu\'une commande démarre ou qu\'un fichier termine de se charger',
+        'Les vignettes sont générées directement à partir des entités enregistrées d\'un fichier et sont robustes aux erreurs — une entité malformée ne casse plus toute la vignette',
+        'Ajout de raccourcis clavier pour la mise en forme dans l\'éditeur de texte ; la barre d\'espace termine désormais aussi une chaîne de lignes, pas seulement Entrée',
+        'Correction de l\'analyse et de la sérialisation du lineweight, ainsi que de l\'analyse DXF pour les fichiers avec des fins de ligne LF pures et des codes de groupe non complétés',
+        'Suppression de l\'intégration Google AdSense inutilisée et du bouton « Paramètres des cookies » du panneau d\'aide (les publicités n\'ont jamais été actives)',
+      ],
+    },
+    {
       title: 'Trim : prise en charge de Arc, Circle, Ellipse et Polyline',
       highlights: [
         'Trim fonctionne désormais aussi sur Arc, Circle, Ellipse et Polyline, pas seulement sur Line — survolez le segment entre deux intersections et cliquez pour le raccorder, exactement comme pour Line',
@@ -1286,6 +1390,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   it: [
+    {
+      title: 'Hatch: riempimento di un\'area con un clic, libreria di tratteggi ed editing con maniglie',
+      highlights: [
+        'Nuovo comando Hatch — fai clic all\'interno di qualsiasi area chiusa (Line, Arc, Circle, Ellipse e Polyline che si uniscono alle estremità la delimitano proprio come una Lwpolyline chiusa) e viene riempita con un tratteggio; qualsiasi elemento chiuso al suo interno viene lasciato come isola',
+        'Hatch resta attivo dopo aver riempito un\'area, quindi una sola attivazione riempie tutte le aree che vuoi; Esc lo termina',
+        'Scegli un motivo di riempimento da una griglia di campioni nel nuovo selettore Hatch Pattern — la libreria ANSI/ISO integrata più SOLID — e gestiscilo da Hatch Manager, dove puoi caricare i tuoi file .pat',
+        'Le entità HATCH nei file DXF importati ora vengono renderizzate con il loro motivo, scala e angolo reali invece di essere ignorate',
+        'I tratteggi sono completamente modificabili con maniglie — trascina un angolo o il punto medio di un bordo per rimodellare il contorno e il riempimento segue in tempo reale; funziona su bordi retti, curvi, ellittici e ora anche spline, comprese le isole',
+        'Corretto: ridimensionare un cerchio tratteggiato dal suo bordo non sposta più l\'intero cerchio, specchiare un tratteggio mantiene il contorno unito, e una selezione di tratteggio che non trova nulla ora spiega il motivo nella riga di comando',
+        'Pannello proprietà più completo per i tratteggi — motivo, scala, angolo e origine sono tutti modificabili direttamente',
+      ],
+    },
+    {
+      title: 'Extend: supporto per Arc, Ellipse e Polyline; File Manager ridisegnato',
+      highlights: [
+        'Extend ora funziona con Arc, Ellipse e Polyline, non solo con Line',
+        'Le intersezioni Ellipse/Ellipse sono ora rilevate (necessarie per Extend e Trim); il costo delle intersezioni Polyline/Polyline è limitato con uno scarto tramite bounding box, così i disegni grandi restano veloci',
+        'File Manager ridisegnato come griglia di miniature — clicca su una miniatura per aprire il file, conferma prima di eliminarlo, vedi un\'icona segnaposto per i file senza miniatura e sfoglia le pagine nelle librerie grandi',
+        'Rinomina i file direttamente e riordinali; il file attualmente aperto è evidenziato e non può essere eliminato dall\'elenco; il pannello ora si chiude automaticamente ogni volta che parte un comando o un file finisce di caricarsi',
+        'Le miniature vengono generate direttamente dalle entità salvate di un file e sono a prova di crash — un\'entità malformata non rompe più l\'intera miniatura',
+        'Aggiunte scorciatoie da tastiera per la formattazione nell\'editor di testo; la barra spaziatrice ora termina anche una catena di linee, non solo Invio',
+        'Corretti il parsing e la serializzazione del lineweight, e il parsing DXF per file con terminazioni di riga LF pure e codici di gruppo non riempiti',
+        'Rimossa l\'integrazione Google AdSense inutilizzata e il pulsante "Impostazioni cookie" del pannello di aiuto (gli annunci non sono mai stati attivi)',
+      ],
+    },
     {
       title: 'Trim: supporto per Arc, Circle, Ellipse e Polyline',
       highlights: [
@@ -1594,6 +1723,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   pt: [
     {
+      title: 'Hatch: preenchimento de uma região com um clique, biblioteca de padrões e edição por alças',
+      highlights: [
+        'Novo comando Hatch — clique dentro de qualquer região fechada (Line, Arc, Circle, Ellipse e Polyline que se encontram nas extremidades a delimitam assim como uma Lwpolyline fechada) e ela é preenchida com um padrão; qualquer elemento fechado dentro dela é deixado como uma ilha',
+        'Hatch permanece ativo depois de preencher uma área, então uma única ativação preenche quantas regiões você quiser; Esc encerra o comando',
+        'Escolha um padrão de preenchimento em uma grade de amostras no novo seletor Hatch Pattern — a biblioteca ANSI/ISO embutida mais SOLID — e gerencie-o pelo Hatch Manager, onde você pode enviar seus próprios arquivos .pat',
+        'Entidades HATCH em arquivos DXF importados agora são renderizadas com seu padrão, escala e ângulo reais, em vez de serem ignoradas',
+        'Os hatches são totalmente editáveis por alças — arraste um canto ou o ponto médio de uma borda para remodelar o contorno, e o preenchimento acompanha em tempo real; funciona em bordas retas, curvas, elípticas e agora também de spline, incluindo ilhas',
+        'Corrigido: redimensionar um círculo com hatch pela borda não move mais o círculo inteiro, espelhar um hatch mantém o contorno unido, e uma seleção de hatch sem sucesso agora explica o motivo na linha de comando',
+        'Painel de propriedades mais completo para hatches — padrão, escala, ângulo e origem são todos editáveis diretamente',
+      ],
+    },
+    {
+      title: 'Extend: suporte para Arc, Ellipse e Polyline; File Manager redesenhado',
+      highlights: [
+        'Extend agora funciona com Arc, Ellipse e Polyline, não só com Line',
+        'Interseções Ellipse/Ellipse agora são detectadas (necessárias para Extend e Trim); o custo das interseções Polyline/Polyline é limitado com uma rejeição por caixa delimitadora, para que desenhos grandes continuem rápidos',
+        'File Manager redesenhado como uma grade de miniaturas — clique em uma miniatura para abrir o arquivo, confirme antes de excluí-lo, veja um ícone de espaço reservado para arquivos sem miniatura e navegue por páginas em bibliotecas grandes',
+        'Renomeie arquivos diretamente e reordene-os; o arquivo atualmente aberto fica destacado e não pode ser excluído da lista; o painel agora fecha automaticamente sempre que um comando é iniciado ou um arquivo termina de carregar',
+        'As miniaturas são geradas diretamente a partir das entidades salvas de um arquivo e são à prova de falhas — uma entidade malformada não quebra mais a miniatura inteira',
+        'Atalhos de teclado adicionados para formatação no editor de texto; a barra de espaço agora também termina uma cadeia de linhas, não só Enter',
+        'Corrigidos o parsing e a serialização de lineweight, e o parsing de DXF para arquivos com finais de linha LF puros e códigos de grupo sem preenchimento',
+        'Removida a integração não utilizada do Google AdSense e o botão "Configurações de cookies" do painel de ajuda (os anúncios nunca estiveram ativos)',
+      ],
+    },
+    {
       title: 'Trim: suporte para Arc, Circle, Ellipse e Polyline',
       highlights: [
         'O Trim agora funciona também com Arc, Circle, Ellipse e Polyline, não apenas com Line — passe o cursor sobre o segmento entre duas interseções e clique para cortá-lo, exatamente como já funcionava com Line',
@@ -1900,6 +2054,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   uk: [
+    {
+      title: 'Hatch: заливка області одним клацанням, бібліотека штрихувань і редагування вузлами',
+      highlights: [
+        'Нова команда Hatch — клацніть усередині будь-якої замкненої області (Line, Arc, Circle, Ellipse і Polyline, що сходяться кінцями, обмежують її так само, як замкнена Lwpolyline), і вона заповнюється штрихуванням; усе замкнене всередині лишається островом',
+        'Hatch залишається активною після заповнення однієї області, тож одна активація заповнює скільки завгодно областей; Escape завершує команду',
+        'Виберіть штрихування з сітки зразків у новому виборі Hatch Pattern — вбудована бібліотека ANSI/ISO плюс SOLID — і керуйте нею через Hatch Manager, де можна завантажити власні файли .pat',
+        'Об\'єкти HATCH в імпортованих DXF-файлах тепер відображаються зі своїм справжнім штрихуванням, масштабом і кутом, а не пропускаються',
+        'Штрихування повністю редагується вузлами — перетягніть кут або середину сторони, щоб змінити контур, і заливка оновлюється миттєво; працює на прямих, дугових, еліптичних, а тепер і сплайнових сторонах, включно з островами',
+        'Виправлено: зміна розміру заштрихованого кола за його краєм більше не зміщує все коло, дзеркальне відображення штрихування зберігає контур замкненим, а невдалий вибір штрихування тепер пояснює причину в рядку команди',
+        'Розширена панель властивостей для штрихувань — штрихування, масштаб, кут і початок координат редагуються безпосередньо',
+      ],
+    },
+    {
+      title: 'Extend: підтримка Arc, Ellipse і Polyline; оновлений File Manager',
+      highlights: [
+        'Extend тепер працює з Arc, Ellipse і Polyline, а не лише з Line',
+        'Тепер виявляються перетини Ellipse/Ellipse (потрібні для Extend і Trim); вартість перетинів Polyline/Polyline обмежена відсіюванням за обмежувальною рамкою, щоб великі креслення залишалися швидкими',
+        'File Manager оновлено як сітку мініатюр — клацніть мініатюру, щоб відкрити файл, підтвердьте перед видаленням, побачте заповнювач для файлів без мініатюри та гортайте сторінки у великих бібліотеках',
+        'Перейменовуйте файли на місці та впорядковуйте їх; поточний відкритий файл виділяється і не може бути видалений зі списку; панель тепер автоматично закривається щоразу, коли запускається команда або файл завершує завантаження',
+        'Мініатюри генеруються безпосередньо зі збережених об\'єктів файлу і стійкі до збоїв — один пошкоджений об\'єкт більше не ламає всю мініатюру',
+        'Додано клавіатурні скорочення для форматування в текстовому редакторі; пробіл тепер також завершує ланцюжок ліній, а не лише Enter',
+        'Виправлено розбір і серіалізацію lineweight, а також розбір DXF-файлів із чистими закінченнями рядків LF і невирівняними кодами груп',
+        'Видалено невикористовувану інтеграцію Google AdSense і кнопку "Налаштування cookie" на панелі довідки (реклама ніколи не була активною)',
+      ],
+    },
     {
       title: 'Trim: підтримка Arc, Circle, Ellipse та Polyline',
       highlights: [
@@ -2208,6 +2387,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   tr: [
     {
+      title: 'Hatch: tek tıkla bölge doldurma, desen kitaplığı ve tutamaçla düzenleme',
+      highlights: [
+        'Yeni Hatch komutu — kapalı herhangi bir bölgenin içine tıklayın (Line, Arc, Circle, Ellipse ve uçlarında birleşen Polyline\'lar, tıpkı kapalı bir Lwpolyline gibi bölgeyi sınırlar) ve bölge bir desenle doldurulur; içindeki kapalı her şey ada olarak bırakılır',
+        'Hatch bir alanı doldurduktan sonra etkin kalır, böylece tek bir etkinleştirme istediğiniz kadar bölgeyi doldurur; Escape komutu sonlandırır',
+        'Yeni Hatch Pattern seçicideki örnek ızgarasından bir dolgu deseni seçin — yerleşik ANSI/ISO kitaplığı artı SOLID — ve kendi .pat dosyalarınızı yükleyebileceğiniz Hatch Manager\'dan yönetin',
+        'İçe aktarılan DXF dosyalarındaki HATCH varlıkları artık atlanmak yerine gerçek deseni, ölçeği ve açısıyla render ediliyor',
+        'Hatch\'ler tamamen tutamaçla düzenlenebilir — sınırı yeniden şekillendirmek için bir köşeyi veya bir kenarın orta noktasını sürükleyin, dolgu canlı olarak takip eder; düz, yaylı, eliptik ve artık spline kenarlarında, adalar dahil çalışır',
+        'Düzeltildi: taranmış bir daireyi kenarından yeniden boyutlandırmak artık dairenin tamamını taşımıyor, bir hatch\'i aynalamak sınırını birleşik tutuyor ve hiçbir şey bulamayan bir hatch seçimi artık komut satırında nedenini açıklıyor',
+        'Hatch\'ler için daha zengin özellik paneli — desen, ölçek, açı ve başlangıç noktası doğrudan düzenlenebilir',
+      ],
+    },
+    {
+      title: 'Extend: Arc, Ellipse ve Polyline desteği; yeniden tasarlanan File Manager',
+      highlights: [
+        'Extend artık yalnızca Line ile değil, Arc, Ellipse ve Polyline ile de çalışıyor',
+        'Ellipse/Ellipse kesişimleri artık algılanıyor (Extend ve Trim için gerekli); Polyline/Polyline kesişim maliyeti sınırlayıcı kutu reddiyle sınırlandırıldı, böylece büyük çizimler hızlı kalıyor',
+        'File Manager küçük resim ızgarası olarak yeniden tasarlandı — dosyayı açmak için bir küçük resme tıklayın, silmeden önce onaylayın, küçük resmi olmayan dosyalar için yer tutucu simge görün ve büyük kitaplıklarda sayfalar arasında gezinin',
+        'Dosyaları yerinde yeniden adlandırın ve yeniden sıralayın; şu anda açık olan dosya vurgulanır ve listeden silinemez; panel artık bir komut başladığında veya bir dosya yüklenmeyi bitirdiğinde otomatik olarak kapanıyor',
+        'Küçük resimler doğrudan bir dosyanın kayıtlı varlıklarından oluşturuluyor ve çökmeye dayanıklı — hatalı biçimlendirilmiş bir varlık artık tüm küçük resmi bozmuyor',
+        'Metin düzenleyicide biçimlendirme için klavye kısayolları eklendi; Boşluk artık yalnızca Enter değil, bir çizgi zincirini de bitiriyor',
+        'Lineweight ayrıştırma ve serileştirme ile saf LF satır sonlarına ve doldurulmamış grup kodlarına sahip dosyalar için DXF ayrıştırma düzeltildi',
+        'Kullanılmayan Google AdSense entegrasyonu ve Yardım panelindeki "Çerez ayarları" düğmesi kaldırıldı (reklamlar hiçbir zaman etkin değildi)',
+      ],
+    },
+    {
       title: 'Trim: Arc, Circle, Ellipse ve Polyline desteği',
       highlights: [
         'Trim artık yalnızca Line değil, Arc, Circle, Ellipse ve Polyline üzerinde de çalışıyor — iki kesişim noktası arasındaki segmentin üzerine gelin ve kırpmak için tıklayın, tıpkı Line kırpmanın her zaman çalıştığı gibi',
@@ -2514,6 +2718,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   zh: [
+    {
+      title: 'Hatch：点选区域填充、图案库与夹点编辑',
+      highlights: [
+        '新增 Hatch 命令——在任意封闭区域内点击（Line、Arc、Circle、Ellipse 以及首尾相连的 Polyline 都能像闭合的 Lwpolyline 一样围成区域），即可用图案填充；区域内任何封闭的图形都会被当作岛保留不填',
+        'Hatch 在填充一个区域后保持激活，一次启动即可连续填充任意多个区域；Escape 结束命令',
+        '在新的 Hatch Pattern 选择器的图案网格中选择填充图案——内置 ANSI/ISO 图案库加 SOLID——并可在 Hatch Manager 中管理，支持上传自己的 .pat 文件',
+        '导入的 DXF 文件中的 HATCH 实体现在会以其真实图案、比例和角度渲染，而不是被跳过',
+        'Hatch 可通过夹点完整编辑——拖动一个角点或某条边的中点即可重塑边界，填充效果实时跟随；支持直线、圆弧、椭圆，现在也支持样条边，包括岛',
+        '修复：按边缘缩放带填充的圆不再整体移动圆本身；镜像 hatch 时边界保持闭合；hatch 拾取失败时会在命令提示中说明原因',
+        'Hatch 的属性面板更加完善——图案、比例、角度和原点均可直接编辑',
+      ],
+    },
+    {
+      title: 'Extend：支持 Arc、Ellipse 与 Polyline；File Manager 重新设计',
+      highlights: [
+        'Extend 现在不仅支持 Line，也支持 Arc、Ellipse 和 Polyline',
+        '现已支持检测 Ellipse/Ellipse 交点（Extend 和 Trim 都需要）；Polyline/Polyline 交点计算通过包围盒剔除限制成本，大型图纸依然流畅',
+        'File Manager 重新设计为缩略图网格——点击缩略图打开文件，删除前需确认，没有缩略图的文件显示占位图标，大型文件库支持分页浏览',
+        '可直接重命名和重新排序文件；当前打开的文件会高亮显示且无法从列表中删除；命令启动或文件加载完成时，面板现在会自动关闭',
+        '缩略图直接由文件保存的实体生成，且具备崩溃保护——单个格式错误的实体不再破坏整张缩略图',
+        '为文本编辑器的格式设置添加了键盘快捷键；空格键现在也能结束连续画线，不只是回车',
+        '修复了线宽（lineweight）的解析与序列化，以及带纯 LF 换行和未填充组码的 DXF 文件解析问题',
+        '移除了未使用的 Google AdSense 集成以及帮助面板中的"Cookie 设置"按钮（广告从未真正启用过）',
+      ],
+    },
     {
       title: 'Trim：支持 Arc、Circle、Ellipse 和 Polyline',
       highlights: [
@@ -2822,6 +3051,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   hi: [
     {
+      title: 'Hatch: एक क्लिक में क्षेत्र भरना, पैटर्न लाइब्रेरी और ग्रिप एडिटिंग',
+      highlights: [
+        'नया Hatch कमांड — किसी भी बंद क्षेत्र के अंदर क्लिक करें (Line, Arc, Circle, Ellipse और अपने सिरों पर मिलने वाली Polyline, ये सभी किसी बंद Lwpolyline की तरह ही क्षेत्र को घेरती हैं) और वह एक पैटर्न से भर जाता है; अंदर मौजूद कोई भी बंद आकृति द्वीप की तरह अनभरी छोड़ दी जाती है',
+        'एक क्षेत्र भरने के बाद Hatch सक्रिय रहता है, इसलिए एक बार सक्रिय करने पर आप जितने चाहें उतने क्षेत्र भर सकते हैं; Escape कमांड समाप्त करता है',
+        'नए Hatch Pattern पिकर के स्वैच ग्रिड से भरण पैटर्न चुनें — अंतर्निहित ANSI/ISO लाइब्रेरी और SOLID — और Hatch Manager से इसे प्रबंधित करें, जहां आप अपनी खुद की .pat फ़ाइलें अपलोड कर सकते हैं',
+        'आयातित DXF फ़ाइलों में HATCH एंटिटी अब छोड़ी जाने के बजाय अपने वास्तविक पैटर्न, स्केल और कोण के साथ रेंडर होती हैं',
+        'Hatch पूरी तरह से ग्रिप-एडिटेबल हैं — किसी कोने या किसी एज के मध्यबिंदु को खींचकर सीमा को नया आकार दें, भरण तुरंत उसका अनुसरण करता है; सीधी, चाप वाली, दीर्घवृत्ताकार और अब स्प्लाइन एज पर भी काम करता है, द्वीपों सहित',
+        'ठीक किया गया: किसी hatched circle को उसके किनारे से रीसाइज़ करने पर अब पूरा circle नहीं खिसकता, किसी hatch को mirror करने पर उसकी सीमा जुड़ी रहती है, और कुछ न मिलने वाला hatch पिक अब कमांड प्रॉम्प्ट में कारण बताता है',
+        'Hatch के लिए बेहतर प्रॉपर्टी पैनल — पैटर्न, स्केल, कोण और मूल बिंदु सभी सीधे संपादित किए जा सकते हैं',
+      ],
+    },
+    {
+      title: 'Extend: Arc, Ellipse और Polyline समर्थन; नया File Manager डिज़ाइन',
+      highlights: [
+        'Extend अब केवल Line ही नहीं, बल्कि Arc, Ellipse और Polyline पर भी काम करता है',
+        'Ellipse/Ellipse इंटरसेक्शन अब पहचाने जाते हैं (Extend और Trim के लिए आवश्यक); Polyline/Polyline इंटरसेक्शन की लागत को बाउंडिंग-बॉक्स रिजेक्ट से सीमित किया गया है ताकि बड़ी ड्रॉइंग तेज़ बनी रहें',
+        'File Manager को थंबनेल ग्रिड के रूप में नया डिज़ाइन दिया गया — फ़ाइल खोलने के लिए थंबनेल पर क्लिक करें, हटाने से पहले पुष्टि करें, बिना थंबनेल वाली फ़ाइलों के लिए प्लेसहोल्डर आइकन देखें, और बड़ी लाइब्रेरी में पेजों के माध्यम से ब्राउज़ करें',
+        'फ़ाइलों का नाम सीधे बदलें और उन्हें फिर से क्रमबद्ध करें; वर्तमान में खुली फ़ाइल हाइलाइट होती है और सूची से हटाई नहीं जा सकती; जब भी कोई कमांड शुरू होता है या कोई फ़ाइल लोड होना समाप्त करती है, पैनल अब अपने आप बंद हो जाता है',
+        'थंबनेल अब सीधे किसी फ़ाइल की संग्रहीत एंटिटी से बनाए जाते हैं और क्रैश-प्रूफ हैं — कोई बिगड़ी हुई एंटिटी अब पूरे थंबनेल को नहीं तोड़ती',
+        'टेक्स्ट एडिटर फ़ॉर्मेटिंग के लिए कीबोर्ड शॉर्टकट जोड़े गए; अब Space भी, न केवल Enter, लाइन चेन समाप्त करता है',
+        'Lineweight पार्सिंग और सीरियलाइज़ेशन ठीक किया गया, साथ ही केवल-LF लाइन एंडिंग और अनपैडेड ग्रुप कोड वाली DXF फ़ाइलों की पार्सिंग भी',
+        'अप्रयुक्त Google AdSense एकीकरण और Help पैनल का "Cookie settings" बटन हटाया गया (विज्ञापन कभी सक्रिय नहीं थे)',
+      ],
+    },
+    {
       title: 'Trim: Arc, Circle, Ellipse और Polyline समर्थन',
       highlights: [
         'Trim अब केवल Line ही नहीं, बल्कि Arc, Circle, Ellipse और Polyline पर भी काम करता है — दो प्रतिच्छेदन बिंदुओं के बीच के खंड पर होवर करें और उसे काटने के लिए क्लिक करें, बिल्कुल वैसे ही जैसे Line ट्रिम हमेशा से काम करता रहा है',
@@ -3128,6 +3382,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ar: [
+    {
+      title: 'Hatch: تعبئة منطقة بنقرة واحدة، مكتبة أنماط وتحرير بالمقابض',
+      highlights: [
+        'أمر Hatch جديد — انقر داخل أي منطقة مغلقة (تحدّها Line وArc وCircle وEllipse وPolyline المتصلة من أطرافها تمامًا كما تحدّها Lwpolyline مغلقة) فتُملأ بنمط تعبئة؛ أي شكل مغلق بداخلها يُترك دون تعبئة كجزيرة',
+        'يبقى أمر Hatch نشطًا بعد تعبئة منطقة واحدة، لذا يملأ التفعيل الواحد أي عدد تريده من المناطق؛ ينهيه مفتاح Escape',
+        'اختر نمط تعبئة من شبكة عيّنات في أداة اختيار Hatch Pattern الجديدة — مكتبة ANSI/ISO المدمجة بالإضافة إلى SOLID — وأدرها من Hatch Manager حيث يمكنك رفع ملفات .pat الخاصة بك',
+        'تُعرض الآن كائنات HATCH في ملفات DXF المستوردة بنمطها ومقياسها وزاويتها الحقيقية بدلاً من تجاهلها',
+        'يمكن تحرير الـ hatch بالكامل بالمقابض — اسحب زاوية أو منتصف حافة لإعادة تشكيل الحدود، وتتبعه التعبئة مباشرة؛ يعمل على الحواف المستقيمة والمقوّسة والإهليلجية، والآن أيضًا على حواف الـ spline، بما في ذلك الجزر',
+        'تم الإصلاح: تغيير حجم دائرة مُعبَّأة من حافتها لم يعد يحرّك الدائرة بأكملها، وعكس الـ hatch يحافظ على اتصال حدوده، واختيار hatch لا يجد شيئًا يوضح الآن السبب في سطر الأوامر',
+        'لوحة خصائص أكثر ثراءً للـ hatch — النمط والمقياس والزاوية ونقطة الأصل كلها قابلة للتحرير مباشرة',
+      ],
+    },
+    {
+      title: 'Extend: دعم Arc وEllipse وPolyline؛ File Manager بتصميم جديد',
+      highlights: [
+        'يعمل أمر Extend الآن مع Arc وEllipse وPolyline، وليس فقط Line',
+        'أصبح يتم اكتشاف تقاطعات Ellipse/Ellipse (مطلوبة لـ Extend وTrim)؛ تم تحديد تكلفة تقاطعات Polyline/Polyline برفض عبر الصندوق المحيط حتى تبقى الرسومات الكبيرة سريعة',
+        'أعيد تصميم File Manager كشبكة صور مصغّرة — انقر على صورة مصغّرة لفتح الملف، وأكّد قبل حذفه، وشاهد أيقونة بديلة للملفات بلا صورة مصغّرة، وتصفّح الصفحات في المكتبات الكبيرة',
+        'أعد تسمية الملفات مباشرة وأعد ترتيبها؛ يتم تمييز الملف المفتوح حاليًا ولا يمكن حذفه من القائمة؛ تُغلق اللوحة الآن تلقائيًا كلما بدأ أمر أو انتهى تحميل ملف',
+        'تُنشأ الصور المصغّرة الآن مباشرة من كائنات الملف المخزّنة وهي مقاومة للأعطال — لم يعد كائن مشوَّه يُفسد الصورة المصغّرة بأكملها',
+        'أُضيفت اختصارات لوحة مفاتيح لتنسيق محرر النصوص؛ أصبح مفتاح المسافة ينهي أيضًا سلسلة خطوط، وليس فقط Enter',
+        'تم إصلاح تحليل وتسلسل lineweight، وتحليل ملفات DXF ذات نهايات الأسطر LF الخالصة وأكواد المجموعات غير المبطّنة',
+        'أُزيل تكامل Google AdSense غير المستخدم وزر "إعدادات ملفات تعريف الارتباط" من لوحة المساعدة (لم تكن الإعلانات نشطة أبدًا)',
+      ],
+    },
     {
       title: 'Trim: دعم Arc وCircle وEllipse وPolyline',
       highlights: [
@@ -3436,6 +3715,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   id: [
     {
+      title: 'Hatch: isi area dengan satu klik, pustaka pola & pengeditan pegangan',
+      highlights: [
+        'Perintah Hatch baru — klik di dalam area tertutup mana pun (Line, Arc, Circle, Ellipse, dan Polyline yang bertemu di ujungnya sama-sama membatasi area seperti Lwpolyline tertutup) dan area itu akan terisi pola; apa pun yang tertutup di dalamnya dibiarkan sebagai pulau',
+        'Hatch tetap aktif setelah mengisi satu area, jadi satu kali aktivasi bisa mengisi sebanyak apa pun area yang Anda mau; Escape mengakhiri perintah',
+        'Pilih pola isian dari kisi contoh di pemilih Hatch Pattern baru — pustaka ANSI/ISO bawaan ditambah SOLID — dan kelola dari Hatch Manager, tempat Anda bisa mengunggah file .pat sendiri',
+        'Entitas HATCH pada file DXF yang diimpor kini dirender dengan pola, skala, dan sudut aslinya, bukan dilewati',
+        'Hatch dapat diedit sepenuhnya lewat pegangan — seret sudut atau titik tengah tepi untuk membentuk ulang batas, dan isian mengikuti secara langsung; berfungsi pada tepi lurus, melengkung, elips, dan kini juga spline, termasuk pulau',
+        'Diperbaiki: mengubah ukuran lingkaran ber-hatch dari tepinya kini tidak lagi menggeser seluruh lingkaran, mencerminkan hatch menjaga batasnya tetap tersambung, dan pemilihan hatch yang tidak menemukan apa pun kini menjelaskan alasannya di command prompt',
+        'Panel properti yang lebih lengkap untuk hatch — pola, skala, sudut, dan titik asal semuanya dapat diedit langsung',
+      ],
+    },
+    {
+      title: 'Extend: dukungan Arc, Ellipse & Polyline; File Manager didesain ulang',
+      highlights: [
+        'Extend kini berfungsi pada Arc, Ellipse, dan Polyline, tidak hanya Line',
+        'Perpotongan Ellipse/Ellipse kini terdeteksi (diperlukan oleh Extend dan Trim); biaya perpotongan Polyline/Polyline dibatasi dengan penolakan bounding-box agar gambar besar tetap cepat',
+        'File Manager didesain ulang sebagai kisi thumbnail — klik thumbnail untuk membuka file, konfirmasi sebelum menghapus, lihat ikon placeholder untuk file tanpa thumbnail, dan jelajahi halaman di pustaka besar',
+        'Ganti nama file langsung dan urutkan ulang; file yang sedang dibuka disorot dan tidak dapat dihapus dari daftar; panel kini otomatis tertutup setiap kali perintah dimulai atau file selesai dimuat',
+        'Thumbnail kini dibuat langsung dari entitas tersimpan sebuah file dan tahan crash — satu entitas rusak tidak lagi merusak seluruh thumbnail',
+        'Pintasan keyboard ditambahkan untuk pemformatan di editor teks; Space kini juga mengakhiri rantai garis, bukan hanya Enter',
+        'Memperbaiki parsing dan serialisasi lineweight, serta parsing DXF untuk file dengan akhir baris LF murni dan kode grup tanpa padding',
+        'Menghapus integrasi Google AdSense yang tidak terpakai dan tombol "Pengaturan cookie" di panel Bantuan (iklan tidak pernah aktif)',
+      ],
+    },
+    {
       title: 'Trim: dukungan Arc, Circle, Ellipse & Polyline',
       highlights: [
         'Trim sekarang bekerja pada Arc, Circle, Ellipse, dan Polyline, tidak hanya Line — arahkan kursor ke segmen di antara dua titik perpotongan dan klik untuk memotongnya, persis seperti cara Line selalu dipotong',
@@ -3742,6 +4046,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ja: [
+    {
+      title: 'Hatch：クリックで領域を塗りつぶし、パターンライブラリとグリップ編集',
+      highlights: [
+        '新しい Hatch コマンド — 閉じた領域内をクリックすると（Line、Arc、Circle、Ellipse、端点でつながる Polyline はいずれも、閉じた Lwpolyline と同様に領域を囲みます）、パターンで塗りつぶされます。その内側にある閉じた図形はアイランドとして塗り残されます',
+        'Hatch は1つの領域を塗りつぶした後もアクティブなままなので、1回の起動で好きなだけ多くの領域を塗りつぶせます。Escape でコマンドを終了します',
+        '新しい Hatch Pattern ピッカーのスウォッチグリッドから塗りつぶしパターンを選択します — 組み込みの ANSI/ISO ライブラリと SOLID — Hatch Manager から管理でき、独自の .pat ファイルをアップロードできます',
+        'インポートした DXF ファイル内の HATCH エンティティは、スキップされる代わりに実際のパターン、スケール、角度でレンダリングされるようになりました',
+        'Hatch は完全にグリップ編集が可能です — 角やエッジの中点をドラッグすると境界が変形し、塗りつぶしがリアルタイムで追従します。直線、円弧、楕円、そして今回からスプラインのエッジでも、アイランドを含めて機能します',
+        '修正：ハッチングされた円をその外周でリサイズしても、円全体が動かなくなりました。ハッチをミラーしても境界がつながったままになります。何も見つからなかった Hatch の選択は、コマンドプロンプトにその理由を表示するようになりました',
+        'Hatch のプロパティパネルがより充実しました — パターン、スケール、角度、原点をすべて直接編集できます',
+      ],
+    },
+    {
+      title: 'Extend：Arc、Ellipse、Polyline に対応；File Manager を刷新',
+      highlights: [
+        'Extend が Line だけでなく Arc、Ellipse、Polyline でも使えるようになりました',
+        'Ellipse/Ellipse の交差が検出されるようになりました（Extend と Trim に必要）。Polyline/Polyline の交差判定は、バウンディングボックスによる棄却でコストを抑え、大きな図面でも高速さを維持します',
+        'File Manager がサムネイルグリッドとして刷新されました — サムネイルをクリックしてファイルを開き、削除前に確認し、サムネイルのないファイルにはプレースホルダーアイコンが表示され、大きなライブラリはページ送りできます',
+        'ファイルをその場でリネームおよび並べ替えできます。現在開いているファイルはハイライト表示され、リストから削除できません。パネルはコマンドが開始されるかファイルの読み込みが完了するたびに自動的に閉じるようになりました',
+        'サムネイルはファイルに保存されたエンティティから直接生成され、クラッシュに強くなりました — 不正な形式のエンティティが1つあってもサムネイル全体が壊れなくなりました',
+        'テキストエディタの書式設定にキーボードショートカットを追加しました。Space キーも Enter と同様に連続線を終了できるようになりました',
+        'lineweight のパース／シリアライズ、および素の LF 改行や桁揃えされていないグループコードを持つ DXF ファイルのパースを修正しました',
+        '未使用の Google AdSense 連携と、ヘルプパネルの「Cookie 設定」ボタンを削除しました（広告は一度も有効化されていませんでした）',
+      ],
+    },
     {
       title: 'Trim：Arc、Circle、Ellipse、Polyline に対応',
       highlights: [
@@ -4050,6 +4379,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   pl: [
     {
+      title: 'Hatch: wypełnianie obszaru jednym kliknięciem, biblioteka wzorów i edycja uchwytami',
+      highlights: [
+        'Nowe polecenie Hatch — kliknij wewnątrz dowolnego zamkniętego obszaru (Line, Arc, Circle, Ellipse i Polyline stykające się końcami ograniczają go tak samo jak zamknięta Lwpolyline) i zostanie on wypełniony wzorem; wszystko zamknięte w jego wnętrzu pozostaje jako wyspa',
+        'Hatch pozostaje aktywny po wypełnieniu jednego obszaru, więc jedna aktywacja pozwala wypełnić dowolną liczbę obszarów; Escape kończy polecenie',
+        'Wybierz wzór wypełnienia z siatki próbek w nowym selektorze Hatch Pattern — wbudowana biblioteka ANSI/ISO plus SOLID — i zarządzaj nim w Hatch Manager, gdzie możesz przesłać własne pliki .pat',
+        'Obiekty HATCH w importowanych plikach DXF są teraz renderowane z rzeczywistym wzorem, skalą i kątem zamiast być pomijane',
+        'Hatch można w pełni edytować uchwytami — przeciągnij narożnik lub środek krawędzi, aby zmienić kształt granicy, a wypełnienie podąża za tym na żywo; działa na krawędziach prostych, łukowych, eliptycznych, a teraz także splajnowych, wliczając wyspy',
+        'Naprawiono: zmiana rozmiaru zakreskowanego koła za jego obwód nie przesuwa już całego koła, odbicie lustrzane hatch zachowuje spójną granicę, a nieudany wybór hatch wyjaśnia teraz powód w wierszu poleceń',
+        'Bogatszy panel właściwości dla hatch — wzór, skala, kąt i punkt początkowy są w pełni edytowalne bezpośrednio',
+      ],
+    },
+    {
+      title: 'Extend: obsługa Arc, Ellipse i Polyline; przeprojektowany File Manager',
+      highlights: [
+        'Extend działa teraz z Arc, Ellipse i Polyline, nie tylko z Line',
+        'Wykrywane są teraz przecięcia Ellipse/Ellipse (wymagane przez Extend i Trim); koszt przecięć Polyline/Polyline jest ograniczony odrzuceniem po bounding boxie, dzięki czemu duże rysunki pozostają szybkie',
+        'File Manager przeprojektowano jako siatkę miniatur — kliknij miniaturę, aby otworzyć plik, potwierdź przed usunięciem, zobacz ikonę zastępczą dla plików bez miniatury i przeglądaj strony w dużych bibliotekach',
+        'Zmieniaj nazwy plików bezpośrednio i zmieniaj ich kolejność; aktualnie otwarty plik jest wyróżniony i nie można go usunąć z listy; panel zamyka się teraz automatycznie za każdym razem, gdy uruchamiane jest polecenie lub kończy się wczytywanie pliku',
+        'Miniatury są teraz generowane bezpośrednio z zapisanych obiektów pliku i są odporne na awarie — jeden zniekształcony obiekt nie psuje już całej miniatury',
+        'Dodano skróty klawiszowe formatowania w edytorze tekstu; spacja kończy teraz również łańcuch linii, nie tylko Enter',
+        'Naprawiono parsowanie i serializację lineweight oraz parsowanie plików DXF z czystymi zakończeniami linii LF i niepełnymi kodami grup',
+        'Usunięto nieużywaną integrację Google AdSense i przycisk "Ustawienia plików cookie" w panelu pomocy (reklamy nigdy nie były aktywne)',
+      ],
+    },
+    {
       title: 'Trim: obsługa Arc, Circle, Ellipse i Polyline',
       highlights: [
         'Trim działa teraz również na Arc, Circle, Ellipse i Polyline, nie tylko na Line — najedź kursorem na segment między dwoma punktami przecięcia i kliknij, aby go wyciąć, dokładnie tak jak zawsze działało przycinanie Line',
@@ -4356,6 +4710,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ko: [
+    {
+      title: 'Hatch: 클릭 한 번으로 영역 채우기, 패턴 라이브러리 및 그립 편집',
+      highlights: [
+        '새로운 Hatch 명령 — 닫힌 영역 안쪽을 클릭하면 (Line, Arc, Circle, Ellipse와 끝점에서 만나는 Polyline은 모두 닫힌 Lwpolyline과 마찬가지로 영역을 둘러쌉니다) 패턴으로 채워집니다. 그 안에 있는 닫힌 도형은 섬으로 남아 채워지지 않습니다',
+        'Hatch는 한 영역을 채운 후에도 계속 활성 상태를 유지하므로 한 번 실행으로 원하는 만큼 여러 영역을 채울 수 있습니다. Escape 키로 명령을 종료합니다',
+        '새로운 Hatch Pattern 선택기의 스와치 그리드에서 채우기 패턴을 선택하세요 — 내장 ANSI/ISO 라이브러리와 SOLID — 그리고 Hatch Manager에서 관리하며, 여기서 직접 .pat 파일을 업로드할 수 있습니다',
+        '가져온 DXF 파일의 HATCH 엔티티가 이제 건너뛰지 않고 실제 패턴, 배율, 각도로 렌더링됩니다',
+        'Hatch는 그립으로 완전히 편집할 수 있습니다 — 모서리나 변의 중간점을 드래그하면 경계가 다시 형성되고 채우기가 실시간으로 따라갑니다. 직선, 호, 타원, 그리고 이제 스플라인 변에서도 섬을 포함해 작동합니다',
+        '수정됨: 해칭된 원을 테두리로 크기 조절해도 더 이상 원 전체가 움직이지 않고, hatch를 미러링해도 경계가 계속 연결된 상태를 유지하며, 아무것도 찾지 못한 hatch 선택은 이제 명령 프롬프트에 이유를 설명합니다',
+        'Hatch를 위한 더 풍부한 속성 패널 — 패턴, 배율, 각도, 원점을 모두 직접 편집할 수 있습니다',
+      ],
+    },
+    {
+      title: 'Extend: Arc, Ellipse, Polyline 지원; File Manager 재설계',
+      highlights: [
+        'Extend가 이제 Line뿐만 아니라 Arc, Ellipse, Polyline에서도 작동합니다',
+        'Ellipse/Ellipse 교차가 이제 감지됩니다 (Extend와 Trim에 필요); Polyline/Polyline 교차 계산 비용은 바운딩 박스 거부로 제한되어 큰 도면에서도 빠른 속도를 유지합니다',
+        'File Manager가 썸네일 그리드로 재설계되었습니다 — 썸네일을 클릭해 파일을 열고, 삭제 전에 확인하고, 썸네일이 없는 파일은 자리 표시자 아이콘으로 표시되며, 큰 라이브러리에서는 페이지를 넘길 수 있습니다',
+        '파일 이름을 즉시 변경하고 순서를 바꿀 수 있습니다. 현재 열려 있는 파일은 강조 표시되며 목록에서 삭제할 수 없습니다. 이제 명령이 시작되거나 파일 로드가 완료될 때마다 패널이 자동으로 닫힙니다',
+        '썸네일은 이제 파일에 저장된 엔티티에서 직접 생성되며 충돌에 강합니다 — 잘못된 형식의 엔티티 하나가 더 이상 전체 썸네일을 망가뜨리지 않습니다',
+        '텍스트 편집기 서식 지정을 위한 키보드 단축키가 추가되었습니다. 이제 Enter뿐 아니라 스페이스바로도 선 체인을 종료할 수 있습니다',
+        'lineweight 파싱 및 직렬화, 그리고 순수 LF 줄바꿈과 패딩되지 않은 그룹 코드를 가진 DXF 파일 파싱을 수정했습니다',
+        '사용하지 않는 Google AdSense 연동과 도움말 패널의 "쿠키 설정" 버튼을 제거했습니다 (광고는 한 번도 활성화된 적이 없습니다)',
+      ],
+    },
     {
       title: 'Trim: Arc, Circle, Ellipse, Polyline 지원',
       highlights: [
@@ -4664,6 +5043,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   vi: [
     {
+      title: 'Hatch: tô đầy vùng chỉ với một cú nhấp, thư viện mẫu tô & chỉnh sửa bằng grip',
+      highlights: [
+        'Lệnh Hatch mới — nhấp vào bên trong bất kỳ vùng khép kín nào (Line, Arc, Circle, Ellipse và Polyline gặp nhau ở đầu mút đều bao quanh một vùng giống như Lwpolyline khép kín) và vùng đó sẽ được tô bằng một mẫu; bất kỳ hình khép kín nào nằm bên trong sẽ được để lại như một hòn đảo không tô',
+        'Hatch vẫn hoạt động sau khi tô xong một vùng, vì vậy chỉ cần kích hoạt một lần là có thể tô bao nhiêu vùng tùy thích; Escape sẽ kết thúc lệnh',
+        'Chọn mẫu tô từ lưới mẫu trong bộ chọn Hatch Pattern mới — thư viện ANSI/ISO tích hợp cộng với SOLID — và quản lý từ Hatch Manager, nơi bạn có thể tải lên các tệp .pat của riêng mình',
+        'Các thực thể HATCH trong tệp DXF được nhập giờ đây được hiển thị với mẫu, tỷ lệ và góc thực của chúng thay vì bị bỏ qua',
+        'Hatch có thể chỉnh sửa hoàn toàn bằng grip — kéo một góc hoặc điểm giữa của một cạnh để định hình lại đường biên, và phần tô sẽ theo sát theo thời gian thực; hoạt động trên các cạnh thẳng, cung, elip và giờ đây cả cạnh spline, bao gồm cả các đảo',
+        'Đã sửa: thay đổi kích thước một hình tròn có hatch bằng cách kéo viền không còn di chuyển cả hình tròn nữa, phản chiếu một hatch vẫn giữ đường biên liền mạch, và việc chọn hatch không tìm thấy gì giờ đây sẽ giải thích lý do ngay trên dòng lệnh',
+        'Bảng thuộc tính phong phú hơn cho hatch — mẫu, tỷ lệ, góc và gốc tọa độ đều có thể chỉnh sửa trực tiếp',
+      ],
+    },
+    {
+      title: 'Extend: hỗ trợ Arc, Ellipse & Polyline; File Manager được thiết kế lại',
+      highlights: [
+        'Extend giờ đây hoạt động trên Arc, Ellipse và Polyline, không chỉ Line',
+        'Giao điểm Ellipse/Ellipse giờ đây đã được phát hiện (cần thiết cho Extend và Trim); chi phí tính giao điểm Polyline/Polyline được giới hạn bằng cách loại trừ theo bounding box để các bản vẽ lớn vẫn nhanh',
+        'File Manager được thiết kế lại thành lưới ảnh thu nhỏ — nhấp vào ảnh thu nhỏ để mở tệp, xác nhận trước khi xóa, xem biểu tượng giữ chỗ cho các tệp chưa có ảnh thu nhỏ và duyệt qua các trang trong thư viện lớn',
+        'Đổi tên tệp ngay tại chỗ và sắp xếp lại chúng; tệp đang mở hiện được đánh dấu nổi bật và không thể xóa khỏi danh sách; bảng điều khiển giờ đây tự động đóng lại mỗi khi một lệnh bắt đầu hoặc một tệp tải xong',
+        'Ảnh thu nhỏ giờ đây được tạo trực tiếp từ các thực thể đã lưu của tệp và chống crash — một thực thể bị lỗi định dạng không còn làm hỏng toàn bộ ảnh thu nhỏ nữa',
+        'Đã thêm phím tắt cho định dạng trong trình soạn thảo văn bản; phím Space giờ đây cũng kết thúc một chuỗi đường thẳng, không chỉ Enter',
+        'Đã sửa lỗi phân tích và tuần tự hóa lineweight, cũng như phân tích DXF cho các tệp có ký tự xuống dòng LF thuần và mã nhóm không được đệm',
+        'Đã loại bỏ tích hợp Google AdSense không sử dụng và nút "Cài đặt cookie" trên bảng Trợ giúp (quảng cáo chưa bao giờ được kích hoạt)',
+      ],
+    },
+    {
       title: 'Trim: hỗ trợ Arc, Circle, Ellipse và Polyline',
       highlights: [
         'Trim giờ đây hoạt động trên cả Arc, Circle, Ellipse và Polyline, không chỉ Line — di chuyển con trỏ qua đoạn giữa hai giao điểm và nhấp để cắt, giống hệt cách cắt Line đã luôn hoạt động',
@@ -4970,6 +5374,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   th: [
+    {
+      title: 'Hatch: เติมพื้นที่ด้วยคลิกเดียว ไลบรารีลวดลาย และการแก้ไขด้วยจุดจับ',
+      highlights: [
+        'คำสั่ง Hatch ใหม่ — คลิกภายในพื้นที่ปิดใดๆ (Line, Arc, Circle, Ellipse และ Polyline ที่บรรจบกันที่ปลายล้วนล้อมรอบพื้นที่ได้เหมือนกับ Lwpolyline แบบปิด) แล้วพื้นที่นั้นจะถูกเติมด้วยลวดลาย สิ่งใดก็ตามที่ปิดอยู่ภายในจะถูกเว้นไว้เป็นเกาะ',
+        'Hatch ยังคงทำงานอยู่หลังจากเติมพื้นที่หนึ่งแล้ว ดังนั้นการเปิดใช้งานครั้งเดียวสามารถเติมได้หลายพื้นที่ตามต้องการ; Escape จะจบคำสั่ง',
+        'เลือกลวดลายเติมจากตารางตัวอย่างในตัวเลือก Hatch Pattern ใหม่ — ไลบรารี ANSI/ISO ในตัวบวกกับ SOLID — และจัดการได้จาก Hatch Manager ซึ่งคุณสามารถอัปโหลดไฟล์ .pat ของคุณเองได้',
+        'เอนทิตี HATCH ในไฟล์ DXF ที่นำเข้าตอนนี้แสดงผลด้วยลวดลาย มาตราส่วน และมุมจริง แทนที่จะถูกข้ามไป',
+        'Hatch สามารถแก้ไขได้เต็มรูปแบบด้วยจุดจับ — ลากมุมหรือจุดกึ่งกลางของขอบเพื่อปรับรูปทรงขอบเขต และการเติมจะตามไปแบบเรียลไทม์; ใช้ได้กับขอบเส้นตรง โค้ง วงรี และตอนนี้รวมถึงขอบสไปลน์ด้วย รวมถึงเกาะต่างๆ',
+        'แก้ไขแล้ว: การปรับขนาดวงกลมที่เติมลายด้วยขอบไม่ทำให้วงกลมทั้งวงเคลื่อนที่อีกต่อไป การสะท้อน hatch จะรักษาขอบเขตให้ต่อเนื่องกัน และการเลือก hatch ที่ไม่พบสิ่งใดตอนนี้จะอธิบายเหตุผลในบรรทัดคำสั่ง',
+        'แผงคุณสมบัติที่สมบูรณ์ยิ่งขึ้นสำหรับ hatch — ลวดลาย มาตราส่วน มุม และจุดกำเนิด สามารถแก้ไขได้โดยตรงทั้งหมด',
+      ],
+    },
+    {
+      title: 'Extend: รองรับ Arc, Ellipse และ Polyline; File Manager ออกแบบใหม่',
+      highlights: [
+        'Extend ตอนนี้ทำงานกับ Arc, Ellipse และ Polyline ไม่ใช่แค่ Line',
+        'ตอนนี้ตรวจจับจุดตัด Ellipse/Ellipse ได้แล้ว (จำเป็นสำหรับ Extend และ Trim); ต้นทุนการหาจุดตัด Polyline/Polyline ถูกจำกัดด้วยการปฏิเสธผ่าน bounding box เพื่อให้แบบวาดขนาดใหญ่ยังคงรวดเร็ว',
+        'File Manager ออกแบบใหม่เป็นตารางภาพขนาดย่อ — คลิกภาพขนาดย่อเพื่อเปิดไฟล์ ยืนยันก่อนลบ เห็นไอคอนตัวยึดตำแหน่งสำหรับไฟล์ที่ยังไม่มีภาพขนาดย่อ และเลื่อนดูหน้าต่างๆ ในไลบรารีขนาดใหญ่',
+        'เปลี่ยนชื่อไฟล์ได้ทันทีและจัดเรียงใหม่ได้; ไฟล์ที่เปิดอยู่ในปัจจุบันจะถูกไฮไลต์และไม่สามารถลบออกจากรายการได้; แผงตอนนี้จะปิดโดยอัตโนมัติทุกครั้งที่มีคำสั่งเริ่มทำงานหรือไฟล์โหลดเสร็จ',
+        'ภาพขนาดย่อตอนนี้สร้างขึ้นโดยตรงจากเอนทิตีที่บันทึกไว้ของไฟล์และทนต่อการล่ม — เอนทิตีที่ผิดรูปแบบหนึ่งรายการจะไม่ทำลายภาพขนาดย่อทั้งหมดอีกต่อไป',
+        'เพิ่มปุ่มลัดคีย์บอร์ดสำหรับการจัดรูปแบบในตัวแก้ไขข้อความ; ตอนนี้แป้นเว้นวรรคก็จบสายโซ่เส้นได้เช่นกัน ไม่ใช่แค่ Enter',
+        'แก้ไขการแยกวิเคราะห์และการซีเรียลไลซ์ lineweight รวมถึงการแยกวิเคราะห์ DXF สำหรับไฟล์ที่มีการขึ้นบรรทัดใหม่แบบ LF ล้วนและรหัสกลุ่มที่ไม่มีการเติมช่องว่าง',
+        'ลบการเชื่อมต่อ Google AdSense ที่ไม่ได้ใช้งานและปุ่ม "การตั้งค่าคุกกี้" ในแผงช่วยเหลือออกแล้ว (โฆษณาไม่เคยเปิดใช้งานจริง)',
+      ],
+    },
     {
       title: 'Trim: รองรับ Arc, Circle, Ellipse และ Polyline',
       highlights: [
@@ -5278,6 +5707,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   ms: [
     {
+      title: 'Hatch: isi kawasan dengan satu klik, pustaka corak & penyuntingan pemegang',
+      highlights: [
+        'Arahan Hatch baharu — klik di dalam mana-mana kawasan tertutup (Line, Arc, Circle, Ellipse dan Polyline yang bertemu di hujungnya semuanya melingkungi kawasan sama seperti Lwpolyline tertutup) dan ia akan diisi dengan corak; apa-apa yang tertutup di dalamnya ditinggalkan sebagai pulau',
+        'Hatch kekal aktif selepas mengisi satu kawasan, jadi satu pengaktifan boleh mengisi seberapa banyak kawasan yang anda mahu; Escape menamatkan arahan',
+        'Pilih corak isian daripada grid contoh dalam pemilih Hatch Pattern baharu — pustaka ANSI/ISO terbina dalam ditambah SOLID — dan urus dari Hatch Manager, di mana anda boleh memuat naik fail .pat anda sendiri',
+        'Entiti HATCH dalam fail DXF yang diimport kini dipaparkan dengan corak, skala dan sudut sebenar, bukan dilangkau',
+        'Hatch boleh disunting sepenuhnya dengan pemegang — seret satu penjuru atau titik tengah tepi untuk membentuk semula sempadan, dan isian mengikutinya secara langsung; berfungsi pada tepi lurus, lengkung, elips, dan kini juga tepi spline, termasuk pulau',
+        'Dibaiki: mengubah saiz bulatan berhatch pada tepinya kini tidak lagi menggerakkan seluruh bulatan, mencerminkan hatch mengekalkan sempadannya tersambung, dan pemilihan hatch yang tidak menemui apa-apa kini menerangkan sebabnya pada baris arahan',
+        'Panel sifat yang lebih lengkap untuk hatch — corak, skala, sudut dan asalan semuanya boleh disunting terus',
+      ],
+    },
+    {
+      title: 'Extend: sokongan Arc, Ellipse & Polyline; File Manager direka semula',
+      highlights: [
+        'Extend kini berfungsi dengan Arc, Ellipse dan Polyline, bukan hanya Line',
+        'Persilangan Ellipse/Ellipse kini dapat dikesan (diperlukan oleh Extend dan Trim); kos persilangan Polyline/Polyline dihadkan dengan penolakan kotak sempadan supaya lukisan besar kekal pantas',
+        'File Manager direka semula sebagai grid lakaran kecil — klik lakaran kecil untuk membuka fail, sahkan sebelum memadam, lihat ikon pemegang tempat untuk fail tanpa lakaran kecil, dan layari halaman dalam pustaka besar',
+        'Namakan semula fail terus dan susun semula; fail yang sedang dibuka kini diserlahkan dan tidak boleh dipadam daripada senarai; panel kini tertutup secara automatik setiap kali arahan bermula atau fail selesai dimuatkan',
+        'Lakaran kecil kini dijana terus daripada entiti tersimpan sesebuah fail dan tahan ranap — satu entiti cacat tidak lagi merosakkan keseluruhan lakaran kecil',
+        'Pintasan papan kekunci ditambah untuk pemformatan dalam penyunting teks; Ruang kini turut menamatkan rantaian garis, bukan hanya Enter',
+        'Membaiki penghuraian dan penyirian lineweight, serta penghuraian DXF untuk fail dengan penghujung baris LF tulen dan kod kumpulan tidak berlapik',
+        'Membuang integrasi Google AdSense yang tidak digunakan dan butang "Tetapan kuki" pada panel Bantuan (iklan tidak pernah aktif)',
+      ],
+    },
+    {
       title: 'Trim: sokongan Arc, Circle, Ellipse & Polyline',
       highlights: [
         'Trim kini berfungsi pada Arc, Circle, Ellipse dan Polyline, bukan hanya Line — tuding ke segmen antara dua titik persimpangan dan klik untuk memotongnya, sama seperti cara pemotongan Line sentiasa berfungsi',
@@ -5584,6 +6038,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   bn: [
+    {
+      title: 'Hatch: এক ক্লিকে অঞ্চল পূরণ, প্যাটার্ন লাইব্রেরি ও গ্রিপ এডিটিং',
+      highlights: [
+        'নতুন Hatch কমান্ড — যেকোনো বন্ধ অঞ্চলের ভেতরে ক্লিক করুন (Line, Arc, Circle, Ellipse এবং প্রান্তে মিলিত হওয়া Polyline, এগুলো সবই একটি বন্ধ Lwpolyline-এর মতোই অঞ্চল ঘিরে রাখে) এবং সেটি একটি প্যাটার্ন দিয়ে পূরণ হয়ে যায়; ভেতরে থাকা যেকোনো বদ্ধ আকৃতি দ্বীপ হিসেবে অপূর্ণ থেকে যায়',
+        'একটি অঞ্চল পূরণ করার পরও Hatch সক্রিয় থাকে, তাই একবার চালু করলেই আপনি যত খুশি অঞ্চল পূরণ করতে পারবেন; Escape কমান্ড শেষ করে',
+        'নতুন Hatch Pattern পিকারের সোয়াচ গ্রিড থেকে একটি ফিল প্যাটার্ন বেছে নিন — অন্তর্নির্মিত ANSI/ISO লাইব্রেরি ও SOLID — এবং Hatch Manager থেকে এটি পরিচালনা করুন, যেখানে আপনি নিজের .pat ফাইল আপলোড করতে পারবেন',
+        'ইম্পোর্ট করা DXF ফাইলের HATCH এনটিটি এখন উপেক্ষা করার বদলে তাদের প্রকৃত প্যাটার্ন, স্কেল এবং কোণ অনুযায়ী রেন্ডার হয়',
+        'Hatch সম্পূর্ণরূপে গ্রিপ দিয়ে সম্পাদনাযোগ্য — সীমানা নতুন করে গঠন করতে একটি কোণা বা কোনো প্রান্তের মধ্যবিন্দু টেনে আনুন, আর ফিল তাৎক্ষণিকভাবে তা অনুসরণ করবে; সরল, চাপাকৃতি, উপবৃত্তাকার এবং এখন স্প্লাইন প্রান্তেও কাজ করে, দ্বীপসহ',
+        'সমাধান করা হয়েছে: হ্যাচ করা বৃত্তকে তার প্রান্ত থেকে আকার পরিবর্তন করলে আর পুরো বৃত্তটি সরে যায় না, একটি hatch মিরর করলে তার সীমানা সংযুক্ত থাকে, এবং কিছু না পাওয়া hatch নির্বাচন এখন কমান্ড প্রম্পটে কারণ ব্যাখ্যা করে',
+        'hatch-এর জন্য আরও সমৃদ্ধ প্রপার্টি প্যানেল — প্যাটার্ন, স্কেল, কোণ এবং উৎপত্তিস্থল সবই সরাসরি সম্পাদনাযোগ্য',
+      ],
+    },
+    {
+      title: 'Extend: Arc, Ellipse ও Polyline সমর্থন; নতুন করে ডিজাইন করা File Manager',
+      highlights: [
+        'Extend এখন শুধু Line নয়, Arc, Ellipse এবং Polyline-এও কাজ করে',
+        'Ellipse/Ellipse ছেদবিন্দু এখন শনাক্ত করা হয় (Extend এবং Trim-এর জন্য প্রয়োজনীয়); Polyline/Polyline ছেদবিন্দুর খরচ বাউন্ডিং-বক্স প্রত্যাখ্যানের মাধ্যমে সীমিত করা হয়েছে যাতে বড় অঙ্কনগুলো দ্রুত থাকে',
+        'File Manager থাম্বনেইল গ্রিড হিসেবে নতুন করে ডিজাইন করা হয়েছে — ফাইল খুলতে একটি থাম্বনেইলে ক্লিক করুন, মুছে ফেলার আগে নিশ্চিত করুন, থাম্বনেইল নেই এমন ফাইলের জন্য একটি প্লেসহোল্ডার আইকন দেখুন, এবং বড় লাইব্রেরিতে পৃষ্ঠা ব্রাউজ করুন',
+        'ফাইলের নাম সরাসরি পরিবর্তন করুন এবং সেগুলো পুনর্বিন্যাস করুন; বর্তমানে খোলা ফাইলটি হাইলাইট করা থাকে এবং তালিকা থেকে মুছে ফেলা যায় না; প্যানেলটি এখন যেকোনো কমান্ড শুরু হলে বা ফাইল লোড শেষ হলে স্বয়ংক্রিয়ভাবে বন্ধ হয়ে যায়',
+        'থাম্বনেইল এখন সরাসরি একটি ফাইলের সংরক্ষিত এনটিটি থেকে তৈরি হয় এবং ক্র্যাশ-প্রুফ — একটি ত্রুটিপূর্ণ এনটিটি আর পুরো থাম্বনেইল নষ্ট করে না',
+        'টেক্সট এডিটর ফরম্যাটিংয়ের জন্য কীবোর্ড শর্টকাট যোগ করা হয়েছে; এখন শুধু Enter নয়, Space-ও একটি লাইন চেইন শেষ করে',
+        'lineweight পার্সিং ও সিরিয়ালাইজেশন এবং শুধু LF লাইন-এন্ডিং ও প্যাডবিহীন গ্রুপ কোডযুক্ত DXF ফাইলের পার্সিং সংশোধন করা হয়েছে',
+        'অব্যবহৃত Google AdSense ইন্টিগ্রেশন এবং সহায়তা প্যানেলের "কুকি সেটিংস" বোতাম সরিয়ে ফেলা হয়েছে (বিজ্ঞাপন কখনো সক্রিয় ছিল না)',
+      ],
+    },
     {
       title: 'Trim: Arc, Circle, Ellipse ও Polyline সমর্থন',
       highlights: [
@@ -5911,6 +6390,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   sw: [
+    {
+      title: 'Hatch: kujaza eneo kwa mbofyo mmoja, maktaba ya mifumo & uhariri wa vishikizo',
+      highlights: [
+        'Amri mpya ya Hatch — bofya ndani ya eneo lolote lililofungwa (Line, Arc, Circle, Ellipse na Polyline zinazokutana kwenye ncha zake zote hufunga eneo kama Lwpolyline iliyofungwa) na litajazwa na mfumo; kitu chochote kilichofungwa ndani yake kinaachwa bila kujazwa kama kisiwa',
+        'Hatch inaendelea kufanya kazi baada ya kujaza eneo moja, hivyo kuwasha mara moja hujaza maeneo mengi kadri unavyotaka; Escape huisha amri',
+        'Chagua mfumo wa kujaza kutoka gridi ya sampuli katika kichagua Hatch Pattern kipya — maktaba ya ANSI/ISO iliyojengwa ndani pamoja na SOLID — na uisimamie kutoka Hatch Manager, ambako unaweza kupakia faili zako mwenyewe za .pat',
+        'Vitu vya HATCH katika faili za DXF zilizoingizwa sasa vinaonyeshwa kwa mfumo, kipimo, na pembe yake halisi badala ya kurukwa',
+        'Hatch zinaweza kuhaririwa kikamilifu kwa vishikizo — buruta kona au sehemu ya kati ya ukingo ili kubadilisha mpaka, na ujazaji hufuata papo kwa papo; hufanya kazi kwenye kingo za mstari ulionyooka, zenye mviringo, duaradufu, na sasa pia spline, ikiwemo visiwa',
+        'Imerekebishwa: kubadilisha ukubwa wa duara lenye hatch kupitia ukingo wake hakusogezi tena duara zima, kuakisi hatch huweka mpaka wake ukiwa umeunganika, na uchaguzi wa hatch usiopata chochote sasa unaeleza sababu kwenye mstari wa amri',
+        'Kidirisha tajiri zaidi cha sifa kwa hatch — mfumo, kipimo, pembe, na chanzo vyote vinaharirika moja kwa moja',
+      ],
+    },
+    {
+      title: 'Extend: msaada wa Arc, Ellipse na Polyline; File Manager iliyoundwa upya',
+      highlights: [
+        'Extend sasa inafanya kazi na Arc, Ellipse, na Polyline, si Line pekee',
+        'Makutano ya Ellipse/Ellipse sasa yanatambuliwa (yanahitajika na Extend na Trim); gharama ya makutano ya Polyline/Polyline imepunguzwa kwa kukataa kwa kisanduku-kifungashi ili michoro mikubwa ibaki haraka',
+        'File Manager imeundwa upya kama gridi ya picha ndogo — bofya picha ndogo kufungua faili, thibitisha kabla ya kufuta, ona aikoni ya nafasi-mahali kwa faili zisizo na picha ndogo, na vinjari kurasa katika maktaba kubwa',
+        'Badilisha jina la faili papo hapo na uzipange upya; faili iliyofunguliwa kwa sasa inaangaziwa na haiwezi kufutwa kutoka kwenye orodha; kidirisha sasa kinafungwa kiotomatiki kila amri inapoanza au faili inapomaliza kupakia',
+        'Picha ndogo sasa zinazalishwa moja kwa moja kutoka kwa vitu vilivyohifadhiwa vya faili na hazivunjiki — kitu kimoja chenye hitilafu hakivunji tena picha ndogo yote',
+        'Njia za mkato za kibodi zimeongezwa kwa uumbizaji katika kihariri cha maandishi; Space sasa pia inamaliza mnyororo wa mistari, si Enter pekee',
+        'Imerekebisha uchambuzi na useriali wa lineweight, na uchambuzi wa DXF kwa faili zenye miisho safi ya mstari ya LF na misimbo ya kikundi isiyo na pedi',
+        'Imeondoa muunganisho wa Google AdSense usiotumika na kitufe cha "Mipangilio ya vidakuzi" kwenye kidirisha cha Msaada (matangazo hayakuwahi kuwa hai)',
+      ],
+    },
     {
       title: 'Trim: msaada wa Arc, Circle, Ellipse na Polyline',
       highlights: [
@@ -6240,6 +6744,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   ur: [
     {
+      title: 'Hatch: ایک کلک میں علاقہ بھرنا، پیٹرن لائبریری اور گرِپ ایڈیٹنگ',
+      highlights: [
+        'نیا Hatch کمانڈ — کسی بھی بند علاقے کے اندر کلک کریں (Line، Arc، Circle، Ellipse اور اپنے سروں پر ملنے والی Polyline، یہ سب ایک بند Lwpolyline کی طرح علاقے کو گھیرتی ہیں) اور یہ ایک پیٹرن سے بھر جاتا ہے؛ اندر موجود کوئی بھی بند شکل جزیرے کی طرح بھرے بغیر رہ جاتی ہے',
+        'ایک علاقہ بھرنے کے بعد Hatch فعال رہتا ہے، اس لیے ایک بار فعال کرنے پر آپ جتنے چاہیں علاقے بھر سکتے ہیں؛ Escape کمانڈ ختم کرتا ہے',
+        'نئے Hatch Pattern پکر کی سویچ گرڈ سے بھرنے کا پیٹرن منتخب کریں — بلٹ اِن ANSI/ISO لائبریری کے ساتھ SOLID بھی — اور اسے Hatch Manager سے منظم کریں، جہاں آپ اپنی .pat فائلیں اپ لوڈ کر سکتے ہیں',
+        'درآمد شدہ DXF فائلوں میں HATCH اینٹیٹیز اب نظرانداز ہونے کے بجائے اپنے حقیقی پیٹرن، اسکیل اور زاویے کے ساتھ رینڈر ہوتی ہیں',
+        'Hatch مکمل طور پر گرِپ سے قابلِ ترمیم ہیں — حد کو نئی شکل دینے کے لیے کسی کونے یا کنارے کے وسطی نقطے کو گھسیٹیں، اور بھرائی فوری طور پر اس کی پیروی کرتی ہے؛ سیدھے، محرابی، بیضوی اور اب اسپلائن کناروں پر بھی کام کرتا ہے، جزیروں سمیت',
+        'درست کیا گیا: ہیچ شدہ دائرے کو اس کے کنارے سے سائز تبدیل کرنے پر اب پورا دائرہ حرکت نہیں کرتا، کسی hatch کو آئینہ کرنے پر اس کی حد جڑی رہتی ہے، اور کچھ نہ ملنے والا hatch انتخاب اب کمانڈ پرامپٹ میں وجہ بتاتا ہے',
+        'hatch کے لیے زیادہ بھرپور پراپرٹی پینل — پیٹرن، اسکیل، زاویہ اور اصل نقطہ سب براہ راست قابلِ ترمیم ہیں',
+      ],
+    },
+    {
+      title: 'Extend: Arc، Ellipse اور Polyline کی سپورٹ؛ نیا ڈیزائن شدہ File Manager',
+      highlights: [
+        'Extend اب صرف Line ہی نہیں بلکہ Arc، Ellipse اور Polyline کے ساتھ بھی کام کرتا ہے',
+        'Ellipse/Ellipse انٹرسیکشنز اب پتہ چل جاتے ہیں (Extend اور Trim کے لیے ضروری)؛ Polyline/Polyline انٹرسیکشنز کی لاگت کو باؤنڈنگ باکس ریجیکٹ کے ذریعے محدود کیا گیا ہے تاکہ بڑے ڈرائنگز تیز رہیں',
+        'File Manager کو تھمب نیل گرڈ کے طور پر نئے سرے سے ڈیزائن کیا گیا ہے — فائل کھولنے کے لیے ایک تھمب نیل پر کلک کریں، حذف کرنے سے پہلے تصدیق کریں، بغیر تھمب نیل والی فائلوں کے لیے پلیس ہولڈر آئیکن دیکھیں، اور بڑی لائبریریوں میں صفحات براؤز کریں',
+        'فائلوں کا نام فوری طور پر تبدیل کریں اور انہیں دوبارہ ترتیب دیں؛ فی الحال کھلی فائل نمایاں ہوتی ہے اور فہرست سے حذف نہیں کی جا سکتی؛ پینل اب خودکار طور پر بند ہو جاتا ہے جب بھی کوئی کمانڈ شروع ہوتا ہے یا کوئی فائل لوڈ مکمل کرتی ہے',
+        'تھمب نیلز اب براہ راست کسی فائل کی محفوظ شدہ اینٹیٹیز سے تیار ہوتے ہیں اور کریش پروف ہیں — ایک خراب اینٹیٹی اب پوری تھمب نیل خراب نہیں کرتی',
+        'ٹیکسٹ ایڈیٹر فارمیٹنگ کے لیے کی بورڈ شارٹ کٹس شامل کیے گئے؛ اب Space بھی، نہ صرف Enter، لائن چین ختم کرتا ہے',
+        'lineweight پارسنگ اور سیریلائزیشن درست کی گئی، ساتھ ہی خالص LF لائن اینڈنگز اور اَن پیڈڈ گروپ کوڈز والی DXF فائلوں کی پارسنگ بھی',
+        'غیر استعمال شدہ Google AdSense انضمام اور Help پینل کا "Cookie settings" بٹن ہٹا دیا گیا (اشتہارات کبھی فعال نہیں تھے)',
+      ],
+    },
+    {
       title: 'Trim: Arc، Circle، Ellipse اور Polyline کی سپورٹ',
       highlights: [
         'Trim اب صرف Line ہی نہیں بلکہ Arc، Circle، Ellipse اور Polyline پر بھی کام کرتا ہے — دو چوراہا نقاط کے درمیان سیگمنٹ پر ہوور کریں اور کاٹنے کے لیے کلک کریں، بالکل ویسے ہی جیسے Line ٹرم ہمیشہ سے کام کرتا رہا ہے',
@@ -6305,6 +6834,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   el: [
     {
+      title: 'Hatch: γέμισμα περιοχής με ένα κλικ, βιβλιοθήκη μοτίβων & επεξεργασία με λαβές',
+      highlights: [
+        'Νέα εντολή Hatch — κάντε κλικ μέσα σε οποιαδήποτε κλειστή περιοχή (Line, Arc, Circle, Ellipse και Polyline που συναντώνται στα άκρα τους την οριοθετούν όπως ακριβώς και μια κλειστή Lwpolyline) και γεμίζει με ένα μοτίβο· οτιδήποτε κλειστό βρίσκεται μέσα της παραμένει αγέμιστο ως νησίδα',
+        'Το Hatch παραμένει ενεργό αφού γεμίσει μία περιοχή, οπότε μία μόνο ενεργοποίηση γεμίζει όσες περιοχές θέλετε· το Escape τερματίζει την εντολή',
+        'Επιλέξτε ένα μοτίβο γεμίσματος από ένα πλέγμα δειγμάτων στον νέο επιλογέα Hatch Pattern — την ενσωματωμένη βιβλιοθήκη ANSI/ISO συν το SOLID — και διαχειριστείτε το από το Hatch Manager, όπου μπορείτε να ανεβάσετε τα δικά σας αρχεία .pat',
+        'Οι οντότητες HATCH σε εισαγόμενα αρχεία DXF αποδίδονται πλέον με το πραγματικό τους μοτίβο, κλίμακα και γωνία αντί να παραλείπονται',
+        'Τα hatch είναι πλήρως επεξεργάσιμα με λαβές — σύρετε μια γωνία ή το μέσο μιας ακμής για να αναδιαμορφώσετε το περίγραμμα, και το γέμισμα ακολουθεί σε πραγματικό χρόνο· λειτουργεί σε ευθείες, τοξωτές, ελλειπτικές και πλέον και σε ακμές spline, συμπεριλαμβανομένων των νησίδων',
+        'Διορθώθηκε: η αλλαγή μεγέθους ενός γραμμοσκιασμένου κύκλου από την περιφέρειά του δεν μετακινεί πλέον ολόκληρο τον κύκλο, η κατοπτρική αναστροφή ενός hatch διατηρεί το περίγραμμά του ενωμένο, και μια επιλογή hatch που δεν βρίσκει τίποτα εξηγεί πλέον τον λόγο στη γραμμή εντολών',
+        'Πλουσιότερος πίνακας ιδιοτήτων για τα hatch — μοτίβο, κλίμακα, γωνία και σημείο αρχής είναι όλα άμεσα επεξεργάσιμα',
+      ],
+    },
+    {
+      title: 'Extend: υποστήριξη Arc, Ellipse & Polyline· ανασχεδιασμένο File Manager',
+      highlights: [
+        'Το Extend λειτουργεί πλέον με Arc, Ellipse και Polyline, όχι μόνο με Line',
+        'Ανιχνεύονται πλέον οι τομές Ellipse/Ellipse (απαραίτητες για τα Extend και Trim)· το κόστος των τομών Polyline/Polyline περιορίζεται με απόρριψη μέσω πλαισίου οριοθέτησης, ώστε τα μεγάλα σχέδια να παραμένουν γρήγορα',
+        'Το File Manager ανασχεδιάστηκε ως πλέγμα μικρογραφιών — κάντε κλικ σε μια μικρογραφία για να ανοίξετε το αρχείο, επιβεβαιώστε πριν τη διαγραφή, δείτε ένα εικονίδιο υποδοχής για αρχεία χωρίς μικρογραφία, και περιηγηθείτε σε σελίδες σε μεγάλες βιβλιοθήκες',
+        'Μετονομάστε αρχεία απευθείας και αναδιατάξτε τα· το τρέχον ανοιχτό αρχείο επισημαίνεται και δεν μπορεί να διαγραφεί από τη λίστα· ο πίνακας κλείνει πλέον αυτόματα κάθε φορά που ξεκινά μια εντολή ή ολοκληρώνεται η φόρτωση ενός αρχείου',
+        'Οι μικρογραφίες δημιουργούνται πλέον απευθείας από τις αποθηκευμένες οντότητες ενός αρχείου και είναι ανθεκτικές σε κατάρρευση — μία παραμορφωμένη οντότητα δεν καταστρέφει πλέον ολόκληρη τη μικρογραφία',
+        'Προστέθηκαν συντομεύσεις πληκτρολογίου για τη μορφοποίηση στον επεξεργαστή κειμένου· το Space τερματίζει πλέον επίσης μια αλυσίδα γραμμών, όχι μόνο το Enter',
+        'Διορθώθηκε η ανάλυση και η σειριοποίηση του lineweight, καθώς και η ανάλυση DXF για αρχεία με καθαρές αλλαγές γραμμής LF και μη συμπληρωμένους κωδικούς ομάδας',
+        'Αφαιρέθηκε η αχρησιμοποίητη ενσωμάτωση Google AdSense και το κουμπί "Ρυθμίσεις cookie" στον πίνακα Βοήθειας (οι διαφημίσεις δεν ήταν ποτέ ενεργές)',
+      ],
+    },
+    {
       title: 'Trim: υποστήριξη Arc, Circle, Ellipse & Polyline',
       highlights: [
         'Το Trim λειτουργεί πλέον και σε Arc, Circle, Ellipse και Polyline, όχι μόνο σε Line — τοποθετήστε τον κέρσορα πάνω από το τμήμα μεταξύ δύο σημείων τομής και κάντε κλικ για να το κόψετε, ακριβώς όπως λειτουργούσε πάντα το κόψιμο Line',
@@ -6368,6 +6922,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     { title: 'Αναβάθμιση Angular, τεκμηρίωση & προσαρμοστικό πλέγμα', highlights: ['Αναβάθμιση Angular 19 → 20 → 21', 'Πλήρης ιστότοπος τεκμηρίωσης εντολών', 'Προσαρμοστικό πλέγμα CAD', 'Πίνακας ιστορικού (Αναίρεση / Ιστορικό / Επανάληψη)'] },
   ],
   pa: [
+    {
+      title: 'Hatch: ਇੱਕ ਕਲਿੱਕ ਵਿੱਚ ਖੇਤਰ ਭਰਨਾ, ਪੈਟਰਨ ਲਾਇਬ੍ਰੇਰੀ ਅਤੇ ਗ੍ਰਿਪ ਐਡਿਟਿੰਗ',
+      highlights: [
+        'ਨਵਾਂ Hatch ਕਮਾਂਡ — ਕਿਸੇ ਵੀ ਬੰਦ ਖੇਤਰ ਦੇ ਅੰਦਰ ਕਲਿੱਕ ਕਰੋ (Line, Arc, Circle, Ellipse ਅਤੇ ਆਪਣੇ ਸਿਰਿਆਂ \'ਤੇ ਮਿਲਣ ਵਾਲੀ Polyline, ਇਹ ਸਭ ਬੰਦ Lwpolyline ਵਾਂਗ ਹੀ ਖੇਤਰ ਨੂੰ ਘੇਰਦੀਆਂ ਹਨ) ਅਤੇ ਇਹ ਇੱਕ ਪੈਟਰਨ ਨਾਲ ਭਰ ਜਾਂਦਾ ਹੈ; ਅੰਦਰ ਮੌਜੂਦ ਕੋਈ ਵੀ ਬੰਦ ਆਕਾਰ ਇੱਕ ਟਾਪੂ ਵਾਂਗ ਅਣਭਰਿਆ ਰਹਿ ਜਾਂਦਾ ਹੈ',
+        'ਇੱਕ ਖੇਤਰ ਭਰਨ ਤੋਂ ਬਾਅਦ Hatch ਸਰਗਰਮ ਰਹਿੰਦਾ ਹੈ, ਇਸ ਲਈ ਇੱਕ ਵਾਰ ਸਰਗਰਮ ਕਰਨ \'ਤੇ ਤੁਸੀਂ ਜਿੰਨੇ ਚਾਹੋ ਓਨੇ ਖੇਤਰ ਭਰ ਸਕਦੇ ਹੋ; Escape ਕਮਾਂਡ ਖਤਮ ਕਰਦਾ ਹੈ',
+        'ਨਵੇਂ Hatch Pattern ਪਿਕਰ ਦੇ ਸਵੈਚ ਗ੍ਰਿਡ ਤੋਂ ਭਰਨ ਵਾਲਾ ਪੈਟਰਨ ਚੁਣੋ — ਬਿਲਟ-ਇਨ ANSI/ISO ਲਾਇਬ੍ਰੇਰੀ ਅਤੇ SOLID — ਅਤੇ ਇਸਨੂੰ Hatch Manager ਤੋਂ ਪ੍ਰਬੰਧਿਤ ਕਰੋ, ਜਿੱਥੇ ਤੁਸੀਂ ਆਪਣੀਆਂ .pat ਫਾਈਲਾਂ ਅੱਪਲੋਡ ਕਰ ਸਕਦੇ ਹੋ',
+        'ਆਯਾਤ ਕੀਤੀਆਂ DXF ਫਾਈਲਾਂ ਵਿੱਚ HATCH ਐਂਟਿਟੀਆਂ ਹੁਣ ਛੱਡੇ ਜਾਣ ਦੀ ਬਜਾਏ ਆਪਣੇ ਅਸਲ ਪੈਟਰਨ, ਸਕੇਲ ਅਤੇ ਕੋਣ ਨਾਲ ਰੈਂਡਰ ਹੁੰਦੀਆਂ ਹਨ',
+        'Hatch ਪੂਰੀ ਤਰ੍ਹਾਂ ਗ੍ਰਿਪ ਨਾਲ ਸੰਪਾਦਨਯੋਗ ਹਨ — ਸੀਮਾ ਨੂੰ ਮੁੜ-ਆਕਾਰ ਦੇਣ ਲਈ ਕਿਸੇ ਕੋਨੇ ਜਾਂ ਕਿਸੇ ਕਿਨਾਰੇ ਦੇ ਵਿਚਕਾਰਲੇ ਬਿੰਦੂ ਨੂੰ ਖਿੱਚੋ, ਅਤੇ ਭਰਾਈ ਲਾਈਵ ਇਸਦਾ ਪਿੱਛਾ ਕਰਦੀ ਹੈ; ਸਿੱਧੀਆਂ, ਚਾਪ ਵਾਲੀਆਂ, ਅੰਡਾਕਾਰ ਅਤੇ ਹੁਣ ਸਪਲਾਈਨ ਕਿਨਾਰਿਆਂ \'ਤੇ ਵੀ ਕੰਮ ਕਰਦਾ ਹੈ, ਟਾਪੂਆਂ ਸਮੇਤ',
+        'ਠੀਕ ਕੀਤਾ ਗਿਆ: ਹੈਚ ਕੀਤੇ ਚੱਕਰ ਨੂੰ ਇਸਦੇ ਕਿਨਾਰੇ ਤੋਂ ਮੁੜ-ਆਕਾਰ ਦੇਣ ਨਾਲ ਹੁਣ ਪੂਰਾ ਚੱਕਰ ਨਹੀਂ ਹਿੱਲਦਾ, ਕਿਸੇ hatch ਨੂੰ ਮਿਰਰ ਕਰਨ ਨਾਲ ਇਸਦੀ ਸੀਮਾ ਜੁੜੀ ਰਹਿੰਦੀ ਹੈ, ਅਤੇ ਕੁਝ ਨਾ ਲੱਭਣ ਵਾਲੀ hatch ਚੋਣ ਹੁਣ ਕਮਾਂਡ ਪ੍ਰੌਮਪਟ ਵਿੱਚ ਕਾਰਨ ਦੱਸਦੀ ਹੈ',
+        'hatch ਲਈ ਵਧੇਰੇ ਭਰਪੂਰ ਪ੍ਰਾਪਰਟੀ ਪੈਨਲ — ਪੈਟਰਨ, ਸਕੇਲ, ਕੋਣ ਅਤੇ ਮੂਲ ਬਿੰਦੂ ਸਭ ਸਿੱਧੇ ਸੰਪਾਦਨਯੋਗ ਹਨ',
+      ],
+    },
+    {
+      title: 'Extend: Arc, Ellipse ਅਤੇ Polyline ਸਮਰਥਨ; ਨਵਾਂ ਡਿਜ਼ਾਈਨ ਕੀਤਾ File Manager',
+      highlights: [
+        'Extend ਹੁਣ ਸਿਰਫ਼ Line ਹੀ ਨਹੀਂ, ਸਗੋਂ Arc, Ellipse ਅਤੇ Polyline ਨਾਲ ਵੀ ਕੰਮ ਕਰਦਾ ਹੈ',
+        'Ellipse/Ellipse ਇੰਟਰਸੈਕਸ਼ਨ ਹੁਣ ਪਛਾਣੇ ਜਾਂਦੇ ਹਨ (Extend ਅਤੇ Trim ਲਈ ਲੋੜੀਂਦੇ); Polyline/Polyline ਇੰਟਰਸੈਕਸ਼ਨ ਦੀ ਲਾਗਤ ਨੂੰ ਬਾਊਂਡਿੰਗ-ਬਾਕਸ ਰੱਦ ਕਰਕੇ ਸੀਮਤ ਕੀਤਾ ਗਿਆ ਹੈ ਤਾਂ ਜੋ ਵੱਡੀਆਂ ਡਰਾਇੰਗਾਂ ਤੇਜ਼ ਰਹਿਣ',
+        'File Manager ਨੂੰ ਥੰਬਨੇਲ ਗ੍ਰਿਡ ਵਜੋਂ ਨਵੇਂ ਸਿਰਿਓਂ ਡਿਜ਼ਾਈਨ ਕੀਤਾ ਗਿਆ ਹੈ — ਫਾਈਲ ਖੋਲ੍ਹਣ ਲਈ ਥੰਬਨੇਲ \'ਤੇ ਕਲਿੱਕ ਕਰੋ, ਮਿਟਾਉਣ ਤੋਂ ਪਹਿਲਾਂ ਪੁਸ਼ਟੀ ਕਰੋ, ਬਿਨਾਂ ਥੰਬਨੇਲ ਵਾਲੀਆਂ ਫਾਈਲਾਂ ਲਈ ਪਲੇਸਹੋਲਡਰ ਆਈਕਨ ਦੇਖੋ, ਅਤੇ ਵੱਡੀਆਂ ਲਾਇਬ੍ਰੇਰੀਆਂ ਵਿੱਚ ਪੰਨਿਆਂ ਰਾਹੀਂ ਬ੍ਰਾਊਜ਼ ਕਰੋ',
+        'ਫਾਈਲਾਂ ਦਾ ਨਾਮ ਸਿੱਧਾ ਬਦਲੋ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਮੁੜ-ਕ੍ਰਮਬੱਧ ਕਰੋ; ਵਰਤਮਾਨ ਵਿੱਚ ਖੁੱਲ੍ਹੀ ਫਾਈਲ ਉਜਾਗਰ ਹੁੰਦੀ ਹੈ ਅਤੇ ਸੂਚੀ ਵਿੱਚੋਂ ਮਿਟਾਈ ਨਹੀਂ ਜਾ ਸਕਦੀ; ਪੈਨਲ ਹੁਣ ਆਪਣੇ ਆਪ ਬੰਦ ਹੋ ਜਾਂਦਾ ਹੈ ਜਦੋਂ ਵੀ ਕੋਈ ਕਮਾਂਡ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ ਜਾਂ ਕੋਈ ਫਾਈਲ ਲੋਡ ਹੋਣੀ ਖਤਮ ਕਰਦੀ ਹੈ',
+        'ਥੰਬਨੇਲ ਹੁਣ ਸਿੱਧੇ ਕਿਸੇ ਫਾਈਲ ਦੀਆਂ ਸੰਭਾਲੀਆਂ ਐਂਟਿਟੀਆਂ ਤੋਂ ਬਣਾਈਆਂ ਜਾਂਦੀਆਂ ਹਨ ਅਤੇ ਕ੍ਰੈਸ਼-ਪਰੂਫ ਹਨ — ਇੱਕ ਖਰਾਬ ਐਂਟਿਟੀ ਹੁਣ ਪੂਰੀ ਥੰਬਨੇਲ ਨੂੰ ਨਹੀਂ ਵਿਗਾੜਦੀ',
+        'ਟੈਕਸਟ ਐਡੀਟਰ ਫਾਰਮੈਟਿੰਗ ਲਈ ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ ਜੋੜੇ ਗਏ; ਹੁਣ Space ਵੀ, ਸਿਰਫ਼ Enter ਹੀ ਨਹੀਂ, ਲਾਈਨ ਚੇਨ ਖਤਮ ਕਰਦਾ ਹੈ',
+        'lineweight ਪਾਰਸਿੰਗ ਅਤੇ ਸੀਰੀਅਲਾਈਜ਼ੇਸ਼ਨ ਠੀਕ ਕੀਤੀ ਗਈ, ਨਾਲ ਹੀ ਸ਼ੁੱਧ LF ਲਾਈਨ-ਐਂਡਿੰਗਸ ਅਤੇ ਅਨਪੈਡਡ ਗਰੁੱਪ ਕੋਡਾਂ ਵਾਲੀਆਂ DXF ਫਾਈਲਾਂ ਦੀ ਪਾਰਸਿੰਗ ਵੀ',
+        'ਗੈਰ-ਵਰਤੀ Google AdSense ਏਕੀਕਰਨ ਅਤੇ Help ਪੈਨਲ ਦਾ "Cookie settings" ਬਟਨ ਹਟਾਇਆ ਗਿਆ (ਇਸ਼ਤਿਹਾਰ ਕਦੇ ਸਰਗਰਮ ਨਹੀਂ ਸਨ)',
+      ],
+    },
     {
       title: 'Trim: Arc, Circle, Ellipse ਅਤੇ Polyline ਸਮਰਥਨ',
       highlights: [
@@ -6676,6 +7255,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   sv: [
     {
+      title: 'Hatch: fyll ett område med ett klick, mönsterbibliotek & greppredigering',
+      highlights: [
+        'Nytt Hatch-kommando — klicka inuti valfritt slutet område (Line, Arc, Circle, Ellipse och Polyline som möts vid sina ändar avgränsar det precis som en sluten Lwpolyline) och det fylls med ett mönster; allt slutet som ligger inuti lämnas ofyllt som en ö',
+        'Hatch förblir aktivt efter att ha fyllt ett område, så en enda aktivering fyller så många områden du vill; Escape avslutar kommandot',
+        'Välj ett fyllnadsmönster från ett rutnät med exempel i den nya Hatch Pattern-väljaren — det inbyggda ANSI/ISO-biblioteket plus SOLID — och hantera det från Hatch Manager, där du kan ladda upp dina egna .pat-filer',
+        'HATCH-objekt i importerade DXF-filer renderas nu med sitt verkliga mönster, skala och vinkel istället för att hoppas över',
+        'Hatchningar är helt greppredigerbara — dra ett hörn eller mittpunkten på en kant för att omforma gränsen, och fyllningen följer i realtid; fungerar på raka, bågformade, elliptiska och nu även spline-kanter, inklusive öar',
+        'Fixat: att ändra storlek på en skraverad cirkel via dess kant flyttar inte längre hela cirkeln, att spegelvända en hatchning håller nu gränsen sammanhållen, och ett hatch-val som inte hittar något förklarar nu varför i kommandoraden',
+        'Rikare egenskapspanel för hatchningar — mönster, skala, vinkel och origo är alla direkt redigerbara',
+      ],
+    },
+    {
+      title: 'Extend: stöd för Arc, Ellipse & Polyline; omdesignad File Manager',
+      highlights: [
+        'Extend fungerar nu med Arc, Ellipse och Polyline, inte bara Line',
+        'Ellipse/Ellipse-skärningar upptäcks nu (krävs av Extend och Trim); kostnaden för Polyline/Polyline-skärningar begränsas med en bounding-box-avvisning så att stora ritningar förblir snabba',
+        'File Manager har designats om som ett rutnät med miniatyrer — klicka på en miniatyr för att öppna filen, bekräfta innan du raderar en, se en platshållarikon för filer utan miniatyr och bläddra genom sidor i stora bibliotek',
+        'Byt namn på filer direkt och ordna om dem; den fil som för närvarande är öppen markeras och kan inte raderas från listan; panelen stängs nu automatiskt varje gång ett kommando startar eller en fil blir klar med att laddas',
+        'Miniatyrer genereras nu direkt från en fils sparade objekt och är kraschsäkra — ett felformaterat objekt förstör inte längre hela miniatyren',
+        'Tangentbordsgenvägar har lagts till för formatering i textredigeraren; mellanslag avslutar nu också en linjekedja, inte bara Enter',
+        'Fixade parsning och serialisering av lineweight, samt DXF-parsning för filer med rena LF-radslut och opaddade gruppkoder',
+        'Tog bort den oanvända Google AdSense-integrationen och knappen "Cookie-inställningar" i hjälppanelen (annonser har aldrig varit aktiva)',
+      ],
+    },
+    {
       title: 'Trim: stöd för Arc, Circle, Ellipse & Polyline',
       highlights: [
         'Trim fungerar nu även på Arc, Circle, Ellipse och Polyline, inte bara Line — håll markören över segmentet mellan två skärningspunkter och klicka för att klippa det, precis som Line-klippning alltid har fungerat',
@@ -6982,6 +7586,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   tl: [
+    {
+      title: 'Hatch: pagpuno ng lugar sa isang click, aklatan ng pattern & pag-edit gamit ang grip',
+      highlights: [
+        'Bagong Hatch command — mag-click sa loob ng anumang saradong lugar (ang Line, Arc, Circle, Ellipse, at Polyline na nagtatagpo sa mga dulo nito ay pumapaligid sa lugar kagaya ng saradong Lwpolyline) at mapupuno ito ng pattern; anumang saradong hugis sa loob nito ay iiwang hindi napupuno bilang isang island',
+        'Nananatiling aktibo ang Hatch matapos punan ang isang lugar, kaya isang beses lang i-activate ay makakapuno na ng kahit ilang lugar; tinatapos ito ng Escape',
+        'Pumili ng pattern na pampuno mula sa grid ng mga sample sa bagong Hatch Pattern picker — ang built-in na aklatang ANSI/ISO kasama ang SOLID — at pamahalaan ito mula sa Hatch Manager, kung saan maaari kang mag-upload ng sarili mong mga .pat file',
+        'Ang mga HATCH entity sa mga na-import na DXF file ay nire-render na ngayon gamit ang totoong pattern, sukat, at anggulo nito sa halip na laktawan',
+        'Ganap na nae-edit ang mga hatch gamit ang grip — hilahin ang isang sulok o ang gitnang punto ng isang gilid para hubugin muli ang hangganan, at sumusunod agad ang pampuno; gumagana sa tuwid, kurbado, eliptikal, at ngayon ay spline na mga gilid, kasama ang mga island',
+        'Naayos na: ang pag-resize ng isang hinatch na bilog gamit ang gilid nito ay hindi na ginagalaw ang buong bilog, ang pag-mirror ng hatch ay pinapanatiling magkakadugtong ang hangganan nito, at ang paghahanap ng hatch na walang nahanap ay nagpapaliwanag na ngayon ng dahilan sa command prompt',
+        'Mas kumpletong property panel para sa mga hatch — direktang nae-edit ang pattern, sukat, anggulo, at pinagmulan',
+      ],
+    },
+    {
+      title: 'Extend: suporta sa Arc, Ellipse, at Polyline; muling dinisenyong File Manager',
+      highlights: [
+        'Gumagana na ngayon ang Extend sa Arc, Ellipse, at Polyline, hindi lang sa Line',
+        'Nade-detect na ngayon ang mga interseksyon ng Ellipse/Ellipse (kailangan ng Extend at Trim); nililimitahan ang gastos ng interseksyon ng Polyline/Polyline gamit ang bounding-box reject para manatiling mabilis ang malalaking guhit',
+        'Muling dinisenyo ang File Manager bilang grid ng thumbnail — mag-click ng thumbnail para buksan ang file, kumpirmahin bago burahin ang isa, makakita ng placeholder icon para sa mga file na walang thumbnail, at mag-browse ng mga pahina sa malalaking library',
+        'Palitan agad ang pangalan ng mga file at ayusin muli ang mga ito; naka-highlight ang kasalukuyang bukas na file at hindi ito mabubura sa listahan; awtomatiko na ngayong nagsasara ang panel tuwing may magsisimulang command o matapos mag-load ang isang file',
+        'Direktang ginagawa na ngayon ang mga thumbnail mula sa mga naka-store na entity ng isang file at hindi ito nagki-crash — isang maling anyong entity ay hindi na sumisira sa buong thumbnail',
+        'Nagdagdag ng mga keyboard shortcut para sa pag-format sa text editor; tinatapos na rin ngayon ng Space ang isang chain ng linya, hindi lang ang Enter',
+        'Naayos ang pag-parse at serialization ng lineweight, pati na rin ang pag-parse ng DXF para sa mga file na may purong LF na line ending at hindi naka-pad na group code',
+        'Inalis ang hindi ginagamit na Google AdSense integration at ang button na "Cookie settings" sa Help panel (hindi kailanman naging aktibo ang mga ad)',
+      ],
+    },
     {
       title: 'Trim: suporta sa Arc, Circle, Ellipse at Polyline',
       highlights: [
@@ -7291,6 +7920,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   nl: [
     {
+      title: 'Hatch: een gebied vullen met één klik, patroonbibliotheek & greepbewerking',
+      highlights: [
+        'Nieuwe Hatch-opdracht — klik binnen elk gesloten gebied (Line, Arc, Circle, Ellipse en Polyline die elkaar aan hun uiteinden raken, begrenzen het net als een gesloten Lwpolyline) en het wordt gevuld met een patroon; alles wat gesloten binnenin ligt, blijft ongevuld als een eiland',
+        'Hatch blijft actief nadat één gebied is gevuld, dus met één activering vult u zoveel gebieden als u wilt; Escape beëindigt de opdracht',
+        'Kies een vulpatroon uit een rooster met stalen in de nieuwe Hatch Pattern-kiezer — de ingebouwde ANSI/ISO-bibliotheek plus SOLID — en beheer het vanuit Hatch Manager, waar u uw eigen .pat-bestanden kunt uploaden',
+        'HATCH-entiteiten in geïmporteerde DXF-bestanden worden nu weergegeven met hun echte patroon, schaal en hoek in plaats van te worden overgeslagen',
+        'Hatches zijn volledig te bewerken met grepen — sleep een hoek of het middelpunt van een rand om de grens opnieuw vorm te geven, en de vulling volgt live mee; werkt op rechte, gebogen, elliptische en nu ook spline-randen, inclusief eilanden',
+        'Opgelost: het vergroten of verkleinen van een gearceerde cirkel via de rand verplaatst niet langer de hele cirkel, het spiegelen van een hatch houdt de grens aaneengesloten, en een hatch-selectie die niets vindt, legt nu de reden uit in de opdrachtregel',
+        'Rijker eigenschappenpaneel voor hatches — patroon, schaal, hoek en oorsprong zijn allemaal direct bewerkbaar',
+      ],
+    },
+    {
+      title: 'Extend: ondersteuning voor Arc, Ellipse & Polyline; opnieuw ontworpen File Manager',
+      highlights: [
+        'Extend werkt nu met Arc, Ellipse en Polyline, niet alleen met Line',
+        'Ellipse/Ellipse-snijpunten worden nu gedetecteerd (nodig voor Extend en Trim); de kosten van Polyline/Polyline-snijpunten worden beperkt met een bounding-box-afwijzing, zodat grote tekeningen snel blijven',
+        'File Manager opnieuw ontworpen als een miniaturenraster — klik op een miniatuur om het bestand te openen, bevestig voordat u een bestand verwijdert, zie een tijdelijke aanduiding voor bestanden zonder miniatuur en blader door pagina\'s in grote bibliotheken',
+        'Hernoem bestanden direct en herschik ze; het momenteel geopende bestand wordt gemarkeerd en kan niet uit de lijst worden verwijderd; het paneel sluit nu automatisch telkens wanneer een opdracht start of een bestand klaar is met laden',
+        'Miniaturen worden nu rechtstreeks gegenereerd uit de opgeslagen entiteiten van een bestand en zijn crashbestendig — één misvormde entiteit verpest niet langer de hele miniatuur',
+        'Sneltoetsen toegevoegd voor opmaak in de teksteditor; spatie beëindigt nu ook een lijnketen, niet alleen Enter',
+        'Parsering en serialisatie van lineweight gerepareerd, evenals DXF-parsering voor bestanden met pure LF-regeleindes en niet-opgevulde groepscodes',
+        'De ongebruikte Google AdSense-integratie en de knop "Cookie-instellingen" in het Help-paneel verwijderd (advertenties zijn nooit actief geweest)',
+      ],
+    },
+    {
       title: 'Trim: ondersteuning voor Arc, Circle, Ellipse & Polyline',
       highlights: [
         'Trim werkt nu ook op Arc, Circle, Ellipse en Polyline, niet alleen op Line — beweeg over het segment tussen twee snijpunten en klik om het te snijden, precies zoals Line-trim altijd al werkte',
@@ -7598,6 +8252,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   he: [
+    {
+      title: 'Hatch: מילוי אזור בקליק אחד, ספריית תבניות ועריכה באמצעות אחיזות',
+      highlights: [
+        'פקודת Hatch חדשה — לחצו בתוך כל אזור סגור (Line, Arc, Circle, Ellipse ו-Polyline הנפגשות בקצותיהן תוחמות אזור בדיוק כמו Lwpolyline סגורה) והוא יתמלא בתבנית; כל צורה סגורה בתוכו נשארת לא מלאה כמו אי',
+        'Hatch נשארת פעילה לאחר מילוי אזור אחד, כך שהפעלה אחת ממלאת כמה שתרצו אזורים; Escape מסיים את הפקודה',
+        'בחרו תבנית מילוי מרשת דוגמאות בבורר Hatch Pattern החדש — ספריית ANSI/ISO המובנית בתוספת SOLID — ונהלו אותה מתוך Hatch Manager, שם ניתן להעלות קובצי .pat משלכם',
+        'ישויות HATCH בקובצי DXF מיובאים מוצגות כעת עם התבנית, קנה המידה והזווית האמיתיים שלהן במקום להידלג',
+        'ניתן לערוך hatch באופן מלא באמצעות אחיזות — גררו פינה או אמצע קצה כדי לעצב מחדש את הגבול, והמילוי עוקב אחריו בזמן אמת; פועל על קצוות ישרים, קשתיים, אליפטיים וכעת גם קצוות spline, כולל איים',
+        'תוקן: שינוי גודל של עיגול מגובב לפי היקפו כבר לא מזיז את כל העיגול, שיקוף hatch שומר על גבול מחובר, ובחירת hatch שלא מוצאת כלום מסבירה כעת מדוע בשורת הפקודה',
+        'חלונית מאפיינים עשירה יותר עבור hatch — תבנית, קנה מידה, זווית ומקור ניתנים לעריכה ישירה',
+      ],
+    },
+    {
+      title: 'Extend: תמיכה ב-Arc, Ellipse ו-Polyline; File Manager מעוצב מחדש',
+      highlights: [
+        'Extend פועלת כעת גם עם Arc, Ellipse ו-Polyline, לא רק עם Line',
+        'חיתוכי Ellipse/Ellipse מזוהים כעת (נדרשים עבור Extend ו-Trim); עלות חיתוכי Polyline/Polyline מוגבלת באמצעות דחייה לפי תיבה תוחמת כדי שציורים גדולים יישארו מהירים',
+        'File Manager עוצב מחדש כרשת תמונות ממוזערות — לחצו על תמונה ממוזערת כדי לפתוח את הקובץ, אשרו לפני מחיקה, ראו סמל מציין מקום עבור קבצים ללא תמונה ממוזערת, ועברו בין דפים בספריות גדולות',
+        'שנו שם קבצים במקום וסדרו אותם מחדש; הקובץ הפתוח כרגע מודגש ולא ניתן למחוק אותו מהרשימה; החלונית נסגרת כעת אוטומטית בכל פעם שפקודה מתחילה או שקובץ מסיים להיטען',
+        'תמונות ממוזערות נוצרות כעת ישירות מהישויות השמורות של קובץ ועמידות בפני קריסה — ישות פגומה אחת כבר לא הורסת את כל התמונה הממוזערת',
+        'נוספו קיצורי מקלדת לעיצוב בעורך הטקסט; מקש הרווח מסיים כעת גם שרשרת קווים, לא רק Enter',
+        'תוקן ניתוח וסריאליזציה של lineweight, וכן ניתוח DXF עבור קבצים עם סיומי שורה טהורים של LF וקודי קבוצה לא מרופדים',
+        'הוסרה אינטגרציית Google AdSense שאינה בשימוש וכפתור "הגדרות עוגיות" בחלונית העזרה (המודעות מעולם לא היו פעילות)',
+      ],
+    },
     {
       title: 'Trim: תמיכה ב-Arc, Circle, Ellipse ו-Polyline',
       highlights: [
@@ -7907,6 +8586,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   ha: [
     {
+      title: 'Hatch: cika yanki da dannawa ɗaya, ɗakin karatun tsari & gyara da hannu',
+      highlights: [
+        'Sabon umarnin Hatch — danna a cikin kowane yanki rufaffe (Line, Arc, Circle, Ellipse da Polyline waɗanda ke haɗuwa a ƙarshensu duk suna kewaye da yanki kamar yadda Lwpolyline rufaffe take yi) sai a cika shi da tsari; duk wani abu rufaffe a cikinsa ana barinsa bai cika ba a matsayin tsibiri',
+        'Hatch na ci gaba da aiki bayan cika yanki ɗaya, don haka kunna shi sau ɗaya yana cika yankuna da yawa kamar yadda kake so; Escape yana kawo ƙarshen umarnin',
+        'Zaɓi tsarin cikawa daga grid ɗin samfura a sabon zaɓin Hatch Pattern — ɗakin karatun ANSI/ISO da aka gina a ciki tare da SOLID — kuma ka sarrafa shi daga Hatch Manager, inda za ka iya loda fayilolin .pat naka',
+        'Abubuwan HATCH a cikin fayilolin DXF da aka shigo da su yanzu ana rendering su da ainihin tsari, ma\'auni, da kusurwarsu maimakon a tsallake su',
+        'Ana iya gyara Hatch gaba ɗaya ta hannu — ja kusurwa ko tsakiyar gefe don sake tsara iyaka, kuma cikawa tana bin sa kai tsaye; yana aiki akan gefuna madaidaita, masu lanƙwasa, elliptical, da yanzu kuma gefuna na spline, ciki har da tsibirai',
+        'An gyara: sake fasalin da\'ira mai hatch daga gefenta ba ya ƙara motsa dukan da\'irar, madubi na hatch yana ci gaba da riƙe iyakarsa a haɗe, kuma zaɓin hatch da bai sami kome ba yanzu yana bayyana dalili a layin umarni',
+        'Panel ɗin kaddarorin da ya fi arziki don hatch — tsari, ma\'auni, kusurwa, da asali duk ana iya gyara su kai tsaye',
+      ],
+    },
+    {
+      title: 'Extend: tallafi na Arc, Ellipse & Polyline; sabon zanen File Manager',
+      highlights: [
+        'Extend yanzu yana aiki da Arc, Ellipse, da Polyline, ba Line kaɗai ba',
+        'Ana yanzu gano mahaɗan Ellipse/Ellipse (ana buƙatarsu don Extend da Trim); an iyakance farashin mahaɗan Polyline/Polyline ta hanyar ƙin akwatin kewaye don zane-zane manya su kasance da sauri',
+        'An sake tsara File Manager a matsayin grid na ƙananan hotuna — danna ƙaramin hoto don buɗe fayil, tabbatar kafin share ɗaya, ga alamar wurin ajiya don fayilolin da ba su da ƙaramin hoto, kuma bi shafuka a manyan ɗakunan karatu',
+        'Sake wa fayiloli suna kai tsaye kuma sake tsara su; ana haskaka fayil ɗin da ake buɗewa a yanzu kuma ba za a iya share shi daga jerin ba; panel ɗin yanzu yana rufewa kai tsaye duk lokacin da umarni ya fara ko fayil ya gama loda',
+        'Yanzu ana ƙirƙirar ƙananan hotuna kai tsaye daga abubuwan da aka adana na fayil kuma suna da tsayin daka game da fashewa — abu ɗaya mara kyau ba ya ƙara lalata dukan ƙaramin hoton',
+        'An ƙara gajerun hanyoyin madannai don tsara rubutu a mai gyara rubutu; yanzu Space shima yana kawo ƙarshen jerin layuka, ba Enter kaɗai ba',
+        'An gyara nazarin lineweight da serialization, haka kuma nazarin DXF don fayiloli masu ƙarshen layi na LF kawai da lambobin ƙungiya marasa cikawa',
+        'An cire haɗin Google AdSense da ba a amfani da shi da maɓallin "Saitunan kuki" a panel ɗin Taimako (talla ba ta taɓa kunne ba)',
+      ],
+    },
+    {
       title: 'Trim: tallafi na Arc, Circle, Ellipse da Polyline',
       highlights: [
         'Trim yanzu tana aiki akan Arc, Circle, Ellipse, da Polyline, ba Line kaɗai ba — riƙe a kan sashen da ke tsakanin tabon mahaɗa biyu ka danna don yanke shi, daidai yadda yankewar Line ta kasance tana aiki koyaushe',
@@ -8214,6 +8918,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   no: [
+    {
+      title: 'Hatch: fyll et område med ett klikk, mønsterbibliotek & grepredigering',
+      highlights: [
+        'Ny Hatch-kommando — klikk inne i et hvilket som helst lukket område (Line, Arc, Circle, Ellipse og Polyline som møtes i endene, avgrenser det akkurat som en lukket Lwpolyline) og det fylles med et mønster; alt lukket inni blir stående ufylt som en øy',
+        'Hatch forblir aktiv etter at ett område er fylt, så én aktivering fyller så mange områder du vil; Escape avslutter kommandoen',
+        'Velg et fyllmønster fra et rutenett med prøver i den nye Hatch Pattern-velgeren — det innebygde ANSI/ISO-biblioteket pluss SOLID — og administrer det fra Hatch Manager, hvor du kan laste opp dine egne .pat-filer',
+        'HATCH-entiteter i importerte DXF-filer rendres nå med sitt virkelige mønster, skala og vinkel i stedet for å bli hoppet over',
+        'Hatcher er fullt grepredigerbare — dra et hjørne eller midtpunktet på en kant for å omforme grensen, og fyllingen følger i sanntid; fungerer på rette, buede, elliptiske og nå også spline-kanter, inkludert øyer',
+        'Fikset: å endre størrelse på en skravert sirkel via kanten flytter ikke lenger hele sirkelen, å speilvende en hatch holder grensen sammenhengende, og et hatch-valg som ikke finner noe forklarer nå hvorfor i kommandolinjen',
+        'Rikere egenskapspanel for hatcher — mønster, skala, vinkel og origo er alle direkte redigerbare',
+      ],
+    },
+    {
+      title: 'Extend: støtte for Arc, Ellipse & Polyline; redesignet File Manager',
+      highlights: [
+        'Extend fungerer nå med Arc, Ellipse og Polyline, ikke bare Line',
+        'Ellipse/Ellipse-skjæringer oppdages nå (kreves av Extend og Trim); kostnaden for Polyline/Polyline-skjæringer er begrenset med en bounding-box-avvisning, slik at store tegninger forblir raske',
+        'File Manager er redesignet som et rutenett med miniatyrbilder — klikk på et miniatyrbilde for å åpne filen, bekreft før du sletter en, se et plassholderikon for filer uten miniatyrbilde, og bla gjennom sider i store biblioteker',
+        'Gi filer nytt navn direkte og omorganiser dem; filen som er åpen nå, blir uthevet og kan ikke slettes fra listen; panelet lukkes nå automatisk hver gang en kommando starter eller en fil er ferdig lastet',
+        'Miniatyrbilder genereres nå direkte fra en fils lagrede entiteter og er krasjsikre — én feilformet entitet ødelegger ikke lenger hele miniatyrbildet',
+        'Lagt til tastatursnarveier for formatering i tekstredigeringsprogrammet; mellomrom avslutter nå også en linjekjede, ikke bare Enter',
+        'Fikset parsing og serialisering av lineweight, samt DXF-parsing for filer med rene LF-linjeslutt og ufylte gruppekoder',
+        'Fjernet den ubrukte Google AdSense-integrasjonen og knappen "Informasjonskapsler" i hjelpepanelet (annonser var aldri aktive)',
+      ],
+    },
     {
       title: 'Trim: støtte for Arc, Circle, Ellipse & Polyline',
       highlights: [
@@ -8523,6 +9252,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   da: [
     {
+      title: 'Hatch: udfyld et område med ét klik, mønsterbibliotek & grebredigering',
+      highlights: [
+        'Ny Hatch-kommando — klik inde i et hvilket som helst lukket område (Line, Arc, Circle, Ellipse og Polyline, der mødes ved deres ender, afgrænser det ligesom en lukket Lwpolyline) og det udfyldes med et mønster; alt lukket indeni efterlades ufyldt som en ø',
+        'Hatch forbliver aktiv, efter at ét område er udfyldt, så én aktivering udfylder så mange områder, du vil; Escape afslutter kommandoen',
+        'Vælg et udfyldningsmønster fra et gitter af prøver i den nye Hatch Pattern-vælger — det indbyggede ANSI/ISO-bibliotek plus SOLID — og administrer det fra Hatch Manager, hvor du kan uploade dine egne .pat-filer',
+        'HATCH-entiteter i importerede DXF-filer gengives nu med deres reelle mønster, skala og vinkel i stedet for at blive sprunget over',
+        'Hatchninger kan redigeres fuldt ud med greb — træk et hjørne eller midtpunktet af en kant for at omforme grænsen, og udfyldningen følger med i realtid; fungerer på lige, buede, elliptiske og nu også spline-kanter, inklusive øer',
+        'Rettet: at ændre størrelsen på en skraveret cirkel via dens kant flytter ikke længere hele cirklen, spejling af en hatch holder nu grænsen samlet, og et hatch-valg, der ikke finder noget, forklarer nu hvorfor i kommandolinjen',
+        'Rigere egenskabspanel til hatchninger — mønster, skala, vinkel og oprindelse kan alle redigeres direkte',
+      ],
+    },
+    {
+      title: 'Extend: understøttelse af Arc, Ellipse & Polyline; redesignet File Manager',
+      highlights: [
+        'Extend fungerer nu med Arc, Ellipse og Polyline, ikke kun Line',
+        'Ellipse/Ellipse-skæringer registreres nu (nødvendige for Extend og Trim); omkostningen ved Polyline/Polyline-skæringer er begrænset med en bounding-box-afvisning, så store tegninger forbliver hurtige',
+        'File Manager er redesignet som et miniaturebilledgitter — klik på et miniaturebillede for at åbne filen, bekræft før du sletter en, se et pladsholderikon for filer uden miniaturebillede, og gennemse sider i store biblioteker',
+        'Omdøb filer direkte og omarranger dem; den fil, der er åben nu, fremhæves og kan ikke slettes fra listen; panelet lukker nu automatisk, hver gang en kommando starter, eller en fil er færdig med at indlæse',
+        'Miniaturebilleder genereres nu direkte ud fra en fils gemte entiteter og er nedbrudssikre — én forkert formet entitet ødelægger ikke længere hele miniaturebilledet',
+        'Tastaturgenveje tilføjet til formatering i tekstredigeringsprogrammet; mellemrum afslutter nu også en linjekæde, ikke kun Enter',
+        'Rettet parsing og serialisering af lineweight samt DXF-parsing for filer med rene LF-linjeafslutninger og ikke-udfyldte gruppekoder',
+        'Fjernede den ubrugte Google AdSense-integration og knappen "Cookie-indstillinger" i hjælpepanelet (annoncer har aldrig været aktive)',
+      ],
+    },
+    {
       title: 'Trim: understøttelse af Arc, Circle, Ellipse & Polyline',
       highlights: [
         'Trim fungerer nu også på Arc, Circle, Ellipse og Polyline, ikke kun Line — hold markøren over segmentet mellem to skæringspunkter, og klik for at skære det, præcis som Line-trimning altid har fungeret',
@@ -8830,6 +9584,31 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   fi: [
+    {
+      title: 'Hatch: alueen täyttö yhdellä klikkauksella, kuvioidenkirjasto & kahvoilla muokkaaminen',
+      highlights: [
+        'Uusi Hatch-komento — napsauta minkä tahansa suljetun alueen sisällä (Line, Arc, Circle, Ellipse ja päistään yhtyvät Polyline-viivat rajaavat alueen aivan kuten suljettu Lwpolyline) ja se täyttyy kuviolla; sisällä oleva suljettu kuvio jätetään täyttämättä saarekkeena',
+        'Hatch pysyy aktiivisena yhden alueen täyttämisen jälkeen, joten yhdellä käynnistyksellä voi täyttää niin monta aluetta kuin haluaa; Escape lopettaa komennon',
+        'Valitse täyttökuvio uuden Hatch Pattern -valitsimen näytehilasta — sisäänrakennettu ANSI/ISO-kirjasto sekä SOLID — ja hallitse sitä Hatch Managerista, jossa voit ladata omia .pat-tiedostojasi',
+        'Tuotujen DXF-tiedostojen HATCH-entiteetit renderöidään nyt niiden todellisella kuviolla, mittakaavalla ja kulmalla sen sijaan, että ne ohitettaisiin',
+        'Hatch-täyttöjä voi muokata täysin kahvoilla — vedä kulmaa tai reunan keskipistettä muotoillaksesi rajan uudelleen, ja täyttö seuraa reaaliajassa; toimii suorilla, kaarevilla, elliptisillä ja nyt myös spline-reunoilla, saarekkeet mukaan lukien',
+        'Korjattu: viivoitetun ympyrän koon muuttaminen sen reunasta ei enää siirrä koko ympyrää, hatchin peilaus pitää rajan yhtenäisenä, ja hatch-valinta, joka ei löydä mitään, selittää nyt syyn komentokehotteessa',
+        'Rikkaampi ominaisuuspaneeli hatch-täytöille — kuvio, mittakaava, kulma ja origo ovat kaikki suoraan muokattavissa',
+      ],
+    },
+    {
+      title: 'Extend: tuki Arc-, Ellipse- ja Polyline-entiteeteille; uudistettu File Manager',
+      highlights: [
+        'Extend toimii nyt Arc-, Ellipse- ja Polyline-entiteeteillä, ei vain Line-entiteeteillä',
+        'Ellipse/Ellipse-leikkauspisteet tunnistetaan nyt (tarpeen Extendille ja Trimille); Polyline/Polyline-leikkauspisteiden kustannusta rajoitetaan bounding box -hylkäyksellä, jotta suuret piirustukset pysyvät nopeina',
+        'File Manager on uudistettu pikkukuvaruudukoksi — avaa tiedosto napsauttamalla pikkukuvaa, vahvista ennen poistamista, näe paikkamerkkikuvake tiedostoille, joilla ei ole pikkukuvaa, ja selaa sivuja suurissa kirjastoissa',
+        'Nimeä tiedostoja uudelleen suoraan ja järjestä niitä uudelleen; parhaillaan avoinna oleva tiedosto korostetaan eikä sitä voi poistaa listalta; paneeli sulkeutuu nyt automaattisesti aina, kun komento käynnistyy tai tiedoston lataus valmistuu',
+        'Pikkukuvat luodaan nyt suoraan tiedoston tallennetuista entiteeteistä ja ne kestävät kaatumisia — yksi virheellisesti muotoiltu entiteetti ei enää riko koko pikkukuvaa',
+        'Tekstieditoriin lisätty pikanäppäimet muotoiluun; välilyönti lopettaa nyt myös viivaketjun, ei vain Enter',
+        'Korjattu lineweight-jäsennys ja -serialisointi sekä DXF-jäsennys tiedostoille, joissa on pelkät LF-rivinvaihdot ja täyttämättömät ryhmäkoodit',
+        'Poistettu käyttämätön Google AdSense -integraatio ja ohjepaneelin "Evästeasetukset"-painike (mainokset eivät koskaan olleet aktiivisia)',
+      ],
+    },
     {
       title: 'Trim: tuki Arc-, Circle-, Ellipse- ja Polyline-entiteeteille',
       highlights: [
