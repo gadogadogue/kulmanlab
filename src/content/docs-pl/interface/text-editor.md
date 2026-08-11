@@ -18,7 +18,7 @@ Używany przez: **Text** (etykiety MTEXT) i adnotacje **Multileader**.
 
 | Funkcja | Zachowanie |
 |---------|-----------|
-| Bold / Italic / Strikethrough | Dla poszczególnych znaków (stosuje się do zaznaczenia lub całego elementu bez zaznaczenia) |
+| Bold / Italic / Underline / Strikethrough | Dla poszczególnych znaków (stosuje się do zaznaczenia lub całego elementu bez zaznaczenia) |
 | Font i Height | Nadpisanie dla poszczególnych znaków lub domyślna całego elementu |
 | Alignment (Left / Center / Right / Justify) | **Tylko tekst** — niedostępne dla Multileader |
 | `Enter` | Wstawia twardy podział wiersza |
@@ -34,7 +34,7 @@ Edytor jest wstępnie wypełniony bieżącą wyrenderowaną etykietą wymiaru, d
 
 | Funkcja | Zachowanie |
 |---------|-----------|
-| Bold / Italic / Font / Height | Dostępne — stosowane do **całej** etykiety naraz |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Dostępne — stosowane do **całej** etykiety naraz |
 | Formatowanie poszczególnych znaków | Nieobsługiwane |
 | `Enter` | **Zatwierdza** wartość i zamyka edytor (bez podziału wiersza) |
 | Wieloliniowość | Nieobsługiwana |
@@ -52,15 +52,16 @@ Edytor jest wstępnie wypełniony bieżącą wyrenderowaną etykietą wymiaru, d
 
 ## Pasek narzędzi
 
-Pasek narzędzi unosi się nad prostokątem ograniczającym tekstu i pozostaje zakotwiczony do elementu podczas panoramowania lub powiększania.
+Pasek narzędzi unosi się nad prostokątem ograniczającym tekstu i pozostaje zakotwiczony do elementu podczas panoramowania lub powiększania. Poniższe skróty klawiszowe używają **Ctrl** w Windows/Linux i **Cmd** na Mac — podpowiedź każdego przycisku pokazuje właściwy klawisz dla Twojej platformy.
 
-### Pogrubienie · Kursywa · Przekreślenie
+### Pogrubienie · Kursywa · Podkreślenie · Przekreślenie
 
 | Przycisk | Skrót | Co robi |
 |----------|-------|---------|
-| **B** | — | Przełącz pogrubienie |
-| *I* | — | Przełącz kursywę |
-| ~~S~~ | — | Przełącz przekreślenie |
+| **B** | `Ctrl+B` / `Cmd+B` | Przełącz pogrubienie |
+| *I* | `Ctrl+I` / `Cmd+I` | Przełącz kursywę |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Przełącz podkreślenie |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Przełącz przekreślenie |
 
 **Jak przełączanie ma zastosowanie:**
 
@@ -92,7 +93,7 @@ Pole odzwierciedla wysokość znaku po lewej stronie kursora. Zostaw puste, aby 
 
 ### Wyrównanie
 
-Cztery przyciski — **Align Left**, **Align Center**, **Align Right**, **Justify** — ustawiają wyrównanie akapitu. Dostępne tylko dla elementów **Text**; etykiety Multileader i wymiarów nie pokazują tych przycisków.
+Cztery przyciski — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — ustawiają wyrównanie akapitu. Dostępne tylko dla elementów **Text**; etykiety Multileader i wymiarów nie pokazują tych przycisków.
 
 - Kliknięcie przycisku ponownie wyrównuje każdy wiersz w obrębie istniejącego prostokąta ograniczającego elementu — nie przesuwa punktu wstawienia ani nie zmienia rozmiaru prostokąta.
 - Kliknięcie już aktywnego przycisku usuwa nadpisanie, wracając do kolumny sugerowanej przez punkt zaczepienia elementu.
@@ -141,4 +142,4 @@ Twarde podziały wierszy i formatowanie poszczególnych znaków są przechowywan
 
 ## Zgodność z DXF
 
-Elementy tekstowe są przechowywane jako **MTEXT** w plikach DXF. Pogrubienie i kursywa są kodowane jako `\L`, `\K`, `\O` i wbudowane przełączniki czcionek (`\f`). Wysokość poszczególnych znaków jest kodowana jako `\H`. Całe formatowanie jest zachowywane przy eksporcie i czytelne przez LibreCAD, FreeCAD i inne aplikacje zgodne z DXF.
+Elementy tekstowe są przechowywane jako **MTEXT** w plikach DXF. Pogrubienie i kursywa są kodowane za pomocą wbudowanego kodu przełącznika czcionki (`\f`); podkreślenie używa `\L`/`\l`; przekreślenie używa `\K`/`\k`. To formatowanie przetrwa pełny cykl DXF i jest czytelne przez LibreCAD, FreeCAD i inne aplikacje zgodne z DXF. Nadpisania czcionki dla poszczególnych znaków są zachowywane przy eksporcie — nadpisania wysokości dla poszczególnych znaków nie są; zapisywana jest tylko podstawowa wysokość elementu.

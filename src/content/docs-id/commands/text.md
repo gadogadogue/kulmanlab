@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-Perintah `text` menempatkan label teks multi-baris. Setelah Anda mengklik posisi di kanvas, editor popup terbuka dalam mode **kaya** — Anda dapat mengetik konten, menerapkan tebal/miring/coret per karakter, mengubah font dan tinggi, dan menyisipkan jeda baris. Tekan **Escape** untuk mengonfirmasi dan menutup editor.
+Perintah `text` menempatkan label teks multi-baris. Setelah Anda mengklik posisi di kanvas, editor popup terbuka dalam mode **kaya** — Anda dapat mengetik konten, menerapkan tebal/miring/garis bawah/coret per karakter, mengubah font dan tinggi, dan menyisipkan jeda baris. Tekan **Escape** untuk mengonfirmasi dan menutup editor.
 
 Lihat halaman [Text Editor](../../interface/text-editor/) untuk referensi editor lengkap, termasuk perbandingan mode **kaya** dan **sederhana**.
 
@@ -115,4 +115,4 @@ Teks tidak memiliki properti Linetype, Linetype Scale, atau Thickness.
 
 ## DXF — entitas MTEXT
 
-Label teks disimpan sebagai entitas **MTEXT** dalam file DXF. Tebal dan miring dikodekan menggunakan `\L`, `\K`, `\O`, dan switch font inline (`\f`). Tinggi per karakter dikodekan sebagai `\H`. Semua format bertahan melalui round-trip DXF penuh dan dapat dibaca oleh LibreCAD, FreeCAD, dan aplikasi lain yang kompatibel dengan DXF.
+Label teks disimpan sebagai entitas **MTEXT** dalam file DXF. Tebal dan miring dikodekan melalui kode pengalihan font inline (`\f`); garis bawah menggunakan `\L`/`\l`; coret menggunakan `\K`/`\k`. Pemformatan ini bertahan melalui round-trip DXF penuh dan dapat dibaca oleh LibreCAD, FreeCAD, dan aplikasi lain yang kompatibel dengan DXF. Penggantian font per karakter dipertahankan saat diekspor — penggantian tinggi per karakter tidak; hanya tinggi dasar label yang ditulis.

@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-`text`-kommandot placerar en flerradig textetikett. Efter att du har klickat på en position på ritytan öppnas en popup-redigerare i **rich**-läge — du kan skriva innehåll, tillämpa fetstil/kursiv/genomstruken per tecken, ändra typsnitt och höjder samt infoga radbrytningar. Tryck på **Escape** för att bekräfta och stänga redigeraren.
+`text`-kommandot placerar en flerradig textetikett. Efter att du har klickat på en position på ritytan öppnas en popup-redigerare i **rich**-läge — du kan skriva innehåll, tillämpa fetstil/kursiv/understruken/genomstruken per tecken, ändra typsnitt och höjder samt infoga radbrytningar. Tryck på **Escape** för att bekräfta och stänga redigeraren.
 
 Se sidan [Texteditor](../../interface/text-editor/) för den fullständiga editorreferensen, inklusive en jämförelse av **rich**- och **simple**-lägena.
 
@@ -115,4 +115,4 @@ Text har inte egenskaperna Linetype, Linetype Scale eller Thickness.
 
 ## DXF — MTEXT-entitet
 
-Textetiketter sparas som **MTEXT**-entiteter i DXF-filen. Fetstil och kursiv kodas med `\L`, `\K`, `\O` och inline-typsnittsväxlingar (`\f`). Höjd per tecken kodas som `\H`. All formatering överlever en fullständig DXF-rundtur och kan läsas av LibreCAD, FreeCAD och andra DXF-kompatibla program.
+Textetiketter sparas som **MTEXT**-entiteter i DXF-filen. Fetstil och kursiv kodas via en infogad typsnittsväxlingskod (`\f`); understruken använder `\L`/`\l`; genomstruken använder `\K`/`\k`. Denna formatering överlever en fullständig DXF-rundtur och är läsbar av LibreCAD, FreeCAD och andra DXF-kompatibla applikationer. Åsidosättningar av typsnitt per tecken bevaras vid export — åsidosättningar av höjd per tecken gör det inte; endast etikettens grundhöjd skrivs.

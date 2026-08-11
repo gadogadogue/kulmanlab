@@ -18,7 +18,7 @@ Ana amfani a: **Text** (alamun MTEXT) da bayanin **Multileader**.
 
 | Fasali | Hali |
 |---------|-----------|
-| Bold / Italic / Strikethrough | Ga kowane harafi (yana aiki ga zaɓi, ko dukkan abin idan babu zaɓi) |
+| Bold / Italic / Underline / Strikethrough | Ga kowane harafi (yana aiki ga zaɓi, ko dukkan abin idan babu zaɓi) |
 | Font da Height | Canjin ga kowane harafi, ko tsoho na dukkan abin |
 | Alignment (Left / Center / Right / Justify) | **Rubutu kaɗai** — ba a samuwa ga Multileader |
 | `Enter` | Yana sanya karyewar layi kashi |
@@ -34,7 +34,7 @@ An riga an cika naʼurar da alamar da ake nunawa na girma-girma na yanzu don ka 
 
 | Fasali | Hali |
 |---------|-----------|
-| Bold / Italic / Font / Height | A samuwa — yana shafar dukkan **alamar** lokaci guda |
+| Bold / Italic / Underline / Strikethrough / Font / Height | A samuwa — yana shafar dukkan **alamar** lokaci guda |
 | Tsari ga kowane harafi | Ba a goyon baya |
 | `Enter` | **Yana tabbatarwa** ƙima ya rufe naʼurar (babu karyewar layi) |
 | Layi da yawa | Ba a goyon baya |
@@ -52,15 +52,16 @@ An riga an cika naʼurar da alamar da ake nunawa na girma-girma na yanzu don ka 
 
 ## Kayan aiki
 
-Kayan aiki yana iyo a saman akwatin dubawa na rubutu kuma yana ci gaba da kwaɓe zuwa abin yayin da kake pan ko zoom.
+Kayan aiki yana iyo a saman akwatin dubawa na rubutu kuma yana ci gaba da kwaɓe zuwa abin yayin da kake pan ko zoom. Gajerun hanyoyin madannai a ƙasa suna amfani da **Ctrl** a Windows/Linux da **Cmd** a Mac — tooltip na kowane maɓalli yana nuna maɓallin daidai ga dandalinka.
 
-### Mai-nauyi · Karkatacce · Kan-tsallake
+### Mai-nauyi · Karkatacce · Layin Ƙasa · Kan-tsallake
 
 | Maɓalli | Gajeriyar hanya | Aikinsa |
 |--------|----------|--------------|
-| **B** | — | Kunna/kashe mai-nauyi |
-| *I* | — | Kunna/kashe karkatacce |
-| ~~S~~ | — | Kunna/kashe kan-tsallake |
+| **B** | `Ctrl+B` / `Cmd+B` | Kunna/kashe mai-nauyi |
+| *I* | `Ctrl+I` / `Cmd+I` | Kunna/kashe karkatacce |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Kunna/kashe layin ƙasa |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Kunna/kashe kan-tsallake |
 
 **Yadda kunnawa take shafarwa:**
 
@@ -92,7 +93,7 @@ Filin yana nuna tsayin harafin zuwa hagu na mai nuni. Bar shi babu-kome don yin 
 
 ### Daidaitawa
 
-Maɓallai huɗu — **Align Left**, **Align Center**, **Align Right**, **Justify** — suna saita daidaitawar sakin layi. Ana samu ga abubuwan **Text** kaɗai; alamun Multileader da na girma-girma ba sa nuna waɗannan maɓallan.
+Maɓallai huɗu — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — suna saita daidaitawar sakin layi. Ana samu ga abubuwan **Text** kaɗai; alamun Multileader da na girma-girma ba sa nuna waɗannan maɓallan.
 
 - Danna maɓalli yana sake daidaita kowace layi a cikin akwatin dubawa da ke akwai na abin — ba ya motsa maki na sakawa ko canza girman akwatin.
 - Danna maɓallin da ke aiki tuni yana share canjin, ya koma zuwa ginshiƙin da maki na haɗi na abin ke nunawa.
@@ -141,4 +142,4 @@ Ana ajiye karyewar layi kashi da tsari ga kowane harafi ta amfani da tsarin MTEX
 
 ## Dacewa da DXF
 
-Ana ajiye alamun rubutu a matsayin **MTEXT** a fayilolin DXF. Ana kodada mai-nauyi da karkatacce a matsayin `\L`, `\K`, `\O`, da sauya font a ciki (`\f`). Ana kodada tsayi ga kowane harafi a matsayin `\H`. Ana kiyaye dukkan tsari a fitarwa kuma ana iya karanta shi ta LibreCAD, FreeCAD, da wasu manhajoji masu dacewa da DXF.
+Ana ajiye alamun rubutu a matsayin **MTEXT** a fayilolin DXF. Ana kodada mai-nauyi da karkatacce ta hanyar lambar sauya font a ciki (`\f`); layin ƙasa yana amfani da `\L`/`\l`; kan-tsallake yana amfani da `\K`/`\k`. Wannan tsari yana wanzuwa cikakken juyawar DXF kuma ana iya karanta shi ta LibreCAD, FreeCAD, da wasu manhajoji masu dacewa da DXF. Ana kiyaye canjin font ga kowane harafi a fitarwa — ba a kiyaye canjin tsayi ga kowane harafi ba; tsayin asali na abin ne kawai ake rubutawa.

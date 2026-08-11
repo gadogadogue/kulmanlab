@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-Amri ya `text` huweka lebo ya maandishi ya mistari mingi. Baada ya kubonyeza nafasi kwenye kanvasi, kihariri cha popup hufunguka katika hali **tajiri** — unaweza kuandika maudhui, kutumia herufi nzito/italiki/kupigwa mstari kwa kila herufi, kubadilisha fonti na urefu, na kuingiza mapumziko ya mstari. Bonyeza **Escape** kuthibitisha na kufunga kihariri.
+Amri ya `text` huweka lebo ya maandishi ya mistari mingi. Baada ya kubonyeza nafasi kwenye kanvasi, kihariri cha popup hufunguka katika hali **tajiri** — unaweza kuandika maudhui, kutumia herufi nzito/italiki/mstari wa chini/kupigwa mstari kwa kila herufi, kubadilisha fonti na urefu, na kuingiza mapumziko ya mstari. Bonyeza **Escape** kuthibitisha na kufunga kihariri.
 
 Angalia ukurasa wa [Text Editor](../../interface/text-editor/) kwa marejeo kamili ya kihariri, ikijumuisha ulinganisho wa hali **tajiri** na **rahisi**.
 
@@ -115,4 +115,4 @@ Maandishi hayana sifa za Aina ya Mstari, Kiwango cha Aina ya Mstari, au Unene.
 
 ## DXF — kipande cha MTEXT
 
-Lebo za maandishi huhifadhiwa kama vipande vya **MTEXT** katika faili ya DXF. Herufi nzito na italiki zimewekwa msimbo kwa kutumia `\L`, `\K`, `\O`, na ubadilishaji wa fonti wa ndani (`\f`). Urefu wa kila herufi umewekwa msimbo kama `\H`. Uumbizaji wote husalia baada ya safari kamili ya DXF na unasomwa na LibreCAD, FreeCAD, na programu nyingine zinazooana na DXF.
+Lebo za maandishi huhifadhiwa kama vipande vya **MTEXT** katika faili ya DXF. Herufi nzito na italiki zimewekwa msimbo kupitia msimbo wa kubadilisha fonti wa ndani (`\f`); mstari wa chini hutumia `\L`/`\l`; kupigwa mstari hutumia `\K`/`\k`. Uumbizaji huu husalia baada ya safari kamili ya kwenda na kurudi ya DXF na unasomwa na LibreCAD, FreeCAD, na programu nyingine zinazooana na DXF. Ubatilishaji wa fonti kwa kila herufi huhifadhiwa wakati wa kusafirisha — ubatilishaji wa urefu kwa kila herufi hauhifadhiwi; ni urefu wa msingi wa lebo pekee unaoandikwa.

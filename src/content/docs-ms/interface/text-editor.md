@@ -18,7 +18,7 @@ Digunakan oleh: **Text** (label MTEXT) dan anotasi **Multileader**.
 
 | Ciri | Perilaku |
 |------|---------|
-| Bold / Italic / Strikethrough | Setiap aksara (berlaku pada pemilihan, atau keseluruhan entiti jika tiada pemilihan) |
+| Bold / Italic / Underline / Strikethrough | Setiap aksara (berlaku pada pemilihan, atau keseluruhan entiti jika tiada pemilihan) |
 | Font dan Height | Pengatasan setiap aksara, atau lalai keseluruhan entiti |
 | Alignment (Left / Center / Right / Justify) | **Teks sahaja** — tidak tersedia untuk Multileader |
 | `Enter` | Memasukkan pemecahan baris keras |
@@ -34,7 +34,7 @@ Editor diisi terlebih dahulu dengan label yang dirender dari dimensi semasa supa
 
 | Ciri | Perilaku |
 |------|---------|
-| Bold / Italic / Font / Height | Tersedia — berlaku pada **keseluruhan label** sekaligus |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Tersedia — berlaku pada **keseluruhan label** sekaligus |
 | Pemformatan setiap aksara | Tidak disokong |
 | `Enter` | **Mengkomit** nilai dan menutup editor (tiada pemecahan baris) |
 | Berbilang baris | Tidak disokong |
@@ -52,15 +52,16 @@ Editor diisi terlebih dahulu dengan label yang dirender dari dimensi semasa supa
 
 ## Bar alat
 
-Bar alat terapung di atas kotak sempadan teks dan kekal berlabuh pada entiti semasa anda pan atau zum.
+Bar alat terapung di atas kotak sempadan teks dan kekal berlabuh pada entiti semasa anda pan atau zum. Pintasan papan kekunci di bawah menggunakan **Ctrl** pada Windows/Linux dan **Cmd** pada Mac — petunjuk setiap butang menunjukkan kekunci yang betul untuk platform anda.
 
-### Tebal · Italik · Strikethrough
+### Tebal · Italik · Garis Bawah · Strikethrough
 
 | Butang | Pintasan | Fungsinya |
 |--------|----------|-----------|
-| **B** | — | Togel tebal |
-| *I* | — | Togel italik |
-| ~~S~~ | — | Togel strikethrough |
+| **B** | `Ctrl+B` / `Cmd+B` | Togel tebal |
+| *I* | `Ctrl+I` / `Cmd+I` | Togel italik |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Togel garis bawah |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Togel strikethrough |
 
 **Cara togel digunakan:**
 
@@ -92,7 +93,7 @@ Medan mencerminkan ketinggian aksara di sebelah kiri kursor. Biarkan kosong untu
 
 ### Penjajaran
 
-Empat butang — **Align Left**, **Align Center**, **Align Right**, **Justify** — menetapkan penjajaran perenggan. Tersedia hanya untuk entiti **Text**; label Multileader dan dimensi tidak menunjukkan butang ini.
+Empat butang — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — menetapkan penjajaran perenggan. Tersedia hanya untuk entiti **Text**; label Multileader dan dimensi tidak menunjukkan butang ini.
 
 - Mengklik butang akan menjajarkan semula setiap baris dalam kotak sempadan sedia ada entiti — tidak menggerakkan titik sisipan atau mengubah saiz kotak.
 - Mengklik butang yang sudah aktif akan mengosongkan pengatasan, kembali ke lajur yang tersirat oleh titik lampiran entiti.
@@ -141,4 +142,4 @@ Pemecahan baris keras dan pemformatan setiap aksara disimpan menggunakan format 
 
 ## Keserasian DXF
 
-Entiti teks disimpan sebagai **MTEXT** dalam fail DXF. Tebal dan italik dikodkan sebagai `\L`, `\K`, `\O`, dan suis fon inline (`\f`). Ketinggian setiap aksara dikodkan sebagai `\H`. Semua pemformatan dipelihara semasa eksport dan boleh dibaca oleh LibreCAD, FreeCAD, dan aplikasi serasi DXF lain.
+Entiti teks disimpan sebagai **MTEXT** dalam fail DXF. Tebal dan italik dikodkan melalui kod suis fon inline (`\f`); garis bawah menggunakan `\L`/`\l`; strikethrough menggunakan `\K`/`\k`. Pemformatan ini bertahan sepanjang pusingan DXF penuh dan boleh dibaca oleh LibreCAD, FreeCAD, dan aplikasi serasi DXF lain. Pengatasan fon setiap aksara dipelihara semasa eksport — pengatasan ketinggian setiap aksara tidak; hanya ketinggian asas entiti ditulis.

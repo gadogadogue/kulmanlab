@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-El comando `text` coloca una etiqueta de texto multilínea. Tras hacer clic en una posición del lienzo, se abre un editor emergente en **rich** mode — puedes escribir contenido, aplicar negrita/cursiva/tachado por carácter, cambiar fuentes y alturas, e insertar saltos de línea. Pulsa **Escape** para confirmar y cerrar el editor.
+El comando `text` coloca una etiqueta de texto multilínea. Tras hacer clic en una posición del lienzo, se abre un editor emergente en **rich** mode — puedes escribir contenido, aplicar negrita/cursiva/subrayado/tachado por carácter, cambiar fuentes y alturas, e insertar saltos de línea. Pulsa **Escape** para confirmar y cerrar el editor.
 
 Consulta la página del [Editor de Texto](../../interface/text-editor/) para la referencia completa del editor, incluyendo una comparación de los modos **rich** y **simple**.
 
@@ -115,4 +115,4 @@ Text no tiene propiedades Linetype, Linetype Scale ni Thickness.
 
 ## DXF — entidad MTEXT
 
-Las etiquetas de texto se almacenan como entidades **MTEXT** en el archivo DXF. La negrita y la cursiva se codifican usando `\L`, `\K`, `\O` y conmutadores de fuente en línea (`\f`). La altura por carácter se codifica como `\H`. Todo el formato sobrevive a un ciclo DXF completo y es legible por LibreCAD, FreeCAD y otras aplicaciones compatibles con DXF.
+Las etiquetas de texto se almacenan como entidades **MTEXT** en el archivo DXF. La negrita y la cursiva se codifican mediante un código de conmutador de fuente en línea (`\f`); el subrayado usa `\L`/`\l`; el tachado usa `\K`/`\k`. Este formato sobrevive a un ciclo completo de DXF y es legible por LibreCAD, FreeCAD y otras aplicaciones compatibles con DXF. Las anulaciones de fuente por carácter se conservan al exportar — las anulaciones de altura por carácter no; solo se escribe la altura base de la etiqueta.

@@ -18,7 +18,7 @@ Brukes av: **Text** (MTEXT-etiketter) og **Multileader**-annotasjoner.
 
 | Funksjon | Oppførsel |
 |---------|-----------|
-| Fet / Kursiv / Gjennomstreking | Per tegn (gjelder markering, eller hele entiteten hvis ingen markering) |
+| Fet / Kursiv / Understreking / Gjennomstreking | Per tegn (gjelder markering, eller hele entiteten hvis ingen markering) |
 | Skrift og Høyde | Per-tegn overstyring, eller standard for hele entiteten |
 | Justering (Venstre / Midtstilt / Høyre / Blokkjustert) | **Kun Text** — ikke tilgjengelig for Multileader |
 | `Enter` | Setter inn et hardt linjeskift |
@@ -34,7 +34,7 @@ Editoren er forhåndsutfylt med målets gjengitte etikett, slik at du kan plasse
 
 | Funksjon | Oppførsel |
 |---------|-----------|
-| Fet / Kursiv / Skrift / Høyde | Tilgjengelig — gjelder **hele** etiketten samtidig |
+| Fet / Kursiv / Understreking / Gjennomstreking / Skrift / Høyde | Tilgjengelig — gjelder **hele** etiketten samtidig |
 | Per-tegn formatering | Støttes ikke |
 | `Enter` | **Bekrefter** verdien og lukker editoren (ikke linjeskift) |
 | Flerlinje | Støttes ikke |
@@ -52,15 +52,16 @@ Editoren er forhåndsutfylt med målets gjengitte etikett, slik at du kan plasse
 
 ## Verktøylinje
 
-Verktøylinjen svever over tekstens avgrensningsboks og forblir forankret til entiteten mens du panorerer eller zoomer.
+Verktøylinjen svever over tekstens avgrensningsboks og forblir forankret til entiteten mens du panorerer eller zoomer. Hurtigtastene nedenfor bruker **Ctrl** på Windows/Linux og **Cmd** på Mac — verktøytipset til hver knapp viser riktig tast for din plattform.
 
-### Fet · Kursiv · Gjennomstreking
+### Fet · Kursiv · Understreking · Gjennomstreking
 
 | Knapp | Snarvei | Hva den gjør |
 |--------|----------|--------------|
-| **B** | — | Slå fet på/av |
-| *I* | — | Slå kursiv på/av |
-| ~~S~~ | — | Slå gjennomstreking på/av |
+| **B** | `Ctrl+B` / `Cmd+B` | Slå fet på/av |
+| *I* | `Ctrl+I` / `Cmd+I` | Slå kursiv på/av |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Slå understreking på/av |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Slå gjennomstreking på/av |
 
 **Slik virker det:**
 
@@ -92,7 +93,7 @@ Feltet gjenspeiler høyden til tegnet til venstre for markøren. La det stå tom
 
 ### Justering
 
-Fire knapper — **Align Left**, **Align Center**, **Align Right**, **Justify** — setter avsnittsjustering. Tilgjengelig kun for **Text**-entiteter; Multileader og mål-etiketter viser ikke disse knappene.
+Fire knapper — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — setter avsnittsjustering. Tilgjengelig kun for **Text**-entiteter; Multileader og mål-etiketter viser ikke disse knappene.
 
 - Å klikke på en knapp justerer hver rad på nytt innenfor entitetens eksisterende avgrensningsboks — den flytter ikke innsettingspunktet eller endrer størrelsen på boksen.
 - Å klikke på den allerede aktive knappen fjerner overstyringen og faller tilbake til kolonnen implisert av entitetens festepunkt.
@@ -141,4 +142,4 @@ Harde linjeskift og per-tegn formatering lagres ved hjelp av MTEXT-formatet og o
 
 ## DXF-kompatibilitet
 
-Tekstentiteter lagres som **MTEXT** i DXF-filer. Fet og kursiv kodes som `\L`, `\K`, `\O`, og innebygde skriftbytter (`\f`). Per-tegn høyde kodes som `\H`. All formatering bevares ved eksport og kan leses av LibreCAD, FreeCAD og andre DXF-kompatible applikasjoner.
+Tekstentiteter lagres som **MTEXT** i DXF-filer. Fet og kursiv kodes via en innebygd skriftbyttekode (`\f`); understreking bruker `\L`/`\l`; gjennomstreking bruker `\K`/`\k`. Denne formateringen overlever en fullstendig DXF-runde og kan leses av LibreCAD, FreeCAD og andre DXF-kompatible applikasjoner. Per-tegn skriftoverstyringer bevares ved eksport — per-tegn høydeoverstyringer gjør det ikke; kun entitetens basishøyde skrives.

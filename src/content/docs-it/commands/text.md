@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-Il comando `text` posiziona un'etichetta di testo multi-riga. Dopo aver cliccato una posizione sul canvas, si apre un editor popup in **rich** mode — puoi digitare il contenuto, applicare grassetto/corsivo/barrato per carattere, cambiare font e altezze, e inserire interruzioni di riga. Premi **Esc** per confermare e chiudere l'editor.
+Il comando `text` posiziona un'etichetta di testo multi-riga. Dopo aver cliccato una posizione sul canvas, si apre un editor popup in **rich** mode — puoi digitare il contenuto, applicare grassetto/corsivo/sottolineato/barrato per carattere, cambiare font e altezze, e inserire interruzioni di riga. Premi **Esc** per confermare e chiudere l'editor.
 
 Vedi la pagina [Editor di Testo](../../interface/text-editor/) per il riferimento completo dell'editor, incluso un confronto tra le modalità **rich** e **simple**.
 
@@ -87,4 +87,4 @@ Il testo non supporta **Offset**, **Trim** o **Extend**.
 
 ## DXF — entità MTEXT
 
-Le etichette di testo sono memorizzate come entità **MTEXT** nel file DXF. Grassetto e corsivo sono codificati usando `\L`, `\K`, `\O` e cambi di font inline (`\f`). L'altezza per carattere è codificata come `\H`. Tutta la formattazione sopravvive a un round-trip DXF completo ed è leggibile da LibreCAD, FreeCAD e altre applicazioni compatibili DXF.
+Le etichette di testo sono memorizzate come entità **MTEXT** nel file DXF. Grassetto e corsivo sono codificati tramite un codice di cambio font inline (`\f`); il sottolineato usa `\L`/`\l`; il barrato usa `\K`/`\k`. Questa formattazione sopravvive a un round-trip DXF completo ed è leggibile da LibreCAD, FreeCAD e altre applicazioni compatibili DXF. Le sostituzioni di font per carattere sono preservate all'esportazione — le sostituzioni di altezza per carattere no; viene scritta solo l'altezza di base dell'etichetta.

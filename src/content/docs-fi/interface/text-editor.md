@@ -18,7 +18,7 @@ Käytössä: **Text** (MTEXT-merkinnät) ja **Multileader**-annotaatiot.
 
 | Ominaisuus | Käyttäytyminen |
 |---------|-----------|
-| Lihavointi / Kursivointi / Yliviivaus | Merkkikohtainen (koskee valintaa, tai koko entiteettiä jos ei valintaa) |
+| Lihavointi / Kursivointi / Alleviivaus / Yliviivaus | Merkkikohtainen (koskee valintaa, tai koko entiteettiä jos ei valintaa) |
 | Fontti ja Korkeus | Merkkikohtainen ohitus, tai koko entiteetin oletus |
 | Tasaus (Vasen / Keskitetty / Oikea / Tasattu) | **Vain Text** — ei käytettävissä Multileaderille |
 | `Enter` | Lisää kovan rivinvaihdon |
@@ -34,7 +34,7 @@ Editori on esitäytetty mitan nykyisellä renderöidyllä merkinnällä, jotta v
 
 | Ominaisuus | Käyttäytyminen |
 |---------|-----------|
-| Lihavointi / Kursivointi / Fontti / Korkeus | Käytettävissä — koskee **koko** merkintää kerralla |
+| Lihavointi / Kursivointi / Alleviivaus / Yliviivaus / Fontti / Korkeus | Käytettävissä — koskee **koko** merkintää kerralla |
 | Merkkikohtainen muotoilu | Ei tuettu |
 | `Enter` | **Vahvistaa** arvon ja sulkee editorin (ei rivinvaihtoa) |
 | Monirivinen | Ei tuettu |
@@ -52,15 +52,16 @@ Editori on esitäytetty mitan nykyisellä renderöidyllä merkinnällä, jotta v
 
 ## Työkalurivi
 
-Työkalurivi kelluu tekstin rajauslaatikon yläpuolella ja pysyy kiinnitettynä entiteettiin panoroidessasi tai zoomatessasi.
+Työkalurivi kelluu tekstin rajauslaatikon yläpuolella ja pysyy kiinnitettynä entiteettiin panoroidessasi tai zoomatessasi. Alla olevat pikanäppäimet käyttävät **Ctrl**-näppäintä Windows/Linuxissa ja **Cmd**-näppäintä Macissa — jokaisen painikkeen työkaluvihje näyttää oikean näppäimen alustallesi.
 
-### Lihavointi · Kursivointi · Yliviivaus
+### Lihavointi · Kursivointi · Alleviivaus · Yliviivaus
 
 | Painike | Pikanäppäin | Mitä se tekee |
 |--------|----------|--------------|
-| **B** | — | Vaihda lihavointi |
-| *I* | — | Vaihda kursivointi |
-| ~~S~~ | — | Vaihda yliviivaus |
+| **B** | `Ctrl+B` / `Cmd+B` | Vaihda lihavointi |
+| *I* | `Ctrl+I` / `Cmd+I` | Vaihda kursivointi |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Vaihda alleviivaus |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Vaihda yliviivaus |
 
 **Miten vaihtaminen toimii:**
 
@@ -92,7 +93,7 @@ Kenttä heijastaa kohdistimen vasemmalla puolella olevan merkin korkeutta. Jät�
 
 ### Tasaus
 
-Neljä painiketta — **Align Left**, **Align Center**, **Align Right**, **Justify** — asettavat kappaleen tasauksen. Käytettävissä vain **Text**-entiteeteille; Multileader ja mittamerkinnät eivät näytä näitä painikkeita.
+Neljä painiketta — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — asettavat kappaleen tasauksen. Käytettävissä vain **Text**-entiteeteille; Multileader ja mittamerkinnät eivät näytä näitä painikkeita.
 
 - Painikkeen napsauttaminen tasaa uudelleen jokaisen rivin entiteetin olemassa olevan rajauslaatikon sisällä — se ei siirrä lisäyspistettä tai muuta laatikon kokoa.
 - Jo aktiivisen painikkeen napsauttaminen poistaa ohituksen ja palaa entiteetin kiinnityspisteen sarakkeeseen.
@@ -141,4 +142,4 @@ Kovat rivinvaihdot ja merkkikohtainen muotoilu tallennetaan MTEXT-muodossa ja s�
 
 ## DXF-yhteensopivuus
 
-Tekstientiteetit tallennetaan **MTEXT**-muodossa DXF-tiedostoissa. Lihavointi ja kursivointi koodataan käyttäen merkkejä `\L`, `\K`, `\O` ja sisäänrakennettuja fonttivaihtoja (`\f`). Merkkikohtainen korkeus koodataan muodossa `\H`. Kaikki muotoilu säilyy viennissä ja on luettavissa LibreCADissa, FreeCADissa ja muissa DXF-yhteensopivissa sovelluksissa.
+Tekstientiteetit tallennetaan **MTEXT**-muodossa DXF-tiedostoissa. Lihavointi ja kursivointi koodataan sisäänrakennetulla fontinvaihtokoodilla (`\f`); alleviivaus käyttää koodeja `\L`/`\l`; yliviivaus käyttää koodeja `\K`/`\k`. Tämä muotoilu säilyy täydessä DXF-edestakaisessa matkassa ja on luettavissa LibreCADissa, FreeCADissa ja muissa DXF-yhteensopivissa sovelluksissa. Merkkikohtaiset fonttiohitukset säilyvät viennissä — merkkikohtaiset korkeusohitukset eivät; vain entiteetin peruskorkeus kirjoitetaan.

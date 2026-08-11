@@ -18,7 +18,7 @@ Usato da: **Text** (etichette MTEXT) e annotazioni **Multileader**.
 
 | Feature | Comportamento |
 |---------|--------------|
-| Bold / Italic / Strikethrough | Per carattere (applica alla selezione, o all'intera entità se nessuna selezione) |
+| Bold / Italic / Underline / Strikethrough | Per carattere (applica alla selezione, o all'intera entità se nessuna selezione) |
 | Font e Height | Sostituzione per carattere, o valore predefinito dell'entità |
 | Alignment (Left / Center / Right / Justify) | **Solo testo** — non disponibile per Multileader |
 | `Enter` | Inserisce un'interruzione di riga dura |
@@ -34,7 +34,7 @@ L'editor è precompilato con l'etichetta visualizzata corrente della quota in mo
 
 | Feature | Comportamento |
 |---------|--------------|
-| Bold / Italic / Font / Height | Disponibile — si applica all'**intera** etichetta in una volta |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Disponibile — si applica all'**intera** etichetta in una volta |
 | Formattazione per carattere | Non supportata |
 | `Enter` | **Conferma** il valore e chiude l'editor (nessuna interruzione di riga) |
 | Multiriga | Non supportato |
@@ -52,15 +52,16 @@ L'editor è precompilato con l'etichetta visualizzata corrente della quota in mo
 
 ## Barra degli strumenti
 
-La barra degli strumenti galleggia sopra il riquadro di delimitazione del testo e rimane ancorata all'entità mentre fai pan o zoom.
+La barra degli strumenti galleggia sopra il riquadro di delimitazione del testo e rimane ancorata all'entità mentre fai pan o zoom. Le scorciatoie da tastiera qui sotto usano **Ctrl** su Windows/Linux e **Cmd** su Mac — il tooltip di ogni pulsante mostra il tasto corretto per la tua piattaforma.
 
-### Grassetto · Corsivo · Barrato
+### Grassetto · Corsivo · Sottolineato · Barrato
 
-| Pulsante | Cosa fa |
-|----------|---------|
-| **G** | Attiva/disattiva grassetto |
-| *C* | Attiva/disattiva corsivo |
-| ~~S~~ | Attiva/disattiva barrato |
+| Pulsante | Scorciatoia | Cosa fa |
+|----------|-------------|---------|
+| **B** | `Ctrl+B` / `Cmd+B` | Attiva/disattiva grassetto |
+| *I* | `Ctrl+I` / `Cmd+I` | Attiva/disattiva corsivo |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Attiva/disattiva sottolineato |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Attiva/disattiva barrato |
 
 **Come funziona l'attivazione:**
 
@@ -92,7 +93,7 @@ Il campo riflette l'altezza del carattere a sinistra del cursore. Lascialo vuoto
 
 ### Allineamento
 
-Quattro pulsanti — **Align Left**, **Align Center**, **Align Right**, **Justify** — impostano l'allineamento del paragrafo. Disponibile solo per entità **Text**; le etichette Multileader e di quota non mostrano questi pulsanti.
+Quattro pulsanti — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — impostano l'allineamento del paragrafo. Disponibile solo per entità **Text**; le etichette Multileader e di quota non mostrano questi pulsanti.
 
 - Cliccando un pulsante si riallinea ogni riga all'interno del riquadro di delimitazione esistente dell'entità — non sposta il punto di inserimento né ridimensiona il riquadro.
 - Cliccando il pulsante già attivo si rimuove la sostituzione, tornando alla colonna implicita nel punto di ancoraggio dell'entità.
@@ -141,4 +142,4 @@ Le interruzioni di riga dure e la formattazione per carattere sono memorizzate u
 
 ## Compatibilità DXF
 
-Le entità testo sono memorizzate come **MTEXT** nei file DXF. Grassetto e corsivo sono codificati usando `\L`, `\K`, `\O` e cambi di font inline (`\f`). L'altezza per carattere è codificata come `\H`. Tutta la formattazione è preservata all'esportazione ed è leggibile da LibreCAD, FreeCAD e altre applicazioni compatibili DXF.
+Le entità testo sono memorizzate come **MTEXT** nei file DXF. Grassetto e corsivo sono codificati tramite un codice di cambio font inline (`\f`); il sottolineato usa `\L`/`\l`; il barrato usa `\K`/`\k`. Questa formattazione sopravvive a un round-trip DXF completo ed è leggibile da LibreCAD, FreeCAD e altre applicazioni compatibili DXF. Le sostituzioni di font per carattere sono preservate all'esportazione — le sostituzioni di altezza per carattere no; viene scritta solo l'altezza di base dell'entità.

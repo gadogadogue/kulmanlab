@@ -18,7 +18,7 @@ Kullanan: **Text** (MTEXT etiketleri) ve **Multileader** ek açıklamaları.
 
 | Özellik | Davranış |
 |---------|----------|
-| Bold / Italic / Strikethrough | Karakter başına (seçime uygulanır; seçim yoksa tüm nesneye) |
+| Bold / Italic / Underline / Strikethrough | Karakter başına (seçime uygulanır; seçim yoksa tüm nesneye) |
 | Font ve Height | Karakter başına geçersiz kılma veya tüm nesne varsayılanı |
 | Alignment (Left / Center / Right / Justify) | **Yalnızca metin** — Multileader için kullanılamaz |
 | `Enter` | Sabit satır sonu ekler |
@@ -34,7 +34,7 @@ Düzenleyici, imleci konumlandırıp değeri doğrudan düzenleyebilmeniz için 
 
 | Özellik | Davranış |
 |---------|----------|
-| Bold / Italic / Font / Height | Mevcut — **tüm** etikete aynı anda uygulanır |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Mevcut — **tüm** etikete aynı anda uygulanır |
 | Karakter başına biçimlendirme | Desteklenmez |
 | `Enter` | Değeri **kaydeder** ve düzenleyiciyi kapatır (satır sonu yok) |
 | Çok satırlı | Desteklenmez |
@@ -52,15 +52,16 @@ Düzenleyici, imleci konumlandırıp değeri doğrudan düzenleyebilmeniz için 
 
 ## Araç Çubuğu
 
-Araç çubuğu metnin sınırlayıcı kutusunun üzerinde yüzer ve kaydırma veya yakınlaştırma yapırken nesneye sabitlenmiş kalır.
+Araç çubuğu metnin sınırlayıcı kutusunun üzerinde yüzer ve kaydırma veya yakınlaştırma yapırken nesneye sabitlenmiş kalır. Aşağıdaki klavye kısayolları Windows/Linux'ta **Ctrl**, Mac'te **Cmd** kullanır — her düğmenin ipucu platformunuz için doğru tuşu gösterir.
 
-### Kalın · İtalik · Üstü Çizili
+### Kalın · İtalik · Altı Çizili · Üstü Çizili
 
 | Düğme | Kısayol | Ne yapar |
 |--------|----------|--------------|
-| **K** | — | Kalın geçiş yap |
-| *İ* | — | İtalik geçiş yap |
-| ~~Ü~~ | — | Üstü çizili geçiş yap |
+| **B** | `Ctrl+B` / `Cmd+B` | Kalın geçiş yap |
+| *I* | `Ctrl+I` / `Cmd+I` | İtalik geçiş yap |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Altı çizili geçiş yap |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Üstü çizili geçiş yap |
 
 **Geçişin nasıl uygulandığı:**
 
@@ -92,7 +93,7 @@ Alan, imleçin solundaki karakterin yüksekliğini yansıtır. Nesne varsayılan
 
 ### Hizalama
 
-Dört düğme — **Align Left**, **Align Center**, **Align Right**, **Justify** — paragraf hizalamasını ayarlar. Yalnızca **Text** nesneleri için kullanılabilir; Multileader ve ölçü etiketleri bu düğmeleri göstermez.
+Dört düğme — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — paragraf hizalamasını ayarlar. Yalnızca **Text** nesneleri için kullanılabilir; Multileader ve ölçü etiketleri bu düğmeleri göstermez.
 
 - Bir düğmeye tıklamak, nesnenin mevcut sınırlayıcı kutusu içinde her satırı yeniden hizalar — ekleme noktasını taşımaz veya kutuyu yeniden boyutlandırmaz.
 - Zaten etkin olan düğmeye tıklamak geçersiz kılmayı temizler ve nesnenin tutturma noktasının ima ettiği sütuna geri döner.
@@ -141,4 +142,4 @@ Sabit satır sonları ve karakter başına biçimlendirme, MTEXT formatı kullan
 
 ## DXF Uyumluluğu
 
-Metin nesneleri DXF dosyalarında **MTEXT** olarak saklanır. Kalın ve italik `\L`, `\K`, `\O` ve satır içi yazı tipi anahtarları (`\f`) olarak kodlanır. Karakter başına yükseklik `\H` olarak kodlanır. Tüm biçimlendirme dışa aktarmada korunur ve LibreCAD, FreeCAD ve diğer DXF uyumlu uygulamalar tarafından okunabilir.
+Metin nesneleri DXF dosyalarında **MTEXT** olarak saklanır. Kalın ve italik, satır içi yazı tipi anahtarlama kodu (`\f`) ile kodlanır; altı çizili `\L`/`\l` kullanır; üstü çizili `\K`/`\k` kullanır. Bu biçimlendirme tam bir DXF gidiş-dönüşünden sağlam çıkar ve LibreCAD, FreeCAD ve diğer DXF uyumlu uygulamalar tarafından okunabilir. Karakter başına yazı tipi geçersiz kılmaları dışa aktarmada korunur — karakter başına yükseklik geçersiz kılmaları korunmaz; yalnızca nesnenin temel yüksekliği yazılır.

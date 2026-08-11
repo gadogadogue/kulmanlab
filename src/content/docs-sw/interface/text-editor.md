@@ -18,7 +18,7 @@ Inatumiwa na: **Text** (lebo za MTEXT) na maelezo ya **Multileader**.
 
 | Kipengele | Tabia |
 |----------|-------|
-| Bold / Italic / Strikethrough | Kwa kila herufi (inatumika kwa uchaguzi, au kipande kizima kama hakuna uchaguzi) |
+| Bold / Italic / Underline / Strikethrough | Kwa kila herufi (inatumika kwa uchaguzi, au kipande kizima kama hakuna uchaguzi) |
 | Font na Height | Ubatilishaji kwa kila herufi, au msingi wa kipande kizima |
 | Alignment (Left / Center / Right / Justify) | **Maandishi pekee** — haipatikani kwa Multileader |
 | `Enter` | Inaingiza mapumziko ya mstari mgumu |
@@ -34,7 +34,7 @@ Kihariri kimejazwa awali na lebo inayoonyeshwa ya dimension ya sasa ili uweze ku
 
 | Kipengele | Tabia |
 |----------|-------|
-| Bold / Italic / Font / Height | Inapatikana — inatumika kwa **lebo nzima** mara moja |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Inapatikana — inatumika kwa **lebo nzima** mara moja |
 | Uumbizaji kwa kila herufi | Haisaidiwi |
 | `Enter` | **Inathibitisha** thamani na kufunga kihariri (hakuna mapumziko ya mstari) |
 | Mistari mingi | Haisaidiwi |
@@ -52,15 +52,16 @@ Kihariri kimejazwa awali na lebo inayoonyeshwa ya dimension ya sasa ili uweze ku
 
 ## Upau wa zana
 
-Upau wa zana huelea juu ya sanduku la mipaka la maandishi na kubaki umeshikwa kwenye kipande unavyopanua au kupanua.
+Upau wa zana huelea juu ya sanduku la mipaka la maandishi na kubaki umeshikwa kwenye kipande unavyopanua au kupanua. Mikato ya kibodi hapa chini hutumia **Ctrl** kwenye Windows/Linux na **Cmd** kwenye Mac — kidokezo cha kila kitufe kinaonyesha kitufe sahihi kwa jukwaa lako.
 
-### Nzito · Italiki · Kupigwa Mstari
+### Nzito · Italiki · Mstari wa Chini · Kupigwa Mstari
 
 | Kitufe | Mkato | Kinachofanya |
 |--------|-------|--------------|
-| **B** | — | Kubadilisha nzito |
-| *I* | — | Kubadilisha italiki |
-| ~~S~~ | — | Kubadilisha kupigwa mstari |
+| **B** | `Ctrl+B` / `Cmd+B` | Kubadilisha nzito |
+| *I* | `Ctrl+I` / `Cmd+I` | Kubadilisha italiki |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Kubadilisha mstari wa chini |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Kubadilisha kupigwa mstari |
 
 **Jinsi kubadilisha kunavyotumika:**
 
@@ -92,7 +93,7 @@ Uga unaonyesha urefu wa herufi ya kushoto ya kishale. Iacha tupu kutumia chaguo-
 
 ### Ulinganifu
 
-Vitufe vinne — **Align Left**, **Align Center**, **Align Right**, **Justify** — huweka ulinganifu wa aya. Inapatikana kwa vipande vya **Text** pekee; lebo za Multileader na vipimo hazionyeshi vitufe hivi.
+Vitufe vinne — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — huweka ulinganifu wa aya. Inapatikana kwa vipande vya **Text** pekee; lebo za Multileader na vipimo hazionyeshi vitufe hivi.
 
 - Kubonyeza kitufe hulinganisha upya kila mstari ndani ya sanduku la mipaka lililopo la kipande — hakuhamishi sehemu ya kuingiza wala kubadilisha ukubwa wa sanduku.
 - Kubonyeza kitufe kilichokwisha kuwa hai husafisha ubatilishaji, ukirudi kwenye safu inayodokezwa na sehemu ya kushikamana ya kipande.
@@ -141,4 +142,4 @@ Mapumziko ya mstari mgumu na uumbizaji wa kila herufi huhifadhiwa kwa kutumia mu
 
 ## Uoanifu wa DXF
 
-Vipande vya maandishi huhifadhiwa kama **MTEXT** katika faili za DXF. Herufi nzito na italiki zimewekwa msimbo kama `\L`, `\K`, `\O`, na ubadilishaji wa fonti wa ndani (`\f`). Urefu wa kila herufi umewekwa msimbo kama `\H`. Uumbizaji wote huhifadhiwa wakati wa kusafirisha na unasomwa na LibreCAD, FreeCAD, na programu nyingine zinazooana na DXF.
+Vipande vya maandishi huhifadhiwa kama **MTEXT** katika faili za DXF. Herufi nzito na italiki zimewekwa msimbo kupitia msimbo wa kubadilisha fonti wa ndani (`\f`); mstari wa chini hutumia `\L`/`\l`; kupigwa mstari hutumia `\K`/`\k`. Uumbizaji huu husalia baada ya safari kamili ya kwenda na kurudi ya DXF na unasomwa na LibreCAD, FreeCAD, na programu nyingine zinazooana na DXF. Ubatilishaji wa fonti kwa kila herufi huhifadhiwa wakati wa kusafirisha — ubatilishaji wa urefu kwa kila herufi hauhifadhiwi; ni urefu wa msingi wa kipande pekee unaoandikwa.

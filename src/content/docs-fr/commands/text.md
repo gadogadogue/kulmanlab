@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-La commande `text` place un label de texte multi-ligne. Après avoir cliqué sur une position du canevas, un éditeur popup s'ouvre en **rich** mode — vous pouvez taper du contenu, appliquer gras/italique/barré par caractère, changer les polices et hauteurs, et insérer des sauts de ligne. Appuyez sur **Échap** pour valider et fermer l'éditeur.
+La commande `text` place un label de texte multi-ligne. Après avoir cliqué sur une position du canevas, un éditeur popup s'ouvre en **rich** mode — vous pouvez taper du contenu, appliquer gras/italique/souligné/barré par caractère, changer les polices et hauteurs, et insérer des sauts de ligne. Appuyez sur **Échap** pour valider et fermer l'éditeur.
 
 Consultez la page [Éditeur de texte](../../interface/text-editor/) pour la référence complète de l'éditeur, incluant une comparaison des modes **rich** et **simple**.
 
@@ -115,4 +115,4 @@ Le texte n'a pas de propriétés Linetype, Linetype Scale, ni Thickness.
 
 ## DXF — entité MTEXT
 
-Les labels de texte sont stockés comme entités **MTEXT** dans le fichier DXF. Le gras et l'italique sont encodés avec `\L`, `\K`, `\O`, et des commutateurs de police inline (`\f`). La hauteur par caractère est encodée comme `\H`. Tout le formatage survit à un aller-retour DXF complet et est lisible par LibreCAD, FreeCAD et d'autres applications compatibles DXF.
+Les labels de texte sont stockés comme entités **MTEXT** dans le fichier DXF. Le gras et l'italique sont encodés via un code de commutation de police en ligne (`\f`) ; le souligné utilise `\L`/`\l` ; le barré utilise `\K`/`\k`. Ce formatage survit à un cycle DXF complet et est lisible par LibreCAD, FreeCAD et d'autres applications compatibles DXF. Les substitutions de police par caractère sont préservées à l'export — les substitutions de hauteur par caractère ne le sont pas ; seule la hauteur de base du label est écrite.

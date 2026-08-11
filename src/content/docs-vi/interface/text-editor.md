@@ -17,7 +17,7 @@ Sử dụng bởi: **Text** (nhãn MTEXT) và chú thích **Leader**.
 
 | Tính năng | Hành vi |
 |-----------|---------|
-| Bold / Italic / Strikethrough | Theo ký tự (áp dụng cho lựa chọn, hoặc toàn bộ thực thể nếu không có lựa chọn) |
+| Bold / Italic / Underline / Strikethrough | Theo ký tự (áp dụng cho lựa chọn, hoặc toàn bộ thực thể nếu không có lựa chọn) |
 | Font và Height | Ghi đè theo ký tự, hoặc mặc định toàn thực thể |
 | Alignment (Left / Center / Right / Justify) | **Chỉ văn bản** — không khả dụng cho Leader |
 | `Enter` | Chèn ngắt dòng cứng |
@@ -33,7 +33,7 @@ Trình soạn thảo được điền sẵn nhãn hiển thị hiện tại củ
 
 | Tính năng | Hành vi |
 |-----------|---------|
-| Bold / Italic / Font / Height | Có thể dùng — áp dụng cho **toàn bộ nhãn** cùng một lúc |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Có thể dùng — áp dụng cho **toàn bộ nhãn** cùng một lúc |
 | Định dạng theo ký tự | Không được hỗ trợ |
 | `Enter` | **Xác nhận** giá trị và đóng trình soạn thảo (không ngắt dòng) |
 | Nhiều dòng | Không được hỗ trợ |
@@ -51,15 +51,16 @@ Trình soạn thảo được điền sẵn nhãn hiển thị hiện tại củ
 
 ## Thanh công cụ
 
-Thanh công cụ nổi phía trên hộp bao của văn bản và neo vào thực thể khi bạn di chuyển màn hình hoặc phóng to.
+Thanh công cụ nổi phía trên hộp bao của văn bản và neo vào thực thể khi bạn di chuyển màn hình hoặc phóng to. Các phím tắt bên dưới dùng **Ctrl** trên Windows/Linux và **Cmd** trên Mac — chú giải của mỗi nút hiển thị phím đúng cho nền tảng của bạn.
 
-### In Đậm · In Nghiêng · Gạch Ngang
+### In Đậm · In Nghiêng · Gạch Chân · Gạch Ngang
 
-| Nút | Tác dụng |
-|-----|---------|
-| **B** | Bật/tắt in đậm |
-| *I* | Bật/tắt in nghiêng |
-| ~~S~~ | Bật/tắt gạch ngang |
+| Nút | Phím tắt | Tác dụng |
+|-----|----------|---------|
+| **B** | `Ctrl+B` / `Cmd+B` | Bật/tắt in đậm |
+| *I* | `Ctrl+I` / `Cmd+I` | Bật/tắt in nghiêng |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Bật/tắt gạch chân |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Bật/tắt gạch ngang |
 
 **Cách bật/tắt áp dụng:**
 
@@ -85,7 +86,7 @@ Trường số đặt **chiều cao chữ hoa** (chiều cao của chữ hoa) th
 
 ### Căn Chỉnh
 
-Bốn nút — **Align Left**, **Align Center**, **Align Right**, **Justify** — đặt canh chỉnh đoạn văn. Chỉ khả dụng cho thực thể **Text**; nhãn Leader và kích thước không hiển thị các nút này.
+Bốn nút — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — đặt canh chỉnh đoạn văn. Chỉ khả dụng cho thực thể **Text**; nhãn Leader và kích thước không hiển thị các nút này.
 
 - Nhấp vào một nút sẽ canh chỉnh lại từng dòng trong hộp bao hiện có của thực thể — không di chuyển điểm chèn hoặc thay đổi kích thước hộp.
 - Nhấp vào nút đã hoạt động sẽ xóa ghi đè, quay lại cột được ngụ ý bởi điểm gắn của thực thể.
@@ -128,4 +129,4 @@ Nhấn `Enter` để chèn ngắt dòng cứng. Mỗi dòng cứng là độc l�
 
 ## Tương thích DXF
 
-Thực thể văn bản được lưu dưới dạng **MTEXT** trong tệp DXF. In đậm và in nghiêng được mã hóa bằng `\L`, `\K`, `\O` và các chuyển phông chữ nội tuyến (`\f`). Chiều cao theo ký tự được mã hóa là `\H`. Tất cả định dạng được bảo toàn khi xuất và đọc được bởi LibreCAD, FreeCAD và các ứng dụng tương thích DXF khác.
+Thực thể văn bản được lưu dưới dạng **MTEXT** trong tệp DXF. In đậm và in nghiêng được mã hóa bằng mã chuyển phông chữ nội tuyến (`\f`); gạch chân dùng `\L`/`\l`; gạch ngang dùng `\K`/`\k`. Định dạng này được giữ nguyên qua toàn bộ chu trình DXF và đọc được bởi LibreCAD, FreeCAD và các ứng dụng tương thích DXF khác. Ghi đè phông chữ theo ký tự được bảo toàn khi xuất — ghi đè chiều cao theo ký tự thì không; chỉ chiều cao cơ sở của thực thể được ghi lại.

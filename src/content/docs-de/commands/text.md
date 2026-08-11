@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-Der `text`-Befehl platziert eine mehrzeilige Textbeschriftung. Nachdem Sie eine Position auf der Zeichenfläche angeklickt haben, öffnet sich ein Popup-Editor im **rich** mode — Sie können Inhalt eingeben, Fett/Kursiv/Durchgestrichen zeichenweise anwenden, Schriftarten und -höhen ändern und Zeilenumbrüche einfügen. Drücken Sie **Escape**, um zu bestätigen und den Editor zu schließen.
+Der `text`-Befehl platziert eine mehrzeilige Textbeschriftung. Nachdem Sie eine Position auf der Zeichenfläche angeklickt haben, öffnet sich ein Popup-Editor im **rich** mode — Sie können Inhalt eingeben, Fett/Kursiv/Unterstrichen/Durchgestrichen zeichenweise anwenden, Schriftarten und -höhen ändern und Zeilenumbrüche einfügen. Drücken Sie **Escape**, um zu bestätigen und den Editor zu schließen.
 
 Auf der Seite [Texteditor](../../interface/text-editor/) finden Sie die vollständige Editor-Referenz, einschließlich eines Vergleichs von **rich** und **simple** mode.
 
@@ -115,4 +115,4 @@ Text hat keine Linientyp-, Linientyp-Skalierungs- oder Stärke-Eigenschaften.
 
 ## DXF — MTEXT-Entität
 
-Textbeschriftungen werden als **MTEXT**-Entitäten in der DXF-Datei gespeichert. Fett und Kursiv werden mit `\L`, `\K`, `\O` und Inline-Schriftartwechseln (`\f`) kodiert. Die zeichenweise Höhe wird als `\H` kodiert. Alle Formatierungen überleben einen vollständigen DXF-Durchlauf und sind von LibreCAD, FreeCAD und anderen DXF-kompatiblen Anwendungen lesbar.
+Textbeschriftungen werden als **MTEXT**-Entitäten in der DXF-Datei gespeichert. Fett und Kursiv werden über einen Inline-Schriftartwechsel-Code (`\f`) kodiert; Unterstrichen verwendet `\L`/`\l`; Durchgestrichen verwendet `\K`/`\k`. Diese Formatierung übersteht einen vollständigen DXF-Durchlauf und ist von LibreCAD, FreeCAD und anderen DXF-kompatiblen Anwendungen lesbar. Zeichenweise Schriftart-Überschreibungen bleiben beim Export erhalten — zeichenweise Höhen-Überschreibungen nicht; nur die Basishöhe der Beschriftung wird geschrieben.

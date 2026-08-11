@@ -18,7 +18,7 @@ Usado por: **Text** (etiquetas MTEXT) e anotações **Multileader**.
 
 | Feature | Comportamento |
 |---------|--------------|
-| Bold / Italic / Strikethrough | Por caractere (aplica à seleção, ou à entidade inteira se não houver seleção) |
+| Bold / Italic / Underline / Strikethrough | Por caractere (aplica à seleção, ou à entidade inteira se não houver seleção) |
 | Font e Height | Substituição por caractere, ou padrão da entidade |
 | Alignment (Left / Center / Right / Justify) | **Somente texto** — não disponível para Multileader |
 | `Enter` | Insere uma quebra de linha dura |
@@ -34,7 +34,7 @@ O editor é pré-preenchido com a etiqueta renderizada atual da cota para que vo
 
 | Feature | Comportamento |
 |---------|--------------|
-| Bold / Italic / Font / Height | Disponível — aplica-se à **etiqueta inteira** de uma vez |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Disponível — aplica-se à **etiqueta inteira** de uma vez |
 | Formatação por caractere | Não suportada |
 | `Enter` | **Confirma** o valor e fecha o editor (sem quebra de linha) |
 | Multi-linha | Não suportado |
@@ -52,15 +52,16 @@ O editor é pré-preenchido com a etiqueta renderizada atual da cota para que vo
 
 ## Barra de ferramentas
 
-A barra de ferramentas flutua acima da caixa delimitadora do texto e permanece ancorada à entidade enquanto você faz pan ou zoom.
+A barra de ferramentas flutua acima da caixa delimitadora do texto e permanece ancorada à entidade enquanto você faz pan ou zoom. Os atalhos de teclado abaixo usam **Ctrl** no Windows/Linux e **Cmd** no Mac — a dica de cada botão mostra a tecla correta para sua plataforma.
 
-### Negrito · Itálico · Tachado
+### Negrito · Itálico · Sublinhado · Tachado
 
-| Botão | O que faz |
-|-------|-----------|
-| **N** | Alterna negrito |
-| *I* | Alterna itálico |
-| ~~T~~ | Alterna tachado |
+| Botão | Atalho | O que faz |
+|-------|--------|-----------|
+| **B** | `Ctrl+B` / `Cmd+B` | Alterna negrito |
+| *I* | `Ctrl+I` / `Cmd+I` | Alterna itálico |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Alterna sublinhado |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Alterna tachado |
 
 **Como a alternância se aplica:**
 
@@ -92,7 +93,7 @@ O campo reflete a altura do caractere à esquerda do cursor. Deixe em branco par
 
 ### Alinhamento
 
-Quatro botões — **Align Left**, **Align Center**, **Align Right**, **Justify** — definem o alinhamento do parágrafo. Disponível apenas para entidades **Text**; os rótulos de Multileader e de cota não mostram esses botões.
+Quatro botões — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — definem o alinhamento do parágrafo. Disponível apenas para entidades **Text**; os rótulos de Multileader e de cota não mostram esses botões.
 
 - Clicar em um botão reajusta cada linha dentro da caixa delimitadora existente da entidade — não move o ponto de inserção nem redimensiona a caixa.
 - Clicar no botão já ativo remove a substituição, voltando à coluna implícita no ponto de fixação da entidade.
@@ -141,4 +142,4 @@ Quebras de linha duras e formatação por caractere são armazenadas usando o fo
 
 ## Compatibilidade DXF
 
-Entidades de texto são armazenadas como **MTEXT** em arquivos DXF. Negrito e itálico são codificados usando `\L`, `\K`, `\O` e trocas de fonte inline (`\f`). Altura por caractere é codificada como `\H`. Toda a formatação é preservada na exportação e legível pelo LibreCAD, FreeCAD e outras aplicações compatíveis com DXF.
+Entidades de texto são armazenadas como **MTEXT** em arquivos DXF. Negrito e itálico são codificados usando um código de troca de fonte inline (`\f`); sublinhado usa `\L`/`\l`; tachado usa `\K`/`\k`. Essa formatação sobrevive a um round-trip DXF completo e é legível pelo LibreCAD, FreeCAD e outras aplicações compatíveis com DXF. Substituições de fonte por caractere são preservadas na exportação — substituições de altura por caractere não são; apenas a altura base da entidade é gravada.

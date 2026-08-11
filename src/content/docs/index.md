@@ -20,6 +20,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 | [Circle](./commands/circle/) | Draw a circle by center and radius |
 | [Arc](./commands/arc/) | Draw an arc through three points |
 | [Ellipse](./commands/ellipse/) | Draw an ellipse by center and two axes |
+| [Hatch](./commands/hatch/) | Fill the region enclosing a picked point with a pattern |
 | [Text](./commands/text/) | Place a text label on the canvas |
 | [Spline CV](./commands/spline-cv/) | Draw a spline by placing control vertices |
 | [Spline Fit](./commands/spline-fit/) | Draw a spline that passes through clicked points |
@@ -98,6 +99,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Copy color, layer, and other properties from one entity to others |
 | [Font Manager](./commands/font-manager/) | Browse, select, and upload custom TTF fonts |
+| [Hatch Manager](./commands/hatch-manager/) | Browse the hatch pattern library and upload .pat files |
 
 ## File
 

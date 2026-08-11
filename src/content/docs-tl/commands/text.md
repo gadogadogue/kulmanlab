@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-Inilalagay ng `text` command ang multi-line na text label. Pagkatapos mong i-click ang posisyon sa canvas, magbubukas ang popup editor sa **rich** mode — puwede kang mag-type ng content, mag-apply ng bold/italic/strikethrough per character, magpalit ng fonts at heights, at magsingit ng line breaks. Pindutin ang **Escape** para i-commit at isara ang editor.
+Inilalagay ng `text` command ang multi-line na text label. Pagkatapos mong i-click ang posisyon sa canvas, magbubukas ang popup editor sa **rich** mode — puwede kang mag-type ng content, mag-apply ng bold/italic/underline/strikethrough per character, magpalit ng fonts at heights, at magsingit ng line breaks. Pindutin ang **Escape** para i-commit at isara ang editor.
 
 Tingnan ang pahina ng [Text Editor](../../interface/text-editor/) para sa kumpletong editor reference, kasama ang paghahambing ng **rich** at **simple** mode.
 
@@ -115,4 +115,4 @@ Walang Linetype, Linetype Scale, o Thickness properties ang Text.
 
 ## DXF — MTEXT Entity
 
-Nakaimbak ang mga text label bilang **MTEXT** entities sa DXF file. Naka-encode ang bold at italic gamit ang `\L`, `\K`, `\O`, at inline font switches (`\f`). Naka-encode ang per-character height bilang `\H`. Lahat ng formatting ay nakakaligtas sa kumpletong DXF round-trip at nababasa ng LibreCAD, FreeCAD, at iba pang DXF-compatible na application.
+Nakaimbak ang mga text label bilang **MTEXT** entities sa DXF file. Naka-encode ang bold at italic gamit ang inline font-switch code (`\f`); gumagamit ang underline ng `\L`/`\l`; gumagamit ang strikethrough ng `\K`/`\k`. Nananatili ang formatting na ito sa buong DXF round-trip at nababasa ng LibreCAD, FreeCAD, at iba pang DXF-compatible na application. Napapanatili ang per-character font override sa export — hindi napapanatili ang per-character height override; ang base height lang ng label ang naisusulat.

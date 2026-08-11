@@ -18,7 +18,7 @@ Digunakan oleh: **Text** (label MTEXT) dan anotasi **Multileader**.
 
 | Fitur | Perilaku |
 |-------|---------|
-| Bold / Italic / Strikethrough | Per karakter (berlaku untuk seleksi, atau seluruh entitas jika tidak ada seleksi) |
+| Bold / Italic / Underline / Strikethrough | Per karakter (berlaku untuk seleksi, atau seluruh entitas jika tidak ada seleksi) |
 | Font dan Height | Penggantian per karakter, atau default seluruh entitas |
 | Alignment (Left / Center / Right / Justify) | **Hanya teks** — tidak tersedia untuk Multileader |
 | `Enter` | Menyisipkan jeda baris keras |
@@ -34,7 +34,7 @@ Editor diisi terlebih dahulu dengan label yang dirender dari dimensi saat ini se
 
 | Fitur | Perilaku |
 |-------|---------|
-| Bold / Italic / Font / Height | Tersedia — berlaku untuk **seluruh label** sekaligus |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Tersedia — berlaku untuk **seluruh label** sekaligus |
 | Pemformatan per karakter | Tidak didukung |
 | `Enter` | **Mengonfirmasi** nilai dan menutup editor (tanpa jeda baris) |
 | Multi-baris | Tidak didukung |
@@ -52,15 +52,16 @@ Editor diisi terlebih dahulu dengan label yang dirender dari dimensi saat ini se
 
 ## Toolbar
 
-Toolbar mengambang di atas kotak pembatas teks dan tetap terjangkar ke entitas saat Anda pan atau zoom.
+Toolbar mengambang di atas kotak pembatas teks dan tetap terjangkar ke entitas saat Anda pan atau zoom. Pintasan keyboard di bawah menggunakan **Ctrl** di Windows/Linux dan **Cmd** di Mac — tooltip setiap tombol menunjukkan tombol yang benar untuk platform Anda.
 
-### Tebal · Miring · Coret
+### Tebal · Miring · Garis Bawah · Coret
 
 | Tombol | Pintasan | Fungsi |
 |--------|----------|--------------|
-| **B** | — | Toggle tebal |
-| *I* | — | Toggle miring |
-| ~~S~~ | — | Toggle coret |
+| **B** | `Ctrl+B` / `Cmd+B` | Toggle tebal |
+| *I* | `Ctrl+I` / `Cmd+I` | Toggle miring |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Toggle garis bawah |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Toggle coret |
 
 **Cara toggle diterapkan:**
 
@@ -92,7 +93,7 @@ Field mencerminkan tinggi karakter di sebelah kiri kursor. Biarkan kosong untuk 
 
 ### Perataan
 
-Empat tombol — **Align Left**, **Align Center**, **Align Right**, **Justify** — mengatur perataan paragraf. Tersedia hanya untuk entitas **Text**; label Multileader dan dimensi tidak menampilkan tombol ini.
+Empat tombol — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — mengatur perataan paragraf. Tersedia hanya untuk entitas **Text**; label Multileader dan dimensi tidak menampilkan tombol ini.
 
 - Mengklik tombol akan meratakan ulang setiap baris dalam kotak pembatas entitas yang ada — tidak memindahkan titik penyisipan atau mengubah ukuran kotak.
 - Mengklik tombol yang sudah aktif akan menghapus penggantian, kembali ke kolom yang tersirat oleh titik lampiran entitas.
@@ -141,4 +142,4 @@ Jeda baris keras dan pemformatan per karakter disimpan menggunakan format MTEXT 
 
 ## Kompatibilitas DXF
 
-Entitas teks disimpan sebagai **MTEXT** dalam file DXF. Tebal dan miring dikodekan sebagai `\L`, `\K`, `\O`, dan switch font inline (`\f`). Tinggi per karakter dikodekan sebagai `\H`. Semua pemformatan dipertahankan saat diekspor dan dapat dibaca oleh LibreCAD, FreeCAD, dan aplikasi lain yang kompatibel dengan DXF.
+Entitas teks disimpan sebagai **MTEXT** dalam file DXF. Tebal dan miring dikodekan melalui kode pengalihan font inline (`\f`); garis bawah menggunakan `\L`/`\l`; coret menggunakan `\K`/`\k`. Pemformatan ini bertahan melalui round-trip DXF penuh dan dapat dibaca oleh LibreCAD, FreeCAD, dan aplikasi lain yang kompatibel dengan DXF. Penggantian font per karakter dipertahankan saat diekspor — penggantian tinggi per karakter tidak; hanya tinggi dasar entitas yang ditulis.

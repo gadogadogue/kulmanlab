@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-Polecenie `text` umieszcza wieloliniową etykietę tekstową. Po kliknięciu pozycji na płótnie otwiera się okno podręczne edytora w trybie **rich** — możesz wpisywać treść, stosować pogrubienie/kursywę/przekreślenie dla poszczególnych znaków, zmieniać czcionki i wysokości oraz wstawiać podziały wierszy. Naciśnij **Escape**, aby zatwierdzić i zamknąć edytor.
+Polecenie `text` umieszcza wieloliniową etykietę tekstową. Po kliknięciu pozycji na płótnie otwiera się okno podręczne edytora w trybie **rich** — możesz wpisywać treść, stosować pogrubienie/kursywę/podkreślenie/przekreślenie dla poszczególnych znaków, zmieniać czcionki i wysokości oraz wstawiać podziały wierszy. Naciśnij **Escape**, aby zatwierdzić i zamknąć edytor.
 
 Zobacz stronę [Edytor tekstu](../../interface/text-editor/), aby uzyskać pełną dokumentację edytora, w tym porównanie trybów **rich** i **simple**.
 
@@ -115,4 +115,4 @@ Tekst nie ma właściwości Typ linii, Skala typu linii ani Grubość.
 
 ## DXF — element MTEXT
 
-Etykiety tekstowe są przechowywane jako elementy **MTEXT** w plikach DXF. Pogrubienie i kursywa są kodowane za pomocą `\L`, `\K`, `\O` i wbudowanych przełączników czcionek (`\f`). Wysokość poszczególnych znaków jest kodowana jako `\H`. Całe formatowanie przeżywa pełny cykl zapisu i odczytu DXF i jest czytelne przez LibreCAD, FreeCAD i inne aplikacje zgodne z DXF.
+Etykiety tekstowe są przechowywane jako elementy **MTEXT** w plikach DXF. Pogrubienie i kursywa są kodowane za pomocą wbudowanego kodu przełącznika czcionki (`\f`); podkreślenie używa `\L`/`\l`; przekreślenie używa `\K`/`\k`. To formatowanie przetrwa pełny cykl DXF i jest czytelne przez LibreCAD, FreeCAD i inne aplikacje zgodne z DXF. Nadpisania czcionki dla poszczególnych znaków są zachowywane przy eksporcie — nadpisania wysokości dla poszczególnych znaków nie są; zapisywana jest tylko podstawowa wysokość etykiety.

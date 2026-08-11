@@ -18,7 +18,7 @@ Ginagamit ng: **Text** (MTEXT labels) at **Multileader** annotations.
 
 | Feature | Kilos |
 |---------|-----------|
-| Bold / Italic / Strikethrough | Per-character (nalalapat sa selection, o sa buong entity kung walang selection) |
+| Bold / Italic / Underline / Strikethrough | Per-character (nalalapat sa selection, o sa buong entity kung walang selection) |
 | Font at Height | Per-character override, o whole-entity default |
 | Alignment (Left / Center / Right / Justify) | **Text lang** — hindi available para sa Multileader |
 | `Enter` | Naglalagay ng hard line break |
@@ -34,7 +34,7 @@ Naka-preload na ang editor ng rendered label ng kasalukuyang dimension para maip
 
 | Feature | Kilos |
 |---------|-----------|
-| Bold / Italic / Font / Height | Available — nalalapat sa **buong** label nang sabay |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Available — nalalapat sa **buong** label nang sabay |
 | Per-character formatting | Hindi suportado |
 | `Enter` | **Kino-commit** ang value at isinasara ang editor (walang line break) |
 | Multi-line | Hindi suportado |
@@ -52,15 +52,16 @@ Naka-preload na ang editor ng rendered label ng kasalukuyang dimension para maip
 
 ## Toolbar
 
-Lumulutang ang toolbar sa itaas ng bounding box ng text at nananatiling naka-anchor sa entity habang nagpa-pan o nagzo-zoom ka.
+Lumulutang ang toolbar sa itaas ng bounding box ng text at nananatiling naka-anchor sa entity habang nagpa-pan o nagzo-zoom ka. Gumagamit ang mga keyboard shortcut sa ibaba ng **Ctrl** sa Windows/Linux at **Cmd** sa Mac — ipinapakita ng tooltip ng bawat button ang tamang key para sa iyong platform.
 
-### Bold · Italic · Strikethrough
+### Bold · Italic · Underline · Strikethrough
 
 | Button | Shortcut | Ano ang ginagawa nito |
 |--------|----------|--------------|
-| **B** | — | I-toggle ang bold |
-| *I* | — | I-toggle ang italic |
-| ~~S~~ | — | I-toggle ang strikethrough |
+| **B** | `Ctrl+B` / `Cmd+B` | I-toggle ang bold |
+| *I* | `Ctrl+I` / `Cmd+I` | I-toggle ang italic |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | I-toggle ang underline |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | I-toggle ang strikethrough |
 
 **Paano nalalapat ang toggling:**
 
@@ -92,7 +93,7 @@ Ipinapakita ng field ang height ng character sa kaliwa ng cursor. Iwanang blangk
 
 ### Alignment
 
-Apat na button — **Align Left**, **Align Center**, **Align Right**, **Justify** — nagtatakda ng alignment ng paragraph. Available lang para sa **Text** entity; hindi ipinapakita ang mga button na ito para sa Multileader at dimension label.
+Apat na button — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — nagtatakda ng alignment ng paragraph. Available lang para sa **Text** entity; hindi ipinapakita ang mga button na ito para sa Multileader at dimension label.
 
 - Ang pag-click sa isang button ay muling nagju-justify sa bawat linya sa loob ng umiiral na bounding box ng entity — hindi nito inililipat ang insertion point o binabago ang laki ng box.
 - Ang pag-click sa button na aktibo na ay nag-aalis sa override, babalik sa column na ipinapahiwatig ng attachment point ng entity.
@@ -141,4 +142,4 @@ Naka-store ang mga hard line break at per-character formatting gamit ang MTEXT f
 
 ## DXF Compatibility
 
-Naka-store ang mga text entity bilang **MTEXT** sa DXF files. Naka-encode ang bold at italic bilang `\L`, `\K`, `\O`, at inline font switches (`\f`). Naka-encode ang per-character height bilang `\H`. Napapanatili ang lahat ng formatting sa export at nababasa ng LibreCAD, FreeCAD, at iba pang DXF-compatible na application.
+Naka-store ang mga text entity bilang **MTEXT** sa DXF files. Naka-encode ang bold at italic gamit ang inline font-switch code (`\f`); gumagamit ang underline ng `\L`/`\l`; gumagamit ang strikethrough ng `\K`/`\k`. Nananatili ang formatting na ito sa buong DXF round-trip at nababasa ng LibreCAD, FreeCAD, at iba pang DXF-compatible na application. Napapanatili ang per-character font override sa export — hindi napapanatili ang per-character height override; ang base height lang ng entity ang naisusulat.

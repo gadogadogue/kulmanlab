@@ -18,7 +18,7 @@ Verwendet von: **Text** (MTEXT-Beschriftungen) und **Multileader**-Annotationen.
 
 | Feature | Verhalten |
 |---------|-----------|
-| Bold / Italic / Strikethrough | Zeichenweise (gilt für Auswahl oder gesamte Entität wenn keine Auswahl) |
+| Bold / Italic / Underline / Strikethrough | Zeichenweise (gilt für Auswahl oder gesamte Entität wenn keine Auswahl) |
 | Font und Height | Zeichenweise Überschreibung oder Entitätsstandard |
 | Alignment (Left / Center / Right / Justify) | **Nur Text** — nicht verfügbar für Multileader |
 | `Enter` | Fügt einen harten Zeilenumbruch ein |
@@ -34,7 +34,7 @@ Der Editor ist mit der aktuellen Bemaßungsbeschriftung vorbelegt, sodass Sie de
 
 | Feature | Verhalten |
 |---------|-----------|
-| Bold / Italic / Font / Height | Verfügbar — gilt für die **gesamte** Beschriftung auf einmal |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Verfügbar — gilt für die **gesamte** Beschriftung auf einmal |
 | Zeichenweise Formatierung | Nicht unterstützt |
 | `Enter` | **Übernimmt** den Wert und schließt den Editor (kein Zeilenumbruch) |
 | Mehrzeilig | Nicht unterstützt |
@@ -52,15 +52,16 @@ Der Editor ist mit der aktuellen Bemaßungsbeschriftung vorbelegt, sodass Sie de
 
 ## Werkzeugleiste
 
-Die Werkzeugleiste schwebt über dem Begrenzungsrahmen des Textes und bleibt beim Verschieben oder Zoomen an der Entität verankert.
+Die Werkzeugleiste schwebt über dem Begrenzungsrahmen des Textes und bleibt beim Verschieben oder Zoomen an der Entität verankert. Die Tastenkombinationen unten verwenden **Strg** unter Windows/Linux und **Cmd** auf dem Mac — der Tooltip jeder Schaltfläche zeigt die richtige Taste für Ihre Plattform.
 
-### Fett · Kursiv · Durchgestrichen
+### Fett · Kursiv · Unterstrichen · Durchgestrichen
 
 | Schaltfläche | Kürzel | Funktion |
 |--------------|--------|----------|
-| **F** | — | Fett umschalten |
-| *K* | — | Kursiv umschalten |
-| ~~D~~ | — | Durchgestrichen umschalten |
+| **B** | `Strg+B` / `Cmd+B` | Fett umschalten |
+| *I* | `Strg+I` / `Cmd+I` | Kursiv umschalten |
+| <u>U</u> | `Strg+U` / `Cmd+U` | Unterstrichen umschalten |
+| ~~S~~ | `Strg+Umschalt+X` / `Cmd+Umschalt+X` | Durchgestrichen umschalten |
 
 **Wie das Umschalten angewendet wird:**
 
@@ -92,7 +93,7 @@ Das Feld zeigt die Höhe des Zeichens links vom Cursor an. Lassen Sie es leer, u
 
 ### Ausrichtung
 
-Vier Schaltflächen — **Align Left**, **Align Center**, **Align Right**, **Justify** — legen die Absatzausrichtung fest. Nur für **Text**-Entitäten verfügbar; Multileader und Bemaßungsbeschriftungen zeigen diese Schaltflächen nicht.
+Vier Schaltflächen — **Align Left** (`Strg+Umschalt+L` / `Cmd+Umschalt+L`), **Align Center** (`Strg+Umschalt+E` / `Cmd+Umschalt+E`), **Align Right** (`Strg+Umschalt+R` / `Cmd+Umschalt+R`), **Justify** (`Strg+Umschalt+J` / `Cmd+Umschalt+J`) — legen die Absatzausrichtung fest. Nur für **Text**-Entitäten verfügbar; Multileader und Bemaßungsbeschriftungen zeigen diese Schaltflächen nicht.
 
 - Ein Klick richtet jede Zeile innerhalb des vorhandenen Begrenzungsrahmens der Entität neu aus — der Einfügepunkt wird nicht verschoben und der Rahmen nicht in der Größe verändert.
 - Ein Klick auf die bereits aktive Schaltfläche hebt die Überschreibung auf und fällt zurück auf die Spalte, die durch den Attachment Point der Entität vorgegeben ist.
@@ -141,4 +142,4 @@ Harte Zeilenumbrüche und zeichenweise Formatierung werden im MTEXT-Format gespe
 
 ## DXF-Kompatibilität
 
-Text-Entitäten werden als **MTEXT** in DXF-Dateien gespeichert. Fett und Kursiv werden als `\L`, `\K`, `\O` und Inline-Schriftartwechsel (`\f`) kodiert. Die zeichenweise Höhe wird als `\H` kodiert. Alle Formatierungen werden beim Export beibehalten und sind von LibreCAD, FreeCAD und anderen DXF-kompatiblen Anwendungen lesbar.
+Text-Entitäten werden als **MTEXT** in DXF-Dateien gespeichert. Fett und Kursiv werden über einen Inline-Schriftartwechsel-Code (`\f`) kodiert; Unterstrichen verwendet `\L`/`\l`; Durchgestrichen verwendet `\K`/`\k`. Diese Formatierung übersteht einen vollständigen DXF-Durchlauf und ist von LibreCAD, FreeCAD und anderen DXF-kompatiblen Anwendungen lesbar. Zeichenweise Schriftart-Überschreibungen bleiben beim Export erhalten — zeichenweise Höhen-Überschreibungen nicht; nur die Basishöhe der Entität wird geschrieben.

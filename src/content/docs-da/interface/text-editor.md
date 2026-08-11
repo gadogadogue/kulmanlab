@@ -18,7 +18,7 @@ Bruges af: **Text** (MTEXT-etiketter) og **Multileader**-annotationer.
 
 | Funktion | Adfærd |
 |---------|-----------|
-| Fed / Kursiv / Gennemstreget | Per tegn (gælder markering, eller hele entiteten hvis ingen markering) |
+| Fed / Kursiv / Understreget / Gennemstreget | Per tegn (gælder markering, eller hele entiteten hvis ingen markering) |
 | Skrifttype og Højde | Per-tegn overstyring, eller standard for hele entiteten |
 | Justering (Venstre / Centreret / Højre / Blokjusteret) | **Kun Text** — ikke tilgængelig for Multileader |
 | `Enter` | Indsætter et hårdt linjeskift |
@@ -34,7 +34,7 @@ Editoren er forudfyldt med målets aktuelle gengivne etiket, så du kan placere 
 
 | Funktion | Adfærd |
 |---------|-----------|
-| Fed / Kursiv / Skrifttype / Højde | Tilgængelig — gælder **hele** etiketten på én gang |
+| Fed / Kursiv / Understreget / Gennemstreget / Skrifttype / Højde | Tilgængelig — gælder **hele** etiketten på én gang |
 | Per-tegn formatering | Understøttes ikke |
 | `Enter` | **Bekræfter** værdien og lukker editoren (ikke linjeskift) |
 | Flerlinje | Understøttes ikke |
@@ -52,15 +52,16 @@ Editoren er forudfyldt med målets aktuelle gengivne etiket, så du kan placere 
 
 ## Værktøjslinje
 
-Værktøjslinjen svæver over tekstens afgrænsningsboks og forbliver forankret til entiteten mens du panorerer eller zoomer.
+Værktøjslinjen svæver over tekstens afgrænsningsboks og forbliver forankret til entiteten mens du panorerer eller zoomer. Tastaturgenvejene nedenfor bruger **Ctrl** på Windows/Linux og **Cmd** på Mac — hvert knaps værktøjstip viser den korrekte tast for din platform.
 
-### Fed · Kursiv · Gennemstreget
+### Fed · Kursiv · Understreget · Gennemstreget
 
 | Knap | Genvej | Hvad den gør |
 |--------|----------|--------------|
-| **B** | — | Slå fed til/fra |
-| *I* | — | Slå kursiv til/fra |
-| ~~S~~ | — | Slå gennemstreget til/fra |
+| **B** | `Ctrl+B` / `Cmd+B` | Slå fed til/fra |
+| *I* | `Ctrl+I` / `Cmd+I` | Slå kursiv til/fra |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Slå understreget til/fra |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Slå gennemstreget til/fra |
 
 **Sådan virker det:**
 
@@ -92,7 +93,7 @@ Feltet afspejler højden på tegnet til venstre for markøren. Lad det stå tomt
 
 ### Justering
 
-Fire knapper — **Align Left**, **Align Center**, **Align Right**, **Justify** — sætter afsnitsjustering. Tilgængelig kun for **Text**-entiteter; Multileader og dimensionsetiketter viser ikke disse knapper.
+Fire knapper — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — sætter afsnitsjustering. Tilgængelig kun for **Text**-entiteter; Multileader og dimensionsetiketter viser ikke disse knapper.
 
 - At klikke en knap rejustifierer hver række inden for entitetens eksisterende afgrænsningsboks — den flytter ikke indsætningspunktet eller ændrer boksens størrelse.
 - At klikke den allerede aktive knap fjerner overstyringen og falder tilbage til den kolonne, der er impliceret af entitetens fastgørelsespunkt.
@@ -141,4 +142,4 @@ Hårde linjeskift og per-tegn formatering gemmes ved hjælp af MTEXT-formatet og
 
 ## DXF-kompatibilitet
 
-Tekstentiteter gemmes som **MTEXT** i DXF-filer. Fed og kursiv kodes som `\L`, `\K`, `\O`, og indlejrede skriftskift (`\f`). Per-tegn højde kodes som `\H`. Al formatering bevares ved eksport og kan læses af LibreCAD, FreeCAD og andre DXF-kompatible applikationer.
+Tekstentiteter gemmes som **MTEXT** i DXF-filer. Fed og kursiv kodes via en indlejret skriftskiftekode (`\f`); understreget bruger `\L`/`\l`; gennemstreget bruger `\K`/`\k`. Denne formatering overlever en fuld DXF-rundtur og kan læses af LibreCAD, FreeCAD og andre DXF-kompatible applikationer. Per-tegn skriftoverstyringer bevares ved eksport — per-tegn højdeoverstyringer gør det ikke; kun entitetens basishøjde skrives.

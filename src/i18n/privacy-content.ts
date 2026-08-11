@@ -31,7 +31,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Your drawings stay on your device',
         blocks: [
           { t: 'p', html: "Everything you draw in KulmanLab CAD is saved to your browser's local storage (IndexedDB) on your own device. Drawings are never uploaded, transmitted, or stored on any server. After the first load the app works fully offline — no server is involved in opening, editing, or saving your files." },
-          { t: 'p', html: 'Because your files exist only in your browser, you are in full control of them. You can delete individual drawings from the <a href="/docs/commands/files/">Files panel</a>, erase everything at once with the <a href="/docs/commands/wipestorage/">wipestorage</a> command, or clear the site data in your browser settings. We cannot access, restore, or delete your files for you — we never have them.' },
+          { t: 'p', html: 'Because your files exist only in your browser, you are in full control of them. You can delete individual drawings from the <a href="/docs/commands/file-manager/">File Manager panel</a>, erase everything at once with the <a href="/docs/commands/wipestorage/">wipestorage</a> command, or clear the site data in your browser settings. We cannot access, restore, or delete your files for you — we never have them.' },
         ],
       },
       {

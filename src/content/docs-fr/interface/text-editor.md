@@ -18,7 +18,7 @@ Utilisé par : **Text** (labels MTEXT) et annotations **Multileader**.
 
 | Feature | Comportement |
 |---------|-------------|
-| Bold / Italic / Strikethrough | Par caractère (appliqué à la sélection, ou toute l'entité si aucune sélection) |
+| Bold / Italic / Underline / Strikethrough | Par caractère (appliqué à la sélection, ou toute l'entité si aucune sélection) |
 | Font et Height | Substitution par caractère, ou valeur par défaut de l'entité |
 | Alignment (Left / Center / Right / Justify) | **Texte uniquement** — non disponible pour Multileader |
 | `Enter` | Insère un saut de ligne dur |
@@ -34,7 +34,7 @@ L'éditeur est prérempli avec le libellé rendu actuel de la cote pour que vous
 
 | Feature | Comportement |
 |---------|-------------|
-| Bold / Italic / Font / Height | Disponible — s'applique à l'**intégralité** du libellé à la fois |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Disponible — s'applique à l'**intégralité** du libellé à la fois |
 | Formatage par caractère | Non pris en charge |
 | `Enter` | **Valide** la valeur et ferme l'éditeur (pas de saut de ligne) |
 | Multiligne | Non pris en charge |
@@ -52,15 +52,16 @@ L'éditeur est prérempli avec le libellé rendu actuel de la cote pour que vous
 
 ## Barre d'outils
 
-La barre d'outils flotte au-dessus du cadre de délimitation du texte et reste ancrée à l'entité lors du défilement ou du zoom.
+La barre d'outils flotte au-dessus du cadre de délimitation du texte et reste ancrée à l'entité lors du défilement ou du zoom. Les raccourcis clavier ci-dessous utilisent **Ctrl** sous Windows/Linux et **Cmd** sur Mac — l'infobulle de chaque bouton affiche la touche correcte pour votre plateforme.
 
-### Gras · Italique · Barré
+### Gras · Italique · Souligné · Barré
 
 | Bouton | Raccourci | Ce qu'il fait |
 |--------|-----------|---------------|
-| **G** | — | Activer/désactiver le gras |
-| *I* | — | Activer/désactiver l'italique |
-| ~~S~~ | — | Activer/désactiver le barré |
+| **B** | `Ctrl+B` / `Cmd+B` | Activer/désactiver le gras |
+| *I* | `Ctrl+I` / `Cmd+I` | Activer/désactiver l'italique |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Activer/désactiver le souligné |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Activer/désactiver le barré |
 
 **Comment la bascule s'applique :**
 
@@ -92,7 +93,7 @@ Le champ reflète la hauteur du caractère à gauche du curseur. Laissez-le vide
 
 ### Alignement
 
-Quatre boutons — **Align Left**, **Align Center**, **Align Right**, **Justify** — définissent l'alignement du paragraphe. Disponible uniquement pour les entités **Text** ; les étiquettes Multileader et de cote n'affichent pas ces boutons.
+Quatre boutons — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — définissent l'alignement du paragraphe. Disponible uniquement pour les entités **Text** ; les étiquettes Multileader et de cote n'affichent pas ces boutons.
 
 - Cliquer sur un bouton rejustifie chaque ligne dans le cadre de délimitation existant de l'entité — cela ne déplace pas le point d'insertion et ne redimensionne pas le cadre.
 - Cliquer sur le bouton déjà actif supprime la substitution, revenant à la colonne impliquée par le point d'attache de l'entité.
@@ -141,4 +142,4 @@ Les sauts de ligne durs et le formatage par caractère sont stockés en utilisan
 
 ## Compatibilité DXF
 
-Les entités de texte sont stockées comme **MTEXT** dans les fichiers DXF. Le gras et l'italique sont encodés comme `\L`, `\K`, `\O` et des commutateurs de police en ligne (`\f`). La hauteur par caractère est encodée comme `\H`. Tout le formatage est préservé à l'export et lisible par LibreCAD, FreeCAD et autres applications compatibles DXF.
+Les entités de texte sont stockées comme **MTEXT** dans les fichiers DXF. Le gras et l'italique sont encodés via un code de commutation de police en ligne (`\f`) ; le souligné utilise `\L`/`\l` ; le barré utilise `\K`/`\k`. Ce formatage survit à un cycle DXF complet et est lisible par LibreCAD, FreeCAD et autres applications compatibles DXF. Les substitutions de police par caractère sont préservées à l'export — les substitutions de hauteur par caractère ne le sont pas ; seule la hauteur de base de l'entité est écrite.

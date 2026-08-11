@@ -18,7 +18,7 @@ Usado por: **Text** (etiquetas MTEXT) y anotaciones **Multileader**.
 
 | Feature | Comportamiento |
 |---------|---------------|
-| Bold / Italic / Strikethrough | Por carácter (aplica a la selección, o a toda la entidad si no hay selección) |
+| Bold / Italic / Underline / Strikethrough | Por carácter (aplica a la selección, o a toda la entidad si no hay selección) |
 | Font y Height | Anulación por carácter, o valor predeterminado de toda la entidad |
 | Alignment (Left / Center / Right / Justify) | **Solo texto** — no disponible para Multileader |
 | `Enter` | Inserta un salto de línea duro |
@@ -34,7 +34,7 @@ El editor se precarga con la etiqueta renderizada actual de la cota para que pue
 
 | Feature | Comportamiento |
 |---------|---------------|
-| Bold / Italic / Font / Height | Disponible — se aplica a la **etiqueta completa** a la vez |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Disponible — se aplica a la **etiqueta completa** a la vez |
 | Formato por carácter | No compatible |
 | `Enter` | **Confirma** el valor y cierra el editor (sin salto de línea) |
 | Multilínea | No compatible |
@@ -52,15 +52,16 @@ El editor se precarga con la etiqueta renderizada actual de la cota para que pue
 
 ## Barra de herramientas
 
-La barra de herramientas flota sobre el cuadro delimitador del texto y permanece anclada a la entidad al desplazarse o hacer zoom.
+La barra de herramientas flota sobre el cuadro delimitador del texto y permanece anclada a la entidad al desplazarse o hacer zoom. Los atajos de teclado siguientes usan **Ctrl** en Windows/Linux y **Cmd** en Mac — el tooltip de cada botón muestra la tecla correcta para tu plataforma.
 
-### Negrita · Cursiva · Tachado
+### Negrita · Cursiva · Subrayado · Tachado
 
 | Botón | Atajo | Qué hace |
 |-------|-------|----------|
-| **B** | — | Alternar negrita |
-| *I* | — | Alternar cursiva |
-| ~~S~~ | — | Alternar tachado |
+| **B** | `Ctrl+B` / `Cmd+B` | Alternar negrita |
+| *I* | `Ctrl+I` / `Cmd+I` | Alternar cursiva |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Alternar subrayado |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Alternar tachado |
 
 **Cómo se aplica la alternancia:**
 
@@ -92,7 +93,7 @@ El campo refleja la altura del carácter a la izquierda del cursor. Déjalo en b
 
 ### Alineación
 
-Cuatro botones — **Align Left**, **Align Center**, **Align Right**, **Justify** — establecen la alineación del párrafo. Disponible solo para entidades **Text**; las etiquetas de Multileader y de cota no muestran estos botones.
+Cuatro botones — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — establecen la alineación del párrafo. Disponible solo para entidades **Text**; las etiquetas de Multileader y de cota no muestran estos botones.
 
 - Al hacer clic en un botón se vuelve a justificar cada línea dentro del cuadro delimitador existente de la entidad — no mueve el punto de inserción ni cambia el tamaño del cuadro.
 - Al hacer clic en el botón ya activo se elimina la anulación, volviendo a la columna implícita en el punto de anclaje de la entidad.
@@ -141,4 +142,4 @@ Los saltos de línea duros y el formato por carácter se almacenan usando el for
 
 ## Compatibilidad con DXF
 
-Las entidades de texto se almacenan como **MTEXT** en los archivos DXF. La negrita y la cursiva se codifican como `\L`, `\K`, `\O` y conmutadores de fuente en línea (`\f`). La altura por carácter se codifica como `\H`. Todo el formato se conserva al exportar y es legible por LibreCAD, FreeCAD y otras aplicaciones compatibles con DXF.
+Las entidades de texto se almacenan como **MTEXT** en los archivos DXF. La negrita y la cursiva se codifican mediante un código de conmutador de fuente en línea (`\f`); el subrayado usa `\L`/`\l`; el tachado usa `\K`/`\k`. Este formato sobrevive a un ciclo completo de DXF y es legible por LibreCAD, FreeCAD y otras aplicaciones compatibles con DXF. Las anulaciones de fuente por carácter se conservan al exportar — las anulaciones de altura por carácter no; solo se escribe la altura base de la entidad.

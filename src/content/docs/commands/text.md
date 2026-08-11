@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-The `text` command places a multi-line text label. After you click a position on the canvas, a popup editor opens in **rich** mode — you can type content, apply bold/italic/strikethrough per character, change fonts and heights, and insert line breaks. Press **Escape** to commit and close the editor.
+The `text` command places a multi-line text label. After you click a position on the canvas, a popup editor opens in **rich** mode — you can type content, apply bold/italic/underline/strikethrough per character, change fonts and heights, and insert line breaks. Press **Escape** to commit and close the editor.
 
 See the [Text Editor](../../interface/text-editor/) page for the full editor reference, including a comparison of **rich** and **simple** modes.
 
@@ -115,4 +115,4 @@ Text does not have Linetype, Linetype Scale, or Thickness properties.
 
 ## DXF — MTEXT entity
 
-Text labels are stored as **MTEXT** entities in the DXF file. Bold and italic are encoded using `\L`, `\K`, `\O`, and inline font switches (`\f`). Per-character height is encoded as `\H`. All formatting survives a full DXF round-trip and is readable by LibreCAD, FreeCAD, and other DXF-compatible applications.
+Text labels are stored as **MTEXT** entities in the DXF file. Bold and italic are encoded using an inline font-switch code (`\f`); underline uses `\L`/`\l`; strikethrough uses `\K`/`\k`. This formatting round-trips through DXF and is readable by LibreCAD, FreeCAD, and other DXF-compatible applications. Per-character height overrides are not preserved on export — only the label's base height is.

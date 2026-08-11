@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-Het `text`-commando plaatst een meerregelig tekstlabel. Nadat u een positie op het canvas heeft aangeklikt, opent een pop-up editor in **rijke** modus — u kunt inhoud typen, per teken vet/cursief/doorhalen toepassen, lettertypen en hoogtes wijzigen, en regelafbrekingen invoegen. Druk op **Escape** om te bevestigen en de editor te sluiten.
+Het `text`-commando plaatst een meerregelig tekstlabel. Nadat u een positie op het canvas heeft aangeklikt, opent een pop-up editor in **rijke** modus — u kunt inhoud typen, per teken vet/cursief/onderstrepen/doorhalen toepassen, lettertypen en hoogtes wijzigen, en regelafbrekingen invoegen. Druk op **Escape** om te bevestigen en de editor te sluiten.
 
 Zie de [Text Editor](../../interface/text-editor/)-pagina voor de volledige editorreferentie, inclusief een vergelijking van de modi **rijk** en **eenvoudig**.
 
@@ -115,4 +115,4 @@ Text heeft geen eigenschappen Linetype, Linetype Scale of Thickness.
 
 ## DXF — MTEXT-entiteit
 
-Tekstlabels worden opgeslagen als **MTEXT**-entiteiten in het DXF-bestand. Vet en cursief worden gecodeerd met `\L`, `\K`, `\O`, en inline-lettertypewisselingen (`\f`). Hoogte per teken wordt gecodeerd als `\H`. Alle opmaak blijft behouden bij een volledige DXF-export en -import en is leesbaar door LibreCAD, FreeCAD en andere DXF-compatibele toepassingen.
+Tekstlabels worden opgeslagen als **MTEXT**-entiteiten in het DXF-bestand. Vet en cursief worden gecodeerd via een inline lettertypewisselcode (`\f`); onderstrepen gebruikt `\L`/`\l`; doorhalen gebruikt `\K`/`\k`. Deze opmaak overleeft een volledige DXF-rondgang en is leesbaar door LibreCAD, FreeCAD en andere DXF-compatibele toepassingen. Overschrijvingen van lettertype per teken blijven behouden bij export — overschrijvingen van hoogte per teken niet; alleen de basishoogte van het label wordt geschreven.

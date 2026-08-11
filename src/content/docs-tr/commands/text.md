@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-`text` komutu, çok satırlı metin etiketi yerleştirir. Tuvalde bir konum tıkladıktan sonra **rich** modda bir açılır düzenleyici açılır — içerik yazabilir, karakter başına kalın/italik/üstü çizili uygulayabilir, yazı tiplerini ve yükseklikleri değiştirebilir ve satır sonları ekleyebilirsiniz. Düzenleyiciyi kaydetmek ve kapatmak için **Escape** tuşuna basın.
+`text` komutu, çok satırlı metin etiketi yerleştirir. Tuvalde bir konum tıkladıktan sonra **rich** modda bir açılır düzenleyici açılır — içerik yazabilir, karakter başına kalın/italik/altı çizili/üstü çizili uygulayabilir, yazı tiplerini ve yükseklikleri değiştirebilir ve satır sonları ekleyebilirsiniz. Düzenleyiciyi kaydetmek ve kapatmak için **Escape** tuşuna basın.
 
 **rich** ve **simple** modların karşılaştırması dahil tam düzenleyici referansı için [Metin Düzenleyici](../../interface/text-editor/) sayfasına bakın.
 
@@ -115,4 +115,4 @@ Metnin Çizgi Türü, Çizgi Türü Ölçeği veya Kalınlık özellikleri yoktu
 
 ## DXF — MTEXT nesnesi
 
-Metin etiketleri DXF dosyasında **MTEXT** nesneleri olarak saklanır. Kalın ve italik, `\L`, `\K`, `\O` ve satır içi yazı tipi anahtarları (`\f`) kullanılarak kodlanır. Karakter başına yükseklik `\H` olarak kodlanır. Tüm biçimlendirme tam DXF round-trip'ten geçer ve LibreCAD, FreeCAD ve diğer DXF uyumlu uygulamalar tarafından okunabilir.
+Metin etiketleri DXF dosyasında **MTEXT** nesneleri olarak saklanır. Kalın ve italik, satır içi yazı tipi anahtarlama kodu (`\f`) ile kodlanır; altı çizili `\L`/`\l` kullanır; üstü çizili `\K`/`\k` kullanır. Bu biçimlendirme tam bir DXF gidiş-dönüşünden sağlam çıkar ve LibreCAD, FreeCAD ve diğer DXF uyumlu uygulamalar tarafından okunabilir. Karakter başına yazı tipi geçersiz kılmaları dışa aktarmada korunur — karakter başına yükseklik geçersiz kılmaları korunmaz; yalnızca etiketin temel yüksekliği yazılır.

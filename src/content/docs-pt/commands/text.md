@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-O comando `text` coloca uma etiqueta de texto multi-linha. Após clicar em uma posição no canvas, um editor popup abre em **rich** mode — você pode digitar conteúdo, aplicar negrito/itálico/tachado por caractere, alterar fontes e alturas, e inserir quebras de linha. Pressione **Escape** para confirmar e fechar o editor.
+O comando `text` coloca uma etiqueta de texto multi-linha. Após clicar em uma posição no canvas, um editor popup abre em **rich** mode — você pode digitar conteúdo, aplicar negrito/itálico/sublinhado/tachado por caractere, alterar fontes e alturas, e inserir quebras de linha. Pressione **Escape** para confirmar e fechar o editor.
 
 Veja a página [Editor de Texto](../../interface/text-editor/) para a referência completa do editor, incluindo uma comparação dos modos **rich** e **simple**.
 
@@ -87,4 +87,4 @@ Texto não suporta **Offset**, **Trim** ou **Extend**.
 
 ## DXF — entidade MTEXT
 
-Etiquetas de texto são armazenadas como entidades **MTEXT** no arquivo DXF. Negrito e itálico são codificados usando `\L`, `\K`, `\O` e trocas de fonte inline (`\f`). Altura por caractere é codificada como `\H`. Toda a formatação sobrevive a um round-trip DXF completo e é legível pelo LibreCAD, FreeCAD e outras aplicações compatíveis com DXF.
+Etiquetas de texto são armazenadas como entidades **MTEXT** no arquivo DXF. Negrito e itálico são codificados usando um código de troca de fonte inline (`\f`); sublinhado usa `\L`/`\l`; tachado usa `\K`/`\k`. Essa formatação sobrevive a um round-trip DXF completo e é legível pelo LibreCAD, FreeCAD e outras aplicações compatíveis com DXF. Substituições de fonte por caractere são preservadas na exportação — substituições de altura por caractere não são; apenas a altura base da etiqueta é gravada.

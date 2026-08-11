@@ -18,7 +18,7 @@ Används av: **Text** (MTEXT-etiketter) och **Multileader**-annotationer.
 
 | Funktion | Beteende |
 |---------|-----------|
-| Fet / Kursiv / Genomstruken | Per tecken (tillämpas på markering, eller hela entiteten om ingen markering finns) |
+| Fet / Kursiv / Understruken / Genomstruken | Per tecken (tillämpas på markering, eller hela entiteten om ingen markering finns) |
 | Typsnitt och Höjd | Åsidosättning per tecken, eller standard för hela entiteten |
 | Alignment (Left / Center / Right / Justify) | **Endast text** — inte tillgänglig för Multileader |
 | `Enter` | Infogar en hård radbrytning |
@@ -34,7 +34,7 @@ Editorn fylls i förväg med den aktuella måttsättningens renderade etikett s�
 
 | Funktion | Beteende |
 |---------|-----------|
-| Fet / Kursiv / Typsnitt / Höjd | Tillgängligt — tillämpas på **hela** etiketten samtidigt |
+| Fet / Kursiv / Understruken / Genomstruken / Typsnitt / Höjd | Tillgängligt — tillämpas på **hela** etiketten samtidigt |
 | Formatering per tecken | Stöds inte |
 | `Enter` | **Bekräftar** värdet och stänger editorn (ingen radbrytning) |
 | Flera rader | Stöds inte |
@@ -52,15 +52,16 @@ Editorn fylls i förväg med den aktuella måttsättningens renderade etikett s�
 
 ## Verktygsfält
 
-Verktygsfältet svävar ovanför textens avgränsningsruta och förblir förankrat vid entiteten när du panorerar eller zoomar.
+Verktygsfältet svävar ovanför textens avgränsningsruta och förblir förankrat vid entiteten när du panorerar eller zoomar. Kortkommandona nedan använder **Ctrl** i Windows/Linux och **Cmd** på Mac — varje knapps tooltip visar rätt tangent för din plattform.
 
-### Fet · Kursiv · Genomstruken
+### Fet · Kursiv · Understruken · Genomstruken
 
 | Knapp | Genväg | Vad den gör |
 |--------|----------|--------------|
-| **B** | — | Växla fet stil |
-| *I* | — | Växla kursiv stil |
-| ~~S~~ | — | Växla genomstruken stil |
+| **B** | `Ctrl+B` / `Cmd+B` | Växla fet stil |
+| *I* | `Ctrl+I` / `Cmd+I` | Växla kursiv stil |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Växla understruken stil |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Växla genomstruken stil |
 
 **Hur växling tillämpas:**
 
@@ -92,7 +93,7 @@ Fältet återspeglar höjden på tecknet till vänster om markören. Lämna det 
 
 ### Justering
 
-Fyra knappar — **Align Left**, **Align Center**, **Align Right**, **Justify** — ställer in styckejustering. Tillgängligt endast för **Text**-entiteter; Multileader och måttsättningsetiketter visar inte dessa knappar.
+Fyra knappar — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — ställer in styckejustering. Tillgängligt endast för **Text**-entiteter; Multileader och måttsättningsetiketter visar inte dessa knappar.
 
 - Att klicka på en knapp justerar om varje rad inom entitetens befintliga avgränsningsruta — det flyttar inte infogningspunkten eller ändrar rutans storlek.
 - Att klicka på den redan aktiva knappen rensar åsidosättningen och återgår till den kolumn som antyds av entitetens förankringspunkt.
@@ -141,4 +142,4 @@ Hårda radbrytningar och formatering per tecken lagras med MTEXT-formatet och ö
 
 ## DXF-kompatibilitet
 
-Textentiteter lagras som **MTEXT** i DXF-filer. Fet och kursiv stil kodas som `\L`, `\K`, `\O` och infogade typsnittsväxlingar (`\f`). Höjd per tecken kodas som `\H`. All formatering bevaras vid export och är läsbar av LibreCAD, FreeCAD och andra DXF-kompatibla applikationer.
+Textentiteter lagras som **MTEXT** i DXF-filer. Fet och kursiv stil kodas via en infogad typsnittsväxlingskod (`\f`); understruken använder `\L`/`\l`; genomstruken använder `\K`/`\k`. Denna formatering överlever en fullständig DXF-rundtur och är läsbar av LibreCAD, FreeCAD och andra DXF-kompatibla applikationer. Åsidosättningar av typsnitt per tecken bevaras vid export — åsidosättningar av höjd per tecken gör det inte; endast entitetens grundhöjd skrivs.

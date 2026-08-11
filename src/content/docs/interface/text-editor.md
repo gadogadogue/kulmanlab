@@ -1,7 +1,7 @@
 ---
 title: Text Editor — Rich and Simple Modes in KulmanLab CAD
-description: The KulmanLab CAD text editor has two modes — rich (per-character formatting, multi-line, word-wrap for Text and Multileader) and simple (uniform style, single-line for dimension entities). A mode chip in the header shows which mode is active.
-keywords: [CAD text editor, MTEXT, bold italic CAD, text formatting CAD, multi-line text CAD, word wrap CAD, rich text editor, simple text editor, dimension text editor, custom font CAD, upload ttf CAD, kulmanlab]
+description: The KulmanLab CAD text editor has two modes — rich (per-character formatting, multi-line, word-wrap for Text and Multileader) and simple (uniform style, single-line for dimension entities). Keyboard shortcuts cover bold, italic, underline, strikethrough, and alignment.
+keywords: [CAD text editor, MTEXT, bold italic underline CAD, text editor keyboard shortcuts, text formatting CAD, multi-line text CAD, word wrap CAD, rich text editor, simple text editor, dimension text editor, custom font CAD, upload ttf CAD, kulmanlab]
 group: interface
 order: 5
 ---
@@ -18,7 +18,7 @@ Used by: **Text** (MTEXT labels) and **Multileader** annotations.
 
 | Feature | Behaviour |
 |---------|-----------|
-| Bold / Italic / Strikethrough | Per-character (apply to selection, or whole entity if no selection) |
+| Bold / Italic / Underline / Strikethrough | Per-character (apply to selection, or whole entity if no selection) |
 | Font and Height | Per-character override, or whole-entity default |
 | Alignment (Left / Center / Right / Justify) | **Text only** — not available for Multileader |
 | `Enter` | Inserts a hard line break |
@@ -34,7 +34,7 @@ The editor is pre-seeded with the current dimension's rendered label so you can 
 
 | Feature | Behaviour |
 |---------|-----------|
-| Bold / Italic / Font / Height | Available — applies to the **entire** label at once |
+| Bold / Italic / Underline / Strikethrough / Font / Height | Available — applies to the **entire** label at once |
 | Per-character formatting | Not supported |
 | `Enter` | **Commits** the value and closes the editor (no line break) |
 | Multi-line | Not supported |
@@ -52,15 +52,16 @@ The editor is pre-seeded with the current dimension's rendered label so you can 
 
 ## Toolbar
 
-The toolbar floats above the text's bounding box and stays anchored to the entity as you pan or zoom.
+The toolbar floats above the text's bounding box and stays anchored to the entity as you pan or zoom. Keyboard shortcuts below use **Ctrl** on Windows/Linux and **Cmd** on Mac — each button's tooltip shows the correct key for your platform.
 
-### Bold · Italic · Strikethrough
+### Bold · Italic · Underline · Strikethrough
 
 | Button | Shortcut | What it does |
 |--------|----------|--------------|
-| **B** | — | Toggle bold |
-| *I* | — | Toggle italic |
-| ~~S~~ | — | Toggle strikethrough |
+| **B** | `Ctrl+B` / `Cmd+B` | Toggle bold |
+| *I* | `Ctrl+I` / `Cmd+I` | Toggle italic |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Toggle underline |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Toggle strikethrough |
 
 **How toggling applies:**
 
@@ -92,7 +93,7 @@ The field reflects the height of the character left of the cursor. Leave it blan
 
 ### Alignment
 
-Four buttons — **Align Left**, **Align Center**, **Align Right**, **Justify** — set paragraph alignment. Available for **Text** entities only; Multileader and dimension labels don't show these buttons.
+Four buttons — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — set paragraph alignment. Available for **Text** entities only; Multileader and dimension labels don't show these buttons.
 
 - Clicking a button re-justifies every row within the entity's existing bounding box — it doesn't move the insertion point or resize the box.
 - Clicking the already-active button clears the override, falling back to the column implied by the entity's attachment point.
@@ -141,4 +142,4 @@ Hard line breaks and per-character formatting are stored using the MTEXT format 
 
 ## DXF compatibility
 
-Text entities are stored as **MTEXT** in DXF files. Bold and italic are encoded as `\L`, `\K`, `\O`, and inline font switches (`\f`). Per-character height is encoded as `\H`. All formatting is preserved on export and readable by LibreCAD, FreeCAD, and other DXF-compatible applications.
+Text entities are stored as **MTEXT** in DXF files. Bold and italic are encoded using an inline font-switch code (`\f`); underline uses `\L`/`\l`; strikethrough uses `\K`/`\k`. This formatting round-trips through DXF and is readable by LibreCAD, FreeCAD, and other DXF-compatible applications. Per-character font overrides are preserved on export — per-character height overrides are not; only the entity's base height is written.

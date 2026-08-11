@@ -18,7 +18,7 @@ Gebruikt door: **Text** (MTEXT-labels) en **Multileader**-annotaties.
 
 | Functie | Gedrag |
 |---------|-----------|
-| Vet / Cursief / Doorhalen | Per teken (toegepast op selectie, of hele entiteit als er geen selectie is) |
+| Vet / Cursief / Onderstrepen / Doorhalen | Per teken (toegepast op selectie, of hele entiteit als er geen selectie is) |
 | Lettertype en hoogte | Overschrijving per teken, of standaardwaarde voor de hele entiteit |
 | Alignment (Left / Center / Right / Justify) | **Alleen tekst** — niet beschikbaar voor Multileader |
 | `Enter` | Voegt een harde regelafbreking in |
@@ -34,7 +34,7 @@ De editor wordt vooraf gevuld met het weergegeven label van de huidige maatvoeri
 
 | Functie | Gedrag |
 |---------|-----------|
-| Vet / Cursief / Lettertype / Hoogte | Beschikbaar — geldt voor het **gehele** label tegelijk |
+| Vet / Cursief / Onderstrepen / Doorhalen / Lettertype / Hoogte | Beschikbaar — geldt voor het **gehele** label tegelijk |
 | Opmaak per teken | Niet ondersteund |
 | `Enter` | **Bevestigt** de waarde en sluit de editor (geen regelafbreking) |
 | Meerdere regels | Niet ondersteund |
@@ -52,15 +52,16 @@ De editor wordt vooraf gevuld met het weergegeven label van de huidige maatvoeri
 
 ## Werkbalk
 
-De werkbalk zweeft boven het begrenzingsvak van de tekst en blijft verankerd aan de entiteit terwijl u pant of zoomt.
+De werkbalk zweeft boven het begrenzingsvak van de tekst en blijft verankerd aan de entiteit terwijl u pant of zoomt. Onderstaande sneltoetsen gebruiken **Ctrl** op Windows/Linux en **Cmd** op Mac — de tooltip van elke knop toont de juiste toets voor uw platform.
 
-### Vet · Cursief · Doorhalen
+### Vet · Cursief · Onderstrepen · Doorhalen
 
 | Knop | Sneltoets | Functie |
 |--------|----------|--------------|
-| **V** | — | Vet in-/uitschakelen |
-| *C* | — | Cursief in-/uitschakelen |
-| ~~D~~ | — | Doorhalen in-/uitschakelen |
+| **B** | `Ctrl+B` / `Cmd+B` | Vet in-/uitschakelen |
+| *I* | `Ctrl+I` / `Cmd+I` | Cursief in-/uitschakelen |
+| <u>U</u> | `Ctrl+U` / `Cmd+U` | Onderstrepen in-/uitschakelen |
+| ~~S~~ | `Ctrl+Shift+X` / `Cmd+Shift+X` | Doorhalen in-/uitschakelen |
 
 **Hoe het schakelen wordt toegepast:**
 
@@ -92,7 +93,7 @@ Het veld toont de hoogte van het teken links van de cursor. Laat het leeg om de 
 
 ### Uitlijning
 
-Vier knoppen — **Align Left**, **Align Center**, **Align Right**, **Justify** — stellen de alineauitlijning in. Alleen beschikbaar voor **Text**-entiteiten; Multileader- en maatvoeringslabels tonen deze knoppen niet.
+Vier knoppen — **Align Left** (`Ctrl+Shift+L` / `Cmd+Shift+L`), **Align Center** (`Ctrl+Shift+E` / `Cmd+Shift+E`), **Align Right** (`Ctrl+Shift+R` / `Cmd+Shift+R`), **Justify** (`Ctrl+Shift+J` / `Cmd+Shift+J`) — stellen de alineauitlijning in. Alleen beschikbaar voor **Text**-entiteiten; Multileader- en maatvoeringslabels tonen deze knoppen niet.
 
 - Door op een knop te klikken wordt elke regel opnieuw uitgelijnd binnen het bestaande begrenzingsvak van de entiteit — het verplaatst het invoegpunt niet en verandert het vak niet van grootte.
 - Door op de al actieve knop te klikken wordt de overschrijving gewist, terug naar de kolom die wordt geïmpliceerd door het aanhechtingspunt van de entiteit.
@@ -141,4 +142,4 @@ Harde regelafbrekingen en opmaak per teken worden opgeslagen met behulp van het 
 
 ## DXF-compatibiliteit
 
-Tekstentiteiten worden opgeslagen als **MTEXT** in DXF-bestanden. Vet en cursief worden gecodeerd als `\L`, `\K`, `\O` en inline lettertypewissels (`\f`). De hoogte per teken wordt gecodeerd als `\H`. Alle opmaak blijft behouden bij export en is leesbaar door LibreCAD, FreeCAD en andere DXF-compatibele toepassingen.
+Tekstentiteiten worden opgeslagen als **MTEXT** in DXF-bestanden. Vet en cursief worden gecodeerd via een inline lettertypewisselcode (`\f`); onderstrepen gebruikt `\L`/`\l`; doorhalen gebruikt `\K`/`\k`. Deze opmaak overleeft een volledige DXF-rondgang en is leesbaar door LibreCAD, FreeCAD en andere DXF-compatibele toepassingen. Overschrijvingen van lettertype per teken blijven behouden bij export — overschrijvingen van hoogte per teken niet; alleen de basishoogte van de entiteit wordt geschreven.

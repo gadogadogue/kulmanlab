@@ -8,7 +8,7 @@ order: 0
 
 # Text
 
-Arahan `text` meletakkan label teks berbilang baris. Selepas anda mengklik kedudukan pada kanvas, editor popup terbuka dalam mod **kaya** — anda boleh menaip kandungan, menggunakan tebal/italik/strikethrough setiap aksara, menukar fon dan ketinggian, dan memasukkan pemecahan baris. Tekan **Escape** untuk komit dan tutup editor.
+Arahan `text` meletakkan label teks berbilang baris. Selepas anda mengklik kedudukan pada kanvas, editor popup terbuka dalam mod **kaya** — anda boleh menaip kandungan, menggunakan tebal/italik/garis bawah/strikethrough setiap aksara, menukar fon dan ketinggian, dan memasukkan pemecahan baris. Tekan **Escape** untuk komit dan tutup editor.
 
 Lihat halaman [Text Editor](../../interface/text-editor/) untuk rujukan editor penuh, termasuk perbandingan mod **kaya** dan **mudah**.
 
@@ -115,4 +115,4 @@ Teks tidak mempunyai sifat Linetype, Linetype Scale, atau Thickness.
 
 ## DXF — entiti MTEXT
 
-Label teks disimpan sebagai entiti **MTEXT** dalam fail DXF. Tebal dan italik dikodkan menggunakan `\L`, `\K`, `\O`, dan suis fon inline (`\f`). Ketinggian setiap aksara dikodkan sebagai `\H`. Semua pemformatan bertahan dalam pusingan penuh DXF dan boleh dibaca oleh LibreCAD, FreeCAD, dan aplikasi serasi DXF lain.
+Label teks disimpan sebagai entiti **MTEXT** dalam fail DXF. Tebal dan italik dikodkan melalui kod suis fon inline (`\f`); garis bawah menggunakan `\L`/`\l`; strikethrough menggunakan `\K`/`\k`. Pemformatan ini bertahan sepanjang pusingan DXF penuh dan boleh dibaca oleh LibreCAD, FreeCAD, dan aplikasi serasi DXF lain. Pengatasan fon setiap aksara dipelihara semasa eksport — pengatasan ketinggian setiap aksara tidak; hanya ketinggian asas label ditulis.
