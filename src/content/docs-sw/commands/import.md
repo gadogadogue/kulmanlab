@@ -40,6 +40,7 @@ KulmanLab huchambua aina zifuatazo za viumbe vya DXF:
 | Maandishi | `TEXT`, `MTEXT` | |
 | Kipimo | `DIMENSION` | |
 | Kiongozi wa kuzidisha | `MULTILEADER` | |
+| Hatch | `HATCH` | Jina, kipimo, na pembe ya muundo husomwa; jina lisilo kwenye maktaba yako ya muundo hurudi kwa ANSI31. Angalia [Hatch](../hatch/) |
 
 Ufafanuzi wa safu na jedwali la aina za mstari pia huingizwa kutoka kwa faili ya DXF inapokuwepo.
 

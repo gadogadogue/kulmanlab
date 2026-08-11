@@ -20,6 +20,7 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 | [Circle](./commands/circle/) | Piirrä ympyrä keskipisteen ja säteen avulla |
 | [Arc](./commands/arc/) | Piirrä kaari kolmen pisteen kautta |
 | [Ellipse](./commands/ellipse/) | Piirrä ellipsi keskipisteen ja kahden akselin avulla |
+| [Hatch](./commands/hatch/) | Täytä napsautetun pisteen ympäröivä alue kuviolla |
 | [Text](./commands/text/) | Sijoita tekstimerkintä piirtoalueelle |
 | [Spline CV](./commands/spline-cv/) | Piirrä spline sijoittamalla ohjauspisteitä |
 | [Spline Fit](./commands/spline-fit/) | Piirrä spline joka kulkee napsautettujen pisteiden kautta |
@@ -98,6 +99,7 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopioi väri, taso ja muut ominaisuudet entiteetistä toisiin |
 | [Font Manager](./commands/font-manager/) | Selaa, valitse ja lataa omia TTF-fontteja |
+| [Hatch Manager](./commands/hatch-manager/) | Selaa hatch-kuviokirjastoa ja lataa .pat-tiedostoja |
 
 ## Tiedosto
 

@@ -20,6 +20,7 @@ Velkommen til **KulmanLab CAD**s kommandoreference. [KulmanLab CAD](https://kulm
 | [Circle](./commands/circle/) | Tegn en cirkel med centrum og radius |
 | [Arc](./commands/arc/) | Tegn en bue gennem tre punkter |
 | [Ellipse](./commands/ellipse/) | Tegn en ellipse med centrum og to akser |
+| [Hatch](./commands/hatch/) | Udfyld området omkring et klikket punkt med et mønster |
 | [Text](./commands/text/) | Placér en tekstetiket på lærredet |
 | [Spline CV](./commands/spline-cv/) | Tegn en spline ved at placere kontrolpunkter |
 | [Spline Fit](./commands/spline-fit/) | Tegn en spline der går gennem klikkede punkter |
@@ -98,6 +99,7 @@ Velkommen til **KulmanLab CAD**s kommandoreference. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopiér farve, lag og andre egenskaber fra én entitet til andre |
 | [Font Manager](./commands/font-manager/) | Gennemse, vælg og upload egne TTF-skrifttyper |
+| [Hatch Manager](./commands/hatch-manager/) | Gennemse hatch-mønsterbiblioteket, og upload .pat-filer |
 
 ## Fil
 

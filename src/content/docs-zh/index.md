@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | 通过圆心和半径绘制圆 |
 | [Arc](./commands/arc/) | 通过三点绘制圆弧 |
 | [Ellipse](./commands/ellipse/) | 通过圆心和两轴绘制椭圆 |
+| [Hatch](./commands/hatch/) | 用图案填充包围点击点的区域 |
 | [Text](./commands/text/) | 在画布上放置文字标签 |
 | [Spline CV](./commands/spline-cv/) | 通过放置控制顶点绘制样条线 |
 | [Spline Fit](./commands/spline-fit/) | 绘制穿过所有单击点的样条线 |
@@ -98,6 +99,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | 将颜色、图层及其他特性从一个图元复制到其他图元 |
 | [Font Manager](./commands/font-manager/) | 浏览、选择字体，并上传自定义 TTF 字体 |
+| [Hatch Manager](./commands/hatch-manager/) | 浏览 hatch 图案库并上传 .pat 文件 |
 
 ## 文件
 

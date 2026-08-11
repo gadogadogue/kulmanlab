@@ -40,6 +40,7 @@ KulmanLab analizuje następujące typy elementów DXF:
 | Tekst | `TEXT`, `MTEXT` | |
 | Wymiar | `DIMENSION` | |
 | Linia wielokierunkowa | `MULTILEADER` | |
+| Hatch | `HATCH` | Odczytywane są nazwa, skala i kąt wzoru; nazwa, której nie ma w Twojej bibliotece wzorów, powraca do ANSI31. Zobacz [Hatch](../hatch/) |
 
 Definicje warstw i tabele typów linii są również importowane z pliku DXF, gdy są obecne.
 

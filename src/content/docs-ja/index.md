@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | 中心と半径で円を描く |
 | [Arc](./commands/arc/) | 3 点を通る円弧を描く |
 | [Ellipse](./commands/ellipse/) | 中心と 2 軸で楕円を描く |
+| [Hatch](./commands/hatch/) | クリックした点を囲む領域をパターンで塗りつぶす |
 | [Text](./commands/text/) | キャンバスにテキストラベルを配置する |
 | [Spline CV](./commands/spline-cv/) | コントロール頂点を配置してスプラインを描く |
 | [Spline Fit](./commands/spline-fit/) | クリック点を通過するスプラインを描く |
@@ -98,6 +99,7 @@ order: 1
 |---------|------|
 | [Match Properties](./commands/match-properties/) | 色・レイヤーなどのプロパティをエンティティ間でコピーする |
 | [Font Manager](./commands/font-manager/) | フォントを閲覧・選択し、カスタム TTF フォントをアップロードする |
+| [Hatch Manager](./commands/hatch-manager/) | hatch パターンライブラリを閲覧し、.pat ファイルをアップロードする |
 
 ## ファイル
 

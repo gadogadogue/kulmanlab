@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | Merkez ve yarıçapa göre daire çizer |
 | [Arc](./commands/arc/) | Üç nokta üzerinden yay çizer |
 | [Ellipse](./commands/ellipse/) | Merkez ve iki eksen üzerinden elips çizer |
+| [Hatch](./commands/hatch/) | Tıklanan bir noktayı çevreleyen bölgeyi bir desenle doldurur |
 | [Text](./commands/text/) | Tuvale metin etiketi yerleştirir |
 | [Spline CV](./commands/spline-cv/) | Kontrol noktaları yerleştirerek spline çizer |
 | [Spline Fit](./commands/spline-fit/) | Tıklanan noktalardan geçen spline çizer |
@@ -98,6 +99,7 @@ order: 1
 |-------|----------|
 | [Match Properties](./commands/match-properties/) | Renk, katman ve diğer özellikleri bir nesneden diğerlerine kopyalar |
 | [Font Manager](./commands/font-manager/) | Yazı tiplerine göz atın, seçin ve özel TTF dosyaları yükleyin |
+| [Hatch Manager](./commands/hatch-manager/) | Hatch desen kitaplığına göz atın ve .pat dosyaları yükleyin |
 
 ## Dosya
 

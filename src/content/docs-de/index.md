@@ -20,6 +20,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 | [Circle](./commands/circle/) | Kreis durch Mittelpunkt und Radius zeichnen |
 | [Arc](./commands/arc/) | Bogen durch drei Punkte zeichnen |
 | [Ellipse](./commands/ellipse/) | Ellipse durch Mittelpunkt und zwei Achsen zeichnen |
+| [Hatch](./commands/hatch/) | Den Bereich um einen angeklickten Punkt mit einem Muster füllen |
 | [Text](./commands/text/) | Textbeschriftung auf der Zeichenfläche platzieren |
 | [Spline CV](./commands/spline-cv/) | Spline durch Platzieren von Kontrollpunkten zeichnen |
 | [Spline Fit](./commands/spline-fit/) | Spline zeichnen, der durch geklickte Punkte verläuft |
@@ -98,6 +99,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 |--------|----------|
 | [Match Properties](./commands/match-properties/) | Farbe, Ebene und andere Eigenschaften von einem Element auf andere übertragen |
 | [Font Manager](./commands/font-manager/) | Schriftarten durchsuchen, auswählen und eigene TTF-Dateien hochladen |
+| [Hatch Manager](./commands/hatch-manager/) | Die Hatch-Musterbibliothek durchsuchen und .pat-Dateien hochladen |
 
 ## Datei
 

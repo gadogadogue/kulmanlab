@@ -37,7 +37,8 @@ Alle Elementtypen sind enthalten:
 - Lines, Circles, Arcs, Ellipses, Polylines, Splines, Text
 - Bemaßungen (linear, ausgerichtet, fortgesetzt, Radius, Durchmesser)
 - Mehrfach-Hinweislinien
-- Ebenendefinitionen und Linientypentabellen
+- Hatches, einschließlich Muster, Skalierung, Winkel und Ursprung
+- Ebenendefinitionen, Linientypentabellen und Hatch-Mustertabellen
 
 ### DXF-Export
 
@@ -46,7 +47,7 @@ Nur Geometrieelemente sind enthalten:
 - Lines, Circles, Arcs, Ellipses, Polylines (als `LWPOLYLINE` exportiert), Splines, Text
 - Ebenendefinitionen und Linientypentabellen
 
-**Nicht im DXF enthalten:** Bemaßungselemente und Mehrfach-Hinweislinien. Diese verwenden KulmanLab-spezifische Datenstrukturen, die im Standard-DXF nicht zuverlässig dargestellt werden können. Wenn Ihre Zeichnung Annotationen enthält, verwenden Sie JSON oder [Print](../print/), um diese visuell zu erfassen.
+**Nicht im DXF enthalten:** Bemaßungselemente, Mehrfach-Hinweislinien und Hatches. Bemaßungen und Mehrfach-Hinweislinien verwenden KulmanLab-spezifische Datenstrukturen, die im Standard-DXF nicht zuverlässig dargestellt werden können; Hatches werden derzeit überhaupt nicht nach DXF exportiert, obwohl sie daraus importiert werden. Wenn Ihre Zeichnung eines davon enthält, verwenden Sie JSON oder [Print](../print/), um es zu erfassen.
 
 ## Name der exportierten Datei
 

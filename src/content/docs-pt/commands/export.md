@@ -37,7 +37,8 @@ Todos os tipos de entidade são incluídos:
 - Linhas, círculos, arcos, elipses, polilinhas, splines, texto
 - Cotas (linear, alinhada, contínua, raio, diâmetro)
 - Multileaders
-- Definições de camada e tabelas de tipo de linha
+- Hatches, incluindo seu padrão, escala, ângulo e origem
+- Definições de camada, tabelas de tipo de linha e tabelas de padrão de hatch
 
 ### Exportação DXF
 
@@ -46,7 +47,7 @@ Apenas entidades geométricas são incluídas:
 - Linhas, círculos, arcos, elipses, polilinhas (exportadas como `LWPOLYLINE`), splines, texto
 - Definições de camada e tabelas de tipo de linha
 
-**Não incluídos no DXF:** entidades de cota e multileaders. Eles usam estruturas de dados específicas do KulmanLab que não podem ser representadas fielmente no DXF padrão. Se o seu desenho tem anotações, use JSON ou [Print](../print/) para capturá-las visualmente.
+**Não incluídos no DXF:** entidades de cota, multileaders e hatches. Cotas e multileaders usam estruturas de dados específicas do KulmanLab que não podem ser representadas fielmente no DXF padrão; hatches ainda não são exportados de forma alguma para DXF, embora sejam importados dele. Se o seu desenho tiver algum destes, use JSON ou [Print](../print/) para capturá-los.
 
 ## Nome do arquivo exportado
 

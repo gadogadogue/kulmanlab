@@ -37,7 +37,8 @@ Tous les types d'entités sont inclus :
 - Lignes, cercles, arcs, ellipses, polylignes, splines, texte
 - Cotes (linéaire, alignée, continue, rayon, diamètre)
 - Multirépères
-- Définitions de calques et tables de types de ligne
+- Hachures, y compris leur motif, échelle, angle et origine
+- Définitions de calques, tables de types de ligne et tables de motifs de hachures
 
 ### Export DXF
 
@@ -46,7 +47,7 @@ Seules les entités géométriques sont incluses :
 - Lignes, cercles, arcs, ellipses, polylignes (exportées comme `LWPOLYLINE`), splines, texte
 - Définitions de calques et tables de types de ligne
 
-**Non inclus dans DXF :** entités de cotes et multirépères. Ceux-ci utilisent des structures de données spécifiques à KulmanLab qui ne peuvent pas être représentées fidèlement en DXF standard. Si votre dessin comporte des annotations, utilisez JSON ou [Print](../print/) pour les capturer visuellement.
+**Non inclus dans DXF :** entités de cotes, multirépères et hachures. Les cotes et multirépères utilisent des structures de données spécifiques à KulmanLab qui ne peuvent pas être représentées fidèlement en DXF standard ; les hachures ne s'exportent pas du tout encore en DXF, bien qu'elles s'importent depuis celui-ci. Si votre dessin comporte l'un de ces éléments, utilisez JSON ou [Print](../print/) pour les capturer.
 
 ## Nom du fichier exporté
 

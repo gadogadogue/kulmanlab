@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | Σχεδιάζει κύκλο με κέντρο και ακτίνα |
 | [Arc](./commands/arc/) | Σχεδιάζει τόξο μέσα από τρία σημεία |
 | [Ellipse](./commands/ellipse/) | Σχεδιάζει έλλειψη με κέντρο και δύο άξονες |
+| [Hatch](./commands/hatch/) | Γεμίζει την περιοχή γύρω από ένα επιλεγμένο σημείο με ένα μοτίβο |
 | [Text](./commands/text/) | Τοποθετεί ετικέτα κειμένου στον καμβά |
 | [Spline CV](./commands/spline-cv/) | Σχεδιάζει spline τοποθετώντας κορυφές ελέγχου |
 | [Spline Fit](./commands/spline-fit/) | Σχεδιάζει spline που διέρχεται από κλικαρισμένα σημεία |
@@ -98,6 +99,7 @@ order: 1
 |--------|----------|
 | [Match Properties](./commands/match-properties/) | Αντιγράφει χρώμα, επίπεδο και άλλες ιδιότητες από ένα αντικείμενο σε άλλα |
 | [Font Manager](./commands/font-manager/) | Περιηγηθείτε, επιλέξτε και μεταφορτώστε προσαρμοσμένες γραμματοσειρές TTF |
+| [Hatch Manager](./commands/hatch-manager/) | Περιηγηθείτε στη βιβλιοθήκη μοτίβων hatch και ανεβάστε αρχεία .pat |
 
 ## Αρχείο
 

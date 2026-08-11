@@ -20,6 +20,7 @@ Välkommen till **KulmanLab CAD**-kommandoreferensen. [KulmanLab CAD](https://ku
 | [Circle](./commands/circle/) | Rita en cirkel med centrum och radie |
 | [Arc](./commands/arc/) | Rita en cirkelbåge genom tre punkter |
 | [Ellipse](./commands/ellipse/) | Rita en ellips med centrum och två axlar |
+| [Hatch](./commands/hatch/) | Fyll området runt en klickad punkt med ett mönster |
 | [Text](./commands/text/) | Placera en textetikett på ritytan |
 | [Spline CV](./commands/spline-cv/) | Rita en spline genom att placera kontrollpunkter |
 | [Spline Fit](./commands/spline-fit/) | Rita en spline som går genom klickade punkter |
@@ -98,6 +99,7 @@ Välkommen till **KulmanLab CAD**-kommandoreferensen. [KulmanLab CAD](https://ku
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopiera färg, lager och andra egenskaper från en entitet till andra |
 | [Font Manager](./commands/font-manager/) | Bläddra bland, välj och ladda upp anpassade TTF-typsnitt |
+| [Hatch Manager](./commands/hatch-manager/) | Bläddra i hatch-mönsterbiblioteket och ladda upp .pat-filer |
 
 ## Fil
 

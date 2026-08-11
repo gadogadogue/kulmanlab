@@ -12,8 +12,7 @@ The `HatchManager` command opens a dialog for browsing hatch patterns with a liv
 
 ## Opening the Hatch Manager
 
-- Type `HatchManager` in the terminal, **or**
-- Click the pattern chip in the [Shapes panel](../../shapes/) and choose **Manage patterns** — the same dialog opens from either place.
+Type `HatchManager` in the terminal. This is separate from the pattern picker that opens when you click a hatch's **Pattern** chip — the picker chooses a pattern for one hatch, the Hatch Manager is where you add or remove `.pat` files.
 
 ## Pattern groups
 

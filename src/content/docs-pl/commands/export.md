@@ -37,7 +37,8 @@ Uwzględniane są wszystkie typy elementów:
 - Linie, okręgi, łuki, elipsy, polilinie, splajny, tekst
 - Wymiary (liniowe, wyrównane, kontynuowane, promienia, średnicy)
 - Linie wielokierunkowe
-- Definicje warstw i tabele typów linii
+- Elementy hatch, wraz z ich wzorem, skalą, kątem i punktem początkowym
+- Definicje warstw, tabele typów linii i tabele wzorów hatch
 
 ### Eksport DXF
 
@@ -46,7 +47,7 @@ Uwzględniane są tylko elementy geometryczne:
 - Linie, okręgi, łuki, elipsy, polilinie (eksportowane jako `LWPOLYLINE`), splajny, tekst
 - Definicje warstw i tabele typów linii
 
-**Nie uwzględnione w DXF:** elementy wymiarowe i linie wielokierunkowe. Używają one specyficznych dla KulmanLab struktur danych, których nie można wiernie odwzorować w standardowym DXF. Jeśli rysunek zawiera adnotacje, użyj JSON lub [Print](../print/), aby uchwycić je wizualnie.
+**Nie uwzględnione w DXF:** elementy wymiarowe, linie wielokierunkowe i elementy hatch. Wymiary i linie wielokierunkowe używają specyficznych dla KulmanLab struktur danych, których nie można wiernie odwzorować w standardowym DXF; elementy hatch nie są jeszcze w ogóle eksportowane do DXF, mimo że są z niego importowane. Jeśli rysunek zawiera którykolwiek z nich, użyj JSON lub [Print](../print/), aby je uchwycić.
 
 ## Nazwa eksportowanego pliku
 

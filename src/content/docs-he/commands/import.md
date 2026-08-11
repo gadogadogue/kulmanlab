@@ -40,6 +40,7 @@ KulmanLab מפענח את סוגי ישויות ה-DXF הבאים:
 | Text | `TEXT`, `MTEXT` | |
 | Dimension | `DIMENSION` | |
 | Multileader | `MULTILEADER` | |
+| Hatch | `HATCH` | נקראים שם, קנה מידה וזווית הדוגמה; שם שאינו בספריית הדוגמאות שלכם חוזר ל-ANSI31. ראו [Hatch](../hatch/) |
 
 הגדרות שכבות וטבלאות סוגי קו מיובאות גם הן מקובץ ה-DXF כאשר הן קיימות.
 

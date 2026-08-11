@@ -37,7 +37,8 @@ Kasama ang lahat ng entity types:
 - Lines, circles, arcs, ellipses, polylines, splines, text
 - Dimensions (linear, aligned, continued, radius, diameter)
 - Multileaders
-- Layer definitions at linetype tables
+- Hatch, kasama ang pattern, scale, angle, at origin nito
+- Layer definitions, linetype tables, at hatch pattern tables
 
 ### DXF export
 
@@ -46,7 +47,7 @@ Kasama lang ang geometry-only entities:
 - Lines, circles, arcs, ellipses, polylines (na-export bilang `LWPOLYLINE`), splines, text
 - Layer definitions at linetype tables
 
-**Hindi kasama sa DXF:** ang dimension entities at multileaders. Gumagamit ang mga ito ng KulmanLab-specific na data structures na hindi puwedeng katawanin nang tapat sa standard na DXF. Kung may mga annotation ang iyong drawing, gamitin ang JSON o [Print](../print/) para makuha ang mga ito nang visual.
+**Hindi kasama sa DXF:** ang dimension entities, multileaders, at hatch. Gumagamit ang dimensions at multileaders ng KulmanLab-specific na data structures na hindi puwedeng katawanin nang tapat sa standard na DXF; hindi pa na-e-export ang hatch sa DXF, kahit pa na-i-import ito mula rito. Kung mayroon nito ang iyong drawing, gamitin ang JSON o [Print](../print/) para makuha ang mga ito.
 
 ## Pangalan ng na-export na file
 

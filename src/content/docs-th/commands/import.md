@@ -40,6 +40,7 @@ KulmanLab แยกวิเคราะห์ประเภทวัตถุ 
 | Text | `TEXT`, `MTEXT` | |
 | Dimension | `DIMENSION` | |
 | Multileader | `MULTILEADER` | |
+| Hatch | `HATCH` | อ่านชื่อ สเกล และมุมของลวดลาย; ชื่อที่ไม่มีอยู่ในไลบรารีลวดลายของคุณจะย้อนกลับไปเป็น ANSI31 ดู [Hatch](../hatch/) |
 
 คำจำกัดความเลเยอร์และตาราง linetype ยังถูกนำเข้าจากไฟล์ DXF เมื่อมี
 

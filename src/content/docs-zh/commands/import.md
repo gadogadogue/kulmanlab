@@ -40,6 +40,7 @@ KulmanLab 解析以下 DXF 图元类型：
 | 文字 | `TEXT`、`MTEXT` | |
 | 标注 | `DIMENSION` | |
 | 多重引线 | `MULTILEADER` | |
+| Hatch | `HATCH` | 会读取图案的名称、比例和角度；图案库中不存在的名称会回退为 ANSI31。参阅 [Hatch](../hatch/) |
 
 DXF 文件中存在的图层定义和线型表也会被导入。
 

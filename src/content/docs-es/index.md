@@ -20,6 +20,7 @@ Bienvenido a la referencia de comandos de **KulmanLab CAD**. [KulmanLab CAD](htt
 | [Circle](./commands/circle/) | Dibuja un círculo por centro y radio |
 | [Arc](./commands/arc/) | Dibuja un arco a través de tres puntos |
 | [Ellipse](./commands/ellipse/) | Dibuja una elipse por centro y dos ejes |
+| [Hatch](./commands/hatch/) | Rellena la región que rodea a un punto pulsado con un patrón |
 | [Text](./commands/text/) | Coloca una etiqueta de texto en el lienzo |
 | [Spline CV](./commands/spline-cv/) | Dibuja una spline colocando vértices de control |
 | [Spline Fit](./commands/spline-fit/) | Dibuja una spline que pasa por los puntos donde se hace clic |
@@ -98,6 +99,7 @@ Bienvenido a la referencia de comandos de **KulmanLab CAD**. [KulmanLab CAD](htt
 |---------|----------|
 | [Match Properties](./commands/match-properties/) | Copia el color, la capa y otras propiedades de una entidad a otras |
 | [Font Manager](./commands/font-manager/) | Explora, selecciona y sube fuentes TTF personalizadas |
+| [Hatch Manager](./commands/hatch-manager/) | Explora la biblioteca de patrones de hatch y sube archivos .pat |
 
 ## Archivo
 

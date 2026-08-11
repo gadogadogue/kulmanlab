@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | مرکز اور نصف قطر سے ایک دائرہ کھینچیں |
 | [Arc](./commands/arc/) | تین نقاط سے گزرتا ہوا ایک قوس کھینچیں |
 | [Ellipse](./commands/ellipse/) | مرکز اور دو محوروں سے ایک بیضوی کھینچیں |
+| [Hatch](./commands/hatch/) | کلک کیے گئے پوائنٹ کو گھیرنے والے علاقے کو پیٹرن سے بھریں |
 | [Text](./commands/text/) | کینوس پر ایک متن لیبل رکھیں |
 | [Spline CV](./commands/spline-cv/) | کنٹرول ورٹیسز رکھ کر ایک اسپلائن کھینچیں |
 | [Spline Fit](./commands/spline-fit/) | کلک کیے گئے نقاط سے گزرتا ہوا ایک اسپلائن کھینچیں |
@@ -98,6 +99,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | ایک شے سے دوسروں تک رنگ، پرت، اور دیگر خصوصیات نقل کریں |
 | [Font Manager](./commands/font-manager/) | فونٹس براؤز کریں، منتخب کریں، اور کسٹم TTF فونٹس اپ لوڈ کریں |
+| [Hatch Manager](./commands/hatch-manager/) | hatch پیٹرن لائبریری براؤز کریں اور .pat فائلیں اپ لوڈ کریں |
 
 ## فائل
 

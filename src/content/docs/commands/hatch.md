@@ -57,12 +57,14 @@ The command stays active after a failed pick — read the message, fix the drawi
 
 ## Choosing a pattern
 
-New hatches use whichever pattern was picked last — set it either before or after filling:
+Every new hatch starts out filled with `ANSI31` (or whichever pattern the *last* hatch you edited used) — there's no pattern picker before you draw. To use a different pattern:
 
-- **Before filling:** click the pattern chip in the [Shapes panel](../../shapes/) to open the pattern picker, choose a pattern, then run `hatch`.
-- **After filling:** select an existing hatch, open its **Pattern** field in the properties panel, and pick a different one — the fill updates immediately.
+1. Select an existing hatch and open its **Pattern** field in the properties panel — this opens the pattern picker, a grid of named swatches grouped by where each pattern came from.
+2. Click a pattern to apply it — the fill updates immediately.
 
-The picker groups patterns by where they came from and shows a live swatch for each. See [Hatch Manager](../hatch-manager/) for uploading your own `.pat` pattern files and browsing the full library.
+That selection also becomes the default for the *next* hatch you create with the `hatch` command, the same way picking a layer or color carries forward. So to hatch several new areas with a particular pattern: fill one area, set its pattern once, then keep hatching — every fill after that starts with that pattern already applied.
+
+See [Hatch Manager](../hatch-manager/) for uploading your own `.pat` pattern files and browsing the full library.
 
 **SOLID** is a plain entry in the pattern list, not a separate checkbox or mode — pick it the same way you'd pick ANSI31 or any named pattern.
 
@@ -92,9 +94,11 @@ A drag preview shows the boundary as a dashed outline rather than a solid fill w
 
 ## DXF — HATCH entity
 
-Hatches import from and export to `HATCH` entities. On import, KulmanLab reads the boundary geometry along with the pattern name, scale, and angle (DXF group codes 70/41/52) — it does **not** read the pattern's own line definitions that AutoCAD writes inline into the file. Instead, the pattern name is looked up in KulmanLab's own pattern library (built-in defaults plus anything you've uploaded in [Hatch Manager](../hatch-manager/)). A name that isn't in your library falls back to ANSI31 so the drawing still reads as hatched, and a note is logged once.
+Hatches **import** from `HATCH` entities: KulmanLab reads the boundary geometry along with the pattern name, scale, and angle (DXF group codes 70/41/52) — it does **not** read the pattern's own line definitions that AutoCAD writes inline into the file. Instead, the pattern name is looked up in KulmanLab's own pattern library (built-in defaults plus anything you've uploaded in [Hatch Manager](../hatch-manager/)). A name that isn't in your library falls back to ANSI31 so the drawing still reads as hatched, and a note is logged once.
 
 Spline-bounded loops written by other applications (DXF boundary edge type 4) are not yet read.
+
+Hatches do not currently **export** to DXF — use [Export](../export/)'s `.json` format to keep a hatch when saving a drawing that includes one; the `.dxf` format leaves it out.
 
 ## Related commands
 

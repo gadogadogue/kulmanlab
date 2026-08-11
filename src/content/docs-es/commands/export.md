@@ -37,7 +37,8 @@ Se incluyen todos los tipos de entidades:
 - Líneas, círculos, arcos, elipses, polilíneas, splines, texto
 - Cotas (lineal, alineada, continua, radio, diámetro)
 - Multidirectores
-- Definiciones de capas y tablas de tipos de línea
+- Hatches, incluyendo su patrón, escala, ángulo y origen
+- Definiciones de capas, tablas de tipos de línea y tablas de patrones de hatch
 
 ### Exportación DXF
 
@@ -46,7 +47,7 @@ Se incluyen entidades de solo geometría:
 - Líneas, círculos, arcos, elipses, polilíneas (exportadas como `LWPOLYLINE`), splines, texto
 - Definiciones de capas y tablas de tipos de línea
 
-**No incluido en DXF:** entidades de cota y multidirectores. Estas usan estructuras de datos específicas de KulmanLab que no pueden representarse fielmente en DXF estándar. Si tu dibujo tiene anotaciones, usa JSON o [Print](../print/) para capturarlas visualmente.
+**No incluido en DXF:** entidades de cota, multidirectores y hatches. Las cotas y los multidirectores usan estructuras de datos específicas de KulmanLab que no pueden representarse fielmente en DXF estándar; los hatches no se exportan a DXF todavía en absoluto, aunque sí se importan desde él. Si tu dibujo tiene alguno de estos, usa JSON o [Print](../print/) para capturarlos.
 
 ## Nombre del archivo exportado
 

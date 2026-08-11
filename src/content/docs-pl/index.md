@@ -20,6 +20,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Circle](./commands/circle/) | Rysuje okrąg przez środek i promień |
 | [Arc](./commands/arc/) | Rysuje łuk przez trzy punkty |
 | [Ellipse](./commands/ellipse/) | Rysuje elipsę przez środek i dwie osie |
+| [Hatch](./commands/hatch/) | Wypełnia obszar otaczający kliknięty punkt wzorem |
 | [Text](./commands/text/) | Umieszcza etykietę tekstową na płótnie |
 | [Spline CV](./commands/spline-cv/) | Rysuje splajn przez umieszczanie wierzchołków kontrolnych |
 | [Spline Fit](./commands/spline-fit/) | Rysuje splajn przechodzący przez klikane punkty |
@@ -98,6 +99,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 |-----------|---------|
 | [Match Properties](./commands/match-properties/) | Kopiuje kolor, warstwę i inne właściwości z jednego elementu na inne |
 | [Font Manager](./commands/font-manager/) | Przeglądaj, wybieraj i przesyłaj własne czcionki TTF |
+| [Hatch Manager](./commands/hatch-manager/) | Przeglądaj bibliotekę wzorów hatch i przesyłaj pliki .pat |
 
 ## Plik
 

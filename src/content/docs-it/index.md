@@ -20,6 +20,7 @@ Benvenuto nel riferimento comandi di **KulmanLab CAD**. [KulmanLab CAD](https://
 | [Circle](./commands/circle/) | Traccia un cerchio per centro e raggio |
 | [Arc](./commands/arc/) | Traccia un arco attraverso tre punti |
 | [Ellipse](./commands/ellipse/) | Traccia un'ellisse per centro e due assi |
+| [Hatch](./commands/hatch/) | Riempie la regione che circonda un punto cliccato con un motivo |
 | [Text](./commands/text/) | Posiziona un'etichetta di testo sulla lavagna |
 | [Spline CV](./commands/spline-cv/) | Traccia una spline posizionando vertici di controllo |
 | [Spline Fit](./commands/spline-fit/) | Traccia una spline che passa per i punti cliccati |
@@ -98,6 +99,7 @@ Benvenuto nel riferimento comandi di **KulmanLab CAD**. [KulmanLab CAD](https://
 |---------|---------|
 | [Match Properties](./commands/match-properties/) | Copia il colore, il livello e altre proprietà da un'entità ad altre |
 | [Font Manager](./commands/font-manager/) | Sfoglia, seleziona e carica font TTF personalizzati |
+| [Hatch Manager](./commands/hatch-manager/) | Sfoglia la libreria di motivi hatch e carica file .pat |
 
 ## File
 

@@ -37,7 +37,8 @@ Alle entitetstyper inkluderes:
 - Linjer, cirkler, buer, ellipser, polylinjer, splines, tekst
 - Mål (lineær, justeret, kædet, radius, diameter)
 - Multileaders
-- Lagdefinitioner og linetype-tabeller
+- Hatches, inklusive deres mønster, skalering, vinkel og origo
+- Lagdefinitioner, linetype-tabeller og hatch-mønstertabeller
 
 ### DXF-eksport
 
@@ -46,7 +47,7 @@ Kun geometri-entiteter inkluderes:
 - Linjer, cirkler, buer, ellipser, polylinjer (eksporteret som `LWPOLYLINE`), splines, tekst
 - Lagdefinitioner og linetype-tabeller
 
-**Ikke inkluderet i DXF:** dimension-entiteter og multileaders. Disse bruger KulmanLab-specifikke datastrukturer, der ikke kan repræsenteres troværdigt i standard-DXF. Hvis din tegning har annotationer, brug JSON eller [Print](../print/) til at fange dem visuelt.
+**Ikke inkluderet i DXF:** dimension-entiteter, multileaders og hatches. Mål og multileaders bruger KulmanLab-specifikke datastrukturer, der ikke kan repræsenteres troværdigt i standard-DXF; hatches eksporteres slet ikke til DXF endnu, selvom de importeres fra det. Hvis din tegning har nogen af disse, brug JSON eller [Print](../print/) til at fange dem.
 
 ## Navn på eksporteret fil
 

@@ -20,6 +20,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 | [Circle](./commands/circle/) | Menggambar lingkaran berdasarkan pusat dan radius |
 | [Arc](./commands/arc/) | Menggambar busur melalui tiga titik |
 | [Ellipse](./commands/ellipse/) | Menggambar elips berdasarkan pusat dan dua sumbu |
+| [Hatch](./commands/hatch/) | Mengisi wilayah yang mengelilingi titik yang diklik dengan pola |
 | [Text](./commands/text/) | Menempatkan label teks pada kanvas |
 | [Spline CV](./commands/spline-cv/) | Menggambar spline dengan menempatkan control vertex |
 | [Spline Fit](./commands/spline-fit/) | Menggambar spline yang melewati titik-titik yang diklik |
@@ -98,6 +99,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Menyalin warna, layer, dan properti lain dari satu entitas ke entitas lainnya |
 | [Font Manager](./commands/font-manager/) | Jelajahi, pilih, dan unggah font TTF khusus |
+| [Hatch Manager](./commands/hatch-manager/) | Jelajahi pustaka pola hatch dan unggah file .pat |
 
 ## File
 

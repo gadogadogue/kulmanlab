@@ -37,7 +37,8 @@ Tüm nesne türleri dahildir:
 - Çizgiler, daireler, yaylar, elipsler, çoklu çizgiler, spline'lar, metinler
 - Ölçüler (doğrusal, hizalı, zincirleme, yarıçap, çap)
 - Çoklu göstergeler
-- Katman tanımları ve çizgi türü tabloları
+- Hatch'ler, deseni, ölçeği, açısı ve başlangıç noktasıyla birlikte
+- Katman tanımları, çizgi türü tabloları ve hatch desen tabloları
 
 ### DXF dışa aktarımı
 
@@ -46,7 +47,7 @@ Yalnızca geometri nesneleri dahildir:
 - Çizgiler, daireler, yaylar, elipsler, çoklu çizgiler (`LWPOLYLINE` olarak dışa aktarılır), spline'lar, metinler
 - Katman tanımları ve çizgi türü tabloları
 
-**DXF'e dahil edilmeyenler:** ölçü nesneleri ve çoklu göstergeler. Bunlar, standart DXF'de sadakatle temsil edilemeyen KulmanLab'a özgü veri yapıları kullanır. Çiziminizde ek açıklamalar varsa, bunları görsel olarak yakalamak için JSON veya [Print](../print/) kullanın.
+**DXF'e dahil edilmeyenler:** ölçü nesneleri, çoklu göstergeler ve hatch'ler. Ölçüler ve çoklu göstergeler, standart DXF'de sadakatle temsil edilemeyen KulmanLab'a özgü veri yapıları kullanır; hatch'ler DXF'den içe aktarılmasına rağmen henüz DXF'ye hiç dışa aktarılmıyor. Çiziminizde bunlardan biri varsa, onları yakalamak için JSON veya [Print](../print/) kullanın.
 
 ## Dışa Aktarılan Dosya Adı
 

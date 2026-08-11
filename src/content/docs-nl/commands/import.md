@@ -40,6 +40,7 @@ KulmanLab verwerkt de volgende DXF-entiteitstypen:
 | Text | `TEXT`, `MTEXT` | |
 | Dimension | `DIMENSION` | |
 | Multileader | `MULTILEADER` | |
+| Hatch | `HATCH` | Naam, schaal en hoek van het patroon worden gelezen; een naam die niet in uw patroonbibliotheek staat, valt terug op ANSI31. Zie [Hatch](../hatch/) |
 
 Laagdefinities en lijntypetabellen worden ook geïmporteerd uit het DXF-bestand, indien aanwezig.
 

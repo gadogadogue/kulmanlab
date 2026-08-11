@@ -37,7 +37,8 @@ Tutti i tipi di entità sono inclusi:
 - Linee, cerchi, archi, ellissi, polilinee, spline, testo
 - Quote (lineare, allineata, continua, raggio, diametro)
 - Multilinee guida
-- Definizioni layer e tabelle tipo linea
+- Hatch, incluso motivo, scala, angolo e origine
+- Definizioni layer, tabelle tipo linea e tabelle dei motivi hatch
 
 ### Esportazione DXF
 
@@ -46,7 +47,7 @@ Sono incluse solo le entità geometriche:
 - Linee, cerchi, archi, ellissi, polilinee (esportate come `LWPOLYLINE`), spline, testo
 - Definizioni layer e tabelle tipo linea
 
-**Non inclusi nel DXF:** entità quota e multilinee guida. Queste usano strutture dati specifiche di KulmanLab che non possono essere rappresentate fedelmente in DXF standard. Se il tuo disegno ha annotazioni, usa JSON o [Print](../print/) per catturarle visivamente.
+**Non inclusi nel DXF:** entità quota, multilinee guida e hatch. Le quote e le multilinee guida usano strutture dati specifiche di KulmanLab che non possono essere rappresentate fedelmente in DXF standard; gli hatch non vengono ancora esportati affatto in DXF, sebbene vengano importati da esso. Se il tuo disegno ha uno di questi, usa JSON o [Print](../print/) per catturarli.
 
 ## Nome del file esportato
 

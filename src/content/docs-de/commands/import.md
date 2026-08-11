@@ -40,6 +40,7 @@ KulmanLab analysiert die folgenden DXF-Entitätstypen:
 | Text | `TEXT`, `MTEXT` | |
 | Bemaßung | `DIMENSION` | |
 | Mehrfachführungslinie | `MULTILEADER` | |
+| Hatch | `HATCH` | Mustername, Skalierung und Winkel werden gelesen; ein Name, der nicht in Ihrer Musterbibliothek ist, fällt auf ANSI31 zurück. Siehe [Hatch](../hatch/) |
 
 Layerdefinitionen und Linientyptabellen werden ebenfalls aus der DXF-Datei importiert, sofern vorhanden.
 

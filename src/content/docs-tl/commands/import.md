@@ -40,6 +40,7 @@ Ini-parse ng KulmanLab ang mga sumusunod na DXF entity types:
 | Text | `TEXT`, `MTEXT` | |
 | Dimension | `DIMENSION` | |
 | Multileader | `MULTILEADER` | |
+| Hatch | `HATCH` | Nababasa ang pangalan, scale, at angle ng pattern; ang pangalan na wala sa pattern library mo ay babalik sa ANSI31. Tingnan ang [Hatch](../hatch/) |
 
 Ini-import din ang layer definitions at linetype tables mula sa DXF file kapag mayroon.
 

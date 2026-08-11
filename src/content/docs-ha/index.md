@@ -20,6 +20,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Circle](./commands/circle/) | Zana daʼira ta tsakiya da radius |
 | [Arc](./commands/arc/) | Zana baka ta tabo uku |
 | [Ellipse](./commands/ellipse/) | Zana ellipse ta tsakiya da axes biyu |
+| [Hatch](./commands/hatch/) | Cika yankin da ke kewaye da wurin da aka danna da pattern |
 | [Text](./commands/text/) | Sanya alamar rubutu a kan canvas |
 | [Spline CV](./commands/spline-cv/) | Zana spline ta sanya control vertices |
 | [Spline Fit](./commands/spline-fit/) | Zana spline wanda ke wucewa ta tabon da aka danna |
@@ -98,6 +99,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kwafi launi, layer, da wasu abubuwa daga wani abu zuwa wasu |
 | [Font Manager](./commands/font-manager/) | Bincika, zaɓi, da loda fonts na TTF na musamman |
+| [Hatch Manager](./commands/hatch-manager/) | Bincika laburaren pattern na hatch kuma loda fayilolin .pat |
 
 ## Fayil
 

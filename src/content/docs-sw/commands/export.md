@@ -37,7 +37,8 @@ Aina zote za viumbe zimejumuishwa:
 - Mistari, duara, archi, duaradufu, polyline, spline, maandishi
 - Vipimo (mstari, sawa, kuendelea, eneo, kipenyo)
 - Vielelezo vingi
-- Ufafanuzi wa tabaka na jedwali za aina za mstari
+- Hatch, ikijumuisha muundo wake, kipimo, pembe, na chanzo chake
+- Ufafanuzi wa tabaka, jedwali za aina za mstari, na jedwali za muundo wa hatch
 
 ### Export ya DXF
 
@@ -46,7 +47,7 @@ Viumbe vya jiometri pekee vimejumuishwa:
 - Mistari, duara, archi, duaradufu, polyline (zinaexportwa kama `LWPOLYLINE`), spline, maandishi
 - Ufafanuzi wa tabaka na jedwali za aina za mstari
 
-**Haijajumuishwa katika DXF:** viumbe vya kipimo na vielelezo vingi. Hizi hutumia miundo ya data maalum ya KulmanLab ambayo haiwezi kuwakilishwa kikamilifu katika DXF ya kawaida. Ikiwa mchoro wako una maelezo, tumia JSON au [Print](../print/) kuyakamata kwa njia ya kuona.
+**Haijajumuishwa katika DXF:** viumbe vya kipimo, vielelezo vingi, na hatch. Vipimo na vielelezo vingi hutumia miundo ya data maalum ya KulmanLab ambayo haiwezi kuwakilishwa kikamilifu katika DXF ya kawaida; hatch bado hazijaexportwi kabisa kwenda DXF, ingawa huingizwa kutoka humo. Ikiwa mchoro wako una kimojawapo cha hivi, tumia JSON au [Print](../print/) kuvikamata.
 
 ## Jina la faili lililoorodheshwa
 

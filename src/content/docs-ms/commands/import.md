@@ -40,6 +40,7 @@ KulmanLab menghurai jenis entiti DXF berikut:
 | Text | `TEXT`, `MTEXT` | |
 | Dimension | `DIMENSION` | |
 | Multileader | `MULTILEADER` | |
+| Hatch | `HATCH` | Nama, skala, dan sudut corak dibaca; nama yang tiada dalam pustaka corak anda kembali kepada ANSI31. Lihat [Hatch](../hatch/) |
 
 Definisi lapisan dan jadual linetype juga diimport dari fail DXF apabila ada.
 

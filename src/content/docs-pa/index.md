@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | ਕੇਂਦਰ ਅਤੇ ਰੇਡੀਅਸ ਤੋਂ ਚੱਕਰ ਬਣਾਓ |
 | [Arc](./commands/arc/) | ਤਿੰਨ ਬਿੰਦੂਆਂ ਰਾਹੀਂ ਚਾਪ ਬਣਾਓ |
 | [Ellipse](./commands/ellipse/) | ਕੇਂਦਰ ਅਤੇ ਦੋ ਧੁਰਿਆਂ ਤੋਂ ਅੰਡਾਕਾਰ ਬਣਾਓ |
+| [Hatch](./commands/hatch/) | ਕਲਿੱਕ ਕੀਤੇ ਬਿੰਦੂ ਨੂੰ ਘੇਰਨ ਵਾਲੇ ਖੇਤਰ ਨੂੰ ਪੈਟਰਨ ਨਾਲ ਭਰੋ |
 | [Text](./commands/text/) | ਕੈਨਵਸ ਉੱਤੇ ਟੈਕਸਟ ਲੇਬਲ ਰੱਖੋ |
 | [Spline CV](./commands/spline-cv/) | ਕੰਟਰੋਲ ਵਰਟੈਕਸ ਰੱਖ ਕੇ ਸਪਲਾਈਨ ਬਣਾਓ |
 | [Spline Fit](./commands/spline-fit/) | ਕਲਿੱਕ ਕੀਤੇ ਬਿੰਦੂਆਂ ਵਿੱਚੋਂ ਲੰਘਦੀ ਸਪਲਾਈਨ ਬਣਾਓ |
@@ -97,6 +98,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | ਇੱਕ ਇਕਾਈ ਤੋਂ ਦੂਜੀਆਂ ਵਿੱਚ ਰੰਗ, ਲੇਅਰ ਅਤੇ ਹੋਰ ਗੁਣ ਕਾਪੀ ਕਰੋ |
 | [Font Manager](./commands/font-manager/) | ਫੌਂਟ ਬ੍ਰਾਊਜ਼ ਕਰੋ, ਚੁਣੋ, ਅਤੇ ਕਸਟਮ TTF ਫੌਂਟ ਅੱਪਲੋਡ ਕਰੋ |
+| [Hatch Manager](./commands/hatch-manager/) | hatch ਪੈਟਰਨ ਲਾਇਬ੍ਰੇਰੀ ਬ੍ਰਾਊਜ਼ ਕਰੋ ਅਤੇ .pat ਫਾਈਲਾਂ ਅੱਪਲੋਡ ਕਰੋ |
 
 ## ਫ਼ਾਈਲ
 

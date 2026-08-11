@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | วาดวงกลมด้วยจุดศูนย์กลางและรัศมี |
 | [Arc](./commands/arc/) | วาดส่วนโค้งผ่านสามจุด |
 | [Ellipse](./commands/ellipse/) | วาดวงรีด้วยจุดศูนย์กลางและสองแกน |
+| [Hatch](./commands/hatch/) | เติมพื้นที่ที่ล้อมรอบจุดที่คลิกด้วยลวดลาย |
 | [Text](./commands/text/) | วางป้ายข้อความบนแคนวาส |
 | [Spline CV](./commands/spline-cv/) | วาดสไปลน์โดยวางจุดควบคุม |
 | [Spline Fit](./commands/spline-fit/) | วาดสไปลน์ที่ผ่านจุดที่คลิก |
@@ -98,6 +99,7 @@ order: 1
 |---------|-----------|
 | [Match Properties](./commands/match-properties/) | คัดลอกสี เลเยอร์ และคุณสมบัติอื่นๆ จากวัตถุหนึ่งไปยังวัตถุอื่น |
 | [Font Manager](./commands/font-manager/) | เรียกดู เลือก และอัปโหลดฟอนต์ TTF ที่กำหนดเอง |
+| [Hatch Manager](./commands/hatch-manager/) | เรียกดูไลบรารีลวดลาย hatch และอัปโหลดไฟล์ .pat |
 
 ## ไฟล์
 

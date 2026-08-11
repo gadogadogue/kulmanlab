@@ -37,7 +37,8 @@ Alla entitetstyper inkluderas:
 - Linjer, cirklar, bågar, ellipser, polylinjer, splines, text
 - Dimensioner (linjär, justerad, fortsatt, radie, diameter)
 - Multileaders
-- Lagerdefinitioner och linjetypstabeller
+- Hatchar, inklusive deras mönster, skala, vinkel och origo
+- Lagerdefinitioner, linjetypstabeller och hatch-mönstertabeller
 
 ### DXF-export
 
@@ -46,7 +47,7 @@ Endast geometrientiteter inkluderas:
 - Linjer, cirklar, bågar, ellipser, polylinjer (exporteras som `LWPOLYLINE`), splines, text
 - Lagerdefinitioner och linjetypstabeller
 
-**Ingår inte i DXF:** dimensionsentiteter och multileaders. Dessa använder KulmanLab-specifika datastrukturer som inte kan representeras troget i standard-DXF. Om din ritning har annoteringar, använd JSON eller [Print](../print/) för att fånga dem visuellt.
+**Ingår inte i DXF:** dimensionsentiteter, multileaders och hatchar. Dimensioner och multileaders använder KulmanLab-specifika datastrukturer som inte kan representeras troget i standard-DXF; hatchar exporteras ännu inte alls till DXF, även om de importeras från det. Om din ritning har någon av dessa, använd JSON eller [Print](../print/) för att fånga dem.
 
 ## Exporterat filnamn
 

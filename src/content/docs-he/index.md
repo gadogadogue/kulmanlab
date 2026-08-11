@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | שרטוט מעגל לפי מרכז ורדיוס |
 | [Arc](./commands/arc/) | שרטוט קשת דרך שלוש נקודות |
 | [Ellipse](./commands/ellipse/) | שרטוט אליפסה לפי מרכז ושני צירים |
+| [Hatch](./commands/hatch/) | מילוי האזור המקיף נקודה שנלחצה בדוגמה |
 | [Text](./commands/text/) | מיקום תווית טקסט על הקנבס |
 | [Spline CV](./commands/spline-cv/) | שרטוט ספליין על ידי מיקום נקודות בקרה |
 | [Spline Fit](./commands/spline-fit/) | שרטוט ספליין העובר דרך נקודות שנלחצו |
@@ -98,6 +99,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | העתקת צבע, שכבה ותכונות אחרות מישות אחת לאחרות |
 | [Font Manager](./commands/font-manager/) | עיון, בחירה והעלאה של גופני TTF מותאמים אישית |
+| [Hatch Manager](./commands/hatch-manager/) | עיון בספריית דוגמאות ה-hatch והעלאת קבצי .pat |
 
 ## קובץ
 

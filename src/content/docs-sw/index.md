@@ -20,6 +20,7 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [Circle](./commands/circle/) | Chora duara kwa kituo na radi |
 | [Arc](./commands/arc/) | Chora upinde kupitia pointi tatu |
 | [Ellipse](./commands/ellipse/) | Chora duaradufu kwa kituo na mihimili miwili |
+| [Hatch](./commands/hatch/) | Jaza eneo linalozunguka nukta iliyobofya kwa muundo |
 | [Text](./commands/text/) | Weka lebo ya maandishi kwenye turubai |
 | [Spline CV](./commands/spline-cv/) | Chora spline kwa kuweka vipeo vya udhibiti |
 | [Spline Fit](./commands/spline-fit/) | Chora spline inayopita kupitia pointi zilizopigiwa klik |
@@ -98,6 +99,7 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 |------|------------|
 | [Match Properties](./commands/match-properties/) | Nakili rangi, safu, na mali nyingine kutoka kipengele kimoja hadi vingine |
 | [Font Manager](./commands/font-manager/) | Vinjari, chagua, na pakia fonti maalum za TTF |
+| [Hatch Manager](./commands/hatch-manager/) | Vinjari maktaba ya muundo wa hatch na pakia faili za .pat |
 
 ## Faili
 

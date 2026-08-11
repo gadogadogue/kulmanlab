@@ -39,6 +39,9 @@ KulmanLab phân tích các loại thực thể DXF sau:
 | Văn bản | `TEXT`, `MTEXT` |
 | Kích thước | `DIMENSION` |
 | Đa đường dẫn | `MULTILEADER` |
+| Hatch | `HATCH` |
+
+Đối với Hatch, tên, tỷ lệ và góc của mẫu được đọc; tên không có trong thư viện mẫu của bạn sẽ quay về ANSI31. Xem [Hatch](../hatch/).
 
 Các thực thể sử dụng loại DXF không được hỗ trợ sẽ bị bỏ qua yên lặng — phần còn lại của bản vẽ vẫn tải.
 

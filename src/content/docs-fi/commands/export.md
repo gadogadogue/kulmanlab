@@ -37,7 +37,8 @@ Kaikki entiteettityypit sisältyvät:
 - Viivat, ympyrät, kaaret, ellipsit, murtoviivat, splinit, teksti
 - Mitat (lineaarinen, kohdistettu, jatkettu, säde, halkaisija)
 - Multileaderit
-- Tasomääritykset ja linetype-taulukot
+- Hatchit, mukaan lukien niiden kuvio, skaala, kulma ja origo
+- Tasomääritykset, linetype-taulukot ja hatch-kuviotaulukot
 
 ### DXF-vienti
 
@@ -46,7 +47,7 @@ Vain geometriaentiteetit sisältyvät:
 - Viivat, ympyrät, kaaret, ellipsit, murtoviivat (viety `LWPOLYLINE`-muodossa), splinit, teksti
 - Tasomääritykset ja linetype-taulukot
 
-**Ei sisälly DXF:ään:** mitta-entiteetit ja multileaderit. Nämä käyttävät KulmanLab-kohtaisia tietorakenteita, joita ei voida esittää tarkasti standardissa DXF:ssä. Jos piirustuksessasi on merkintöjä, käytä JSON:ia tai [Print](../print/)-komentoa taltioidaksesi ne visuaalisesti.
+**Ei sisälly DXF:ään:** mitta-entiteetit, multileaderit ja hatchit. Mitat ja multileaderit käyttävät KulmanLab-kohtaisia tietorakenteita, joita ei voida esittää tarkasti standardissa DXF:ssä; hatchit eivät vielä vie lainkaan DXF:ään, vaikka ne tuodaan siitä. Jos piirustuksessasi on jokin näistä, käytä JSON:ia tai [Print](../print/)-komentoa taltioidaksesi ne.
 
 ## Viedyn tiedoston nimi
 

@@ -40,6 +40,7 @@ KulmanLab yana fassara nauʼukan abubuwan DXF masu zuwa:
 | Text | `TEXT`, `MTEXT` | |
 | Dimension | `DIMENSION` | |
 | Multileader | `MULTILEADER` | |
+| Hatch | `HATCH` | Ana karanta sunan pattern, scale, da angle; suna da ba ya cikin laburaren pattern naka yana koma zuwa ANSI31. Duba [Hatch](../hatch/) |
 
 Ana kuma shigo da ma'anonin layer da tebur na nauʼukan layi daga fayil ɗin DXF idan sun kasance.
 

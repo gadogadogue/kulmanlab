@@ -20,6 +20,7 @@ Welkom bij de **KulmanLab CAD**-opdrachtreferentie. [KulmanLab CAD](https://kulm
 | [Circle](./commands/circle/) | Teken een cirkel op basis van middelpunt en straal |
 | [Arc](./commands/arc/) | Teken een boog door drie punten |
 | [Ellipse](./commands/ellipse/) | Teken een ellips op basis van middelpunt en twee assen |
+| [Hatch](./commands/hatch/) | Vul het gebied rond een aangeklikt punt met een patroon |
 | [Text](./commands/text/) | Plaats een tekstlabel op het canvas |
 | [Spline CV](./commands/spline-cv/) | Teken een spline door controlepunten te plaatsen |
 | [Spline Fit](./commands/spline-fit/) | Teken een spline die door aangeklikte punten loopt |
@@ -98,6 +99,7 @@ Welkom bij de **KulmanLab CAD**-opdrachtreferentie. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopieer kleur, laag en andere eigenschappen van de ene entiteit naar andere |
 | [Font Manager](./commands/font-manager/) | Blader door, selecteer en upload aangepaste TTF-lettertypen |
+| [Hatch Manager](./commands/hatch-manager/) | Blader door de hatch-patroonbibliotheek en upload .pat-bestanden |
 
 ## Bestand
 

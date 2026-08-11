@@ -37,7 +37,8 @@ Alle entiteitstypen worden meegenomen:
 - Lijnen, cirkels, bogen, ellipsen, polylijnen, splines, tekst
 - Maatvoering (lineair, uitgelijnd, doorlopend, radius, diameter)
 - Multileaders
-- Laagdefinities en lijntypetabellen
+- Hatches, inclusief hun patroon, schaal, hoek en oorsprong
+- Laagdefinities, lijntypetabellen en hatch-patroontabellen
 
 ### DXF-export
 
@@ -46,7 +47,7 @@ Alleen geometrie-entiteiten worden meegenomen:
 - Lijnen, cirkels, bogen, ellipsen, polylijnen (geëxporteerd als `LWPOLYLINE`), splines, tekst
 - Laagdefinities en lijntypetabellen
 
-**Niet inbegrepen in DXF:** maatvoeringsentiteiten en multileaders. Deze gebruiken KulmanLab-specifieke gegevensstructuren die niet getrouw kunnen worden weergegeven in standaard-DXF. Als uw tekening annotaties bevat, gebruik dan JSON of [Print](../print/) om ze visueel vast te leggen.
+**Niet inbegrepen in DXF:** maatvoeringsentiteiten, multileaders en hatches. Maatvoering en multileaders gebruiken KulmanLab-specifieke gegevensstructuren die niet getrouw kunnen worden weergegeven in standaard-DXF; hatches worden nog helemaal niet naar DXF geëxporteerd, hoewel ze er wel uit worden geïmporteerd. Als uw tekening een van deze bevat, gebruik dan JSON of [Print](../print/) om ze vast te leggen.
 
 ## Naam van het geëxporteerde bestand
 

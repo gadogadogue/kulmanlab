@@ -20,6 +20,7 @@ Bienvenue dans la référence des commandes **KulmanLab CAD**. [KulmanLab CAD](h
 | [Circle](./commands/circle/) | Trace un cercle par centre et rayon |
 | [Arc](./commands/arc/) | Trace un arc à travers trois points |
 | [Ellipse](./commands/ellipse/) | Trace une ellipse par centre et deux axes |
+| [Hatch](./commands/hatch/) | Remplit la région entourant un point cliqué avec un motif |
 | [Text](./commands/text/) | Place un label de texte sur le canevas |
 | [Spline CV](./commands/spline-cv/) | Trace une spline en plaçant des sommets de contrôle |
 | [Spline Fit](./commands/spline-fit/) | Trace une spline passant par les points cliqués |
@@ -98,6 +99,7 @@ Bienvenue dans la référence des commandes **KulmanLab CAD**. [KulmanLab CAD](h
 |----------|----------------|
 | [Match Properties](./commands/match-properties/) | Copie la couleur, le calque et d'autres propriétés d'une entité vers d'autres |
 | [Font Manager](./commands/font-manager/) | Parcourez, sélectionnez et téléversez des polices TTF personnalisées |
+| [Hatch Manager](./commands/hatch-manager/) | Parcourez la bibliothèque de motifs de hachures et téléversez des fichiers .pat |
 
 ## Fichier
 

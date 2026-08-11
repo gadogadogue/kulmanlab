@@ -20,6 +20,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 | [Circle](./commands/circle/) | Gumuhit ng circle gamit ang center at radius |
 | [Arc](./commands/arc/) | Gumuhit ng arc sa tatlong punto |
 | [Ellipse](./commands/ellipse/) | Gumuhit ng ellipse gamit ang center at dalawang axis |
+| [Hatch](./commands/hatch/) | Punan ang region na nakapaligid sa isang na-click na punto ng pattern |
 | [Text](./commands/text/) | Maglagay ng text label sa canvas |
 | [Spline CV](./commands/spline-cv/) | Gumuhit ng spline sa pamamagitan ng paglalagay ng control vertex |
 | [Spline Fit](./commands/spline-fit/) | Gumuhit ng spline na dumadaan sa mga na-click na punto |
@@ -98,6 +99,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopyahin ang kulay, layer, at iba pang property mula sa isang entity papunta sa iba |
 | [Font Manager](./commands/font-manager/) | I-browse, piliin, at mag-upload ng custom na TTF font |
+| [Hatch Manager](./commands/hatch-manager/) | I-browse ang hatch pattern library at mag-upload ng .pat files |
 
 ## File
 

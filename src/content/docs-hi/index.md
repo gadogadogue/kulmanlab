@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | केंद्र और त्रिज्या से वृत्त बनाएं |
 | [Arc](./commands/arc/) | तीन बिंदुओं से होकर चाप बनाएं |
 | [Ellipse](./commands/ellipse/) | केंद्र और दो अक्षों से दीर्घवृत्त बनाएं |
+| [Hatch](./commands/hatch/) | क्लिक किए गए बिंदु को घेरने वाले क्षेत्र को पैटर्न से भरें |
 | [Text](./commands/text/) | कैनवास पर टेक्स्ट लेबल रखें |
 | [Spline CV](./commands/spline-cv/) | कंट्रोल वर्टेक्स रखकर स्प्लाइन बनाएं |
 | [Spline Fit](./commands/spline-fit/) | क्लिक किए गए बिंदुओं से होकर गुजरने वाली स्प्लाइन बनाएं |
@@ -98,6 +99,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | एक ऑब्जेक्ट से दूसरे ऑब्जेक्ट में रंग, लेयर और अन्य गुण कॉपी करें |
 | [Font Manager](./commands/font-manager/) | फ़ॉन्ट ब्राउज़ करें, चुनें, और कस्टम TTF फ़ॉन्ट अपलोड करें |
+| [Hatch Manager](./commands/hatch-manager/) | hatch पैटर्न लाइब्रेरी ब्राउज़ करें और .pat फ़ाइलें अपलोड करें |
 
 ## फ़ाइल
 

@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | 중심점과 반지름으로 원 그리기 |
 | [Arc](./commands/arc/) | 세 점을 통과하는 호 그리기 |
 | [Ellipse](./commands/ellipse/) | 중심점과 두 축으로 타원 그리기 |
+| [Hatch](./commands/hatch/) | 클릭한 점을 둘러싼 영역을 패턴으로 채우기 |
 | [Text](./commands/text/) | 캔버스에 텍스트 레이블 배치 |
 | [Spline CV](./commands/spline-cv/) | 제어 꼭짓점을 배치하여 스플라인 그리기 |
 | [Spline Fit](./commands/spline-fit/) | 클릭한 점을 통과하는 스플라인 그리기 |
@@ -98,6 +99,7 @@ order: 1
 |--------|------|
 | [Match Properties](./commands/match-properties/) | 한 객체에서 다른 객체로 색상, 레이어 및 기타 특성 복사 |
 | [Font Manager](./commands/font-manager/) | 글꼴 찾아보기, 선택 및 사용자 지정 TTF 글꼴 업로드 |
+| [Hatch Manager](./commands/hatch-manager/) | hatch 패턴 라이브러리 찾아보기 및 .pat 파일 업로드 |
 
 ## 파일
 

@@ -40,6 +40,7 @@ KulmanLab aşağıdaki DXF nesne türlerini ayrıştırır:
 | Metin | `TEXT`, `MTEXT` | |
 | Ölçü | `DIMENSION` | |
 | Çoklu Gösterge | `MULTILEADER` | |
+| Hatch | `HATCH` | Desenin adı, ölçeği ve açısı okunur; desen kitaplığınızda olmayan bir ad ANSI31'e geri döner. [Hatch](../hatch/)'e bakın |
 
 Katman tanımları ve çizgi türü tabloları da mevcutsa DXF dosyasından içe aktarılır.
 

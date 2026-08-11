@@ -31,7 +31,8 @@ Tất cả loại thực thể được bao gồm:
 - Đường thẳng, hình tròn, cung, hình elip, đường đa đoạn, spline, văn bản
 - Kích thước (tuyến tính, căn chỉnh, tiếp tục, bán kính, đường kính)
 - Đa đường dẫn
-- Định nghĩa lớp và bảng kiểu đường
+- Hatch, bao gồm mẫu, tỷ lệ, góc và gốc tọa độ của nó
+- Định nghĩa lớp, bảng kiểu đường và bảng mẫu hatch
 
 ### Export DXF
 
@@ -39,7 +40,7 @@ Chỉ các thực thể hình học được bao gồm:
 - Đường thẳng, hình tròn, cung, hình elip, đường đa đoạn (xuất dưới dạng `LWPOLYLINE`), spline, văn bản
 - Định nghĩa lớp và bảng kiểu đường
 
-**Không bao gồm trong DXF:** thực thể kích thước và đa đường dẫn.
+**Không bao gồm trong DXF:** thực thể kích thước, đa đường dẫn và hatch. Kích thước và đa đường dẫn dùng cấu trúc dữ liệu riêng của KulmanLab không thể biểu diễn trong DXF chuẩn; hatch hiện chưa được xuất sang DXF, mặc dù có thể nhập từ đó.
 
 ## Sự khác biệt giữa Export và Print
 

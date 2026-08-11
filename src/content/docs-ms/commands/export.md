@@ -37,7 +37,8 @@ Semua jenis entiti disertakan:
 - Garis, bulatan, lengkok, elips, poliline, spline, teks
 - Dimensi (linear, aligned, berterusan, jejari, diameter)
 - Pelbagai pemimpin
-- Definisi lapisan dan jadual linetype
+- Hatch, termasuk corak, skala, sudut, dan asalannya
+- Definisi lapisan, jadual linetype, dan jadual corak hatch
 
 ### Eksport DXF
 
@@ -46,7 +47,7 @@ Entiti geometri sahaja disertakan:
 - Garis, bulatan, lengkok, elips, poliline (dieksport sebagai `LWPOLYLINE`), spline, teks
 - Definisi lapisan dan jadual linetype
 
-**Tidak disertakan dalam DXF:** entiti dimensi dan pelbagai pemimpin. Ini menggunakan struktur data khusus KulmanLab yang tidak dapat diwakili dengan setia dalam DXF standard. Jika lukisan anda mempunyai anotasi, gunakan JSON atau [Print](../print/) untuk menangkapnya secara visual.
+**Tidak disertakan dalam DXF:** entiti dimensi, pelbagai pemimpin, dan hatch. Dimensi dan pelbagai pemimpin menggunakan struktur data khusus KulmanLab yang tidak dapat diwakili dengan setia dalam DXF standard; hatch masih tidak dieksport langsung ke DXF, walaupun ia diimport daripadanya. Jika lukisan anda mempunyai mana-mana daripada ini, gunakan JSON atau [Print](../print/) untuk menangkapnya.
 
 ## Nama fail yang dieksport
 

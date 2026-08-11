@@ -37,7 +37,8 @@ Semua tipe entitas disertakan:
 - Line, circle, arc, ellipse, polyline, spline, text
 - Dimensi (linear, sejajar, lanjutan, radius, diameter)
 - Multileader
-- Definisi layer dan tabel tipe garis
+- Hatch, termasuk pola, skala, sudut, dan titik asalnya
+- Definisi layer, tabel tipe garis, dan tabel pola hatch
 
 ### Ekspor DXF
 
@@ -46,7 +47,7 @@ Entitas geometri saja yang disertakan:
 - Line, circle, arc, ellipse, polyline (diekspor sebagai `LWPOLYLINE`), spline, text
 - Definisi layer dan tabel tipe garis
 
-**Tidak disertakan dalam DXF:** entitas dimensi dan multileader. Ini menggunakan struktur data spesifik KulmanLab yang tidak dapat direpresentasikan secara akurat dalam DXF standar. Jika gambar Anda memiliki anotasi, gunakan JSON atau [Print](../print/) untuk menangkapnya secara visual.
+**Tidak disertakan dalam DXF:** entitas dimensi, multileader, dan hatch. Dimensi dan multileader menggunakan struktur data spesifik KulmanLab yang tidak dapat direpresentasikan secara akurat dalam DXF standar; hatch belum diekspor sama sekali ke DXF, meskipun diimpor darinya. Jika gambar Anda memiliki salah satu dari ini, gunakan JSON atau [Print](../print/) untuk menangkapnya.
 
 ## Nama file yang diekspor
 

@@ -40,6 +40,7 @@ KulmanLab analyse les types d'entités DXF suivants :
 | Texte | `TEXT`, `MTEXT` | |
 | Cote | `DIMENSION` | |
 | Multirépère | `MULTILEADER` | |
+| Hatch | `HATCH` | Le nom, l'échelle et l'angle du motif sont lus ; un nom absent de votre bibliothèque de motifs revient à ANSI31. Voir [Hatch](../hatch/) |
 
 Les définitions de calques et les tables de types de ligne sont aussi importées du fichier DXF quand elles sont présentes.
 

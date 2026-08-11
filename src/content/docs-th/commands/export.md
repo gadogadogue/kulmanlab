@@ -37,7 +37,8 @@ order: 5
 - Lines, circles, arcs, ellipses, polylines, splines, text
 - Dimensions (linear, aligned, continued, radius, diameter)
 - Multileaders
-- คำจำกัดความเลเยอร์และตาราง linetype
+- Hatch รวมถึงลวดลาย สเกล มุม และจุดกำเนิดของมัน
+- คำจำกัดความเลเยอร์, ตาราง linetype และตารางลวดลาย hatch
 
 ### การส่งออก DXF
 
@@ -46,7 +47,7 @@ order: 5
 - Lines, circles, arcs, ellipses, polylines (ส่งออกเป็น `LWPOLYLINE`), splines, text
 - คำจำกัดความเลเยอร์และตาราง linetype
 
-**ไม่รวมใน DXF:** วัตถุมิติและ multileader สิ่งเหล่านี้ใช้โครงสร้างข้อมูลเฉพาะ KulmanLab ที่ไม่สามารถแสดงได้อย่างถูกต้องใน DXF มาตรฐาน หากภาพวาดของคุณมีคำอธิบายประกอบ ให้ใช้ JSON หรือ [Print](../print/) เพื่อจับภาพเป็นภาพ
+**ไม่รวมใน DXF:** วัตถุมิติ, multileader และ hatch มิติและ multileader ใช้โครงสร้างข้อมูลเฉพาะ KulmanLab ที่ไม่สามารถแสดงได้อย่างถูกต้องใน DXF มาตรฐาน; hatch ยังไม่ถูกส่งออกไปยัง DXF เลย แม้ว่าจะนำเข้าจากมันได้ก็ตาม หากภาพวาดของคุณมีสิ่งเหล่านี้ ให้ใช้ JSON หรือ [Print](../print/) เพื่อจับภาพไว้
 
 ## ชื่อไฟล์ที่ส่งออก
 

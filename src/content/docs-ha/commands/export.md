@@ -37,7 +37,8 @@ Ana haɗa dukkan nauʼukan abubuwa:
 - Layi, da'irori, baka, ellipses, polylines, splines, rubutu
 - Girma-girma (layi, daidaici, ci-gaba, radius, diameter)
 - Multileaders
-- Ma'anonin layer da tebur na nauʼukan layi
+- Hatches, tare da pattern, scale, angle, da origin dinsu
+- Ma'anonin layer, tebur na nauʼukan layi, da tebur na pattern na hatch
 
 ### Fitar da DXF
 
@@ -46,7 +47,7 @@ Ana haɗa abubuwan geometry kaɗai:
 - Layi, da'irori, baka, ellipses, polylines (an fitar da su a matsayin `LWPOLYLINE`), splines, rubutu
 - Ma'anonin layer da tebur na nauʼukan layi
 
-**Ba a haɗa su a DXF ba:** abubuwan girma-girma da multileaders. Waɗannan suna amfani da tsarin bayanai na musamman ga KulmanLab da ba za a iya wakiltar su daidai a DXF na yau da kullum ba. Idan zanenka yana da bayanai, yi amfani da JSON ko [Print](../print/) don kama su ta hoto.
+**Ba a haɗa su a DXF ba:** abubuwan girma-girma, multileaders, da hatches. Girma-girma da multileaders suna amfani da tsarin bayanai na musamman ga KulmanLab da ba za a iya wakiltar su daidai a DXF na yau da kullum ba; hatches ba a fitar da su zuwa DXF ko kadan ba tukuna, ko da yake ana shigo da su daga ciki. Idan zanenka yana da daya daga cikin wadannan, yi amfani da JSON ko [Print](../print/) don kama su.
 
 ## Sunan fayil ɗin da aka fitar
 

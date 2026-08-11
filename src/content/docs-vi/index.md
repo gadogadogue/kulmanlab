@@ -20,6 +20,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 | [Circle](./commands/circle/) | Vẽ hình tròn theo tâm và bán kính |
 | [Arc](./commands/arc/) | Vẽ cung qua ba điểm |
 | [Ellipse](./commands/ellipse/) | Vẽ hình elip theo tâm và hai trục |
+| [Hatch](./commands/hatch/) | Tô đầy vùng bao quanh điểm đã nhấp bằng một mẫu |
 | [Text](./commands/text/) | Đặt nhãn văn bản lên canvas |
 | [Spline CV](./commands/spline-cv/) | Vẽ spline bằng cách đặt các điểm kiểm soát |
 | [Spline Fit](./commands/spline-fit/) | Vẽ spline đi qua các điểm được bấm |
@@ -98,6 +99,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 |------|-----------|
 | [Match Properties](./commands/match-properties/) | Sao chép màu sắc, lớp và các thuộc tính khác từ một đối tượng sang đối tượng khác |
 | [Font Manager](./commands/font-manager/) | Duyệt, chọn và tải lên phông chữ TTF tùy chỉnh |
+| [Hatch Manager](./commands/hatch-manager/) | Duyệt thư viện mẫu hatch và tải lên tệp .pat |
 
 ## Tệp
 

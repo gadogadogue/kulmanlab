@@ -40,6 +40,7 @@ KulmanLab fortolker følgende DXF-entitetstyper:
 | Text | `TEXT`, `MTEXT` | |
 | Dimension | `DIMENSION` | |
 | Multileader | `MULTILEADER` | |
+| Hatch | `HATCH` | Mønsterets navn, skalering og vinkel læses; et navn, der ikke er i dit mønsterbibliotek, falder tilbage til ANSI31. Se [Hatch](../hatch/) |
 
 Lagdefinitioner og linetype-tabeller importeres også fra DXF-filen, når de findes.
 

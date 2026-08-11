@@ -20,6 +20,7 @@ order: 1
 | [Circle](./commands/circle/) | رسم دائرة بالمركز والنصف قطر |
 | [Arc](./commands/arc/) | رسم قوس يمر بثلاث نقاط |
 | [Ellipse](./commands/ellipse/) | رسم قطع ناقص بالمركز ومحورين |
+| [Hatch](./commands/hatch/) | تعبئة المنطقة المحيطة بنقطة منقورة بنمط |
 | [Text](./commands/text/) | وضع تسمية نصية على اللوحة |
 | [Spline CV](./commands/spline-cv/) | رسم منحنى بوضع نقاط التحكم |
 | [Spline Fit](./commands/spline-fit/) | رسم منحنى يمر بالنقاط المنقورة |
@@ -98,6 +99,7 @@ order: 1
 |-------|----------|
 | [Match Properties](./commands/match-properties/) | نسخ اللون والطبقة وخصائص أخرى من عنصر إلى عناصر أخرى |
 | [Font Manager](./commands/font-manager/) | تصفح واختر الخطوط، وارفع خطوط TTF مخصصة |
+| [Hatch Manager](./commands/hatch-manager/) | تصفح مكتبة أنماط التظليل وارفع ملفات .pat |
 
 ## الملف
 

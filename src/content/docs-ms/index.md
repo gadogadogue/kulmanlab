@@ -20,6 +20,7 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [Circle](./commands/circle/) | Lukis bulatan mengikut pusat dan jejari |
 | [Arc](./commands/arc/) | Lukis lengkok melalui tiga titik |
 | [Ellipse](./commands/ellipse/) | Lukis elips mengikut pusat dan dua paksi |
+| [Hatch](./commands/hatch/) | Isi rantau yang mengelilingi titik yang diklik dengan corak |
 | [Text](./commands/text/) | Letak label teks pada kanvas |
 | [Spline CV](./commands/spline-cv/) | Lukis spline dengan meletakkan bucu kawalan |
 | [Spline Fit](./commands/spline-fit/) | Lukis spline yang melalui titik-titik yang diklik |
@@ -98,6 +99,7 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 |--------|-----------|
 | [Match Properties](./commands/match-properties/) | Salin warna, lapisan, dan sifat lain dari satu entiti ke entiti lain |
 | [Font Manager](./commands/font-manager/) | Semak imbas, pilih, dan muat naik fon TTF tersuai |
+| [Hatch Manager](./commands/hatch-manager/) | Semak imbas pustaka corak hatch dan muat naik fail .pat |
 
 ## Fail
 
