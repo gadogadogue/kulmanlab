@@ -282,7 +282,7 @@ In your browser's IndexedDB on your own device. Nothing is uploaded to a server.
 Saved drawings are lost. Export a DXF copy of anything important before clearing browser storage.
 
 **Which export formats are available?**
-DXF (for round-tripping with other CAD tools), PDF, and PNG/WebP (for print-ready output).
+DXF and JSON via Export — DXF for round-tripping with other CAD tools (dimensions, multileaders, and hatches are not included), JSON for full-fidelity saves within KulmanLab. Print separately exports PDF and PNG/WebP for print-ready output.
 
 **Are KulmanLab DXF files compatible with other software?**
 Yes. AC1032 DXF opens correctly in LibreCAD, QCAD, BricsCAD, FreeCAD, and any DXF-capable tool.
@@ -581,6 +581,63 @@ Enter only closes the shape once 3 or more vertices are placed. The edge from th
 - Results are shown in the **terminal and as a temporary canvas highlight only** — nothing is added to the drawing as a permanent entity.
 - Unlike Distance and Angle, Area does **not** chain into a new measurement automatically — after you dismiss the result, run `area` again to measure another polygon.
 - Precision is always 4 decimal places for both area and perimeter, in the same units as the drawing coordinates (no unit conversion).
+
+---
+
+# Array Grid
+
+The `ArrayGrid` command creates a rectangular grid of copies from the selected entities — enter the number of rows, columns, and the spacing between them, all typed at the terminal. The original selection occupies the row-0, column-0 cell; every other cell is a translated copy.
+
+## Two ways to start
+
+**Pre-select, then array**
+
+1. Select one or more entities.
+2. Type `arraygrid` (as few as `arr` is enough — unambiguous) or click the **Array Grid** toolbar button.
+3. Type the number of **rows**, press **Enter**.
+4. Type the number of **columns**, press **Enter**.
+5. Type the **row spacing**, press **Enter**.
+6. Type the **column spacing**, press **Enter** — the grid is created immediately.
+
+**Activate, then select** — start with nothing selected, select objects, then **Enter**/**Space** to confirm, and continue with the same rows → columns → row spacing → column spacing sequence.
+
+## Rows, columns, and spacing
+
+| Prompt | Accepts | Notes |
+|--------|---------|-------|
+| Rows | Positive whole numbers | Digits only |
+| Columns | Positive whole numbers | Digits only |
+| Row spacing | Signed decimal | Negative reverses direction |
+| Column spacing | Signed decimal | Negative reverses direction |
+
+With 1 row and 1 column, no copies are created.
+
+## Keyboard reference
+
+| Key | Action |
+|-----|--------|
+| `Enter` / `Space` | Confirm selection and advance to the next prompt |
+| `0`–`9` | Enter digits |
+| `.`, `-` | Decimal point / sign for spacing values |
+| `Backspace` | Delete the last typed character |
+| `Escape` | Clear typed values and return to the selection phase |
+
+## Array Grid vs Copy
+
+| | Array Grid | Copy |
+|---|-----------|------|
+| Point-picking | None — rows, columns, spacing are typed | Base point and destination are clicked |
+| Copies created | Rows × columns − 1 | Exactly 1 |
+| Best for | Repeating a unit across a regular pattern (holes, tiles, fasteners) | A single duplicate at an arbitrary position |
+
+## Supported entities
+
+Works on every entity type — all entities implement `translate(dx, dy)` internally, the same operation [Copy](./copy) and [Move](./move) use.
+
+## Related commands
+
+- [Copy](./copy) — a single duplicate at an arbitrary offset
+- [Move](./move) — relocate the original selection instead of copying it
 
 ---
 
@@ -1458,6 +1515,7 @@ All entity types are included:
 - Lines, circles, arcs, ellipses, polylines, splines, text
 - Dimensions (linear, aligned, continued, radius, diameter)
 - Multileaders
+- [Hatch](./hatch) — the only format that preserves hatches at all
 - Layer definitions and linetype tables
 
 ### DXF export
@@ -1467,11 +1525,11 @@ Geometry-only entities are included:
 - Lines, circles, arcs, ellipses, polylines (exported as `LWPOLYLINE`), splines, text
 - Layer definitions and linetype tables
 
-**Not included in DXF:** dimension entities and multileaders. These use KulmanLab-specific data structures that cannot be represented faithfully in standard DXF. If your drawing has annotations, use JSON or [Print](./print) to capture them visually.
+**Not included in DXF:** dimension entities, multileaders, and [hatches](./hatch). Dimensions and multileaders use KulmanLab-specific data structures that cannot be represented faithfully in standard DXF; hatch export isn't implemented yet. If your drawing has annotations or fills, use JSON, or [Print](./print) to capture them visually.
 
 ## Exported file name
 
-The downloaded file is named after the current drawing file (e.g. `myplan_May22_14:30:00.json`). The extension changes to match the chosen format.
+The downloaded file is named after the current drawing file (e.g. `myplan.json`). The extension changes to match the chosen format.
 
 ## Difference between Export and Print
 
@@ -1488,7 +1546,7 @@ Use **Export** when you need an editable file. Use [Print](./print) when you nee
 
 - [Import](./import) — open a DXF or JSON file
 - [Print](./print) — export the canvas as a PNG, JPEG, WebP, or PDF image
-- [Files](./files) — browse drawings saved in browser storage
+- [File Manager](./file-manager) — browse drawings saved in browser storage
 
 ---
 
@@ -1560,47 +1618,51 @@ All other types (Line, Arc, Circle, Ellipse, Polyline, Dimension) serve as valid
 
 ---
 
-# Files
+# File Manager
 
-The **Files** command opens the **Recent Files** panel — a list of all drawings that have been saved to your browser's local storage. Use it to reopen a previous drawing or remove files you no longer need.
+The `FileManager` command opens a **thumbnail grid** of every drawing that has been saved to your browser's local storage, ordered by when each was last saved. Use it to reopen a previous drawing, rename it, or delete it.
 
-## How to open the Recent Files panel
+## Opening the File Manager
 
-Click the **Files** toolbar button (history icon) in the File panel at the top of the screen. The panel opens on the left side of the canvas.
+Type `FileManager` in the terminal, or click the **File Manager** toolbar button (history icon) in the File panel at the top of the screen. The panel opens on the left side of the canvas and closes automatically as soon as you start another command or [import](./import) a file, so it never lingers over a drawing it doesn't list yet.
 
-## Recent Files panel
+## The thumbnail grid
 
-Each entry in the list shows the file name and two action buttons:
+Each saved drawing is a card showing a live-rendered thumbnail, its name, and when it was last updated. Thumbnails are generated fresh each time the panel opens.
 
-| Button | Action |
-|--------|--------|
-| ✓ **Restore** | Load the drawing onto the canvas — replaces the current content |
-| ✕ **Delete** | Remove the file from browser storage permanently |
+| Action | How |
+|--------|-----|
+| **Open** a drawing | Click its thumbnail — replaces the current canvas content |
+| **Rename** | Click the pencil icon, or double-click the name |
+| **Delete** | Click the trash icon, then confirm |
 
-If no files have been saved yet, the panel shows "No files saved".
+If no files have been saved yet, the panel shows "No files saved". The card for whichever file is currently open in the editor is marked with an accent-colored ring and has no delete button — renaming it is still available.
 
-## How files are stored
+## Deleting a file
 
-KulmanLab saves drawings to **IndexedDB** — a persistent in-browser database. This means:
+Clicking the trash icon does not delete immediately — it arms a confirmation overlay on that card ("Delete this file?") since deletion is permanent and cannot be undone.
 
-- Files survive page reloads and browser restarts.
-- Files are stored **locally on your device** — they are not uploaded to any server.
-- Each browser and device has its own independent storage. A drawing saved in Chrome on one computer is not available in Firefox or on another machine.
-- Clearing the browser's site data will erase all saved files.
+## Renaming a file
+
+Click the pencil icon (or double-click the file name) to edit it in place, then **Enter** to confirm or **Escape** to cancel. A rename is rejected if the new name is empty, longer than 100 characters, already used by another saved file (case-insensitive), ends in a dot, or is a Windows-reserved device name (`CON`, `PRN`, `AUX`, `NUL`, `COM1`–`COM9`, `LPT1`–`LPT9`). Characters not valid in a file name (`\ / : * ? " < > |`) are stripped automatically as you type.
+
+## Back up your work — browser storage is not permanent
+
+KulmanLab saves drawings to **IndexedDB**, a database built into your browser: files are stored **locally on your device only**, and each browser/device has its own independent storage. This storage can be cleared without warning — clearing site data, low disk space, private/incognito mode, reinstalling the browser, or switching devices. **The only reliable way to keep a drawing safe is to [export](./export) it** — `.json` for full fidelity, `.dxf` for compatibility with other CAD tools.
 
 ## Automatic file loading on startup
 
-When you open KulmanLab CAD, the app automatically loads the **most recently modified file** from storage. You do not need to manually open it from the Files panel each time.
+When you open KulmanLab CAD, the app automatically loads the **most recently modified file** from storage. You do not need to manually open it from the File Manager each time.
 
 ## Managing storage
 
-There is no fixed limit on the number of drawings you can save, but browser storage is finite. If you notice storage warnings, delete older files from the Files panel.
+There is no fixed limit on the number of drawings you can save, but browser storage is finite. If you notice storage warnings, delete older files from the File Manager — or export them first so nothing is lost.
 
 To remove all saved drawings at once, use the [WipeStorage](./wipestorage) command.
 
-## File names and versioning
+## File names
 
-Each file has a timestamp in its name (e.g. `myplan_May22_14:30:00.dxf`). This timestamp is added automatically when you [import](./import) a file, ensuring that re-importing the same source file creates a new entry rather than overwriting the previous version.
+New and imported files get a **plain name — no timestamp is baked in**. If that name is already taken, a Finder/Explorer-style suffix is appended automatically (`plan (2)`, `plan (3)`, …) so nothing gets overwritten.
 
 ## Related commands
 
@@ -1773,6 +1835,114 @@ The font name is embedded in exported **MTEXT** entities as an inline formatting
 
 ---
 
+# Hatch
+
+The `hatch` command fills the region enclosing a picked point with a pattern. The boundary isn't drawn first — it comes from whatever is already on the canvas, so entities meeting end to end enclose a region exactly as a closed [Polyline](./polyline) does, and any closed shape sitting inside becomes an island the fill leaves alone.
+
+## Filling an area
+
+1. Type `hatch` or click the **Hatch** toolbar button (the swatch icon).
+2. Click a point inside the region to fill.
+3. The command stays active — keep clicking to fill more areas, each pick creating its own `Hatch` entity.
+4. Press **Escape** when done.
+
+## What can bound a region
+
+Any mix of these, connected end to end with no gap: [Line](./line), [Arc](./arc), [Circle](./circle), [Ellipse](./ellipse), [Polyline](./polyline) / [Rectangle](./rectangle), Spline ([Spline CV](./spline-cv) / [Spline Fit](./spline-fit)). Text, Multileader, and Dimension entities are never treated as boundaries.
+
+## Islands
+
+Anything fully closed inside the picked region — a circle, a closed polyline, another hatch's boundary — becomes an island: the fill stops at its edge and leaves it empty. Nesting a closed shape inside another alternates fill/hole at each level.
+
+## When a pick fails
+
+| Message | Meaning |
+|---------|---------|
+| "no boundary found" | Nothing was hit in any direction from the picked point |
+| "point is not enclosed" | A boundary exists nearby, but doesn't contain the picked point |
+| "boundary is open" | The nearest boundary has a gap somewhere |
+| "boundary too complex" | The boundary loop couldn't be closed within the traversal limit |
+
+The command stays active after a failed pick.
+
+## Choosing a pattern
+
+Every new hatch starts filled with `ANSI31` (or whichever pattern the last hatch you edited used) — there's no pattern picker before you draw. Select an existing hatch and open its **Pattern** field in the properties panel to open the pattern picker and change it; that choice becomes the default for the next hatch you create, the same way picking a layer or color carries forward. See [Hatch Manager](./hatch-manager) for uploading custom `.pat` files and browsing the full library. `SOLID` is a plain entry in the pattern list, not a separate checkbox or mode.
+
+## Properties
+
+| Property | Meaning |
+|----------|---------|
+| Pattern | The pattern name, from the shared pattern vocabulary |
+| Pattern Scale | Scales the pattern's line spacing |
+| Pattern Angle | Rotates the pattern independently of the boundary |
+| Origin X / Origin Y | Where the pattern's own repeat is anchored |
+
+Moving, rotating, mirroring, or scaling a hatch carries its pattern placement along, so the fill stays aligned with the boundary.
+
+## Grip editing the boundary
+
+A selected hatch grips its boundary the way a Polyline grips its vertices — one grip at every corner, one at every edge midpoint. Dragging a corner moves it (a line follows exactly; an arc refits through both neighbors; an ellipse/spline edge snaps to the nearest point on its own curve). Dragging a line/ellipse/spline edge midpoint slides the whole edge. Dragging an arc edge midpoint **bows** the arc through the cursor instead, leaving both ends fixed. The center grip activates [Move](./move) for the whole hatch.
+
+## DXF — HATCH entity
+
+Hatches **import** from `HATCH` entities: KulmanLab reads the boundary geometry plus the pattern name, scale, and angle (group codes 70/41/52) — not the pattern's own inline line definitions that AutoCAD writes into the file. The name is looked up in KulmanLab's own pattern library (built-ins plus anything uploaded in [Hatch Manager](./hatch-manager)); a name that isn't in the library falls back to `ANSI31` so the drawing still reads as hatched. Spline-bounded loops (DXF boundary edge type 4) are not yet read.
+
+Hatches do **not** currently **export** to DXF — use [Export](./export)'s `.json` format to keep a hatch when saving a drawing that includes one; the `.dxf` format leaves it out.
+
+## Related commands
+
+- [Hatch Manager](./hatch-manager) — browse the pattern library and upload `.pat` files
+- [Move](./move), [Copy](./copy), [Rotate](./rotate), [Mirror](./mirror), [Scale](./scale) — all carry the hatch's pattern placement along
+- [Delete](./delete) — removes the hatch without affecting the entities that bounded it
+
+---
+
+# Hatch Manager
+
+The `HatchManager` command opens a dialog for browsing hatch patterns with a live swatch preview, and for uploading your own `.pat` pattern files for use with [Hatch](./hatch).
+
+## Opening the Hatch Manager
+
+Type `HatchManager` in the terminal. This is separate from the pattern picker that opens from a hatch's **Pattern** chip in the properties panel — the picker chooses a pattern for one hatch, the Hatch Manager is where you add or remove `.pat` files.
+
+## Pattern groups
+
+| Group | Contents |
+|-------|----------|
+| **User** | Patterns from your own uploaded `.pat` files, sub-grouped by which file each came from (shown once you've uploaded one) |
+| **Standard** | `SOLID` plus this drawing's own pattern table — every new drawing starts with the same built-in library, the way its layers and linetypes do |
+
+Click any pattern (or use `↑`/`↓`) to preview it — a swatch drawn by the same code the canvas fills with, plus the pattern's name, description, and line count.
+
+## Uploading a custom pattern file
+
+1. Click **Add .pat File** in the dialog footer.
+2. Choose a `.pat` file — the standard AutoCAD hatch pattern format. A single file commonly defines many named patterns at once; all appear as separate entries grouped under that file's name.
+3. Uploaded files are saved permanently in the browser (IndexedDB), sorted most-recently-added first, and reload automatically the next time you open KulmanLab CAD.
+
+Uploading a file that defines a pattern with the same name as a built-in one **shadows** the default — the supported way to get Autodesk's authoritative pattern definitions: upload a real `acad.pat` and its version of ANSI31 (and the other standard names) takes over from KulmanLab's own approximations.
+
+If a drawing references a pattern name that isn't in your library — for example, imported from a DXF that used a pattern from an `acad.pat` you haven't uploaded — the hatch still renders using `ANSI31` as a stand-in, rather than falling back to a flat, patternless fill.
+
+## Removing a pattern file
+
+Click the **×** next to a file name in the **User** group to remove it and every pattern it defined. Any hatch already using one of those patterns falls back to `ANSI31` immediately. Built-in **Standard** patterns can't be removed.
+
+## Keyboard reference
+
+| Key | Action |
+|-----|--------|
+| `↑` / `↓` | Move the selection up or down the pattern list |
+| `Escape` | Close the Hatch Manager |
+
+## Related commands
+
+- [Hatch](./hatch) — fills a picked area using the pattern currently selected
+- [Font Manager](./font-manager) — the same upload/browse pattern, for custom fonts instead of hatch patterns
+
+---
+
 # Help
 
 Opens the in-app help panel with a summary of all keyboard shortcuts, navigation tips, and general usage.
@@ -1864,16 +2034,17 @@ KulmanLab parses the following DXF entity types:
 | Text | `TEXT`, `MTEXT` | |
 | Dimension | `DIMENSION` | |
 | Multileader | `MULTILEADER` | |
+| Hatch | `HATCH` | Boundary geometry plus pattern name/scale/angle only — not the pattern's own inline line definitions; an unrecognized pattern name falls back to `ANSI31` |
 
 Layer definitions and linetype tables are also imported from the DXF file when present.
 
-Entities that use unsupported DXF types are silently skipped — the rest of the drawing still loads.
+Entities that use unsupported DXF types (e.g. `INSERT` block references) are silently skipped — the rest of the drawing still loads.
 
 ## File naming and storage
 
-When you import a file, a timestamp is appended to the file name (for example `myplan_May22_14:30:00.dxf`). This lets you keep multiple versions of the same drawing in [Recent Files](./files) without name collisions. If the file name already contains a timestamp, it is used as-is.
+Imported files get a **plain name — no timestamp is baked in**. If the name is already taken (for example, re-importing the same source file), a Finder/Explorer-style suffix is appended automatically (`plan (2)`, `plan (3)`, …) so nothing is overwritten.
 
-The drawing is automatically saved to browser storage (IndexedDB) after import, so it appears in the [Files](./files) panel and survives page reloads.
+The drawing is automatically saved to browser storage (IndexedDB) after import, so it appears in the [File Manager](./file-manager) and survives page reloads.
 
 ## What happens to the current drawing
 
@@ -1887,14 +2058,14 @@ KulmanLab automatically reopens the most recently edited file when the page load
 
 | Problem | Likely cause | Fix |
 |---------|-------------|-----|
-| Canvas is empty after import | DXF entities use unsupported types (e.g. HATCH, INSERT) | The entities were skipped — check for the "no entities found" message in the terminal |
+| Canvas is empty after import | DXF entities use unsupported types (e.g. `INSERT` block references) | The entities were skipped — check for the "no entities found" message in the terminal |
 | Import button does nothing | Browser blocked the file picker | Click the button once more; some browsers require a fresh user gesture |
 | Dimensions look wrong | DXF from a tool that writes non-standard dimension geometry | Re-export from the source app using AutoCAD 2010 or later DXF |
 
 ## Related commands
 
 - [Export](./export) — download the current drawing as DXF or JSON
-- [Files](./files) — browse and restore drawings saved in the browser
+- [File Manager](./file-manager) — browse and restore drawings saved in the browser
 - [New File](./new-file) — start a blank drawing
 
 ---
@@ -2516,7 +2687,7 @@ Move works on every entity type: Line, Polyline, Rectangle, Circle, Arc, Ellipse
 
 # New File
 
-The **New File** command clears the canvas and starts a fresh blank drawing. A unique file name with a timestamp is generated automatically.
+The **New File** command clears the canvas and starts a fresh blank drawing. A plain, unique file name is generated automatically.
 
 ## How to create a new file
 
@@ -2528,9 +2699,9 @@ A freshly created file starts with:
 
 - **No entities** on the canvas.
 - **One default layer** named `0` with color white and linetype `Continuous`.
-- A **generated file name** in the format `kulman-Mon01_HH:MM:SS.dxf` (e.g. `kulman-May22_14:30:00.dxf`).
+- A **generated file name** of `kulman` — no timestamp is baked in; if that name is already taken, a Finder/Explorer-style suffix is appended (`kulman (2)`, `kulman (3)`, …).
 
-The file is saved to browser storage automatically and appears in [Recent Files](./files).
+The file is saved to browser storage automatically and appears in [File Manager](./file-manager).
 
 ## Warning — unsaved work is discarded
 
@@ -2548,7 +2719,7 @@ Clicking **New File** discards all entities on the current canvas without warnin
 
 - [Import](./import) — open an existing DXF or JSON drawing
 - [Export](./export) — download the drawing before starting fresh
-- [Files](./files) — restore a previous drawing from browser storage
+- [File Manager](./file-manager) — restore a previous drawing from browser storage
 
 ---
 
