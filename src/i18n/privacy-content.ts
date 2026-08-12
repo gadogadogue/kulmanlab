@@ -117,7 +117,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'השרטוטים שלכם נשארים במכשיר שלכם',
         blocks: [
           { t: 'p', html: 'כל מה ששרטטתם ב-KulmanLab CAD נשמר באחסון המקומי של הדפדפן שלכם (IndexedDB) על המכשיר שלכם. שרטוטים לעולם לא מועלים, משודרים או נשמרים בשום שרת. לאחר הטעינה הראשונה האפליקציה פועלת במלואה במצב אופליין — שום שרת לא מעורב בפתיחה, עריכה או שמירה של הקבצים שלכם.' },
-          { t: 'p', html: 'מכיוון שהקבצים שלכם קיימים רק בדפדפן שלכם, אתם בשליטה מלאה עליהם. תוכלו למחוק שרטוטים בודדים מ<a href="/he/docs/commands/files/">פאנל הקבצים</a>, למחוק הכול בבת אחת עם הפקודה <a href="/he/docs/commands/wipestorage/">wipestorage</a>, או לנקות את נתוני האתר בהגדרות הדפדפן שלכם. אנחנו לא יכולים לגשת לקבצים שלכם, לשחזר אותם או למחוק אותם עבורכם — הם מעולם לא נמצאו אצלנו.' },
+          { t: 'p', html: 'מכיוון שהקבצים שלכם קיימים רק בדפדפן שלכם, אתם בשליטה מלאה עליהם. תוכלו למחוק שרטוטים בודדים מ<a href="/he/docs/commands/file-manager/">פאנל הקבצים</a>, למחוק הכול בבת אחת עם הפקודה <a href="/he/docs/commands/wipestorage/">wipestorage</a>, או לנקות את נתוני האתר בהגדרות הדפדפן שלכם. אנחנו לא יכולים לגשת לקבצים שלכם, לשחזר אותם או למחוק אותם עבורכם — הם מעולם לא נמצאו אצלנו.' },
         ],
       },
       {
@@ -203,7 +203,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Ihre Zeichnungen bleiben auf Ihrem Gerät',
         blocks: [
           { t: 'p', html: 'Alles, was Sie in KulmanLab CAD zeichnen, wird im lokalen Speicher Ihres Browsers (IndexedDB) auf Ihrem eigenen Gerät gespeichert. Zeichnungen werden niemals hochgeladen, übertragen oder auf einem Server gespeichert. Nach dem ersten Laden funktioniert die App vollständig offline — kein Server ist am Öffnen, Bearbeiten oder Speichern Ihrer Dateien beteiligt.' },
-          { t: 'p', html: 'Da Ihre Dateien nur in Ihrem Browser existieren, haben Sie die volle Kontrolle über sie. Sie können einzelne Zeichnungen im <a href="/de/docs/commands/files/">Dateien-Panel</a> löschen, mit dem Befehl <a href="/de/docs/commands/wipestorage/">wipestorage</a> alles auf einmal entfernen oder die Websitedaten in Ihren Browsereinstellungen löschen. Wir können nicht auf Ihre Dateien zugreifen, sie wiederherstellen oder für Sie löschen — wir haben sie nie.' },
+          { t: 'p', html: 'Da Ihre Dateien nur in Ihrem Browser existieren, haben Sie die volle Kontrolle über sie. Sie können einzelne Zeichnungen im <a href="/de/docs/commands/file-manager/">Dateien-Panel</a> löschen, mit dem Befehl <a href="/de/docs/commands/wipestorage/">wipestorage</a> alles auf einmal entfernen oder die Websitedaten in Ihren Browsereinstellungen löschen. Wir können nicht auf Ihre Dateien zugreifen, sie wiederherstellen oder für Sie löschen — wir haben sie nie.' },
         ],
       },
       {
@@ -289,7 +289,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Tus dibujos permanecen en tu dispositivo',
         blocks: [
           { t: 'p', html: 'Todo lo que dibujas en KulmanLab CAD se guarda en el almacenamiento local de tu navegador (IndexedDB), en tu propio dispositivo. Los dibujos nunca se suben, se transmiten ni se almacenan en ningún servidor. Tras la primera carga, la app funciona completamente sin conexión — ningún servidor interviene al abrir, editar o guardar tus archivos.' },
-          { t: 'p', html: 'Como tus archivos existen solo en tu navegador, tienes control total sobre ellos. Puedes eliminar dibujos individuales desde el <a href="/es/docs/commands/files/">panel de Archivos</a>, borrarlo todo de una vez con el comando <a href="/es/docs/commands/wipestorage/">wipestorage</a>, o limpiar los datos del sitio en la configuración de tu navegador. No podemos acceder a tus archivos, restaurarlos ni eliminarlos por ti — nunca los tenemos.' },
+          { t: 'p', html: 'Como tus archivos existen solo en tu navegador, tienes control total sobre ellos. Puedes eliminar dibujos individuales desde el <a href="/es/docs/commands/file-manager/">panel de Archivos</a>, borrarlo todo de una vez con el comando <a href="/es/docs/commands/wipestorage/">wipestorage</a>, o limpiar los datos del sitio en la configuración de tu navegador. No podemos acceder a tus archivos, restaurarlos ni eliminarlos por ti — nunca los tenemos.' },
         ],
       },
       {
@@ -375,7 +375,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Vos dessins restent sur votre appareil',
         blocks: [
           { t: 'p', html: "Tout ce que vous dessinez dans KulmanLab CAD est enregistré dans le stockage local de votre navigateur (IndexedDB), sur votre propre appareil. Les dessins ne sont jamais téléversés, transmis ni stockés sur un serveur. Après le premier chargement, l'app fonctionne entièrement hors ligne — aucun serveur n'intervient pour ouvrir, modifier ou enregistrer vos fichiers." },
-          { t: 'p', html: 'Comme vos fichiers n\'existent que dans votre navigateur, vous en avez le contrôle total. Vous pouvez supprimer des dessins individuellement depuis le <a href="/fr/docs/commands/files/">panneau Fichiers</a>, tout effacer d\'un coup avec la commande <a href="/fr/docs/commands/wipestorage/">wipestorage</a>, ou vider les données du site dans les réglages de votre navigateur. Nous ne pouvons ni accéder à vos fichiers, ni les restaurer, ni les supprimer à votre place — nous ne les avons jamais.' },
+          { t: 'p', html: 'Comme vos fichiers n\'existent que dans votre navigateur, vous en avez le contrôle total. Vous pouvez supprimer des dessins individuellement depuis le <a href="/fr/docs/commands/file-manager/">panneau Fichiers</a>, tout effacer d\'un coup avec la commande <a href="/fr/docs/commands/wipestorage/">wipestorage</a>, ou vider les données du site dans les réglages de votre navigateur. Nous ne pouvons ni accéder à vos fichiers, ni les restaurer, ni les supprimer à votre place — nous ne les avons jamais.' },
         ],
       },
       {
@@ -461,7 +461,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'I tuoi disegni restano sul tuo dispositivo',
         blocks: [
           { t: 'p', html: "Tutto ciò che disegni in KulmanLab CAD viene salvato nella memoria locale del tuo browser (IndexedDB), sul tuo dispositivo. I disegni non vengono mai caricati, trasmessi o memorizzati su alcun server. Dopo il primo caricamento l'app funziona completamente offline — nessun server è coinvolto nell'apertura, modifica o salvataggio dei tuoi file." },
-          { t: 'p', html: 'Poiché i tuoi file esistono solo nel tuo browser, ne hai il pieno controllo. Puoi eliminare i singoli disegni dal <a href="/it/docs/commands/files/">pannello File</a>, cancellare tutto in una volta con il comando <a href="/it/docs/commands/wipestorage/">wipestorage</a>, oppure cancellare i dati del sito nelle impostazioni del browser. Non possiamo accedere ai tuoi file, ripristinarli o eliminarli per te — non li abbiamo mai.' },
+          { t: 'p', html: 'Poiché i tuoi file esistono solo nel tuo browser, ne hai il pieno controllo. Puoi eliminare i singoli disegni dal <a href="/it/docs/commands/file-manager/">pannello File</a>, cancellare tutto in una volta con il comando <a href="/it/docs/commands/wipestorage/">wipestorage</a>, oppure cancellare i dati del sito nelle impostazioni del browser. Non possiamo accedere ai tuoi file, ripristinarli o eliminarli per te — non li abbiamo mai.' },
         ],
       },
       {
@@ -547,7 +547,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Seus desenhos ficam no seu dispositivo',
         blocks: [
           { t: 'p', html: 'Tudo o que você desenha no KulmanLab CAD é salvo no armazenamento local do seu navegador (IndexedDB), no seu próprio dispositivo. Os desenhos nunca são enviados, transmitidos ou armazenados em servidor algum. Após o primeiro carregamento, o app funciona totalmente offline — nenhum servidor participa da abertura, edição ou salvamento dos seus arquivos.' },
-          { t: 'p', html: 'Como seus arquivos existem apenas no seu navegador, você tem controle total sobre eles. Você pode excluir desenhos individuais no <a href="/pt/docs/commands/files/">painel Arquivos</a>, apagar tudo de uma vez com o comando <a href="/pt/docs/commands/wipestorage/">wipestorage</a>, ou limpar os dados do site nas configurações do navegador. Não podemos acessar, restaurar ou excluir seus arquivos por você — nós nunca os temos.' },
+          { t: 'p', html: 'Como seus arquivos existem apenas no seu navegador, você tem controle total sobre eles. Você pode excluir desenhos individuais no <a href="/pt/docs/commands/file-manager/">painel Arquivos</a>, apagar tudo de uma vez com o comando <a href="/pt/docs/commands/wipestorage/">wipestorage</a>, ou limpar os dados do site nas configurações do navegador. Não podemos acessar, restaurar ou excluir seus arquivos por você — nós nunca os temos.' },
         ],
       },
       {
@@ -633,7 +633,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Ваші креслення залишаються на вашому пристрої',
         blocks: [
           { t: 'p', html: 'Усе, що ви креслите в KulmanLab CAD, зберігається в локальному сховищі вашого браузера (IndexedDB) на вашому власному пристрої. Креслення ніколи не завантажуються на сервер, не передаються й не зберігаються на жодному сервері. Після першого завантаження застосунок працює повністю офлайн — жоден сервер не бере участі у відкритті, редагуванні чи збереженні ваших файлів.' },
-          { t: 'p', html: 'Оскільки ваші файли існують лише у вашому браузері, ви маєте повний контроль над ними. Ви можете видаляти окремі креслення в <a href="/uk/docs/commands/files/">панелі «Файли»</a>, стерти все одразу командою <a href="/uk/docs/commands/wipestorage/">wipestorage</a> або очистити дані сайту в налаштуваннях браузера. Ми не можемо отримати доступ до ваших файлів, відновити чи видалити їх за вас — у нас їх ніколи немає.' },
+          { t: 'p', html: 'Оскільки ваші файли існують лише у вашому браузері, ви маєте повний контроль над ними. Ви можете видаляти окремі креслення в <a href="/uk/docs/commands/file-manager/">панелі «Файли»</a>, стерти все одразу командою <a href="/uk/docs/commands/wipestorage/">wipestorage</a> або очистити дані сайту в налаштуваннях браузера. Ми не можемо отримати доступ до ваших файлів, відновити чи видалити їх за вас — у нас їх ніколи немає.' },
         ],
       },
       {
@@ -719,7 +719,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Çizimleriniz cihazınızda kalır',
         blocks: [
           { t: 'p', html: 'KulmanLab CAD\'de çizdiğiniz her şey, kendi cihazınızda tarayıcınızın yerel depolamasına (IndexedDB) kaydedilir. Çizimler hiçbir zaman yüklenmez, iletilmez veya herhangi bir sunucuda saklanmaz. İlk yüklemeden sonra uygulama tamamen çevrimdışı çalışır — dosyalarınızı açarken, düzenlerken veya kaydederken hiçbir sunucu devreye girmez.' },
-          { t: 'p', html: 'Dosyalarınız yalnızca tarayıcınızda bulunduğundan, üzerlerinde tam denetim sizdedir. Tek tek çizimleri <a href="/tr/docs/commands/files/">Dosyalar panelinden</a> silebilir, <a href="/tr/docs/commands/wipestorage/">wipestorage</a> komutuyla her şeyi bir kerede temizleyebilir veya tarayıcı ayarlarından site verilerini silebilirsiniz. Dosyalarınıza erişemez, onları geri yükleyemez veya sizin adınıza silemeyiz — onlar hiçbir zaman bizde olmaz.' },
+          { t: 'p', html: 'Dosyalarınız yalnızca tarayıcınızda bulunduğundan, üzerlerinde tam denetim sizdedir. Tek tek çizimleri <a href="/tr/docs/commands/file-manager/">Dosyalar panelinden</a> silebilir, <a href="/tr/docs/commands/wipestorage/">wipestorage</a> komutuyla her şeyi bir kerede temizleyebilir veya tarayıcı ayarlarından site verilerini silebilirsiniz. Dosyalarınıza erişemez, onları geri yükleyemez veya sizin adınıza silemeyiz — onlar hiçbir zaman bizde olmaz.' },
         ],
       },
       {
@@ -805,7 +805,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: '您的图纸保留在您的设备上',
         blocks: [
           { t: 'p', html: '您在 KulmanLab CAD 中绘制的所有内容都保存在您自己设备上的浏览器本地存储（IndexedDB）中。图纸绝不会被上传、传输或存储到任何服务器。首次加载后，应用可完全离线运行——打开、编辑或保存文件时不涉及任何服务器。' },
-          { t: 'p', html: '由于您的文件只存在于您的浏览器中，您对它们拥有完全的控制权。您可以在<a href="/zh/docs/commands/files/">文件面板</a>中删除单个图纸，使用 <a href="/zh/docs/commands/wipestorage/">wipestorage</a> 命令一次性清除全部内容，或在浏览器设置中清除站点数据。我们无法访问、恢复或替您删除文件——我们从未持有它们。' },
+          { t: 'p', html: '由于您的文件只存在于您的浏览器中，您对它们拥有完全的控制权。您可以在<a href="/zh/docs/commands/file-manager/">文件面板</a>中删除单个图纸，使用 <a href="/zh/docs/commands/wipestorage/">wipestorage</a> 命令一次性清除全部内容，或在浏览器设置中清除站点数据。我们无法访问、恢复或替您删除文件——我们从未持有它们。' },
         ],
       },
       {
@@ -891,7 +891,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'आपकी ड्रॉइंग आपके डिवाइस पर रहती हैं',
         blocks: [
           { t: 'p', html: 'KulmanLab CAD में आप जो कुछ भी बनाते हैं, वह आपके अपने डिवाइस पर ब्राउज़र के लोकल स्टोरेज (IndexedDB) में सहेजा जाता है। ड्रॉइंग कभी अपलोड, प्रसारित या किसी सर्वर पर संग्रहीत नहीं होतीं। पहली बार लोड होने के बाद ऐप पूरी तरह ऑफ़लाइन काम करता है — आपकी फ़ाइलें खोलने, संपादित करने या सहेजने में कोई सर्वर शामिल नहीं होता।' },
-          { t: 'p', html: 'चूँकि आपकी फ़ाइलें केवल आपके ब्राउज़र में मौजूद हैं, उन पर पूरा नियंत्रण आपका है। आप <a href="/hi/docs/commands/files/">फ़ाइल पैनल</a> से अलग-अलग ड्रॉइंग हटा सकते हैं, <a href="/hi/docs/commands/wipestorage/">wipestorage</a> कमांड से एक साथ सब कुछ मिटा सकते हैं, या ब्राउज़र सेटिंग्स में साइट डेटा साफ़ कर सकते हैं। हम आपकी फ़ाइलों तक न पहुँच सकते हैं, न उन्हें पुनर्स्थापित कर सकते हैं, न आपकी ओर से हटा सकते हैं — वे कभी हमारे पास होती ही नहीं।' },
+          { t: 'p', html: 'चूँकि आपकी फ़ाइलें केवल आपके ब्राउज़र में मौजूद हैं, उन पर पूरा नियंत्रण आपका है। आप <a href="/hi/docs/commands/file-manager/">फ़ाइल पैनल</a> से अलग-अलग ड्रॉइंग हटा सकते हैं, <a href="/hi/docs/commands/wipestorage/">wipestorage</a> कमांड से एक साथ सब कुछ मिटा सकते हैं, या ब्राउज़र सेटिंग्स में साइट डेटा साफ़ कर सकते हैं। हम आपकी फ़ाइलों तक न पहुँच सकते हैं, न उन्हें पुनर्स्थापित कर सकते हैं, न आपकी ओर से हटा सकते हैं — वे कभी हमारे पास होती ही नहीं।' },
         ],
       },
       {
@@ -977,7 +977,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'رسوماتك تبقى على جهازك',
         blocks: [
           { t: 'p', html: 'كل ما ترسمه في KulmanLab CAD يُحفظ في التخزين المحلي لمتصفحك (IndexedDB) على جهازك الخاص. لا تُرفَع الرسومات أبدًا ولا تُنقَل ولا تُخزَّن على أي خادم. بعد التحميل الأول يعمل التطبيق دون اتصال بالكامل — لا يشارك أي خادم في فتح ملفاتك أو تحريرها أو حفظها.' },
-          { t: 'p', html: 'ولأن ملفاتك موجودة في متصفحك فقط، فأنت تتحكم فيها تحكمًا كاملًا. يمكنك حذف رسومات فردية من <a href="/ar/docs/commands/files/">لوحة الملفات</a>، أو مسح كل شيء دفعة واحدة بأمر <a href="/ar/docs/commands/wipestorage/">wipestorage</a>، أو مسح بيانات الموقع من إعدادات المتصفح. لا يمكننا الوصول إلى ملفاتك أو استعادتها أو حذفها نيابة عنك — فهي ليست لدينا أصلًا.' },
+          { t: 'p', html: 'ولأن ملفاتك موجودة في متصفحك فقط، فأنت تتحكم فيها تحكمًا كاملًا. يمكنك حذف رسومات فردية من <a href="/ar/docs/commands/file-manager/">لوحة الملفات</a>، أو مسح كل شيء دفعة واحدة بأمر <a href="/ar/docs/commands/wipestorage/">wipestorage</a>، أو مسح بيانات الموقع من إعدادات المتصفح. لا يمكننا الوصول إلى ملفاتك أو استعادتها أو حذفها نيابة عنك — فهي ليست لدينا أصلًا.' },
         ],
       },
       {
@@ -1063,7 +1063,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Gambar Anda tetap di perangkat Anda',
         blocks: [
           { t: 'p', html: 'Semua yang Anda gambar di KulmanLab CAD disimpan di penyimpanan lokal browser (IndexedDB) di perangkat Anda sendiri. Gambar tidak pernah diunggah, dikirim, atau disimpan di server mana pun. Setelah pemuatan pertama, aplikasi berjalan sepenuhnya offline — tidak ada server yang terlibat saat membuka, mengedit, atau menyimpan file Anda.' },
-          { t: 'p', html: 'Karena file Anda hanya ada di browser Anda, Anda memegang kendali penuh atasnya. Anda dapat menghapus gambar satu per satu dari <a href="/id/docs/commands/files/">panel File</a>, menghapus semuanya sekaligus dengan perintah <a href="/id/docs/commands/wipestorage/">wipestorage</a>, atau membersihkan data situs di pengaturan browser. Kami tidak dapat mengakses, memulihkan, atau menghapus file Anda untuk Anda — kami tidak pernah memilikinya.' },
+          { t: 'p', html: 'Karena file Anda hanya ada di browser Anda, Anda memegang kendali penuh atasnya. Anda dapat menghapus gambar satu per satu dari <a href="/id/docs/commands/file-manager/">panel File</a>, menghapus semuanya sekaligus dengan perintah <a href="/id/docs/commands/wipestorage/">wipestorage</a>, atau membersihkan data situs di pengaturan browser. Kami tidak dapat mengakses, memulihkan, atau menghapus file Anda untuk Anda — kami tidak pernah memilikinya.' },
         ],
       },
       {
@@ -1149,7 +1149,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: '図面はデバイスから出ません',
         blocks: [
           { t: 'p', html: 'KulmanLab CAD で描いたものはすべて、お使いのデバイス上のブラウザのローカルストレージ（IndexedDB）に保存されます。図面がアップロード・送信されたり、サーバーに保存されたりすることは一切ありません。初回読み込み後はアプリは完全にオフラインで動作します — ファイルの読み込み・編集・保存にサーバーは一切関与しません。' },
-          { t: 'p', html: 'ファイルはブラウザ内にのみ存在するため、完全にあなたの管理下にあります。<a href="/ja/docs/commands/files/">ファイルパネル</a>から個別の図面を削除する、<a href="/ja/docs/commands/wipestorage/">wipestorage</a> コマンドで一括消去する、あるいはブラウザ設定でサイトデータを消去することができます。私たちがファイルにアクセスしたり、復元・削除を代行したりすることはできません — そもそもファイルを保持していないからです。' },
+          { t: 'p', html: 'ファイルはブラウザ内にのみ存在するため、完全にあなたの管理下にあります。<a href="/ja/docs/commands/file-manager/">ファイルパネル</a>から個別の図面を削除する、<a href="/ja/docs/commands/wipestorage/">wipestorage</a> コマンドで一括消去する、あるいはブラウザ設定でサイトデータを消去することができます。私たちがファイルにアクセスしたり、復元・削除を代行したりすることはできません — そもそもファイルを保持していないからです。' },
         ],
       },
       {
@@ -1235,7 +1235,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Twoje rysunki pozostają na Twoim urządzeniu',
         blocks: [
           { t: 'p', html: 'Wszystko, co rysujesz w KulmanLab CAD, jest zapisywane w lokalnej pamięci przeglądarki (IndexedDB) na Twoim własnym urządzeniu. Rysunki nigdy nie są przesyłane ani przechowywane na żadnym serwerze. Po pierwszym załadowaniu aplikacja działa całkowicie offline — żaden serwer nie uczestniczy w otwieraniu, edytowaniu ani zapisywaniu Twoich plików.' },
-          { t: 'p', html: 'Ponieważ Twoje pliki istnieją tylko w Twojej przeglądarce, masz nad nimi pełną kontrolę. Możesz usuwać pojedyncze rysunki w <a href="/pl/docs/commands/files/">panelu Pliki</a>, wymazać wszystko naraz poleceniem <a href="/pl/docs/commands/wipestorage/">wipestorage</a> lub wyczyścić dane witryny w ustawieniach przeglądarki. Nie możemy uzyskać dostępu do Twoich plików, przywrócić ich ani usunąć za Ciebie — nigdy ich nie mamy.' },
+          { t: 'p', html: 'Ponieważ Twoje pliki istnieją tylko w Twojej przeglądarce, masz nad nimi pełną kontrolę. Możesz usuwać pojedyncze rysunki w <a href="/pl/docs/commands/file-manager/">panelu Pliki</a>, wymazać wszystko naraz poleceniem <a href="/pl/docs/commands/wipestorage/">wipestorage</a> lub wyczyścić dane witryny w ustawieniach przeglądarki. Nie możemy uzyskać dostępu do Twoich plików, przywrócić ich ani usunąć za Ciebie — nigdy ich nie mamy.' },
         ],
       },
       {
@@ -1321,7 +1321,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: '도면은 기기에 남습니다',
         blocks: [
           { t: 'p', html: 'KulmanLab CAD에서 그리는 모든 것은 사용자 기기의 브라우저 로컬 저장소(IndexedDB)에 저장됩니다. 도면이 업로드되거나 전송되거나 서버에 저장되는 일은 절대 없습니다. 첫 로드 이후 앱은 완전히 오프라인으로 작동하며, 파일을 열고 편집하고 저장하는 데 어떤 서버도 관여하지 않습니다.' },
-          { t: 'p', html: '파일이 브라우저에만 존재하므로 완전한 통제권은 사용자에게 있습니다. <a href="/ko/docs/commands/files/">파일 패널</a>에서 개별 도면을 삭제하거나, <a href="/ko/docs/commands/wipestorage/">wipestorage</a> 명령으로 한 번에 모두 지우거나, 브라우저 설정에서 사이트 데이터를 삭제할 수 있습니다. 우리는 파일에 접근하거나 복원하거나 대신 삭제할 수 없습니다 — 애초에 파일을 갖고 있지 않기 때문입니다.' },
+          { t: 'p', html: '파일이 브라우저에만 존재하므로 완전한 통제권은 사용자에게 있습니다. <a href="/ko/docs/commands/file-manager/">파일 패널</a>에서 개별 도면을 삭제하거나, <a href="/ko/docs/commands/wipestorage/">wipestorage</a> 명령으로 한 번에 모두 지우거나, 브라우저 설정에서 사이트 데이터를 삭제할 수 있습니다. 우리는 파일에 접근하거나 복원하거나 대신 삭제할 수 없습니다 — 애초에 파일을 갖고 있지 않기 때문입니다.' },
         ],
       },
       {
@@ -1407,7 +1407,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Bản vẽ của bạn ở lại trên thiết bị',
         blocks: [
           { t: 'p', html: 'Mọi thứ bạn vẽ trong KulmanLab CAD được lưu vào bộ nhớ cục bộ của trình duyệt (IndexedDB) trên chính thiết bị của bạn. Bản vẽ không bao giờ được tải lên, truyền đi hay lưu trên bất kỳ máy chủ nào. Sau lần tải đầu tiên, ứng dụng hoạt động hoàn toàn ngoại tuyến — không máy chủ nào tham gia vào việc mở, chỉnh sửa hay lưu tệp của bạn.' },
-          { t: 'p', html: 'Vì tệp của bạn chỉ tồn tại trong trình duyệt, bạn có toàn quyền kiểm soát chúng. Bạn có thể xóa từng bản vẽ trong <a href="/vi/docs/commands/files/">bảng Tệp</a>, xóa tất cả cùng lúc bằng lệnh <a href="/vi/docs/commands/wipestorage/">wipestorage</a>, hoặc xóa dữ liệu trang web trong cài đặt trình duyệt. Chúng tôi không thể truy cập, khôi phục hay xóa tệp thay bạn — chúng tôi chưa bao giờ có chúng.' },
+          { t: 'p', html: 'Vì tệp của bạn chỉ tồn tại trong trình duyệt, bạn có toàn quyền kiểm soát chúng. Bạn có thể xóa từng bản vẽ trong <a href="/vi/docs/commands/file-manager/">bảng Tệp</a>, xóa tất cả cùng lúc bằng lệnh <a href="/vi/docs/commands/wipestorage/">wipestorage</a>, hoặc xóa dữ liệu trang web trong cài đặt trình duyệt. Chúng tôi không thể truy cập, khôi phục hay xóa tệp thay bạn — chúng tôi chưa bao giờ có chúng.' },
         ],
       },
       {
@@ -1493,7 +1493,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'แบบเขียนของคุณอยู่บนอุปกรณ์ของคุณ',
         blocks: [
           { t: 'p', html: 'ทุกสิ่งที่คุณเขียนใน KulmanLab CAD จะถูกบันทึกลงในพื้นที่จัดเก็บภายในของเบราว์เซอร์ (IndexedDB) บนอุปกรณ์ของคุณเอง แบบเขียนไม่มีวันถูกอัปโหลด ส่งต่อ หรือเก็บบนเซิร์ฟเวอร์ใด ๆ หลังจากโหลดครั้งแรก แอปทำงานแบบออฟไลน์ได้อย่างสมบูรณ์ — ไม่มีเซิร์ฟเวอร์ใดเกี่ยวข้องกับการเปิด แก้ไข หรือบันทึกไฟล์ของคุณ' },
-          { t: 'p', html: 'เนื่องจากไฟล์ของคุณมีอยู่เฉพาะในเบราว์เซอร์ คุณจึงควบคุมมันได้เต็มที่ คุณสามารถลบแบบเขียนทีละไฟล์จาก<a href="/th/docs/commands/files/">แผงไฟล์</a> ล้างทั้งหมดในครั้งเดียวด้วยคำสั่ง <a href="/th/docs/commands/wipestorage/">wipestorage</a> หรือล้างข้อมูลเว็บไซต์ในการตั้งค่าเบราว์เซอร์ เราไม่สามารถเข้าถึง กู้คืน หรือลบไฟล์แทนคุณได้ — เราไม่เคยมีไฟล์เหล่านั้นเลย' },
+          { t: 'p', html: 'เนื่องจากไฟล์ของคุณมีอยู่เฉพาะในเบราว์เซอร์ คุณจึงควบคุมมันได้เต็มที่ คุณสามารถลบแบบเขียนทีละไฟล์จาก<a href="/th/docs/commands/file-manager/">แผงไฟล์</a> ล้างทั้งหมดในครั้งเดียวด้วยคำสั่ง <a href="/th/docs/commands/wipestorage/">wipestorage</a> หรือล้างข้อมูลเว็บไซต์ในการตั้งค่าเบราว์เซอร์ เราไม่สามารถเข้าถึง กู้คืน หรือลบไฟล์แทนคุณได้ — เราไม่เคยมีไฟล์เหล่านั้นเลย' },
         ],
       },
       {
@@ -1579,7 +1579,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Lukisan anda kekal pada peranti anda',
         blocks: [
           { t: 'p', html: 'Semua yang anda lukis dalam KulmanLab CAD disimpan dalam storan setempat pelayar (IndexedDB) pada peranti anda sendiri. Lukisan tidak pernah dimuat naik, dihantar atau disimpan pada mana-mana pelayan. Selepas pemuatan pertama, aplikasi berfungsi sepenuhnya di luar talian — tiada pelayan terlibat dalam membuka, mengedit atau menyimpan fail anda.' },
-          { t: 'p', html: 'Oleh sebab fail anda wujud hanya dalam pelayar anda, anda mempunyai kawalan penuh ke atasnya. Anda boleh memadamkan lukisan satu persatu daripada <a href="/ms/docs/commands/files/">panel Fail</a>, memadamkan semuanya sekali gus dengan perintah <a href="/ms/docs/commands/wipestorage/">wipestorage</a>, atau mengosongkan data tapak dalam tetapan pelayar. Kami tidak boleh mengakses, memulihkan atau memadamkan fail anda bagi pihak anda — kami tidak pernah memilikinya.' },
+          { t: 'p', html: 'Oleh sebab fail anda wujud hanya dalam pelayar anda, anda mempunyai kawalan penuh ke atasnya. Anda boleh memadamkan lukisan satu persatu daripada <a href="/ms/docs/commands/file-manager/">panel Fail</a>, memadamkan semuanya sekali gus dengan perintah <a href="/ms/docs/commands/wipestorage/">wipestorage</a>, atau mengosongkan data tapak dalam tetapan pelayar. Kami tidak boleh mengakses, memulihkan atau memadamkan fail anda bagi pihak anda — kami tidak pernah memilikinya.' },
         ],
       },
       {
@@ -1665,7 +1665,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'আপনার অঙ্কন আপনার ডিভাইসেই থাকে',
         blocks: [
           { t: 'p', html: 'KulmanLab CAD-এ আপনি যা কিছু আঁকেন, তা আপনার নিজের ডিভাইসে ব্রাউজারের লোকাল স্টোরেজে (IndexedDB) সংরক্ষিত হয়। অঙ্কন কখনো আপলোড, প্রেরণ বা কোনো সার্ভারে সংরক্ষণ করা হয় না। প্রথমবার লোড হওয়ার পর অ্যাপটি সম্পূর্ণ অফলাইনে কাজ করে — আপনার ফাইল খোলা, সম্পাদনা বা সংরক্ষণে কোনো সার্ভার জড়িত নয়।' },
-          { t: 'p', html: 'যেহেতু আপনার ফাইল শুধু আপনার ব্রাউজারেই আছে, সেগুলোর পূর্ণ নিয়ন্ত্রণ আপনার হাতে। আপনি <a href="/bn/docs/commands/files/">ফাইল প্যানেল</a> থেকে আলাদা আলাদা অঙ্কন মুছতে পারেন, <a href="/bn/docs/commands/wipestorage/">wipestorage</a> কমান্ড দিয়ে একবারে সব মুছে ফেলতে পারেন, অথবা ব্রাউজার সেটিংসে সাইট ডেটা পরিষ্কার করতে পারেন। আমরা আপনার ফাইলে প্রবেশ করতে, পুনরুদ্ধার করতে বা আপনার হয়ে মুছতে পারি না — সেগুলো কখনোই আমাদের কাছে থাকে না।' },
+          { t: 'p', html: 'যেহেতু আপনার ফাইল শুধু আপনার ব্রাউজারেই আছে, সেগুলোর পূর্ণ নিয়ন্ত্রণ আপনার হাতে। আপনি <a href="/bn/docs/commands/file-manager/">ফাইল প্যানেল</a> থেকে আলাদা আলাদা অঙ্কন মুছতে পারেন, <a href="/bn/docs/commands/wipestorage/">wipestorage</a> কমান্ড দিয়ে একবারে সব মুছে ফেলতে পারেন, অথবা ব্রাউজার সেটিংসে সাইট ডেটা পরিষ্কার করতে পারেন। আমরা আপনার ফাইলে প্রবেশ করতে, পুনরুদ্ধার করতে বা আপনার হয়ে মুছতে পারি না — সেগুলো কখনোই আমাদের কাছে থাকে না।' },
         ],
       },
       {
@@ -1751,7 +1751,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Michoro yako hukaa kwenye kifaa chako',
         blocks: [
           { t: 'p', html: 'Kila kitu unachochora katika KulmanLab CAD huhifadhiwa kwenye hifadhi ya ndani ya kivinjari chako (IndexedDB) kwenye kifaa chako mwenyewe. Michoro kamwe haipakiwi, haitumwi, wala kuhifadhiwa kwenye seva yoyote. Baada ya kupakia mara ya kwanza, programu hufanya kazi kikamilifu bila mtandao — hakuna seva inayohusika katika kufungua, kuhariri au kuhifadhi faili zako.' },
-          { t: 'p', html: 'Kwa kuwa faili zako zipo kwenye kivinjari chako pekee, una udhibiti kamili juu yake. Unaweza kufuta michoro moja moja kutoka kwenye <a href="/sw/docs/commands/files/">paneli ya Faili</a>, kufuta yote kwa mara moja kwa amri ya <a href="/sw/docs/commands/wipestorage/">wipestorage</a>, au kufuta data ya tovuti katika mipangilio ya kivinjari. Hatuwezi kufikia, kurejesha au kufuta faili zako kwa niaba yako — kamwe hatuna faili hizo.' },
+          { t: 'p', html: 'Kwa kuwa faili zako zipo kwenye kivinjari chako pekee, una udhibiti kamili juu yake. Unaweza kufuta michoro moja moja kutoka kwenye <a href="/sw/docs/commands/file-manager/">paneli ya Faili</a>, kufuta yote kwa mara moja kwa amri ya <a href="/sw/docs/commands/wipestorage/">wipestorage</a>, au kufuta data ya tovuti katika mipangilio ya kivinjari. Hatuwezi kufikia, kurejesha au kufuta faili zako kwa niaba yako — kamwe hatuna faili hizo.' },
         ],
       },
       {
@@ -1837,7 +1837,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'آپ کی ڈرائنگز آپ کے آلے پر رہتی ہیں',
         blocks: [
           { t: 'p', html: 'KulmanLab CAD میں آپ جو کچھ بھی بناتے ہیں وہ آپ کے اپنے آلے پر براؤزر کے لوکل اسٹوریج (IndexedDB) میں محفوظ ہوتا ہے۔ ڈرائنگز کبھی اپ لوڈ، منتقل یا کسی سرور پر محفوظ نہیں کی جاتیں۔ پہلی بار لوڈ ہونے کے بعد ایپ مکمل طور پر آف لائن کام کرتی ہے — آپ کی فائلیں کھولنے، ترمیم کرنے یا محفوظ کرنے میں کوئی سرور شامل نہیں ہوتا۔' },
-          { t: 'p', html: 'چونکہ آپ کی فائلیں صرف آپ کے براؤزر میں موجود ہیں، ان پر مکمل اختیار آپ کا ہے۔ آپ <a href="/ur/docs/commands/files/">فائل پینل</a> سے انفرادی ڈرائنگز حذف کر سکتے ہیں، <a href="/ur/docs/commands/wipestorage/">wipestorage</a> کمانڈ سے ایک ساتھ سب کچھ مٹا سکتے ہیں، یا براؤزر کی ترتیبات میں سائٹ ڈیٹا صاف کر سکتے ہیں۔ ہم آپ کی فائلوں تک نہ رسائی حاصل کر سکتے ہیں، نہ انہیں بحال کر سکتے ہیں، نہ آپ کی طرف سے حذف کر سکتے ہیں — وہ کبھی ہمارے پاس ہوتی ہی نہیں۔' },
+          { t: 'p', html: 'چونکہ آپ کی فائلیں صرف آپ کے براؤزر میں موجود ہیں، ان پر مکمل اختیار آپ کا ہے۔ آپ <a href="/ur/docs/commands/file-manager/">فائل پینل</a> سے انفرادی ڈرائنگز حذف کر سکتے ہیں، <a href="/ur/docs/commands/wipestorage/">wipestorage</a> کمانڈ سے ایک ساتھ سب کچھ مٹا سکتے ہیں، یا براؤزر کی ترتیبات میں سائٹ ڈیٹا صاف کر سکتے ہیں۔ ہم آپ کی فائلوں تک نہ رسائی حاصل کر سکتے ہیں، نہ انہیں بحال کر سکتے ہیں، نہ آپ کی طرف سے حذف کر سکتے ہیں — وہ کبھی ہمارے پاس ہوتی ہی نہیں۔' },
         ],
       },
       {
@@ -1923,7 +1923,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Τα σχέδιά σας μένουν στη συσκευή σας',
         blocks: [
           { t: 'p', html: 'Ό,τι σχεδιάζετε στο KulmanLab CAD αποθηκεύεται στον τοπικό χώρο αποθήκευσης του περιηγητή σας (IndexedDB), στη δική σας συσκευή. Τα σχέδια δεν ανεβαίνουν, δεν μεταδίδονται και δεν αποθηκεύονται ποτέ σε κανέναν διακομιστή. Μετά την πρώτη φόρτωση, η εφαρμογή λειτουργεί πλήρως εκτός σύνδεσης — κανένας διακομιστής δεν εμπλέκεται στο άνοιγμα, την επεξεργασία ή την αποθήκευση των αρχείων σας.' },
-          { t: 'p', html: 'Επειδή τα αρχεία σας υπάρχουν μόνο στον περιηγητή σας, έχετε τον πλήρη έλεγχό τους. Μπορείτε να διαγράψετε μεμονωμένα σχέδια από το <a href="/el/docs/commands/files/">πάνελ Αρχείων</a>, να τα σβήσετε όλα μαζί με την εντολή <a href="/el/docs/commands/wipestorage/">wipestorage</a>, ή να καθαρίσετε τα δεδομένα ιστότοπου στις ρυθμίσεις του περιηγητή. Δεν μπορούμε να αποκτήσουμε πρόσβαση στα αρχεία σας, να τα επαναφέρουμε ή να τα διαγράψουμε για λογαριασμό σας — δεν τα έχουμε ποτέ.' },
+          { t: 'p', html: 'Επειδή τα αρχεία σας υπάρχουν μόνο στον περιηγητή σας, έχετε τον πλήρη έλεγχό τους. Μπορείτε να διαγράψετε μεμονωμένα σχέδια από το <a href="/el/docs/commands/file-manager/">πάνελ Αρχείων</a>, να τα σβήσετε όλα μαζί με την εντολή <a href="/el/docs/commands/wipestorage/">wipestorage</a>, ή να καθαρίσετε τα δεδομένα ιστότοπου στις ρυθμίσεις του περιηγητή. Δεν μπορούμε να αποκτήσουμε πρόσβαση στα αρχεία σας, να τα επαναφέρουμε ή να τα διαγράψουμε για λογαριασμό σας — δεν τα έχουμε ποτέ.' },
         ],
       },
       {
@@ -2009,7 +2009,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'ਤੁਹਾਡੀਆਂ ਡਰਾਇੰਗਾਂ ਤੁਹਾਡੀ ਡਿਵਾਈਸ ਤੇ ਰਹਿੰਦੀਆਂ ਹਨ',
         blocks: [
           { t: 'p', html: 'ਜੋ ਕੁਝ ਵੀ ਤੁਸੀਂ KulmanLab CAD ਵਿੱਚ ਬਣਾਉਂਦੇ ਹੋ, ਉਹ ਤੁਹਾਡੀ ਆਪਣੀ ਡਿਵਾਈਸ ਤੇ ਬ੍ਰਾਊਜ਼ਰ ਦੇ ਲੋਕਲ ਸਟੋਰੇਜ (IndexedDB) ਵਿੱਚ ਸੰਭਾਲਿਆ ਜਾਂਦਾ ਹੈ। ਡਰਾਇੰਗਾਂ ਕਦੇ ਵੀ ਅੱਪਲੋਡ, ਟ੍ਰਾਂਸਮਿਟ ਜਾਂ ਕਿਸੇ ਸਰਵਰ ਤੇ ਸਟੋਰ ਨਹੀਂ ਹੁੰਦੀਆਂ। ਪਹਿਲੀ ਵਾਰ ਲੋਡ ਹੋਣ ਤੋਂ ਬਾਅਦ ਐਪ ਪੂਰੀ ਤਰ੍ਹਾਂ ਔਫਲਾਈਨ ਕੰਮ ਕਰਦੀ ਹੈ — ਤੁਹਾਡੀਆਂ ਫਾਈਲਾਂ ਖੋਲ੍ਹਣ, ਸੋਧਣ ਜਾਂ ਸੰਭਾਲਣ ਵਿੱਚ ਕੋਈ ਸਰਵਰ ਸ਼ਾਮਲ ਨਹੀਂ ਹੁੰਦਾ।' },
-          { t: 'p', html: 'ਕਿਉਂਕਿ ਤੁਹਾਡੀਆਂ ਫਾਈਲਾਂ ਸਿਰਫ਼ ਤੁਹਾਡੇ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਹਨ, ਉਹਨਾਂ ਤੇ ਪੂਰਾ ਕੰਟਰੋਲ ਤੁਹਾਡਾ ਹੈ। ਤੁਸੀਂ <a href="/pa/docs/commands/files/">ਫਾਈਲ ਪੈਨਲ</a> ਤੋਂ ਵੱਖ-ਵੱਖ ਡਰਾਇੰਗਾਂ ਮਿਟਾ ਸਕਦੇ ਹੋ, <a href="/pa/docs/commands/wipestorage/">wipestorage</a> ਕਮਾਂਡ ਨਾਲ ਇੱਕੋ ਵਾਰ ਸਭ ਕੁਝ ਮਿਟਾ ਸਕਦੇ ਹੋ, ਜਾਂ ਬ੍ਰਾਊਜ਼ਰ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਸਾਈਟ ਡੇਟਾ ਸਾਫ਼ ਕਰ ਸਕਦੇ ਹੋ। ਅਸੀਂ ਤੁਹਾਡੀਆਂ ਫਾਈਲਾਂ ਤੱਕ ਨਾ ਪਹੁੰਚ ਸਕਦੇ ਹਾਂ, ਨਾ ਬਹਾਲ ਕਰ ਸਕਦੇ ਹਾਂ, ਨਾ ਤੁਹਾਡੀ ਥਾਂ ਮਿਟਾ ਸਕਦੇ ਹਾਂ — ਉਹ ਕਦੇ ਸਾਡੇ ਕੋਲ ਹੁੰਦੀਆਂ ਹੀ ਨਹੀਂ।' },
+          { t: 'p', html: 'ਕਿਉਂਕਿ ਤੁਹਾਡੀਆਂ ਫਾਈਲਾਂ ਸਿਰਫ਼ ਤੁਹਾਡੇ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਹਨ, ਉਹਨਾਂ ਤੇ ਪੂਰਾ ਕੰਟਰੋਲ ਤੁਹਾਡਾ ਹੈ। ਤੁਸੀਂ <a href="/pa/docs/commands/file-manager/">ਫਾਈਲ ਪੈਨਲ</a> ਤੋਂ ਵੱਖ-ਵੱਖ ਡਰਾਇੰਗਾਂ ਮਿਟਾ ਸਕਦੇ ਹੋ, <a href="/pa/docs/commands/wipestorage/">wipestorage</a> ਕਮਾਂਡ ਨਾਲ ਇੱਕੋ ਵਾਰ ਸਭ ਕੁਝ ਮਿਟਾ ਸਕਦੇ ਹੋ, ਜਾਂ ਬ੍ਰਾਊਜ਼ਰ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਸਾਈਟ ਡੇਟਾ ਸਾਫ਼ ਕਰ ਸਕਦੇ ਹੋ। ਅਸੀਂ ਤੁਹਾਡੀਆਂ ਫਾਈਲਾਂ ਤੱਕ ਨਾ ਪਹੁੰਚ ਸਕਦੇ ਹਾਂ, ਨਾ ਬਹਾਲ ਕਰ ਸਕਦੇ ਹਾਂ, ਨਾ ਤੁਹਾਡੀ ਥਾਂ ਮਿਟਾ ਸਕਦੇ ਹਾਂ — ਉਹ ਕਦੇ ਸਾਡੇ ਕੋਲ ਹੁੰਦੀਆਂ ਹੀ ਨਹੀਂ।' },
         ],
       },
       {
@@ -2095,7 +2095,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Dina ritningar stannar på din enhet',
         blocks: [
           { t: 'p', html: 'Allt du ritar i KulmanLab CAD sparas i webbläsarens lokala lagring (IndexedDB) på din egen enhet. Ritningar laddas aldrig upp, skickas aldrig och lagras aldrig på någon server. Efter den första inläsningen fungerar appen helt offline — ingen server är inblandad när du öppnar, redigerar eller sparar dina filer.' },
-          { t: 'p', html: 'Eftersom dina filer bara finns i din webbläsare har du full kontroll över dem. Du kan ta bort enskilda ritningar i <a href="/sv/docs/commands/files/">filpanelen</a>, radera allt på en gång med kommandot <a href="/sv/docs/commands/wipestorage/">wipestorage</a>, eller rensa webbplatsdata i webbläsarens inställningar. Vi kan inte komma åt, återställa eller ta bort dina filer åt dig — vi har dem aldrig.' },
+          { t: 'p', html: 'Eftersom dina filer bara finns i din webbläsare har du full kontroll över dem. Du kan ta bort enskilda ritningar i <a href="/sv/docs/commands/file-manager/">filpanelen</a>, radera allt på en gång med kommandot <a href="/sv/docs/commands/wipestorage/">wipestorage</a>, eller rensa webbplatsdata i webbläsarens inställningar. Vi kan inte komma åt, återställa eller ta bort dina filer åt dig — vi har dem aldrig.' },
         ],
       },
       {
@@ -2181,7 +2181,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Nananatili sa iyong device ang iyong mga drawing',
         blocks: [
           { t: 'p', html: 'Lahat ng iginuguhit mo sa KulmanLab CAD ay naka-save sa lokal na storage ng iyong browser (IndexedDB) sa sarili mong device. Hindi kailanman ina-upload, ipinapadala, o iniimbak ang mga drawing sa anumang server. Pagkatapos ng unang pag-load, ganap na gumagana ang app nang offline — walang server na kasangkot sa pagbubukas, pag-edit, o pag-save ng iyong mga file.' },
-          { t: 'p', html: 'Dahil ang iyong mga file ay nasa browser mo lamang, ikaw ang may buong kontrol sa mga ito. Maaari mong burahin ang mga indibidwal na drawing mula sa <a href="/tl/docs/commands/files/">panel ng Files</a>, burahin ang lahat nang sabay-sabay gamit ang command na <a href="/tl/docs/commands/wipestorage/">wipestorage</a>, o i-clear ang data ng site sa mga setting ng browser. Hindi namin maaaring ma-access, maibalik, o mabura ang iyong mga file para sa iyo — hindi kailanman napupunta sa amin ang mga ito.' },
+          { t: 'p', html: 'Dahil ang iyong mga file ay nasa browser mo lamang, ikaw ang may buong kontrol sa mga ito. Maaari mong burahin ang mga indibidwal na drawing mula sa <a href="/tl/docs/commands/file-manager/">panel ng Files</a>, burahin ang lahat nang sabay-sabay gamit ang command na <a href="/tl/docs/commands/wipestorage/">wipestorage</a>, o i-clear ang data ng site sa mga setting ng browser. Hindi namin maaaring ma-access, maibalik, o mabura ang iyong mga file para sa iyo — hindi kailanman napupunta sa amin ang mga ito.' },
         ],
       },
       {
@@ -2267,7 +2267,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Uw tekeningen blijven op uw apparaat',
         blocks: [
           { t: 'p', html: "Alles wat u tekent in KulmanLab CAD wordt opgeslagen in de lokale opslag (IndexedDB) van uw browser, op uw eigen apparaat. Tekeningen worden nooit geüpload, verzonden of op een server opgeslagen. Na de eerste keer laden werkt de app volledig offline — er is geen server betrokken bij het openen, bewerken of opslaan van uw bestanden." },
-          { t: 'p', html: 'Omdat uw bestanden alleen in uw browser bestaan, heeft u er volledige controle over. U kunt individuele tekeningen verwijderen via het <a href="/nl/docs/commands/files/">Bestanden-paneel</a>, alles in één keer wissen met het commando <a href="/nl/docs/commands/wipestorage/">wipestorage</a>, of de sitegegevens wissen in uw browserinstellingen. Wij kunnen uw bestanden niet voor u benaderen, herstellen of verwijderen — wij hebben ze nooit gehad.' },
+          { t: 'p', html: 'Omdat uw bestanden alleen in uw browser bestaan, heeft u er volledige controle over. U kunt individuele tekeningen verwijderen via het <a href="/nl/docs/commands/file-manager/">Bestanden-paneel</a>, alles in één keer wissen met het commando <a href="/nl/docs/commands/wipestorage/">wipestorage</a>, of de sitegegevens wissen in uw browserinstellingen. Wij kunnen uw bestanden niet voor u benaderen, herstellen of verwijderen — wij hebben ze nooit gehad.' },
         ],
       },
       {
@@ -2353,7 +2353,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Zanen-zanenka suna zama a naʼurarka',
         blocks: [
           { t: 'p', html: 'Duk abin da ka zana a KulmanLab CAD ana ajiye shi a ajiyar gida ta burauzarka (IndexedDB) a naʼurarka. Ba a taɓa loda zanen-zane, aika su, ko ajiye su a wani uwar garke ba. Bayan lodawa ta farko, manhajar tana aiki gaba ɗaya ba tare da intanet ba — babu uwar garke da ke shiga cikin buɗewa, gyarawa, ko ajiye fayilolinka.' },
-          { t: 'p', html: 'Tunda fayilolinka suna wanzuwa a burauzarka kaɗai, kana da cikakken iko a kansu. Za ka iya share zanen-zane guda ɗaya daga <a href="/ha/docs/commands/files/">panel na Files</a>, share komai lokaci guda da umarnin <a href="/ha/docs/commands/wipestorage/">wipestorage</a>, ko share bayanan shafi a saitunan burauzarka. Ba za mu iya shiga, mayar da su, ko share fayilolinka a madadinka ba — ba mu taɓa samun su ba.' },
+          { t: 'p', html: 'Tunda fayilolinka suna wanzuwa a burauzarka kaɗai, kana da cikakken iko a kansu. Za ka iya share zanen-zane guda ɗaya daga <a href="/ha/docs/commands/file-manager/">panel na Files</a>, share komai lokaci guda da umarnin <a href="/ha/docs/commands/wipestorage/">wipestorage</a>, ko share bayanan shafi a saitunan burauzarka. Ba za mu iya shiga, mayar da su, ko share fayilolinka a madadinka ba — ba mu taɓa samun su ba.' },
         ],
       },
       {
@@ -2439,7 +2439,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Tegningene dine forblir på enheten din',
         blocks: [
           { t: 'p', html: 'Alt du tegner i KulmanLab CAD lagres i nettleserens lokale lagring (IndexedDB) på din egen enhet. Tegninger lastes aldri opp, overføres eller lagres på noen server. Etter den første innlastingen fungerer appen helt uten internett — ingen server er involvert i å åpne, redigere eller lagre filene dine.' },
-          { t: 'p', html: 'Fordi filene dine kun finnes i nettleseren din, har du full kontroll over dem. Du kan slette individuelle tegninger fra <a href="/no/docs/commands/files/">Files-panelet</a>, slette alt på én gang med <a href="/no/docs/commands/wipestorage/">wipestorage</a>-kommandoen, eller tømme nettstedsdataene i nettleserinnstillingene dine. Vi kan ikke få tilgang til, gjenopprette eller slette filene dine for deg — vi har dem aldri.' },
+          { t: 'p', html: 'Fordi filene dine kun finnes i nettleseren din, har du full kontroll over dem. Du kan slette individuelle tegninger fra <a href="/no/docs/commands/file-manager/">Files-panelet</a>, slette alt på én gang med <a href="/no/docs/commands/wipestorage/">wipestorage</a>-kommandoen, eller tømme nettstedsdataene i nettleserinnstillingene dine. Vi kan ikke få tilgang til, gjenopprette eller slette filene dine for deg — vi har dem aldri.' },
         ],
       },
       {
@@ -2525,7 +2525,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Dine tegninger forbliver på din enhed',
         blocks: [
           { t: 'p', html: 'Alt du tegner i KulmanLab CAD gemmes i din browsers lokale lagring (IndexedDB) på din egen enhed. Tegninger uploades, overføres eller gemmes aldrig på nogen server. Efter den første indlæsning fungerer appen fuldt ud offline — ingen server er involveret i at åbne, redigere eller gemme dine filer.' },
-          { t: 'p', html: 'Fordi dine filer kun findes i din browser, har du fuld kontrol over dem. Du kan slette individuelle tegninger fra <a href="/da/docs/commands/files/">Files-panelet</a>, slette alt på én gang med <a href="/da/docs/commands/wipestorage/">wipestorage</a>-kommandoen, eller rydde webstedsdataene i dine browserindstillinger. Vi kan ikke tilgå, gendanne eller slette dine filer for dig — vi har dem aldrig.' },
+          { t: 'p', html: 'Fordi dine filer kun findes i din browser, har du fuld kontrol over dem. Du kan slette individuelle tegninger fra <a href="/da/docs/commands/file-manager/">Files-panelet</a>, slette alt på én gang med <a href="/da/docs/commands/wipestorage/">wipestorage</a>-kommandoen, eller rydde webstedsdataene i dine browserindstillinger. Vi kan ikke tilgå, gendanne eller slette dine filer for dig — vi har dem aldrig.' },
         ],
       },
       {
@@ -2611,7 +2611,7 @@ export const privacyContent: Record<string, PrivacyContent> = {
         h: 'Piirustuksesi pysyvät laitteellasi',
         blocks: [
           { t: 'p', html: 'Kaikki KulmanLab CAD:issa piirtämäsi tallennetaan selaimesi paikalliseen tallennustilaan (IndexedDB) omalle laitteellesi. Piirustuksia ei koskaan ladata, siirretä tai tallenneta millekään palvelimelle. Ensimmäisen latauksen jälkeen sovellus toimii täysin offline-tilassa — mikään palvelin ei ole mukana tiedostojesi avaamisessa, muokkaamisessa tai tallentamisessa.' },
-          { t: 'p', html: 'Koska tiedostosi ovat olemassa vain selaimessasi, olet täysin niiden hallinnassa. Voit poistaa yksittäisiä piirustuksia <a href="/fi/docs/commands/files/">Files-paneelista</a>, poistaa kaiken kerralla <a href="/fi/docs/commands/wipestorage/">wipestorage</a>-komennolla, tai tyhjentää sivuston tiedot selaimesi asetuksista. Emme voi käyttää, palauttaa tai poistaa tiedostojasi puolestasi — emme koskaan saa niitä.' },
+          { t: 'p', html: 'Koska tiedostosi ovat olemassa vain selaimessasi, olet täysin niiden hallinnassa. Voit poistaa yksittäisiä piirustuksia <a href="/fi/docs/commands/file-manager/">Files-paneelista</a>, poistaa kaiken kerralla <a href="/fi/docs/commands/wipestorage/">wipestorage</a>-komennolla, tai tyhjentää sivuston tiedot selaimesi asetuksista. Emme voi käyttää, palauttaa tai poistaa tiedostojasi puolestasi — emme koskaan saa niitä.' },
         ],
       },
       {
