@@ -32,6 +32,7 @@ KulmanLab is a web-based CAD editor built for engineers, designers, drafters, an
 ## Features at a Glance
 
 - Full 2D drawing toolkit: lines, polylines, arcs, circles, ellipses, splines
+- Hatch fills with a built-in pattern library (ANSI31 and other standard patterns) plus custom `.pat` file upload via Hatch Manager
 - Complete dimensioning suite: linear, aligned, radius, diameter, angular, continue
 - Multileader annotations with customizable arrowheads
 - Layer management: freeze, lock, isolate, color, linetype, lineweight
@@ -62,6 +63,14 @@ KulmanLab provides a full set of 2D drawing commands accessible via the toolbar,
 | **Ellipse** | Define by center, major axis endpoint, and minor-to-major ratio. Supports partial ellipses. |
 | **Spline (Fit)** | Draw a smooth B-spline curve that passes through each clicked fit point. |
 | **Spline (CV)** | Draw a B-spline curve defined by control vertices for precise shape control. |
+
+### Fills
+
+| Tool | Description |
+|------|-------------|
+| **Hatch** | Click a point inside any closed boundary (lines, arcs, circles, ellipses, polylines, or splines meeting end to end) to fill it with a pattern. Islands — closed shapes nested inside the region — are left unfilled. Grip-editable boundary; pattern, scale, angle, and origin are all adjustable per-hatch. |
+
+Patterns come from a shared library managed by **Hatch Manager**: built-in defaults (including `SOLID`) plus any `.pat` files you upload, which shadow built-ins of the same name — the supported way to bring in Autodesk's authoritative `acad.pat` definitions.
 
 ### Annotation
 
@@ -196,7 +205,7 @@ KulmanLab reads and writes **AC1032 DXF** files, the most widely supported versi
 | MULTILEADER | Yes |
 | DIMENSION | Yes (all subtypes) |
 | INSERT / BLOCK | Parsed, not rendered |
-| HATCH | Not supported |
+| HATCH | Yes (boundary geometry plus pattern name/scale/angle; inline pattern-line definitions are not read — the name is resolved against KulmanLab's own pattern library instead) |
 | 3DFACE / SOLID | Not supported |
 | POINT | Not supported |
 | XREF | Not supported |
@@ -204,6 +213,8 @@ KulmanLab reads and writes **AC1032 DXF** files, the most widely supported versi
 ### Export
 
 Exported DXF files are valid and open correctly in LibreCAD, FreeCAD, QCAD, BricsCAD, and other DXF-compatible software. All entity properties — color, layer, linetype, lineweight, handles — are preserved on export.
+
+Hatches are not yet included in DXF export (along with dimensions and multileaders) — use the native `.json` export format to keep a drawing's hatches intact.
 
 ---
 
@@ -270,6 +281,7 @@ Use **Tab** to cycle through autocomplete suggestions. Use the **Up/Down** arrow
 - **Toolbar** — one-click access to common draw and edit tools
 - **Layer Panel** — manage all layers in the drawing
 - **Properties Panel** — view and edit properties of the selected entity
+- **Hatch Manager** — browse the hatch pattern library and upload custom `.pat` pattern files
 - **File Manager** — open, save, and manage drawings stored locally
 - **Print Manager** — configure page size, scale, and print or export to PDF
 - **Dimension Styles** — configure arrow size, text height, and extension line offsets
@@ -285,7 +297,7 @@ KulmanLab is focused on 2D drafting. The following are outside its current scope
 |------------|--------|
 | 3D modeling (solids, surfaces, meshes) | Not supported |
 | Block definitions and INSERT references | Parsed on import but not rendered |
-| Hatching (HATCH entity) | Not supported |
+| Hatch export to DXF | Hatches can be drawn, imported, and saved to `.json`, but are not written to exported DXF files yet |
 | Xrefs (external references) | Not supported |
 | Paper space / multiple layouts | Single model space only |
 | Associative dimensions | Dimensions are static; not linked to geometry |
