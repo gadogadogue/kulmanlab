@@ -16,7 +16,7 @@ Komento `trim` poistaa sen osan [Line](../line/)-, [Arc](../arc/)-, [Circle](../
 2. **Pidä kohdistinta poistettavan segmentin päällä** — esikatselu korostaa tarkalleen osan, joka leikataan.
 3. **Napsauta** poistaaksesi kyseisen segmentin.
 
-Komento pysyy aktiivisena jokaisen leikkauksen jälkeen, jotta voit jatkaa hoveringia ja napsauttamista leikataksesi lisää segmenttejä — samalla entiteetillä tai toisella. Paina **Escape** poistuaksesi.
+Komento pysyy aktiivisena jokaisen leikkauksen jälkeen, jotta voit jatkaa hoveringia ja napsauttamista leikataksesi lisää segmenttejä — samalla entiteetillä tai toisella. Paina **Enter**, **Space** tai **Escape** poistuaksesi.
 
 ```
   Ennen:                        Keskisegmentin leikkaamisen jälkeen:
@@ -48,6 +48,7 @@ Komento projisoi kohdistimen sijainnin entiteetille, jonka päällä se on, ja l
 
 | Näppäin | Toiminto |
 |-----|--------|
+| `Enter` / `Space` | Poistu trim-tilasta |
 | `Escape` | Poistu trim-tilasta |
 
 ## Tuetut entiteetit

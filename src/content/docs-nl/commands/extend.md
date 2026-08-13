@@ -18,7 +18,7 @@ Alleen entiteiten met een echt eindpunt kunnen worden verlengd. Een [Circle](../
 2. **Beweeg de cursor bij een uiteinde** van de entiteit die u wilt verlengen — de preview toont deze verlengd tot de dichtstbijzijnde rand in die richting.
 3. **Klik** om de verlenging toe te passen.
 
-Het commando blijft actief na elke verlenging, zodat u kunt doorgaan met bewegen en klikken om meer entiteiten te verlengen. Druk op **Escape** om af te sluiten.
+Het commando blijft actief na elke verlenging, zodat u kunt doorgaan met bewegen en klikken om meer entiteiten te verlengen. Druk op **Enter**, **Space** of **Escape** om af te sluiten.
 
 ```
   Voor:                        Na:
@@ -52,6 +52,7 @@ Alle andere typen (Line, Arc, Circle, Ellipse, Polyline, Dimension) fungeren als
 
 | Toets | Actie |
 |-----|--------|
+| `Enter` / `Space` | Sluit de extend-modus af |
 | `Escape` | Sluit de extend-modus af |
 
 ## Ondersteunde entiteiten

@@ -17,7 +17,7 @@ Muling pinopositio ng `align` command ang mga napiling entity gamit ang isa o da
 1. Piliin ang isa o higit pang entity sa canvas.
 2. I-type ang `align` sa terminal o i-click ang **Align** button sa toolbar.
 3. **I-click ang unang source point (S1)**, tapos **i-click ang unang destination point (D1)**.
-4. **I-click ang ikalawang source point (S2)**, o pindutin ang **Enter** para agad na ilapat ang isang translate-only na alignment.
+4. **I-click ang ikalawang source point (S2)**, o pindutin ang **Enter** o **Space** para agad na ilapat ang isang translate-only na alignment.
 5. **I-click ang ikalawang destination point (D2)**.
 6. Sagutin ang scale prompt: pindutin ang **Y** para mag-scale, o **N** / **Enter** para panatilihin ang orihinal na sukat.
 
@@ -48,7 +48,7 @@ Sinusundan ng ghost preview ang cursor sa bawat hakbang: preview ng paglipat hab
 
 ## Alignment na isang punto (translate lang)
 
-Pagkatapos mailagay ang D1, pindutin ang **Enter** sa halip na i-click ang ikalawang source point. Ni-translate ang seleksyon ayon sa S1→D1 vector — walang rotation o scale — kapareho ng isang [Move](../move/) na gumagamit ng S1 bilang base point at D1 bilang destination.
+Pagkatapos mailagay ang D1, pindutin ang **Enter** o **Space** sa halip na i-click ang ikalawang source point. Ni-translate ang seleksyon ayon sa S1→D1 vector — walang rotation o scale — kapareho ng isang [Move](../move/) na gumagamit ng S1 bilang base point at D1 bilang destination.
 
 ## Alignment na dalawang punto (translate + rotate + opsyonal na scale)
 
@@ -66,7 +66,7 @@ Ang pagpindot ng anumang key sa scale prompt ay agad na naglalapat ng alignment 
 | Key | Aksyon |
 |-----|--------|
 | `Enter` / `Space` | Kumpirmahin ang seleksyon at magpatuloy sa S1 phase |
-| `Enter` (sa hakbang ng S2) | Laktawan ang rotation — ilapat ang translate-only na alignment gamit ang S1 at D1 |
+| `Enter` / `Space` (sa hakbang ng S2) | Laktawan ang rotation — ilapat ang translate-only na alignment gamit ang S1 at D1 |
 | `Y` | Ilapat ang alignment na may scale |
 | `N` / `Enter` (sa scale prompt) | Ilapat ang alignment nang walang scale |
 | `Escape` | Habang naglalagay ng punto: itinatapon ang mga nailagay na punto at bumabalik sa selection phase; kapag walang naka-select: kinakansela ang command |

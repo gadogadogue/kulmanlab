@@ -15,7 +15,7 @@ Lệnh `hatch` tô đầy vùng bao quanh một điểm đã nhấp bằng một
 1. Gõ `hatch` trong terminal hoặc nhấp nút **Hatch** trên thanh công cụ (biểu tượng mẫu vải).
 2. **Nhấp một điểm** bên trong vùng bạn muốn tô đầy.
 3. Lệnh vẫn hoạt động, vì vậy tiếp tục nhấp để tô thêm các vùng khác — mỗi lần nhấp tạo ra thực thể `Hatch` riêng của nó.
-4. Nhấn **Escape** khi hoàn tất.
+4. Nhấn **Enter**, **Space**, hoặc **Escape** khi hoàn tất.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Lệnh `hatch` tô đầy vùng bao quanh một điểm đã nhấp bằng một
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   viền ngoài; hình tròn
   └─────────────┘        └─────────────┘   vẫn là một đảo
 ```
+
+## Tham khảo phím tắt
+
+| Phím | Hành động |
+|-----|--------|
+| `Enter` / `Space` | Hoàn tất lệnh Hatch |
+| `Escape` | Hoàn tất lệnh Hatch (giống như Enter/Space) |
 
 ## Những Gì Có Thể Tạo Thành Đường Viền
 

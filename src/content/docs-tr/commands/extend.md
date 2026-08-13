@@ -18,7 +18,7 @@ Yalnızca gerçek bir ucu olan nesneler uzatılabilir. Bir [Circle](../circle/) 
 2. Uzatmak istediğiniz nesnenin **bir ucunun yakınına gelin** — önizleme, o yöndeki en yakın sınıra kadar uzatılmış halini gösterir.
 3. Uzatmayı uygulamak için **tıklayın**.
 
-Komut, her uzatmanın ardından aktif kalır, böylece daha fazla nesneyi uzatmak için üzerine gelip tıklamaya devam edebilirsiniz. Çıkmak için **Escape** tuşuna basın.
+Komut, her uzatmanın ardından aktif kalır, böylece daha fazla nesneyi uzatmak için üzerine gelip tıklamaya devam edebilirsiniz. Çıkmak için **Enter**, **Boşluk** veya **Escape** tuşuna basın.
 
 ```
   Önce:                      Sonra:
@@ -52,6 +52,7 @@ Diğer tüm türler (Line, Arc, Circle, Ellipse, Polyline, Dimension) geçerli s
 
 | Tuş | İşlem |
 |-----|--------|
+| `Enter` / `Boşluk` | Extend modundan çıkar |
 | `Escape` | Extend modundan çıkar |
 
 ## Desteklenen Nesneler

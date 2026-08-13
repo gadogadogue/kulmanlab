@@ -33,7 +33,7 @@ order: 3
 1. Terminale `area` yazın veya araç çubuğundaki **Area** düğmesine (Measure panelinin alt satırı) tıklayın.
 2. **Birinci noktayı tıklayın** veya tam koordinat için `X,Y` yazıp **Enter** tuşuna basın.
 3. Şeklin etrafında sırayla **her ek köşe noktasını** tıklayın. Koordinat girişi her adımda çalışır.
-4. En az **3 nokta** yerleştirildikten sonra, çokgeni kapatıp sonucu hesaplamak için **Enter** tuşuna basın (bekleyen bir koordinat veya uzunluk girişi olmadan).
+4. En az **3 nokta** yerleştirildikten sonra, çokgeni kapatıp sonucu hesaplamak için **Enter** veya **Boşluk** tuşuna basın (bekleyen bir koordinat veya uzunluk girişi olmadan).
 5. Terminal `Area: <değer>  Perimeter: <değer>` yazdırır ve kapalı çokgen — dolgu, kontur ve köşe noktası tutamaçları — tuval üzerinde vurgulu kalır.
 6. Sonucu kapatıp komutu sonlandırmak için **herhangi bir yere tıklayın, herhangi bir tuşa basın veya `Escape` tuşuna basın**.
 
@@ -85,7 +85,7 @@ Tıklamak yerine herhangi bir köşe noktası için tam konumu yazın:
 | `0`–`9`, `.`, `-` | X koordinatı girişini, veya açı kilidi aktifken kenar uzunluğu girişini başlatır |
 | `,` | X'i kilitler ve Y girişine geçer |
 | `Backspace` | Son girilen karakteri siler |
-| `Enter` | Yazılan koordinatı veya uzunluğu onaylar; 3+ köşe noktası ve bekleyen giriş yokken çokgeni kapatır |
+| `Enter` / `Boşluk` | Yazılan koordinatı veya uzunluğu onaylar (yalnızca Enter); 3+ köşe noktası ve bekleyen giriş yokken çokgeni kapatır |
 | `Escape` | Köşe noktaları seçilirken: noktaları iptal eder ve birinci noktadan yeniden başlar; sonuç gösterildikten sonra: kapatır ve komutu sonlandırır |
 
 ## Notlar

@@ -20,7 +20,7 @@ Ondersteunde entiteitstypen: **Line, Circle, Arc, Ellipse, Polyline** (inclusief
 4. **Beweeg de cursor** naar de zijde waar de kopie moet verschijnen — een live preview volgt.
 5. **Klik** om de offsetkopie te plaatsen.
 
-Na elke plaatsing keert het commando terug naar stap 3 op **dezelfde afstand**, klaar voor de volgende offset. Druk op **Escape** om terug te resetten naar de afstandinvoerstap.
+Na elke plaatsing keert het commando terug naar stap 3 op **dezelfde afstand**, klaar voor de volgende offset. Druk op **Enter** of **Space** in wachtstand om het commando te voltooien, of op **Escape** om terug te resetten naar de afstandinvoerstap.
 
 ```
   Afstand: 10
@@ -47,7 +47,8 @@ Voor **Circle**, **Arc** en **Ellipse**: als de naar binnen gerichte offset een 
 |-----|--------|
 | `0`–`9`, `.` | Cijfer toevoegen aan de afstandswaarde |
 | `Backspace` | Laatst getypte teken verwijderen |
-| `Enter` / `Spatie` | De getypte afstand bevestigen en doorgaan naar entiteitselectie |
+| `Enter` / `Spatie` (tijdens het typen van een afstand) | De getypte afstand bevestigen en doorgaan naar entiteitselectie |
+| `Enter` / `Spatie` (in wachtstand, wachtend op de volgende entiteit) | Het Offset-commando voltooien |
 | `Escape` | Terug naar de afstandinvoerstap |
 
 ## Opmerking over de werkwijze

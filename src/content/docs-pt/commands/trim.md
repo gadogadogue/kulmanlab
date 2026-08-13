@@ -16,7 +16,7 @@ O comando `trim` remove a porção de uma [Line](../line/), [Arc](../arc/), [Cir
 2. **Passe o cursor sobre o segmento** que deseja remover — uma prévia destaca exatamente a porção que será cortada.
 3. **Clique** para remover esse segmento.
 
-O comando permanece ativo após cada corte, então você pode continuar passando o cursor e clicando para cortar mais segmentos — na mesma entidade ou em outra. Pressione **Escape** para sair.
+O comando permanece ativo após cada corte, então você pode continuar passando o cursor e clicando para cortar mais segmentos — na mesma entidade ou em outra. Pressione **Enter**, **Espaço** ou **Escape** para sair.
 
 ```
   Antes:                         Após cortar segmento central:
@@ -48,6 +48,7 @@ O comando projeta a posição do cursor na entidade passada e encontra todos os 
 
 | Tecla | Ação |
 |-------|------|
+| `Enter` / `Espaço` | Sai do modo trim |
 | `Escape` | Sai do modo trim |
 
 ## Entidades suportadas

@@ -16,7 +16,7 @@ Amri ya `trim` huondoa sehemu ya [Line](../line/), [Arc](../arc/), [Circle](../c
 2. **Elea juu ya sehemu** unayotaka kuondoa — hakiki inaonyesha hasa sehemu itakayokatwa.
 3. **Bonyeza** kuondoa sehemu hiyo.
 
-Amri inabaki hai baada ya kila kukata, hivyo unaweza kuendelea kuelea na kubonyeza kukata sehemu zaidi — kwenye kipande hicho hicho au kingine. Bonyeza **Escape** kutoka.
+Amri inabaki hai baada ya kila kukata, hivyo unaweza kuendelea kuelea na kubonyeza kukata sehemu zaidi — kwenye kipande hicho hicho au kingine. Bonyeza **Enter**, **Space**, au **Escape** kutoka.
 
 ```
   Kabla:                     Baada ya kukata sehemu ya kati:
@@ -48,6 +48,7 @@ Amri inasukuma nafasi ya kishale kwenye kipande kilichoeleweka na kupata nukta z
 
 | Kitufe | Kitendo |
 |--------|---------|
+| `Enter` / `Space` | Toka kwenye hali ya kukata |
 | `Escape` | Toka kwenye hali ya kukata |
 
 ## Vipande vinavyosaidiwa

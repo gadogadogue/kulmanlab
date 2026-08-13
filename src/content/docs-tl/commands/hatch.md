@@ -15,7 +15,7 @@ Pinupuno ng `hatch` command ang region na nakapaligid sa isang na-click na punto
 1. I-type ang `hatch` sa terminal o i-click ang **Hatch** toolbar button (ang swatch icon).
 2. **I-click ang isang punto** sa loob ng region na gusto mong punan.
 3. Nananatiling aktibo ang command, kaya patuloy na mag-click para punan ang mas maraming area — bawat click ay gumagawa ng sariling `Hatch` entity nito.
-4. Pindutin ang **Escape** kapag tapos na.
+4. Pindutin ang **Enter**, **Space**, o **Escape** kapag tapos na.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Pinupuno ng `hatch` command ang region na nakapaligid sa isang na-click na punto
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   panlabas na boundary; ang
   └─────────────┘        └─────────────┘   circle ay nananatiling isla
 ```
+
+## Keyboard reference
+
+| Key | Aksyon |
+|-----|--------|
+| `Enter` / `Space` | Tapusin ang Hatch command |
+| `Escape` | Tapusin ang Hatch command (kapareho ng Enter/Space) |
 
 ## Ano ang Puwedeng Bumuo ng Boundary
 

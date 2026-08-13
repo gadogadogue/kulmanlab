@@ -17,7 +17,7 @@ Arahan `align` meletakkan semula entiti yang dipilih menggunakan satu atau dua p
 1. Pilih satu atau lebih entiti pada kanvas.
 2. Taip `align` dalam terminal atau klik butang bar alat **Align**.
 3. **Klik titik sumber pertama (S1)**, kemudian **klik titik destinasi pertama (D1)**.
-4. **Klik titik sumber kedua (S2)**, atau tekan **Enter** untuk terus menggunakan penjajaran pergerakan sahaja.
+4. **Klik titik sumber kedua (S2)**, atau tekan **Enter** atau **Space** untuk terus menggunakan penjajaran pergerakan sahaja.
 5. **Klik titik destinasi kedua (D2)**.
 6. Jawab gesaan skala: tekan **Y** untuk menskala, atau **N** / **Enter** untuk mengekalkan saiz asal.
 
@@ -48,7 +48,7 @@ Pratonton hantu mengikuti kursor pada setiap langkah: pratonton pergerakan semas
 
 ## Penjajaran satu titik (pergerakan sahaja)
 
-Selepas D1 diletakkan, tekan **Enter** dan bukannya mengklik titik sumber kedua. Pemilihan dipindahkan mengikut vektor S1→D1 — tanpa putaran atau skala — sama seperti [Move](../move/) menggunakan S1 sebagai titik asas dan D1 sebagai destinasi.
+Selepas D1 diletakkan, tekan **Enter** atau **Space** dan bukannya mengklik titik sumber kedua. Pemilihan dipindahkan mengikut vektor S1→D1 — tanpa putaran atau skala — sama seperti [Move](../move/) menggunakan S1 sebagai titik asas dan D1 sebagai destinasi.
 
 ## Penjajaran dua titik (pergerakan + putaran + skala pilihan)
 
@@ -66,7 +66,7 @@ Menekan sebarang kekunci pada gesaan skala menggunakan penjajaran serta-merta �
 | Kekunci | Tindakan |
 |---------|---------|
 | `Enter` / `Space` | Sahkan pemilihan dan maju ke fasa S1 |
-| `Enter` (pada langkah S2) | Langkau putaran — gunakan penjajaran pergerakan sahaja menggunakan S1 dan D1 |
+| `Enter` / `Space` (pada langkah S2) | Langkau putaran — gunakan penjajaran pergerakan sahaja menggunakan S1 dan D1 |
 | `Y` | Gunakan penjajaran dengan skala |
 | `N` / `Enter` (pada gesaan skala) | Gunakan penjajaran tanpa skala |
 | `Escape` | Semasa meletakkan titik: buang titik yang diletakkan dan kembali ke fasa pemilihan; tanpa apa-apa yang dipilih: batalkan arahan |

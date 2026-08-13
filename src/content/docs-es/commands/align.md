@@ -17,7 +17,7 @@ El comando `align` reposiciona las entidades seleccionadas usando uno o dos pare
 1. Selecciona una o más entidades en el lienzo.
 2. Escribe `align` en el terminal o haz clic en el botón **Align** de la barra de herramientas.
 3. **Haz clic en el primer punto origen (S1)**, luego **en el primer punto destino (D1)**.
-4. **Haz clic en el segundo punto origen (S2)**, o presiona **Enter** para aplicar ya una alineación de solo traslación.
+4. **Haz clic en el segundo punto origen (S2)**, o presiona **Enter** o **Space** para aplicar ya una alineación de solo traslación.
 5. **Haz clic en el segundo punto destino (D2)**.
 6. Responde a la pregunta de escala: presiona **Y** para escalar, o **N** / **Enter** para mantener el tamaño original.
 
@@ -48,7 +48,7 @@ Una vista previa fantasma sigue al cursor en cada paso: una vista previa de movi
 
 ## Alineación de un punto (solo traslación)
 
-Después de colocar D1, presiona **Enter** en lugar de hacer clic en un segundo punto origen. La selección se traslada por el vector S1→D1 — sin rotación ni escala — idéntico a un [Move](../move/) usando S1 como punto base y D1 como destino.
+Después de colocar D1, presiona **Enter** o **Space** en lugar de hacer clic en un segundo punto origen. La selección se traslada por el vector S1→D1 — sin rotación ni escala — idéntico a un [Move](../move/) usando S1 como punto base y D1 como destino.
 
 ## Alineación de dos puntos (traslación + rotación + escala opcional)
 
@@ -66,7 +66,7 @@ Presionar una tecla en la pregunta de escala aplica la alineación de inmediato 
 | Tecla | Acción |
 |-----|--------|
 | `Enter` / `Space` | Confirmar selección y avanzar a la fase S1 |
-| `Enter` (en el paso S2) | Omitir la rotación — aplicar una alineación de solo traslación usando S1 y D1 |
+| `Enter` / `Space` (en el paso S2) | Omitir la rotación — aplicar una alineación de solo traslación usando S1 y D1 |
 | `Y` | Aplicar la alineación con escala |
 | `N` / `Enter` (en la pregunta de escala) | Aplicar la alineación sin escala |
 | `Escape` | Mientras se colocan puntos: descarta los puntos y vuelve a la fase de selección; sin nada seleccionado: cancela el comando |

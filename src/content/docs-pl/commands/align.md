@@ -17,7 +17,7 @@ Polecenie `align` zmienia położenie zaznaczonych elementów za pomocą jednej 
 1. Zaznacz jeden lub więcej elementów na płótnie.
 2. Wpisz `align` w terminalu lub kliknij przycisk **Align** na pasku narzędzi.
 3. **Kliknij pierwszy punkt źródłowy (S1)**, następnie **pierwszy punkt docelowy (D1)**.
-4. **Kliknij drugi punkt źródłowy (S2)** lub naciśnij **Enter**, aby od razu zastosować wyrównanie z samym przesunięciem.
+4. **Kliknij drugi punkt źródłowy (S2)** lub naciśnij **Enter** lub **Spację**, aby od razu zastosować wyrównanie z samym przesunięciem.
 5. **Kliknij drugi punkt docelowy (D2)**.
 6. Odpowiedz na pytanie o skalowanie: naciśnij **Y**, aby skalować, lub **N** / **Enter**, aby zachować pierwotny rozmiar.
 
@@ -48,7 +48,7 @@ Podgląd widma podąża za kursorem na każdym etapie: podgląd przesunięcia po
 
 ## Wyrównanie jednym punktem (tylko przesunięcie)
 
-Po umieszczeniu D1 naciśnij **Enter** zamiast klikać drugi punkt źródłowy. Zaznaczenie zostaje przesunięte o wektor S1→D1 — bez obrotu i skalowania — identycznie jak w [Move](../move/) z S1 jako punktem bazowym i D1 jako celem.
+Po umieszczeniu D1 naciśnij **Enter** lub **Spację** zamiast klikać drugi punkt źródłowy. Zaznaczenie zostaje przesunięte o wektor S1→D1 — bez obrotu i skalowania — identycznie jak w [Move](../move/) z S1 jako punktem bazowym i D1 jako celem.
 
 ## Wyrównanie dwoma punktami (przesunięcie + obrót + opcjonalne skalowanie)
 
@@ -66,7 +66,7 @@ Naciśnięcie klawisza przy pytaniu o skalowanie natychmiast stosuje wyrównanie
 | Klawisz | Akcja |
 |---------|-------|
 | `Enter` / `Spacja` | Potwierdź zaznaczenie i przejdź do fazy S1 |
-| `Enter` (w kroku S2) | Pomiń obrót — zastosuj wyrównanie z samym przesunięciem, używając S1 i D1 |
+| `Enter` / `Spacja` (w kroku S2) | Pomiń obrót — zastosuj wyrównanie z samym przesunięciem, używając S1 i D1 |
 | `Y` | Zastosuj wyrównanie ze skalowaniem |
 | `N` / `Enter` (przy pytaniu o skalowanie) | Zastosuj wyrównanie bez skalowania |
 | `Escape` | Podczas umieszczania punktów: odrzuca punkty i wraca do fazy zaznaczania; bez zaznaczonego niczego: anuluje polecenie |

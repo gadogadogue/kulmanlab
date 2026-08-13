@@ -14,7 +14,7 @@ Amri ya `splinefit` inachora spline ya cubic inayopita kwenye kila nukta unayobo
 
 1. Andika `splinefit` kwenye terminal au bonyeza kitufe cha **Spline Fit** kwenye upau wa zana.
 2. **Bonyeza kuweka nukta za ulingano** — mkunjo utapita kwenye kila moja. Au andika `X,Y` na ubonyeze **Enter** kwa kuratibu sahihi.
-3. Bonyeza **Enter** kumaliza (inahitaji angalau nukta 2).
+3. Bonyeza **Enter** au **Space** kumaliza (inahitaji angalau nukta 2).
 
 ```
   ●──────●──────●──────●  ← mkunjo hupita hasa kwenye kila bonyeza
@@ -39,7 +39,7 @@ Badala ya kubonyeza, andika nafasi sahihi kwa nukta yoyote ya ulingano:
 | `0`–`9`, `.`, `-` | Anza uingizaji wa kuratibu ya X |
 | `,` | Funga X na nenda kwa uingizaji wa Y |
 | `Backspace` | Futa herufi ya mwisho iliyoandikwa |
-| `Enter` | Thibitisha kuratibu iliyoandikwa, au maliza spline kama hakuna uingizaji unaoendelea na nukta ≥ 2 zipo |
+| `Enter` / `Space` | Thibitisha kuratibu iliyoandikwa (Enter pekee), au maliza spline kama hakuna uingizaji unaoendelea na nukta ≥ 2 zipo |
 | `Escape` | Futa nukta zote na toka |
 
 ## Uhariri wa kushika — kubadilisha kupitia nukta za ulingano

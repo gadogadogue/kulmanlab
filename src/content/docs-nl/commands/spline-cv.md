@@ -14,7 +14,7 @@ Het `splinecv`-commando tekent een **kubische B-spline** door controlepunten (CV
 
 1. Typ `splinecv` in de terminal of klik op de **Spline CV**-werkbalkknop.
 2. **Klik om controlepunten te plaatsen** — elke klik voegt een punt toe. Of typ `X,Y` en druk op **Enter** voor een exacte coördinaat.
-3. Druk op **Enter** om af te ronden (minimaal 2 punten vereist).
+3. Druk op **Enter** of **Space** om af te ronden (minimaal 2 punten vereist).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ In plaats van klikken kunt u een exacte positie typen voor elk controlepunt:
 | `0`–`9`, `.`, `-` | Start X-coördinaatinvoer |
 | `,` | Vergrendel X en ga naar Y-invoer |
 | `Backspace` | Verwijder laatst getypte teken |
-| `Enter` | Bevestig getypte coördinaat, of rond de spline af als er geen invoer actief is en er ≥ 2 punten bestaan |
+| `Enter` / `Space` | Bevestig getypte coördinaat (alleen Enter), of rond de spline af als er geen invoer actief is en er ≥ 2 punten bestaan |
 | `Escape` | Verwijder alle punten en sluit af |
 
 ## Grip-bewerking — vorm aanpassen via controlepunten

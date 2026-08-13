@@ -14,7 +14,7 @@ Arahan `splinefit` melukis spline kubik yang melalui setiap titik yang anda klik
 
 1. Taip `splinefit` dalam terminal atau klik butang bar alat **Spline Fit**.
 2. **Klik untuk meletakkan titik fit** — kelengkungan akan melalui setiap satunya. Atau taip `X,Y` dan tekan **Enter** untuk koordinat tepat.
-3. Tekan **Enter** untuk selesai (sekurang-kurangnya 2 titik diperlukan).
+3. Tekan **Enter** atau **Space** untuk selesai (sekurang-kurangnya 2 titik diperlukan).
 
 ```
   ●──────●──────●──────●  ← kelengkungan melalui tepat setiap klik
@@ -39,7 +39,7 @@ Daripada mengklik, taip kedudukan tepat untuk mana-mana titik fit:
 | `0`–`9`, `.`, `-` | Mula kemasukan koordinat X |
 | `,` | Kunci X dan beralih ke kemasukan Y |
 | `Backspace` | Padam aksara terakhir yang ditaip |
-| `Enter` | Sahkan koordinat yang ditaip, atau selesaikan spline jika tiada input sedang berjalan dan ≥ 2 titik wujud |
+| `Enter` / `Space` | Sahkan koordinat yang ditaip (Enter sahaja), atau selesaikan spline jika tiada input sedang berjalan dan ≥ 2 titik wujud |
 | `Escape` | Buang semua titik dan keluar |
 
 ## Pengeditan grip — membentuk semula melalui titik fit

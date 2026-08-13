@@ -33,7 +33,7 @@ Komento `area` mittaa kolmen tai useamman napsautetun pisteen määrittelemän m
 1. Kirjoita `area` terminaaliin tai napsauta **Area**-painiketta työkalurivillä (Measure-paneelin alarivi).
 2. **Napsauta ensimmäistä pistettä**, tai kirjoita `X,Y` ja paina **Enter** tarkkaa koordinaattia varten.
 3. **Napsauta jokaista lisäkärkeä** järjestyksessä muodon ympäri. Koordinaattien syöttö toimii jokaisessa vaiheessa.
-4. Kun vähintään **3 pistettä** on sijoitettu, paina **Enter** (ilman odottavaa koordinaatti- tai etäisyyssyötettä) sulkeaksesi monikulmion ja laskeaksesi tuloksen.
+4. Kun vähintään **3 pistettä** on sijoitettu, paina **Enter** tai **Space** (ilman odottavaa koordinaatti- tai etäisyyssyötettä) sulkeaksesi monikulmion ja laskeaksesi tuloksen.
 5. Terminaali tulostaa `Area: <arvo>  Perimeter: <arvo>`, ja suljettu monikulmio — täyttö, ääriviiva ja kärkikahvat — pysyy korostettuna piirtoalueella.
 6. **Napsauta mihin tahansa, paina mitä tahansa näppäintä, tai paina `Escape`** hylätäksesi tuloksen ja päättääksesi komennon.
 
@@ -85,7 +85,7 @@ Napsauttamisen sijaan voit kirjoittaa tarkan sijainnin mille tahansa kärjelle:
 | `0`–`9`, `.`, `-` | Aloita X-koordinaatin syöttö, tai reunan pituuden syöttö kulmalukittuna |
 | `,` | Lukitse X ja siirry Y:n syöttöön |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
-| `Enter` | Vahvista kirjoitettu koordinaatti tai pituus; 3+ kärjellä ja ilman odottavaa syötettä sulkee monikulmion |
+| `Enter` / `Space` | Vahvista kirjoitettu koordinaatti tai pituus (vain Enter); 3+ kärjellä ja ilman odottavaa syötettä sulkee monikulmion |
 | `Escape` | Kärkiä valittaessa, hylkää ne ja aloita uudelleen ensimmäisestä pisteestä; kun tulos näytetään, hylkää se ja poistu |
 
 ## Huomautuksia

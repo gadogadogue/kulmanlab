@@ -18,7 +18,7 @@ Abubuwan da ke da ainihin ƙarshe kaɗai ake iya tsawaitawa. [Circle](../circle/
 2. **Riƙe mai nuni kusa da wani ƙarshen** abin da kake son tsawaitawa — preview yana nuna an tsawaita zuwa iyaka mafi kusa a wannan shugabancin.
 3. **Danna** don aiwatar da tsawaitarwar.
 
-Umarnin yana ci gaba da zama a aiki bayan kowane tsawaitarwa, don haka za ka iya ci gaba da riƙe da dannawa don tsawaita ƙarin abubuwa. Danna **Escape** don fita.
+Umarnin yana ci gaba da zama a aiki bayan kowane tsawaitarwa, don haka za ka iya ci gaba da riƙe da dannawa don tsawaita ƙarin abubuwa. Danna **Enter**, **Space**, ko **Escape** don fita.
 
 ```
   Kafin:                        Bayan:
@@ -52,6 +52,7 @@ Dukkan sauran nauʼukan (Line, Arc, Circle, Ellipse, Polyline, Dimension) suna a
 
 | Maɓalli | Aiki |
 |-----|--------|
+| `Enter` / `Space` | Fita daga yanayin extend |
 | `Escape` | Fita daga yanayin extend |
 
 ## Abubuwan da ake goyon baya

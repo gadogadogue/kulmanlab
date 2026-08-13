@@ -20,7 +20,7 @@ Tipos de entidade suportados: **Linha, Círculo, Arco, Elipse, Polilinha** (incl
 4. **Mova o cursor** para o lado onde a cópia deve aparecer — uma prévia ao vivo segue.
 5. **Clique** para posicionar a cópia em offset.
 
-Após cada posicionamento o comando retorna à etapa 3 na **mesma distância**, pronto para o próximo offset. Pressione **Escape** para voltar à etapa de entrada de distância.
+Após cada posicionamento o comando retorna à etapa 3 na **mesma distância**, pronto para o próximo offset. Pressione **Enter** ou **Espaço** em espera para finalizar o comando, ou **Escape** para voltar à etapa de entrada de distância.
 
 ```
   Distância: 10
@@ -47,7 +47,8 @@ Para **Círculo**, **Arco** e **Elipse**: se o offset interno reduziria qualquer
 |-------|------|
 | `0`–`9`, `.` | Adiciona dígito ao valor de distância |
 | `Backspace` | Exclui o último caractere digitado |
-| `Enter` / `Espaço` | Confirma a distância digitada e avança para seleção de entidade |
+| `Enter` / `Espaço` (ao digitar uma distância) | Confirma a distância digitada e avança para seleção de entidade |
+| `Enter` / `Espaço` (em espera, aguardando a próxima entidade) | Finaliza o comando Offset |
 | `Escape` | Reinicia para a etapa de entrada de distância |
 
 ## Nota sobre o fluxo de trabalho

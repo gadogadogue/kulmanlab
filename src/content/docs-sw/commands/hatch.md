@@ -15,7 +15,7 @@ Amri ya `hatch` hujaza eneo linalozunguka nukta iliyobofya kwa muundo. Mpaka hau
 1. Andika `hatch` kwenye terminal au bofya kitufe cha **Hatch** kwenye upau wa zana (aikoni ya sampuli).
 2. **Bofya nukta** ndani ya eneo unalotaka kujaza.
 3. Amri inabaki hai, hivyo endelea kubofya kujaza maeneo zaidi — kila bofyo huunda kiumbe chake cha `Hatch`.
-4. Bonyeza **Escape** ukimaliza.
+4. Bonyeza **Enter**, **Space**, au **Escape** ukimaliza.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Amri ya `hatch` hujaza eneo linalozunguka nukta iliyobofya kwa muundo. Mpaka hau
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   wa nje; duara hubaki
   └─────────────┘        └─────────────┘   kama kisiwa
 ```
+
+## Marejeo ya kibodi
+
+| Kitufe | Kitendo |
+|-----|--------|
+| `Enter` / `Space` | Maliza amri ya Hatch |
+| `Escape` | Maliza amri ya Hatch (sawa na Enter/Space) |
 
 ## Kinachoweza Kuunda Mpaka
 

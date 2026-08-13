@@ -17,7 +17,7 @@ Komento `align` sijoittaa valitut entiteetit uudelleen käyttäen yhtä tai kaht
 1. Valitse yksi tai useampi entiteetti piirtoalueella.
 2. Kirjoita `align` terminaaliin tai napsauta **Align**-painiketta työkalurivillä.
 3. **Napsauta ensimmäistä lähdepistettä (S1)**, napsauta sitten **ensimmäistä kohdepistettä (D1)**.
-4. **Napsauta toista lähdepistettä (S2)**, tai paina **Enter** käyttääksesi vain siirtoa nyt.
+4. **Napsauta toista lähdepistettä (S2)**, tai paina **Enter** tai **Space** käyttääksesi vain siirtoa nyt.
 5. **Napsauta toista kohdepistettä (D2)**.
 6. Vastaa skaalauskysymykseen: paina **Y** skaalataksesi, tai **N** / **Enter** säilyttääksesi alkuperäisen koon.
 
@@ -48,7 +48,7 @@ Live-esikatselu seuraa kohdistinta jokaisessa vaiheessa: siirron esikatselu D1:t
 
 ## Yhden pisteen kohdistus (vain siirto)
 
-Kun D1 on sijoitettu, paina **Enter** napsauttamatta toista lähdepistettä. Valinta siirretään vektorilla S1→D1 — ei kiertoa tai skaalausta — identtinen [Move](../move/)-komennon kanssa, joka käyttää S1:tä perustepisteenä ja D1:tä kohteena.
+Kun D1 on sijoitettu, paina **Enter** tai **Space** napsauttamatta toista lähdepistettä. Valinta siirretään vektorilla S1→D1 — ei kiertoa tai skaalausta — identtinen [Move](../move/)-komennon kanssa, joka käyttää S1:tä perustepisteenä ja D1:tä kohteena.
 
 ## Kahden pisteen kohdistus (siirto + kierto + valinnainen skaalaus)
 
@@ -66,7 +66,7 @@ Näppäimen painaminen skaalauskysymyksessä soveltaa kohdistuksen välittömäs
 | Näppäin | Toiminto |
 |-----|--------|
 | `Enter` / `Space` | Vahvista valinta ja siirry S1-vaiheeseen |
-| `Enter` (S2-vaiheessa) | Ohita kierto — sovella vain siirto käyttäen S1:tä ja D1:tä |
+| `Enter` / `Space` (S2-vaiheessa) | Ohita kierto — sovella vain siirto käyttäen S1:tä ja D1:tä |
 | `Y` | Sovella kohdistus skaalauksella |
 | `N` / `Enter` (skaalauskysymyksessä) | Sovella kohdistus ilman skaalausta |
 | `Escape` | Pisteitä valittaessa: hylkää ne ja palaa valintavaiheeseen; jos mitään ei ole valittu: peruuta komento |

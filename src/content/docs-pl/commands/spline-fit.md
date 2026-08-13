@@ -14,7 +14,7 @@ Polecenie `splinefit` rysuje sześcienny splajn przechodzący przez każdy klikn
 
 1. Wpisz `splinefit` w terminalu lub kliknij przycisk **Splajn Fit** na pasku narzędzi.
 2. **Kliknij, aby umieścić punkty dopasowania** — krzywa będzie przez każdy przechodzić. Lub wpisz `X,Y` i naciśnij **Enter** dla dokładnej współrzędnej.
-3. Naciśnij **Enter**, aby zakończyć (wymagane co najmniej 2 punkty).
+3. Naciśnij **Enter** lub **Spację**, aby zakończyć (wymagane co najmniej 2 punkty).
 
 ```
   ●──────●──────●──────●  ← krzywa przechodzi dokładnie przez każde kliknięcie
@@ -39,7 +39,7 @@ Zamiast klikać, wpisz dokładną pozycję dla dowolnego punktu dopasowania:
 | `0`–`9`, `.`, `-` | Rozpocznij wprowadzanie współrzędnej X |
 | `,` | Zablokuj X i przejdź do wprowadzania Y |
 | `Backspace` | Usuń ostatnio wpisany znak |
-| `Enter` | Potwierdź wpisaną współrzędną lub zakończ splajn jeśli nie ma aktywnego wejścia i istnieje ≥ 2 punkty |
+| `Enter` / `Spacja` | Potwierdź wpisaną współrzędną (tylko Enter) lub zakończ splajn jeśli nie ma aktywnego wejścia i istnieje ≥ 2 punkty |
 | `Escape` | Odrzuć wszystkie punkty i wyjdź |
 
 ## Edycja uchwytów — przekształcanie przez punkty dopasowania

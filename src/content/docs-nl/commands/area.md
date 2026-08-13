@@ -33,7 +33,7 @@ Het commando `area` meet de omsloten oppervlakte en omtrek van een polygoon bepa
 1. Typ `area` in de terminal of klik op de werkbalkknop **Area** (onderste rij van het paneel Measure).
 2. **Klik op het eerste punt**, of typ `X,Y` en druk op **Enter** voor een exacte coördinaat.
 3. **Klik op elk extra hoekpunt** in volgorde rond de vorm. Coördinaatinvoer werkt bij elke stap.
-4. Zodra ten minste **3 punten** zijn geplaatst, drukt u op **Enter** (zonder openstaande coördinaat- of afstandsinvoer) om de polygoon te sluiten en het resultaat te berekenen.
+4. Zodra ten minste **3 punten** zijn geplaatst, drukt u op **Enter** of **Space** (zonder openstaande coördinaat- of afstandsinvoer) om de polygoon te sluiten en het resultaat te berekenen.
 5. De terminal drukt `Area: <waarde>  Perimeter: <waarde>` af, en de gesloten polygoon — vulling, omtrek en hoekpuntgrips — blijft gemarkeerd op het canvas.
 6. **Klik ergens, druk op een willekeurige toets, of druk op `Escape`** om het resultaat weg te halen en het commando te beëindigen.
 
@@ -85,7 +85,7 @@ In plaats van klikken kunt u een exacte positie typen voor elk hoekpunt:
 | `0`–`9`, `.`, `-` | Start X-coördinaatinvoer, of randlengte-invoer terwijl hoek vergrendeld is |
 | `,` | Vergrendel X en ga naar Y-invoer |
 | `Backspace` | Verwijder laatst getypte teken |
-| `Enter` | Bevestig een getypte coördinaat of lengte; met 3+ hoekpunten en zonder openstaande invoer wordt de polygoon gesloten |
+| `Enter` / `Space` | Bevestig een getypte coördinaat of lengte (alleen Enter); met 3+ hoekpunten en zonder openstaande invoer wordt de polygoon gesloten |
 | `Escape` | Tijdens het plaatsen van hoekpunten: verwijder deze en start opnieuw bij het eerste punt; zodra het resultaat wordt getoond: haal het weg en sluit af |
 
 ## Opmerkingen

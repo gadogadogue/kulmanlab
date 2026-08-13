@@ -14,7 +14,7 @@ order: 8
 
 1. Skriv `splinecv` i terminalen eller klicka på **Spline CV**-knappen i verktygsfältet.
 2. **Klicka för att placera styrpunkter** — varje klick lägger till en styrpunkt. Eller skriv `X,Y` och tryck **Enter** för en exakt koordinat.
-3. Tryck på **Enter** för att avsluta (minst 2 styrpunkter krävs).
+3. Tryck på **Enter** eller **Space** för att avsluta (minst 2 styrpunkter krävs).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Istället för att klicka kan du skriva en exakt position för valfri styrpunkt:
 | `0`–`9`, `.`, `-` | Starta X-koordinatinmatning |
 | `,` | Lås X och gå till Y-inmatning |
 | `Backspace` | Ta bort senast skrivna tecken |
-| `Enter` | Bekräfta inmatad koordinat, eller avsluta splinen om ingen inmatning pågår och ≥ 2 styrpunkter finns |
+| `Enter` / `Space` | Bekräfta inmatad koordinat (endast Enter), eller avsluta splinen om ingen inmatning pågår och ≥ 2 styrpunkter finns |
 | `Escape` | Kasta alla styrpunkter och avsluta |
 
 ## Redigera med grepp — omforma via styrpunkter

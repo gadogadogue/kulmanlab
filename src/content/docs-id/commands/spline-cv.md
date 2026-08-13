@@ -14,7 +14,7 @@ Perintah `splinecv` menggambar **B-spline kubik** dengan menempatkan control ver
 
 1. Ketik `splinecv` di terminal atau klik tombol toolbar **Spline CV**.
 2. **Klik untuk menempatkan control vertex** — setiap klik menambah vertex. Atau ketik `X,Y` dan tekan **Enter** untuk koordinat tepat.
-3. Tekan **Enter** untuk selesai (setidaknya 2 vertex diperlukan).
+3. Tekan **Enter** atau **Space** untuk selesai (setidaknya 2 vertex diperlukan).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Alih-alih mengklik, ketik posisi tepat untuk control vertex mana saja:
 | `0`–`9`, `.`, `-` | Mulai entri koordinat X |
 | `,` | Kunci X dan pindah ke entri Y |
 | `Backspace` | Hapus karakter terakhir yang diketik |
-| `Enter` | Konfirmasi koordinat yang diketik, atau selesaikan spline jika tidak ada input yang sedang berlangsung dan ≥ 2 vertex ada |
+| `Enter` / `Space` | Konfirmasi koordinat yang diketik (hanya Enter), atau selesaikan spline jika tidak ada input yang sedang berlangsung dan ≥ 2 vertex ada |
 | `Escape` | Buang semua vertex dan keluar |
 
 ## Pengeditan grip — membentuk ulang melalui control vertex

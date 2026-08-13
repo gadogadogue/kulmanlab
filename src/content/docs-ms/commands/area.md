@@ -33,7 +33,7 @@ Arahan `area` mengukur luas tertutup dan perimeter poligon yang ditakrifkan oleh
 1. Taip `area` dalam terminal atau klik butang bar alat **Area** (baris bawah panel Measure).
 2. **Klik titik pertama**, atau taip `X,Y` dan tekan **Enter** untuk koordinat tepat.
 3. **Klik setiap bucu tambahan** mengikut urutan sekeliling bentuk. Kemasukan koordinat berfungsi pada setiap langkah.
-4. Setelah sekurang-kurangnya **3 titik** diletakkan, tekan **Enter** (tanpa kemasukan koordinat atau jarak yang tertangguh) untuk menutup poligon dan mengira hasilnya.
+4. Setelah sekurang-kurangnya **3 titik** diletakkan, tekan **Enter** atau **Space** (tanpa kemasukan koordinat atau jarak yang tertangguh) untuk menutup poligon dan mengira hasilnya.
 5. Terminal mencetak `Area: <nilai>  Perimeter: <nilai>`, dan poligon yang ditutup — isian, garis luar, dan pemegang bucu — kekal ditonjolkan pada kanvas.
 6. **Klik di mana-mana, tekan mana-mana kekunci, atau tekan `Escape`** untuk menyingkirkan hasil dan menamatkan arahan.
 
@@ -85,7 +85,7 @@ Daripada mengklik, taip kedudukan tepat untuk mana-mana bucu:
 | `0`–`9`, `.`, `-` | Mula kemasukan koordinat X, atau kemasukan panjang tepi semasa kunci sudut aktif |
 | `,` | Kunci X dan beralih ke kemasukan Y |
 | `Backspace` | Padam aksara terakhir yang ditaip |
-| `Enter` | Sahkan koordinat atau panjang yang ditaip; dengan 3+ bucu dan tiada kemasukan tertangguh, menutup poligon |
+| `Enter` / `Space` | Sahkan koordinat atau panjang yang ditaip (Enter sahaja); dengan 3+ bucu dan tiada kemasukan tertangguh, menutup poligon |
 | `Escape` | Semasa memilih bucu: buang titik dan mula semula pada titik pertama; selepas hasil dipaparkan: singkirkan dan tamatkan arahan |
 
 ## Nota

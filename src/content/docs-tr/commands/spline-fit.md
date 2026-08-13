@@ -14,7 +14,7 @@ order: 9
 
 1. Terminale `splinefit` yazın veya araç çubuğundaki **Spline Fit** düğmesine tıklayın.
 2. **Uyum noktaları yerleştirmek için tıklayın** — eğri her birinden geçecek. Ya da tam koordinat için `X,Y` yazıp **Enter** tuşuna basın.
-3. Bitirmek için **Enter** tuşuna basın (en az 2 nokta gereklidir).
+3. Bitirmek için **Enter** veya **Boşluk** tuşuna basın (en az 2 nokta gereklidir).
 
 ```
   ●──────●──────●──────●  ← eğri her tıklamadan tam olarak geçer
@@ -39,7 +39,7 @@ Tıklamak yerine herhangi bir uyum noktası için tam konumu yazın:
 | `0`–`9`, `.`, `-` | X koordinatı girişini başlatır |
 | `,` | X'i kilitler ve Y girişine geçer |
 | `Backspace` | Son girilen karakteri siler |
-| `Enter` | Yazılan koordinatı onaylar veya giriş yapılmıyorsa ve ≥ 2 nokta varsa spline'ı bitirir |
+| `Enter` / `Boşluk` | Yazılan koordinatı onaylar (yalnızca Enter) veya giriş yapılmıyorsa ve ≥ 2 nokta varsa spline'ı bitirir |
 | `Escape` | Tüm noktaları atar ve çıkar |
 
 ## Tutamaç Düzenleme — Uyum Noktaları Aracılığıyla Yeniden Şekillendirme

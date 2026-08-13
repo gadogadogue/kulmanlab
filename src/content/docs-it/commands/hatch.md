@@ -15,7 +15,7 @@ Il comando `hatch` riempie la regione che circonda un punto cliccato con un moti
 1. Digita `hatch` nel terminale o clicca sul pulsante **Hatch** della barra degli strumenti (l'icona del campione).
 2. **Clicca su un punto** all'interno della regione che vuoi riempire.
 3. Il comando rimane attivo, quindi continua a cliccare per riempire altre aree — ogni clic crea una propria entità `Hatch`.
-4. Premi **Escape** quando hai finito.
+4. Premi **Invio**, **Spazio** o **Escape** quando hai finito.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Il comando `hatch` riempie la regione che circonda un punto cliccato con un moti
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   contorno esterno; il
   └─────────────┘        └─────────────┘   cerchio resta un'isola
 ```
+
+## Riferimento tastiera
+
+| Tasto | Azione |
+|-----|--------|
+| `Enter` / `Space` | Termina il comando Hatch |
+| `Escape` | Termina il comando Hatch (come Invio/Spazio) |
 
 ## Cosa può formare un contorno
 

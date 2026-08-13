@@ -20,7 +20,7 @@ Støttede entitetstyper: **Line, Circle, Arc, Ellipse, Polyline** (inkludert Rec
 4. **Flytt markøren** til siden der kopien skal vises — en levende forhåndsvisning følger med.
 5. **Klikk** for å plassere offset-kopien.
 
-Etter hver plassering går kommandoen tilbake til steg 3 med **samme avstand**, klar for neste offset. Trykk **Escape** for å tilbakestille til avstandsinntastingssteget.
+Etter hver plassering går kommandoen tilbake til steg 3 med **samme avstand**, klar for neste offset. Trykk **Enter** eller **Space** i hvile for å avslutte kommandoen, eller **Escape** for å tilbakestille til avstandsinntastingssteget.
 
 ```
   Avstand: 10
@@ -47,7 +47,8 @@ For **Circle**, **Arc** og **Ellipse**: hvis en innadgående offset ville reduse
 |-----|--------|
 | `0`–`9`, `.` | Legg til siffer i avstandsverdien |
 | `Backspace` | Slett sist skrevne tegn |
-| `Enter` / `Space` | Bekreft den inntastede avstanden og gå videre til entitetsvalg |
+| `Enter` / `Space` (under inntasting av avstand) | Bekreft den inntastede avstanden og gå videre til entitetsvalg |
+| `Enter` / `Space` (i hvile, venter på neste entitet) | Avslutt Offset-kommandoen |
 | `Escape` | Tilbakestill til avstandsinntastingssteget |
 
 ## Merknad om arbeidsflyt

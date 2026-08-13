@@ -20,7 +20,7 @@ Tipos de entidad admitidos: **Line, Circle, Arc, Ellipse, Polyline** (incluidos 
 4. **Mueve el cursor** al lado donde debe aparecer la copia — una vista previa en tiempo real la sigue.
 5. **Haz clic** para colocar la copia desplazada.
 
-Después de cada colocación, el comando vuelve al paso 3 con la **misma distancia**, listo para el siguiente desplazamiento. Presiona **Escape** para restablecer de vuelta al paso de entrada de distancia.
+Después de cada colocación, el comando vuelve al paso 3 con la **misma distancia**, listo para el siguiente desplazamiento. Presiona **Enter** o **Space** en reposo para finalizar el comando, o **Escape** para restablecer de vuelta al paso de entrada de distancia.
 
 ```
   Distancia: 10
@@ -47,7 +47,8 @@ Para **Circle**, **Arc** y **Ellipse**: si el desplazamiento hacia adentro reduc
 |-----|--------|
 | `0`–`9`, `.` | Añadir dígito al valor de distancia |
 | `Backspace` | Eliminar el último carácter escrito |
-| `Enter` / `Space` | Confirmar la distancia escrita y avanzar a la selección de entidad |
+| `Enter` / `Space` (al escribir una distancia) | Confirmar la distancia escrita y avanzar a la selección de entidad |
+| `Enter` / `Space` (en reposo, esperando la siguiente entidad) | Finalizar el comando Offset |
 | `Escape` | Restablecer al paso de entrada de distancia |
 
 ## Nota sobre el flujo de trabajo

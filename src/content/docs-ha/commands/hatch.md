@@ -15,7 +15,7 @@ Umarnin `hatch` yana cika yankin da ke kewaye da wurin da aka danna da pattern. 
 1. Rubuta `hatch` a cikin terminal ko danna maballin **Hatch** a kan toolbar (alamar swatch).
 2. **Danna wuri** a cikin yankin da kake son cikawa.
 3. Umarnin ya kasance a aiki, don haka ci gaba da dannawa don cika wasu yankuna — kowace dannawa tana ƙirƙirar `Hatch` abu nata.
-4. Danna **Escape** idan ka gama.
+4. Danna **Enter**, **Space**, ko **Escape** idan ka gama.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Umarnin `hatch` yana cika yankin da ke kewaye da wurin da aka danna da pattern. 
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   waje; da'irar ta rage a
   └─────────────┘        └─────────────┘   matsayin tsibiri
 ```
+
+## Marfe na maɓallan madannai
+
+| Maɓalli | Aiki |
+|-----|--------|
+| `Enter` / `Space` | Kammala umarnin Hatch |
+| `Escape` | Kammala umarnin Hatch (kamar Enter/Space) |
 
 ## Abin da zai iya zama iyaka
 

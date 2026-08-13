@@ -14,7 +14,7 @@ order: 9
 
 1. Skriv `splinefit` i terminalen eller klicka på **Spline Fit**-knappen i verktygsfältet.
 2. **Klicka för att placera fitpunkter** — kurvan kommer att passera genom var och en. Eller skriv `X,Y` och tryck **Enter** för en exakt koordinat.
-3. Tryck på **Enter** för att avsluta (minst 2 punkter krävs).
+3. Tryck på **Enter** eller **Space** för att avsluta (minst 2 punkter krävs).
 
 ```
   ●──────●──────●──────●  ← curve passes exactly through each click
@@ -39,7 +39,7 @@ Istället för att klicka kan du skriva en exakt position för valfri fitpunkt:
 | `0`–`9`, `.`, `-` | Starta X-koordinatinmatning |
 | `,` | Lås X och gå till Y-inmatning |
 | `Backspace` | Ta bort senast skrivna tecken |
-| `Enter` | Bekräfta inmatad koordinat, eller avsluta splinen om ingen inmatning pågår och ≥ 2 punkter finns |
+| `Enter` / `Space` | Bekräfta inmatad koordinat (endast Enter), eller avsluta splinen om ingen inmatning pågår och ≥ 2 punkter finns |
 | `Escape` | Kasta alla punkter och avsluta |
 
 ## Redigera med grepp — omforma via fitpunkter

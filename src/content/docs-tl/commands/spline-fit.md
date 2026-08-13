@@ -14,7 +14,7 @@ Ginuguhit ng `splinefit` command ang cubic spline na dumadaan sa bawat punto na 
 
 1. I-type ang `splinefit` sa terminal o i-click ang **Spline Fit** button sa toolbar.
 2. **Mag-click para maglagay ng fit points** — dadaan ang curve sa bawat isa. O i-type ang `X,Y` at pindutin ang **Enter** para sa eksaktong coordinate.
-3. Pindutin ang **Enter** para tapusin (kailangan ng hindi bababa sa 2 punto).
+3. Pindutin ang **Enter** o **Space** para tapusin (kailangan ng hindi bababa sa 2 punto).
 
 ```
   ●──────●──────●──────●  ← curve passes exactly through each click
@@ -39,7 +39,7 @@ Sa halip na mag-click, mag-type ng eksaktong posisyon para sa anumang fit point:
 | `0`–`9`, `.`, `-` | Simulan ang X coordinate entry |
 | `,` | I-lock ang X at lumipat sa Y entry |
 | `Backspace` | Burahin ang huling na-type na character |
-| `Enter` | Kumpirmahin ang na-type na coordinate, o tapusin ang spline kung walang isinasagawang input at mayroon nang ≥ 2 punto |
+| `Enter` / `Space` | Kumpirmahin ang na-type na coordinate (Enter lang), o tapusin ang spline kung walang isinasagawang input at mayroon nang ≥ 2 punto |
 | `Escape` | Itapon ang lahat ng punto at magsara |
 
 ## Grip Editing — Pagbabago ng Hugis sa Pamamagitan ng Fit Points

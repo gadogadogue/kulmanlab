@@ -14,7 +14,7 @@ El comando `splinecv` dibuja una **B-spline cúbica** colocando vértices de con
 
 1. Escribe `splinecv` en el terminal o haz clic en el botón de la barra de herramientas **Spline CV**.
 2. **Haz clic para colocar vértices de control** — cada clic añade un vértice. O escribe `X,Y` y pulsa **Enter** para una coordenada exacta.
-3. Pulsa **Enter** para terminar (se requieren al menos 2 vértices).
+3. Pulsa **Enter** o **Space** para terminar (se requieren al menos 2 vértices).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ En lugar de hacer clic, escribe una posición exacta para cualquier vértice de 
 | `0`–`9`, `.`, `-` | Comenzar entrada de coordenada X |
 | `,` | Fijar X y pasar a entrada Y |
 | `Backspace` | Borrar el último carácter escrito |
-| `Enter` | Confirmar coordenada escrita, o terminar la spline si no hay entrada en curso y existen ≥ 2 vértices |
+| `Enter` / `Space` | Confirmar coordenada escrita (solo Enter), o terminar la spline si no hay entrada en curso y existen ≥ 2 vértices |
 | `Escape` | Descartar todos los vértices y salir |
 
 ## Edición de agarres — reformar mediante vértices de control

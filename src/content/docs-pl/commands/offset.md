@@ -20,7 +20,7 @@ Obsługiwane typy elementów: **Linia, Okrąg, Łuk, Elipsa, Polilinia** (w tym 
 4. **Przesuń kursor** na stronę, gdzie powinna pojawić się kopia — podgląd na żywo podąża.
 5. **Kliknij**, aby umieścić kopię odsunięcia.
 
-Po każdym umieszczeniu polecenie powraca do kroku 3 przy **tej samej odległości**, gotowe do następnego odsunięcia. Naciśnij **Escape**, aby zresetować z powrotem do kroku wprowadzania odległości.
+Po każdym umieszczeniu polecenie powraca do kroku 3 przy **tej samej odległości**, gotowe do następnego odsunięcia. Naciśnij **Enter** lub **Spację** w stanie bezczynności, aby zakończyć polecenie, lub **Escape**, aby zresetować z powrotem do kroku wprowadzania odległości.
 
 ```
   Odległość: 10
@@ -47,7 +47,8 @@ Dla **Okręgu**, **Łuku** i **Elipsy**: jeśli odsunięcie do wewnątrz zmniejs
 |---------|-------|
 | `0`–`9`, `.` | Dodaj cyfrę do wartości odległości |
 | `Backspace` | Usuń ostatnio wpisany znak |
-| `Enter` / `Spacja` | Potwierdź wpisaną odległość i przejdź do wyboru elementu |
+| `Enter` / `Spacja` (podczas wpisywania odległości) | Potwierdź wpisaną odległość i przejdź do wyboru elementu |
+| `Enter` / `Spacja` (w stanie bezczynności, oczekując na kolejny element) | Zakończ polecenie Offset |
 | `Escape` | Zresetuj do kroku wprowadzania odległości |
 
 ## Uwaga do przepływu pracy

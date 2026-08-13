@@ -14,7 +14,7 @@ Perintah `splinefit` menggambar spline kubik yang melewati setiap titik yang And
 
 1. Ketik `splinefit` di terminal atau klik tombol toolbar **Spline Fit**.
 2. **Klik untuk menempatkan titik fit** — kurva akan melewati setiap titik. Atau ketik `X,Y` dan tekan **Enter** untuk koordinat tepat.
-3. Tekan **Enter** untuk selesai (setidaknya 2 titik diperlukan).
+3. Tekan **Enter** atau **Space** untuk selesai (setidaknya 2 titik diperlukan).
 
 ```
   ●──────●──────●──────●  ← kurva melewati tepat setiap klik
@@ -39,7 +39,7 @@ Alih-alih mengklik, ketik posisi tepat untuk titik fit mana saja:
 | `0`–`9`, `.`, `-` | Mulai entri koordinat X |
 | `,` | Kunci X dan pindah ke entri Y |
 | `Backspace` | Hapus karakter terakhir yang diketik |
-| `Enter` | Konfirmasi koordinat yang diketik, atau selesaikan spline jika tidak ada input yang sedang berlangsung dan ≥ 2 titik ada |
+| `Enter` / `Space` | Konfirmasi koordinat yang diketik (hanya Enter), atau selesaikan spline jika tidak ada input yang sedang berlangsung dan ≥ 2 titik ada |
 | `Escape` | Buang semua titik dan keluar |
 
 ## Pengeditan grip — membentuk ulang melalui titik fit

@@ -14,7 +14,7 @@ Kommandoen `splinefit` tegner en kubisk spline der går gennem hvert punkt, du k
 
 1. Skriv `splinefit` i terminalen eller klik på **Spline Fit**-knappen i værktøjslinjen.
 2. **Klik for at placere fit-punkter** — kurven vil gå gennem hvert af dem. Eller skriv `X,Y` og tryk **Enter** for en eksakt koordinat.
-3. Tryk **Enter** for at afslutte (mindst 2 punkter kræves).
+3. Tryk **Enter** eller **Space** for at afslutte (mindst 2 punkter kræves).
 
 ```
   ●──────●──────●──────●  ← kurven går nøjagtigt gennem hvert klik
@@ -39,7 +39,7 @@ I stedet for at klikke kan du indtaste en eksakt position for et hvilket som hel
 | `0`–`9`, `.`, `-` | Start X-koordinatindtastning |
 | `,` | Lås X og gå til Y-indtastning |
 | `Backspace` | Slet sidst skrevne tegn |
-| `Enter` | Bekræft indtastet koordinat, eller afslut splinen hvis ingen indtastning er i gang og ≥ 2 punkter findes |
+| `Enter` / `Space` | Bekræft indtastet koordinat (kun Enter), eller afslut splinen hvis ingen indtastning er i gang og ≥ 2 punkter findes |
 | `Escape` | Kassér alle punkter og gå ud |
 
 ## Grebredigering — omforme via fit-punkter

@@ -17,7 +17,7 @@ La commande `align` repositionne les entités sélectionnées à l'aide d'une ou
 1. Sélectionnez une ou plusieurs entités sur le canevas.
 2. Tapez `align` dans le terminal ou cliquez sur le bouton **Align** de la barre d'outils.
 3. **Cliquez sur le premier point source (S1)**, puis **sur le premier point destination (D1)**.
-4. **Cliquez sur le second point source (S2)**, ou appuyez sur **Entrée** pour appliquer dès maintenant un alignement de translation seule.
+4. **Cliquez sur le second point source (S2)**, ou appuyez sur **Entrée** ou **Espace** pour appliquer dès maintenant un alignement de translation seule.
 5. **Cliquez sur le second point destination (D2)**.
 6. Répondez à l'invite de mise à l'échelle : appuyez sur **Y** pour redimensionner, ou **N** / **Entrée** pour conserver la taille d'origine.
 
@@ -48,7 +48,7 @@ Un aperçu fantôme suit le curseur à chaque étape : un aperçu de déplacemen
 
 ## Alignement à un point (translation seule)
 
-Une fois D1 placé, appuyez sur **Entrée** au lieu de cliquer sur un second point source. La sélection est translatée selon le vecteur S1→D1 — sans rotation ni mise à l'échelle — identique à un [Move](../move/) utilisant S1 comme point de base et D1 comme destination.
+Une fois D1 placé, appuyez sur **Entrée** ou **Espace** au lieu de cliquer sur un second point source. La sélection est translatée selon le vecteur S1→D1 — sans rotation ni mise à l'échelle — identique à un [Move](../move/) utilisant S1 comme point de base et D1 comme destination.
 
 ## Alignement à deux points (translation + rotation + mise à l'échelle facultative)
 
@@ -66,7 +66,7 @@ Appuyer sur une touche à l'invite de mise à l'échelle applique immédiatement
 | Touche | Action |
 |--------|--------|
 | `Entrée` / `Espace` | Confirmer la sélection et avancer à la phase S1 |
-| `Entrée` (à l'étape S2) | Ignorer la rotation — appliquer un alignement de translation seule avec S1 et D1 |
+| `Entrée` / `Espace` (à l'étape S2) | Ignorer la rotation — appliquer un alignement de translation seule avec S1 et D1 |
 | `Y` | Appliquer l'alignement avec mise à l'échelle |
 | `N` / `Entrée` (à l'invite de mise à l'échelle) | Appliquer l'alignement sans mise à l'échelle |
 | `Échap` | Pendant le placement des points : abandonne les points et revient à la phase de sélection ; sans rien de sélectionné : annule la commande |

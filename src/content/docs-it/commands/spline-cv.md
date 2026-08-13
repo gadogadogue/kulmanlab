@@ -14,7 +14,7 @@ Il comando `splinecv` disegna una **B-spline cubica** posizionando vertici di co
 
 1. Digita `splinecv` nel terminale o clicca il pulsante **Spline CV** nella barra degli strumenti.
 2. **Clicca per posizionare i vertici di controllo** — ogni clic aggiunge un vertice. Oppure digita `X,Y` e premi **Invio** per una coordinata esatta.
-3. Premi **Invio** per terminare (almeno 2 vertici richiesti).
+3. Premi **Invio** o **Spazio** per terminare (almeno 2 vertici richiesti).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Invece di cliccare, digita una posizione esatta per qualsiasi vertice di control
 | `0`–`9`, `.`, `-` | Inizia l'inserimento coordinata X |
 | `,` | Blocca X e passa all'inserimento Y |
 | `Canc ←` | Elimina l'ultimo carattere digitato |
-| `Invio` | Conferma la coordinata digitata, o termina la spline se nessun input è in corso e ≥ 2 vertici esistono |
+| `Invio` / `Spazio` | Conferma la coordinata digitata (solo Invio), o termina la spline se nessun input è in corso e ≥ 2 vertici esistono |
 | `Esc` | Scarta tutti i vertici ed esce |
 
 ## Modifica con grip — ridisegnare tramite vertici di controllo

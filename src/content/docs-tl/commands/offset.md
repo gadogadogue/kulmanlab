@@ -20,7 +20,7 @@ Supported na entity types: **Line, Circle, Arc, Ellipse, Polyline** (kasama ang 
 4. **Igalaw ang cursor** papunta sa side kung saan dapat lumabas ang copy — sinusundan ito ng live preview.
 5. **I-click** para ilagay ang offset copy.
 
-Pagkatapos ng bawat paglagay, babalik ang command sa step 3 sa **parehong distansya**, handa na para sa susunod na offset. Pindutin ang **Escape** para mag-reset pabalik sa distance-entry step.
+Pagkatapos ng bawat paglagay, babalik ang command sa step 3 sa **parehong distansya**, handa na para sa susunod na offset. Pindutin ang **Enter** o **Space** habang naghihintay para tapusin ang command, o **Escape** para mag-reset pabalik sa distance-entry step.
 
 ```
   Distance: 10
@@ -47,7 +47,8 @@ Para sa **Circle**, **Arc**, at **Ellipse**: kung ang inward offset ay magpapaba
 |-----|--------|
 | `0`–`9`, `.` | Idagdag ang digit sa distance value |
 | `Backspace` | Tanggalin ang huling na-type na character |
-| `Enter` / `Space` | Kumpirmahin ang na-type na distansya at magpatuloy sa entity selection |
+| `Enter` / `Space` (habang nagta-type ng distansya) | Kumpirmahin ang na-type na distansya at magpatuloy sa entity selection |
+| `Enter` / `Space` (habang naghihintay ng susunod na entity) | Tapusin ang Offset command |
 | `Escape` | Mag-reset pabalik sa distance-entry step |
 
 ## Tala sa Workflow

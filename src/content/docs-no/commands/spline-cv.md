@@ -14,7 +14,7 @@ Kommandoen `splinecv` tegner en **kubisk B-spline** ved å plassere kontrollpunk
 
 1. Skriv `splinecv` i terminalen eller klikk på **Spline CV**-knappen i verktøylinjen.
 2. **Klikk for å plassere kontrollpunkter** — hvert klikk legger til et punkt. Eller skriv `X,Y` og trykk **Enter** for en eksakt koordinat.
-3. Trykk **Enter** for å avslutte (minst 2 punkter kreves).
+3. Trykk **Enter** eller **Space** for å avslutte (minst 2 punkter kreves).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ I stedet for å klikke kan du skrive inn en eksakt posisjon for et hvilket som h
 | `0`–`9`, `.`, `-` | Start X-koordinatinntasting |
 | `,` | Lås X og gå til Y-inntasting |
 | `Backspace` | Slett sist skrevne tegn |
-| `Enter` | Bekreft inntastet koordinat, eller avslutt splinen hvis ingen inntasting pågår og ≥ 2 punkter finnes |
+| `Enter` / `Space` | Bekreft inntastet koordinat (kun Enter), eller avslutt splinen hvis ingen inntasting pågår og ≥ 2 punkter finnes |
 | `Escape` | Forkast alle punkter og gå ut |
 
 ## Grep-redigering — omforme via kontrollpunkter

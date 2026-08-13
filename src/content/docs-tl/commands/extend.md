@@ -18,7 +18,7 @@ Mga entity lang na may tunay na endpoint ang puwedeng i-extend. Ang isang [Circl
 2. **I-hover malapit sa isang dulo** ng entity na gusto mong i-extend — ipapakita ng preview itong na-extend papunta sa pinakamalapit na boundary sa direksyong iyon.
 3. **I-click** para i-apply ang extension.
 
-Nananatiling aktibo ang command pagkatapos ng bawat extension, kaya puwede kang magpatuloy sa pag-hover at pag-click para mag-extend ng higit pang entity. Pindutin ang **Escape** para lumabas.
+Nananatiling aktibo ang command pagkatapos ng bawat extension, kaya puwede kang magpatuloy sa pag-hover at pag-click para mag-extend ng higit pang entity. Pindutin ang **Enter**, **Space**, o **Escape** para lumabas.
 
 ```
   Before:                      After:
@@ -52,6 +52,7 @@ Ang lahat ng ibang types (Line, Arc, Circle, Ellipse, Polyline, Dimension) ay ba
 
 | Key | Aksyon |
 |-----|--------|
+| `Enter` / `Space` | Lumabas sa extend mode |
 | `Escape` | Lumabas sa extend mode |
 
 ## Supported na mga Entity

@@ -14,7 +14,7 @@ Amri ya `splinecv` inachora **B-spline ya cubic** kwa kuweka ncha za udhibiti (C
 
 1. Andika `splinecv` kwenye terminal au bonyeza kitufe cha **Spline CV** kwenye upau wa zana.
 2. **Bonyeza kuweka ncha za udhibiti** — kila bonyeza inaongeza ncha. Au andika `X,Y` na ubonyeze **Enter** kwa kuratibu sahihi.
-3. Bonyeza **Enter** kumaliza (inahitaji angalau ncha 2).
+3. Bonyeza **Enter** au **Space** kumaliza (inahitaji angalau ncha 2).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Badala ya kubonyeza, andika nafasi sahihi kwa ncha yoyote ya udhibiti:
 | `0`–`9`, `.`, `-` | Anza uingizaji wa kuratibu ya X |
 | `,` | Funga X na nenda kwa uingizaji wa Y |
 | `Backspace` | Futa herufi ya mwisho iliyoandikwa |
-| `Enter` | Thibitisha kuratibu iliyoandikwa, au maliza spline kama hakuna uingizaji unaoendelea na ncha ≥ 2 zipo |
+| `Enter` / `Space` | Thibitisha kuratibu iliyoandikwa (Enter pekee), au maliza spline kama hakuna uingizaji unaoendelea na ncha ≥ 2 zipo |
 | `Escape` | Futa ncha zote na toka |
 
 ## Uhariri wa kushika — kubadilisha kupitia ncha za udhibiti

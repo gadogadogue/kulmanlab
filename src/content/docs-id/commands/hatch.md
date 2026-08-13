@@ -15,7 +15,7 @@ Perintah `hatch` mengisi wilayah yang mengelilingi titik yang diklik dengan pola
 1. Ketik `hatch` di terminal atau klik tombol toolbar **Hatch** (ikon swatch).
 2. **Klik sebuah titik** di dalam wilayah yang ingin Anda isi.
 3. Perintah tetap aktif, jadi teruslah mengklik untuk mengisi lebih banyak area — setiap klik membuat entitas `Hatch` sendiri.
-4. Tekan **Escape** ketika selesai.
+4. Tekan **Enter**, **Space**, atau **Escape** ketika selesai.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Perintah `hatch` mengisi wilayah yang mengelilingi titik yang diklik dengan pola
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   luar; lingkaran tetap
   └─────────────┘        └─────────────┘   sebagai pulau
 ```
+
+## Referensi keyboard
+
+| Tombol | Aksi |
+|-----|--------|
+| `Enter` / `Space` | Selesaikan perintah Hatch |
+| `Escape` | Selesaikan perintah Hatch (sama seperti Enter/Space) |
 
 ## Apa yang Dapat Membentuk Batas
 

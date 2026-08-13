@@ -14,7 +14,7 @@ El comando `splinefit` dibuja una spline cúbica que pasa por cada punto que hag
 
 1. Escribe `splinefit` en el terminal o haz clic en el botón de la barra de herramientas **Spline Fit**.
 2. **Haz clic para colocar puntos de ajuste** — la curva pasará por cada uno. O escribe `X,Y` y pulsa **Enter** para una coordenada exacta.
-3. Pulsa **Enter** para terminar (se requieren al menos 2 puntos).
+3. Pulsa **Enter** o **Space** para terminar (se requieren al menos 2 puntos).
 
 ```
   ●──────●──────●──────●  ← la curva pasa exactamente por cada clic
@@ -39,7 +39,7 @@ En lugar de hacer clic, escribe una posición exacta para cualquier punto de aju
 | `0`–`9`, `.`, `-` | Comenzar entrada de coordenada X |
 | `,` | Fijar X y pasar a entrada Y |
 | `Backspace` | Borrar el último carácter escrito |
-| `Enter` | Confirmar coordenada escrita, o terminar la spline si no hay entrada en curso y existen ≥ 2 puntos |
+| `Enter` / `Space` | Confirmar coordenada escrita (solo Enter), o terminar la spline si no hay entrada en curso y existen ≥ 2 puntos |
 | `Escape` | Descartar todos los puntos y salir |
 
 ## Edición de agarres — reformar mediante puntos de ajuste

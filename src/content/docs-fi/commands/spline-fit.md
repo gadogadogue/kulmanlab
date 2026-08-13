@@ -14,7 +14,7 @@ Komento `splinefit` piirtää kuutiollisen splinen, joka kulkee jokaisen napsaut
 
 1. Kirjoita `splinefit` terminaaliin tai napsauta **Spline Fit**-painiketta työkalurivillä.
 2. **Napsauta sijoittaaksesi sovituspisteitä** — käyrä kulkee jokaisen kautta. Tai kirjoita `X,Y` ja paina **Enter** tarkkaa koordinaattia varten.
-3. Paina **Enter** viimeistelläksesi (vähintään 2 pistettä vaaditaan).
+3. Paina **Enter** tai **Space** viimeistelläksesi (vähintään 2 pistettä vaaditaan).
 
 ```
   ●──────●──────●──────●  ← käyrä kulkee tarkasti jokaisen napsautuksen kautta
@@ -39,7 +39,7 @@ Napsauttamisen sijaan voit kirjoittaa tarkan sijainnin mille tahansa sovituspist
 | `0`–`9`, `.`, `-` | Aloita X-koordinaatin syöttö |
 | `,` | Lukitse X ja siirry Y:n syöttöön |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
-| `Enter` | Vahvista kirjoitettu koordinaatti, tai viimeistele spline jos syöte ei ole käynnissä ja ≥ 2 pistettä on olemassa |
+| `Enter` / `Space` | Vahvista kirjoitettu koordinaatti (vain Enter), tai viimeistele spline jos syöte ei ole käynnissä ja ≥ 2 pistettä on olemassa |
 | `Escape` | Hylkää kaikki pisteet ja poistu |
 
 ## Kahvamuokkaus — muotoilu uudelleen sovituspisteiden kautta

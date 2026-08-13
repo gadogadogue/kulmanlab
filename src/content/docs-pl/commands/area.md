@@ -33,7 +33,7 @@ Polecenie `area` mierzy pole powierzchni i obwód wielokąta wyznaczonego przez 
 1. Wpisz `area` w terminalu lub kliknij przycisk **Area** na pasku narzędzi (dolny rząd panelu Measure).
 2. **Kliknij pierwszy punkt** lub wpisz `X,Y` i naciśnij **Enter** dla dokładnej współrzędnej.
 3. **Kliknij każdy dodatkowy wierzchołek** kolejno wokół kształtu. Wprowadzanie współrzędnych działa na każdym kroku.
-4. Po umieszczeniu co najmniej **3 punktów** naciśnij **Enter** (bez oczekującego wprowadzania współrzędnej lub odległości), aby zamknąć wielokąt i obliczyć wynik.
+4. Po umieszczeniu co najmniej **3 punktów** naciśnij **Enter** lub **Spację** (bez oczekującego wprowadzania współrzędnej lub odległości), aby zamknąć wielokąt i obliczyć wynik.
 5. Terminal drukuje `Area: <wartość>  Perimeter: <wartość>`, a zamknięty wielokąt — wypełnienie, kontur i uchwyty wierzchołków — pozostaje podświetlony na płótnie.
 6. **Kliknij gdziekolwiek, naciśnij dowolny klawisz lub naciśnij `Escape`**, aby ukryć wynik i zakończyć polecenie.
 
@@ -85,7 +85,7 @@ Zamiast klikać, wpisz dokładną pozycję dla dowolnego wierzchołka:
 | `0`–`9`, `.`, `-` | Rozpocznij wprowadzanie współrzędnej X lub długości krawędzi przy aktywnej blokadzie kąta |
 | `,` | Zablokuj X i przejdź do wprowadzania Y |
 | `Backspace` | Usuń ostatnio wpisany znak |
-| `Enter` | Potwierdź wpisaną współrzędną lub długość; przy 3+ wierzchołkach i braku oczekującego wejścia zamyka wielokąt |
+| `Enter` / `Spacja` | Potwierdź wpisaną współrzędną lub długość (tylko Enter); przy 3+ wierzchołkach i braku oczekującego wejścia zamyka wielokąt |
 | `Escape` | Podczas wybierania wierzchołków: odrzuca punkty i zaczyna od nowa od pierwszego punktu; po wyświetleniu wyniku: ukrywa go i kończy polecenie |
 
 ## Uwagi

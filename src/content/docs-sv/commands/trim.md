@@ -16,7 +16,7 @@ order: 8
 2. **Håll markören över segmentet** du vill ta bort — en förhandsvisning markerar exakt den del som kommer klippas.
 3. **Klicka** för att ta bort det segmentet.
 
-Kommandot förblir aktivt efter varje klippning, så du kan fortsätta hålla markören över och klicka för att klippa fler segment — på samma entitet eller en annan. Tryck **Escape** för att avsluta.
+Kommandot förblir aktivt efter varje klippning, så du kan fortsätta hålla markören över och klicka för att klippa fler segment — på samma entitet eller en annan. Tryck **Enter**, **Space** eller **Escape** för att avsluta.
 
 ```
   Före:                        Efter att mittsegmentet klippts:
@@ -48,6 +48,7 @@ Kommandot projicerar markörens position på den entitet markören befinner sig 
 
 | Tangent | Åtgärd |
 |-----|--------|
+| `Enter` / `Space` | Avslutar trim-läget |
 | `Escape` | Avslutar trim-läget |
 
 ## Entiteter som stöds

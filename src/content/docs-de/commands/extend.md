@@ -18,7 +18,7 @@ Nur Elemente mit einem tatsächlichen Endpunkt können verlängert werden. Ein [
 2. **Hovern Sie nahe einem Ende** des Elements, das Sie verlängern möchten — die Vorschau zeigt es bis zur nächsten Begrenzung in dieser Richtung verlängert.
 3. **Klicken**, um die Verlängerung anzuwenden.
 
-Der Befehl bleibt nach jeder Verlängerung aktiv, sodass Sie weiterhin hovern und klicken können, um weitere Elemente zu verlängern. Drücken Sie **Escape**, um zu beenden.
+Der Befehl bleibt nach jeder Verlängerung aktiv, sodass Sie weiterhin hovern und klicken können, um weitere Elemente zu verlängern. Drücken Sie **Enter**, **Space** oder **Escape**, um zu beenden.
 
 ```
   Vorher:                      Nachher:
@@ -52,6 +52,7 @@ Alle anderen Typen (Line, Arc, Circle, Ellipse, Polyline, Dimension) dienen als 
 
 | Taste | Aktion |
 |-------|--------|
+| `Enter` / `Space` | Extend-Modus beenden |
 | `Escape` | Extend-Modus beenden |
 
 ## Unterstützte Elemente

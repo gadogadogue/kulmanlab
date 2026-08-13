@@ -18,7 +18,7 @@ Chỉ những thực thể có điểm cuối thực sự mới có thể đư�
 2. **Di chuyển con trỏ gần một đầu** của thực thể muốn kéo dài — bản xem trước hiển thị nó được kéo dài đến ranh giới gần nhất theo hướng đó.
 3. **Nhấp** để áp dụng việc kéo dài.
 
-Lệnh vẫn hoạt động sau mỗi lần kéo dài, vì vậy bạn có thể tiếp tục di chuyển và nhấp để kéo dài thêm thực thể. Nhấn **Escape** để thoát.
+Lệnh vẫn hoạt động sau mỗi lần kéo dài, vì vậy bạn có thể tiếp tục di chuyển và nhấp để kéo dài thêm thực thể. Nhấn **Enter**, **Space**, hoặc **Escape** để thoát.
 
 ```
   Trước:                      Sau:
@@ -52,6 +52,7 @@ Tất cả các loại khác (Line, Arc, Circle, Ellipse, Polyline, Kích thư�
 
 | Phím | Hành động |
 |------|-----------|
+| `Enter` / `Space` | Thoát chế độ kéo dài |
 | `Escape` | Thoát chế độ kéo dài |
 
 ## Thực thể được hỗ trợ

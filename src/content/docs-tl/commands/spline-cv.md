@@ -14,7 +14,7 @@ Ginuguhit ng `splinecv` command ang **cubic B-spline** sa paglalagay ng control 
 
 1. I-type ang `splinecv` sa terminal o i-click ang **Spline CV** button sa toolbar.
 2. **Mag-click para maglagay ng control vertices** — bawat click ay nagdaragdag ng vertex. O i-type ang `X,Y` at pindutin ang **Enter** para sa eksaktong coordinate.
-3. Pindutin ang **Enter** para tapusin (kailangan ng hindi bababa sa 2 vertex).
+3. Pindutin ang **Enter** o **Space** para tapusin (kailangan ng hindi bababa sa 2 vertex).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Sa halip na mag-click, mag-type ng eksaktong posisyon para sa anumang control ve
 | `0`–`9`, `.`, `-` | Simulan ang X coordinate entry |
 | `,` | I-lock ang X at lumipat sa Y entry |
 | `Backspace` | Burahin ang huling na-type na character |
-| `Enter` | Kumpirmahin ang na-type na coordinate, o tapusin ang spline kung walang isinasagawang input at mayroon nang ≥ 2 vertex |
+| `Enter` / `Space` | Kumpirmahin ang na-type na coordinate (Enter lang), o tapusin ang spline kung walang isinasagawang input at mayroon nang ≥ 2 vertex |
 | `Escape` | Itapon ang lahat ng vertex at magsara |
 
 ## Grip Editing — Pagbabago ng Hugis sa Pamamagitan ng Control Vertices

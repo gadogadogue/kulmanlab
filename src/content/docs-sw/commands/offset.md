@@ -20,7 +20,7 @@ Aina za vipengele zinazosaidiwa: **Line, Circle, Arc, Ellipse, Polyline** (pamoj
 4. **Sogeza kishale** kuelekea upande ambapo nakala inapaswa kuonekana — hakiki ya moja kwa moja inafuata.
 5. **Bonyeza** kuweka nakala ya offset.
 
-Baada ya kila uwekaji amri inarudi hatua ya 3 kwa **umbali uleule**, tayari kwa offset inayofuata. Bonyeza **Escape** kurudi hatua ya uingizaji wa umbali.
+Baada ya kila uwekaji amri inarudi hatua ya 3 kwa **umbali uleule**, tayari kwa offset inayofuata. Bonyeza **Enter** au **Space** wakati wa kusubiri kumaliza amri, au **Escape** kurudi hatua ya uingizaji wa umbali.
 
 ```
   Umbali: 10
@@ -47,7 +47,8 @@ Kwa **Circle**, **Arc**, na **Ellipse**: kama offset ya ndani ingepunguza radius
 |--------|---------|
 | `0`–`9`, `.` | Ongeza tarakimu kwa thamani ya umbali |
 | `Backspace` | Futa herufi ya mwisho iliyoandikwa |
-| `Enter` / `Space` | Thibitisha umbali ulioandikwa na endelea kwa uchaguzi wa kipengele |
+| `Enter` / `Space` (wakati wa kuandika umbali) | Thibitisha umbali ulioandikwa na endelea kwa uchaguzi wa kipengele |
+| `Enter` / `Space` (wakati wa kusubiri kipengele kinachofuata) | Maliza amri ya Offset |
 | `Escape` | Rudi hatua ya uingizaji wa umbali |
 
 ## Dokezo la mtiririko wa kazi

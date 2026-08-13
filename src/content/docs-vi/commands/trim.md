@@ -16,7 +16,7 @@ Lệnh `trim` xóa phần của [Line](../line/), [Arc](../arc/), [Circle](../ci
 2. **Di chuyển con trỏ qua đoạn** bạn muốn xóa — bản xem trước tô sáng chính xác phần sẽ bị cắt.
 3. **Nhấp** để xóa đoạn đó.
 
-Lệnh vẫn hoạt động sau mỗi lần cắt, vì vậy bạn có thể tiếp tục di chuyển và nhấp để cắt thêm đoạn — trên cùng thực thể hoặc thực thể khác. Nhấn **Escape** để thoát.
+Lệnh vẫn hoạt động sau mỗi lần cắt, vì vậy bạn có thể tiếp tục di chuyển và nhấp để cắt thêm đoạn — trên cùng thực thể hoặc thực thể khác. Nhấn **Enter**, **Space**, hoặc **Escape** để thoát.
 
 ```
   Trước:                     Sau khi cắt đoạn giữa:
@@ -48,6 +48,7 @@ Lệnh chiếu vị trí con trỏ lên thực thể đang di chuyển qua và t
 
 | Phím | Hành động |
 |------|-----------|
+| `Enter` / `Space` | Thoát chế độ cắt |
 | `Escape` | Thoát chế độ cắt |
 
 ## Thực thể được hỗ trợ

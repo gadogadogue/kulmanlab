@@ -17,7 +17,7 @@ order: 6
 1. Tuvalde bir veya daha fazla nesne seçin.
 2. Terminale `align` yazın veya araç çubuğundaki **Align** düğmesine basın.
 3. **İlk kaynak noktayı (S1) tıklayın**, ardından **ilk hedef noktayı (D1) tıklayın**.
-4. **İkinci kaynak noktayı (S2) tıklayın**, veya hemen yalnızca taşıma içeren bir hizalama uygulamak için **Enter** tuşuna basın.
+4. **İkinci kaynak noktayı (S2) tıklayın**, veya hemen yalnızca taşıma içeren bir hizalama uygulamak için **Enter** veya **Boşluk** tuşuna basın.
 5. **İkinci hedef noktayı (D2) tıklayın**.
 6. Ölçekleme istemini yanıtlayın: ölçeklemek için **Y** tuşuna, orijinal boyutu korumak için **N** / **Enter** tuşuna basın.
 
@@ -48,7 +48,7 @@ Her adımda imleci bir hayalet önizleme takip eder: D1 yerleştirilirken bir ta
 
 ## Tek Nokta Hizalama (yalnızca taşıma)
 
-D1 yerleştirildikten sonra, ikinci bir kaynak noktayı tıklamak yerine **Enter** tuşuna basın. Seçim, S1→D1 vektörü kadar taşınır — döndürme veya ölçekleme olmadan — S1'i temel nokta ve D1'i hedef olarak kullanan bir [Move](../move/) ile aynıdır.
+D1 yerleştirildikten sonra, ikinci bir kaynak noktayı tıklamak yerine **Enter** veya **Boşluk** tuşuna basın. Seçim, S1→D1 vektörü kadar taşınır — döndürme veya ölçekleme olmadan — S1'i temel nokta ve D1'i hedef olarak kullanan bir [Move](../move/) ile aynıdır.
 
 ## İki Nokta Hizalama (taşıma + döndürme + isteğe bağlı ölçekleme)
 
@@ -66,7 +66,7 @@ S2 ve D2'nin ikisi de yerleştirildiğinde:
 | Tuş | İşlem |
 |-----|-------|
 | `Enter` / `Boşluk` | Seçimi onaylar ve S1 aşamasına geçer |
-| `Enter` (S2 adımında) | Döndürmeyi atlar — S1 ve D1 kullanarak yalnızca taşıma içeren bir hizalama uygular |
+| `Enter` / `Boşluk` (S2 adımında) | Döndürmeyi atlar — S1 ve D1 kullanarak yalnızca taşıma içeren bir hizalama uygular |
 | `Y` | Hizalamayı ölçeklemeyle uygular |
 | `N` / `Enter` (ölçekleme isteminde) | Hizalamayı ölçeklemeden uygular |
 | `Escape` | Nokta seçerken: noktaları iptal eder ve seçim aşamasına döner; seçim yokken: komutu iptal eder |

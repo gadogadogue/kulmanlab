@@ -15,7 +15,7 @@ El comando `hatch` rellena la región que rodea a un punto pulsado con un patró
 1. Escribe `hatch` en la terminal o haz clic en el botón **Hatch** de la barra de herramientas (el icono de muestra).
 2. **Haz clic en un punto** dentro de la región que quieres rellenar.
 3. El comando permanece activo, así que sigue haciendo clic para rellenar más áreas — cada clic crea su propia entidad `Hatch`.
-4. Pulsa **Escape** cuando termines.
+4. Pulsa **Enter**, **Space** o **Escape** cuando termines.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ El comando `hatch` rellena la región que rodea a un punto pulsado con un patró
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   contorno exterior; el
   └─────────────┘        └─────────────┘   círculo queda como isla
 ```
+
+## Referencia de teclado
+
+| Tecla | Acción |
+|-----|--------|
+| `Enter` / `Space` | Finalizar el comando Hatch |
+| `Escape` | Finalizar el comando Hatch (igual que Enter/Space) |
 
 ## Qué puede formar un contorno
 

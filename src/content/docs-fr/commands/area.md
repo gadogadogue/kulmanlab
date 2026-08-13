@@ -33,7 +33,7 @@ La commande `area` mesure l'aire délimitée et le périmètre d'un polygone dé
 1. Tapez `area` dans le terminal ou cliquez sur le bouton **Area** de la barre d'outils (rangée du bas du panneau Measure).
 2. **Cliquez sur le premier point**, ou tapez `X,Y` et appuyez sur **Entrée** pour une coordonnée exacte.
 3. **Cliquez sur chaque sommet supplémentaire** dans l'ordre autour de la forme. La saisie de coordonnées fonctionne à chaque étape.
-4. Une fois au moins **3 points** placés, appuyez sur **Entrée** (sans saisie de coordonnée ou de distance en attente) pour fermer le polygone et calculer le résultat.
+4. Une fois au moins **3 points** placés, appuyez sur **Entrée** ou **Espace** (sans saisie de coordonnée ou de distance en attente) pour fermer le polygone et calculer le résultat.
 5. Le terminal affiche `Area: <valeur>  Perimeter: <valeur>`, et le polygone fermé — remplissage, contour et poignées de sommet — reste surligné sur le canevas.
 6. **Cliquez n'importe où, appuyez sur n'importe quelle touche, ou appuyez sur `Échap`** pour masquer le résultat et terminer la commande.
 
@@ -85,7 +85,7 @@ Au lieu de cliquer, tapez une position exacte pour n'importe quel sommet :
 | `0`–`9`, `.`, `-` | Commencer la saisie de coordonnée X, ou la saisie de longueur d'arête en verrouillage d'angle |
 | `,` | Verrouiller X et passer à la saisie Y |
 | `Retour arrière` | Supprimer le dernier caractère saisi |
-| `Entrée` | Confirmer une coordonnée ou une longueur saisie ; avec 3 sommets ou plus et aucune saisie en attente, ferme le polygone |
+| `Entrée` / `Espace` | Confirmer une coordonnée ou une longueur saisie (Entrée uniquement) ; avec 3 sommets ou plus et aucune saisie en attente, ferme le polygone |
 | `Échap` | Pendant la sélection des sommets : abandonne les points et recommence au premier point ; une fois le résultat affiché : le masque et termine la commande |
 
 ## Remarques

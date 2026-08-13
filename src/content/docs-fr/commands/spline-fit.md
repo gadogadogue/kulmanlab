@@ -14,7 +14,7 @@ La commande `splinefit` trace une spline cubique passant par chaque point que vo
 
 1. Tapez `splinefit` dans le terminal ou cliquez sur le bouton **Spline Fit** de la barre d'outils.
 2. **Cliquez pour placer des points d'interpolation** — la courbe passera par chacun. Ou tapez `X,Y` et appuyez sur **Entrée** pour une coordonnée exacte.
-3. Appuyez sur **Entrée** pour terminer (au moins 2 points requis).
+3. Appuyez sur **Entrée** ou **Espace** pour terminer (au moins 2 points requis).
 
 ```
   ●──────●──────●──────●  ← la courbe passe exactement par chaque clic
@@ -39,7 +39,7 @@ Au lieu de cliquer, tapez une position exacte pour tout point d'interpolation :
 | `0`–`9`, `.`, `-` | Démarrer la saisie de coordonnée X |
 | `,` | Verrouiller X et passer à la saisie Y |
 | `Retour arrière` | Supprimer le dernier caractère saisi |
-| `Entrée` | Confirmer la coordonnée saisie, ou terminer la spline si aucune saisie n'est en cours et ≥ 2 points existent |
+| `Entrée` / `Espace` | Confirmer la coordonnée saisie (Entrée uniquement), ou terminer la spline si aucune saisie n'est en cours et ≥ 2 points existent |
 | `Échap` | Abandonner tous les points et quitter |
 
 ## Édition par poignées — remodeler via les points d'interpolation

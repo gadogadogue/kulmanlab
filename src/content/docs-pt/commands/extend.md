@@ -18,7 +18,7 @@ Apenas entidades com um ponto final real podem ser estendidas. Um [Circle](../ci
 2. **Passe o cursor próximo a uma extremidade** da entidade que deseja estender — a pré-visualização a mostra estendida até o limite mais próximo nessa direção.
 3. **Clique** para aplicar a extensão.
 
-O comando permanece ativo após cada extensão, então você pode continuar passando o cursor e clicando para estender mais entidades. Pressione **Escape** para sair.
+O comando permanece ativo após cada extensão, então você pode continuar passando o cursor e clicando para estender mais entidades. Pressione **Enter**, **Espaço** ou **Escape** para sair.
 
 ```
   Antes:                        Depois:
@@ -52,6 +52,7 @@ Todos os outros tipos (Line, Arc, Circle, Ellipse, Polyline, Dimension) servem c
 
 | Tecla | Ação |
 |-------|------|
+| `Enter` / `Espaço` | Sair do modo extend |
 | `Escape` | Sair do modo extend |
 
 ## Entidades suportadas

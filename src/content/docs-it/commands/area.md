@@ -33,7 +33,7 @@ Il comando `area` misura l'area racchiusa e il perimetro di un poligono definito
 1. Digita `area` nel terminale o clicca il pulsante **Area** nella barra degli strumenti (riga inferiore del pannello Measure).
 2. **Clicca il primo punto**, oppure digita `X,Y` e premi **Invio** per una coordinata esatta.
 3. **Clicca ogni vertice aggiuntivo** in ordine intorno alla forma. L'inserimento di coordinate funziona a ogni passo.
-4. Una volta posizionati almeno **3 punti**, premi **Invio** (senza un inserimento di coordinata o distanza in sospeso) per chiudere il poligono e calcolare il risultato.
+4. Una volta posizionati almeno **3 punti**, premi **Invio** o **Spazio** (senza un inserimento di coordinata o distanza in sospeso) per chiudere il poligono e calcolare il risultato.
 5. Il terminale stampa `Area: <valore>  Perimeter: <valore>`, e il poligono chiuso — riempimento, contorno e maniglie dei vertici — rimane evidenziato sul canvas.
 6. **Clicca ovunque, premi un tasto qualsiasi, oppure premi `Escape`** per nascondere il risultato e terminare il comando.
 
@@ -85,7 +85,7 @@ Invece di cliccare, digita una posizione esatta per qualsiasi vertice:
 | `0`–`9`, `.`, `-` | Avvia l'inserimento della coordinata X, o l'inserimento della lunghezza del lato con blocco angolare attivo |
 | `,` | Blocca X e passa all'inserimento Y |
 | `Backspace` | Elimina l'ultimo carattere digitato |
-| `Invio` | Conferma una coordinata o lunghezza digitata; con 3 o più vertici e nessun inserimento in sospeso, chiude il poligono |
+| `Invio` / `Spazio` | Conferma una coordinata o lunghezza digitata (solo Invio); con 3 o più vertici e nessun inserimento in sospeso, chiude il poligono |
 | `Escape` | Durante la selezione dei vertici: scarta i punti e ricomincia dal primo punto; una volta mostrato il risultato: lo nasconde e termina il comando |
 
 ## Note

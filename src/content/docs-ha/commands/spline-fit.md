@@ -14,7 +14,7 @@ Umarnin `splinefit` yana zana spline mai cubic wanda ke wucewa ta kowace tabo da
 
 1. Rubuta `splinefit` a tashar umarni ko danna maɓallin kayan aiki na **Spline Fit**.
 2. **Danna don sanya fit points** — curve zai wuce ta kowanne. Ko rubuta `X,Y` ka danna **Enter** don daidaitawa madaidaiciya.
-3. Danna **Enter** don kammalawa (ana bukatar aƙalla tabo 2).
+3. Danna **Enter** ko **Space** don kammalawa (ana bukatar aƙalla tabo 2).
 
 ```
   ●──────●──────●──────●  ← curve yana wucewa daidai ta kowace dannawa
@@ -39,7 +39,7 @@ Maimakon dannawa, rubuta madaidaicin matsayi ga kowace fit point:
 | `0`–`9`, `.`, `-` | Fara shigar da daidaitawar X |
 | `,` | Kulle X ka koma shigar da Y |
 | `Backspace` | Share tsohon harafi na ƙarshe da aka rubuta |
-| `Enter` | Tabbatar da daidaitawar da aka rubuta, ko kammala spline idan babu shigarwa a tsari kuma ≥ tabo 2 sun kasance |
+| `Enter` / `Space` | Tabbatar da daidaitawar da aka rubuta (Enter kawai), ko kammala spline idan babu shigarwa a tsari kuma ≥ tabo 2 sun kasance |
 | `Escape` | Kawar da dukkan tabo ka fita |
 
 ## Gyaran grip — sake tsarawa ta fit points

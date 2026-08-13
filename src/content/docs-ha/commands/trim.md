@@ -16,7 +16,7 @@ Umarnin `trim` yana cire sashen [Line](../line/), [Arc](../arc/), [Circle](../ci
 2. **Riƙe a kan sashen** da kake son cirewa — preview yana haskaka daidai sashen da za a yanke.
 3. **Danna** don cire wannan sashi.
 
-Umarnin yana ci gaba da zama a aiki bayan kowace yankewa, don haka za ka iya ci gaba da riƙe da dannawa don yanke ƙarin sassa — a kan abu ɗaya ko wani daban. Danna **Escape** don fita.
+Umarnin yana ci gaba da zama a aiki bayan kowace yankewa, don haka za ka iya ci gaba da riƙe da dannawa don yanke ƙarin sassa — a kan abu ɗaya ko wani daban. Danna **Enter**, **Space**, ko **Escape** don fita.
 
 ```
   Kafin:                     Bayan yanke sashen tsakiya:
@@ -48,6 +48,7 @@ Umarnin yana projekta matsayin mai nuni a kan abin da aka riƙe kuma yana samun 
 
 | Maɓalli | Aiki |
 |-----|--------|
+| `Enter` / `Space` | Fita daga yanayin trim |
 | `Escape` | Fita daga yanayin trim |
 
 ## Abubuwan da ake goyon baya

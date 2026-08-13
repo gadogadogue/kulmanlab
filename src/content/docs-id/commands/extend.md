@@ -18,7 +18,7 @@ Hanya entitas dengan titik akhir sebenarnya yang dapat diperpanjang. [Circle](..
 2. **Arahkan kursor dekat salah satu ujung** entitas yang ingin diperpanjang — pratinjau menampilkannya diperpanjang ke batas terdekat dalam arah tersebut.
 3. **Klik** untuk menerapkan perpanjangan.
 
-Perintah tetap aktif setelah setiap perpanjangan, sehingga Anda dapat terus mengarahkan kursor dan mengklik untuk memperpanjang lebih banyak entitas. Tekan **Escape** untuk keluar.
+Perintah tetap aktif setelah setiap perpanjangan, sehingga Anda dapat terus mengarahkan kursor dan mengklik untuk memperpanjang lebih banyak entitas. Tekan **Enter**, **Space**, atau **Escape** untuk keluar.
 
 ```
   Sebelum:                      Sesudah:
@@ -52,6 +52,7 @@ Semua tipe lain (Line, Arc, Circle, Ellipse, Polyline, Dimension) berfungsi seba
 
 | Tombol | Aksi |
 |-----|--------|
+| `Enter` / `Space` | Keluar dari mode extend |
 | `Escape` | Keluar dari mode extend |
 
 ## Entitas yang didukung

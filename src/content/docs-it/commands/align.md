@@ -17,7 +17,7 @@ Il comando `align` riposiziona le entità selezionate usando una o due coppie di
 1. Seleziona una o più entità sul canvas.
 2. Digita `align` nel terminale o clicca il pulsante **Align** nella barra degli strumenti.
 3. **Clicca il primo punto origine (S1)**, poi **il primo punto destinazione (D1)**.
-4. **Clicca il secondo punto origine (S2)**, oppure premi **Invio** per applicare subito un allineamento di sola traslazione.
+4. **Clicca il secondo punto origine (S2)**, oppure premi **Invio** o **Spazio** per applicare subito un allineamento di sola traslazione.
 5. **Clicca il secondo punto destinazione (D2)**.
 6. Rispondi alla richiesta di scala: premi **Y** per scalare, oppure **N** / **Invio** per mantenere la dimensione originale.
 
@@ -48,7 +48,7 @@ Un'anteprima fantasma segue il cursore a ogni passo: un'anteprima di spostamento
 
 ## Allineamento a un punto (solo traslazione)
 
-Dopo aver posizionato D1, premi **Invio** invece di cliccare un secondo punto origine. La selezione viene traslata del vettore S1→D1 — senza rotazione né scala — identico a un [Move](../move/) usando S1 come punto base e D1 come destinazione.
+Dopo aver posizionato D1, premi **Invio** o **Spazio** invece di cliccare un secondo punto origine. La selezione viene traslata del vettore S1→D1 — senza rotazione né scala — identico a un [Move](../move/) usando S1 come punto base e D1 come destinazione.
 
 ## Allineamento a due punti (traslazione + rotazione + scala facoltativa)
 
@@ -66,7 +66,7 @@ Premere un tasto alla richiesta di scala applica l'allineamento immediatamente �
 | Tasto | Azione |
 |-------|--------|
 | `Invio` / `Spazio` | Conferma la selezione e avanza alla fase S1 |
-| `Invio` (al passo S2) | Salta la rotazione — applica un allineamento di sola traslazione usando S1 e D1 |
+| `Invio` / `Spazio` (al passo S2) | Salta la rotazione — applica un allineamento di sola traslazione usando S1 e D1 |
 | `Y` | Applica l'allineamento con scala |
 | `N` / `Invio` (alla richiesta di scala) | Applica l'allineamento senza scala |
 | `Esc` | Durante il posizionamento dei punti: scarta i punti e torna alla fase di selezione; senza nulla selezionato: annulla il comando |

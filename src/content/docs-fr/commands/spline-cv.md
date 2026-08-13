@@ -14,7 +14,7 @@ La commande `splinecv` trace une **B-spline cubique** en plaçant des sommets de
 
 1. Tapez `splinecv` dans le terminal ou cliquez sur le bouton **Spline CV** de la barre d'outils.
 2. **Cliquez pour placer des sommets de contrôle** — chaque clic ajoute un sommet. Ou tapez `X,Y` et appuyez sur **Entrée** pour une coordonnée exacte.
-3. Appuyez sur **Entrée** pour terminer (au moins 2 sommets requis).
+3. Appuyez sur **Entrée** ou **Espace** pour terminer (au moins 2 sommets requis).
 
 ```
   SC ●         ● SC
@@ -42,7 +42,7 @@ Au lieu de cliquer, tapez une position exacte pour tout sommet de contrôle :
 | `0`–`9`, `.`, `-` | Démarrer la saisie de coordonnée X |
 | `,` | Verrouiller X et passer à la saisie Y |
 | `Retour arrière` | Supprimer le dernier caractère saisi |
-| `Entrée` | Confirmer la coordonnée saisie, ou terminer la spline si aucune saisie n'est en cours et ≥ 2 sommets existent |
+| `Entrée` / `Espace` | Confirmer la coordonnée saisie (Entrée uniquement), ou terminer la spline si aucune saisie n'est en cours et ≥ 2 sommets existent |
 | `Échap` | Abandonner tous les sommets et quitter |
 
 ## Édition par poignées — remodeler via les sommets de contrôle

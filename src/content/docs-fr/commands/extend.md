@@ -18,7 +18,7 @@ Seules les entités ayant un véritable point final peuvent être prolongées. U
 2. **Survolez près d'une extrémité** de l'entité que vous souhaitez prolonger — l'aperçu la montre prolongée jusqu'à la limite la plus proche dans cette direction.
 3. **Cliquez** pour appliquer le prolongement.
 
-La commande reste active après chaque prolongement, pour que vous puissiez continuer à survoler et cliquer pour prolonger d'autres entités. Appuyez sur **Échap** pour quitter.
+La commande reste active après chaque prolongement, pour que vous puissiez continuer à survoler et cliquer pour prolonger d'autres entités. Appuyez sur **Entrée**, **Espace** ou **Échap** pour quitter.
 
 ```
   Avant :                      Après :
@@ -52,6 +52,7 @@ Tous les autres types (Line, Arc, Circle, Ellipse, Polyline, Dimension) servent 
 
 | Touche | Action |
 |--------|--------|
+| `Entrée` / `Espace` | Quitter la commande Extend |
 | `Échap` | Quitter la commande Extend |
 
 ## Entités supportées

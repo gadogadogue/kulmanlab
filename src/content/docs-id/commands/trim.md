@@ -16,7 +16,7 @@ Perintah `trim` menghapus bagian dari [Line](../line/), [Arc](../arc/), [Circle]
 2. **Arahkan kursor ke segmen** yang ingin dihapus — pratinjau menyorot tepat bagian yang akan dipotong.
 3. **Klik** untuk menghapus segmen tersebut.
 
-Perintah tetap aktif setelah setiap pemotongan, sehingga Anda dapat terus mengarahkan kursor dan mengklik untuk memotong segmen lainnya — pada entitas yang sama atau entitas lain. Tekan **Escape** untuk keluar.
+Perintah tetap aktif setelah setiap pemotongan, sehingga Anda dapat terus mengarahkan kursor dan mengklik untuk memotong segmen lainnya — pada entitas yang sama atau entitas lain. Tekan **Enter**, **Space**, atau **Escape** untuk keluar.
 
 ```
   Sebelum:                     Sesudah memotong segmen tengah:
@@ -48,6 +48,7 @@ Perintah memproyeksikan posisi kursor ke entitas yang di-hover dan menemukan sem
 
 | Tombol | Aksi |
 |-----|--------|
+| `Enter` / `Space` | Keluar dari mode trim |
 | `Escape` | Keluar dari mode trim |
 
 ## Entitas yang didukung

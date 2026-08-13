@@ -17,7 +17,7 @@ Umarnin `align` yana sake matsayin abubuwan da aka zaɓa ta amfani da nauʼi ɗa
 1. Zaɓi wani abu ɗaya ko fiye a kan canvas.
 2. Rubuta `align` a tashar umarni ko danna maɓallin kayan aiki na **Align**.
 3. **Danna tabon tushe na farko (S1)**, sannan **danna tabon manufa na farko (D1)**.
-4. **Danna tabon tushe na biyu (S2)**, ko danna **Enter** don yin daidaitawa ta motsawa-kaɗai yanzu.
+4. **Danna tabon tushe na biyu (S2)**, ko danna **Enter** ko **Space** don yin daidaitawa ta motsawa-kaɗai yanzu.
 5. **Danna tabon manufa na biyu (D2)**.
 6. Amsa tambayar canza girma: danna **Y** don canza girma, ko **N** / **Enter** don kiyaye girman asali.
 
@@ -48,7 +48,7 @@ Preview mai fatalwa yana bin mai nuni a kowane mataki: preview na motsawa yayin 
 
 ## Daidaitawa da tabo ɗaya (motsawa kaɗai)
 
-Bayan an sanya D1, danna **Enter** maimakon danna tabon tushe na biyu. Za a motsa zaɓin ta vector na S1→D1 — babu juyawa ko canza girma — daidai da [Move](../move/) ta amfani da S1 a matsayin tabon tushe da D1 a matsayin manufa.
+Bayan an sanya D1, danna **Enter** ko **Space** maimakon danna tabon tushe na biyu. Za a motsa zaɓin ta vector na S1→D1 — babu juyawa ko canza girma — daidai da [Move](../move/) ta amfani da S1 a matsayin tabon tushe da D1 a matsayin manufa.
 
 ## Daidaitawa da tabo biyu (motsawa + juyawa + canza girma na zaɓi)
 
@@ -66,7 +66,7 @@ Dannawa maɓalli a tambayar canza girma yana amfani da daidaitawar nan take — 
 | Maɓalli | Aiki |
 |-----|--------|
 | `Enter` / `Space` | Tabbatar da zaɓi ka ci gaba zuwa mataki na S1 |
-| `Enter` (a mataki na S2) | Tsallake juyawa — yi daidaitawa ta motsawa-kaɗai ta amfani da S1 da D1 |
+| `Enter` / `Space` (a mataki na S2) | Tsallake juyawa — yi daidaitawa ta motsawa-kaɗai ta amfani da S1 da D1 |
 | `Y` | Yi daidaitawar tare da canza girma |
 | `N` / `Enter` (a tambayar canza girma) | Yi daidaitawar ba tare da canza girma ba |
 | `Escape` | Yayin zaɓen tabo: kawar da su ka koma mataki na zaɓi; ba tare da zaɓi ba: soke umarnin |

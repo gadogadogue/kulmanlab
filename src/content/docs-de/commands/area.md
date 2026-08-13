@@ -33,7 +33,7 @@ Der `area`-Befehl misst die eingeschlossene Fläche und den Umfang eines Polygon
 1. Geben Sie `area` im Terminal ein oder klicken Sie auf die Schaltfläche **Area** in der Symbolleiste (untere Reihe des Messen-Panels).
 2. **Ersten Punkt klicken**, oder geben Sie `X,Y` ein und drücken Sie **Enter** für eine genaue Koordinate.
 3. **Jeden weiteren Eckpunkt** der Reihe nach entlang der Form klicken. Koordinateneingabe funktioniert bei jedem Schritt.
-4. Sobald mindestens **3 Punkte** platziert sind, drücken Sie **Enter** (ohne ausstehende Koordinaten- oder Längeneingabe), um das Polygon zu schließen und das Ergebnis zu berechnen.
+4. Sobald mindestens **3 Punkte** platziert sind, drücken Sie **Enter** oder **Space** (ohne ausstehende Koordinaten- oder Längeneingabe), um das Polygon zu schließen und das Ergebnis zu berechnen.
 5. Das Terminal gibt `Area: <Wert>  Perimeter: <Wert>` aus, und das geschlossene Polygon — Füllung, Umriss und Eckpunkt-Griffe — bleibt auf der Zeichenfläche hervorgehoben.
 6. **Irgendwohin klicken, eine beliebige Taste drücken oder `Escape` drücken**, um das Ergebnis auszublenden und den Befehl zu beenden.
 
@@ -85,7 +85,7 @@ Anstatt zu klicken, eine genaue Position für jeden Eckpunkt eingeben:
 | `0`–`9`, `.`, `-` | X-Koordinateneingabe starten, oder Kantenlängeneingabe bei aktiver Winkelsperre |
 | `,` | X sperren und zu Y-Eingabe wechseln |
 | `Backspace` | Zuletzt eingegebenes Zeichen löschen |
-| `Enter` | Eingegebene Koordinate oder Länge bestätigen; schließt bei 3+ Eckpunkten ohne ausstehende Eingabe das Polygon |
+| `Enter` / `Space` | Eingegebene Koordinate oder Länge bestätigen (nur Enter); schließt bei 3+ Eckpunkten ohne ausstehende Eingabe das Polygon |
 | `Escape` | Während der Eckpunktauswahl: platzierte Punkte verwerfen und beim ersten Punkt neu beginnen; nach Anzeige des Ergebnisses: ausblenden und Befehl beenden |
 
 ## Hinweise

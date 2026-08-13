@@ -16,7 +16,7 @@ Der `trim`-Befehl entfernt den Abschnitt einer [Line](../line/), eines [Arc](../
 2. **Fahren Sie mit dem Cursor über das Segment**, das Sie entfernen möchten — eine Vorschau hebt genau den Abschnitt hervor, der geschnitten wird.
 3. **Klicken Sie**, um dieses Segment zu entfernen.
 
-Der Befehl bleibt nach jedem Trim aktiv, sodass Sie weiterhin über weitere Segmente fahren und klicken können — auf derselben oder einer anderen Entität. Drücken Sie **Escape** zum Beenden.
+Der Befehl bleibt nach jedem Trim aktiv, sodass Sie weiterhin über weitere Segmente fahren und klicken können — auf derselben oder einer anderen Entität. Drücken Sie **Enter**, **Space** oder **Escape** zum Beenden.
 
 ```
   Vorher:                          Nachher (mittleres Segment entfernt):
@@ -48,6 +48,7 @@ Der Befehl projiziert die Cursorposition auf die überfahrene Entität und finde
 
 | Taste | Aktion |
 |-------|--------|
+| `Enter` / `Space` | Trim-Modus beenden |
 | `Escape` | Trim-Modus beenden |
 
 ## Unterstützte Entitäten

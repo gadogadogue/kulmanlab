@@ -17,7 +17,7 @@ Der Befehl `align` positioniert ausgewählte Entitäten mit ein oder zwei Quell-
 1. Wählen Sie eine oder mehrere Entitäten auf der Zeichenfläche aus.
 2. Geben Sie `align` im Terminal ein oder klicken Sie auf die Schaltfläche **Align** in der Symbolleiste.
 3. **Klicken Sie auf den ersten Quellpunkt (S1)**, dann **auf den ersten Zielpunkt (D1)**.
-4. **Klicken Sie auf den zweiten Quellpunkt (S2)**, oder drücken Sie **Enter**, um jetzt eine reine Verschiebung anzuwenden.
+4. **Klicken Sie auf den zweiten Quellpunkt (S2)**, oder drücken Sie **Enter** oder **Space**, um jetzt eine reine Verschiebung anzuwenden.
 5. **Klicken Sie auf den zweiten Zielpunkt (D2)**.
 6. Beantworten Sie die Skalierungsabfrage: **Y** für Skalierung, oder **N** / **Enter**, um die Originalgröße beizubehalten.
 
@@ -48,7 +48,7 @@ Eine Geistervorschau folgt dem Cursor bei jedem Schritt: eine Verschiebungsvorsc
 
 ## Ausrichtung mit einem Punkt (nur Verschieben)
 
-Nachdem D1 gesetzt wurde, drücken Sie **Enter** anstelle eines Klicks auf einen zweiten Quellpunkt. Die Auswahl wird um den S1→D1-Vektor verschoben — ohne Drehung oder Skalierung — identisch zu einem [Move](../move/) mit S1 als Basispunkt und D1 als Ziel.
+Nachdem D1 gesetzt wurde, drücken Sie **Enter** oder **Space** anstelle eines Klicks auf einen zweiten Quellpunkt. Die Auswahl wird um den S1→D1-Vektor verschoben — ohne Drehung oder Skalierung — identisch zu einem [Move](../move/) mit S1 als Basispunkt und D1 als Ziel.
 
 ## Ausrichtung mit zwei Punkten (Verschieben + Drehen + optionales Skalieren)
 
@@ -66,7 +66,7 @@ Das Drücken einer Taste bei der Skalierungsabfrage wendet die Ausrichtung sofor
 | Taste | Aktion |
 |-------|--------|
 | `Enter` / `Space` | Auswahl bestätigen und zur S1-Phase wechseln |
-| `Enter` (im S2-Schritt) | Drehung überspringen — reine Verschiebung mit S1 und D1 anwenden |
+| `Enter` / `Space` (im S2-Schritt) | Drehung überspringen — reine Verschiebung mit S1 und D1 anwenden |
 | `Y` | Ausrichtung mit Skalierung anwenden |
 | `N` / `Enter` (bei der Skalierungsabfrage) | Ausrichtung ohne Skalierung anwenden |
 | `Escape` | Während der Punktauswahl: verwirft die Punkte und kehrt zur Auswahlphase zurück; ohne Auswahl: bricht den Befehl ab |

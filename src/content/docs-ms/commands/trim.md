@@ -16,7 +16,7 @@ Arahan `trim` membuang bahagian [Line](../line/), [Arc](../arc/), [Circle](../ci
 2. **Tuding ke segmen** yang ingin anda buang — pratonton menyerlahkan tepat bahagian yang akan dipotong.
 3. **Klik** untuk membuang segmen tersebut.
 
-Arahan kekal aktif selepas setiap potongan, jadi anda boleh terus menuding dan mengklik untuk memotong lebih banyak segmen — pada entiti yang sama atau entiti lain. Tekan **Escape** untuk keluar.
+Arahan kekal aktif selepas setiap potongan, jadi anda boleh terus menuding dan mengklik untuk memotong lebih banyak segmen — pada entiti yang sama atau entiti lain. Tekan **Enter**, **Space**, atau **Escape** untuk keluar.
 
 ```
   Sebelum:                     Selepas memotong segmen tengah:
@@ -48,6 +48,7 @@ Arahan mengunjurkan kedudukan kursor ke atas entiti yang dituding dan mencari se
 
 | Kekunci | Tindakan |
 |---------|---------|
+| `Enter` / `Space` | Keluar dari mod trim |
 | `Escape` | Keluar dari mod trim |
 
 ## Entiti yang disokong

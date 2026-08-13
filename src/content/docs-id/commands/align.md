@@ -17,7 +17,7 @@ Perintah `align` memposisikan ulang entitas yang dipilih menggunakan satu atau d
 1. Pilih satu atau lebih entitas di kanvas.
 2. Ketik `align` di terminal atau klik tombol toolbar **Align**.
 3. **Klik titik sumber pertama (S1)**, lalu **klik titik tujuan pertama (D1)**.
-4. **Klik titik sumber kedua (S2)**, atau tekan **Enter** untuk langsung menerapkan perataan translasi saja.
+4. **Klik titik sumber kedua (S2)**, atau tekan **Enter** atau **Space** untuk langsung menerapkan perataan translasi saja.
 5. **Klik titik tujuan kedua (D2)**.
 6. Jawab prompt penskalaan: tekan **Y** untuk menskalakan, atau **N** / **Enter** untuk mempertahankan ukuran asli.
 
@@ -48,7 +48,7 @@ Pratinjau bayangan mengikuti kursor di setiap langkah: pratinjau perpindahan saa
 
 ## Perataan satu titik (translasi saja)
 
-Setelah D1 ditempatkan, tekan **Enter** alih-alih mengklik titik sumber kedua. Seleksi ditranslasikan berdasarkan vektor S1→D1 — tanpa rotasi atau penskalaan — identik dengan [Move](../move/) menggunakan S1 sebagai titik dasar dan D1 sebagai tujuan.
+Setelah D1 ditempatkan, tekan **Enter** atau **Space** alih-alih mengklik titik sumber kedua. Seleksi ditranslasikan berdasarkan vektor S1→D1 — tanpa rotasi atau penskalaan — identik dengan [Move](../move/) menggunakan S1 sebagai titik dasar dan D1 sebagai tujuan.
 
 ## Perataan dua titik (translasi + rotasi + penskalaan opsional)
 
@@ -66,7 +66,7 @@ Menekan tombol apa pun di prompt penskalaan langsung menerapkan perataan — tid
 | Tombol | Aksi |
 |-----|--------|
 | `Enter` / `Space` | Konfirmasi seleksi dan lanjut ke fase S1 |
-| `Enter` (di langkah S2) | Lewati rotasi — terapkan perataan translasi saja menggunakan S1 dan D1 |
+| `Enter` / `Space` (di langkah S2) | Lewati rotasi — terapkan perataan translasi saja menggunakan S1 dan D1 |
 | `Y` | Terapkan perataan dengan penskalaan |
 | `N` / `Enter` (di prompt penskalaan) | Terapkan perataan tanpa penskalaan |
 | `Escape` | Saat menempatkan titik: membuang titik dan kembali ke fase seleksi; tanpa apa pun yang dipilih: membatalkan perintah |

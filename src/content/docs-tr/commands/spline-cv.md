@@ -14,7 +14,7 @@ order: 8
 
 1. Terminale `splinecv` yazın veya araç çubuğundaki **Spline CV** düğmesine tıklayın.
 2. **Kontrol noktaları yerleştirmek için tıklayın** — her tıklama bir köşe ekler. Ya da tam koordinat için `X,Y` yazıp **Enter** tuşuna basın.
-3. Bitirmek için **Enter** tuşuna basın (en az 2 köşe gereklidir).
+3. Bitirmek için **Enter** veya **Boşluk** tuşuna basın (en az 2 köşe gereklidir).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Tıklamak yerine herhangi bir kontrol noktası için tam konumu yazın:
 | `0`–`9`, `.`, `-` | X koordinatı girişini başlatır |
 | `,` | X'i kilitler ve Y girişine geçer |
 | `Backspace` | Son girilen karakteri siler |
-| `Enter` | Yazılan koordinatı onaylar veya giriş yapılmıyorsa ve ≥ 2 köşe varsa spline'ı bitirir |
+| `Enter` / `Boşluk` | Yazılan koordinatı onaylar (yalnızca Enter) veya giriş yapılmıyorsa ve ≥ 2 köşe varsa spline'ı bitirir |
 | `Escape` | Tüm köşeleri atar ve çıkar |
 
 ## Tutamaç Düzenleme — Kontrol Noktaları Aracılığıyla Yeniden Şekillendirme

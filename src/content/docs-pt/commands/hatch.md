@@ -15,7 +15,7 @@ O comando `hatch` preenche a região que envolve um ponto clicado com um padrão
 1. Digite `hatch` no terminal ou clique no botão **Hatch** da barra de ferramentas (o ícone de amostra).
 2. **Clique em um ponto** dentro da região que deseja preencher.
 3. O comando permanece ativo, então continue clicando para preencher mais áreas — cada clique cria sua própria entidade `Hatch`.
-4. Pressione **Escape** quando terminar.
+4. Pressione **Enter**, **Espaço** ou **Escape** quando terminar.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ O comando `hatch` preenche a região que envolve um ponto clicado com um padrão
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   contorno externo; o
   └─────────────┘        └─────────────┘   círculo permanece uma ilha
 ```
+
+## Referência de teclado
+
+| Tecla | Ação |
+|-----|--------|
+| `Enter` / `Space` | Finalizar o comando Hatch |
+| `Escape` | Finalizar o comando Hatch (igual a Enter/Espaço) |
 
 ## O que pode formar um contorno
 

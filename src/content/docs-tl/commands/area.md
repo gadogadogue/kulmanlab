@@ -33,7 +33,7 @@ Sinusukat ng `area` command ang saklaw na area at perimeter ng isang polygon na 
 1. I-type ang `area` sa terminal o i-click ang **Area** button sa toolbar (nasa ibabang row ng Measure panel).
 2. **I-click ang unang punto**, o i-type ang `X,Y` at pindutin ang **Enter** para sa eksaktong coordinate.
 3. **I-click ang bawat karagdagang vertex** ayon sa pagkakasunod-sunod sa paligid ng hugis. Gumagana ang coordinate entry sa bawat hakbang.
-4. Kapag nailagay na ang hindi bababa sa **3 punto**, pindutin ang **Enter** (walang nakabinbing coordinate o distance entry) para isara ang polygon at kalkulahin ang resulta.
+4. Kapag nailagay na ang hindi bababa sa **3 punto**, pindutin ang **Enter** o **Space** (walang nakabinbing coordinate o distance entry) para isara ang polygon at kalkulahin ang resulta.
 5. Ini-print ng terminal ang `Area: <value>  Perimeter: <value>`, at ang saradong polygon — fill, outline, at vertex grips — ay nananatiling naka-highlight sa canvas.
 6. **I-click kahit saan, pindutin ang anumang key, o pindutin ang `Escape`** para itago ang resulta at tapusin ang command.
 
@@ -85,7 +85,7 @@ Sa halip na mag-click, i-type ang eksaktong posisyon para sa anumang vertex:
 | `0`–`9`, `.`, `-` | Simulan ang X coordinate entry, o ang edge length entry habang aktibo ang angle lock |
 | `,` | I-lock ang X at lumipat sa Y entry |
 | `Backspace` | Tanggalin ang huling na-type na character |
-| `Enter` | Kumpirmahin ang na-type na coordinate o haba; kapag 3+ na vertex at walang nakabinbing entry, isinasara ang polygon |
+| `Enter` / `Space` | Kumpirmahin ang na-type na coordinate o haba (Enter lang); kapag 3+ na vertex at walang nakabinbing entry, isinasara ang polygon |
 | `Escape` | Habang pumipili ng vertex: itinatapon ang mga nailagay na punto at nagsisimula ulit sa unang punto; pagkatapos ipakita ang resulta: itinatago ito at tinatapos ang command |
 
 ## Mga Tala

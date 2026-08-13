@@ -33,7 +33,7 @@ Perintah `area` mengukur luas yang tertutup dan keliling poligon yang ditentukan
 1. Ketik `area` di terminal atau klik tombol toolbar **Area** (baris bawah panel Measure).
 2. **Klik titik pertama**, atau ketik `X,Y` dan tekan **Enter** untuk koordinat tepat.
 3. **Klik setiap vertex tambahan** secara berurutan mengelilingi bentuk. Entri koordinat berfungsi di setiap langkah.
-4. Setelah setidaknya **3 titik** ditempatkan, tekan **Enter** (tanpa entri koordinat atau jarak yang tertunda) untuk menutup poligon dan menghitung hasilnya.
+4. Setelah setidaknya **3 titik** ditempatkan, tekan **Enter** atau **Space** (tanpa entri koordinat atau jarak yang tertunda) untuk menutup poligon dan menghitung hasilnya.
 5. Terminal mencetak `Area: <nilai>  Perimeter: <nilai>`, dan poligon yang tertutup — isian, garis luar, dan grip vertex — tetap disorot di kanvas.
 6. **Klik di mana saja, tekan tombol apa saja, atau tekan `Escape`** untuk menghilangkan hasil dan mengakhiri perintah.
 
@@ -85,7 +85,7 @@ Alih-alih mengklik, ketik posisi tepat untuk vertex mana pun:
 | `0`–`9`, `.`, `-` | Memulai entri koordinat X, atau entri panjang sisi saat kunci sudut aktif |
 | `,` | Kunci X dan pindah ke entri Y |
 | `Backspace` | Hapus karakter terakhir yang diketik |
-| `Enter` | Konfirmasi koordinat atau panjang yang diketik; dengan 3+ vertex dan tanpa entri yang tertunda, menutup poligon |
+| `Enter` / `Space` | Konfirmasi koordinat atau panjang yang diketik (hanya Enter); dengan 3+ vertex dan tanpa entri yang tertunda, menutup poligon |
 | `Escape` | Saat memilih vertex: membuang titik dan memulai lagi di titik pertama; setelah hasil ditampilkan: menghilangkannya dan mengakhiri perintah |
 
 ## Catatan

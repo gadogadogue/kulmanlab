@@ -15,7 +15,7 @@ order: 7
 1. Terminale `hatch` yazın veya araç çubuğundaki **Hatch** düğmesine (örnek simgesi) tıklayın.
 2. Doldurmak istediğiniz bölgenin içinde **bir noktaya tıklayın**.
 3. Komut etkin kalır, bu yüzden daha fazla alanı doldurmak için tıklamaya devam edin — her tıklama kendi `Hatch` nesnesini oluşturur.
-4. İşiniz bittiğinde **Escape** tuşuna basın.
+4. İşiniz bittiğinde **Enter**, **Boşluk** veya **Escape** tuşuna basın.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ order: 7
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   tıklayın; daire bir
   └─────────────┘        └─────────────┘   ada olarak kalır
 ```
+
+## Klavye Referansı
+
+| Tuş | İşlem |
+|-----|--------|
+| `Enter` / `Space` | Hatch komutunu bitir |
+| `Escape` | Hatch komutunu bitir (Enter/Boşluk ile aynı) |
 
 ## Sınırı Ne Oluşturabilir
 

@@ -14,7 +14,7 @@ Komento `splinecv` piirtää **kuutiollisen B-splinen** sijoittamalla ohjauspist
 
 1. Kirjoita `splinecv` terminaaliin tai napsauta **Spline CV**-painiketta työkalurivillä.
 2. **Napsauta sijoittaaksesi ohjauspisteitä** — jokainen napsautus lisää kärjen. Tai kirjoita `X,Y` ja paina **Enter** tarkkaa koordinaattia varten.
-3. Paina **Enter** viimeistelläksesi (vähintään 2 kärkeä vaaditaan).
+3. Paina **Enter** tai **Space** viimeistelläksesi (vähintään 2 kärkeä vaaditaan).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Napsauttamisen sijaan voit kirjoittaa tarkan sijainnin mille tahansa ohjauspiste
 | `0`–`9`, `.`, `-` | Aloita X-koordinaatin syöttö |
 | `,` | Lukitse X ja siirry Y:n syöttöön |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
-| `Enter` | Vahvista kirjoitettu koordinaatti, tai viimeistele spline jos syöte ei ole käynnissä ja ≥ 2 kärkeä on olemassa |
+| `Enter` / `Space` | Vahvista kirjoitettu koordinaatti (vain Enter), tai viimeistele spline jos syöte ei ole käynnissä ja ≥ 2 kärkeä on olemassa |
 | `Escape` | Hylkää kaikki kärjet ja poistu |
 
 ## Kahvamuokkaus — muotoilu uudelleen ohjauspisteiden kautta

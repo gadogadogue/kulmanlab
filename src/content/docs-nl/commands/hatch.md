@@ -15,7 +15,7 @@ Het commando `hatch` vult het gebied rond een aangeklikt punt met een patroon. D
 1. Typ `hatch` in de terminal of klik op de werkbalkknop **Hatch** (het swatch-pictogram).
 2. **Klik op een punt** binnen het gebied dat u wilt vullen.
 3. Het commando blijft actief, dus blijf klikken om meer gebieden te vullen — elke klik maakt een eigen `Hatch`-entiteit aan.
-4. Druk op **Escape** wanneer u klaar bent.
+4. Druk op **Enter**, **Space** of **Escape** wanneer u klaar bent.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Het commando `hatch` vult het gebied rond een aangeklikt punt met een patroon. D
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   rand; de cirkel blijft
   └─────────────┘        └─────────────┘   een eiland
 ```
+
+## Toetsenbordreferentie
+
+| Toets | Actie |
+|-----|--------|
+| `Enter` / `Space` | Het Hatch-commando voltooien |
+| `Escape` | Het Hatch-commando voltooien (hetzelfde als Enter/Space) |
 
 ## Wat een rand kan vormen
 

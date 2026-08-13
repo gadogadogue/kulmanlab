@@ -14,7 +14,7 @@ Arahan `splinecv` melukis **B-spline kubik** dengan meletakkan bucu kawalan (CV)
 
 1. Taip `splinecv` dalam terminal atau klik butang bar alat **Spline CV**.
 2. **Klik untuk meletakkan bucu kawalan** — setiap klik menambah bucu. Atau taip `X,Y` dan tekan **Enter** untuk koordinat tepat.
-3. Tekan **Enter** untuk selesai (sekurang-kurangnya 2 bucu diperlukan).
+3. Tekan **Enter** atau **Space** untuk selesai (sekurang-kurangnya 2 bucu diperlukan).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Daripada mengklik, taip kedudukan tepat untuk mana-mana bucu kawalan:
 | `0`–`9`, `.`, `-` | Mula kemasukan koordinat X |
 | `,` | Kunci X dan beralih ke kemasukan Y |
 | `Backspace` | Padam aksara terakhir yang ditaip |
-| `Enter` | Sahkan koordinat yang ditaip, atau selesaikan spline jika tiada input sedang berjalan dan ≥ 2 bucu wujud |
+| `Enter` / `Space` | Sahkan koordinat yang ditaip (Enter sahaja), atau selesaikan spline jika tiada input sedang berjalan dan ≥ 2 bucu wujud |
 | `Escape` | Buang semua bucu dan keluar |
 
 ## Pengeditan grip — membentuk semula melalui bucu kawalan

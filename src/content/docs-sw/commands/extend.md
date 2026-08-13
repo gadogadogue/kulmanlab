@@ -18,7 +18,7 @@ Ni vipande vyenye mwisho halisi tu vinavyoweza kunyooshwa. [Circle](../circle/) 
 2. **Egemea karibu na mwisho mmoja** wa kipande unachotaka kunyoosha — hakikisho linakionyesha kikiwa kimenyooshwa hadi mpaka wa karibu zaidi katika mwelekeo huo.
 3. **Bonyeza** kutekeleza upanuzi.
 
-Amri inabaki hai baada ya kila upanuzi, hivyo unaweza kuendelea kuelea na kubonyeza kunyoosha vipande zaidi. Bonyeza **Escape** kutoka.
+Amri inabaki hai baada ya kila upanuzi, hivyo unaweza kuendelea kuelea na kubonyeza kunyoosha vipande zaidi. Bonyeza **Enter**, **Space**, au **Escape** kutoka.
 
 ```
   Kabla:                       Baada:
@@ -52,6 +52,7 @@ Aina zingine zote (Line, Arc, Circle, Ellipse, Polyline, Dimension) hutumika kam
 
 | Kitufe | Kitendo |
 |-----|--------|
+| `Enter` / `Space` | Toka hali ya extend |
 | `Escape` | Toka hali ya extend |
 
 ## Vipande vinavyotumika

@@ -15,7 +15,7 @@ Der Befehl `hatch` füllt den Bereich um einen angeklickten Punkt mit einem Must
 1. Geben Sie `hatch` im Terminal ein oder klicken Sie auf die Werkzeugleisten-Schaltfläche **Hatch** (das Muster-Symbol).
 2. **Klicken Sie auf einen Punkt** innerhalb der Fläche, die Sie füllen möchten.
 3. Der Befehl bleibt aktiv, sodass Sie weiterklicken können, um weitere Flächen zu füllen — jeder Klick erzeugt sein eigenes `Hatch`-Element.
-4. Drücken Sie **Escape**, wenn Sie fertig sind.
+4. Drücken Sie **Enter**, **Space** oder **Escape**, wenn Sie fertig sind.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Der Befehl `hatch` füllt den Bereich um einen angeklickten Punkt mit einem Must
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   Grenze klicken; der Kreis
   └─────────────┘        └─────────────┘   bleibt als Insel bestehen
 ```
+
+## Tastaturübersicht
+
+| Taste | Aktion |
+|-----|--------|
+| `Enter` / `Space` | Den Hatch-Befehl beenden |
+| `Escape` | Den Hatch-Befehl beenden (wie Enter/Space) |
 
 ## Was eine Randkontur bilden kann
 

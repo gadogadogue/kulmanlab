@@ -16,7 +16,7 @@ La commande `trim` supprime la portion d'une [Line](../line/), d'un [Arc](../arc
 2. **Survolez le segment** que vous souhaitez supprimer — un aperçu met en surbrillance exactement la portion qui sera coupée.
 3. **Cliquez** pour supprimer ce segment.
 
-La commande reste active après chaque raccord, pour que vous puissiez continuer à survoler et cliquer pour couper d'autres segments — sur la même entité ou une autre. Appuyez sur **Échap** pour quitter.
+La commande reste active après chaque raccord, pour que vous puissiez continuer à survoler et cliquer pour couper d'autres segments — sur la même entité ou une autre. Appuyez sur **Entrée**, **Espace** ou **Échap** pour quitter.
 
 ```
   Avant :                     Après raccord du segment central :
@@ -48,6 +48,7 @@ La commande projette la position du curseur sur l'entité survolée et trouve to
 
 | Touche | Action |
 |--------|--------|
+| `Entrée` / `Espace` | Quitter la commande Trim |
 | `Échap` | Quitter la commande Trim |
 
 ## Entités supportées

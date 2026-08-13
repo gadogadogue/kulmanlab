@@ -33,7 +33,7 @@ Amri ya `area` hupima eneo lililofungwa na mzunguko wa poligoni inayofafanuliwa 
 1. Andika `area` kwenye terminal au bonyeza kitufe cha **Area** kwenye upau wa zana (mstari wa chini wa paneli ya Measure).
 2. **Bonyeza pointi ya kwanza**, au andika `X,Y` na ubonyeze **Enter** kwa uratibu sahihi.
 3. **Bonyeza kila kipeo cha ziada** kwa mfuatano kuzunguka umbo. Uingizaji wa uratibu unafanya kazi kwenye kila hatua.
-4. Baada ya kuweka angalau **pointi 3**, bonyeza **Enter** (bila uingizaji wa uratibu au umbali unaosubiri) ili kufunga poligoni na kuhesabu matokeo.
+4. Baada ya kuweka angalau **pointi 3**, bonyeza **Enter** au **Space** (bila uingizaji wa uratibu au umbali unaosubiri) ili kufunga poligoni na kuhesabu matokeo.
 5. Terminal huchapisha `Area: <thamani>  Perimeter: <thamani>`, na poligoni iliyofungwa — ujazo, mstari wa nje, na vishikizo vya vipeo — inabaki imeangaziwa kwenye turubai.
 6. **Bonyeza mahali popote, bonyeza kitufe chochote, au bonyeza `Escape`** ili kuondoa matokeo na kumaliza amri.
 
@@ -85,7 +85,7 @@ Badala ya kubonyeza, andika nafasi sahihi kwa kipeo chochote:
 | `0`–`9`, `.`, `-` | Anza uingizaji wa uratibu wa X, au uingizaji wa urefu wa ukingo wakati kufunga pembe kumewashwa |
 | `,` | Linda X na endelea na uingizaji wa Y |
 | `Backspace` | Futa herufi ya mwisho iliyochapishwa |
-| `Enter` | Thibitisha uratibu au urefu ulioandikwa; ikiwa kuna vipeo 3+ na hakuna uingizaji unaosubiri, hufunga poligoni |
+| `Enter` / `Space` | Thibitisha uratibu au urefu ulioandikwa (Enter pekee); ikiwa kuna vipeo 3+ na hakuna uingizaji unaosubiri, hufunga poligoni |
 | `Escape` | Wakati wa kuchagua vipeo: huondoa pointi zilizowekwa na kuanza tena kwenye pointi ya kwanza; baada ya matokeo kuonyeshwa: huyaondoa na kumaliza amri |
 
 ## Maelezo

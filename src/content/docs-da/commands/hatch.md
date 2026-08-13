@@ -15,7 +15,7 @@ order: 7
 1. Skriv `hatch` i terminalen, eller klik på **Hatch**-værktøjslinjeknappen (mønster-ikonet).
 2. **Klik på et punkt** inde i det område, du vil udfylde.
 3. Kommandoen forbliver aktiv, så bliv ved med at klikke for at udfylde flere områder — hvert klik opretter sin egen `Hatch`-entitet.
-4. Tryk **Escape**, når du er færdig.
+4. Tryk **Enter**, **Space** eller **Escape**, når du er færdig.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ order: 7
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   grænse; cirklen efterlades
   └─────────────┘        └─────────────┘   som en ø
 ```
+
+## Tastaturreference
+
+| Tast | Handling |
+|-----|--------|
+| `Enter` / `Space` | Afslut Hatch-kommandoen |
+| `Escape` | Afslut Hatch-kommandoen (samme som Enter/Space) |
 
 ## Hvad der kan danne en grænse
 

@@ -33,7 +33,7 @@ Umarnin `area` yana auna fili da kewaye na polygon da aka bayyana ta tabo uku ko
 1. Rubuta `area` a tashar umarni ko danna maɓallin kayan aiki na **Area** (jere na ƙasa na panel na Measure).
 2. **Danna tabo na farko**, ko rubuta `X,Y` ka danna **Enter** don daidaitawa madaidaiciya.
 3. **Danna kowace vertex ƙari** a tsari a kewayen sifar. Shigar da daidaitawa yana aiki a kowane mataki.
-4. Da zarar an sanya aƙalla **tabo 3**, danna **Enter** (ba tare da wata shigarwar daidaitawa ko nisa da ke jira ba) don rufe polygon ka lissafa sakamakon.
+4. Da zarar an sanya aƙalla **tabo 3**, danna **Enter** ko **Space** (ba tare da wata shigarwar daidaitawa ko nisa da ke jira ba) don rufe polygon ka lissafa sakamakon.
 5. Tashar umarni tana buga `Area: <ƙima>  Perimeter: <ƙima>`, kuma polygon da aka rufe — cikawa, waje, da grips na vertex — yana ci gaba da bayyana a kan canvas.
 6. **Danna a ko'ina, danna wani maɓalli, ko danna `Escape`** don kawar da sakamakon ka kammala umarnin.
 
@@ -85,7 +85,7 @@ Maimakon dannawa, rubuta madaidaicin matsayi ga kowace vertex:
 | `0`–`9`, `.`, `-` | Fara shigar da daidaitawar X, ko shigarwar tsawon gefe yayin kulle-kusurwa |
 | `,` | Kulle X ka koma shigar da Y |
 | `Backspace` | Share tsohon harafi na ƙarshe da aka rubuta |
-| `Enter` | Tabbatar da daidaitawa ko tsawo da aka rubuta; da vertices 3+ ba tare da shigarwar da ke jira ba, yana rufe polygon |
+| `Enter` / `Space` | Tabbatar da daidaitawa ko tsawo da aka rubuta (Enter kawai); da vertices 3+ ba tare da shigarwar da ke jira ba, yana rufe polygon |
 | `Escape` | Yayin zaɓen vertices, kawar da su ka sake farawa a tabo na farko; da zarar an nuna sakamako, kawar da shi ka fita |
 
 ## Bayanan ƙari

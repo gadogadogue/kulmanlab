@@ -18,7 +18,7 @@ Tylko elementy z rzeczywistym punktem końcowym mogą być przedłużane. [Circl
 2. **Najedź kursorem blisko jednego końca** elementu, który chcesz przedłużyć — podgląd pokazuje go przedłużonego do najbliższej granicy w tym kierunku.
 3. **Kliknij**, aby zastosować przedłużenie.
 
-Polecenie pozostaje aktywne po każdym przedłużeniu, dzięki czemu możesz kontynuować najeżdżanie kursorem i klikanie, aby przedłużać więcej elementów. Naciśnij **Escape**, aby wyjść.
+Polecenie pozostaje aktywne po każdym przedłużeniu, dzięki czemu możesz kontynuować najeżdżanie kursorem i klikanie, aby przedłużać więcej elementów. Naciśnij **Enter**, **Spację** lub **Escape**, aby wyjść.
 
 ```
   Przed:                      Po:
@@ -52,6 +52,7 @@ Wszystkie inne typy (Line, Arc, Circle, Ellipse, Polyline, Wymiar) służą jako
 
 | Klawisz | Akcja |
 |---------|-------|
+| `Enter` / `Spacja` | Wyjdź z trybu przedłużania |
 | `Escape` | Wyjdź z trybu przedłużania |
 
 ## Obsługiwane elementy

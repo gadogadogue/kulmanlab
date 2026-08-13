@@ -17,7 +17,7 @@ Amri ya `align` huweka upya vipengele vilivyochaguliwa kwa kutumia jozi moja au 
 1. Chagua vipengele moja au zaidi kwenye turubai.
 2. Andika `align` kwenye terminal au bonyeza kitufe cha **Align** kwenye upau wa zana.
 3. **Bonyeza pointi ya kwanza ya chanzo (S1)**, kisha **bonyeza pointi ya kwanza ya marudio (D1)**.
-4. **Bonyeza pointi ya pili ya chanzo (S2)**, au bonyeza **Enter** kutumia upatanisho wa kuhamisha tu sasa hivi.
+4. **Bonyeza pointi ya pili ya chanzo (S2)**, au bonyeza **Enter** au **Space** kutumia upatanisho wa kuhamisha tu sasa hivi.
 5. **Bonyeza pointi ya pili ya marudio (D2)**.
 6. Jibu swali la kupima: bonyeza **Y** kupima, au **N** / **Enter** kudumisha ukubwa wa asili.
 
@@ -48,7 +48,7 @@ Hakikisho la mzuka hufuata kishale kwenye kila hatua: hakikisho la kuhamisha wak
 
 ## Upatanisho wa pointi moja (kuhamisha tu)
 
-Baada ya D1 kuwekwa, bonyeza **Enter** badala ya kubonyeza pointi ya pili ya chanzo. Uteuzi unahamishwa kwa vekta ya S1→D1 — bila kuzungusha au kupima — sawa kabisa na [Move](../move/) ukitumia S1 kama pointi ya msingi na D1 kama marudio.
+Baada ya D1 kuwekwa, bonyeza **Enter** au **Space** badala ya kubonyeza pointi ya pili ya chanzo. Uteuzi unahamishwa kwa vekta ya S1→D1 — bila kuzungusha au kupima — sawa kabisa na [Move](../move/) ukitumia S1 kama pointi ya msingi na D1 kama marudio.
 
 ## Upatanisho wa pointi mbili (kuhamisha + kuzungusha + kupima kwa hiari)
 
@@ -66,7 +66,7 @@ Kubonyeza kitufe chochote kwenye swali la kupima hutumia upatanisho papo hapo �
 | Kitufe | Kitendo |
 |--------|---------|
 | `Enter` / `Space` | Thibitisha uchaguzi na uendelee kwenye hatua ya S1 |
-| `Enter` (kwenye hatua ya S2) | Ruka mzunguko — tumia upatanisho wa kuhamisha tu ukitumia S1 na D1 |
+| `Enter` / `Space` (kwenye hatua ya S2) | Ruka mzunguko — tumia upatanisho wa kuhamisha tu ukitumia S1 na D1 |
 | `Y` | Tumia upatanisho pamoja na kupima |
 | `N` / `Enter` (kwenye swali la kupima) | Tumia upatanisho bila kupima |
 | `Escape` | Wakati wa kuweka pointi: huacha pointi zilizowekwa na kurudi kwenye hatua ya uchaguzi; bila chochote kilichochaguliwa: hughairi amri |

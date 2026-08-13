@@ -18,7 +18,7 @@ Solo le entità con un punto finale reale possono essere estese. Un [Circle](../
 2. **Passa il cursore vicino a un'estremità** dell'entità che vuoi estendere — l'anteprima la mostra estesa fino al limite più vicino in quella direzione.
 3. **Clicca** per applicare l'estensione.
 
-Il comando rimane attivo dopo ogni estensione, così puoi continuare a passare il cursore e cliccare per estendere altre entità. Premi **Escape** per uscire.
+Il comando rimane attivo dopo ogni estensione, così puoi continuare a passare il cursore e cliccare per estendere altre entità. Premi **Invio**, **Spazio** o **Escape** per uscire.
 
 ```
   Prima:                       Dopo:
@@ -52,6 +52,7 @@ Tutti gli altri tipi (Line, Arc, Circle, Ellipse, Polyline, Dimension) servono c
 
 | Tasto | Azione |
 |-------|--------|
+| `Invio` / `Spazio` | Esci dalla modalità extend |
 | `Escape` | Esci dalla modalità extend |
 
 ## Entità supportate

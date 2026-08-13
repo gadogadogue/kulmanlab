@@ -14,7 +14,7 @@ Der `splinecv`-Befehl zeichnet einen **kubischen B-Spline** durch Platzieren von
 
 1. Geben Sie `splinecv` im Terminal ein oder klicken Sie auf die **Spline CV**-Schaltfläche in der Werkzeugleiste.
 2. **Klicken Sie zum Platzieren von Kontrollpunkten** — jeder Klick fügt einen Punkt hinzu. Oder geben Sie `X,Y` ein und drücken Sie **Enter** für eine exakte Koordinate.
-3. Drücken Sie **Enter** zum Fertigstellen (mindestens 2 Punkte erforderlich).
+3. Drücken Sie **Enter** oder **Space** zum Fertigstellen (mindestens 2 Punkte erforderlich).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Statt zu klicken, geben Sie eine exakte Position für jeden Kontrollpunkt ein:
 | `0`–`9`, `.`, `-` | X-Koordinateneingabe starten |
 | `,` | X sperren und zu Y-Eingabe wechseln |
 | `Backspace` | Letztes eingegebenes Zeichen löschen |
-| `Enter` | Eingegebene Koordinate bestätigen oder den Spline fertigstellen, wenn keine Eingabe aktiv ist und ≥ 2 Punkte vorhanden sind |
+| `Enter` / `Space` | Eingegebene Koordinate bestätigen (nur Enter), oder den Spline fertigstellen, wenn keine Eingabe aktiv ist und ≥ 2 Punkte vorhanden sind |
 | `Escape` | Alle Punkte verwerfen und beenden |
 
 ## Griffpunkt-Bearbeitung — Umformen über Kontrollpunkte

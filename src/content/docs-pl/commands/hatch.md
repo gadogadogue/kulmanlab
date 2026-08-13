@@ -15,7 +15,7 @@ Polecenie `hatch` wypełnia obszar otaczający kliknięty punkt wzorem. Kontur n
 1. Wpisz `hatch` w terminalu lub kliknij przycisk paska narzędzi **Hatch** (ikona próbki).
 2. **Kliknij punkt** wewnątrz obszaru, który chcesz wypełnić.
 3. Polecenie pozostaje aktywne, więc kontynuuj klikanie, aby wypełnić więcej obszarów — każde kliknięcie tworzy własny element `Hatch`.
-4. Naciśnij **Escape**, gdy skończysz.
+4. Naciśnij **Enter**, **Spację** lub **Escape**, gdy skończysz.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Polecenie `hatch` wypełnia obszar otaczający kliknięty punkt wzorem. Kontur n
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   zewnętrznego konturu; okrąg
   └─────────────┘        └─────────────┘   pozostaje wyspą
 ```
+
+## Skróty klawiaturowe
+
+| Klawisz | Akcja |
+|-----|--------|
+| `Enter` / `Space` | Zakończ polecenie Hatch |
+| `Escape` | Zakończ polecenie Hatch (tak samo jak Enter/Spacja) |
 
 ## Co może utworzyć kontur
 

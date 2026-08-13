@@ -18,7 +18,7 @@ Vain entiteettejä, joilla on todellinen päätepiste, voidaan jatkaa. [Circle](
 2. **Pidä kohdistinta lähellä jatkettavan entiteetin toista päätä** — esikatselu näyttää sen jatkettuna lähimpään rajaan kyseisessä suunnassa.
 3. **Napsauta** soveltaaksesi jatkeen.
 
-Komento pysyy aktiivisena jokaisen jatkeen jälkeen, jotta voit jatkaa hoveringia ja napsauttamista jatkaaksesi useampia entiteettejä. Paina **Escape** poistuaksesi.
+Komento pysyy aktiivisena jokaisen jatkeen jälkeen, jotta voit jatkaa hoveringia ja napsauttamista jatkaaksesi useampia entiteettejä. Paina **Enter**, **Space** tai **Escape** poistuaksesi.
 
 ```
   Ennen:                        Jälkeen:
@@ -52,6 +52,7 @@ Kaikki muut tyypit (Line, Arc, Circle, Ellipse, Polyline, Dimension) toimivat ke
 
 | Näppäin | Toiminto |
 |-----|--------|
+| `Enter` / `Space` | Poistu extend-tilasta |
 | `Escape` | Poistu extend-tilasta |
 
 ## Tuetut entiteetit

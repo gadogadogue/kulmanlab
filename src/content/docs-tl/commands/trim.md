@@ -16,7 +16,7 @@ Tinatanggal ng `trim` command ang bahagi ng [Line](../line/), [Arc](../arc/), [C
 2. **Mag-hover sa segment** na gusto mong tanggalin — hinihighlight ng preview nang eksakto ang bahaging puputulin.
 3. **Mag-click** para tanggalin ang segment na iyon.
 
-Nananatiling aktibo ang command pagkatapos ng bawat trim, kaya puwede kang magpatuloy sa pag-hover at pag-click para putulin pa ang ibang segment — sa parehong entity o sa iba. Pindutin ang **Escape** para lumabas.
+Nananatiling aktibo ang command pagkatapos ng bawat trim, kaya puwede kang magpatuloy sa pag-hover at pag-click para putulin pa ang ibang segment — sa parehong entity o sa iba. Pindutin ang **Enter**, **Space**, o **Escape** para lumabas.
 
 ```
   Before:                     After trimming middle segment:
@@ -48,6 +48,7 @@ Nag-p-project ang command ng posisyon ng cursor papunta sa hino-hover na entity 
 
 | Key | Aksyon |
 |-----|--------|
+| `Enter` / `Space` | Lumabas sa trim mode |
 | `Escape` | Lumabas sa trim mode |
 
 ## Mga suportadong entity

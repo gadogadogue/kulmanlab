@@ -16,7 +16,7 @@ Polecenie `trim` usuwa część [Line](../line/), [Arc](../arc/), [Circle](../ci
 2. **Najedź kursorem na segment**, który chcesz usunąć — podgląd dokładnie podświetla część, która zostanie wycięta.
 3. **Kliknij**, aby usunąć ten segment.
 
-Polecenie pozostaje aktywne po każdym przycięciu, dzięki czemu możesz kontynuować najeżdżanie kursorem i klikanie, aby wycinać więcej segmentów — na tym samym elemencie lub na innym. Naciśnij **Escape**, aby wyjść.
+Polecenie pozostaje aktywne po każdym przycięciu, dzięki czemu możesz kontynuować najeżdżanie kursorem i klikanie, aby wycinać więcej segmentów — na tym samym elemencie lub na innym. Naciśnij **Enter**, **Spację** lub **Escape**, aby wyjść.
 
 ```
   Przed:                     Po przycięciu środkowego segmentu:
@@ -48,6 +48,7 @@ Polecenie rzutuje pozycję kursora na wskazywany element i znajduje wszystkie pu
 
 | Klawisz | Akcja |
 |---------|-------|
+| `Enter` / `Spacja` | Wyjdź z trybu przycinania |
 | `Escape` | Wyjdź z trybu przycinania |
 
 ## Obsługiwane elementy

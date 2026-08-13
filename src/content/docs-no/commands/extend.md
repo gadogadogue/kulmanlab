@@ -18,7 +18,7 @@ Bare entiteter med et virkelig endepunkt kan forlenges. En [Circle](../circle/) 
 2. **Hold markøren nær den ene enden** av entiteten du vil forlenge — forhåndsvisningen viser den forlenget til nærmeste grense i den retningen.
 3. **Klikk** for å bruke forlengelsen.
 
-Kommandoen forblir aktiv etter hver forlengelse, slik at du kan fortsette å holde markøren over og klikke for å forlenge flere entiteter. Trykk **Escape** for å avslutte.
+Kommandoen forblir aktiv etter hver forlengelse, slik at du kan fortsette å holde markøren over og klikke for å forlenge flere entiteter. Trykk **Enter**, **Space** eller **Escape** for å avslutte.
 
 ```
   Før:                          Etter:
@@ -52,6 +52,7 @@ Alle andre typer (Line, Arc, Circle, Ellipse, Polyline, Dimension) fungerer som 
 
 | Tast | Handling |
 |-----|--------|
+| `Enter` / `Space` | Avslutt extend-modus |
 | `Escape` | Avslutt extend-modus |
 
 ## Støttede entiteter

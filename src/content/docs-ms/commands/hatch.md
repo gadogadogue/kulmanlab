@@ -15,7 +15,7 @@ Arahan `hatch` mengisi rantau yang mengelilingi titik yang diklik dengan corak. 
 1. Taip `hatch` dalam terminal atau klik butang **Hatch** pada bar alat (ikon swatch).
 2. **Klik satu titik** di dalam rantau yang anda ingin isi.
 3. Arahan kekal aktif, jadi teruskan mengklik untuk mengisi lebih banyak kawasan — setiap klik mencipta entiti `Hatch` tersendiri.
-4. Tekan **Escape** apabila selesai.
+4. Tekan **Enter**, **Space**, atau **Escape** apabila selesai.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Arahan `hatch` mengisi rantau yang mengelilingi titik yang diklik dengan corak. 
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   luar; bulatan kekal
   └─────────────┘        └─────────────┘   sebagai pulau
 ```
+
+## Rujukan papan kekunci
+
+| Kekunci | Tindakan |
+|-----|--------|
+| `Enter` / `Space` | Selesaikan arahan Hatch |
+| `Escape` | Selesaikan arahan Hatch (sama seperti Enter/Space) |
 
 ## Apa yang Boleh Membentuk Sempadan
 

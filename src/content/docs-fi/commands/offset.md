@@ -20,7 +20,7 @@ Tuetut entiteettityypit: **Line, Circle, Arc, Ellipse, Polyline** (mukaan lukien
 4. **Siirrä kohdistinta** puolelle, jolla kopion pitäisi näkyä — elävä esikatselu seuraa mukana.
 5. **Napsauta** sijoittaaksesi offset-kopion.
 
-Jokaisen sijoituksen jälkeen komento palaa vaiheeseen 3 **samalla etäisyydellä**, valmiina seuraavaan offsettiin. Paina **Escape** nollataksesi takaisin etäisyyden syöttövaiheeseen.
+Jokaisen sijoituksen jälkeen komento palaa vaiheeseen 3 **samalla etäisyydellä**, valmiina seuraavaan offsettiin. Paina **Enter** tai **Space** odotustilassa lopettaaksesi komennon, tai **Escape** nollataksesi takaisin etäisyyden syöttövaiheeseen.
 
 ```
   Etäisyys: 10
@@ -47,7 +47,8 @@ Jokaisen sijoituksen jälkeen komento palaa vaiheeseen 3 **samalla etäisyydell�
 |-----|--------|
 | `0`–`9`, `.` | Lisää numero etäisyysarvoon |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
-| `Enter` / `Space` | Vahvista kirjoitettu etäisyys ja siirry entiteetin valintaan |
+| `Enter` / `Space` (etäisyyttä kirjoitettaessa) | Vahvista kirjoitettu etäisyys ja siirry entiteetin valintaan |
+| `Enter` / `Space` (odotustilassa, odottaen seuraavaa entiteettiä) | Lopeta Offset-komento |
 | `Escape` | Nollaa takaisin etäisyyden syöttövaiheeseen |
 
 ## Työnkulun huomautus

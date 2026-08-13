@@ -16,7 +16,7 @@ order: 8
 2. Kaldırmak istediğiniz **segmentin üzerine gelin** — önizleme tam olarak kesilecek kısmı vurgular.
 3. O segmenti kaldırmak için **tıklayın**.
 
-Komut, her kırpmanın ardından aktif kalır, böylece aynı nesne üzerinde veya farklı bir nesnede daha fazla segment kesmek için üzerine gelip tıklamaya devam edebilirsiniz. Çıkmak için **Escape** tuşuna basın.
+Komut, her kırpmanın ardından aktif kalır, böylece aynı nesne üzerinde veya farklı bir nesnede daha fazla segment kesmek için üzerine gelip tıklamaya devam edebilirsiniz. Çıkmak için **Enter**, **Boşluk** veya **Escape** tuşuna basın.
 
 ```
   Önce:                     Orta segment kırpıldıktan sonra:
@@ -48,6 +48,7 @@ Komut, imleç konumunu üzerine gelinen nesneye yansıtır ve nesnenin diğer ne
 
 | Tuş | İşlem |
 |-----|--------|
+| `Enter` / `Boşluk` | Trim modundan çıkar |
 | `Escape` | Trim modundan çıkar |
 
 ## Desteklenen Nesneler

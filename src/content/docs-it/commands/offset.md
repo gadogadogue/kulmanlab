@@ -20,7 +20,7 @@ Tipi di entità supportati: **Linea, Cerchio, Arco, Ellisse, Polilinea** (inclus
 4. **Sposta il cursore** sul lato dove deve apparire la copia — un'anteprima live segue.
 5. **Clicca** per posizionare la copia in offset.
 
-Dopo ogni posizionamento il comando torna al passo 3 alla **stessa distanza**, pronto per il prossimo offset. Premi **Esc** per tornare al passo di inserimento distanza.
+Dopo ogni posizionamento il comando torna al passo 3 alla **stessa distanza**, pronto per il prossimo offset. Premi **Invio** o **Spazio** a riposo per terminare il comando, oppure **Esc** per tornare al passo di inserimento distanza.
 
 ```
   Distanza: 10
@@ -47,7 +47,8 @@ Per **Cerchio**, **Arco** ed **Ellisse**: se l'offset verso l'interno ridurrebbe
 |-------|--------|
 | `0`–`9`, `.` | Aggiunge cifra al valore di distanza |
 | `Canc ←` | Elimina l'ultimo carattere digitato |
-| `Invio` / `Spazio` | Conferma la distanza digitata e avanza alla selezione entità |
+| `Invio` / `Spazio` (durante la digitazione di una distanza) | Conferma la distanza digitata e avanza alla selezione entità |
+| `Invio` / `Spazio` (a riposo, in attesa della prossima entità) | Termina il comando Offset |
 | `Esc` | Ripristina al passo di inserimento distanza |
 
 ## Nota sul flusso di lavoro

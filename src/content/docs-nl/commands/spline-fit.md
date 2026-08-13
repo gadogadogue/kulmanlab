@@ -14,7 +14,7 @@ Het `splinefit`-commando tekent een kubische spline die exact door elk punt loop
 
 1. Typ `splinefit` in de terminal of klik op de **Spline Fit**-werkbalkknop.
 2. **Klik om fit-punten te plaatsen** — de curve loopt door elk punt. Of typ `X,Y` en druk op **Enter** voor een exacte coördinaat.
-3. Druk op **Enter** om af te ronden (minimaal 2 punten vereist).
+3. Druk op **Enter** of **Space** om af te ronden (minimaal 2 punten vereist).
 
 ```
   ●──────●──────●──────●  ← curve loopt exact door elke klik
@@ -39,7 +39,7 @@ In plaats van klikken kunt u een exacte positie typen voor elk fit-punt:
 | `0`–`9`, `.`, `-` | Start X-coördinaatinvoer |
 | `,` | Vergrendel X en ga naar Y-invoer |
 | `Backspace` | Verwijder laatst getypte teken |
-| `Enter` | Bevestig getypte coördinaat, of rond de spline af als er geen invoer actief is en er ≥ 2 punten bestaan |
+| `Enter` / `Space` | Bevestig getypte coördinaat (alleen Enter), of rond de spline af als er geen invoer actief is en er ≥ 2 punten bestaan |
 | `Escape` | Verwijder alle punten en sluit af |
 
 ## Grip-bewerking — vorm aanpassen via fit-punten

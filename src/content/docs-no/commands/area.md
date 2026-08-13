@@ -33,7 +33,7 @@ Kommandoen `area` måler omsluttet areal og omkrets av en polygon definert av tr
 1. Skriv `area` i terminalen eller klikk på **Area**-knappen i verktøylinjen (nederste rad i Measure-panelet).
 2. **Klikk det første punktet**, eller skriv `X,Y` og trykk **Enter** for en eksakt koordinat.
 3. **Klikk hvert ekstra hjørne** i rekkefølge rundt formen. Koordinatinntasting fungerer i hvert steg.
-4. Når minst **3 punkter** er plassert, trykk **Enter** (uten ventende koordinat- eller avstandsinntasting) for å lukke polygonen og beregne resultatet.
+4. Når minst **3 punkter** er plassert, trykk **Enter** eller **Space** (uten ventende koordinat- eller avstandsinntasting) for å lukke polygonen og beregne resultatet.
 5. Terminalen skriver ut `Area: <verdi>  Perimeter: <verdi>`, og den lukkede polygonen — fylling, omriss og hjørnegrep — forblir uthevet på lerretet.
 6. **Klikk hvor som helst, trykk en hvilken som helst tast, eller trykk `Escape`** for å fjerne resultatet og avslutte kommandoen.
 
@@ -85,7 +85,7 @@ I stedet for å klikke kan du skrive inn en eksakt posisjon for et hvilket som h
 | `0`–`9`, `.`, `-` | Start X-koordinatinntasting, eller kantlengdeinntasting mens vinkellåst |
 | `,` | Lås X og gå til Y-inntasting |
 | `Backspace` | Slett sist skrevne tegn |
-| `Enter` | Bekreft en inntastet koordinat eller lengde; med 3+ hjørner og ingen ventende inntasting lukkes polygonen |
+| `Enter` / `Space` | Bekreft en inntastet koordinat eller lengde (kun Enter); med 3+ hjørner og ingen ventende inntasting lukkes polygonen |
 | `Escape` | Mens du plasserer hjørner, forkast dem og start på nytt ved det første punktet; når resultatet vises, fjern det og avslutt |
 
 ## Merknader

@@ -20,7 +20,7 @@ Types d'entités supportés : **Line, Circle, Arc, Ellipse, Polyline** (y compri
 4. **Déplacez le curseur** vers le côté où la copie doit apparaître — un aperçu en direct suit.
 5. **Cliquez** pour placer la copie d'offset.
 
-Après chaque placement, la commande revient à l'étape 3 à la **même distance**, prête pour le prochain offset. Appuyez sur **Échap** pour revenir à l'étape de saisie de distance.
+Après chaque placement, la commande revient à l'étape 3 à la **même distance**, prête pour le prochain offset. Appuyez sur **Entrée** ou **Espace** au repos pour terminer la commande, ou sur **Échap** pour revenir à l'étape de saisie de distance.
 
 ```
   Distance : 10
@@ -47,7 +47,8 @@ Pour **Circle**, **Arc**, et **Ellipse** : si l'offset vers l'intérieur réduit
 |--------|--------|
 | `0`–`9`, `.` | Ajouter un chiffre à la valeur de distance |
 | `Retour arrière` | Supprimer le dernier caractère saisi |
-| `Entrée` / `Espace` | Confirmer la distance saisie et avancer à la sélection d'entité |
+| `Entrée` / `Espace` (en saisissant une distance) | Confirmer la distance saisie et avancer à la sélection d'entité |
+| `Entrée` / `Espace` (au repos, en attente de la prochaine entité) | Terminer la commande Offset |
 | `Échap` | Revenir à l'étape de saisie de distance |
 
 ## Note de flux de travail

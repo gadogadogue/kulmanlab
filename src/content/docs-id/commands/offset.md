@@ -20,7 +20,7 @@ Tipe entitas yang didukung: **Line, Circle, Arc, Ellipse, Polyline** (termasuk R
 4. **Gerakkan kursor** ke sisi di mana salinan harus muncul — pratinjau langsung mengikuti.
 5. **Klik** untuk menempatkan salinan offset.
 
-Setelah setiap penempatan, perintah kembali ke langkah 3 pada **jarak yang sama**, siap untuk offset berikutnya. Tekan **Escape** untuk kembali ke langkah entri jarak.
+Setelah setiap penempatan, perintah kembali ke langkah 3 pada **jarak yang sama**, siap untuk offset berikutnya. Tekan **Enter** atau **Space** saat menunggu untuk menyelesaikan perintah, atau **Escape** untuk kembali ke langkah entri jarak.
 
 ```
   Jarak: 10
@@ -47,7 +47,8 @@ Untuk **Circle**, **Arc**, dan **Ellipse**: jika offset ke dalam mengurangi radi
 |-----|--------|
 | `0`–`9`, `.` | Tambahkan digit ke nilai jarak |
 | `Backspace` | Hapus karakter terakhir yang diketik |
-| `Enter` / `Space` | Konfirmasi jarak yang diketik dan beralih ke seleksi entitas |
+| `Enter` / `Space` (saat mengetik jarak) | Konfirmasi jarak yang diketik dan beralih ke seleksi entitas |
+| `Enter` / `Space` (saat menunggu entitas berikutnya) | Selesaikan perintah Offset |
 | `Escape` | Reset ke langkah entri jarak |
 
 ## Catatan alur kerja

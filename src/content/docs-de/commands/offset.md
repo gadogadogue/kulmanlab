@@ -20,7 +20,7 @@ Unterstützte Entitätstypen: **Linie, Kreis, Bogen, Ellipse, Polylinie** (einsc
 4. **Bewegen Sie den Cursor** auf die Seite, wo die Kopie erscheinen soll — eine Live-Vorschau folgt.
 5. **Klicken**, um die versetzte Kopie zu platzieren.
 
-Nach jeder Platzierung kehrt der Befehl zu Schritt 3 beim **gleichen Abstand** zurück und ist bereit für den nächsten Versatz. Drücken Sie **Escape**, um auf den Abstand-Eingabeschritt zurückzusetzen.
+Nach jeder Platzierung kehrt der Befehl zu Schritt 3 beim **gleichen Abstand** zurück und ist bereit für den nächsten Versatz. Drücken Sie **Enter** oder **Space** im Leerlauf, um den Befehl zu beenden, oder **Escape**, um auf den Abstand-Eingabeschritt zurückzusetzen.
 
 ```
   Abstand: 10
@@ -47,7 +47,8 @@ Bei **Kreis**, **Bogen** und **Ellipse**: Wenn der einwärtige Versatz einen Rad
 |-------|--------|
 | `0`–`9`, `.` | Ziffer zum Abstandswert anhängen |
 | `Backspace` | Letztes getipptes Zeichen löschen |
-| `Enter` / `Space` | Getippten Abstand bestätigen und zur Entitätsauswahl wechseln |
+| `Enter` / `Space` (bei Eingabe eines Abstands) | Getippten Abstand bestätigen und zur Entitätsauswahl wechseln |
+| `Enter` / `Space` (im Leerlauf, wartend auf die nächste Auswahl) | Den Offset-Befehl beenden |
 | `Escape` | Auf Abstand-Eingabeschritt zurücksetzen |
 
 ## Hinweis zum Arbeitsablauf

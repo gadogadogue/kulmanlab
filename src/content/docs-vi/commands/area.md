@@ -33,7 +33,7 @@ Lệnh `area` đo diện tích khép kín và chu vi của một đa giác đư�
 1. Nhập `area` trong terminal hoặc bấm nút **Area** trên thanh công cụ (hàng dưới của bảng Measure).
 2. **Bấm điểm đầu tiên**, hoặc nhập `X,Y` và nhấn **Enter** để nhập tọa độ chính xác.
 3. **Bấm từng đỉnh bổ sung** theo thứ tự quanh hình dạng. Nhập tọa độ hoạt động ở mỗi bước.
-4. Sau khi đặt ít nhất **3 điểm**, nhấn **Enter** (không có tọa độ hoặc khoảng cách đang chờ nhập) để khép kín đa giác và tính kết quả.
+4. Sau khi đặt ít nhất **3 điểm**, nhấn **Enter** hoặc **Space** (không có tọa độ hoặc khoảng cách đang chờ nhập) để khép kín đa giác và tính kết quả.
 5. Terminal in ra `Area: <giá trị>  Perimeter: <giá trị>`, và đa giác đã khép kín — tô màu, đường viền và các điểm điều khiển đỉnh — vẫn được làm nổi bật trên canvas.
 6. **Bấm vào bất kỳ đâu, nhấn bất kỳ phím nào, hoặc nhấn `Escape`** để ẩn kết quả và kết thúc lệnh.
 
@@ -85,7 +85,7 @@ Thay vì bấm, nhập vị trí chính xác cho bất kỳ đỉnh nào:
 | `0`–`9`, `.`, `-` | Bắt đầu nhập tọa độ X, hoặc nhập độ dài cạnh khi khóa góc đang hoạt động |
 | `,` | Khóa X và chuyển sang nhập Y |
 | `Backspace` | Xóa ký tự cuối cùng đã nhập |
-| `Enter` | Xác nhận tọa độ hoặc độ dài đã nhập; với 3+ đỉnh và không có đầu vào đang chờ, khép kín đa giác |
+| `Enter` / `Space` | Xác nhận tọa độ hoặc độ dài đã nhập (chỉ Enter); với 3+ đỉnh và không có đầu vào đang chờ, khép kín đa giác |
 | `Escape` | Khi đang chọn đỉnh: bỏ các điểm đã đặt và bắt đầu lại từ điểm đầu tiên; sau khi kết quả hiển thị: ẩn kết quả và kết thúc lệnh |
 
 ## Lưu Ý

@@ -13,7 +13,7 @@ Lệnh `splinefit` vẽ spline bậc ba đi qua mọi điểm bạn nhấp — �
 
 1. Gõ `splinefit` trong terminal hoặc nhấp nút **Spline Fit** trên thanh công cụ.
 2. **Nhấp để đặt điểm khớp** — đường cong sẽ đi qua mỗi điểm.
-3. Nhấn **Enter** để kết thúc (yêu cầu ít nhất 2 điểm).
+3. Nhấn **Enter** hoặc **Space** để kết thúc (yêu cầu ít nhất 2 điểm).
 
 Bản xem trước trực tiếp hiển thị đường cong nội suy hiện tại khi bạn di chuyển con trỏ. Nhấn **Escape** để loại bỏ tất cả điểm và thoát.
 
@@ -43,7 +43,7 @@ Kéo một điểm kéo sẽ tái khớp toàn bộ đường cong, không chỉ
 | `0`–`9`, `.`, `-` | Bắt đầu nhập tọa độ X |
 | `,` | Khóa X và chuyển sang nhập Y |
 | `Backspace` | Xóa ký tự cuối |
-| `Enter` | Xác nhận tọa độ đã gõ, hoặc kết thúc spline nếu không có nhập liệu và ≥ 2 điểm tồn tại |
+| `Enter` / `Space` | Xác nhận tọa độ đã gõ (chỉ Enter), hoặc kết thúc spline nếu không có nhập liệu và ≥ 2 điểm tồn tại |
 | `Escape` | Loại bỏ tất cả điểm và thoát |
 
 ## DXF — thực thể SPLINE (dạng điểm khớp)

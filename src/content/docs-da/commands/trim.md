@@ -16,7 +16,7 @@ Kommandoen `trim` fjerner den del af en [Line](../line/), [Arc](../arc/), [Circl
 2. **Hold markøren over segmentet**, du vil fjerne — en forhåndsvisning fremhæver nøjagtigt den del, der vil blive skåret.
 3. **Klik** for at fjerne det segment.
 
-Kommandoen forbliver aktiv efter hver trimning, så du kan fortsætte med at holde markøren over og klikke for at skære flere segmenter — på samme entitet eller en anden. Tryk **Escape** for at afslutte.
+Kommandoen forbliver aktiv efter hver trimning, så du kan fortsætte med at holde markøren over og klikke for at skære flere segmenter — på samme entitet eller en anden. Tryk **Enter**, **Space** eller **Escape** for at afslutte.
 
 ```
   Før:                        Efter trimning af midtersegmentet:
@@ -48,6 +48,7 @@ Kommandoen projicerer markørpositionen på entiteten, den holder over, og finde
 
 | Tast | Handling |
 |-----|--------|
+| `Enter` / `Space` | Afslut trim-tilstand |
 | `Escape` | Afslut trim-tilstand |
 
 ## Understøttede entiteter

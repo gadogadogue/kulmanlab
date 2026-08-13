@@ -18,7 +18,7 @@ Solo las entidades con un extremo real pueden extenderse. Un [Circle](../circle/
 2. **Pasa el cursor cerca de un extremo** de la entidad que quieres extender — la vista previa la muestra extendida hasta el límite más cercano en esa dirección.
 3. **Haz clic** para aplicar la extensión.
 
-El comando permanece activo después de cada extensión, así que puedes seguir pasando el cursor y haciendo clic para extender más entidades. Presiona **Escape** para salir.
+El comando permanece activo después de cada extensión, así que puedes seguir pasando el cursor y haciendo clic para extender más entidades. Presiona **Enter**, **Space** o **Escape** para salir.
 
 ```
   Antes:                       Después:
@@ -52,6 +52,7 @@ Todos los demás tipos (Line, Arc, Circle, Ellipse, Polyline, Dimension) sirven 
 
 | Tecla | Acción |
 |-------|--------|
+| `Enter` / `Space` | Salir del modo extend |
 | `Escape` | Salir del modo extend |
 
 ## Entidades compatibles

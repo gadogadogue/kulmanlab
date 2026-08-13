@@ -33,7 +33,7 @@ El comando `area` mide el área encerrada y el perímetro de un polígono defini
 1. Escribe `area` en el terminal o haz clic en el botón **Area** de la barra de herramientas (fila inferior del panel Measure).
 2. **Haz clic en el primer punto**, o escribe `X,Y` y presiona **Enter** para una coordenada exacta.
 3. **Haz clic en cada vértice adicional** en orden alrededor de la forma. La entrada de coordenadas funciona en cada paso.
-4. Una vez colocados al menos **3 puntos**, presiona **Enter** (sin una entrada de coordenada o distancia pendiente) para cerrar el polígono y calcular el resultado.
+4. Una vez colocados al menos **3 puntos**, presiona **Enter** o **Space** (sin una entrada de coordenada o distancia pendiente) para cerrar el polígono y calcular el resultado.
 5. El terminal imprime `Area: <valor>  Perimeter: <valor>`, y el polígono cerrado — relleno, contorno y controladores de vértice — permanece resaltado en el lienzo.
 6. **Haz clic en cualquier lugar, presiona cualquier tecla o presiona `Escape`** para descartar el resultado y finalizar el comando.
 
@@ -85,7 +85,7 @@ En lugar de hacer clic, escribe una posición exacta para cualquier vértice:
 | `0`–`9`, `.`, `-` | Iniciar entrada de coordenada X, o entrada de longitud de arista con bloqueo de ángulo activo |
 | `,` | Bloquear X y pasar a la entrada Y |
 | `Backspace` | Eliminar el último carácter escrito |
-| `Enter` | Confirmar una coordenada o longitud escrita; con 3 o más vértices y sin entrada pendiente, cierra el polígono |
+| `Enter` / `Space` | Confirmar una coordenada o longitud escrita (solo Enter); con 3 o más vértices y sin entrada pendiente, cierra el polígono |
 | `Escape` | Mientras se seleccionan vértices: descarta los puntos y reinicia en el primer punto; una vez mostrado el resultado: lo descarta y finaliza el comando |
 
 ## Notas

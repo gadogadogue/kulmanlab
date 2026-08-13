@@ -20,7 +20,7 @@ Nauʼukan abu da ake goyon baya: **Line, Circle, Arc, Ellipse, Polyline** (ciki 
 4. **Motsa mai nuni** zuwa gefen da kwafin ya kamata ya bayyana — preview mai rai yana bi.
 5. **Danna** don sanya kwafin offset.
 
-Bayan kowace sanyawa umarnin yana komawa mataki na 3 a **nisa iri ɗaya**, a shirye don offset na gaba. Danna **Escape** don sake saita zuwa mataki na shigar da nisa.
+Bayan kowace sanyawa umarnin yana komawa mataki na 3 a **nisa iri ɗaya**, a shirye don offset na gaba. Danna **Enter** ko **Space** yayin jira don kammala umarnin, ko **Escape** don sake saita zuwa mataki na shigar da nisa.
 
 ```
   Nisa: 10
@@ -47,7 +47,8 @@ Ga **Circle**, **Arc**, da **Ellipse**: idan offset ta ciki za ta rage radius ko
 |-----|--------|
 | `0`–`9`, `.` | Ƙara lamba zuwa ƙimar nisan |
 | `Backspace` | Share tsohon harafi na ƙarshe da aka rubuta |
-| `Enter` / `Space` | Tabbatar da nisan da aka rubuta ka ci gaba zuwa zaɓen abu |
+| `Enter` / `Space` (yayin rubuta nisa) | Tabbatar da nisan da aka rubuta ka ci gaba zuwa zaɓen abu |
+| `Enter` / `Space` (yayin jira, jiran abu na gaba) | Kammala umarnin Offset |
 | `Escape` | Sake saita zuwa mataki na shigar da nisa |
 
 ## Bayanin tsarin aiki

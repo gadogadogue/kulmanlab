@@ -19,7 +19,7 @@ Các loại thực thể được hỗ trợ: **Đường thẳng, Hình tròn, 
 4. **Di chuyển con trỏ** sang phía nơi bản sao xuất hiện — bản xem trước trực tiếp theo dõi.
 5. **Nhấp** để đặt bản sao offset.
 
-Sau mỗi lần đặt, lệnh quay lại bước 3 theo **cùng khoảng cách**, sẵn sàng cho lần offset tiếp theo. Nhấn **Escape** để đặt lại về bước nhập khoảng cách.
+Sau mỗi lần đặt, lệnh quay lại bước 3 theo **cùng khoảng cách**, sẵn sàng cho lần offset tiếp theo. Nhấn **Enter** hoặc **Space** khi rảnh để kết thúc lệnh, hoặc **Escape** để đặt lại về bước nhập khoảng cách.
 
 ## Hành vi offset theo thực thể
 
@@ -37,7 +37,8 @@ Sau mỗi lần đặt, lệnh quay lại bước 3 theo **cùng khoảng cách*
 |------|-----------|
 | `0`–`9`, `.` | Thêm chữ số vào giá trị khoảng cách |
 | `Backspace` | Xóa ký tự cuối |
-| `Enter` / `Space` | Xác nhận khoảng cách đã gõ và chuyển sang chọn thực thể |
+| `Enter` / `Space` (khi đang nhập khoảng cách) | Xác nhận khoảng cách đã gõ và chuyển sang chọn thực thể |
+| `Enter` / `Space` (khi rảnh, chờ thực thể tiếp theo) | Kết thúc lệnh Offset |
 | `Escape` | Đặt lại về bước nhập khoảng cách |
 
 ## Offset vs Copy

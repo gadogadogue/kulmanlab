@@ -17,7 +17,7 @@ Kommandoen `align` omplacerer markerede entiteter ved hjælp af ét eller to par
 1. Markér én eller flere entiteter på lærredet.
 2. Skriv `align` i terminalen eller klik på **Align**-knappen i værktøjslinjen.
 3. **Klik det første kildepunkt (S1)**, klik derefter **det første målpunkt (D1)**.
-4. **Klik det andet kildepunkt (S2)**, eller tryk **Enter** for kun at anvende flytning nu.
+4. **Klik det andet kildepunkt (S2)**, eller tryk **Enter** eller **Space** for kun at anvende flytning nu.
 5. **Klik det andet målpunkt (D2)**.
 6. Besvar skaleringsspørgsmålet: tryk **Y** for at skalere, eller **N** / **Enter** for at bevare den originale størrelse.
 
@@ -48,7 +48,7 @@ En levende spøgelsesforhåndsvisning følger markøren ved hvert trin: en flytt
 
 ## Etpunktsjustering (kun flytning)
 
-Efter at D1 er placeret, tryk **Enter** i stedet for at klikke et andet kildepunkt. Markeringen flyttes med vektoren S1→D1 — ingen rotation eller skalering — identisk med en [Move](../move/), der bruger S1 som basispunkt og D1 som mål.
+Efter at D1 er placeret, tryk **Enter** eller **Space** i stedet for at klikke et andet kildepunkt. Markeringen flyttes med vektoren S1→D1 — ingen rotation eller skalering — identisk med en [Move](../move/), der bruger S1 som basispunkt og D1 som mål.
 
 ## Topunktsjustering (flytning + rotation + valgfri skalering)
 
@@ -66,7 +66,7 @@ At trykke en tast ved skaleringsspørgsmålet anvender justeringen med det samme
 | Tast | Handling |
 |-----|--------|
 | `Enter` / `Space` | Bekræft markering og gå videre til S1-fasen |
-| `Enter` (ved S2-trinnet) | Spring rotation over — anvend kun flytning med S1 og D1 |
+| `Enter` / `Space` (ved S2-trinnet) | Spring rotation over — anvend kun flytning med S1 og D1 |
 | `Y` | Anvend justeringen med skalering |
 | `N` / `Enter` (ved skaleringsspørgsmålet) | Anvend justeringen uden skalering |
 | `Escape` | Mens du vælger punkter: kassér dem og vend tilbage til markeringsfasen; med intet markeret: annullér kommandoen |

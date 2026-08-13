@@ -18,7 +18,7 @@ Hanya entiti dengan titik akhir sebenar boleh dipanjangkan. [Circle](../circle/)
 2. **Tuding berhampiran satu hujung** entiti yang ingin dipanjangkan — pratonton menunjukkannya dilanjutkan ke sempadan terdekat dalam arah tersebut.
 3. **Klik** untuk menggunakan pemanjangan.
 
-Arahan kekal aktif selepas setiap pemanjangan, jadi anda boleh terus menuding dan mengklik untuk memanjangkan lebih banyak entiti. Tekan **Escape** untuk keluar.
+Arahan kekal aktif selepas setiap pemanjangan, jadi anda boleh terus menuding dan mengklik untuk memanjangkan lebih banyak entiti. Tekan **Enter**, **Space**, atau **Escape** untuk keluar.
 
 ```
   Sebelum:                      Selepas:
@@ -52,6 +52,7 @@ Semua jenis lain (Line, Arc, Circle, Ellipse, Polyline, Dimension) berfungsi seb
 
 | Kekunci | Tindakan |
 |---------|---------|
+| `Enter` / `Space` | Keluar dari mod extend |
 | `Escape` | Keluar dari mod extend |
 
 ## Entiti yang disokong

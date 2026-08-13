@@ -17,7 +17,7 @@ order: 6
 1. Välj en eller flera entiteter på ritytan.
 2. Skriv `align` i terminalen eller klicka på **Align**-knappen i verktygsfältet.
 3. **Klicka på den första källpunkten (S1)**, klicka sedan på **den första målpunkten (D1)**.
-4. **Klicka på den andra källpunkten (S2)**, eller tryck **Enter** för att direkt tillämpa en justering med enbart förflyttning.
+4. **Klicka på den andra källpunkten (S2)**, eller tryck **Enter** eller **Space** för att direkt tillämpa en justering med enbart förflyttning.
 5. **Klicka på den andra målpunkten (D2)**.
 6. Svara på skalningsfrågan: tryck **Y** för att skala, eller **N** / **Enter** för att behålla originalstorleken.
 
@@ -48,7 +48,7 @@ En ghost-förhandsvisning följer markören vid varje steg: en förflyttningsfö
 
 ## Enpunktsjustering (endast förflyttning)
 
-Efter att D1 placerats, tryck **Enter** istället för att klicka på en andra källpunkt. Valet flyttas med vektorn S1→D1 — utan rotation eller skalning — identiskt med en [Move](../move/) som använder S1 som basspunkt och D1 som destination.
+Efter att D1 placerats, tryck **Enter** eller **Space** istället för att klicka på en andra källpunkt. Valet flyttas med vektorn S1→D1 — utan rotation eller skalning — identiskt med en [Move](../move/) som använder S1 som basspunkt och D1 som destination.
 
 ## Tvåpunktsjustering (förflyttning + rotation + valfri skalning)
 
@@ -66,7 +66,7 @@ Att trycka på valfri tangent vid skalningsfrågan tillämpar justeringen omedel
 | Tangent | Åtgärd |
 |-----|--------|
 | `Enter` / `Space` | Bekräftar valet och går vidare till S1-fasen |
-| `Enter` (i S2-steget) | Hoppar över rotation — tillämpar en justering med enbart förflyttning med S1 och D1 |
+| `Enter` / `Space` (i S2-steget) | Hoppar över rotation — tillämpar en justering med enbart förflyttning med S1 och D1 |
 | `Y` | Tillämpar justeringen med skalning |
 | `N` / `Enter` (vid skalningsfrågan) | Tillämpar justeringen utan skalning |
 | `Escape` | Vid placering av punkter: förkastar punkterna och återgår till valfasen; utan något valt: avbryter kommandot |

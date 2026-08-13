@@ -15,7 +15,7 @@ La commande `hatch` remplit la région entourant un point cliqué avec un motif.
 1. Tapez `hatch` dans le terminal ou cliquez sur le bouton **Hatch** de la barre d'outils (l'icône d'échantillon).
 2. **Cliquez sur un point** à l'intérieur de la région que vous voulez remplir.
 3. La commande reste active, donc continuez à cliquer pour remplir d'autres zones — chaque clic crée sa propre entité `Hatch`.
-4. Appuyez sur **Escape** quand vous avez terminé.
+4. Appuyez sur **Entrée**, **Espace** ou **Escape** quand vous avez terminé.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ La commande `hatch` remplit la région entourant un point cliqué avec un motif.
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   contour extérieur ; le
   └─────────────┘        └─────────────┘   cercle reste une île
 ```
+
+## Référence clavier
+
+| Touche | Action |
+|-----|--------|
+| `Enter` / `Space` | Terminer la commande Hatch |
+| `Escape` | Terminer la commande Hatch (comme Entrée/Espace) |
 
 ## Ce qui peut former un contour
 

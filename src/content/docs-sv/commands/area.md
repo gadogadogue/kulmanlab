@@ -33,7 +33,7 @@ order: 3
 1. Skriv `area` i terminalen eller klicka på **Area**-knappen i verktygsfältet (nedre raden i Measure-panelen).
 2. **Klicka på första punkten**, eller skriv `X,Y` och tryck **Enter** för en exakt koordinat.
 3. **Klicka på varje ytterligare hörn** i ordning runt formen. Koordinatinmatning fungerar i varje steg.
-4. När minst **3 punkter** har placerats, tryck **Enter** (utan väntande koordinat- eller avståndsinmatning) för att stänga polygonen och beräkna resultatet.
+4. När minst **3 punkter** har placerats, tryck **Enter** eller **Space** (utan väntande koordinat- eller avståndsinmatning) för att stänga polygonen och beräkna resultatet.
 5. Terminalen skriver ut `Area: <värde>  Perimeter: <värde>`, och den stängda polygonen — fyllning, kontur och hörngrepp — förblir markerad på ritytan.
 6. **Klicka var som helst, tryck på valfri tangent, eller tryck `Escape`** för att avfärda resultatet och avsluta kommandot.
 
@@ -85,7 +85,7 @@ Istället för att klicka kan du skriva en exakt position för valfritt hörn:
 | `0`–`9`, `.`, `-` | Startar X-koordinatinmatning, eller kantlängdsinmatning när vinkellåsning är aktiv |
 | `,` | Låser X och går vidare till Y-inmatning |
 | `Backspace` | Tar bort senast skrivna tecken |
-| `Enter` | Bekräftar en inskriven koordinat eller längd; med 3+ hörn och ingen väntande inmatning stängs polygonen |
+| `Enter` / `Space` | Bekräftar en inskriven koordinat eller längd (endast Enter); med 3+ hörn och ingen väntande inmatning stängs polygonen |
 | `Escape` | Vid val av hörn: förkastar placerade punkter och börjar om vid första punkten; efter att resultatet visats: avfärdar det och avslutar kommandot |
 
 ## Anmärkningar

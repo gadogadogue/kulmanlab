@@ -14,7 +14,7 @@ Umarnin `splinecv` yana zana **B-spline mai cubic** ta sanya control vertices (C
 
 1. Rubuta `splinecv` a tashar umarni ko danna maɓallin kayan aiki na **Spline CV**.
 2. **Danna don sanya control vertices** — kowace dannawa yana ƙara vertex. Ko rubuta `X,Y` ka danna **Enter** don daidaitawa madaidaiciya.
-3. Danna **Enter** don kammalawa (ana bukatar aƙalla vertices 2).
+3. Danna **Enter** ko **Space** don kammalawa (ana bukatar aƙalla vertices 2).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Maimakon dannawa, rubuta madaidaicin matsayi ga kowace control vertex:
 | `0`–`9`, `.`, `-` | Fara shigar da daidaitawar X |
 | `,` | Kulle X ka koma shigar da Y |
 | `Backspace` | Share tsohon harafi na ƙarshe da aka rubuta |
-| `Enter` | Tabbatar da daidaitawar da aka rubuta, ko kammala spline idan babu shigarwa a tsari kuma ≥ vertices 2 sun kasance |
+| `Enter` / `Space` | Tabbatar da daidaitawar da aka rubuta (Enter kawai), ko kammala spline idan babu shigarwa a tsari kuma ≥ vertices 2 sun kasance |
 | `Escape` | Kawar da dukkan vertices ka fita |
 
 ## Gyaran grip — sake tsarawa ta control vertices

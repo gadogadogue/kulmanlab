@@ -17,7 +17,7 @@ O comando `align` reposiciona as entidades selecionadas usando um ou dois pares 
 1. Selecione uma ou mais entidades no canvas.
 2. Digite `align` no terminal ou clique no botão **Align** na barra de ferramentas.
 3. **Clique no primeiro ponto de origem (S1)**, depois **no primeiro ponto de destino (D1)**.
-4. **Clique no segundo ponto de origem (S2)**, ou pressione **Enter** para aplicar já um alinhamento apenas de translação.
+4. **Clique no segundo ponto de origem (S2)**, ou pressione **Enter** ou **Espaço** para aplicar já um alinhamento apenas de translação.
 5. **Clique no segundo ponto de destino (D2)**.
 6. Responda ao pedido de escala: pressione **Y** para escalar, ou **N** / **Enter** para manter o tamanho original.
 
@@ -48,7 +48,7 @@ Uma pré-visualização fantasma segue o cursor em cada passo: uma pré-visualiz
 
 ## Alinhamento de um ponto (apenas translação)
 
-Depois de D1 ser colocado, pressione **Enter** em vez de clicar num segundo ponto de origem. A seleção é transladada pelo vetor S1→D1 — sem rotação nem escala — idêntico a um [Move](../move/) usando S1 como ponto base e D1 como destino.
+Depois de D1 ser colocado, pressione **Enter** ou **Espaço** em vez de clicar num segundo ponto de origem. A seleção é transladada pelo vetor S1→D1 — sem rotação nem escala — idêntico a um [Move](../move/) usando S1 como ponto base e D1 como destino.
 
 ## Alinhamento de dois pontos (translação + rotação + escala opcional)
 
@@ -66,7 +66,7 @@ Pressionar uma tecla no pedido de escala aplica o alinhamento imediatamente — 
 | Tecla | Ação |
 |-------|------|
 | `Enter` / `Espaço` | Confirma a seleção e avança para a fase S1 |
-| `Enter` (no passo S2) | Salta a rotação — aplica um alinhamento apenas de translação usando S1 e D1 |
+| `Enter` / `Espaço` (no passo S2) | Salta a rotação — aplica um alinhamento apenas de translação usando S1 e D1 |
 | `Y` | Aplica o alinhamento com escala |
 | `N` / `Enter` (no pedido de escala) | Aplica o alinhamento sem escala |
 | `Escape` | Ao colocar pontos: descarta os pontos e volta à fase de seleção; sem nada selecionado: cancela o comando |

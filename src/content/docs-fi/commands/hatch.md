@@ -15,7 +15,7 @@ order: 7
 1. Kirjoita `hatch` päätteeseen tai napsauta työkalurivin **Hatch**-painiketta (kuvion kuvake).
 2. **Napsauta pistettä** täytettävän alueen sisällä.
 3. Komento pysyy aktiivisena, joten jatka napsautusta täyttääksesi lisää alueita — jokainen napsautus luo oman `Hatch`-entiteettinsä.
-4. Paina **Escape**, kun olet valmis.
+4. Paina **Enter**, **Space** tai **Escape**, kun olet valmis.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ order: 7
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   rajan sisällä; ympyrä
   └─────────────┘        └─────────────┘   jää saareksi
 ```
+
+## Näppäinreferenssi
+
+| Näppäin | Toiminto |
+|-----|--------|
+| `Enter` / `Space` | Lopeta Hatch-komento |
+| `Escape` | Lopeta Hatch-komento (sama kuin Enter/Space) |
 
 ## Mikä voi muodostaa rajan
 

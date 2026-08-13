@@ -20,7 +20,7 @@ Desteklenen nesne türleri: **Çizgi, Daire, Yay, Elips, Çoklu Çizgi** (Dikdö
 4. **İmleci** kopyanın görünmesi gereken tarafa hareket ettirin — canlı önizleme eşlik eder.
 5. Ofset kopyasını yerleştirmek için **tıklayın**.
 
-Her yerleştirmeden sonra komut, sonraki ofset için hazır olmak üzere **aynı mesafede** adım 3'e döner. Mesafe girişi adımına sıfırlamak için **Escape** tuşuna basın.
+Her yerleştirmeden sonra komut, sonraki ofset için hazır olmak üzere **aynı mesafede** adım 3'e döner. Boştayken komutu bitirmek için **Enter** veya **Boşluk**, mesafe girişi adımına sıfırlamak için ise **Escape** tuşuna basın.
 
 ```
   Mesafe: 10
@@ -47,7 +47,8 @@ Her yerleştirmeden sonra komut, sonraki ofset için hazır olmak üzere **aynı
 |-----|--------|
 | `0`–`9`, `.` | Mesafe değerine rakam ekler |
 | `Backspace` | Son girilen karakteri siler |
-| `Enter` / `Boşluk` | Yazılan mesafeyi onaylar ve nesne seçimine geçer |
+| `Enter` / `Boşluk` (mesafe girerken) | Yazılan mesafeyi onaylar ve nesne seçimine geçer |
+| `Enter` / `Boşluk` (boşta, bir sonraki nesneyi beklerken) | Offset komutunu bitirir |
 | `Escape` | Mesafe girişi adımına sıfırlar |
 
 ## İş Akışı Notu

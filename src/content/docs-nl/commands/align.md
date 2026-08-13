@@ -17,7 +17,7 @@ Het commando `align` verplaatst geselecteerde entiteiten met een of twee paren b
 1. Selecteer een of meer entiteiten op het canvas.
 2. Typ `align` in de terminal of klik op de werkbalkknop **Align**.
 3. **Klik op het eerste bronpunt (S1)**, klik daarna op het **eerste doelpunt (D1)**.
-4. **Klik op het tweede bronpunt (S2)**, of druk op **Enter** om nu direct een uitlijning toe te passen die alleen verplaatst.
+4. **Klik op het tweede bronpunt (S2)**, of druk op **Enter** of **Space** om nu direct een uitlijning toe te passen die alleen verplaatst.
 5. **Klik op het tweede doelpunt (D2)**.
 6. Beantwoord de schaalprompt: druk op **Y** om te schalen, of op **N** / **Enter** om de oorspronkelijke grootte te behouden.
 
@@ -48,7 +48,7 @@ Een live ghost-preview volgt de cursor bij elke stap: een verplaatsingspreview t
 
 ## Uitlijning met één punt (alleen verplaatsen)
 
-Nadat D1 is geplaatst, drukt u op **Enter** in plaats van op een tweede bronpunt te klikken. De selectie wordt verplaatst volgens de vector S1→D1 — geen rotatie of schaling — identiek aan een [Move](../move/) met S1 als basispunt en D1 als bestemming.
+Nadat D1 is geplaatst, drukt u op **Enter** of **Space** in plaats van op een tweede bronpunt te klikken. De selectie wordt verplaatst volgens de vector S1→D1 — geen rotatie of schaling — identiek aan een [Move](../move/) met S1 als basispunt en D1 als bestemming.
 
 ## Uitlijning met twee punten (verplaatsen + draaien + optioneel schalen)
 
@@ -66,7 +66,7 @@ Het indrukken van een toets bij de schaalprompt past de uitlijning direct toe �
 | Toets | Actie |
 |-----|--------|
 | `Enter` / `Spatie` | Bevestig selectie en ga verder naar de S1-fase |
-| `Enter` (bij de S2-stap) | Sla rotatie over — pas een uitlijning toe die alleen verplaatst, met S1 en D1 |
+| `Enter` / `Space` (bij de S2-stap) | Sla rotatie over — pas een uitlijning toe die alleen verplaatst, met S1 en D1 |
 | `Y` | Pas de uitlijning toe met schaling |
 | `N` / `Enter` (bij de schaalprompt) | Pas de uitlijning toe zonder schaling |
 | `Escape` | Tijdens het plaatsen van punten: verwijder deze en keer terug naar de selectiefase; zonder selectie: annuleer het commando |

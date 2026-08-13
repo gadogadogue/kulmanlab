@@ -16,7 +16,7 @@ Het `trim`-commando verwijdert het deel van een [Line](../line/), [Arc](../arc/)
 2. **Beweeg over het segment** dat u wilt verwijderen — een preview markeert precies het deel dat wordt gesneden.
 3. **Klik** om dat segment te verwijderen.
 
-Het commando blijft actief na elke snede, zodat u kunt doorgaan met bewegen en klikken om meer segmenten te snijden — op dezelfde entiteit of een andere. Druk op **Escape** om af te sluiten.
+Het commando blijft actief na elke snede, zodat u kunt doorgaan met bewegen en klikken om meer segmenten te snijden — op dezelfde entiteit of een andere. Druk op **Enter**, **Space** of **Escape** om af te sluiten.
 
 ```
   Ervoor:                     Na het snijden van het middelste segment:
@@ -48,6 +48,7 @@ Het commando projecteert de cursorpositie op de gehoverde entiteit en zoekt alle
 
 | Toets | Actie |
 |-----|--------|
+| `Enter` / `Space` | Sluit trimmodus af |
 | `Escape` | Sluit trimmodus af |
 
 ## Ondersteunde entiteiten

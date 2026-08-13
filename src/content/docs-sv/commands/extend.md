@@ -18,7 +18,7 @@ Endast entiteter med en verklig ändpunkt kan förlängas. En [Circle](../circle
 2. **Hovra nära ena änden** av entiteten du vill förlänga — förhandsgranskningen visar den förlängd till närmaste gräns i den riktningen.
 3. **Klicka** för att verkställa förlängningen.
 
-Kommandot förblir aktivt efter varje förlängning, så du kan fortsätta hovra och klicka för att förlänga fler entiteter. Tryck på **Escape** för att avsluta.
+Kommandot förblir aktivt efter varje förlängning, så du kan fortsätta hovra och klicka för att förlänga fler entiteter. Tryck på **Enter**, **Space** eller **Escape** för att avsluta.
 
 ```
   Före:                      Efter:
@@ -52,6 +52,7 @@ Alla andra typer (Line, Arc, Circle, Ellipse, Polyline, Dimension) fungerar som 
 
 | Tangent | Åtgärd |
 |-----|--------|
+| `Enter` / `Space` | Avsluta extend-läget |
 | `Escape` | Avsluta extend-läget |
 
 ## Entiteter som stöds

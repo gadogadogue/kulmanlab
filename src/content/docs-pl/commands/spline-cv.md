@@ -14,7 +14,7 @@ Polecenie `splinecv` rysuje **sześcienny B-splajn** przez umieszczanie wierzcho
 
 1. Wpisz `splinecv` w terminalu lub kliknij przycisk **Splajn CV** na pasku narzędzi.
 2. **Kliknij, aby umieścić wierzchołki kontrolne** — każde kliknięcie dodaje wierzchołek. Lub wpisz `X,Y` i naciśnij **Enter** dla dokładnej współrzędnej.
-3. Naciśnij **Enter**, aby zakończyć (wymagane co najmniej 2 wierzchołki).
+3. Naciśnij **Enter** lub **Spację**, aby zakończyć (wymagane co najmniej 2 wierzchołki).
 
 ```
   CV ●         ● CV
@@ -42,7 +42,7 @@ Zamiast klikać, wpisz dokładną pozycję dla dowolnego wierzchołka kontrolneg
 | `0`–`9`, `.`, `-` | Rozpocznij wprowadzanie współrzędnej X |
 | `,` | Zablokuj X i przejdź do wprowadzania Y |
 | `Backspace` | Usuń ostatnio wpisany znak |
-| `Enter` | Potwierdź wpisaną współrzędną lub zakończ splajn jeśli nie ma aktywnego wejścia i istnieje ≥ 2 wierzchołki |
+| `Enter` / `Spacja` | Potwierdź wpisaną współrzędną (tylko Enter) lub zakończ splajn jeśli nie ma aktywnego wejścia i istnieje ≥ 2 wierzchołki |
 | `Escape` | Odrzuć wszystkie wierzchołki i wyjdź |
 
 ## Edycja uchwytów — przekształcanie przez wierzchołki kontrolne

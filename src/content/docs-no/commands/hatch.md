@@ -15,7 +15,7 @@ Kommandoen `hatch` fyller området rundt et klikket punkt med et mønster. Grens
 1. Skriv `hatch` i terminalen, eller klikk på verktøylinjeknappen **Hatch** (mønsterikonet).
 2. **Klikk på et punkt** inne i området du vil fylle.
 3. Kommandoen forblir aktiv, så fortsett å klikke for å fylle flere områder — hvert klikk lager sin egen `Hatch`-entitet.
-4. Trykk **Escape** når du er ferdig.
+4. Trykk **Enter**, **Space** eller **Escape** når du er ferdig.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Kommandoen `hatch` fyller området rundt et klikket punkt med et mønster. Grens
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   grensen; sirkelen forblir
   └─────────────┘        └─────────────┘   en øy
 ```
+
+## Tastaturreferanse
+
+| Tast | Handling |
+|-----|--------|
+| `Enter` / `Space` | Avslutt Hatch-kommandoen |
+| `Escape` | Avslutt Hatch-kommandoen (samme som Enter/Space) |
 
 ## Hva som kan danne en grense
 

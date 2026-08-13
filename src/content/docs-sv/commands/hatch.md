@@ -15,7 +15,7 @@ Kommandot `hatch` fyller området runt en klickad punkt med ett mönster. Kontur
 1. Skriv `hatch` i terminalen eller klicka på verktygsfältsknappen **Hatch** (mönsterikonen).
 2. **Klicka på en punkt** inuti det område du vill fylla.
 3. Kommandot förblir aktivt, så fortsätt klicka för att fylla fler områden — varje klick skapar sin egen `Hatch`-entitet.
-4. Tryck på **Escape** när du är klar.
+4. Tryck på **Enter**, **Space** eller **Escape** när du är klar.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ Kommandot `hatch` fyller området runt en klickad punkt med ett mönster. Kontur
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   konturen; cirkeln förblir
   └─────────────┘        └─────────────┘   en ö
 ```
+
+## Snabbreferens tangentbord
+
+| Tangent | Åtgärd |
+|-----|--------|
+| `Enter` / `Space` | Avsluta Hatch-kommandot |
+| `Escape` | Avsluta Hatch-kommandot (samma som Enter/Space) |
 
 ## Vad som kan bilda en kontur
 

@@ -17,7 +17,7 @@ Lệnh `align` định vị lại các thực thể đã chọn bằng một ho�
 1. Chọn một hoặc nhiều thực thể trên canvas.
 2. Gõ `align` trong terminal hoặc nhấp nút **Align** trên thanh công cụ.
 3. **Nhấp điểm nguồn thứ nhất (S1)**, rồi **nhấp điểm đích thứ nhất (D1)**.
-4. **Nhấp điểm nguồn thứ hai (S2)**, hoặc nhấn **Enter** để áp dụng ngay một căn chỉnh chỉ dịch chuyển.
+4. **Nhấp điểm nguồn thứ hai (S2)**, hoặc nhấn **Enter** hoặc **Space** để áp dụng ngay một căn chỉnh chỉ dịch chuyển.
 5. **Nhấp điểm đích thứ hai (D2)**.
 6. Trả lời câu hỏi thu phóng: nhấn **Y** để thu phóng, hoặc **N** / **Enter** để giữ nguyên kích thước gốc.
 
@@ -48,7 +48,7 @@ Bản xem trước bóng theo con trỏ ở mỗi bước: xem trước di chuy�
 
 ## Căn Chỉnh Một Điểm (chỉ dịch chuyển)
 
-Sau khi đặt D1, nhấn **Enter** thay vì nhấp điểm nguồn thứ hai. Vùng chọn được dịch chuyển theo vector S1→D1 — không xoay hay thu phóng — giống hệt một [Move](../move/) sử dụng S1 làm điểm cơ sở và D1 làm đích.
+Sau khi đặt D1, nhấn **Enter** hoặc **Space** thay vì nhấp điểm nguồn thứ hai. Vùng chọn được dịch chuyển theo vector S1→D1 — không xoay hay thu phóng — giống hệt một [Move](../move/) sử dụng S1 làm điểm cơ sở và D1 làm đích.
 
 ## Căn Chỉnh Hai Điểm (dịch chuyển + xoay + thu phóng tùy chọn)
 
@@ -66,7 +66,7 @@ Nhấn bất kỳ phím nào tại câu hỏi thu phóng sẽ áp dụng phép c
 | Phím | Hành động |
 |------|-----------|
 | `Enter` / `Space` | Xác nhận lựa chọn và chuyển sang giai đoạn S1 |
-| `Enter` (ở bước S2) | Bỏ qua xoay — áp dụng căn chỉnh chỉ dịch chuyển bằng S1 và D1 |
+| `Enter` / `Space` (ở bước S2) | Bỏ qua xoay — áp dụng căn chỉnh chỉ dịch chuyển bằng S1 và D1 |
 | `Y` | Áp dụng căn chỉnh kèm thu phóng |
 | `N` / `Enter` (tại câu hỏi thu phóng) | Áp dụng căn chỉnh không thu phóng |
 | `Escape` | Khi đang đặt điểm: bỏ các điểm đã đặt và quay lại giai đoạn chọn; khi không có gì được chọn: hủy lệnh |

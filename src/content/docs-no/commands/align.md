@@ -17,7 +17,7 @@ Kommandoen `align` omplasserer markerte entiteter ved hjelp av ett eller to par 
 1. Marker én eller flere entiteter på lerretet.
 2. Skriv `align` i terminalen eller klikk på **Align**-knappen i verktøylinjen.
 3. **Klikk det første kildepunktet (S1)**, deretter **klikk det første målpunktet (D1)**.
-4. **Klikk det andre kildepunktet (S2)**, eller trykk **Enter** for å bruke kun flytting nå.
+4. **Klikk det andre kildepunktet (S2)**, eller trykk **Enter** eller **Space** for å bruke kun flytting nå.
 5. **Klikk det andre målpunktet (D2)**.
 6. Svar på skaleringsspørsmålet: trykk **Y** for å skalere, eller **N** / **Enter** for å beholde opprinnelig størrelse.
 
@@ -48,7 +48,7 @@ En levende spøkelsesforhåndsvisning følger markøren i hvert steg: en flyttef
 
 ## Ettpunktsjustering (kun flytting)
 
-Etter at D1 er plassert, trykk **Enter** i stedet for å klikke et andre kildepunkt. Markeringen flyttes med vektoren S1→D1 — ingen rotasjon eller skalering — identisk med en [Move](../move/) som bruker S1 som basispunkt og D1 som mål.
+Etter at D1 er plassert, trykk **Enter** eller **Space** i stedet for å klikke et andre kildepunkt. Markeringen flyttes med vektoren S1→D1 — ingen rotasjon eller skalering — identisk med en [Move](../move/) som bruker S1 som basispunkt og D1 som mål.
 
 ## Topunktsjustering (flytting + rotasjon + valgfri skalering)
 
@@ -66,7 +66,7 @@ Når både S2 og D2 er plassert:
 | Tast | Handling |
 |-----|--------|
 | `Enter` / `Space` | Bekreft markering og gå videre til S1-fasen |
-| `Enter` (ved S2-steget) | Hopp over rotasjon — bruk kun flytting med S1 og D1 |
+| `Enter` / `Space` (ved S2-steget) | Hopp over rotasjon — bruk kun flytting med S1 og D1 |
 | `Y` | Bruk justeringen med skalering |
 | `N` / `Enter` (ved skaleringsspørsmålet) | Bruk justeringen uten skalering |
 | `Escape` | Mens du plasserer punkter: forkast dem og gå tilbake til markeringsfasen; uten noe markert: avbryt kommandoen |
