@@ -16,7 +16,7 @@ The `trim` command removes the portion of a [Line](../line/), [Arc](../arc/), [C
 2. **Hover over the segment** you want to remove — a preview highlights exactly the portion that will be cut.
 3. **Click** to remove that segment.
 
-The command stays active after each trim, so you can continue hovering and clicking to cut more segments — on the same entity or a different one. Press **Escape** to exit.
+The command stays active after each trim, so you can continue hovering and clicking to cut more segments — on the same entity or a different one. Press **Enter**, **Space**, or **Escape** to exit.
 
 ```
   Before:                     After trimming middle segment:
@@ -48,6 +48,7 @@ The command projects the cursor position onto the hovered entity and finds all i
 
 | Key | Action |
 |-----|--------|
+| `Enter` / `Space` | Exit trim mode |
 | `Escape` | Exit trim mode |
 
 ## Supported entities

@@ -15,7 +15,7 @@ The `hatch` command fills the region enclosing a picked point with a pattern. Th
 1. Type `hatch` in the terminal or click the **Hatch** toolbar button (the swatch icon).
 2. **Click a point** inside the region you want filled.
 3. The command stays active, so keep clicking to fill more areas — each pick creates its own `Hatch` entity.
-4. Press **Escape** when you're done.
+4. Press **Enter**, **Space**, or **Escape** when you're done.
 
 ```
   ┌─────────────┐        ┌─────────────┐
@@ -24,6 +24,13 @@ The `hatch` command fills the region enclosing a picked point with a pattern. Th
   │             │        │▓▓▓▓▓▓▓▓▓▓▓▓▓│   boundary; the circle
   └─────────────┘        └─────────────┘   is left as an island
 ```
+
+## Keyboard reference
+
+| Key | Action |
+|-----|--------|
+| `Enter` / `Space` | Finish the Hatch command |
+| `Escape` | Finish the Hatch command (same as Enter/Space) |
 
 ## What can bound a region
 

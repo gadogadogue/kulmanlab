@@ -85,7 +85,7 @@ Instead of clicking, type an exact position for any vertex:
 | `0`–`9`, `.`, `-` | Start X coordinate entry, or edge-length entry while angle-locked |
 | `,` | Lock X and move to Y entry |
 | `Backspace` | Delete last typed character |
-| `Enter` | Confirm a typed coordinate or length; with 3+ vertices and no pending entry, closes the polygon |
+| `Enter` / `Space` | Confirm a typed coordinate or length (Enter only); with 3+ vertices and no pending entry, closes the polygon |
 | `Escape` | While picking vertices, discard them and restart at the first point; once the result is shown, dismiss it and exit |
 
 ## Notes

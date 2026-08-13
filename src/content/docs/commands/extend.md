@@ -18,7 +18,7 @@ Only entities with an actual endpoint can be extended. A [Circle](../circle/) an
 2. **Hover near one end** of the entity you want to extend — the preview shows it extended to the nearest boundary in that direction.
 3. **Click** to apply the extension.
 
-The command stays active after each extension, so you can continue hovering and clicking to extend more entities. Press **Escape** to exit.
+The command stays active after each extension, so you can continue hovering and clicking to extend more entities. Press **Enter**, **Space**, or **Escape** to exit.
 
 ```
   Before:                      After:
@@ -52,6 +52,7 @@ All other types (Line, Arc, Circle, Ellipse, Polyline, Dimension) serve as valid
 
 | Key | Action |
 |-----|--------|
+| `Enter` / `Space` | Exit extend mode |
 | `Escape` | Exit extend mode |
 
 ## Supported entities

@@ -20,7 +20,7 @@ Supported entity types: **Line, Circle, Arc, Ellipse, Polyline** (including Rect
 4. **Move the cursor** to the side where the copy should appear — a live preview follows.
 5. **Click** to place the offset copy.
 
-After each placement the command returns to step 3 at the **same distance**, ready for the next offset. Press **Escape** to reset back to the distance-entry step.
+After each placement the command returns to step 3 at the **same distance**, ready for the next offset. Press **Enter** or **Space** while waiting to pick the next entity to finish the command, or **Escape** to reset back to the distance-entry step.
 
 ```
   Distance: 10
@@ -47,7 +47,8 @@ For **Circle**, **Arc**, and **Ellipse**: if the inward offset would reduce any 
 |-----|--------|
 | `0`–`9`, `.` | Append digit to the distance value |
 | `Backspace` | Delete last typed character |
-| `Enter` / `Space` | Confirm the typed distance and advance to entity selection |
+| `Enter` / `Space` (while typing a distance) | Confirm the typed distance and advance to entity selection |
+| `Enter` / `Space` (while idle, waiting to pick the next entity) | Finish the Offset command |
 | `Escape` | Reset to distance-entry step |
 
 ## Workflow note

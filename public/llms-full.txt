@@ -319,7 +319,7 @@ The `align` command repositions selected entities using one or two pairs of sour
 
 ## Two ways to start
 
-**Pre-select, then align**: select entities, type `align` (or click the toolbar button), click S1, click D1, click S2 (or Enter for translate-only), click D2, then answer the scale prompt.
+**Pre-select, then align**: select entities, type `align` (or click the toolbar button), click S1, click D1, click S2 (or Enter/Space for translate-only), click D2, then answer the scale prompt.
 
 **Activate, then select**: type `align` with nothing selected, select objects, confirm with Enter/Space, then continue with S1 → D1 → S2 → D2 → scale prompt.
 
@@ -327,7 +327,7 @@ The terminal only needs enough letters to be unambiguous — typing `al` and pre
 
 ## One-point alignment (translate only)
 
-After D1 is placed, press Enter instead of clicking a second source point. The selection is translated by the S1→D1 vector — no rotation or scaling — identical to a Move using S1 as the base point and D1 as the destination.
+After D1 is placed, press Enter or Space instead of clicking a second source point. The selection is translated by the S1→D1 vector — no rotation or scaling — identical to a Move using S1 as the base point and D1 as the destination.
 
 ## Two-point alignment (translate + rotate + optional scale)
 
@@ -343,7 +343,7 @@ Pressing a key at the scale prompt applies the alignment immediately — there's
 | Key | Action |
 |-----|--------|
 | `Enter` / `Space` | Confirm selection and advance to the S1 phase |
-| `Enter` (at the S2 step) | Skip rotation — apply a translate-only alignment using S1 and D1 |
+| `Enter` / `Space` (at the S2 step) | Skip rotation — apply a translate-only alignment using S1 and D1 |
 | `Y` | Apply the alignment with scaling |
 | `N` / `Enter` (at the scale prompt) | Apply the alignment without scaling |
 | `Escape` | While picking points: discard them and return to the selection phase; with nothing selected: cancel the command |
@@ -541,7 +541,7 @@ The `area` command measures the enclosed area and perimeter of a polygon defined
 1. Type `area` in the terminal or click the **Area** toolbar button (bottom row of the Measure panel).
 2. **Click the first point**, or type `X,Y` and press **Enter** for an exact coordinate.
 3. **Click each additional vertex** in order around the shape. Coordinate entry works at every step.
-4. Once at least **3 points** are placed, press **Enter** (with no coordinate or distance entry pending) to close the polygon and compute the result.
+4. Once at least **3 points** are placed, press **Enter** or **Space** (with no coordinate or distance entry pending) to close the polygon and compute the result.
 5. The terminal prints `Area: <value>  Perimeter: <value>`, and the closed polygon — fill, outline, and vertex grips — stays highlighted on the canvas.
 6. **Click anywhere, press any key, or press `Escape`** to dismiss the result and end the command.
 
@@ -551,7 +551,7 @@ After the first vertex is placed, moving toward one of the configured angle-trac
 
 ## Closing the polygon
 
-Enter only closes the shape once 3 or more vertices are placed. The edge from the last vertex back to the first is added automatically and counted in both the area and the perimeter. Points may be placed in any order (clockwise or counterclockwise) — the result is identical either way.
+Enter or Space only close the shape once 3 or more vertices are placed. The edge from the last vertex back to the first is added automatically and counted in both the area and the perimeter. Points may be placed in any order (clockwise or counterclockwise) — the result is identical either way.
 
 ## Area vs Distance vs Angle
 
@@ -571,7 +571,7 @@ Enter only closes the shape once 3 or more vertices are placed. The edge from th
 | `0`–`9`, `.`, `-` | Start X coordinate entry, or edge-length entry while angle-locked |
 | `,` | Lock X and move to Y entry |
 | `Backspace` | Delete last typed character |
-| `Enter` | Confirm a typed coordinate or length; with 3+ vertices and no pending entry, closes the polygon |
+| `Enter` / `Space` | Confirm a typed coordinate or length (Enter only); with 3+ vertices and no pending entry, closes the polygon |
 | `Escape` | While picking vertices, discard them and restart at the first point; once the result is shown, dismiss it and exit |
 
 ## Notes
@@ -1552,17 +1552,17 @@ Use **Export** when you need an editable file. Use [Print](./print) when you nee
 
 # Extend
 
-The `extend` command stretches the nearest endpoint of a [Line](./line) to the closest intersection it would form with another entity in the drawing. Hover near the endpoint you want to extend — a preview shows the extended line — then click to apply.
+The `extend` command stretches the nearest endpoint of a hovered [Line](./line), [Arc](./arc), [Ellipse](./ellipse), or open [Polyline](./polyline) to the closest intersection it would form with another entity in the drawing. Hover near the endpoint you want to extend — a preview shows the extended entity — then click to apply.
 
-Extend works on **Line entities only**. The boundaries the line extends toward can be any other entity type except Text, Mtext, Multileader, and Spline.
+Only entities with an actual endpoint can be extended. A [Circle](./circle) and a full (360°) Ellipse are always closed shapes with no endpoint, so they can never be extended — same for a closed Polyline or Rectangle. A partial Ellipse (an elliptical arc) and an Arc do have endpoints and extend the same way a Line does.
 
-## Extending a line
+## Extending an entity
 
 1. Type `extend` in the terminal or click the **Extend** toolbar button.
-2. **Hover near one end of a line** — the preview shows the line extended to the nearest boundary in that direction.
+2. **Hover near one end** of the entity you want to extend — the preview shows it extended to the nearest boundary in that direction.
 3. **Click** to apply the extension.
 
-The command stays active after each extension so you can extend multiple lines in sequence. Press **Escape** to exit.
+The command stays active after each extension, so you can continue hovering and clicking to extend more entities. Press **Enter**, **Space**, or **Escape** to exit.
 
 ```
   Before:                      After:
@@ -1573,18 +1573,18 @@ The command stays active after each extension so you can extend multiple lines i
 
 ## How the endpoint is chosen
 
-The command looks at which endpoint the cursor is closer to:
+The command looks at which end the cursor is closer to:
 
-- Cursor **nearer to the end point** → the end is extended forward along the line direction.
-- Cursor **nearer to the start point** → the start is extended backward (in the opposite direction).
+- **Line and open Polyline** — cursor nearer the end point extends the end forward; cursor nearer the start point extends the start backward.
+- **Arc and partial Ellipse** — cursor nearer one angular end grows the arc in that direction, sweeping around the same center and radius (or the same ellipse shape) until it reaches the next boundary.
 
-A ray is cast from the chosen endpoint along the line direction, and the **closest intersection** along that ray with any other entity (excluding the line itself and the ignored types) becomes the new endpoint.
+A ray — or, for Arc and Ellipse, the entity's own underlying circle or curve — is cast from the chosen end, and the **closest intersection** with any other entity (excluding the entity itself and the ignored types) becomes the new endpoint.
 
 If no intersection is found in that direction, no preview appears and clicking does nothing.
 
 ## Boundary exclusions
 
-The following entity types are ignored as boundaries — a line does not extend to meet them:
+The following entity types are ignored as boundaries — an entity does not extend to meet them:
 
 - Text / Mtext
 - Multileader
@@ -1596,6 +1596,7 @@ All other types (Line, Arc, Circle, Ellipse, Polyline, Dimension) serve as valid
 
 | Key | Action |
 |-----|--------|
+| `Enter` / `Space` | Exit extend mode |
 | `Escape` | Exit extend mode |
 
 ## Supported entities
@@ -1603,18 +1604,21 @@ All other types (Line, Arc, Circle, Ellipse, Polyline, Dimension) serve as valid
 | Entity | Can be extended? |
 |--------|----------------|
 | Line | Yes |
-| Arc, Circle, Ellipse | No |
-| Polyline / Rectangle | No |
+| Arc | Yes |
+| Ellipse | Yes — only if it's already a partial arc; a full ellipse has no endpoint |
+| Circle | No — always a closed shape with no endpoint |
+| Polyline (open) | Yes |
+| Polyline (closed) / Rectangle | No — always a closed shape with no endpoint |
 | Text, Spline, Dimension, Leader | No |
 
 ## Extend vs Trim
 
 | | Extend | Trim |
 |---|--------|------|
-| What it does | Stretches a line endpoint to a boundary | Removes a segment of a line |
+| What it does | Stretches an entity's endpoint to a boundary | Removes a segment of an entity |
 | Trigger | Hover near the endpoint to stretch | Hover over the segment to cut |
-| Result | Line endpoint moves outward | Line splits or shortens |
-| Both | Lines only | Lines only |
+| Result | Endpoint moves outward | Entity splits or shortens |
+| Supported entities | Line, Arc, Ellipse, Polyline | Line, Arc, Circle, Ellipse, Polyline |
 
 ---
 
@@ -1844,7 +1848,14 @@ The `hatch` command fills the region enclosing a picked point with a pattern. Th
 1. Type `hatch` or click the **Hatch** toolbar button (the swatch icon).
 2. Click a point inside the region to fill.
 3. The command stays active — keep clicking to fill more areas, each pick creating its own `Hatch` entity.
-4. Press **Escape** when done.
+4. Press **Enter**, **Space**, or **Escape** when done.
+
+## Keyboard reference
+
+| Key | Action |
+|-----|--------|
+| `Enter` / `Space` | Finish the Hatch command |
+| `Escape` | Finish the Hatch command (same as Enter/Space) |
 
 ## What can bound a region
 
@@ -1964,10 +1975,13 @@ Click the **Help** toolbar button or type `help` in the terminal. The help panel
 | Shortcut | Action |
 |----------|--------|
 | Type | Start typing a command name — suggestions appear on the canvas |
+| `Tab` | Cycle through the suggestion list |
 | `Delete` | Delete all selected entities |
 | `Enter` / `Space` | Confirm command or input |
 | `Enter` / `Space` (idle) | Repeat the last used command |
 | `Escape` | Cancel the current command or clear selection |
+
+Command suggestions match letters anywhere in a command's name, not just the start (typing `mp` suggests **M**atch **P**roperties), ranked first by match quality and then by how often you've actually used each command. The list is clickable with the mouse, scrolls to keep the selected suggestion in view while cycling with Tab, is capped at around 10 rows, and highlights just the matched letters in place within each suggestion rather than overlaying a full ghost-text completion.
 
 ### Selection
 | Shortcut | Action |
@@ -1976,6 +1990,8 @@ Click the **Help** toolbar button or type `help` in the terminal. The help panel
 | `Drag →` | Select only entities **fully inside** the drag area |
 | `Drag ←` | Select any entity that **touches** the drag area |
 | `Left click grip` | Edit a vertex or endpoint directly |
+
+Selecting many entities at once shows a filter icon in the property panel header — see [Selection Filter](./selection-filter) for narrowing a large selection by Type, Layer, Color, Lineweight, or Linetype before bulk-editing.
 
 ### Drawing tips
 - **Snap points** — the cursor snaps to nearby entity endpoints automatically.
@@ -2737,7 +2753,7 @@ Supported entity types: **Line, Circle, Arc, Ellipse, Polyline** (including Rect
 4. **Move the cursor** to the side where the copy should appear — a live preview follows.
 5. **Click** to place the offset copy.
 
-After each placement the command returns to step 3 at the **same distance**, ready for the next offset. Press **Escape** to reset back to the distance-entry step.
+After each placement the command returns to step 3 at the **same distance**, ready for the next offset. Press **Enter** or **Space** while waiting to pick the next entity to finish the command, or **Escape** to reset back to the distance-entry step.
 
 ```
   Distance: 10
@@ -2764,7 +2780,8 @@ For **Circle**, **Arc**, and **Ellipse**: if the inward offset would reduce any 
 |-----|--------|
 | `0`–`9`, `.` | Append digit to the distance value |
 | `Backspace` | Delete last typed character |
-| `Enter` / `Space` | Confirm the typed distance and advance to entity selection |
+| `Enter` / `Space` (while typing a distance) | Confirm the typed distance and advance to entity selection |
+| `Enter` / `Space` (while idle, waiting to pick the next entity) | Finish the Offset command |
 | `Escape` | Reset to distance-entry step |
 
 ## Workflow note
@@ -2991,7 +3008,7 @@ The window has two panels:
 | Control | Description |
 |---------|-------------|
 | **Change Area** | Crop to a custom rectangle on the canvas (see below) |
-| **Monochrome** toggle | Convert all colored lines to black — on by default for clean print output |
+| **Monochrome** toggle | Convert all colored lines to black — on by default for clean print output. Rendered as a single pass over the finished image rather than a per-entity effect, so it stays fast even on large plots — a 90,000-entity drawing renders in around 70ms |
 | **Format** dropdown | PNG, JPEG, WebP, or PDF |
 | **Export** button | Generate and download the file |
 
@@ -3339,7 +3356,7 @@ The `splinecv` command draws a **cubic B-spline** by placing control vertices (C
 
 1. Type `splinecv` in the terminal or click the **Spline CV** toolbar button.
 2. **Click to place control vertices** — each click adds a vertex. The terminal shows the current count.
-3. Press **Enter** to finish (at least 2 vertices required).
+3. Press **Enter** or **Space** to finish (at least 2 vertices required).
 
 ```
   CV ●         ● CV
@@ -3355,7 +3372,7 @@ The live preview updates as you move the cursor after each vertex, showing how t
 
 | Key | Action |
 |-----|--------|
-| `Enter` | Finish and commit the spline (≥ 2 vertices required) |
+| `Enter` / `Space` | Finish and commit the spline (≥ 2 vertices required) |
 | `Escape` | Discard all vertices and exit |
 
 There is no typed length input — all vertices are click-only.
@@ -3434,7 +3451,7 @@ The `splinefit` command draws a cubic spline that passes through every point you
 
 1. Type `splinefit` in the terminal or click the **Spline Fit** toolbar button.
 2. **Click to place fit points** — the curve will pass through each one. The terminal shows the current count.
-3. Press **Enter** to finish (at least 2 points required).
+3. Press **Enter** or **Space** to finish (at least 2 points required).
 
 ```
   ●──────●──────●──────●  ← curve passes exactly through each click
@@ -3447,7 +3464,7 @@ The live preview shows the current interpolated curve as you move the cursor, in
 
 | Key | Action |
 |-----|--------|
-| `Enter` | Finish and commit the spline (≥ 2 points required) |
+| `Enter` / `Space` | Finish and commit the spline (≥ 2 points required) |
 | `Escape` | Discard all points and exit |
 
 There is no typed length input — all fit points are click-only.
@@ -3626,17 +3643,15 @@ Text labels are stored as **MTEXT** entities in the DXF file. Bold and italic ar
 
 # Trim
 
-The `trim` command removes the portion of a [Line](./line) that lies between two adjacent intersection points, splitting the line into one or two shorter segments. The segment to cut is determined by the cursor position — hover over the part you want removed and click to trim it.
+The `trim` command removes the portion of a [Line](./line), [Arc](./arc), [Circle](./circle), [Ellipse](./ellipse), or [Polyline](./polyline) that lies between two adjacent intersection points, splitting the entity into one or more remaining pieces. The segment to cut is determined by the cursor position — hover over the part you want removed and click to trim it.
 
-Trim works on **Line entities only**. For arcs, circles, polylines, and other entity types use [Delete](./delete) or grip editing instead.
-
-## Trimming a line
+## Trimming an entity
 
 1. Type `trim` in the terminal or click the **Trim** toolbar button.
-2. **Hover over the line segment** you want to remove — a red preview highlights exactly the portion that will be cut.
+2. **Hover over the segment** you want to remove — a preview highlights exactly the portion that will be cut.
 3. **Click** to remove that segment.
 
-The command stays active after each trim, so you can continue hovering and clicking to cut more segments. Press **Escape** to exit.
+The command stays active after each trim, so you can continue hovering and clicking to cut more segments — on the same entity or a different one. Press **Enter**, **Space**, or **Escape** to exit.
 
 ```
   Before:                     After trimming middle segment:
@@ -3648,17 +3663,27 @@ The command stays active after each trim, so you can continue hovering and click
 
 ## How the trim segment is determined
 
-The command projects the cursor position onto the hovered line and finds all intersection points the line has with other entities. These intersection parameters divide the line into segments. The segment whose interval contains the cursor's projection is highlighted and will be removed on click.
+The command projects the cursor position onto the hovered entity and finds all intersection points it has with other entities. These intersections divide the entity into segments — for a Line, Arc, or open Polyline, the entity's own endpoints act as additional fixed boundaries. A full Circle or Ellipse, or a closed Polyline (including a Rectangle), has no endpoints of its own, so at least two intersection points are needed before it can be trimmed at all. The segment whose interval contains the cursor's projection is highlighted and will be removed on click.
 
-- If the cursor is **before the first intersection**: that leading portion of the line is removed.
-- If the cursor is **between two intersections**: that middle portion is removed; the line splits into two.
-- If the cursor is **after the last intersection**: that trailing portion is removed.
-- If the line has **no intersections** with any other entity: no preview is shown and clicking does nothing.
+- **Line, Arc, and open Polyline** — the removed segment can be the leading portion, a middle portion (splitting the entity into two pieces), or the trailing portion.
+- **Circle, Ellipse, and closed Polyline/Rectangle** — since there is no fixed start or end, only the arc between two *intersection points* can be removed. With fewer than two intersections, no preview appears and clicking does nothing.
+
+## What trimming produces
+
+| Entity | Result after trimming |
+|--------|------------------------|
+| Line | Up to two shorter Line entities |
+| Arc | Up to two shorter Arc entities |
+| Circle | One [Arc](./arc) entity — the circle's closed shape is gone |
+| Ellipse | One Ellipse entity with a start and end angle |
+| Polyline (open) | Up to two shorter Polyline entities |
+| Polyline (closed) / Rectangle | One open Polyline entity |
 
 ## Keyboard reference
 
 | Key | Action |
 |-----|--------|
+| `Enter` / `Space` | Exit trim mode |
 | `Escape` | Exit trim mode |
 
 ## Supported entities
@@ -3666,20 +3691,23 @@ The command projects the cursor position onto the hovered line and finds all int
 | Entity | Can be trimmed? |
 |--------|----------------|
 | Line | Yes |
-| Arc, Circle, Ellipse | No |
-| Polyline / Rectangle | No |
+| Arc | Yes |
+| Circle | Yes — requires 2 or more intersection points |
+| Ellipse | Yes — requires 2 or more intersection points |
+| Polyline (open) | Yes |
+| Polyline (closed) / Rectangle | Yes — requires 2 or more intersection points |
 | Text, Spline, Dimension, Leader | No |
 
-The entities used as **cutting boundaries** can be any type — only the line being trimmed must be a Line entity.
+The entities used as **cutting boundaries** can be a Line, Arc, Circle, Ellipse, or Polyline.
 
 ## Trim vs Extend
 
 | | Trim | Extend |
 |---|------|--------|
-| What it does | Removes a segment of a line | Stretches a line endpoint to a boundary |
+| What it does | Removes a segment of an entity | Stretches a line endpoint to a boundary |
 | Trigger | Hover over the segment to cut | Hover near the endpoint to extend |
-| Result | Line splits or shortens | Line endpoint moves to the boundary |
-| Both | Lines only | Lines only |
+| Result | Entity splits or shortens | Line endpoint moves to the boundary |
+| Supported entities | Line, Arc, Circle, Ellipse, Polyline | Line, Arc, Ellipse, Polyline |
 
 ---
 
@@ -4162,3 +4190,24 @@ When a command has locked the cursor to an angle-tracking ray (the ANGL toggle),
 All pins are cleared when a new command fires, when Escape is pressed, when the Pins toggle is switched off, or when switching between model and paper space. Within a single command you can pin, draw, pin again — pins survive every click of a multi-point command such as Polyline.
 
 ---
+
+# Selection Filter
+
+Selecting many entities opens the property panel in its multi-selection view ("Selection (N)"). A filter icon next to the close button opens a popup that narrows the selection down by property before bulk-editing.
+
+## Opening the filter
+
+Select several entities (drag a box, Shift-click, or Ctrl+A), then click the filter icon (funnel) in the property panel header. A popup opens below it with a checklist for each property that actually varies across the selection.
+
+## Facets
+
+Up to five facets are shown, each built live from the current selection: **Type** (entity type name), **Layer** (with a color swatch), **Color** (ACI index), **Lineweight**, and **Linetype**. A facet only appears if the selection contains more than one distinct value for it — ten lines all on the same layer show no Layer facet, since checking it couldn't narrow anything. Entities that don't carry a given property at all (Hatch and Text have no lineweight or linetype) aren't counted toward that facet and are never excluded by it.
+
+## Narrowing the selection
+
+Checking values in a facet narrows the selection to entities matching all checked facets — an entity must match at least one checked value in every facet you've touched. Each facet's own options and counts reflect what the *other* checked facets have already narrowed to, so a facet never hides its own checked values. The result count updates live, and the **canvas selection itself is narrowed to match** — filtering actually deselects non-matching entities rather than just changing what's displayed, so the filtered result is ready for bulk editing immediately.
+
+## Related
+
+- [Match Properties](./match-properties) — copy properties from one entity to others, once narrowed down
+- [LayerIsolate](./layer-isolate) — a layer-wide alternative when isolating by layer alone, independent of the current selection

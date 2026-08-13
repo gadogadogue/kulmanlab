@@ -7,6 +7,17 @@ export type Release = {
 
 export const releases: Release[] = [
   {
+    version: "2026.08.13.1df92de",
+    date: "August 13, 2026",
+    title: "Command suggestions, selection filtering & finish-with-Enter polish",
+    highlights: [
+      "Command suggestions now match letters anywhere in a command's name, not just the start, ranked by match quality and then by how often you actually use each command; the list is mouse-clickable, scrolls to keep the selected suggestion in view while cycling with Tab, caps around 10 rows, and highlights just the matched letters in place instead of overlaying a full ghost word",
+      "New: selecting many entities shows a filter icon in the property panel header — opens a popup with live checklists for Type, Layer, Color, Lineweight, and Linetype built from what's actually in the selection, so a large mixed pick can be narrowed down before bulk-editing",
+      "Space/Enter now finishes Hatch, Spline (CV and Fit), Offset, Trim, Extend, Area, and Align, matching how the rest of the app already worked; fixed a Trim bug where a full ellipse/circle cut's rounded stored angle could sit just outside a hatch's boundary tolerance and leave the traced loop unclosed",
+      "Monochrome print and export rendering is dramatically faster on large plots — replaced a per-shape canvas filter with a single pass over the finished image; a 90,000-entity file that previously wouldn't finish in 30 seconds now renders in about 70ms",
+    ],
+  },
+  {
     version: '2026.08.11.fa6fa31',
     date: 'August 11, 2026',
     title: 'Hatch: pick-a-region fill, pattern library & grip editing',
@@ -396,6 +407,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   en: releases.map(r => ({ title: r.title, highlights: r.highlights })),
   de: [
     {
+      title: "Intelligentere Befehlsvorschläge, Auswahlfilter & Fertigstellen mit Enter",
+      highlights: [
+        "Befehlsvorschläge berücksichtigen jetzt Buchstaben an beliebiger Stelle im Befehlsnamen, nicht nur am Anfang, sortiert nach Trefferqualität und dann danach, wie oft Sie den Befehl tatsächlich verwenden; die Liste ist mit der Maus anklickbar, scrollt beim Durchschalten mit Tab, damit die ausgewählte Vorschau sichtbar bleibt, ist auf rund 10 Zeilen begrenzt und hebt nur die getroffenen Buchstaben direkt im Text hervor, statt ein komplettes Geistertextwort zu überlagern",
+        "Neu: Bei der Auswahl vieler Entitäten erscheint ein Filtersymbol in der Kopfzeile des Eigenschaftenfensters — öffnet ein Popup mit live aktualisierten Checklisten für Type, Layer, Color, Lineweight und Linetype, basierend auf dem, was tatsächlich in der Auswahl enthalten ist, um eine große gemischte Auswahl vor der Stapelbearbeitung einzugrenzen",
+        "Leertaste/Enter beenden jetzt Hatch, Spline (CV und Fit), Offset, Trim, Extend, Area und Align, entsprechend der bisherigen Konvention im Rest der App; ein Trim-Fehler wurde behoben, bei dem der gerundete gespeicherte Winkel eines vollständigen Ellipsen-/Kreisschnitts knapp außerhalb der Grenztoleranz eines Hatch liegen und die nachverfolgte Schleife offen lassen konnte",
+        "Das monochrome Rendering beim Drucken und Exportieren ist bei großen Plots deutlich schneller — ein Filter pro Form wurde durch einen einzigen Durchgang über das fertige Bild ersetzt; eine Datei mit 90.000 Entitäten, die zuvor nicht innerhalb von 30 Sekunden fertig wurde, rendert jetzt in rund 70 ms",
+      ],
+    },
+    {
       title: 'Hatch: Flächenfüllung per Klick, Musterbibliothek & Griff-Bearbeitung',
       highlights: [
         'Neuer Hatch-Befehl — klicken Sie in eine beliebige geschlossene Fläche (Line, Arc, Circle, Ellipse und Polyline, die sich an ihren Enden treffen, umschließen eine ebenso wie eine geschlossene Lwpolyline) und sie wird mit einem Muster gefüllt; alles Geschlossene darin bleibt als Insel ausgespart',
@@ -727,6 +747,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   es: [
+    {
+      title: "Sugerencias de comandos más inteligentes, filtro de selección y finalizar con Enter",
+      highlights: [
+        "Las sugerencias de comandos ahora coinciden con letras en cualquier parte del nombre del comando, no solo al principio, clasificadas por calidad de coincidencia y luego por la frecuencia de uso real de cada comando; la lista es clicable con el ratón, se desplaza para mantener visible la sugerencia seleccionada al recorrerla con Tab, se limita a unas 10 filas, y resalta solo las letras coincidentes en su lugar en vez de superponer una palabra fantasma completa",
+        "Nuevo: al seleccionar muchas entidades aparece un icono de filtro en la cabecera del panel de propiedades — abre una ventana emergente con listas de verificación en vivo para Type, Layer, Color, Lineweight y Linetype, construidas a partir de lo que realmente hay en la selección, para acotar una selección mixta grande antes de la edición masiva",
+        "Espacio/Enter ahora finalizan Hatch, Spline (CV y Fit), Offset, Trim, Extend, Area y Align, igual que en el resto de la aplicación; se corrigió un error de Trim en el que el ángulo almacenado y redondeado de un corte de elipse/círculo completo podía quedar justo fuera de la tolerancia del contorno de un Hatch, dejando el bucle sin cerrar",
+        "El renderizado monocromo de impresión y exportación es mucho más rápido en planos grandes — se sustituyó un filtro de canvas por forma por un único paso sobre la imagen final; un archivo con 90.000 entidades que antes no terminaba en 30 segundos ahora se renderiza en unos 70 ms",
+      ],
+    },
     {
       title: 'Hatch: relleno de una región con un clic, biblioteca de patrones y edición por pinzamientos',
       highlights: [
@@ -1060,6 +1089,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   fr: [
     {
+      title: "Suggestions de commandes plus intelligentes, filtre de sélection et validation avec Entrée",
+      highlights: [
+        "Les suggestions de commandes correspondent désormais à des lettres n'importe où dans le nom d'une commande, pas seulement au début, classées par qualité de correspondance puis par fréquence d'utilisation réelle ; la liste est cliquable à la souris, défile pour garder la suggestion sélectionnée visible lors du cycle avec Tab, se limite à environ 10 lignes, et met en surbrillance uniquement les lettres correspondantes à leur place au lieu de superposer un mot fantôme complet",
+        "Nouveau : la sélection de nombreuses entités affiche une icône de filtre dans l'en-tête du panneau de propriétés — ouvre une fenêtre avec des listes à cocher en direct pour Type, Layer, Color, Lineweight et Linetype, construites à partir de ce qui se trouve réellement dans la sélection, pour affiner une sélection mixte importante avant une modification groupée",
+        "Espace/Entrée terminent désormais Hatch, Spline (CV et Fit), Offset, Trim, Extend, Area et Align, comme le reste de l'application ; correction d'un bug de Trim où l'angle stocké et arrondi d'une coupe d'ellipse/cercle complet pouvait se situer juste en dehors de la tolérance de contour d'un Hatch, laissant la boucle non fermée",
+        "Le rendu monochrome à l'impression et à l'export est nettement plus rapide sur les grands plans — un filtre canvas par forme a été remplacé par une seule passe sur l'image finale ; un fichier de 90 000 entités qui ne se terminait pas en 30 secondes se rend désormais en environ 70 ms",
+      ],
+    },
+    {
       title: 'Hatch : remplissage d\'une zone en un clic, bibliothèque de motifs et édition par poignées',
       highlights: [
         'Nouvelle commande Hatch — cliquez à l\'intérieur de n\'importe quelle zone fermée (Line, Arc, Circle, Ellipse et Polyline se rejoignant par leurs extrémités la délimitent tout comme une Lwpolyline fermée) et elle se remplit d\'un motif ; tout élément fermé situé à l\'intérieur est laissé de côté comme un îlot',
@@ -1390,6 +1428,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   it: [
+    {
+      title: "Suggerimenti comandi più intelligenti, filtro selezione e conferma con Invio",
+      highlights: [
+        "I suggerimenti dei comandi ora trovano corrispondenze con lettere in qualsiasi punto del nome del comando, non solo all'inizio, classificati per qualità della corrispondenza e poi per frequenza d'uso reale; l'elenco è cliccabile con il mouse, scorre per mantenere visibile il suggerimento selezionato durante il ciclo con Tab, è limitato a circa 10 righe ed evidenzia solo le lettere corrispondenti al loro posto invece di sovrapporre un'intera parola fantasma",
+        "Novità: selezionando molte entità appare un'icona di filtro nell'intestazione del pannello proprietà — apre un popup con elenchi di controllo in tempo reale per Type, Layer, Color, Lineweight e Linetype, costruiti da ciò che è effettivamente presente nella selezione, per restringere una selezione mista ampia prima della modifica in blocco",
+        "Spazio/Invio ora terminano Hatch, Spline (CV e Fit), Offset, Trim, Extend, Area e Align, come il resto dell'app; corretto un bug di Trim in cui l'angolo memorizzato e arrotondato di un taglio completo di ellisse/cerchio poteva trovarsi appena fuori dalla tolleranza del contorno di un Hatch, lasciando il ciclo non chiuso",
+        "Il rendering monocromatico in stampa ed esportazione è molto più veloce sui plot di grandi dimensioni — un filtro canvas per forma è stato sostituito da un unico passaggio sull'immagine finale; un file da 90.000 entità che prima non terminava in 30 secondi ora viene renderizzato in circa 70 ms",
+      ],
+    },
     {
       title: 'Hatch: riempimento di un\'area con un clic, libreria di tratteggi ed editing con maniglie',
       highlights: [
@@ -1723,6 +1770,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   pt: [
     {
+      title: "Sugestões de comandos mais inteligentes, filtro de seleção e finalizar com Enter",
+      highlights: [
+        "As sugestões de comando agora correspondem a letras em qualquer parte do nome do comando, não apenas no início, classificadas pela qualidade da correspondência e depois pela frequência real de uso; a lista é clicável com o mouse, rola para manter a sugestão selecionada visível ao alternar com Tab, tem um limite de cerca de 10 linhas e destaca apenas as letras correspondentes no lugar, em vez de sobrepor uma palavra fantasma inteira",
+        "Novo: selecionar muitas entidades agora mostra um ícone de filtro no cabeçalho do painel de propriedades — abre um popup com listas de verificação em tempo real para Type, Layer, Color, Lineweight e Linetype, construídas a partir do que realmente está na seleção, para restringir uma seleção mista grande antes da edição em massa",
+        "Espaço/Enter agora finalizam Hatch, Spline (CV e Fit), Offset, Trim, Extend, Area e Align, como o resto do aplicativo; corrigido um bug do Trim em que o ângulo armazenado e arredondado de um corte completo de elipse/círculo podia ficar um pouco fora da tolerância do contorno de um Hatch, deixando o laço não fechado",
+        "A renderização monocromática de impressão e exportação está muito mais rápida em plots grandes — um filtro de canvas por forma foi substituído por uma única passagem sobre a imagem final; um arquivo com 90.000 entidades que antes não terminava em 30 segundos agora renderiza em cerca de 70 ms",
+      ],
+    },
+    {
       title: 'Hatch: preenchimento de uma região com um clique, biblioteca de padrões e edição por alças',
       highlights: [
         'Novo comando Hatch — clique dentro de qualquer região fechada (Line, Arc, Circle, Ellipse e Polyline que se encontram nas extremidades a delimitam assim como uma Lwpolyline fechada) e ela é preenchida com um padrão; qualquer elemento fechado dentro dela é deixado como uma ilha',
@@ -2054,6 +2110,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   uk: [
+    {
+      title: "Розумніші підказки команд, фільтр виділення й завершення клавішею Enter",
+      highlights: [
+        "Підказки команд тепер збігаються з літерами будь-де в назві команди, а не лише на початку, і сортуються спершу за якістю збігу, а потім за тим, як часто ви фактично використовуєте команду; список можна клікати мишею, він прокручується, щоб утримувати вибрану підказку в полі зору під час перемикання клавішею Tab, обмежений приблизно 10 рядками й підсвічує лише збіжні літери на своєму місці замість накладання цілого примарного слова",
+        "Нове: при виділенні багатьох об'єктів у заголовку панелі властивостей з'являється значок фільтра — відкриває спливаюче вікно з живими списками прапорців для Type, Layer, Color, Lineweight і Linetype, побудованими на основі того, що справді є у виділенні, щоб звузити велике змішане виділення перед масовим редагуванням",
+        "Пробіл/Enter тепер завершують Hatch, Spline (CV і Fit), Offset, Trim, Extend, Area та Align, як і в решті застосунку; виправлено помилку Trim, через яку округлений збережений кут повного розрізу еліпса/кола міг опинитися трохи за межами допуску межі Hatch, залишаючи простежений контур незамкненим",
+        "Монохромний рендеринг під час друку та експорту став значно швидшим на великих кресленнях — фільтр canvas для кожної фігури замінено на один прохід по готовому зображенню; файл із 90 000 об'єктів, який раніше не встигав за 30 секунд, тепер рендериться приблизно за 70 мс",
+      ],
+    },
     {
       title: 'Hatch: заливка області одним клацанням, бібліотека штрихувань і редагування вузлами',
       highlights: [
@@ -2387,6 +2452,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   tr: [
     {
+      title: "Daha akıllı komut önerileri, seçim filtresi ve Enter ile bitirme",
+      highlights: [
+        "Komut önerileri artık yalnızca baştaki değil, komut adının herhangi bir yerindeki harflerle eşleşiyor; önce eşleşme kalitesine, ardından komutu gerçekte ne sıklıkla kullandığınıza göre sıralanıyor. Liste fareyle tıklanabilir, Tab ile döngü yaparken seçili öneriyi görünür tutmak için kayıyor, yaklaşık 10 satırla sınırlı ve tam bir hayalet kelimeyi üst üste bindirmek yerine yalnızca eşleşen harfleri yerinde vurguluyor",
+        "Yeni: birçok varlık seçildiğinde özellik panelinin başlığında bir filtre simgesi görünür — seçimde gerçekte bulunanlardan oluşturulan Type, Layer, Color, Lineweight ve Linetype için canlı onay kutusu listeleri içeren bir açılır pencere açar; böylece toplu düzenlemeden önce büyük ve karışık bir seçim daraltılabilir",
+        "Boşluk/Enter artık Hatch, Spline (CV ve Fit), Offset, Trim, Extend, Area ve Align komutlarını, uygulamanın geri kalanıyla aynı şekilde bitiriyor; tam bir elips/daire kesiminin yuvarlanmış saklanan açısının bir Hatch'in sınır toleransının hemen dışında kalarak izlenen döngünün kapanmamasına yol açabildiği bir Trim hatası düzeltildi",
+        "Büyük planlarda tek renkli baskı ve dışa aktarma render'ı çok daha hızlı — şekil başına canvas filtresi yerine bitmiş görüntü üzerinde tek bir geçiş kullanılıyor; daha önce 30 saniyede tamamlanamayan 90.000 varlıklı bir dosya artık yaklaşık 70 ms'de render ediliyor",
+      ],
+    },
+    {
       title: 'Hatch: tek tıkla bölge doldurma, desen kitaplığı ve tutamaçla düzenleme',
       highlights: [
         'Yeni Hatch komutu — kapalı herhangi bir bölgenin içine tıklayın (Line, Arc, Circle, Ellipse ve uçlarında birleşen Polyline\'lar, tıpkı kapalı bir Lwpolyline gibi bölgeyi sınırlar) ve bölge bir desenle doldurulur; içindeki kapalı her şey ada olarak bırakılır',
@@ -2718,6 +2792,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   zh: [
+    {
+      title: "更智能的命令建议、选择过滤与用 Enter 完成命令",
+      highlights: [
+        "命令建议现在可以匹配命令名称中任意位置的字母，而不仅仅是开头，先按匹配质量排序，再按你实际使用该命令的频率排序；列表可用鼠标点击，用 Tab 循环切换时会自动滚动以保持所选建议可见，最多显示约 10 行，并且只在原位高亮匹配到的字母，而不是叠加一整个幽灵词",
+        "新功能：选中多个实体时，属性面板标题栏会显示一个筛选图标——点击后打开一个弹出窗口，其中包含根据当前选择实际内容生成的 Type、Layer、Color、Lineweight 和 Linetype 实时复选列表，方便在批量编辑前缩小一个庞大混合选择的范围",
+        "空格/Enter 现在可以完成 Hatch、Spline（CV 和 Fit）、Offset、Trim、Extend、Area 和 Align 命令，与应用中其他命令的做法一致；修复了一个 Trim 的错误——完整椭圆/圆裁剪后四舍五入保存的角度可能刚好落在 Hatch 边界容差之外，导致追踪出的环路无法闭合",
+        "大型图纸的单色打印/导出渲染速度大幅提升——用对最终图像的单次处理取代了逐个图形的画布滤镜；一个此前 30 秒都无法完成的 9 万实体文件，现在约 70 毫秒即可渲染完成",
+      ],
+    },
     {
       title: 'Hatch：点选区域填充、图案库与夹点编辑',
       highlights: [
@@ -3051,6 +3134,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   hi: [
     {
+      title: "स्मार्ट कमांड सुझाव, चयन फ़िल्टर और Enter से पूरा करना",
+      highlights: [
+        "कमांड सुझाव अब कमांड नाम में कहीं भी अक्षरों से मेल खाते हैं, न कि केवल शुरुआत में; पहले मिलान की गुणवत्ता के आधार पर और फिर आप उस कमांड का वास्तव में कितनी बार उपयोग करते हैं, उसके आधार पर क्रमबद्ध होते हैं। सूची माउस से क्लिक करने योग्य है, Tab से चक्र लगाते समय चयनित सुझाव को दृश्य में रखने के लिए स्क्रॉल होती है, लगभग 10 पंक्तियों तक सीमित है, और पूरे भूत-शब्द को ओवरले करने के बजाय केवल मेल खाने वाले अक्षरों को उनकी जगह पर हाइलाइट करती है",
+        "नया: कई एंटिटी चुनने पर अब प्रॉपर्टी पैनल के हेडर में एक फ़िल्टर आइकन दिखाई देता है — यह एक पॉपअप खोलता है जिसमें Type, Layer, Color, Lineweight और Linetype के लिए लाइव चेकलिस्ट होती हैं, जो चयन में वास्तव में मौजूद चीज़ों से बनती हैं, ताकि बल्क-एडिटिंग से पहले एक बड़े मिश्रित चयन को सीमित किया जा सके",
+        "Space/Enter अब Hatch, Spline (CV और Fit), Offset, Trim, Extend, Area और Align को पूरा करते हैं, ठीक वैसे ही जैसे ऐप के बाकी हिस्सों में होता है; एक Trim बग ठीक किया गया जिसमें पूर्ण एलिप्स/सर्कल कट के गोल किए गए संग्रहीत कोण के Hatch की बाउंड्री टॉलरेंस से थोड़ा बाहर पड़ने से ट्रेस किया गया लूप बंद नहीं हो पाता था",
+        "बड़े प्लॉट पर मोनोक्रोम प्रिंट और एक्सपोर्ट रेंडरिंग अब काफी तेज़ है — प्रति-आकार कैनवस फ़िल्टर की जगह अंतिम छवि पर एक ही पास का उपयोग किया गया है; एक 90,000-एंटिटी फ़ाइल जो पहले 30 सेकंड में भी पूरी नहीं होती थी, अब लगभग 70 मिलीसेकंड में रेंडर होती है",
+      ],
+    },
+    {
       title: 'Hatch: एक क्लिक में क्षेत्र भरना, पैटर्न लाइब्रेरी और ग्रिप एडिटिंग',
       highlights: [
         'नया Hatch कमांड — किसी भी बंद क्षेत्र के अंदर क्लिक करें (Line, Arc, Circle, Ellipse और अपने सिरों पर मिलने वाली Polyline, ये सभी किसी बंद Lwpolyline की तरह ही क्षेत्र को घेरती हैं) और वह एक पैटर्न से भर जाता है; अंदर मौजूद कोई भी बंद आकृति द्वीप की तरह अनभरी छोड़ दी जाती है',
@@ -3382,6 +3474,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ar: [
+    {
+      title: "اقتراحات أوامر أذكى، وفلترة التحديد، والإنهاء بمفتاح Enter",
+      highlights: [
+        "أصبحت اقتراحات الأوامر الآن تطابق الحروف في أي مكان من اسم الأمر، وليس فقط في بدايته، ويتم ترتيبها حسب جودة التطابق ثم حسب مدى استخدامك الفعلي لكل أمر؛ القائمة قابلة للنقر بالماوس، وتُمرَّر تلقائيًا لإبقاء الاقتراح المحدد ظاهرًا أثناء التنقل بمفتاح Tab، وتقتصر على نحو 10 صفوف، وتُبرز الحروف المطابقة فقط في مكانها بدلاً من تراكب كلمة شبح كاملة",
+        "جديد: عند تحديد عدد كبير من الكيانات، يظهر الآن أيقونة تصفية في رأس لوحة الخصائص — تفتح نافذة منبثقة بقوائم تحقق حية لـ Type وLayer وColor وLineweight وLinetype، مبنية على ما هو موجود فعليًا في التحديد، لتضييق تحديد كبير ومختلط قبل التعديل الجماعي",
+        "أصبح مفتاحا Space/Enter الآن ينهيان أوامر Hatch وSpline (CV وFit) وOffset وTrim وExtend وArea وAlign، تمامًا كما هو الحال في بقية التطبيق؛ وتم إصلاح خطأ في Trim حيث يمكن أن تقع الزاوية المخزنة والمقربة لقطع كامل من قطع ناقص/دائرة خارج نطاق تفاوت حدود Hatch قليلًا، مما يترك الحلقة المتتبَّعة غير مغلقة",
+        "أصبح عرض الطباعة والتصدير أحادي اللون أسرع بكثير على الرسومات الكبيرة — تم استبدال فلتر اللوحة لكل شكل بمرور واحد فقط على الصورة النهائية؛ ملف يحتوي على 90,000 كيان كان لا يكتمل خلال 30 ثانية أصبح الآن يُعرض في نحو 70 مللي ثانية",
+      ],
+    },
     {
       title: 'Hatch: تعبئة منطقة بنقرة واحدة، مكتبة أنماط وتحرير بالمقابض',
       highlights: [
@@ -3715,6 +3816,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   id: [
     {
+      title: "Saran perintah yang lebih cerdas, filter seleksi & selesaikan dengan Enter",
+      highlights: [
+        "Saran perintah kini mencocokkan huruf di mana saja dalam nama perintah, bukan hanya di awal, diurutkan berdasarkan kualitas kecocokan lalu seberapa sering Anda benar-benar menggunakan perintah tersebut; daftar dapat diklik dengan mouse, otomatis menggulir agar saran yang dipilih tetap terlihat saat berpindah dengan Tab, dibatasi sekitar 10 baris, dan hanya menyorot huruf yang cocok di tempatnya, bukan menumpuk seluruh kata bayangan",
+        "Baru: memilih banyak entitas kini menampilkan ikon filter di header panel properti — membuka popup dengan daftar centang langsung untuk Type, Layer, Color, Lineweight, dan Linetype yang dibuat dari apa yang benar-benar ada dalam seleksi, untuk mempersempit seleksi campuran besar sebelum pengeditan massal",
+        "Space/Enter kini menyelesaikan Hatch, Spline (CV dan Fit), Offset, Trim, Extend, Area, dan Align, sama seperti bagian lain aplikasi; memperbaiki bug Trim di mana sudut tersimpan yang dibulatkan dari potongan elips/lingkaran penuh bisa jatuh sedikit di luar toleransi batas sebuah Hatch, membuat loop yang dilacak tidak tertutup",
+        "Rendering cetak dan ekspor monokrom jauh lebih cepat pada plot besar — filter canvas per bentuk diganti dengan satu kali proses pada gambar akhir; file dengan 90.000 entitas yang sebelumnya tidak selesai dalam 30 detik kini dirender dalam sekitar 70 md",
+      ],
+    },
+    {
       title: 'Hatch: isi area dengan satu klik, pustaka pola & pengeditan pegangan',
       highlights: [
         'Perintah Hatch baru — klik di dalam area tertutup mana pun (Line, Arc, Circle, Ellipse, dan Polyline yang bertemu di ujungnya sama-sama membatasi area seperti Lwpolyline tertutup) dan area itu akan terisi pola; apa pun yang tertutup di dalamnya dibiarkan sebagai pulau',
@@ -4046,6 +4156,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ja: [
+    {
+      title: "よりスマートなコマンド候補、選択フィルター、Enterでの確定",
+      highlights: [
+        "コマンド候補は、先頭だけでなくコマンド名のどこにある文字にもマッチするようになり、まず一致度、次に実際にそのコマンドをどれだけ使っているかの順で並び替えられます。リストはマウスでクリック可能、Tabで循環選択する際に選択中の候補が見えるようスクロールし、表示は約10行までに制限され、ゴースト文字列全体を重ねる代わりに一致した文字だけをその場でハイライトします",
+        "新機能: 多数のエンティティを選択すると、プロパティパネルのヘッダーにフィルターアイコンが表示されます — クリックすると、選択内容に実際に含まれるType、Layer、Color、Lineweight、Linetypeのライブなチェックリストを持つポップアップが開き、一括編集の前に大きな混在選択を絞り込めます",
+        "Space/Enterで、Hatch、Spline（CVとFit）、Offset、Trim、Extend、Area、Alignのコマンドを終了できるようになりました。これはアプリの他の部分と同じ挙動です。また、完全な楕円/円のカットで保存される丸められた角度が、Hatchの境界許容誤差のわずかに外側に落ち、トレースされたループが閉じないことがあったTrimの不具合を修正しました",
+        "大きなプロットでのモノクロ印刷・書き出しレンダリングが大幅に高速化しました — 図形ごとのcanvasフィルターを、完成した画像に対する一回のパス処理に置き換えました。以前は30秒以内に終わらなかった9万エンティティのファイルが、現在は約70ミリ秒でレンダリングされます",
+      ],
+    },
     {
       title: 'Hatch：クリックで領域を塗りつぶし、パターンライブラリとグリップ編集',
       highlights: [
@@ -4379,6 +4498,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   pl: [
     {
+      title: "Sprytniejsze podpowiedzi poleceń, filtrowanie zaznaczenia i kończenie klawiszem Enter",
+      highlights: [
+        "Podpowiedzi poleceń dopasowują teraz litery w dowolnym miejscu nazwy polecenia, nie tylko na początku, i są sortowane najpierw według jakości dopasowania, a potem według tego, jak często faktycznie używasz danego polecenia; listę można klikać myszą, przewija się, aby zaznaczona podpowiedź pozostała widoczna podczas przełączania klawiszem Tab, jest ograniczona do około 10 wierszy i podświetla tylko dopasowane litery w miejscu, zamiast nakładać całe słowo-widmo",
+        "Nowość: zaznaczenie wielu obiektów pokazuje teraz ikonę filtra w nagłówku panelu właściwości — otwiera wyskakujące okno z aktualnymi listami zaznaczeń dla Type, Layer, Color, Lineweight i Linetype, zbudowanymi na podstawie tego, co faktycznie znajduje się w zaznaczeniu, aby zawęzić duże, mieszane zaznaczenie przed edycją zbiorczą",
+        "Spacja/Enter kończą teraz polecenia Hatch, Spline (CV i Fit), Offset, Trim, Extend, Area i Align, tak samo jak reszta aplikacji; naprawiono błąd Trim, w którym zaokrąglony zapisany kąt pełnego cięcia elipsy/okręgu mógł znaleźć się tuż poza tolerancją granicy Hatch, przez co śledzona pętla nie mogła się zamknąć",
+        "Renderowanie monochromatyczne przy druku i eksporcie jest znacznie szybsze na dużych rysunkach — filtr canvas dla każdego kształtu zastąpiono jednym przebiegiem na gotowym obrazie; plik z 90 000 obiektów, który wcześniej nie kończył się w 30 sekund, renderuje się teraz w około 70 ms",
+      ],
+    },
+    {
       title: 'Hatch: wypełnianie obszaru jednym kliknięciem, biblioteka wzorów i edycja uchwytami',
       highlights: [
         'Nowe polecenie Hatch — kliknij wewnątrz dowolnego zamkniętego obszaru (Line, Arc, Circle, Ellipse i Polyline stykające się końcami ograniczają go tak samo jak zamknięta Lwpolyline) i zostanie on wypełniony wzorem; wszystko zamknięte w jego wnętrzu pozostaje jako wyspa',
@@ -4710,6 +4838,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ko: [
+    {
+      title: "더 똑똑한 명령어 제안, 선택 필터링, Enter로 완료하기",
+      highlights: [
+        "명령어 제안이 이제 이름의 시작 부분뿐 아니라 어디에 있는 글자와도 일치하며, 먼저 일치 품질로, 그다음 실제 사용 빈도로 정렬됩니다. 목록은 마우스로 클릭할 수 있고, Tab으로 순환할 때 선택된 제안이 보이도록 스크롤되며, 약 10행으로 제한되고, 전체 고스트 단어를 겹쳐 표시하는 대신 일치한 글자만 제자리에서 강조합니다",
+        "신규: 여러 엔티티를 선택하면 속성 패널 헤더에 필터 아이콘이 표시됩니다 — 클릭하면 선택 항목에 실제로 존재하는 Type, Layer, Color, Lineweight, Linetype에 대한 실시간 체크리스트가 있는 팝업이 열려, 일괄 편집 전에 크고 혼합된 선택을 좁힐 수 있습니다",
+        "Space/Enter가 이제 Hatch, Spline(CV 및 Fit), Offset, Trim, Extend, Area, Align 명령을 앱의 다른 부분과 동일하게 종료합니다. 또한 완전한 타원/원 절단의 반올림된 저장 각도가 Hatch 경계 허용 오차를 살짝 벗어나 추적된 루프가 닫히지 않던 Trim 버그를 수정했습니다",
+        "대형 도면의 모노크롬 인쇄/내보내기 렌더링이 훨씬 빨라졌습니다 — 도형마다 적용하던 캔버스 필터를 완성된 이미지에 대한 단일 패스로 대체했습니다. 이전에는 30초 안에 끝나지 않던 9만 개 엔티티 파일이 이제 약 70ms만에 렌더링됩니다",
+      ],
+    },
     {
       title: 'Hatch: 클릭 한 번으로 영역 채우기, 패턴 라이브러리 및 그립 편집',
       highlights: [
@@ -5043,6 +5180,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   vi: [
     {
+      title: "Gợi ý lệnh thông minh hơn, lọc lựa chọn & hoàn tất bằng Enter",
+      highlights: [
+        "Gợi ý lệnh giờ đây khớp với các chữ cái ở bất kỳ vị trí nào trong tên lệnh, không chỉ ở đầu, được xếp hạng theo chất lượng khớp trước rồi đến tần suất bạn thực sự sử dụng lệnh đó; danh sách có thể nhấp chuột, tự cuộn để giữ gợi ý đang chọn trong tầm nhìn khi chuyển bằng Tab, giới hạn khoảng 10 dòng, và chỉ tô sáng đúng các chữ cái khớp tại chỗ thay vì phủ cả một từ mờ",
+        "Mới: chọn nhiều đối tượng giờ hiển thị biểu tượng bộ lọc trên tiêu đề bảng thuộc tính — mở một cửa sổ bật lên với danh sách chọn trực tiếp cho Type, Layer, Color, Lineweight và Linetype, được xây dựng từ những gì thực sự có trong lựa chọn, để thu hẹp một lựa chọn hỗn hợp lớn trước khi chỉnh sửa hàng loạt",
+        "Space/Enter giờ hoàn tất các lệnh Hatch, Spline (CV và Fit), Offset, Trim, Extend, Area và Align, giống như phần còn lại của ứng dụng; đã sửa lỗi Trim khi góc đã lưu được làm tròn của một lát cắt hình elip/tròn hoàn chỉnh có thể nằm ngay ngoài dung sai biên của một Hatch, khiến vòng lặp được truy vết không khép kín",
+        "Việc kết xuất in và xuất bản đơn sắc nhanh hơn đáng kể trên các bản vẽ lớn — thay bộ lọc canvas theo từng hình bằng một lần xử lý duy nhất trên ảnh hoàn chỉnh; một tệp 90.000 đối tượng trước đây không thể hoàn thành trong 30 giây giờ chỉ mất khoảng 70ms để kết xuất",
+      ],
+    },
+    {
       title: 'Hatch: tô đầy vùng chỉ với một cú nhấp, thư viện mẫu tô & chỉnh sửa bằng grip',
       highlights: [
         'Lệnh Hatch mới — nhấp vào bên trong bất kỳ vùng khép kín nào (Line, Arc, Circle, Ellipse và Polyline gặp nhau ở đầu mút đều bao quanh một vùng giống như Lwpolyline khép kín) và vùng đó sẽ được tô bằng một mẫu; bất kỳ hình khép kín nào nằm bên trong sẽ được để lại như một hòn đảo không tô',
@@ -5374,6 +5520,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   th: [
+    {
+      title: "คำแนะนำคำสั่งที่ฉลาดขึ้น การกรองการเลือก และการจบด้วย Enter",
+      highlights: [
+        "คำแนะนำคำสั่งตอนนี้จับคู่ตัวอักษรได้ทุกตำแหน่งในชื่อคำสั่ง ไม่ใช่แค่ตัวแรก โดยเรียงลำดับตามคุณภาพการจับคู่ก่อน แล้วจึงเรียงตามความถี่ที่คุณใช้คำสั่งนั้นจริง ๆ รายการสามารถคลิกด้วยเมาส์ได้ เลื่อนอัตโนมัติเพื่อให้คำแนะนำที่เลือกอยู่ในมุมมองขณะวนด้วย Tab จำกัดไว้ประมาณ 10 แถว และไฮไลต์เฉพาะตัวอักษรที่ตรงกันในตำแหน่งเดิม แทนที่จะซ้อนคำผีทั้งคำ",
+        "ใหม่: การเลือกหลายเอนทิตีตอนนี้จะแสดงไอคอนตัวกรองที่ส่วนหัวของแผงคุณสมบัติ — เปิดป๊อปอัปที่มีรายการเช็คลิสต์แบบสดสำหรับ Type, Layer, Color, Lineweight และ Linetype ซึ่งสร้างจากสิ่งที่มีอยู่จริงในการเลือก เพื่อจำกัดการเลือกแบบผสมขนาดใหญ่ก่อนแก้ไขเป็นกลุ่ม",
+        "Space/Enter ตอนนี้จบคำสั่ง Hatch, Spline (CV และ Fit), Offset, Trim, Extend, Area และ Align เหมือนกับส่วนอื่นของแอป และแก้ไขบั๊กของ Trim ที่มุมที่ปัดเศษและบันทึกไว้ของการตัดวงรี/วงกลมแบบเต็มอาจตกอยู่นอกค่าความคลาดเคลื่อนของขอบเขต Hatch เพียงเล็กน้อย ทำให้ลูปที่ติดตามไม่ปิดสนิท",
+        "การเรนเดอร์แบบขาวดำเมื่อพิมพ์และส่งออกเร็วขึ้นอย่างมากบนแปลนขนาดใหญ่ — แทนที่ฟิลเตอร์แคนวาสต่อรูปทรงด้วยการประมวลผลครั้งเดียวบนภาพที่เสร็จสมบูรณ์ ไฟล์ที่มี 90,000 เอนทิตีซึ่งก่อนหน้านี้ไม่เสร็จภายใน 30 วินาที ตอนนี้เรนเดอร์เสร็จในประมาณ 70 มิลลิวินาที",
+      ],
+    },
     {
       title: 'Hatch: เติมพื้นที่ด้วยคลิกเดียว ไลบรารีลวดลาย และการแก้ไขด้วยจุดจับ',
       highlights: [
@@ -5707,6 +5862,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   ms: [
     {
+      title: "Cadangan arahan lebih pintar, penapisan pemilihan & selesai dengan Enter",
+      highlights: [
+        "Cadangan arahan kini sepadan dengan huruf di mana-mana bahagian nama arahan, bukan hanya di permulaan, disusun mengikut kualiti padanan dahulu kemudian kekerapan anda benar-benar menggunakan arahan itu; senarai boleh diklik dengan tetikus, menatal secara automatik untuk memastikan cadangan yang dipilih kelihatan semasa beralih dengan Tab, terhad kepada kira-kira 10 baris, dan hanya menyerlahkan huruf yang sepadan di tempatnya dan bukannya menindih keseluruhan perkataan hantu",
+        "Baharu: memilih banyak entiti kini memaparkan ikon penapis pada pengepala panel sifat — membuka tetingkap timbul dengan senarai semak langsung untuk Type, Layer, Color, Lineweight dan Linetype, dibina daripada apa yang sebenarnya ada dalam pemilihan, untuk menyempitkan pemilihan campuran yang besar sebelum penyuntingan pukal",
+        "Space/Enter kini menyelesaikan Hatch, Spline (CV dan Fit), Offset, Trim, Extend, Area dan Align, sama seperti bahagian lain aplikasi; membetulkan pepijat Trim di mana sudut tersimpan yang dibundarkan bagi potongan elips/bulatan penuh boleh jatuh sedikit di luar toleransi sempadan Hatch, menyebabkan gelung yang dijejak tidak tertutup",
+        "Rendering cetak dan eksport monokrom jauh lebih pantas pada pelan besar — penapis kanvas bagi setiap bentuk digantikan dengan satu laluan tunggal ke atas imej akhir; fail dengan 90,000 entiti yang sebelum ini tidak selesai dalam 30 saat kini dirender dalam kira-kira 70 ms",
+      ],
+    },
+    {
       title: 'Hatch: isi kawasan dengan satu klik, pustaka corak & penyuntingan pemegang',
       highlights: [
         'Arahan Hatch baharu — klik di dalam mana-mana kawasan tertutup (Line, Arc, Circle, Ellipse dan Polyline yang bertemu di hujungnya semuanya melingkungi kawasan sama seperti Lwpolyline tertutup) dan ia akan diisi dengan corak; apa-apa yang tertutup di dalamnya ditinggalkan sebagai pulau',
@@ -6038,6 +6202,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   bn: [
+    {
+      title: "আরও স্মার্ট কমান্ড সাজেশন, সিলেকশন ফিল্টার এবং Enter দিয়ে শেষ করা",
+      highlights: [
+        "কমান্ড সাজেশন এখন কমান্ডের নামের যেকোনো জায়গার অক্ষরের সাথে মেলে, শুধু শুরুতেই নয়; প্রথমে ম্যাচের গুণমান অনুযায়ী এবং তারপর আপনি আসলে কতবার কমান্ডটি ব্যবহার করেন তার ভিত্তিতে সাজানো হয়। তালিকাটি মাউস দিয়ে ক্লিকযোগ্য, Tab দিয়ে সাইকেল করার সময় নির্বাচিত সাজেশনটি দৃশ্যমান রাখতে স্ক্রল হয়, প্রায় ১০টি সারিতে সীমাবদ্ধ, এবং সম্পূর্ণ ভূত-শব্দ ওভারলে করার বদলে শুধু মিলে যাওয়া অক্ষরগুলো তাদের জায়গায় হাইলাইট করে",
+        "নতুন: অনেক এনটিটি নির্বাচন করলে এখন প্রপার্টি প্যানেলের হেডারে একটি ফিল্টার আইকন দেখা যায় — এটি Type, Layer, Color, Lineweight এবং Linetype-এর জন্য লাইভ চেকলিস্ট সহ একটি পপআপ খোলে, যা নির্বাচনে বাস্তবে যা আছে তা থেকে তৈরি হয়, যাতে বাল্ক-এডিটিংয়ের আগে একটি বড় মিশ্র নির্বাচনকে সংকীর্ণ করা যায়",
+        "Space/Enter এখন Hatch, Spline (CV এবং Fit), Offset, Trim, Extend, Area এবং Align শেষ করে, ঠিক যেমন অ্যাপের বাকি অংশে হয়; একটি Trim বাগ ঠিক করা হয়েছে যেখানে একটি সম্পূর্ণ ইলিপস/বৃত্ত কাটের রাউন্ড করা সংরক্ষিত কোণ Hatch-এর সীমানা সহনশীলতার সামান্য বাইরে পড়তে পারত, যার ফলে ট্রেস করা লুপ বন্ধ হতো না",
+        "বড় প্লটে মনোক্রোম প্রিন্ট এবং এক্সপোর্ট রেন্ডারিং এখন অনেক দ্রুত — প্রতি-আকৃতি ক্যানভাস ফিল্টারের বদলে চূড়ান্ত ছবির উপর একবারই প্রক্রিয়া করা হয়; ৯০,০০০-এনটিটির একটি ফাইল যা আগে ৩০ সেকেন্ডেও শেষ হতো না, এখন প্রায় ৭০ মিলিসেকেন্ডে রেন্ডার হয়",
+      ],
+    },
     {
       title: 'Hatch: এক ক্লিকে অঞ্চল পূরণ, প্যাটার্ন লাইব্রেরি ও গ্রিপ এডিটিং',
       highlights: [
@@ -6390,6 +6563,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   sw: [
+    {
+      title: "Mapendekezo mahiri zaidi ya amri, uchujaji wa uteuzi na kumaliza kwa Enter",
+      highlights: [
+        "Mapendekezo ya amri sasa yanalingana na herufi popote katika jina la amri, si mwanzoni tu, yakipangwa kwa ubora wa mlinganisho kwanza kisha jinsi unavyotumia amri hiyo mara kwa mara; orodha inaweza kubofywa kwa kipanya, inatelezesha ili kuweka pendekezo lililochaguliwa likionekana wakati wa kuzunguka kwa Tab, imewekewa kikomo cha safu mlalo takriban 10, na inaangazia herufi zinazolingana tu mahali pake badala ya kupanga neno-zimwi zima juu yake",
+        "Mpya: kuchagua vitu vingi sasa kunaonyesha aikoni ya kichujio kwenye kichwa cha kidirisha cha sifa — hufungua dirisha ibukizi lenye orodha za ukaguzi za moja kwa moja za Type, Layer, Color, Lineweight, na Linetype, zilizojengwa kutoka kwa kile kilichopo kwenye uteuzi, ili kupunguza uteuzi mkubwa uliochanganyika kabla ya kuhariri kwa wingi",
+        "Space/Enter sasa zinamaliza Hatch, Spline (CV na Fit), Offset, Trim, Extend, Area, na Align, sawa na sehemu nyingine za programu; hitilafu ya Trim imerekebishwa ambapo pembe iliyohifadhiwa na kuzungushwa ya ukataji kamili wa elipse/duara ingeweza kuanguka nje kidogo ya uvumilivu wa mpaka wa Hatch, na kuacha mzunguko uliofuatiliwa bila kufungwa",
+        "Uonyeshaji wa uchapishaji na usafirishaji wa rangi moja umeharakishwa sana kwenye mipango mikubwa — kichujio cha turubai kwa kila umbo kimebadilishwa na pito moja juu ya picha iliyokamilika; faili yenye vitu 90,000 ambayo hapo awali haikukamilika ndani ya sekunde 30 sasa inaonyeshwa kwa takriban milisekunde 70",
+      ],
+    },
     {
       title: 'Hatch: kujaza eneo kwa mbofyo mmoja, maktaba ya mifumo & uhariri wa vishikizo',
       highlights: [
@@ -6744,6 +6926,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   ur: [
     {
+      title: "زیادہ ذہین کمانڈ تجاویز، سلیکشن فلٹر اور Enter سے مکمل کرنا",
+      highlights: [
+        "کمانڈ تجاویز اب کمانڈ کے نام میں کہیں بھی موجود حروف سے میل کھاتی ہیں، نہ کہ صرف شروع میں؛ پہلے میچ کے معیار کے حساب سے اور پھر آپ اس کمانڈ کو حقیقت میں کتنی بار استعمال کرتے ہیں اس کے حساب سے ترتیب دی جاتی ہیں۔ فہرست ماؤس سے کلک کی جا سکتی ہے، Tab سے سائیکل کرتے وقت منتخب تجویز کو نظر میں رکھنے کے لیے خودکار اسکرول ہوتی ہے، تقریباً 10 قطاروں تک محدود ہے، اور مکمل بھوت لفظ اوورلے کرنے کے بجائے صرف میل کھانے والے حروف کو ان کی جگہ پر نمایاں کرتی ہے",
+        "نیا: بہت سی اینٹیٹیز منتخب کرنے پر اب پراپرٹی پینل کے ہیڈر میں ایک فلٹر آئیکن نظر آتا ہے — یہ ایک پاپ اپ کھولتا ہے جس میں Type، Layer، Color، Lineweight اور Linetype کے لیے لائیو چیک لسٹس ہوتی ہیں، جو سلیکشن میں واقعی موجود چیزوں سے بنتی ہیں، تاکہ بلک ایڈیٹنگ سے پہلے ایک بڑی مخلوط سلیکشن کو محدود کیا جا سکے",
+        "Space/Enter اب Hatch، Spline (CV اور Fit)، Offset، Trim، Extend، Area اور Align کو مکمل کرتے ہیں، بالکل ایپ کے باقی حصوں کی طرح؛ ایک Trim بگ ٹھیک کیا گیا جس میں مکمل ellipse/circle کٹ کا گول کیا گیا محفوظ شدہ زاویہ Hatch کی باؤنڈری ٹولرینس سے تھوڑا باہر گر سکتا تھا، جس سے ٹریس کیا گیا لوپ بند نہیں ہوتا تھا",
+        "بڑے پلاٹس پر مونوکروم پرنٹ اور ایکسپورٹ رینڈرنگ اب کہیں زیادہ تیز ہے — فی شکل کینوس فلٹر کی جگہ حتمی تصویر پر ایک ہی پاس استعمال کیا جاتا ہے؛ 90,000 اینٹیٹیز والی ایک فائل جو پہلے 30 سیکنڈ میں بھی مکمل نہیں ہوتی تھی، اب تقریباً 70 ملی سیکنڈ میں رینڈر ہوتی ہے",
+      ],
+    },
+    {
       title: 'Hatch: ایک کلک میں علاقہ بھرنا، پیٹرن لائبریری اور گرِپ ایڈیٹنگ',
       highlights: [
         'نیا Hatch کمانڈ — کسی بھی بند علاقے کے اندر کلک کریں (Line، Arc، Circle، Ellipse اور اپنے سروں پر ملنے والی Polyline، یہ سب ایک بند Lwpolyline کی طرح علاقے کو گھیرتی ہیں) اور یہ ایک پیٹرن سے بھر جاتا ہے؛ اندر موجود کوئی بھی بند شکل جزیرے کی طرح بھرے بغیر رہ جاتی ہے',
@@ -6834,6 +7025,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   el: [
     {
+      title: "Εξυπνότερες προτάσεις εντολών, φιλτράρισμα επιλογής & ολοκλήρωση με Enter",
+      highlights: [
+        "Οι προτάσεις εντολών πλέον ταιριάζουν γράμματα οπουδήποτε μέσα στο όνομα μιας εντολής, όχι μόνο στην αρχή, ταξινομημένες πρώτα κατά ποιότητα ταιριάσματος και έπειτα κατά το πόσο συχνά χρησιμοποιείτε πράγματι την εντολή· η λίστα είναι κλικαρίσιμη με το ποντίκι, κάνει κύλιση ώστε η επιλεγμένη πρόταση να παραμένει ορατή κατά την εναλλαγή με το Tab, περιορίζεται σε περίπου 10 γραμμές, και επισημαίνει μόνο τα γράμματα που ταιριάζουν στη θέση τους αντί να επικαλύπτει μια ολόκληρη φανταστική λέξη",
+        "Νέο: η επιλογή πολλών οντοτήτων εμφανίζει τώρα ένα εικονίδιο φίλτρου στην κεφαλίδα του πίνακα ιδιοτήτων — ανοίγει ένα αναδυόμενο παράθυρο με ζωντανές λίστες ελέγχου για Type, Layer, Color, Lineweight και Linetype, βασισμένες σε ό,τι υπάρχει πράγματι στην επιλογή, για να περιορίσετε μια μεγάλη μεικτή επιλογή πριν από μαζική επεξεργασία",
+        "Τα Space/Enter ολοκληρώνουν πλέον τις εντολές Hatch, Spline (CV και Fit), Offset, Trim, Extend, Area και Align, όπως και στην υπόλοιπη εφαρμογή· διορθώθηκε ένα σφάλμα του Trim όπου η στρογγυλεμένη αποθηκευμένη γωνία μιας πλήρους κοπής έλλειψης/κύκλου μπορούσε να πέσει ελαφρώς εκτός της ανοχής ορίου ενός Hatch, αφήνοντας τον ιχνηλατημένο βρόχο ανοιχτό",
+        "Η μονόχρωμη απόδοση εκτύπωσης και εξαγωγής είναι πλέον πολύ πιο γρήγορη σε μεγάλα σχέδια — ένα φίλτρο καμβά ανά σχήμα αντικαταστάθηκε από ένα ενιαίο πέρασμα πάνω στην τελική εικόνα· ένα αρχείο με 90.000 οντότητες που παλαιότερα δεν ολοκληρωνόταν σε 30 δευτερόλεπτα, τώρα αποδίδεται σε περίπου 70 ms",
+      ],
+    },
+    {
       title: 'Hatch: γέμισμα περιοχής με ένα κλικ, βιβλιοθήκη μοτίβων & επεξεργασία με λαβές',
       highlights: [
         'Νέα εντολή Hatch — κάντε κλικ μέσα σε οποιαδήποτε κλειστή περιοχή (Line, Arc, Circle, Ellipse και Polyline που συναντώνται στα άκρα τους την οριοθετούν όπως ακριβώς και μια κλειστή Lwpolyline) και γεμίζει με ένα μοτίβο· οτιδήποτε κλειστό βρίσκεται μέσα της παραμένει αγέμιστο ως νησίδα',
@@ -6922,6 +7122,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     { title: 'Αναβάθμιση Angular, τεκμηρίωση & προσαρμοστικό πλέγμα', highlights: ['Αναβάθμιση Angular 19 → 20 → 21', 'Πλήρης ιστότοπος τεκμηρίωσης εντολών', 'Προσαρμοστικό πλέγμα CAD', 'Πίνακας ιστορικού (Αναίρεση / Ιστορικό / Επανάληψη)'] },
   ],
   pa: [
+    {
+      title: "ਵਧੇਰੇ ਸਮਾਰਟ ਕਮਾਂਡ ਸੁਝਾਅ, ਚੋਣ ਫਿਲਟਰ ਅਤੇ Enter ਨਾਲ ਖਤਮ ਕਰਨਾ",
+      highlights: [
+        "ਕਮਾਂਡ ਸੁਝਾਅ ਹੁਣ ਕਮਾਂਡ ਦੇ ਨਾਮ ਵਿੱਚ ਕਿਤੇ ਵੀ ਅੱਖਰਾਂ ਨਾਲ ਮੇਲ ਖਾਂਦੇ ਹਨ, ਸਿਰਫ਼ ਸ਼ੁਰੂ ਵਿੱਚ ਹੀ ਨਹੀਂ; ਪਹਿਲਾਂ ਮੈਚ ਦੀ ਗੁਣਵੱਤਾ ਅਨੁਸਾਰ ਅਤੇ ਫਿਰ ਤੁਸੀਂ ਅਸਲ ਵਿੱਚ ਕਮਾਂਡ ਕਿੰਨੀ ਵਾਰ ਵਰਤਦੇ ਹੋ ਉਸ ਅਨੁਸਾਰ ਦਰਜਾਬੰਦੀ ਕੀਤੀ ਜਾਂਦੀ ਹੈ। ਸੂਚੀ ਮਾਊਸ ਨਾਲ ਕਲਿੱਕ ਕਰਨਯੋਗ ਹੈ, Tab ਨਾਲ ਸਾਈਕਲ ਕਰਦੇ ਸਮੇਂ ਚੁਣੇ ਗਏ ਸੁਝਾਅ ਨੂੰ ਦ੍ਰਿਸ਼ ਵਿੱਚ ਰੱਖਣ ਲਈ ਸਕ੍ਰੌਲ ਹੁੰਦੀ ਹੈ, ਲਗਭਗ 10 ਕਤਾਰਾਂ ਤੱਕ ਸੀਮਿਤ ਹੈ, ਅਤੇ ਪੂਰੇ ਭੂਤ-ਸ਼ਬਦ ਨੂੰ ਓਵਰਲੇ ਕਰਨ ਦੀ ਬਜਾਏ ਸਿਰਫ਼ ਮੇਲ ਖਾਂਦੇ ਅੱਖਰਾਂ ਨੂੰ ਉਹਨਾਂ ਦੀ ਥਾਂ 'ਤੇ ਉਜਾਗਰ ਕਰਦੀ ਹੈ",
+        "ਨਵਾਂ: ਬਹੁਤ ਸਾਰੀਆਂ ਇਕਾਈਆਂ ਚੁਣਨ 'ਤੇ ਹੁਣ ਪ੍ਰਾਪਰਟੀ ਪੈਨਲ ਦੇ ਹੈਡਰ ਵਿੱਚ ਇੱਕ ਫਿਲਟਰ ਆਈਕਨ ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ — ਇਹ Type, Layer, Color, Lineweight ਅਤੇ Linetype ਲਈ ਲਾਈਵ ਚੈੱਕਲਿਸਟਾਂ ਵਾਲਾ ਇੱਕ ਪੌਪਅੱਪ ਖੋਲ੍ਹਦਾ ਹੈ, ਜੋ ਚੋਣ ਵਿੱਚ ਅਸਲ ਵਿੱਚ ਮੌਜੂਦ ਚੀਜ਼ਾਂ ਤੋਂ ਬਣਦਾ ਹੈ, ਤਾਂ ਜੋ ਬਲਕ-ਐਡਿਟਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਇੱਕ ਵੱਡੀ ਮਿਸ਼ਰਤ ਚੋਣ ਨੂੰ ਸੀਮਤ ਕੀਤਾ ਜਾ ਸਕੇ",
+        "Space/Enter ਹੁਣ Hatch, Spline (CV ਅਤੇ Fit), Offset, Trim, Extend, Area ਅਤੇ Align ਨੂੰ ਖਤਮ ਕਰਦੇ ਹਨ, ਬਿਲਕੁਲ ਐਪ ਦੇ ਬਾਕੀ ਹਿੱਸਿਆਂ ਵਾਂਗ; ਇੱਕ Trim ਬੱਗ ਠੀਕ ਕੀਤਾ ਗਿਆ ਜਿੱਥੇ ਇੱਕ ਪੂਰੇ ਅੰਡਾਕਾਰ/ਚੱਕਰ ਕੱਟ ਦਾ ਗੋਲ ਕੀਤਾ ਗਿਆ ਸਟੋਰ ਕੀਤਾ ਕੋਣ Hatch ਦੀ ਸੀਮਾ ਸਹਿਣਸ਼ੀਲਤਾ ਤੋਂ ਥੋੜ੍ਹਾ ਬਾਹਰ ਡਿੱਗ ਸਕਦਾ ਸੀ, ਜਿਸ ਨਾਲ ਟ੍ਰੇਸ ਕੀਤਾ ਲੂਪ ਬੰਦ ਨਹੀਂ ਹੁੰਦਾ ਸੀ",
+        "ਵੱਡੇ ਪਲਾਟਾਂ 'ਤੇ ਮੋਨੋਕ੍ਰੋਮ ਪ੍ਰਿੰਟ ਅਤੇ ਐਕਸਪੋਰਟ ਰੈਂਡਰਿੰਗ ਹੁਣ ਕਿਤੇ ਵੱਧ ਤੇਜ਼ ਹੈ — ਹਰ ਆਕਾਰ ਲਈ ਕੈਨਵਸ ਫਿਲਟਰ ਦੀ ਬਜਾਏ ਅੰਤਿਮ ਚਿੱਤਰ 'ਤੇ ਇੱਕੋ ਪਾਸ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ; 90,000-ਇਕਾਈਆਂ ਵਾਲੀ ਇੱਕ ਫਾਈਲ ਜੋ ਪਹਿਲਾਂ 30 ਸਕਿੰਟਾਂ ਵਿੱਚ ਵੀ ਪੂਰੀ ਨਹੀਂ ਹੁੰਦੀ ਸੀ, ਹੁਣ ਲਗਭਗ 70 ਮਿਲੀਸਕਿੰਟ ਵਿੱਚ ਰੈਂਡਰ ਹੁੰਦੀ ਹੈ",
+      ],
+    },
     {
       title: 'Hatch: ਇੱਕ ਕਲਿੱਕ ਵਿੱਚ ਖੇਤਰ ਭਰਨਾ, ਪੈਟਰਨ ਲਾਇਬ੍ਰੇਰੀ ਅਤੇ ਗ੍ਰਿਪ ਐਡਿਟਿੰਗ',
       highlights: [
@@ -7255,6 +7464,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   sv: [
     {
+      title: "Smartare kommandoförslag, urvalsfiltrering & avsluta med Enter",
+      highlights: [
+        "Kommandoförslag matchar nu bokstäver var som helst i ett kommandos namn, inte bara i början, rankade först efter matchningskvalitet och sedan efter hur ofta du faktiskt använder kommandot; listan är klickbar med musen, rullar för att hålla det valda förslaget synligt när du växlar med Tab, är begränsad till cirka 10 rader och markerar bara de matchande bokstäverna på plats istället för att lägga ett helt spökord ovanpå",
+        "Nytt: att markera många entiteter visar nu en filterikon i egenskapspanelens rubrik — öppnar en popup med levande kryssrutelistor för Type, Layer, Color, Lineweight och Linetype, byggda utifrån vad som faktiskt finns i markeringen, för att smalna av en stor blandad markering före massredigering",
+        "Mellanslag/Enter avslutar nu Hatch, Spline (CV och Fit), Offset, Trim, Extend, Area och Align, precis som resten av appen; en Trim-bugg är fixad där en avrundad, sparad vinkel för ett fullständigt ellips-/cirkelsnitt kunde hamna precis utanför en Hatch gränstolerans, vilket lämnade den spårade slingan ostängd",
+        "Monokrom rendering vid utskrift och export är betydligt snabbare på stora ritningar — ett canvasfilter per form har ersatts med en enda genomgång av den färdiga bilden; en fil med 90 000 entiteter som tidigare inte blev klar inom 30 sekunder renderas nu på cirka 70 ms",
+      ],
+    },
+    {
       title: 'Hatch: fyll ett område med ett klick, mönsterbibliotek & greppredigering',
       highlights: [
         'Nytt Hatch-kommando — klicka inuti valfritt slutet område (Line, Arc, Circle, Ellipse och Polyline som möts vid sina ändar avgränsar det precis som en sluten Lwpolyline) och det fylls med ett mönster; allt slutet som ligger inuti lämnas ofyllt som en ö',
@@ -7586,6 +7804,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   tl: [
+    {
+      title: "Mas matalinong mungkahi ng command, pag-filter ng seleksyon & pagtatapos gamit ang Enter",
+      highlights: [
+        "Ang mga mungkahi ng command ay tumutugma na ngayon sa mga letra kahit saan sa pangalan ng command, hindi lang sa simula, na inayos ayon sa kalidad ng pagtugma at pagkatapos ayon sa kung gaano kadalas mo talaga ginagamit ang command; ang listahan ay maaaring i-click gamit ang mouse, awtomatikong nag-scroll upang manatiling nakikita ang napiling mungkahi habang umiikot gamit ang Tab, limitado sa halos 10 hilera, at nagha-highlight lamang sa mga letrang tumugma sa kanilang lugar sa halip na i-overlay ang buong multong salita",
+        "Bago: ang pagpili ng maraming entity ay nagpapakita na ngayon ng icon ng filter sa header ng property panel — nagbubukas ng popup na may live na checklist para sa Type, Layer, Color, Lineweight, at Linetype, na binuo mula sa kung ano talaga ang nasa seleksyon, upang paliitin ang isang malaki at magkahalong seleksyon bago mag-bulk-edit",
+        "Space/Enter na ngayon ang nagtatapos sa Hatch, Spline (CV at Fit), Offset, Trim, Extend, Area, at Align, tulad ng ibang bahagi ng app; naayos ang bug sa Trim kung saan ang naka-round na naka-store na anggulo ng isang kumpletong hiwa ng elipse/bilog ay maaaring mahulog nang bahagya sa labas ng tolerance ng hangganan ng isang Hatch, na nag-iiwan sa na-trace na loop na hindi nagsasara",
+        "Ang monochrome na rendering ng print at export ay mas mabilis nang malaki sa malalaking plot — pinalitan ang canvas filter kada hugis ng iisang pagproseso sa natapos na larawan; ang isang file na may 90,000 entity na dati ay hindi natatapos sa loob ng 30 segundo ay nag-render na ngayon sa humigit-kumulang 70ms",
+      ],
+    },
     {
       title: 'Hatch: pagpuno ng lugar sa isang click, aklatan ng pattern & pag-edit gamit ang grip',
       highlights: [
@@ -7920,6 +8147,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   nl: [
     {
+      title: "Slimmere commando-suggesties, selectiefilter & afronden met Enter",
+      highlights: [
+        "Commandosuggesties matchen nu letters overal in de naam van een commando, niet alleen aan het begin, gerangschikt eerst op matchkwaliteit en daarna op hoe vaak u het commando daadwerkelijk gebruikt; de lijst is met de muis klikbaar, scrollt om de geselecteerde suggestie in beeld te houden tijdens het doorlopen met Tab, is beperkt tot ongeveer 10 rijen, en markeert alleen de overeenkomende letters op hun plek in plaats van een heel spookwoord eroverheen te leggen",
+        "Nieuw: bij het selecteren van veel entiteiten verschijnt nu een filterpictogram in de kop van het eigenschappenpaneel — opent een pop-up met live selectielijsten voor Type, Layer, Color, Lineweight en Linetype, opgebouwd uit wat daadwerkelijk in de selectie zit, om een grote gemengde selectie te versmallen vóór bulkbewerking",
+        "Spatie/Enter beëindigen nu Hatch, Spline (CV en Fit), Offset, Trim, Extend, Area en Align, net als de rest van de app; een Trim-bug is opgelost waarbij de afgeronde, opgeslagen hoek van een volledige ellips-/cirkelsnede net buiten de randtolerantie van een Hatch kon vallen, waardoor de getraceerde lus niet sloot",
+        "Monochrome print- en exportrendering is aanzienlijk sneller bij grote plots — een canvasfilter per vorm is vervangen door één enkele bewerking over de uiteindelijke afbeelding; een bestand met 90.000 entiteiten dat voorheen niet binnen 30 seconden klaar was, wordt nu in ongeveer 70 ms gerenderd",
+      ],
+    },
+    {
       title: 'Hatch: een gebied vullen met één klik, patroonbibliotheek & greepbewerking',
       highlights: [
         'Nieuwe Hatch-opdracht — klik binnen elk gesloten gebied (Line, Arc, Circle, Ellipse en Polyline die elkaar aan hun uiteinden raken, begrenzen het net als een gesloten Lwpolyline) en het wordt gevuld met een patroon; alles wat gesloten binnenin ligt, blijft ongevuld als een eiland',
@@ -8252,6 +8488,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   he: [
+    {
+      title: "הצעות פקודה חכמות יותר, סינון בחירה וסיום באמצעות Enter",
+      highlights: [
+        "הצעות הפקודה תואמות כעת אותיות בכל מקום בשם הפקודה, לא רק בהתחלה, וממוינות תחילה לפי איכות ההתאמה ולאחר מכן לפי התדירות שבה אתם משתמשים בפועל בפקודה; הרשימה ניתנת ללחיצה בעכבר, גוללת כדי לשמור על ההצעה הנבחרת בתצוגה בעת מעבר עם Tab, מוגבלת לכ-10 שורות, ומדגישה רק את האותיות התואמות במקומן במקום להציג שכבה של מילת-רפאים שלמה",
+        "חדש: בחירה של ישויות רבות מציגה כעת סמל סינון בכותרת חלונית המאפיינים — פותח חלון קופץ עם רשימות סימון חיות עבור Type, Layer, Color, Lineweight ו-Linetype, הבנויות ממה שקיים בפועל בבחירה, כדי לצמצם בחירה מעורבת גדולה לפני עריכה מרוכזת",
+        "מקש הרווח/Enter מסיימים כעת את הפקודות Hatch, Spline (CV ו-Fit), Offset, Trim, Extend, Area ו-Align, בדיוק כמו בשאר האפליקציה; תוקן באג ב-Trim שבו הזווית המעוגלת השמורה של חיתוך אליפסה/מעגל מלא יכלה ליפול מעט מחוץ לסבילות הגבול של Hatch, מה שהשאיר את הלולאה שעוקבה לא סגורה",
+        "עיבוד הדפסה וייצוא מונוכרומטי מהיר משמעותית בתוכניות גדולות — מסנן קנבס לכל צורה הוחלף במעבר יחיד על התמונה הסופית; קובץ עם 90,000 ישויות שבעבר לא הסתיים תוך 30 שניות, מעובד כעת תוך כ-70 מילישניות",
+      ],
+    },
     {
       title: 'Hatch: מילוי אזור בקליק אחד, ספריית תבניות ועריכה באמצעות אחיזות',
       highlights: [
@@ -8586,6 +8831,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   ha: [
     {
+      title: "Shawarwarin umarni masu wayo, tace zaɓi & kammalawa da Enter",
+      highlights: [
+        "Shawarwarin umarni yanzu suna dacewa da haruffa a ko'ina cikin sunan umarnin, ba kawai a farko ba, an tsara su bisa ingancin dacewa da farko sannan yadda kuke amfani da umarnin a zahiri; jerin ana iya danna shi da linzamin kwamfuta, yana gungurawa don ci gaba da nuna shawarar da aka zaɓa yayin sauyawa da Tab, an iyakance shi zuwa kusan layuka 10, kuma yana haskaka haruffan da suka dace kawai a wurinsu maimakon lulluɓe da wani cikakken kalmar-fatalwa",
+        "Sabo: zaɓar abubuwa da yawa yanzu yana nuna alamar tacewa a kan taken kwamitin dukiyoyi — yana buɗe taga mai fitowa da jerin dubawa na kai tsaye don Type, Layer, Color, Lineweight, da Linetype, wanda aka gina daga abin da ke ainihi cikin zaɓin, don takaita babban zaɓi gauraye kafin gyara jimla",
+        "Space/Enter yanzu suna kammala Hatch, Spline (CV da Fit), Offset, Trim, Extend, Area, da Align, kamar sauran sassan app ɗin; an gyara kwaro na Trim inda kusurwar da aka adana kuma aka zagaye ta na yankan ellipse/da'ira cikakke za ta iya faɗuwa kaɗan a wajen haƙurin iyakar Hatch, wanda ke barin madauki da aka bi ba a rufe ba",
+        "Bugu da fitarwa na monochrome yanzu suna da sauri sosai a manyan zane-zane — an maye gurbin tacewa ta canvas ga kowane siffa da wucewa guda ɗaya a kan hoto na ƙarshe; fayil mai abubuwa 90,000 wanda a da ba ya ƙare cikin daƙiƙa 30 yanzu yana bugawa cikin kimanin milisecond 70",
+      ],
+    },
+    {
       title: 'Hatch: cika yanki da dannawa ɗaya, ɗakin karatun tsari & gyara da hannu',
       highlights: [
         'Sabon umarnin Hatch — danna a cikin kowane yanki rufaffe (Line, Arc, Circle, Ellipse da Polyline waɗanda ke haɗuwa a ƙarshensu duk suna kewaye da yanki kamar yadda Lwpolyline rufaffe take yi) sai a cika shi da tsari; duk wani abu rufaffe a cikinsa ana barinsa bai cika ba a matsayin tsibiri',
@@ -8918,6 +9172,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   no: [
+    {
+      title: "Smartere kommandoforslag, valgfiltrering & avslutt med Enter",
+      highlights: [
+        "Kommandoforslag matcher nå bokstaver hvor som helst i et kommandonavn, ikke bare i starten, rangert først etter treffkvalitet og deretter etter hvor ofte du faktisk bruker kommandoen; listen kan klikkes med musen, ruller for å holde det valgte forslaget synlig når du bytter med Tab, er begrenset til rundt 10 rader, og fremhever bare de matchende bokstavene på plass i stedet for å legge et helt spøkelsesord over",
+        "Nytt: å velge mange entiteter viser nå et filterikon i overskriften på egenskapspanelet — åpner en popup med levende sjekklister for Type, Layer, Color, Lineweight og Linetype, bygget fra det som faktisk finnes i utvalget, for å snevre inn et stort, blandet utvalg før masseredigering",
+        "Mellomrom/Enter avslutter nå Hatch, Spline (CV og Fit), Offset, Trim, Extend, Area og Align, akkurat som resten av appen; en Trim-feil er rettet der en avrundet, lagret vinkel for et fullstendig ellipse-/sirkelkutt kunne havne like utenfor grensetoleransen til en Hatch, slik at den sporede løkken ikke ble lukket",
+        "Monokrom utskrifts- og eksportrendering er betydelig raskere på store plott — et lerretsfilter per form er erstattet med én enkelt gjennomgang av det ferdige bildet; en fil med 90 000 entiteter som tidligere ikke ble ferdig innen 30 sekunder, rendres nå på rundt 70 ms",
+      ],
+    },
     {
       title: 'Hatch: fyll et område med ett klikk, mønsterbibliotek & grepredigering',
       highlights: [
@@ -9252,6 +9515,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   da: [
     {
+      title: "Smartere kommandoforslag, valgfiltrering & afslut med Enter",
+      highlights: [
+        "Kommandoforslag matcher nu bogstaver hvor som helst i et kommandonavn, ikke kun i starten, rangeret først efter matchkvalitet og derefter efter hvor ofte du rent faktisk bruger kommandoen; listen kan klikkes med musen, scroller for at holde det valgte forslag synligt, når du skifter med Tab, er begrænset til omkring 10 rækker, og fremhæver kun de matchende bogstaver på deres plads i stedet for at lægge et helt spøgelsesord ovenpå",
+        "Nyt: at markere mange entiteter viser nu et filterikon i overskriften på egenskabspanelet — åbner en popup med levende afkrydsningslister for Type, Layer, Color, Lineweight og Linetype, bygget ud fra det, der rent faktisk er i markeringen, for at indsnævre en stor, blandet markering før masseredigering",
+        "Mellemrum/Enter afslutter nu Hatch, Spline (CV og Fit), Offset, Trim, Extend, Area og Align, ligesom resten af appen; en Trim-fejl er rettet, hvor en afrundet, gemt vinkel for et fuldstændigt ellipse-/cirkeludsnit kunne havne lige uden for grænsetolerancen for en Hatch, hvilket efterlod den sporede løkke ulukket",
+        "Monokrom udskrifts- og eksportgengivelse er markant hurtigere på store tegninger — et canvas-filter pr. form er erstattet af ét enkelt gennemløb af det færdige billede; en fil med 90.000 entiteter, der tidligere ikke blev færdig inden for 30 sekunder, gengives nu på omkring 70 ms",
+      ],
+    },
+    {
       title: 'Hatch: udfyld et område med ét klik, mønsterbibliotek & grebredigering',
       highlights: [
         'Ny Hatch-kommando — klik inde i et hvilket som helst lukket område (Line, Arc, Circle, Ellipse og Polyline, der mødes ved deres ender, afgrænser det ligesom en lukket Lwpolyline) og det udfyldes med et mønster; alt lukket indeni efterlades ufyldt som en ø',
@@ -9584,6 +9856,15 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   fi: [
+    {
+      title: "Älykkäämmät komentoehdotukset, valinnan suodatus & lopetus Enterillä",
+      highlights: [
+        "Komentoehdotukset täsmäävät nyt kirjaimiin missä tahansa kohdassa komennon nimeä, ei vain alussa, ja järjestys määräytyy ensin osuman laadun ja sitten sen mukaan, kuinka usein todella käytät kyseistä komentoa; luetteloa voi napsauttaa hiirellä, se vierittää pitääkseen valitun ehdotuksen näkyvissä Tabilla kierrettäessä, on rajattu noin 10 riviin, ja korostaa vain täsmäävät kirjaimet paikallaan sen sijaan, että päällekkäin näytettäisiin kokonainen haamusana",
+        "Uutta: monen entiteetin valitseminen näyttää nyt suodatinkuvakkeen ominaisuuspaneelin otsikossa — avaa ponnahdusikkunan, jossa on reaaliaikaiset valintaluettelot kohteille Type, Layer, Color, Lineweight ja Linetype, koottuna siitä, mitä valinnassa todella on, jotta suuren sekavalinnan voi rajata ennen massamuokkausta",
+        "Väli/Enter lopettavat nyt komennot Hatch, Spline (CV ja Fit), Offset, Trim, Extend, Area ja Align, samoin kuin muualla sovelluksessa; korjattu Trim-virhe, jossa täyden ellipsi-/ympyräleikkauksen pyöristetty tallennettu kulma saattoi osua juuri Hatchin rajatoleranssin ulkopuolelle, jolloin jäljitetty silmukka jäi sulkeutumatta",
+        "Mustavalkoinen tulostus- ja vientirenderöinti on huomattavasti nopeampaa suurilla piirustuksilla — muotokohtainen canvas-suodatin on korvattu yhdellä läpiajolla valmiin kuvan päällä; 90 000 entiteetin tiedosto, joka aiemmin ei valmistunut 30 sekunnissa, renderöityy nyt noin 70 ms:ssa",
+      ],
+    },
     {
       title: 'Hatch: alueen täyttö yhdellä klikkauksella, kuvioidenkirjasto & kahvoilla muokkaaminen',
       highlights: [

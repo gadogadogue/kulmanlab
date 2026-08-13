@@ -17,7 +17,7 @@ The `align` command repositions selected entities using one or two pairs of sour
 1. Select one or more entities on the canvas.
 2. Type `align` in the terminal or click the **Align** toolbar button.
 3. **Click the first source point (S1)**, then **click the first destination point (D1)**.
-4. **Click the second source point (S2)**, or press **Enter** to apply a translate-only alignment now.
+4. **Click the second source point (S2)**, or press **Enter** or **Space** to apply a translate-only alignment now.
 5. **Click the second destination point (D2)**.
 6. Answer the scale prompt: press **Y** to scale, or **N** / **Enter** to keep the original size.
 
@@ -48,7 +48,7 @@ A live ghost preview follows the cursor at every step: a move preview while plac
 
 ## One-point alignment (translate only)
 
-After D1 is placed, press **Enter** instead of clicking a second source point. The selection is translated by the S1→D1 vector — no rotation or scaling — identical to a [Move](../move/) using S1 as the base point and D1 as the destination.
+After D1 is placed, press **Enter** or **Space** instead of clicking a second source point. The selection is translated by the S1→D1 vector — no rotation or scaling — identical to a [Move](../move/) using S1 as the base point and D1 as the destination.
 
 ## Two-point alignment (translate + rotate + optional scale)
 
@@ -66,7 +66,7 @@ Pressing a key at the scale prompt applies the alignment immediately — there's
 | Key | Action |
 |-----|--------|
 | `Enter` / `Space` | Confirm selection and advance to the S1 phase |
-| `Enter` (at the S2 step) | Skip rotation — apply a translate-only alignment using S1 and D1 |
+| `Enter` / `Space` (at the S2 step) | Skip rotation — apply a translate-only alignment using S1 and D1 |
 | `Y` | Apply the alignment with scaling |
 | `N` / `Enter` (at the scale prompt) | Apply the alignment without scaling |
 | `Escape` | While picking points: discard them and return to the selection phase; with nothing selected: cancel the command |

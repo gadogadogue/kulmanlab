@@ -91,8 +91,8 @@ Patterns come from a shared library managed by **Hatch Manager**: built-in defau
 | **Mirror** | All entities | Reflect across a mirror axis defined by two points. |
 | **Scale** | All entities | Resize from a base point by a numeric scale factor. |
 | **Offset** | Line, Circle, Arc, Ellipse, Polyline | Create a parallel copy at a specified distance. |
-| **Trim** | Lines only | Remove the portion of a line beyond a cutting edge. |
-| **Extend** | Lines only | Lengthen a line to reach a boundary edge. |
+| **Trim** | Line, Arc, Circle, Ellipse, Polyline | Remove the portion of an entity between two intersection points. |
+| **Extend** | Line, Arc, Ellipse, Polyline | Stretch an entity's endpoint to reach a boundary. |
 | **Fillet** | Line to line | Round a sharp corner between two lines with an arc. |
 | **Chamfer** | Line to line | Bevel a corner between two lines with a straight cut. |
 | **Delete** | All entities | Remove selected objects from the drawing. |
@@ -185,6 +185,8 @@ Type a numeric value while dragging a grip to set an exact displacement or dista
 | **Ctrl+A** | Select all entities in the drawing |
 | **Click empty space** | Deselect all |
 
+Selecting many entities shows a filter icon in the property panel header. It opens a popup with live checklists for Type, Layer, Color, Lineweight, and Linetype — built from what's actually in the selection — so you can narrow a large, mixed selection down before bulk-editing. The canvas selection itself is narrowed to match as you check and uncheck values, not just the property panel's display.
+
 ---
 
 ## DXF Import & Export
@@ -246,7 +248,7 @@ Drawings are stored locally in your browser using **IndexedDB**. Nothing is sent
 
 ### Command Terminal
 
-Type command names directly into the terminal at the bottom of the screen:
+Type command names directly into the terminal at the bottom of the screen. Suggestions match letters anywhere in a command's name, not just the start, ranked by match quality and then by how often you actually use each command — the list is mouse-clickable, scrolls to keep the selected suggestion in view while cycling with **Tab**, and highlights just the matched letters in place.
 
 | Command | Alias |
 |---------|-------|
@@ -302,7 +304,6 @@ KulmanLab is focused on 2D drafting. The following are outside its current scope
 | Paper space / multiple layouts | Single model space only |
 | Associative dimensions | Dimensions are static; not linked to geometry |
 | Attributes (ATTRIB / ATTDEF) | Not supported |
-| Trim / extend on arcs, circles, polylines | Lines only |
 | Fillet / chamfer on non-line entities | Lines only |
 | Mobile / touchscreen use | Desktop browsers only |
 | Collaborative real-time editing | Not supported |

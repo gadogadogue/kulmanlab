@@ -39,7 +39,7 @@ Instead of clicking, type an exact position for any fit point:
 | `0`–`9`, `.`, `-` | Start X coordinate entry |
 | `,` | Lock X and move to Y entry |
 | `Backspace` | Delete last typed character |
-| `Enter` | Confirm typed coordinate, or finish the spline if no input is in progress and ≥ 2 points exist |
+| `Enter` / `Space` | Confirm typed coordinate (Enter only), or finish the spline if no input is in progress and ≥ 2 points exist |
 | `Escape` | Discard all points and exit |
 
 ## Grip editing — reshaping via fit points
