@@ -45,8 +45,15 @@ Sinusundan ng live ghost preview ng na-rotate na entity ang angle ng cursor pagk
 |-----|--------|
 | `0`–`9`, `.` | Idagdag ang digit sa angle value |
 | `-` | Negative angle (unang character lang) |
+| `C` | I-toggle ang Copy mode (bago mag-type ng anumang digit) |
 | `Backspace` | Burahin ang huling na-type na character |
 | `Enter` | Ilapat ang rotation sa na-type na angle |
+
+## Pag-ikot ng kopya
+
+Pindutin ang **C** sa angle prompt — bago mag-type ng anumang digit — para i-toggle ang **Copy** mode, ang parehong inline-option pattern na ginagamit ng ROTATE command ng AutoCAD. Ipinapakita ng prompt ang kasalukuyang estado bilang `[Copy=true]` / `[Copy=false]`, at ang muling pagpindot ng **C** ay ibinabalik ito.
+
+Kapag naka-on ang Copy, ang paglalapat ng rotation ay nag-iiwan sa orihinal na seleksyon na hindi nagagalaw sa lugar at sa halip ay nagdaragdag ng bago, umikot na mga kopya ng bawat napiling entity. Kapag naka-off ang Copy (default), umiikot ang seleksyon sa lugar tulad ng dati.
 
 ## Direksyon ng angle
 
@@ -64,6 +71,7 @@ Karaniwang value: `90` = quarter turn, `180` = half turn, `-90` = kabaligtaran n
 | `Enter` / `Space` | Kumpirmahin ang seleksyon |
 | `0`–`9`, `.`, `-` | Simulan ang X coordinate entry (base-point phase), o angle value (angle phase) |
 | `,` | I-lock ang X at lumipat sa Y entry (base-point phase) |
+| `C` | I-toggle ang Copy mode (angle phase, bago mag-type ng anumang digit) |
 | `Backspace` | Burahin ang huling na-type na character |
 | `Enter` | Kumpirmahin ang coordinate o ilapat ang rotation |
 | `Escape` | Kanselahin at i-reset |

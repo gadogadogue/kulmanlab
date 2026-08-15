@@ -65,6 +65,8 @@ Lệnh chiếu vị trí con trỏ lên thực thể đang di chuyển qua và t
 
 Các thực thể dùng làm **ranh giới cắt** có thể là Line, Arc, Circle, Ellipse hoặc Polyline. Các thực thể Văn bản, Spline, Kích thước và Đường dẫn không bao giờ ghi nhận giao điểm, nên cũng không thể đóng vai trò ranh giới.
 
+**Đoạn cung** của Polyline (vẽ bằng công tắc Arc, hoặc nhập vào) được cắt hoàn toàn giống như các đoạn thẳng — di chuột qua phần cung giữa hai giao điểm rồi nhấp. Cạnh đã cắt giữ nguyên độ cong; chỉ chiều dài thay đổi.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

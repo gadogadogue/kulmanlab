@@ -40,6 +40,10 @@ Wanneer twee lijnen elkaar kruisen, wordt de chamfer toegepast op de hoek die do
 
 Bij Polylines bepaalt de klikpositie welk **segment** van de polylijn deelneemt, en het dichtstbijzijnde hoekpunt aan de kant van de kruising is degene die wordt getrimd.
 
+Wanneer beide klikken op dezelfde polylijn vallen, moet de tweede klik op een segment liggen dat een echte buur is van het eerste — ze delen het hoekpunt ertussen — anders wordt de klik geweigerd; twee niet-aangrenzende segmenten hebben geen gedeelde hoek om af te schuinen.
+
+Een boogsegment van een polylijn wordt nooit geselecteerd voor afschuinen — alleen rechte segmenten tellen mee, dus hoveren in de buurt van een booggedeelte zoekt in plaats daarvan naar het dichtstbijzijnde rechte segment.
+
 ## Wat het commando maakt
 
 - Het eindpunt (of polylijnhoekpunt) van de eerste entiteit dat het dichtst bij de kruising ligt, wordt verplaatst naar punt **T1**, gelegen op afstand d1 langs de eerste entiteit vanaf de kruising.

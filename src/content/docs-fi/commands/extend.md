@@ -48,6 +48,8 @@ Seuraavia entiteettityyppejä ei huomioida rajoina — entiteetti ei jatku niit�
 
 Kaikki muut tyypit (Line, Arc, Circle, Ellipse, Polyline, Dimension) toimivat kelvollisina rajoina.
 
+Jos Polylinen ensimmäinen tai viimeinen segmentti on itsessään kaarisegmentti (piirretty Arc-kytkimellä), sen jatkaminen kasvattaa kaarta sen omaa ympyrää pitkin — aivan kuten itsenäisen Arc-elementin jatkaminen — sen sijaan, että sitä käsiteltäisiin suorana segmenttinä.
+
 ## Näppäinreferenssi
 
 | Näppäin | Toiminto |

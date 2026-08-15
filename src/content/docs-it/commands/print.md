@@ -29,6 +29,12 @@ La finestra ha due pannelli:
 | **Formato** (menu a discesa) | PNG, JPEG, WebP o PDF |
 | **Esporta** (pulsante) | Genera e scarica il file |
 
+## Qualità e risoluzione
+
+Il menu a tendina **Qualità** imposta il DPI a cui viene renderizzata l'esportazione: Bozza (72), Normale (150, predefinito), Presentazione (300) o Massima (600). Una Qualità più alta produce un'immagine più grande e nitida alla stessa dimensione fisica — gli spessori delle linee si scalano insieme alla risoluzione, quindi una linea mantiene lo stesso spessore fisico su carta a qualsiasi impostazione di Qualità. L'unica eccezione è una linea sottile (spessore 0), che rimane a una larghezza fissa di 1 pixel a qualsiasi livello di Qualità.
+
+Cambiare la Qualità ri-renderizza immediatamente l'anteprima, così vedi la nitidezza reale prima di esportare.
+
 ## Selezione di un'area di esportazione personalizzata
 
 Per impostazione predefinita l'anteprima mostra esattamente ciò che era visibile sul canvas quando hai aperto il Print Manager. Per esportare una regione specifica:

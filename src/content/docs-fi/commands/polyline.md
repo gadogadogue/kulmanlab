@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Komento `polyline` piirtää yhdistetyn polun, jossa on mikä tahansa määrä suoria segmenttejä, kaikki tallennettuna yhtenä `LWPOLYLINE`-entiteettinä. Koska koko polku on yksi objekti, sen valitseminen valitsee kaikki segmentit kerralla — siirrä, kierrä tai skaalaa koko muoto yhdessä toiminnossa. Tämä on keskeinen ero ketjutettuihin [Lines](../line/), joissa jokainen segmentti on itsenäinen entiteetti.
+Komento `polyline` piirtää yhdistetyn polun, jossa on mikä tahansa määrä suoria tai kaarisegmenttejä, kaikki tallennettuna yhtenä `LWPOLYLINE`-entiteettinä. Koska koko polku on yksi objekti, sen valitseminen valitsee kaikki segmentit kerralla — siirrä, kierrä tai skaalaa koko muoto yhdessä toiminnossa. Tämä on keskeinen ero ketjutettuihin [Lines](../line/), joissa jokainen segmentti on itsenäinen entiteetti.
 
 Polylinjat voivat olla myös **suljettuja**: [Rectangle](../rectangle/)-komento käyttää samaa `LWPOLYLINE`-entiteettiä close-lipulla asetettuna.
 
@@ -28,6 +28,12 @@ Polylinjat voivat olla myös **suljettuja**: [Rectangle](../rectangle/)-komento 
 ```
 
 **Escape**-näppäimen painaminen milloin tahansa hylkää kaikki sijoitetut pisteet ja poistuu komennosta.
+
+## Kaarisegmentin piirtäminen
+
+Paina **A** milloin tahansa ensimmäisen kärjen jälkeen vaihtaaksesi Arc-tilan — sama sisäinen vaihtoehtomalli, jota AutoCADin PLINE-komento käyttää, mikä heijastaa Rotaten Copy-vaihtoehtoa. Kehote näyttää nykyisen tilan muodossa `[Arc=true]` / `[Arc=false]`; **A**:n painaminen uudelleen vaihtaa sen takaisin, joten suoria ja kaarisegmenttejä voi vapaasti sekoittaa yhdessä polylinjassa.
+
+Kun Arc-tila on päällä, jokainen uusi segmentti on tangentiaalinen jatkokaari — se alkaa tangentiaalisesti siitä, mikä tuli juuri ennen sitä (edellisen suoran segmentin suunta tai edellisen kaaren päätangentti); aivan ensimmäinen segmentti osoittaa oletuksena itään, koska sillä ei ole mitään, mihin olla tangentiaalinen.
 
 ## Koordinaattien syöttö
 
@@ -57,6 +63,7 @@ Nykyinen kertynyt pituus näkyy terminaalin kehotteessa reaaliajassa. Napsauta l
 |-----|--------|
 | `0`–`9`, `.`, `-` | Aloita X-koordinaatin syöttö, tai segmentin pituus kulmalukittuna |
 | `,` | Lukitse X ja siirry Y:n syöttöön |
+| `A` | Vaihda Arc-tila seuraavalle segmentille (ensimmäisen kärjen jälkeen, ilman meneillään olevaa syötettä) |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
 | `Enter` | Vahvista kirjoitettu koordinaatti tai pituus, tai viimeistele polylinja jos mitään ei ole kirjoitettu ja ≥ 2 pistettä on olemassa |
 | `Space` | Viimeistele polylinja (sama kuin Enter kun syöte ei ole käynnissä) |
@@ -87,7 +94,7 @@ Koska polylinja on yksi entiteetti, risteysvalinta, joka koskettaa mitä tahansa
 
 ## Tuetut muokkauskomennot
 
-Polylinjat tukevat kaikkia yleisiä muunnoksia ja offsetia, mutta **eivät** trimiä tai extendiä (nämä ovat vain [Line](../line/)-entiteeteille):
+Polylinjat tukevat jokaista yleistä muunnosta sekä offsetia, trimiä, extendiä ja chamferia (chamferissa lasketaan vain suorat segmentit):
 
 | Komento | Mitä polylinjalle tapahtuu |
 |---------|------------------------------|
@@ -97,7 +104,12 @@ Polylinjat tukevat kaikkia yleisiä muunnoksia ja offsetia, mutta **eivät** tri
 | [Mirror](../mirror/) | Peilaa kaikki kärjet peiliakselin yli |
 | [Scale](../scale/) | Skaalaa kaikkia kärkiä yhtenäisesti perustepisteestä |
 | [Offset](../offset/) | Luo rinnakkaisen polylinjan kiinteällä kohtisuoralla etäisyydellä |
+| [Trim](../trim/) | Poistaa osan kahden leikkauspisteen välillä, sekä suorilla että kaarisegmenteillä |
+| [Extend](../extend/) | Jatkaa ensimmäistä tai viimeistä segmenttiä seuraavaan rajaan |
+| [Chamfer](../chamfer/) | Viistää kulman kahden vierekkäisen suoran segmentin välillä |
 | [Delete](../delete/) | Poistaa polylinjan piirustuksesta |
+
+Fillet ei tue polylinjoja lainkaan.
 
 ## Ominaisuudet
 
@@ -127,7 +139,8 @@ Kun polylinja on valittu, ominaisuuspaneeli näyttää:
 |---|---------|------|
 | Entiteettien määrä | Yksi `LWPOLYLINE` koko polulle | Yksi `LINE` per segmentti |
 | Suljettu muoto | Kyllä (close-lippu) | Ei |
-| Trim / Extend | Ei | Kyllä — segmentti kerrallaan |
+| Kaarisegmentit | Kyllä, segmenteittäin `Arc`-kytkimellä | Ei — kaareva segmentti tarvitsee erillisen [Arc](../arc/)-entiteetin |
+| Trim / Extend | Kyllä | Kyllä — segmentti kerrallaan |
 | Segmentin keskipistekahva | Siirtää koko segmentin | Aktivoi Moven entiteetille |
 | Paras käyttö | Ääriviivat, muodot joita pidät kokonaisina | Apuviivat, geometria jota aiot leikata |
 

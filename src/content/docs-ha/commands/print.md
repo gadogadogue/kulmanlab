@@ -29,6 +29,12 @@ Taga tana da panels guda biyu:
 | Dropdown na **Format** | PNG, JPEG, WebP, ko PDF |
 | Maɓallin **Export** | Ƙirƙira da sauke fayil |
 
+## Inganci da ƙuduri
+
+Menu na **Quality** yana saita DPI wanda ake bayarwa dashi: Draft (72), Normal (150, tsoho), Presentation (300), ko Max (600). Inganci mafi girma yana samar da hoto mafi girma da tsabta a girman zahiri iri ɗaya — kaurin layi yana daidaitawa tare da ƙuduri, don haka layi yana ci gaba da kauri iri ɗaya na zahiri a takarda a kowane saitin Quality. Kawai togiya ita ce layin gashi (kauri 0), wanda ke ci gaba da faɗi mai tsayayye na pixel 1 a kowane matakin Quality.
+
+Canza Quality yana sake bayarwa da preview nan take, don haka kake ganin tsabta ta gaskiya kafin fitarwa.
+
 ## Zaɓen yankin fitarwa na musamman
 
 Ta tsoho preview yana nuna daidai abin da ke bayyana a kan canvas lokacin da ka buɗe Print Manager. Don fitar da yanki na musamman:

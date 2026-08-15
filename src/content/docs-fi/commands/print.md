@@ -29,6 +29,12 @@ Ikkunassa on kaksi paneelia:
 | **Format**-valikko | PNG, JPEG, WebP tai PDF |
 | **Export**-painike | Luo ja lataa tiedosto |
 
+## Laatu ja resoluutio
+
+**Quality**-pudotusvalikko asettaa DPI:n, jolla vienti renderöidään: Draft (72), Normal (150, oletus), Presentation (300) tai Max (600). Korkeampi Quality tuottaa suuremman, terävämmän kuvan samassa fyysisessä koossa — viivanpaksuudet skaalautuvat resoluution mukana, joten viiva säilyttää saman fyysisen paksuuden paperilla millä tahansa Quality-asetuksella. Ainoa poikkeus on hiusviiva (viivanpaksuus 0), joka pysyy kiinteänä 1 pikselin levyisenä jokaisella Quality-tasolla.
+
+Quality-asetuksen muuttaminen renderöi esikatselun heti uudelleen, joten näet todellisen terävyyden ennen vientiä.
+
 ## Mukautetun vientialueen valitseminen
 
 Oletuksena esikatselu näyttää tarkalleen sen, mikä oli näkyvissä piirtoalueella, kun avasit Print Managerin. Vieäksesi tietyn alueen:

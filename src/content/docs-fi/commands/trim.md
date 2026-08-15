@@ -65,6 +65,8 @@ Komento projisoi kohdistimen sijainnin entiteetille, jonka päällä se on, ja l
 
 Entiteetit, joita käytetään **leikkausrajoina**, voivat olla Line, Arc, Circle, Ellipse tai Polyline. Text-, Spline-, Dimension- ja Leader-entiteetit eivät koskaan rekisteröi leikkauspisteitä, joten nekään eivät voi toimia rajoina.
 
+Polylinen **kaarisegmentit** (piirretty Arc-kytkimellä tai tuotu) leikataan täsmälleen kuten sen suorat segmentit — vie kohdistin kaariosan päälle kahden leikkauspisteen välissä ja napsauta. Leikattu reuna säilyttää kaarevuutensa; vain sen pituus muuttuu.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

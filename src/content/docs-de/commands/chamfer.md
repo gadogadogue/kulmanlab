@@ -40,6 +40,10 @@ Wenn sich zwei Linien kreuzen, wird die Fase an der durch die Klickpositionen de
 
 Bei Polylinien bestimmt die Klickposition, welches **Segment** der Polylinie beteiligt ist, und der nächste Scheitelpunkt auf der Schnittseite wird gekürzt.
 
+Wenn beide Klicks auf derselben Polylinie landen, muss der zweite Klick ein Segment sein, das ein echter Nachbar des ersten ist — sie teilen sich den Eckpunkt dazwischen — sonst wird der Klick abgelehnt; zwei nicht benachbarte Segmente haben keinen gemeinsamen Eckpunkt, den ein Chamfer abschrägen könnte.
+
+Ein Bogensegment einer Polylinie wird beim Chamfern nie ausgewählt — nur gerade Segmente zählen, sodass ein Hover in der Nähe eines Bogenabschnitts stattdessen das nächstgelegene gerade Segment findet.
+
 ## Was der Befehl erstellt
 
 - Der Endpunkt des ersten Elements (oder Polylinienscheitelpunkt) nächstgelegen zum Schnittpunkt wird auf den Punkt **T1** verschoben, der d1 entlang des ersten Elements vom Schnittpunkt liegt.

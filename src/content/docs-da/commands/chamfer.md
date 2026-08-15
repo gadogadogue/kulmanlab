@@ -40,6 +40,10 @@ Når to linjer krydser hinanden, anvendes chamferen på hjørnet defineret af kl
 
 For Polylines afgør klikpositionen, hvilket **segment** af polylinjen der deltager, og det nærmeste hjørne på skæringssiden er det, der trimmes.
 
+Når begge klik lander på samme polylinje, skal det andet klik være på et segment, der er en ægte nabo til det første — de deler hjørnepunktet mellem sig — ellers afvises klikket; to ikke-tilstødende segmenter har ikke et fælles hjørne at fase.
+
+Et buesegment i en polylinje bliver aldrig valgt til fasning — kun lige segmenter tæller, så at holde musen tæt på en buedel søger i stedet efter det nærmeste lige segment.
+
 ## Hvad kommandoen opretter
 
 - Den første entitets endepunkt (eller polylinje-hjørne) nærmest skæringspunktet flyttes til punktet **T1**, placeret d1 langs den første entitet fra skæringspunktet.

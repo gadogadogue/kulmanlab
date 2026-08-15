@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Polecenie `polyline` rysuje połączoną ścieżkę z dowolnej liczby prostych segmentów, wszystkie przechowywane jako jeden element `LWPOLYLINE`. Ponieważ cała ścieżka jest jednym obiektem, zaznaczenie jej zaznacza każdy segment jednocześnie — przesuń, obróć lub skaluj cały kształt w jednej operacji. To kluczowe rozróżnienie od połączonych [Line](../line/), gdzie każdy segment jest niezależnym elementem.
+Polecenie `polyline` rysuje połączoną ścieżkę z dowolnej liczby prostych lub łukowych segmentów, wszystkie przechowywane jako jeden element `LWPOLYLINE`. Ponieważ cała ścieżka jest jednym obiektem, zaznaczenie jej zaznacza każdy segment jednocześnie — przesuń, obróć lub skaluj cały kształt w jednej operacji. To kluczowe rozróżnienie od połączonych [Line](../line/), gdzie każdy segment jest niezależnym elementem.
 
 Polilinie mogą być również **zamknięte**: polecenie [Rectangle](../rectangle/) używa tego samego elementu `LWPOLYLINE` z ustawioną flagą zamknięcia.
 
@@ -28,6 +28,12 @@ Polilinie mogą być również **zamknięte**: polecenie [Rectangle](../rectangl
 ```
 
 Naciśnięcie **Escape** w dowolnym momencie odrzuca wszystkie umieszczone punkty i opuszcza polecenie.
+
+## Rysowanie segmentu łukowego
+
+Naciśnij **A** w dowolnym momencie po pierwszym wierzchołku, aby przełączyć tryb Arc — ten sam wzorzec opcji wbudowanej, którego używa polecenie PLINE w AutoCAD, odzwierciedlający opcję Copy polecenia Rotate. Monit pokazuje bieżący stan jako `[Arc=true]` / `[Arc=false]`; ponowne naciśnięcie **A** przełącza go z powrotem, dzięki czemu proste i łukowe segmenty można swobodnie mieszać w jednej polilinii.
+
+Gdy tryb Arc jest włączony, każdy nowy segment jest łukiem stycznej kontynuacji — zaczyna się stycznie do tego, co było bezpośrednio przed nim (kierunek poprzedniego segmentu prostego lub styczna końcowa poprzedniego łuku); sam pierwszy segment domyślnie kieruje się na wschód, ponieważ nie ma niczego, do czego mógłby być styczny.
 
 ## Wprowadzanie współrzędnych
 
@@ -57,6 +63,7 @@ Bieżąca skumulowana długość pojawia się w wierszu zachęty terminala w cza
 |---------|-------|
 | `0`–`9`, `.`, `-` | Rozpocznij wprowadzanie współrzędnej X lub długość segmentu przy zablokowanym kącie |
 | `,` | Zablokuj X i przejdź do wprowadzania Y |
+| `A` | Przełącz tryb Arc dla następnego segmentu (po pierwszym wierzchołku, bez trwającego wprowadzania) |
 | `Backspace` | Usuń ostatnio wpisany znak |
 | `Enter` | Potwierdź wpisaną współrzędną lub długość, lub zakończ polilinię jeśli nic nie jest wpisane i istnieje ≥ 2 punkty |
 | `Spacja` | Zakończ polilinię (tak samo jak Enter gdy nie ma aktywnego wejścia) |
@@ -87,7 +94,7 @@ Ponieważ polilinia jest jednym elementem, zaznaczenie przecinające dotykające
 
 ## Obsługiwane polecenia edycji
 
-Polilinie obsługują wszystkie ogólne transformacje i odsunięcie, ale **nie** przycinanie ani przedłużanie (te dotyczą tylko [Line](../line/)):
+Polilinie obsługują każdą ogólną transformację, a także odsunięcie, przycinanie, przedłużanie i fazowanie (przy fazowaniu liczą się tylko proste segmenty):
 
 | Polecenie | Co dzieje się z polilinią |
 |-----------|--------------------------|
@@ -97,7 +104,12 @@ Polilinie obsługują wszystkie ogólne transformacje i odsunięcie, ale **nie**
 | [Mirror](../mirror/) | Odbija wszystkie wierzchołki przez oś odbicia |
 | [Scale](../scale/) | Skaluje wszystkie wierzchołki równomiernie od punktu bazowego |
 | [Offset](../offset/) | Tworzy równoległą polilinię w stałej prostopadłej odległości |
+| [Trim](../trim/) | Usuwa fragment między dwoma przecięciami, zarówno dla segmentów prostych, jak i łukowych |
+| [Extend](../extend/) | Przedłuża pierwszy lub ostatni segment do kolejnej granicy |
+| [Chamfer](../chamfer/) | Fazuje narożnik między dwoma sąsiednimi prostymi segmentami |
 | [Delete](../delete/) | Usuwa polilinię z rysunku |
+
+Fillet w ogóle nie obsługuje polilinii.
 
 ## Właściwości
 
@@ -127,7 +139,8 @@ Gdy polilinia jest zaznaczona, panel właściwości pokazuje:
 |---|---------|------|
 | Liczba elementów | Jeden `LWPOLYLINE` dla całej ścieżki | Jeden `LINE` na segment |
 | Kształt zamknięty | Tak (flaga zamknięcia) | Nie |
-| Przytnij / Przedłuż | Nie | Tak — segment po segmencie |
+| Segmenty łukowe | Tak, na segment za pomocą przełącznika `Arc` | Nie — zakrzywiony segment wymaga osobnego elementu [Arc](../arc/) |
+| Przytnij / Przedłuż | Tak | Tak — segment po segmencie |
 | Uchwyt punktu środkowego segmentu | Translacja całego segmentu | Aktywuje Przesuń dla elementu |
 | Najlepsze do | Kontury, zarysy, kształty zachowywane w całości | Linie pomocnicze, geometria do przycięcia |
 

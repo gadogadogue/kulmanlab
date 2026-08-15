@@ -40,6 +40,10 @@ Gdy dwie linie przecinają się, fazowanie jest stosowane na narożniku zdefinio
 
 W przypadku polilinii pozycja kliknięcia określa, który **segment** polilinii uczestniczy, a najbliższy wierzchołek po stronie przecięcia jest tym, który zostaje przycięty.
 
+Gdy oba kliknięcia trafiają na tę samą polilinię, drugie kliknięcie musi dotyczyć segmentu będącego prawdziwym sąsiadem pierwszego — dzielą wspólny wierzchołek narożny — w przeciwnym razie kliknięcie zostaje odrzucone; dwa niesąsiadujące segmenty nie mają wspólnego narożnika do sfazowania.
+
+Segment łukowy polilinii nigdy nie jest wybierany do fazowania — liczą się tylko segmenty proste, więc najechanie kursorem w pobliżu fragmentu łuku szuka zamiast tego najbliższego segmentu prostego.
+
 ## Co tworzy polecenie
 
 - Punkt końcowy pierwszego elementu (lub wierzchołek polilinii) najbliższy przecięciu jest przesuwany do punktu **T1**, zlokalizowanego d1 wzdłuż pierwszego elementu od przecięcia.

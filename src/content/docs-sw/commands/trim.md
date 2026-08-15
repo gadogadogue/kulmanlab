@@ -65,6 +65,8 @@ Amri inasukuma nafasi ya kishale kwenye kipande kilichoeleweka na kupata nukta z
 
 Vipande vinavyotumika kama **mipaka ya kukata** vinaweza kuwa Line, Arc, Circle, Ellipse au Polyline. Vipande vya Text, Spline, Dimension, na Leader havisajili makutano kamwe, hivyo pia haviwezi kufanya kazi kama mipaka.
 
+**Sehemu za mviringo** za Polyline (zilizochorwa kwa kigeuza Arc, au zilizoingizwa) hukatwa sawasawa na sehemu zake za moja kwa moja — elea juu ya sehemu ya mviringo kati ya makutano mawili kisha ubofye. Ukingo uliokatwa unabaki na mviringo wake; urefu wake tu ndio unabadilika.
+
 ## Trim dhidi ya Extend
 
 | | Trim | Extend |

@@ -48,6 +48,8 @@ Aina zifuatazo za vipande hupuuzwa kama mipaka — kipande hakinyooshwi kukutana
 
 Aina zingine zote (Line, Arc, Circle, Ellipse, Polyline, Dimension) hutumika kama mipaka halali.
 
+Ikiwa sehemu ya kwanza au ya mwisho ya Polyline yenyewe ni sehemu ya mviringo (iliyochorwa kwa kigeuza Arc), kuinyoosha hukuza mviringo kando ya duara lake — sawa na kunyoosha Arc inayojitegemea — badala ya kuishughulikia kama sehemu ya moja kwa moja.
+
 ## Marejeo ya kibodi
 
 | Kitufe | Kitendo |

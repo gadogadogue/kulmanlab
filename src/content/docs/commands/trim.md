@@ -65,6 +65,8 @@ The command projects the cursor position onto the hovered entity and finds all i
 
 The entities used as **cutting boundaries** can be a Line, Arc, Circle, Ellipse, or Polyline. Text, Spline, Dimension, and Leader entities never register intersections, so they can't act as boundaries either.
 
+A [Polyline](../polyline/)'s **arc segments** (drawn with the Arc toggle, or imported from another CAD tool) trim exactly like its straight segments — hover the arc portion between two intersections and click. The trimmed edge keeps its original curvature; only its length changes.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

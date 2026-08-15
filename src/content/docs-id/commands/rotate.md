@@ -45,8 +45,15 @@ Pratinjau bayangan langsung dari entitas yang diputar mengikuti sudut kursor set
 |-----|--------|
 | `0`–`9`, `.` | Tambahkan digit ke nilai sudut |
 | `-` | Sudut negatif (karakter pertama saja) |
+| `C` | Alihkan mode Copy (sebelum mengetik digit apa pun) |
 | `Backspace` | Hapus karakter terakhir yang diketik |
 | `Enter` | Terapkan rotasi pada sudut yang diketik |
+
+## Memutar salinan
+
+Tekan **C** pada prompt sudut — sebelum mengetik digit apa pun — untuk mengalihkan mode **Copy**, pola opsi inline yang sama yang digunakan perintah ROTATE AutoCAD. Prompt menampilkan status saat ini sebagai `[Copy=true]` / `[Copy=false]`, dan menekan **C** lagi akan membaliknya.
+
+Dengan Copy aktif, menerapkan rotasi membiarkan seleksi asli tetap di tempatnya tanpa perubahan dan sebagai gantinya menambahkan salinan baru yang diputar dari setiap entitas yang dipilih. Dengan Copy nonaktif (default), seleksi berputar di tempat seperti biasa.
 
 ## Arah sudut
 
@@ -64,6 +71,7 @@ Nilai umum: `90` = seperempat putaran, `180` = setengah putaran, `-90` = seperem
 | `Enter` / `Space` | Konfirmasi seleksi |
 | `0`–`9`, `.`, `-` | Mulai entri koordinat X (fase titik dasar), atau nilai sudut (fase sudut) |
 | `,` | Kunci X dan pindah ke entri Y (fase titik dasar) |
+| `C` | Alihkan mode Copy (fase sudut, sebelum mengetik digit apa pun) |
 | `Backspace` | Hapus karakter terakhir yang diketik |
 | `Enter` | Konfirmasi koordinat atau terapkan rotasi |
 | `Escape` | Batal dan reset |

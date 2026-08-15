@@ -29,6 +29,12 @@ Dirisha lina paneli mbili:
 | Menyu ya **Format** | PNG, JPEG, WebP, au PDF |
 | Kitufe cha **Export** | Tengeneza na upakue faili |
 
+## Ubora na azimio
+
+Kishuka cha **Quality** huweka DPI ambayo usafirishaji hurenderiwa: Draft (72), Normal (150, chaguo-msingi), Presentation (300), au Max (600). Ubora wa juu zaidi hutoa picha kubwa na kali zaidi kwa saizi ile ile halisi — unene wa mistari hupima pamoja na azimio, hivyo mstari hudumisha unene ule ule halisi kwenye karatasi katika mpangilio wowote wa Quality. Isipokuwa pekee ni mstari mwembamba (unene wa mstari 0), ambao hubaki na upana thabiti wa pikseli 1 katika kiwango chochote cha Quality.
+
+Kubadilisha Quality hurenderi upya hakiki mara moja, hivyo unaona ukali halisi kabla ya kusafirisha.
+
 ## Kuchagua eneo maalum la kusafirisha
 
 Kwa chaguo-msingi hakiki inaonyesha hasa kilichoonekana kwenye kanvasi ulipofungua Print Manager. Kusafirisha eneo maalum:

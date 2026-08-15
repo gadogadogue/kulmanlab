@@ -29,6 +29,12 @@ Das Fenster hat zwei Panels:
 | **Format**-Dropdown | PNG, JPEG, WebP oder PDF |
 | **Export**-Schaltfläche | Datei generieren und herunterladen |
 
+## Qualität und Auflösung
+
+Das Dropdown **Qualität** legt die DPI fest, mit der der Export gerendert wird: Entwurf (72), Normal (150, Standard), Präsentation (300) oder Maximal (600). Eine höhere Qualität erzeugt ein größeres, schärferes Bild bei gleicher physischer Größe — Linienstärken skalieren zusammen mit der Auflösung, sodass eine Linie bei jeder Qualitätsstufe die gleiche physische Dicke auf dem Papier behält. Die einzige Ausnahme ist eine Haarlinie (Linienstärke 0), die bei jeder Qualitätsstufe eine feste Breite von 1 Pixel behält.
+
+Eine Änderung der Qualität rendert die Vorschau sofort neu, sodass Sie die tatsächliche Schärfe vor dem Export sehen.
+
 ## Benutzerdefinierten Exportbereich auswählen
 
 Standardmäßig zeigt die Vorschau genau das, was beim Öffnen des Druck-Managers auf der Zeichenfläche sichtbar war. Um eine bestimmte Region zu exportieren:

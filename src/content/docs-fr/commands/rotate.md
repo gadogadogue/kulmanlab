@@ -45,8 +45,15 @@ Un aperçu fantôme en direct des entités pivotées suit l'angle du curseur une
 |--------|--------|
 | `0`–`9`, `.` | Ajouter un chiffre à la valeur d'angle |
 | `-` | Angle négatif (premier caractère uniquement) |
+| `C` | Basculer le mode Copy (avant de saisir un chiffre) |
 | `Retour arrière` | Supprimer le dernier caractère saisi |
 | `Entrée` | Appliquer la rotation à l'angle saisi |
+
+## Faire pivoter une copie
+
+Appuyez sur **C** à l'invite d'angle — avant de saisir un chiffre — pour basculer le mode **Copy**, le même modèle d'option en ligne que la commande ROTATE d'AutoCAD utilise. L'invite affiche l'état actuel sous la forme `[Copy=true]` / `[Copy=false]`, et appuyer à nouveau sur **C** le fait basculer en arrière.
+
+Avec Copy activé, appliquer la rotation laisse la sélection originale intacte à sa place et ajoute à la place de nouvelles copies pivotées de chaque entité sélectionnée. Avec Copy désactivé (par défaut), la sélection pivote sur place comme d'habitude.
 
 ## Direction de l'angle
 
@@ -64,6 +71,7 @@ Valeurs courantes : `90` = quart de tour, `180` = demi-tour, `-90` = quart de to
 | `Entrée` / `Espace` | Confirmer la sélection |
 | `0`–`9`, `.`, `-` | Démarrer la saisie de coordonnée X (phase point de base), ou valeur d'angle (phase angle) |
 | `,` | Verrouiller X et passer à la saisie Y (phase point de base) |
+| `C` | Basculer le mode Copy (phase angle, avant de saisir un chiffre) |
 | `Retour arrière` | Supprimer le dernier caractère saisi |
 | `Entrée` | Confirmer la coordonnée ou appliquer la rotation |
 | `Échap` | Annuler et réinitialiser |

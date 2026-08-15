@@ -29,6 +29,12 @@ Het venster heeft twee panelen:
 | **Format**-vervolgkeuzelijst | PNG, JPEG, WebP of PDF |
 | **Export**-knop | Genereer en download het bestand |
 
+## Kwaliteit en resolutie
+
+De **Quality**-vervolgkeuzelijst stelt de DPI in waarmee de export wordt gerenderd: Draft (72), Normal (150, standaard), Presentation (300) of Max (600). Hogere Quality levert een groter, scherper beeld op bij dezelfde fysieke grootte — lijndiktes schalen mee met de resolutie, zodat een lijn bij elke Quality-instelling dezelfde fysieke dikte op papier behoudt. De enige uitzondering is een haarlijn (lijndikte 0), die bij elk Quality-niveau een vaste breedte van 1 pixel blijft.
+
+Het wijzigen van Quality rendert de voorvertoning direct opnieuw, zodat u de werkelijke scherpte ziet vóór het exporteren.
+
 ## Een aangepast exportgebied selecteren
 
 Standaard toont de preview precies wat zichtbaar was op het canvas toen u de Print Manager opende. Om een specifiek gebied te exporteren:

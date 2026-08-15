@@ -29,6 +29,12 @@ Fönstret har två paneler:
 | **Format**-rullgardinsmeny | PNG, JPEG, WebP eller PDF |
 | **Export**-knapp | Generera och ladda ner filen |
 
+## Kvalitet och upplösning
+
+Rullgardinsmenyn **Quality** ställer in vilken DPI exporten renderas i: Draft (72), Normal (150, standard), Presentation (300) eller Max (600). Högre Quality ger en större, skarpare bild i samma fysiska storlek — linjetjocklekar skalas tillsammans med upplösningen, så en linje behåller samma fysiska tjocklek på papper vid vilken Quality-inställning som helst. Det enda undantaget är en hårlinje (linjetjocklek 0), som förblir en fast bredd på 1 pixel på varje Quality-nivå.
+
+Att ändra Quality renderar om förhandsgranskningen omedelbart, så du ser den faktiska skärpan innan du exporterar.
+
 ## Välja ett anpassat exportområde
 
 Som standard visar förhandsgranskningen exakt det som var synligt på ritytan när du öppnade Print-hanteraren. För att exportera ett specifikt område:

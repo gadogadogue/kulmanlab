@@ -45,8 +45,15 @@ Temel noktayı ayarladıktan sonra döndürülen nesnelerin canlı önizleme hay
 |-----|-------|
 | `0`–`9`, `.` | Açı değerine rakam ekler |
 | `-` | Negatif açı (yalnızca ilk karakter) |
+| `C` | Copy modunu değiştirir (herhangi bir rakam yazmadan önce) |
 | `Backspace` | Son girilen karakteri siler |
 | `Enter` | Girilen açıda döndürmeyi uygular |
+
+## Bir kopyayı döndürme
+
+**Copy** modunu değiştirmek için açı isteminde — herhangi bir rakam yazmadan önce — **C** tuşuna basın; bu, AutoCAD'in ROTATE komutunun kullandığı aynı satır içi seçenek desenidir. İstem geçerli durumu `[Copy=true]` / `[Copy=false]` olarak gösterir ve **C** tuşuna tekrar basmak onu geri çevirir.
+
+Copy açıkken, döndürmeyi uygulamak orijinal seçimi olduğu yerde değiştirmeden bırakır ve bunun yerine seçilen her nesnenin döndürülmüş yeni kopyalarını ekler. Copy kapalıyken (varsayılan), seçim her zamanki gibi yerinde döner.
 
 ## Açı Yönü
 
@@ -64,6 +71,7 @@ Yaygın değerler: `90` = çeyrek dönüş, `180` = yarım dönüş, `-90` = ter
 | `Enter` / `Boşluk` | Seçimi onaylar |
 | `0`–`9`, `.`, `-` | Temel nokta aşamasında X koordinatı veya açı aşamasında açı değeri girişini başlatır |
 | `,` | X'i kilitler ve Y girişine geçer (temel nokta aşaması) |
+| `C` | Copy modunu değiştirir (açı aşaması, herhangi bir rakam yazmadan önce) |
 | `Backspace` | Son girilen karakteri siler |
 | `Enter` | Koordinatı onaylar veya döndürmeyi uygular |
 | `Escape` | İptal eder ve sıfırlar |

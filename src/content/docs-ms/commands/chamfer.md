@@ -40,6 +40,10 @@ Apabila dua garis bersilang antara satu sama lain, chamfer digunakan pada sudut 
 
 Untuk Polyline, kedudukan klik menentukan **segmen** poliline mana yang terlibat, dan bucu terdekat pada sisi persimpangan adalah yang dipotong.
 
+Apabila kedua-dua klik jatuh pada Polyline yang sama, klik kedua mesti merupakan segmen yang benar-benar jiran kepada yang pertama — keduanya berkongsi bucu sudut di antara mereka — jika tidak klik itu ditolak; dua segmen yang tidak bersebelahan tiada sudut kongsi untuk chamfer memberkas.
+
+Segmen lengkok Polyline tidak pernah dipilih untuk chamfer — hanya segmen lurus dikira, jadi menuding berhampiran bahagian lengkok akan mencari segmen lurus terdekat sebagai gantinya.
+
 ## Apa yang arahan cipta
 
 - Titik akhir entiti pertama (atau bucu poliline) yang paling hampir dengan persimpangan digerakkan ke titik **T1**, terletak d1 sepanjang entiti pertama dari persimpangan.

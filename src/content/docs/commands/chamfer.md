@@ -38,7 +38,9 @@ When two lines cross each other, the chamfer is applied on the corner defined by
 - Click near one end of the first entity to select that half.
 - Move the cursor to the desired half of the second entity — the dashed preview updates live.
 
-For Polylines, the click position determines which **segment** of the polyline participates, and the nearest vertex on the intersection side is the one that gets trimmed.
+For Polylines, the click position determines which **segment** of the polyline participates, and the nearest vertex on the intersection side is the one that gets trimmed. When both picks land on the same polyline, the second pick must be a segment that's a true neighbor of the first — sharing the corner vertex between them — or the pick is rejected; two non-adjacent segments have no shared corner for a chamfer to bevel.
+
+An **arc segment** of a polyline is never picked for chamfering — only straight segments count, so hovering near an arc portion looks past it to the nearest straight segment instead.
 
 ## What the command creates
 

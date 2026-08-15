@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Arahan `polyline` melukis laluan bersambung sebarang bilangan segmen lurus, semua disimpan sebagai satu entiti `LWPOLYLINE`. Kerana keseluruhan laluan adalah satu objek, memilihnya memilih setiap segmen sekaligus — gerakkan, putar, atau skala keseluruhan bentuk dalam satu operasi. Ini adalah perbezaan utama dari [Lines](../line/) yang dirantai, di mana setiap segmen adalah entiti bebas.
+Arahan `polyline` melukis laluan bersambung sebarang bilangan segmen lurus atau lengkok, semua disimpan sebagai satu entiti `LWPOLYLINE`. Kerana keseluruhan laluan adalah satu objek, memilihnya memilih setiap segmen sekaligus — gerakkan, putar, atau skala keseluruhan bentuk dalam satu operasi. Ini adalah perbezaan utama dari [Lines](../line/) yang dirantai, di mana setiap segmen adalah entiti bebas.
 
 Poliline juga boleh **ditutup**: arahan [Rectangle](../rectangle/) menggunakan entiti `LWPOLYLINE` yang sama dengan bendera tutup ditetapkan.
 
@@ -28,6 +28,12 @@ Poliline juga boleh **ditutup**: arahan [Rectangle](../rectangle/) menggunakan e
 ```
 
 Menekan **Escape** pada bila-bila masa membuang semua titik yang diletakkan dan keluar dari arahan.
+
+## Melukis segmen lengkok
+
+Tekan **A** pada bila-bila masa selepas bucu pertama untuk togol mod Arc — corak pilihan sebaris yang sama yang digunakan oleh arahan PLINE AutoCAD, mencerminkan pilihan Copy Rotate. Gesaan menunjukkan keadaan semasa sebagai `[Arc=true]` / `[Arc=false]`; menekan **A** sekali lagi menukarnya semula, jadi segmen lurus dan lengkok boleh dicampur dengan bebas dalam satu poliline.
+
+Apabila mod Arc dihidupkan, setiap segmen baharu ialah lengkok kesinambungan tangen — ia bermula secara tangen kepada apa yang datang sejurus sebelumnya (arah segmen garis sebelumnya, atau tangen hujung lengkok sebelumnya); segmen pertama sekali secara lalai menghala ke timur, kerana tiada apa untuk ditangeninya.
 
 ## Kemasukan koordinat
 
@@ -57,6 +63,7 @@ Panjang terkumpul semasa muncul dalam gesaan terminal secara masa nyata. Mengkli
 |---------|---------|
 | `0`–`9`, `.`, `-` | Mula kemasukan koordinat X, atau panjang segmen apabila sudut dikunci |
 | `,` | Kunci X dan beralih ke kemasukan Y |
+| `A` | Togol mod Arc untuk segmen seterusnya (selepas bucu pertama, tanpa kemasukan sedang berjalan) |
 | `Backspace` | Padam aksara terakhir yang ditaip |
 | `Enter` | Sahkan koordinat atau panjang yang ditaip, atau selesaikan poliline jika tiada yang ditaip dan ≥ 2 titik wujud |
 | `Space` | Selesaikan poliline (sama seperti Enter apabila tiada input sedang berjalan) |
@@ -87,7 +94,7 @@ Kerana poliline adalah satu entiti, pemilihan silang yang menyentuh mana-mana se
 
 ## Arahan edit yang disokong
 
-Poliline menyokong semua transformasi umum dan offset, tetapi **bukan** trim atau extend (yang untuk [Line](../line/) sahaja):
+Poliline menyokong setiap transformasi umum, ditambah offset, trim, extend, dan chamfer (untuk chamfer hanya segmen lurus dikira):
 
 | Arahan | Apa yang berlaku pada poliline |
 |--------|---------------------------------|
@@ -97,7 +104,12 @@ Poliline menyokong semua transformasi umum dan offset, tetapi **bukan** trim ata
 | [Mirror](../mirror/) | Mencerminkan semua bucu merentasi paksi cermin |
 | [Scale](../scale/) | Mengskala semua bucu secara seragam dari titik asas |
 | [Offset](../offset/) | Mencipta poliline selari pada jarak tegak lurus tetap |
+| [Trim](../trim/) | Membuang bahagian antara dua persilangan, sama ada segmen lurus atau lengkok |
+| [Extend](../extend/) | Memanjangkan segmen pertama atau terakhir ke sempadan seterusnya |
+| [Chamfer](../chamfer/) | Memberkas sudut antara dua segmen lurus bersebelahan |
 | [Delete](../delete/) | Membuang poliline daripada lukisan |
+
+Fillet langsung tidak menyokong poliline.
 
 ## Sifat
 
@@ -127,7 +139,8 @@ Apabila poliline dipilih, panel sifat menunjukkan:
 |---|---------|------|
 | Bilangan entiti | Satu `LWPOLYLINE` untuk keseluruhan laluan | Satu `LINE` setiap segmen |
 | Bentuk tertutup | Ya (bendera tutup) | Tidak |
-| Trim / Extend | Tidak | Ya — segmen demi segmen |
+| Segmen lengkok | Ya, setiap segmen melalui suis `Arc` | Tidak — segmen melengkung memerlukan entiti [Arc](../arc/) berasingan |
+| Trim / Extend | Ya | Ya — segmen demi segmen |
 | Grip titik tengah segmen | Menterjemahkan keseluruhan segmen | Mengaktifkan Move untuk entiti |
 | Terbaik untuk | Garis luar, kontur, bentuk yang dikekalkan | Garis pembinaan, geometri yang akan dipotong |
 

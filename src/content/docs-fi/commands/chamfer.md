@@ -40,6 +40,10 @@ Kun kaksi viivaa leikkaavat toisensa, chamfer sovelletaan napsautuspisteiden mä
 
 Polylineille napsautuspiste määrää, mikä polylinjen **segmentti** osallistuu, ja lähin kärki leikkauspuolella on se, joka leikataan.
 
+Kun molemmat napsautukset osuvat samaan polyviivaan, toisen napsautuksen on oltava segmentillä, joka on ensimmäisen todellinen naapuri — ne jakavat välissään olevan kulmakärjen — muuten napsautus hylätään; kahdella vierekkäisellä segmentillä ei ole yhteistä kulmaa viistettäväksi.
+
+Polyviivan kaarisegmenttiä ei koskaan valita viistoamiseen — vain suorat segmentit lasketaan, joten kohdistimen vieminen lähelle kaariosaa etsii sen sijaan lähintä suoraa segmenttiä.
+
 ## Mitä komento luo
 
 - Ensimmäisen entiteetin leikkauspistettä lähinnä oleva päätepiste (tai polylinjen kärki) siirretään pisteeseen **T1**, joka sijaitsee d1:n etäisyydellä ensimmäistä entiteettiä pitkin leikkauspisteestä.

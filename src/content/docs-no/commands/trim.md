@@ -65,6 +65,8 @@ Kommandoen projiserer markørposisjonen på entiteten den holder over, og finner
 
 Entitetene som brukes som **kuttgrenser** kan være Line, Arc, Circle, Ellipse eller Polyline. Text-, Spline-, Dimension- og Leader-entiteter registrerer aldri skjæringspunkter, så de kan heller ikke fungere som grenser.
 
+En Polylines **buesegmenter** (tegnet med Arc-bryteren, eller importert) trimmes akkurat som de rette segmentene — hold musepekeren over buedelen mellom to skjæringspunkter og klikk. Den trimmede kanten beholder krumningen sin; bare lengden endres.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

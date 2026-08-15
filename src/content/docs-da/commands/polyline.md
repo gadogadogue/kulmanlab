@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Kommandoen `polyline` tegner en forbundet bane med et hvilket som helst antal lige segmenter, alle gemt som én enkelt `LWPOLYLINE`-entitet. Fordi hele banen er ét objekt, markerer det at vælge den alle segmenter på én gang — flyt, rotér eller skalér hele formen i én operation. Dette er den centrale forskel fra kædede [Lines](../line/), hvor hvert segment er en uafhængig entitet.
+Kommandoen `polyline` tegner en forbundet bane med et hvilket som helst antal lige eller buesegmenter, alle gemt som én enkelt `LWPOLYLINE`-entitet. Fordi hele banen er ét objekt, markerer det at vælge den alle segmenter på én gang — flyt, rotér eller skalér hele formen i én operation. Dette er den centrale forskel fra kædede [Lines](../line/), hvor hvert segment er en uafhængig entitet.
 
 Polylinjer kan også være **lukkede**: [Rectangle](../rectangle/)-kommandoen bruger den samme `LWPOLYLINE`-entitet med et close-flag sat.
 
@@ -28,6 +28,12 @@ Polylinjer kan også være **lukkede**: [Rectangle](../rectangle/)-kommandoen br
 ```
 
 At trykke **Escape** når som helst kasserer alle placerede punkter og afslutter kommandoen.
+
+## Tegne et buesegment
+
+Tryk **A** når som helst efter det første hjørne for at skifte Arc-tilstand — samme inline-indstillingsmønster som AutoCADs PLINE-kommando bruger, hvilket afspejler Copy-indstillingen for Rotate. Prompten viser den aktuelle tilstand som `[Arc=true]` / `[Arc=false]`; at trykke **A** igen skifter den tilbage, så lige og buesegmenter frit kan blandes i én polylinje.
+
+Når Arc-tilstand er slået til, er hvert nyt segment en tangential fortsættelsesbue — den starter tangentielt til det, der kom lige før den (retningen på det forrige lige segment, eller sluttangenten på den forrige bue); det allerførste segment peger som standard mod øst, da det ikke har noget at være tangentiel til.
 
 ## Koordinatindtastning
 
@@ -57,6 +63,7 @@ Den aktuelle akkumulerede længde vises i terminalprompten i realtid. At klikke 
 |-----|--------|
 | `0`–`9`, `.`, `-` | Start X-koordinatindtastning, eller segmentlængde mens vinkellåst |
 | `,` | Lås X og gå til Y-indtastning |
+| `A` | Skift Arc-tilstand for næste segment (efter det første hjørne, uden igangværende indtastning) |
 | `Backspace` | Slet sidst skrevne tegn |
 | `Enter` | Bekræft indtastet koordinat eller længde, eller afslut polylinjen hvis intet er skrevet og ≥ 2 punkter findes |
 | `Space` | Afslut polylinjen (samme som Enter når ingen indtastning er i gang) |
@@ -87,7 +94,7 @@ Fordi en polylinje er én entitet, markerer en krydsningsmarkering, der rører e
 
 ## Understøttede redigeringskommandoer
 
-Polylinjer understøtter alle generelle transformationer og offset, men **ikke** trim eller extend (de er kun for [Line](../line/)):
+Polylinjer understøtter enhver generel transformation, plus offset, trim, extend og chamfer (ved chamfer tælles kun lige segmenter):
 
 | Kommando | Hvad der sker med polylinjen |
 |---------|------------------------------|
@@ -97,7 +104,12 @@ Polylinjer understøtter alle generelle transformationer og offset, men **ikke**
 | [Mirror](../mirror/) | Spejler alle hjørner over spejlaksen |
 | [Scale](../scale/) | Skalerer alle hjørner ensartet fra basispunktet |
 | [Offset](../offset/) | Opretter en parallel polylinje i en fast vinkelret afstand |
+| [Trim](../trim/) | Fjerner delen mellem to skæringspunkter, for lige og buesegmenter ens |
+| [Extend](../extend/) | Forlænger det første eller sidste segment til næste grænse |
+| [Chamfer](../chamfer/) | Faser et hjørne mellem to tilstødende lige segmenter |
 | [Delete](../delete/) | Fjerner polylinjen fra tegningen |
+
+Fillet understøtter slet ikke polylinjer.
 
 ## Egenskaber
 
@@ -127,7 +139,8 @@ Når en polylinje er markeret, viser egenskabspanelet:
 |---|---------|------|
 | Antal entiteter | Én `LWPOLYLINE` for hele banen | Én `LINE` pr. segment |
 | Lukket form | Ja (close-flag) | Nej |
-| Trim / Extend | Nej | Ja — segment for segment |
+| Buesegmenter | Ja, pr. segment via `Arc`-kontakten | Nej — et buet segment kræver en separat [Arc](../arc/)-entitet |
+| Trim / Extend | Ja | Ja — segment for segment |
 | Segmentmidtpunkt-greb | Forskyder hele segmentet | Aktiverer Move for entiteten |
 | Bedst til | Omrids, konturer, former du beholder hele | Hjælpelinjer, geometri du skal trimme |
 

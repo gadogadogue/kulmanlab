@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-`polyline`-kommandot ritar en sammankopplad bana med valfritt antal raka segment, alla lagrade som en enda `LWPOLYLINE`-entitet. Eftersom hela banan är ett objekt markerar en markering alla segment samtidigt — flytta, rotera eller skala hela formen i en enda operation. Detta är den viktigaste skillnaden från kedjade [Lines](../line/), där varje segment är en fristående entitet.
+`polyline`-kommandot ritar en sammankopplad bana med valfritt antal raka eller bågsegment, alla lagrade som en enda `LWPOLYLINE`-entitet. Eftersom hela banan är ett objekt markerar en markering alla segment samtidigt — flytta, rotera eller skala hela formen i en enda operation. Detta är den viktigaste skillnaden från kedjade [Lines](../line/), där varje segment är en fristående entitet.
 
 Polylinjer kan också vara **slutna**: [Rectangle](../rectangle/)-kommandot använder samma `LWPOLYLINE`-entitet med en close-flagga inställd.
 
@@ -28,6 +28,12 @@ Polylinjer kan också vara **slutna**: [Rectangle](../rectangle/)-kommandot anv�
 ```
 
 Att trycka på **Escape** när som helst kasserar alla placerade punkter och avslutar kommandot.
+
+## Rita ett bågsegment
+
+Tryck på **A** när som helst efter den första vertexen för att växla Arc-läget — samma inline-alternativmönster som AutoCADs PLINE-kommando använder, vilket speglar Rotates Copy-alternativ. Frågan visar det aktuella läget som `[Arc=true]` / `[Arc=false]`; att trycka på **A** igen växlar tillbaka det, så raka och bågsegment kan blandas fritt i en polyline.
+
+När Arc-läget är på är varje nytt segment en tangentiell fortsättningsbåge — den börjar tangentiellt till det som kom direkt före den (föregående linjesegments riktning, eller föregående bågens sluttangent); det allra första segmentet pekar som standard österut, eftersom det inte har något att vara tangentiellt till.
 
 ## Koordinatinmatning
 
@@ -57,6 +63,7 @@ Den aktuella ackumulerade längden visas i terminalens uppmaning i realtid. Att 
 |-----|--------|
 | `0`–`9`, `.`, `-` | Starta inmatning av X-koordinat, eller segmentlängd när vinkellåst |
 | `,` | Lås X och flytta till Y-inmatning |
+| `A` | Växla Arc-läge för nästa segment (efter första vertexen, utan pågående inmatning) |
 | `Backspace` | Ta bort senast skrivna tecken |
 | `Enter` | Bekräfta skriven koordinat eller längd, eller avsluta polylinjen om inget är skrivet och ≥ 2 punkter finns |
 | `Space` | Avsluta polylinjen (samma som Enter när ingen inmatning pågår) |
@@ -87,7 +94,7 @@ Eftersom en polyline är en enda entitet markerar en korsande markering som ber�
 
 ## Kommandon som stöds för redigering
 
-Polylinjer stöder alla allmänna transformationer och offset, men **inte** trim eller extend (dessa är endast för [Line](../line/)):
+Polylinjer stöder varje allmän transformation, plus offset, trim, extend och chamfer (för chamfer räknas endast raka segment):
 
 | Kommando | Vad som händer med polylinjen |
 |---------|------------------------------|
@@ -97,7 +104,12 @@ Polylinjer stöder alla allmänna transformationer och offset, men **inte** trim
 | [Mirror](../mirror/) | Speglar alla vertexer över spegelaxeln |
 | [Scale](../scale/) | Skalar alla vertexer enhetligt från baspunkten |
 | [Offset](../offset/) | Skapar en parallell polyline på ett fast vinkelrätt avstånd |
+| [Trim](../trim/) | Tar bort delen mellan två skärningspunkter, raka och bågsegment lika |
+| [Extend](../extend/) | Förlänger det första eller sista segmentet till nästa gräns |
+| [Chamfer](../chamfer/) | Fasar ett hörn mellan två intilliggande raka segment |
 | [Delete](../delete/) | Tar bort polylinjen från ritningen |
+
+Fillet stöder inte polylinjer alls.
 
 ## Egenskaper
 
@@ -127,7 +139,8 @@ När en polyline är markerad visar egenskapspanelen:
 |---|---------|------|
 | Antal entiteter | En `LWPOLYLINE` för hela banan | En `LINE` per segment |
 | Sluten form | Ja (close-flagga) | Nej |
-| Trim / Extend | Nej | Ja — segment för segment |
+| Bågsegment | Ja, per segment via `Arc`-växeln | Nej — ett böjt segment behöver en separat [Arc](../arc/)-entitet |
+| Trim / Extend | Ja | Ja — segment för segment |
 | Segmentmittpunktsgrepp | Förflyttar hela segmentet | Aktiverar Move för entiteten |
 | Bäst för | Omrids, konturer, former du behåller hela | Konstruktionslinjer, geometri du kommer klippa |
 

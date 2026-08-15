@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-O comando `polyline` desenha um caminho conectado de qualquer número de segmentos retos, todos armazenados como uma única entidade `LWPOLYLINE`. Como o caminho inteiro é um único objeto, selecioná-lo seleciona cada segmento de uma vez — mova, gire ou escale toda a forma em uma única operação. Esta é a distinção fundamental das [Linhas](../line/) encadeadas, onde cada segmento é uma entidade independente.
+O comando `polyline` desenha um caminho conectado de qualquer número de segmentos retos ou de arco, todos armazenados como uma única entidade `LWPOLYLINE`. Como o caminho inteiro é um único objeto, selecioná-lo seleciona cada segmento de uma vez — mova, gire ou escale toda a forma em uma única operação. Esta é a distinção fundamental das [Linhas](../line/) encadeadas, onde cada segmento é uma entidade independente.
 
 Polilinhas também podem ser **fechadas**: o comando [Retângulo](../rectangle/) usa a mesma entidade `LWPOLYLINE` com um flag de fechamento definido.
 
@@ -28,6 +28,12 @@ Polilinhas também podem ser **fechadas**: o comando [Retângulo](../rectangle/)
 ```
 
 Pressionar **Escape** a qualquer momento descarta todos os pontos posicionados e sai do comando.
+
+## Desenhando um segmento de arco
+
+Pressione **A** a qualquer momento após o primeiro vértice para alternar o modo Arc — o mesmo padrão de opção inline que o comando PLINE do AutoCAD usa, espelhando a opção Copy do Rotate. O prompt mostra o estado atual como `[Arc=true]` / `[Arc=false]`; pressionar **A** novamente o reverte, para que segmentos retos e de arco possam ser livremente misturados em uma polilinha.
+
+Com o modo Arc ativado, cada novo segmento é um arco de continuação tangencial — começa tangente ao que veio logo antes (a direção do segmento de linha anterior, ou a tangente final do arco anterior); o primeiríssimo segmento aponta para leste por padrão, por não ter nada a que ser tangente.
 
 ## Entrada de coordenadas
 
@@ -57,6 +63,7 @@ O comprimento acumulado atual aparece no prompt do terminal em tempo real. Clica
 |-------|------|
 | `0`–`9`, `.`, `-` | Começa a entrada de coordenada X, ou comprimento do segmento com ângulo travado |
 | `,` | Bloqueia X e move para entrada Y |
+| `A` | Alterna o modo Arc para o próximo segmento (após o primeiro vértice, sem entrada em andamento) |
 | `Backspace` | Exclui o último caractere digitado |
 | `Enter` | Confirma a coordenada ou comprimento digitado, ou termina a polilinha se nada digitado e ≥ 2 pontos existem |
 | `Espaço` | Termina a polilinha (igual a Enter quando nenhuma entrada está em andamento) |
@@ -87,7 +94,7 @@ Como uma polilinha é uma entidade, uma seleção cruzada que toca qualquer segm
 
 ## Comandos de edição suportados
 
-Polilinhas suportam todas as transformações gerais e offset, mas **não** trim ou extend (esses são apenas para [Linhas](../line/)):
+Polilinhas suportam toda transformação geral, além de offset, trim, extend e chamfer (no chamfer, apenas segmentos retos contam):
 
 | Comando | O que acontece com a polilinha |
 |---------|-------------------------------|
@@ -97,7 +104,12 @@ Polilinhas suportam todas as transformações gerais e offset, mas **não** trim
 | [Mirror](../mirror/) | Reflete todos os vértices em relação ao eixo espelho |
 | [Scale](../scale/) | Escala todos os vértices uniformemente a partir do ponto base |
 | [Offset](../offset/) | Cria uma polilinha paralela a uma distância perpendicular fixa |
+| [Trim](../trim/) | Remove a parte entre duas interseções, em segmentos retos ou de arco igualmente |
+| [Extend](../extend/) | Estende o primeiro ou último segmento até o próximo limite |
+| [Chamfer](../chamfer/) | Chanfra um canto entre dois segmentos retos adjacentes |
 | [Delete](../delete/) | Remove a polilinha do desenho |
+
+Fillet não suporta polilinhas de forma alguma.
 
 ## Polyline vs Linha — quando usar qual
 
@@ -105,7 +117,8 @@ Polilinhas suportam todas as transformações gerais e offset, mas **não** trim
 |---|---------|-------|
 | Contagem de entidades | Uma `LWPOLYLINE` para todo o caminho | Uma `LINE` por segmento |
 | Forma fechada | Sim (flag de fechamento) | Não |
-| Trim / Extend | Não | Sim — segmento por segmento |
+| Segmentos de arco | Sim, por segmento via a opção `Arc` | Não — um segmento curvo precisa de uma entidade [Arc](../arc/) separada |
+| Trim / Extend | Sim | Sim — segmento por segmento |
 | Grip ponto médio do segmento | Translada o segmento inteiro | Ativa Move para a entidade |
 | Ideal para | Contornos, perfis, formas a manter inteiras | Linhas de construção, geometria a recortar |
 

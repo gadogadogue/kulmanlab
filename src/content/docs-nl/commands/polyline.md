@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Het `polyline`-commando tekent een verbonden pad van een willekeurig aantal rechte segmenten, allemaal opgeslagen als één `LWPOLYLINE`-entiteit. Omdat het hele pad één object is, selecteert u met één klik elk segment tegelijk — verplaats, draai of schaal de hele vorm in één bewerking. Dit is het belangrijkste verschil met aaneengeschakelde [Lines](../line/), waarbij elk segment een onafhankelijke entiteit is.
+Het `polyline`-commando tekent een verbonden pad van een willekeurig aantal rechte of boogsegmenten, allemaal opgeslagen als één `LWPOLYLINE`-entiteit. Omdat het hele pad één object is, selecteert u met één klik elk segment tegelijk — verplaats, draai of schaal de hele vorm in één bewerking. Dit is het belangrijkste verschil met aaneengeschakelde [Lines](../line/), waarbij elk segment een onafhankelijke entiteit is.
 
 Polylijnen kunnen ook **gesloten** zijn: het [Rectangle](../rectangle/)-commando gebruikt dezelfde `LWPOLYLINE`-entiteit met een ingestelde sluitvlag.
 
@@ -28,6 +28,12 @@ Polylijnen kunnen ook **gesloten** zijn: het [Rectangle](../rectangle/)-commando
 ```
 
 Op elk moment op **Escape** drukken verwijdert alle geplaatste punten en sluit het commando af.
+
+## Een boogsegment tekenen
+
+Druk op **A** op elk moment na het eerste hoekpunt om de Arc-modus te schakelen — hetzelfde inline-optiepatroon dat AutoCAD's PLINE-commando gebruikt, wat de Copy-optie van Rotate weerspiegelt. De prompt toont de huidige status als `[Arc=true]` / `[Arc=false]`; nogmaals op **A** drukken schakelt het terug, zodat rechte en boogsegmenten vrij kunnen worden gemengd in één polylijn.
+
+Wanneer de Arc-modus aan staat, is elk nieuw segment een tangentieel vervolgboog — deze begint tangentieel aan wat er net voor kwam (de richting van het vorige rechte segment, of de eindtangens van de vorige boog); het allereerste segment wijst standaard naar het oosten, omdat er niets is om tangentieel aan te zijn.
 
 ## Coördinaatinvoer
 
@@ -57,6 +63,7 @@ De opgebouwde lengte wordt live weergegeven in de terminalprompt. Klikken tijden
 |-----|--------|
 | `0`–`9`, `.`, `-` | X-coördinaatinvoer starten, of segmentlengte bij hoekvergrendeling |
 | `,` | X vergrendelen en doorgaan naar Y-invoer |
+| `A` | Arc-modus schakelen voor het volgende segment (na het eerste hoekpunt, zonder lopende invoer) |
 | `Backspace` | Laatst getypte teken verwijderen |
 | `Enter` | Getypt coördinaat of lengte bevestigen, of de polylijn voltooien als er niets is getypt en ≥ 2 punten bestaan |
 | `Spatie` | Polylijn voltooien (hetzelfde als Enter zonder lopende invoer) |
@@ -87,7 +94,7 @@ Omdat een polylijn één entiteit is, selecteert een kruisende selectie die een 
 
 ## Ondersteunde bewerkingscommando's
 
-Polylijnen ondersteunen alle algemene transformaties en offset, maar **niet** trim of extend (die zijn alleen voor [Line](../line/)):
+Polylijnen ondersteunen elke algemene transformatie, plus offset, trim, extend en chamfer (bij chamfer tellen alleen rechte segmenten mee):
 
 | Commando | Wat er gebeurt met de polylijn |
 |---------|------------------------------|
@@ -97,7 +104,12 @@ Polylijnen ondersteunen alle algemene transformaties en offset, maar **niet** tr
 | [Mirror](../mirror/) | Spiegelt alle hoekpunten over de spiegelas |
 | [Scale](../scale/) | Schaalt alle hoekpunten uniform vanaf het basispunt |
 | [Offset](../offset/) | Maakt een parallelle polylijn op een vaste loodrechte afstand |
+| [Trim](../trim/) | Verwijdert het deel tussen twee snijpunten, bij rechte en boogsegmenten gelijk |
+| [Extend](../extend/) | Verlengt het eerste of laatste segment tot de volgende rand |
+| [Chamfer](../chamfer/) | Schuint een hoek af tussen twee aangrenzende rechte segmenten |
 | [Delete](../delete/) | Verwijdert de polylijn uit de tekening |
+
+Chamfer's tegenhanger Fillet ondersteunt polylijnen helemaal niet.
 
 ## Eigenschappen
 
@@ -127,7 +139,8 @@ Wanneer een polylijn is geselecteerd, toont het eigenschappenpaneel:
 |---|---------|------|
 | Aantal entiteiten | Eén `LWPOLYLINE` voor het hele pad | Eén `LINE` per segment |
 | Gesloten vorm | Ja (sluitvlag) | Nee |
-| Trim / Extend | Nee | Ja — segment voor segment |
+| Boogsegmenten | Ja, per segment via de `Arc`-schakelaar | Nee — een gebogen segment heeft een aparte [Arc](../arc/)-entiteit nodig |
+| Trim / Extend | Ja | Ja — segment voor segment |
 | Segmentmiddelpuntgrip | Verplaatst het hele segment | Activeert Move voor de entiteit |
 | Ideaal voor | Omtrekken, contouren, vormen die u heel houdt | Constructielijnen, geometrie die u gaat bijsnijden |
 

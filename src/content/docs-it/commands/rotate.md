@@ -45,8 +45,15 @@ Un'anteprima fantasma live delle entità ruotate segue l'angolo del cursore dopo
 |-------|--------|
 | `0`–`9`, `.` | Aggiunge cifra al valore dell'angolo |
 | `-` | Angolo negativo (solo primo carattere) |
+| `C` | Attiva/disattiva la modalità Copy (prima di digitare qualsiasi cifra) |
 | `Canc ←` | Elimina l'ultimo carattere digitato |
 | `Invio` | Applica la rotazione all'angolo digitato |
+
+## Ruotare una copia
+
+Premi **C** al prompt dell'angolo — prima di digitare qualsiasi cifra — per attivare/disattivare la modalità **Copy**, lo stesso modello di opzione inline usato dal comando ROTATE di AutoCAD. Il prompt mostra lo stato attuale come `[Copy=true]` / `[Copy=false]`, e premere di nuovo **C** lo inverte.
+
+Con Copy attivo, applicare la rotazione lascia la selezione originale intatta al suo posto e aggiunge invece nuove copie ruotate di ogni entità selezionata. Con Copy disattivo (predefinito), la selezione ruota sul posto come al solito.
 
 ## Direzione dell'angolo
 
@@ -64,6 +71,7 @@ Valori comuni: `90` = quarto di giro, `180` = mezzo giro, `-90` = quarto di giro
 | `Invio` / `Spazio` | Conferma la selezione |
 | `0`–`9`, `.`, `-` | Inizia l'inserimento coordinata X (fase punto base), o valore angolo (fase angolo) |
 | `,` | Blocca X e passa all'inserimento Y (fase punto base) |
+| `C` | Attiva/disattiva la modalità Copy (fase angolo, prima di digitare qualsiasi cifra) |
 | `Canc ←` | Elimina l'ultimo carattere digitato |
 | `Invio` | Conferma la coordinata o applica la rotazione |
 | `Esc` | Annulla e ripristina |

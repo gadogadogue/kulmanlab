@@ -29,6 +29,12 @@ Ang window ay may dalawang panel:
 | **Format** dropdown | PNG, JPEG, WebP, o PDF |
 | **Export** button | Buuin at i-download ang file |
 
+## Quality at resolution
+
+Itinatakda ng **Quality** dropdown ang DPI kung saan ire-render ang export: Draft (72), Normal (150, default), Presentation (300), o Max (600). Ang mas mataas na Quality ay gumagawa ng mas malaki, mas malinaw na larawan sa parehong physical size — ang linewidth ay sumusunod sa scale ng resolution, kaya ang linya ay nananatiling parehong physical thickness sa papel kahit anong Quality setting. Ang tanging exception ay ang hairline (linewidth 0), na nananatili sa fixed na 1-pixel width sa bawat antas ng Quality.
+
+Ang pagbabago ng Quality ay agad na nagre-render ulit ng preview, kaya makikita mo ang aktwal na kalinawan bago mag-export.
+
 ## Pagpili ng custom na export area
 
 Bilang default, ipinapakita ng preview ang eksaktong nakikita sa canvas noong binuksan mo ang Print Manager. Para mag-export ng specific na rehiyon:

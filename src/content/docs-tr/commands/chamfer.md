@@ -40,6 +40,10 @@ Chamfer, **Çizgi ve Çoklu Çizgi** nesneleri üzerinde çalışır.
 
 Çoklu Çizgilerde, tıklama konumu çoklu çizginin hangi **segmentinin** katılacağını belirler; kesişim tarafındaki en yakın köşe noktası kırpılır.
 
+Her iki tıklama da aynı çoklu çizgiye denk geldiğinde, ikinci tıklama birincinin gerçek komşusu olan bir segment olmalıdır — aralarındaki köşe noktasını paylaşırlar — aksi takdirde tıklama reddedilir; iki komşu olmayan segmentin, bir pahın eğebileceği ortak bir köşesi yoktur.
+
+Bir çoklu çizginin yay segmenti hiçbir zaman pah için seçilmez — yalnızca düz segmentler sayılır, bu yüzden bir yay bölümünün yakınına gelmek onun yerine en yakın düz segmenti arar.
+
 ## Komutun Oluşturduğu Nesneler
 
 - Birinci nesnenin kesişime en yakın uç noktası (veya çoklu çizgi köşe noktası), kesişimden birinci nesne boyunca d1 mesafesindeki **T1** noktasına taşınır.

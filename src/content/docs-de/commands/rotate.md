@@ -45,8 +45,15 @@ Eine Live-Geistervorschau der gedrehten Entitäten folgt dem Cursorwinkel, nachd
 |-------|--------|
 | `0`–`9`, `.` | Ziffer zum Winkelwert hinzufügen |
 | `-` | Negativer Winkel (nur als erstes Zeichen) |
+| `C` | Copy-Modus umschalten (bevor Ziffern eingegeben werden) |
 | `Backspace` | Letztes eingegebenes Zeichen löschen |
 | `Enter` | Drehung beim eingegebenen Winkel anwenden |
+
+## Eine Kopie drehen
+
+Drücken Sie **C** an der Winkelabfrage — bevor Sie Ziffern eingeben — um den **Copy**-Modus umzuschalten, dasselbe Inline-Optionsmuster, das AutoCADs ROTATE-Befehl verwendet. Die Eingabeaufforderung zeigt den aktuellen Status als `[Copy=true]` / `[Copy=false]`; erneutes Drücken von **C** schaltet ihn zurück.
+
+Bei aktiviertem Copy bleibt die ursprüngliche Auswahl unverändert an ihrem Platz, und stattdessen werden neue, gedrehte Kopien jeder ausgewählten Entität hinzugefügt. Bei deaktiviertem Copy (Standard) dreht sich die Auswahl wie gewohnt an Ort und Stelle.
 
 ## Winkelrichtung
 
@@ -64,6 +71,7 @@ Häufige Werte: `90` = Vierteldrehung, `180` = halbe Drehung, `-90` = entgegenge
 | `Enter` / `Space` | Auswahl bestätigen |
 | `0`–`9`, `.`, `-` | X-Koordinateneingabe starten (Basispunktphase) oder Winkelwert (Winkelphase) |
 | `,` | X sperren und zu Y-Eingabe wechseln (Basispunktphase) |
+| `C` | Copy-Modus umschalten (Winkelphase, bevor Ziffern eingegeben werden) |
 | `Backspace` | Letztes eingegebenes Zeichen löschen |
 | `Enter` | Koordinate bestätigen oder Drehung anwenden |
 | `Escape` | Abbrechen und zurücksetzen |

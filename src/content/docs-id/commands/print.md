@@ -29,6 +29,12 @@ Jendela memiliki dua panel:
 | Dropdown **Format** | PNG, JPEG, WebP, atau PDF |
 | Tombol **Export** | Hasilkan dan unduh file |
 
+## Kualitas dan resolusi
+
+Dropdown **Quality** menetapkan DPI tempat ekspor dirender: Draft (72), Normal (150, default), Presentation (300), atau Max (600). Kualitas yang lebih tinggi menghasilkan gambar yang lebih besar dan lebih tajam pada ukuran fisik yang sama — ketebalan garis ikut menskalakan bersama resolusi, sehingga garis mempertahankan ketebalan fisik yang sama di atas kertas pada pengaturan Kualitas apa pun. Satu pengecualian adalah garis rambut (ketebalan garis 0), yang tetap pada lebar tetap 1 piksel di setiap tingkat Kualitas.
+
+Mengubah Kualitas langsung merender ulang pratinjau, sehingga Anda melihat ketajaman sebenarnya sebelum mengekspor.
+
 ## Memilih area ekspor kustom
 
 Secara default pratinjau menampilkan persis apa yang terlihat di kanvas saat Anda membuka Print Manager. Untuk mengekspor wilayah tertentu:

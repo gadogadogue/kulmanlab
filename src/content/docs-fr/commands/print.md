@@ -29,6 +29,12 @@ La fenêtre a deux panneaux :
 | Liste déroulante **Format** | PNG, JPEG, WebP ou PDF |
 | Bouton **Export** | Génère et télécharge le fichier |
 
+## Qualité et résolution
+
+Le menu déroulant **Qualité** définit le DPI auquel l'export est rendu : Brouillon (72), Normal (150, par défaut), Présentation (300) ou Maximum (600). Une Qualité plus élevée produit une image plus grande et plus nette à la même taille physique — les épaisseurs de trait s'adaptent avec la résolution, de sorte qu'un trait garde la même épaisseur physique sur papier à tout réglage de Qualité. La seule exception est un trait fin (épaisseur 0), qui reste à une largeur fixe de 1 pixel à tout niveau de Qualité.
+
+Changer la Qualité re-rend immédiatement l'aperçu, afin que vous voyiez la netteté réelle avant d'exporter.
+
 ## Sélectionner une zone d'export personnalisée
 
 Par défaut, l'aperçu montre exactement ce qui était visible sur le canevas quand vous avez ouvert le Gestionnaire d'impression. Pour exporter une région spécifique :

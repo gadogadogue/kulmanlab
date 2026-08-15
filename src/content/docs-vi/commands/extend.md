@@ -48,6 +48,8 @@ Các loại thực thể sau bị bỏ qua là ranh giới — một thực th�
 
 Tất cả các loại khác (Line, Arc, Circle, Ellipse, Polyline, Kích thước) đều là ranh giới hợp lệ.
 
+Nếu đoạn đầu tiên hoặc cuối cùng của một Polyline tự nó là một đoạn cung (vẽ bằng công tắc Arc), việc kéo dài nó sẽ làm cung phát triển dọc theo đường tròn của chính nó — giống hệt cách kéo dài một Arc độc lập — thay vì coi nó như một đoạn thẳng.
+
 ## Tham khảo phím tắt
 
 | Phím | Hành động |

@@ -45,8 +45,15 @@ Preview mai fatalwa mai rai na abubuwan da aka juya yana bin kusurwar mai nuni b
 |-----|--------|
 | `0`–`9`, `.` | Ƙara lamba zuwa ƙimar kusurwar |
 | `-` | Kusurwa mara kyau (haruf na farko kaɗai) |
+| `C` | Sauya yanayin Copy (kafin rubuta wani lamba) |
 | `Backspace` | Share tsohon harafi na ƙarshe da aka rubuta |
 | `Enter` | Yi amfani da juyawa a kusurwar da aka rubuta |
+
+## Juya kwafi
+
+Danna **C** a tambayar kusurwa — kafin rubuta wani lamba — don sauya yanayin **Copy**, irin salon zaɓi na cikin layi ɗaya wanda umarnin ROTATE na AutoCAD ke amfani da shi. Tambayar tana nuna yanayin yanzu a matsayin `[Copy=true]` / `[Copy=false]`, kuma sake danna **C** yana mayar da shi.
+
+Idan an kunna Copy, yin amfani da juyawa yana barin zaɓin asali ba tare da canzawa a wurinsa ba kuma a maimako yana ƙara sabbin kwafi, waɗanda aka juya na kowane abu da aka zaɓa. Idan an kashe Copy (tsohuwar), zaɓin yana juyawa a wurinsa kamar yadda aka saba.
 
 ## Shugabancin kusurwa
 
@@ -64,6 +71,7 @@ Kusurwoyi suna bin **ka'idar DXF**:
 | `Enter` / `Space` | Tabbatar da zaɓi |
 | `0`–`9`, `.`, `-` | Fara shigar da daidaitawar X (mataki na tabon tushe), ko ƙimar kusurwa (mataki na kusurwa) |
 | `,` | Kulle X ka koma shigar da Y (mataki na tabon tushe) |
+| `C` | Sauya yanayin Copy (mataki na kusurwa, kafin rubuta wani lamba) |
 | `Backspace` | Share tsohon harafi na ƙarshe da aka rubuta |
 | `Enter` | Tabbatar da daidaitawa ko yin amfani da juyawa |
 | `Escape` | Soke ka sake saita |

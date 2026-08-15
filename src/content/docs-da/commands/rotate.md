@@ -45,8 +45,15 @@ En levende spøgelsesforhåndsvisning af de roterede entiteter følger markørvi
 |-----|--------|
 | `0`–`9`, `.` | Tilføj ciffer til vinkelværdien |
 | `-` | Negativ vinkel (kun første tegn) |
+| `C` | Skift Copy-tilstand (inden du skriver nogen tal) |
 | `Backspace` | Slet sidst skrevne tegn |
 | `Enter` | Anvend rotationen ved den indtastede vinkel |
+
+## Roter en kopi
+
+Tryk **C** ved vinkelprompten — inden du skriver nogen tal — for at skifte **Copy**-tilstand, samme inline-indstillingsmønster som AutoCADs ROTATE-kommando bruger. Prompten viser den aktuelle tilstand som `[Copy=true]` / `[Copy=false]`, og at trykke **C** igen skifter den tilbage.
+
+Med Copy slået til efterlader anvendelse af rotationen den oprindelige markering uændret på plads og tilføjer i stedet nye, roterede kopier af hver markeret entitet. Med Copy slået fra (standard) roterer markeringen på plads som sædvanligt.
 
 ## Vinkelretning
 
@@ -64,6 +71,7 @@ Almindelige værdier: `90` = kvart omdrejning, `180` = halv omdrejning, `-90` = 
 | `Enter` / `Space` | Bekræft markering |
 | `0`–`9`, `.`, `-` | Start X-koordinatindtastning (basispunkt-fasen), eller vinkelværdi (vinkelfasen) |
 | `,` | Lås X og gå til Y-indtastning (basispunkt-fasen) |
+| `C` | Skift Copy-tilstand (vinkelfasen, inden du skriver nogen tal) |
 | `Backspace` | Slet sidst skrevne tegn |
 | `Enter` | Bekræft koordinat eller anvend rotation |
 | `Escape` | Annullér og nulstil |

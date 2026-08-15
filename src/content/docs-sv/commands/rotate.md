@@ -45,8 +45,15 @@ En levande ghost-förhandsvisning av de roterade entiteterna följer markörens 
 |-----|--------|
 | `0`–`9`, `.` | Lägger till en siffra i vinkelvärdet |
 | `-` | Negativ vinkel (endast första tecknet) |
+| `C` | Växla Copy-läge (innan du skriver några siffror) |
 | `Backspace` | Tar bort senast skrivna tecken |
 | `Enter` | Utför rotationen med den inskrivna vinkeln |
+
+## Rotera en kopia
+
+Tryck på **C** vid vinkelfrågan — innan du skriver några siffror — för att växla läget **Copy**, samma inline-alternativmönster som AutoCADs ROTATE-kommando använder. Frågan visar det aktuella läget som `[Copy=true]` / `[Copy=false]`, och att trycka på **C** igen växlar tillbaka det.
+
+Med Copy på lämnar tillämpning av rotationen den ursprungliga markeringen orörd på plats och lägger istället till nya, roterade kopior av varje markerad entitet. Med Copy av (standard) roterar markeringen på plats som vanligt.
 
 ## Vinkelriktning
 
@@ -64,6 +71,7 @@ Vanliga värden: `90` = kvartsvarv, `180` = halvvarv, `-90` = motsatt kvartsvarv
 | `Enter` / `Space` | Bekräftar valet |
 | `0`–`9`, `.`, `-` | Startar X-koordinatinmatning (basspunktsfasen), eller vinkelvärde (vinkelfasen) |
 | `,` | Låser X och går vidare till Y-inmatning (basspunktsfasen) |
+| `C` | Växla Copy-läge (vinkelfasen, innan du skriver några siffror) |
 | `Backspace` | Tar bort senast skrivna tecken |
 | `Enter` | Bekräftar koordinat eller utför rotationen |
 | `Escape` | Avbryter och återställer |

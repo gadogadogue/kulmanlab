@@ -40,6 +40,10 @@ Ketika dua garis berpotongan, chamfer diterapkan pada sudut yang ditentukan oleh
 
 Untuk Polyline, posisi klik menentukan **segmen** mana dari polyline yang berpartisipasi, dan vertex terdekat di sisi perpotongan adalah yang dipotong.
 
+Ketika kedua klik jatuh pada polyline yang sama, klik kedua harus berupa segmen yang benar-benar tetangga dari klik pertama — keduanya berbagi vertex sudut di antaranya — jika tidak klik ditolak; dua segmen yang tidak berdekatan tidak memiliki sudut bersama untuk di-chamfer.
+
+Segmen busur polyline tidak pernah dipilih untuk chamfer — hanya segmen lurus yang dihitung, jadi mengarahkan kursor dekat bagian busur akan mencari segmen lurus terdekat sebagai gantinya.
+
 ## Apa yang dibuat perintah
 
 - Titik akhir (atau vertex polyline) entitas pertama yang paling dekat ke perpotongan dipindahkan ke titik **T1**, terletak d1 sepanjang entitas pertama dari perpotongan.

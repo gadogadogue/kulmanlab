@@ -65,6 +65,8 @@ Perintah memproyeksikan posisi kursor ke entitas yang di-hover dan menemukan sem
 
 Entitas yang digunakan sebagai **batas pemotongan** dapat berupa Line, Arc, Circle, Ellipse, atau Polyline. Entitas Text, Spline, Dimension, dan Leader tidak pernah mencatat perpotongan, sehingga juga tidak dapat berfungsi sebagai batas.
 
+**Segmen busur** Polyline (digambar dengan sakelar Arc, atau diimpor) dipotong persis seperti segmen lurusnya — arahkan kursor ke bagian busur di antara dua perpotongan lalu klik. Tepi yang dipotong mempertahankan kelengkungannya; hanya panjangnya yang berubah.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

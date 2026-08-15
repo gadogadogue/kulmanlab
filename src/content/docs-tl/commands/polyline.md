@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Ginuguhit ng `polyline` command ang magkakadugtong na path ng anumang bilang ng straight segment, na lahat naka-save bilang iisang `LWPOLYLINE` entity. Dahil iisang object ang buong path, ang pagpili dito ay pumipili sa lahat ng segment nang sabay — ilipat, i-rotate, o i-scale ang buong hugis sa iisang operation. Ito ang pangunahing pagkakaiba mula sa kinadenang [Lines](../line/), kung saan independiyenteng entity ang bawat segment.
+Ginuguhit ng `polyline` command ang magkakadugtong na path ng anumang bilang ng straight o arc segment, na lahat naka-save bilang iisang `LWPOLYLINE` entity. Dahil iisang object ang buong path, ang pagpili dito ay pumipili sa lahat ng segment nang sabay — ilipat, i-rotate, o i-scale ang buong hugis sa iisang operation. Ito ang pangunahing pagkakaiba mula sa kinadenang [Lines](../line/), kung saan independiyenteng entity ang bawat segment.
 
 Puwede ring maging **closed** ang mga polyline: ginagamit ng [Rectangle](../rectangle/) command ang parehong `LWPOLYLINE` entity na may naka-set na close flag.
 
@@ -28,6 +28,12 @@ Puwede ring maging **closed** ang mga polyline: ginagamit ng [Rectangle](../rect
 ```
 
 Ang pagpindot ng **Escape** anumang oras ay nag-a-discard ng lahat ng nailagay na punto at lumalabas sa command.
+
+## Pagguhit ng arc segment
+
+Pindutin ang **A** anumang oras pagkatapos ng unang vertex para i-toggle ang Arc mode — ang parehong inline-option pattern na ginagamit ng PLINE command ng AutoCAD, na sumasalamin sa Copy option ng Rotate. Ipinapakita ng prompt ang kasalukuyang estado bilang `[Arc=true]` / `[Arc=false]`; ang muling pagpindot ng **A** ay ibinabalik ito, kaya ang straight at arc segment ay puwedeng malayang paghaluin sa isang polyline.
+
+Kapag naka-on ang Arc mode, ang bawat bagong segment ay isang tangent-continuation arc — nagsisimula itong tangent sa kung ano ang dumaan kaagad bago rito (ang direksyon ng naunang line segment, o ang end tangent ng naunang arc); ang pinakaunang segment ay default na pumupunta sa silangan, dahil wala itong dapat maging tangent.
 
 ## Coordinate Entry
 
@@ -57,6 +63,7 @@ Lumalabas nang real time ang kasalukuyang naipong length sa terminal prompt. Ang
 |-----|--------|
 | `0`–`9`, `.`, `-` | Simulan ang X coordinate entry, o segment length kapag angle-locked |
 | `,` | I-lock ang X at lumipat sa Y entry |
+| `A` | I-toggle ang Arc mode para sa susunod na segment (pagkatapos ng unang vertex, walang isinasagawang input) |
 | `Backspace` | Burahin ang huling na-type na character |
 | `Enter` | Kumpirmahin ang na-type na coordinate o length, o tapusin ang polyline kung walang na-type at ≥ 2 na punto ang mayroon na |
 | `Space` | Tapusin ang polyline (kapareho ng Enter kapag walang input na isinasagawa) |
@@ -87,7 +94,7 @@ Dahil iisang entity ang polyline, ang crossing selection na humihipo sa anumang 
 
 ## Suportadong Edit Command
 
-Sinusuportahan ng mga polyline ang lahat ng general na transformation at offset, pero **hindi** ang trim o extend (eksklusibo iyon sa [Line](../line/)):
+Sinusuportahan ng mga polyline ang bawat general na transformation, kasama ang offset, trim, extend, at chamfer (para sa chamfer, straight segment lang ang binibilang):
 
 | Command | Ano ang mangyayari sa polyline |
 |---------|------------------------------|
@@ -97,7 +104,12 @@ Sinusuportahan ng mga polyline ang lahat ng general na transformation at offset,
 | [Mirror](../mirror/) | Isinasalamin ang lahat ng vertex sa kabilang panig ng mirror axis |
 | [Scale](../scale/) | Isina-scale ang lahat ng vertex nang pantay mula sa base point |
 | [Offset](../offset/) | Gumagawa ng parallel na polyline sa fixed na perpendicular distance |
+| [Trim](../trim/) | Inaalis ang bahagi sa pagitan ng dalawang intersection, sa straight man o arc segment |
+| [Extend](../extend/) | Pinapahaba ang unang o huling segment hanggang sa susunod na boundary |
+| [Chamfer](../chamfer/) | Nag-be-bevel ng sulok sa pagitan ng dalawang katabing straight segment |
 | [Delete](../delete/) | Inaalis ang polyline sa drawing |
+
+Hindi kailanman sinusuportahan ng Fillet ang mga polyline.
 
 ## Properties
 
@@ -127,7 +139,8 @@ Kapag napili ang isang polyline, ipinapakita ng properties panel ang mga sumusun
 |---|---------|------|
 | Bilang ng entity | Isang `LWPOLYLINE` para sa buong path | Isang `LINE` bawat segment |
 | Saradong hugis | Oo (close flag) | Hindi |
-| Trim / Extend | Hindi | Oo — segment by segment |
+| Arc segment | Oo, kada segment sa pamamagitan ng `Arc` toggle | Hindi — kailangan ng hiwalay na [Arc](../arc/) entity ang isang kurbadong segment |
+| Trim / Extend | Oo | Oo — segment by segment |
 | Segment-midpoint grip | Inililipat ang buong segment | Ino-activate ang Move para sa entity |
 | Pinakamainam para sa | Outlines, contours, hugis na pananatilihing buo | Construction lines, geometry na tri-trim mo |
 

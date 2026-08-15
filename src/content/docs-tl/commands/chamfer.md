@@ -40,6 +40,10 @@ Kapag nagtatawid ang dalawang linya, ia-apply ang chamfer sa sulok na tinutukoy 
 
 Para sa mga Polyline, ang posisyon ng click ang nagtatakda kung aling **segment** ng polyline ang kasali, at ang pinakamalapit na vertex sa intersection side ang trinim.
 
+Kapag ang parehong click ay bumagsak sa parehong polyline, ang ikalawang click ay dapat isang segment na tunay na kapitbahay ng una — nagbabahagi sila ng corner vertex sa pagitan nila — kung hindi, tatanggihan ang click; dalawang hindi magkatabing segment ay walang shared corner na puwedeng i-chamfer.
+
+Ang arc segment ng polyline ay hindi kailanman pinipili para sa chamfer — straight segment lang ang binibilang, kaya ang pag-hover malapit sa bahagi ng arc ay maghahanap sa halip ng pinakamalapit na straight segment.
+
 ## Ano ang Ginagawa ng Command
 
 - Ang endpoint (o polyline vertex) ng unang entity na pinakamalapit sa intersection ay inilipat papunta sa punto **T1**, na nasa distansyang d1 mula sa intersection sa unang entity.

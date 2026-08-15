@@ -1,13 +1,13 @@
 ---
 title: Lệnh Polyline — Vẽ Đường Dẫn Nhiều Đoạn Thành Một Thực Thể
-description: Lệnh Polyline vẽ bất kỳ số lượng đoạn nối nhau được lưu dưới dạng một thực thể LWPOLYLINE. Điểm kéo đỉnh và điểm giữa đoạn cho phép định hình lại bất kỳ phần nào của đường dẫn sau khi tạo. Hỗ trợ offset; không hỗ trợ cắt hoặc kéo dài.
+description: Lệnh Polyline vẽ bất kỳ số lượng đoạn thẳng hoặc đoạn cung nối nhau được lưu dưới dạng một thực thể LWPOLYLINE. Bật chế độ Arc bằng phím A để vẽ đoạn cung kiểu AutoCAD. Điểm kéo đỉnh và điểm giữa đoạn cho phép định hình lại bất kỳ phần nào của đường dẫn sau khi tạo.
 group: shapes
 order: 2
 ---
 
 # Polyline
 
-Lệnh `polyline` vẽ một đường dẫn liên kết gồm bất kỳ số lượng đoạn thẳng nào, tất cả được lưu dưới dạng một thực thể `LWPOLYLINE` duy nhất. Vì toàn bộ đường dẫn là một đối tượng, chọn nó sẽ chọn mọi đoạn cùng lúc — di chuyển, xoay hoặc chia tỉ lệ toàn bộ hình dạng trong một thao tác. Đây là điểm khác biệt chính so với [Line](../line/) nối tiếp, nơi mỗi đoạn là thực thể độc lập.
+Lệnh `polyline` vẽ một đường dẫn liên kết gồm bất kỳ số lượng đoạn thẳng hoặc đoạn cung nào, tất cả được lưu dưới dạng một thực thể `LWPOLYLINE` duy nhất. Vì toàn bộ đường dẫn là một đối tượng, chọn nó sẽ chọn mọi đoạn cùng lúc — di chuyển, xoay hoặc chia tỉ lệ toàn bộ hình dạng trong một thao tác. Đây là điểm khác biệt chính so với [Line](../line/) nối tiếp, nơi mỗi đoạn là thực thể độc lập.
 
 ## Vẽ đường đa đoạn
 
@@ -17,6 +17,12 @@ Lệnh `polyline` vẽ một đường dẫn liên kết gồm bất kỳ số l
 4. Nhấn **Enter** hoặc **Space** để kết thúc (yêu cầu ít nhất 2 điểm đã đặt).
 
 Nhấn **Escape** bất kỳ lúc nào để loại bỏ tất cả điểm đã đặt và thoát lệnh.
+
+## Vẽ một đoạn cung
+
+Nhấn **A** bất kỳ lúc nào sau đỉnh đầu tiên để bật/tắt chế độ Arc — cùng kiểu tùy chọn nội tuyến mà lệnh PLINE của AutoCAD sử dụng, phản ánh tùy chọn Copy của Rotate. Lời nhắc hiển thị trạng thái hiện tại là `[Arc=true]` / `[Arc=false]`; nhấn **A** lần nữa sẽ chuyển nó trở lại, để đoạn thẳng và đoạn cung có thể tự do trộn lẫn trong một đường đa đoạn.
+
+Khi chế độ Arc bật, mỗi đoạn mới là một cung tiếp tuyến liên tục — nó bắt đầu tiếp tuyến với đoạn ngay trước đó (hướng của đoạn thẳng trước, hoặc tiếp tuyến cuối của cung trước); đoạn đầu tiên mặc định hướng về phía đông, vì không có gì để tiếp tuyến với nó.
 
 ## Chỉnh sửa điểm kéo — đỉnh và điểm giữa đoạn
 
@@ -34,6 +40,7 @@ Một đường đa đoạn được chọn có hai loại điểm kéo:
 | Phím | Hành động |
 |------|-----------|
 | `0`–`9`, `.`, `-` | Bắt đầu nhập tọa độ X, hoặc độ dài đoạn khi góc bị khóa |
+| `A` | Bật/tắt chế độ Arc cho đoạn tiếp theo (sau đỉnh đầu tiên, không có nhập liệu đang chờ) |
 | `,` | Khóa X và chuyển sang nhập Y |
 | `Backspace` | Xóa ký tự cuối |
 | `Enter` | Xác nhận tọa độ hoặc độ dài, hoặc kết thúc đường đa đoạn nếu không có nhập liệu và ≥ 2 điểm tồn tại |
@@ -46,7 +53,8 @@ Một đường đa đoạn được chọn có hai loại điểm kéo:
 |---|------|------|
 | Số lượng thực thể | Một `LWPOLYLINE` cho toàn bộ đường dẫn | Một `LINE` cho mỗi đoạn |
 | Hình dạng đóng | Có (cờ đóng) | Không |
-| Trim / Extend | Không | Có — từng đoạn |
+| Đoạn cung | Có, theo từng đoạn qua tùy chọn `Arc` | Không — cần một thực thể [Arc](../arc/) riêng |
+| Trim / Extend | Có | Có — từng đoạn |
 | Tốt nhất cho | Đường viền, vật thể bạn giữ nguyên | Đường xây dựng, hình học bạn sẽ cắt |
 
 ## DXF — thực thể LWPOLYLINE

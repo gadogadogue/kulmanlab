@@ -29,6 +29,12 @@ La ventana tiene dos paneles:
 | Lista desplegable **Format** | PNG, JPEG, WebP o PDF |
 | Botón **Export** | Genera y descarga el archivo |
 
+## Calidad y resolución
+
+El menú desplegable **Calidad** define el DPI al que se renderiza la exportación: Borrador (72), Normal (150, predeterminado), Presentación (300) o Máxima (600). Una calidad más alta produce una imagen más grande y nítida al mismo tamaño físico — los grosores de línea escalan junto con la resolución, por lo que una línea mantiene el mismo grosor físico en papel en cualquier ajuste de Calidad. La única excepción es una línea capilar (grosor 0), que permanece con un ancho fijo de 1 píxel en cualquier nivel de Calidad.
+
+Cambiar la Calidad vuelve a renderizar la vista previa de inmediato, para que veas la nitidez real antes de exportar.
+
 ## Seleccionar un área de exportación personalizada
 
 De forma predeterminada, la vista previa muestra exactamente lo que era visible en el lienzo cuando abriste el Administrador de Impresión. Para exportar una región específica:

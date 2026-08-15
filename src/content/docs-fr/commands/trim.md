@@ -65,6 +65,8 @@ La commande projette la position du curseur sur l'entité survolée et trouve to
 
 Les entités utilisées comme **limites de coupe** peuvent être une Line, un Arc, Circle, une Ellipse ou Polyline. Les entités Text, Spline, Dimension et Leader n'enregistrent jamais d'intersections, elles ne peuvent donc pas non plus servir de limites.
 
+Les **segments d'arc** d'une Polyline (dessinés avec le bouton Arc, ou importés) se raccordent exactement comme ses segments droits — survolez la portion d'arc entre deux intersections et cliquez. Le bord raccordé conserve sa courbure ; seule sa longueur change.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

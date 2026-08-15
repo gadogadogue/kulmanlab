@@ -48,6 +48,8 @@ De volgende entiteittypen worden genegeerd als rand — een entiteit verlengt ni
 
 Alle andere typen (Line, Arc, Circle, Ellipse, Polyline, Dimension) fungeren als geldige randen.
 
+Als het eerste of laatste segment van een Polyline zelf een boogsegment is (getekend met de Arc-schakelaar), laat verlengen de boog langs zijn eigen cirkel groeien — net zoals bij het verlengen van een op zichzelf staande Arc — in plaats van het als een recht segment te behandelen.
+
 ## Toetsenbordreferentie
 
 | Toets | Actie |

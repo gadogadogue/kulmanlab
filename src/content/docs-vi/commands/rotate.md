@@ -31,6 +31,12 @@ Lệnh `rotate` xoay các thực thể đã chọn quanh điểm cơ sở. Bạn
 
 **Góc nhấp** — nếu không có giá trị đã gõ, nhấp đặt góc bằng `atan2(cursorY − baseY, cursorX − baseX)`.
 
+## Xoay một bản sao
+
+Nhấn **C** tại lời nhắc góc — trước khi gõ bất kỳ chữ số nào — để bật/tắt chế độ **Copy**, cùng kiểu tùy chọn nội tuyến mà lệnh ROTATE của AutoCAD sử dụng. Lời nhắc hiển thị trạng thái hiện tại là `[Copy=true]` / `[Copy=false]`, và nhấn **C** lần nữa sẽ chuyển nó trở lại.
+
+Khi Copy bật, áp dụng phép xoay để nguyên vùng chọn gốc tại chỗ và thay vào đó thêm các bản sao mới, đã xoay của mỗi thực thể được chọn. Khi Copy tắt (mặc định), vùng chọn xoay tại chỗ như bình thường.
+
 ## Hướng góc
 
 Góc tuân theo **quy ước DXF**:
@@ -47,6 +53,7 @@ Giá trị phổ biến: `90` = quay 1/4 vòng, `180` = quay nửa vòng, `-90` 
 | `Enter` / `Space` | Xác nhận lựa chọn |
 | `0`–`9`, `.`, `-` | Bắt đầu nhập tọa độ X (giai đoạn điểm cơ sở), hoặc giá trị góc |
 | `,` | Khóa X và chuyển sang nhập Y (giai đoạn điểm cơ sở) |
+| `C` | Bật/tắt chế độ Copy (giai đoạn góc, trước khi gõ bất kỳ chữ số nào) |
 | `Backspace` | Xóa ký tự cuối |
 | `Enter` | Xác nhận tọa độ hoặc áp dụng xoay |
 | `Escape` | Hủy và đặt lại |

@@ -40,6 +40,10 @@ Lorsque deux lignes se croisent, le chanfrein est appliqué sur l'angle défini 
 
 Pour les Polylignes, la position du clic détermine quel **segment** de la polyligne participe, et le sommet le plus proche du côté de l'intersection est celui qui est raccordé.
 
+Lorsque les deux clics tombent sur la même polyligne, le second clic doit être un segment véritablement voisin du premier — ils partagent le sommet du coin entre eux — sinon le clic est rejeté ; deux segments non adjacents n'ont pas de coin commun à biseauter.
+
+Un segment d'arc d'une polyligne n'est jamais sélectionné pour un chamfer — seuls les segments droits comptent, donc survoler près d'une portion d'arc cherche plutôt le segment droit le plus proche.
+
 ## Ce que la commande crée
 
 - L'extrémité de la première entité (ou sommet de polyligne) la plus proche de l'intersection est déplacée vers le point **T1**, situé à d1 le long de la première entité depuis l'intersection.

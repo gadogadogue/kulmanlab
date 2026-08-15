@@ -29,6 +29,12 @@ Tetingkap mempunyai dua panel:
 | Dropdown **Format** | PNG, JPEG, WebP, atau PDF |
 | Butang **Export** | Jana dan muat turun fail |
 
+## Kualiti dan resolusi
+
+Menu lungsur **Quality** menetapkan DPI eksport dirender: Draft (72), Normal (150, lalai), Presentation (300), atau Max (600). Kualiti yang lebih tinggi menghasilkan imej yang lebih besar dan lebih tajam pada saiz fizikal yang sama — ketebalan garis berskala bersama resolusi, jadi garis mengekalkan ketebalan fizikal yang sama di atas kertas pada mana-mana tetapan Kualiti. Satu pengecualian ialah garis rerambut (ketebalan garis 0), yang kekal pada lebar tetap 1 piksel pada mana-mana tahap Kualiti.
+
+Menukar Kualiti serta-merta memberikan pratonton semula, jadi anda dapat melihat ketajaman sebenar sebelum mengeksport.
+
 ## Memilih kawasan eksport tersuai
 
 Secara lalai pratonton menunjukkan tepat apa yang kelihatan pada kanvas apabila anda membuka Pengurus Cetak. Untuk mengeksport kawasan tertentu:

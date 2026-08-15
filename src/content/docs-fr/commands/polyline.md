@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-La commande `polyline` trace un chemin connecté de n'importe quel nombre de segments droits, tous stockés comme une seule entité `LWPOLYLINE`. Parce que tout le chemin est un seul objet, le sélectionner sélectionne chaque segment à la fois — déplacez, faites pivoter ou mettez à l'échelle toute la forme en une seule opération. C'est la distinction clé avec les [Lines](../line/) enchaînées, où chaque segment est une entité indépendante.
+La commande `polyline` trace un chemin connecté de n'importe quel nombre de segments droits ou d'arc, tous stockés comme une seule entité `LWPOLYLINE`. Parce que tout le chemin est un seul objet, le sélectionner sélectionne chaque segment à la fois — déplacez, faites pivoter ou mettez à l'échelle toute la forme en une seule opération. C'est la distinction clé avec les [Lines](../line/) enchaînées, où chaque segment est une entité indépendante.
 
 Les polylignes peuvent également être **fermées** : la commande [Rectangle](../rectangle/) utilise la même entité `LWPOLYLINE` avec un indicateur de fermeture défini.
 
@@ -28,6 +28,12 @@ Les polylignes peuvent également être **fermées** : la commande [Rectangle](.
 ```
 
 Appuyer sur **Échap** à tout moment abandonne tous les points placés et quitte la commande.
+
+## Tracer un segment d'arc
+
+Appuyez sur **A** à tout moment après le premier sommet pour basculer le mode Arc — le même modèle d'option en ligne que la commande PLINE d'AutoCAD utilise, reflétant l'option Copy de Rotate. L'invite affiche l'état actuel sous la forme `[Arc=true]` / `[Arc=false]` ; appuyer à nouveau sur **A** le fait basculer en arrière, de sorte que les segments droits et d'arc peuvent être librement mélangés dans une polyligne.
+
+Lorsque le mode Arc est actif, chaque nouveau segment est un arc à continuation tangentielle — il commence tangent à ce qui précédait juste avant (la direction du segment de ligne précédent, ou la tangente de fin de l'arc précédent) ; le tout premier segment est orienté par défaut vers l'est, n'ayant rien auquel être tangent.
 
 ## Saisie de coordonnées
 
@@ -57,6 +63,7 @@ La longueur accumulée courante apparaît dans le terminal en temps réel. Cliqu
 |--------|--------|
 | `0`–`9`, `.`, `-` | Démarrer la saisie de coordonnée X, ou longueur de segment quand l'angle est verrouillé |
 | `,` | Verrouiller X et passer à la saisie Y |
+| `A` | Basculer le mode Arc pour le segment suivant (après le premier sommet, sans saisie en cours) |
 | `Retour arrière` | Supprimer le dernier caractère saisi |
 | `Entrée` | Confirmer la coordonnée ou longueur saisie, ou terminer la polyligne si rien n'est saisi et ≥ 2 points existent |
 | `Espace` | Terminer la polyligne (identique à Entrée quand aucune saisie n'est en cours) |
@@ -87,7 +94,7 @@ Parce qu'une polyligne est une seule entité, une sélection par croisement qui 
 
 ## Commandes d'édition supportées
 
-Les polylignes supportent toutes les transformations générales et l'offset, mais **pas** trim ni extend (ce sont des fonctions [Line](../line/) uniquement) :
+Les polylignes supportent toute transformation générale, ainsi que l'offset, le trim, l'extend et le chamfer (pour le chamfer, seuls les segments droits comptent) :
 
 | Commande | Ce qui arrive à la polyligne |
 |----------|------------------------------|
@@ -97,7 +104,12 @@ Les polylignes supportent toutes les transformations générales et l'offset, ma
 | [Mirror](../mirror/) | Symétrise tous les sommets par rapport à l'axe de symétrie |
 | [Scale](../scale/) | Met à l'échelle tous les sommets uniformément depuis le point de base |
 | [Offset](../offset/) | Crée une polyligne parallèle à une distance perpendiculaire fixe |
+| [Trim](../trim/) | Supprime la portion entre deux intersections, segments droits ou d'arc indifféremment |
+| [Extend](../extend/) | Prolonge le premier ou dernier segment jusqu'à la limite suivante |
+| [Chamfer](../chamfer/) | Biseaute un coin entre deux segments droits adjacents |
 | [Delete](../delete/) | Supprime la polyligne du dessin |
+
+Fillet ne supporte pas du tout les polylignes.
 
 ## Propriétés
 
@@ -127,7 +139,8 @@ Quand une polyligne est sélectionnée, le panneau des propriétés affiche :
 |---|---------|------|
 | Nombre d'entités | Un `LWPOLYLINE` pour tout le chemin | Un `LINE` par segment |
 | Forme fermée | Oui (indicateur de fermeture) | Non |
-| Trim / Extend | Non | Oui — segment par segment |
+| Segments d'arc | Oui, par segment via le bouton `Arc` | Non — un segment courbe nécessite une entité [Arc](../arc/) distincte |
+| Trim / Extend | Oui | Oui — segment par segment |
 | Poignée de milieu de segment | Translate le segment entier | Active Move pour l'entité |
 | Idéal pour | Contours, silhouettes, formes à garder entières | Lignes de construction, géométrie à retailler |
 

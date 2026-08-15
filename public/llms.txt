@@ -268,6 +268,8 @@ It is designed for engineers, architects, and technical illustrators who need a 
 
 - Full command terminal with history, keyboard navigation, and fuzzy autocomplete (matches letters anywhere in a command's name, ranked by match quality then by actual usage frequency)
 - 50+ drawing commands: Line, Polyline, Circle, Arc, Ellipse, Rectangle, Spline, Hatch, Text (MTEXT), Dimensions, Leaders, and more
+- Polyline arc segments — toggle Arc mode (A) mid-polyline for AutoCAD-style tangent arc segments, fully supported by render, selection, grip editing, trim/extend, DXF, and hatch boundaries
+- Rotate has a Copy toggle (C) — rotate duplicates instead of the original selection, AutoCAD ROTATE-style
 - Selection filter: narrow a large multi-selection by Type, Layer, Color, Lineweight, or Linetype before bulk-editing, via a filter icon in the property panel
 - Hatch fills any closed boundary with a pattern (ANSI31 and other standard patterns built in); Hatch Manager browses the pattern library and lets you upload your own .pat files, which shadow built-in patterns of the same name
 - Array Grid repeats a selection in rows and columns with typed spacing — no point-picking
@@ -277,7 +279,7 @@ It is designed for engineers, architects, and technical illustrators who need a 
 - Angle tracking with configurable increments (10°, 15°, 20°, 30°, 45°, 90°)
 - Layout / paper space with multiple layouts and viewport editing
 - ISO 5455 scale selector for viewports
-- Print manager: PDF and PNG/WebP export with DPI control
+- Print manager: PDF and PNG/WebP export with a Draft/Normal/Presentation/Max Quality (DPI) setting; preview renders through the exact same path as the export, so what you see is what downloads
 - DXF import and export (compatible with LibreCAD, QCAD, BricsCAD, FreeCAD)
 - Match Properties command (copy color, layer, linetype, lineweight)
 - Properties panel showing entity details

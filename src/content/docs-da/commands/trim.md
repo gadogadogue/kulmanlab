@@ -65,6 +65,8 @@ Kommandoen projicerer markørpositionen på entiteten, den holder over, og finde
 
 Entiteterne der bruges som **skæregrænser** kan være Line, Arc, Circle, Ellipse eller Polyline. Text-, Spline-, Dimension- og Leader-entiteter registrerer aldrig skæringspunkter, så de kan heller ikke fungere som grænser.
 
+En Polylines **buesegmenter** (tegnet med Arc-kontakten, eller importeret) beskæres nøjagtig som dens lige segmenter — hold musen over buedelen mellem to skæringer og klik. Den beskårne kant bevarer sin krumning; kun længden ændres.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

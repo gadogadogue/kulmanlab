@@ -29,6 +29,12 @@ Okno ma dwa panele:
 | Lista rozwijana **Format** | PNG, JPEG, WebP lub PDF |
 | Przycisk **Eksportuj** | Generuje i pobiera plik |
 
+## Jakość i rozdzielczość
+
+Rozwijana lista **Quality** (Jakość) ustawia DPI, w jakim renderowany jest eksport: Draft (72), Normal (150, domyślnie), Presentation (300) lub Max (600). Wyższa Jakość daje większy, ostrzejszy obraz przy tym samym fizycznym rozmiarze — grubości linii skalują się razem z rozdzielczością, więc linia zachowuje tę samą fizyczną grubość na papierze przy dowolnym ustawieniu Jakości. Jedynym wyjątkiem jest cienka linia (grubość 0), która pozostaje o stałej szerokości 1 piksela na każdym poziomie Jakości.
+
+Zmiana Jakości natychmiast ponownie renderuje podgląd, dzięki czemu widzisz rzeczywistą ostrość przed eksportem.
+
 ## Wybieranie niestandardowego obszaru eksportu
 
 Domyślnie podgląd pokazuje dokładnie to, co było widoczne na płótnie podczas otwierania Menedżera druku. Aby wyeksportować określony region:

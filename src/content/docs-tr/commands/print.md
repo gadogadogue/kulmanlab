@@ -29,6 +29,12 @@ Pencere iki bölmeden oluşur:
 | **Format** listesi | PNG, JPEG, WebP veya PDF |
 | **Export** düğmesi | Dosyayı oluşturur ve indirir |
 
+## Kalite ve çözünürlük
+
+**Kalite** açılır menüsü, dışa aktarmanın hangi DPI'da render edileceğini belirler: Taslak (72), Normal (150, varsayılan), Sunum (300) veya Maksimum (600). Daha yüksek Kalite, aynı fiziksel boyutta daha büyük ve daha net bir görüntü üretir — çizgi kalınlıkları çözünürlükle birlikte ölçeklenir, böylece bir çizgi herhangi bir Kalite ayarında kağıt üzerinde aynı fiziksel kalınlığı korur. Tek istisna, her Kalite seviyesinde sabit 1 piksel genişliğinde kalan ince çizgidir (çizgi kalınlığı 0).
+
+Kaliteyi değiştirmek önizlemeyi hemen yeniden render eder, böylece dışa aktarmadan önce gerçek netliği görürsünüz.
+
 ## İsteğe Bağlı Dışa Aktarma Alanı Seçimi
 
 Varsayılan olarak önizleme, Yazdırma Yöneticisi açıldığında tuvalde görünenin tam olarak aynısını gösterir. Belirli bir alanı dışa aktarmak için:

@@ -48,6 +48,8 @@ Następujące typy elementów są ignorowane jako granice — element nie przed�
 
 Wszystkie inne typy (Line, Arc, Circle, Ellipse, Polyline, Wymiar) służą jako prawidłowe granice.
 
+Jeśli pierwszy lub ostatni segment Polyline sam jest segmentem łukowym (narysowanym przełącznikiem Arc), przedłużenie go powoduje wzrost łuku wzdłuż jego własnego okręgu — dokładnie tak, jak przy przedłużaniu samodzielnego Arc — zamiast traktować go jako segment prosty.
+
 ## Skróty klawiaturowe
 
 | Klawisz | Akcja |

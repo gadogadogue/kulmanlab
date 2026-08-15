@@ -65,6 +65,8 @@ El comando proyecta la posición del cursor sobre la entidad sobre la que se pas
 
 Las entidades usadas como **bordes de corte** pueden ser una Line, Arc, Circle, Ellipse o Polyline. Las entidades Text, Spline, Dimension y Leader nunca registran intersecciones, por lo que tampoco pueden actuar como bordes.
 
+Los **segmentos de arco** de una Polyline (dibujados con el interruptor Arc, o importados) se recortan exactamente igual que sus segmentos rectos — pasa el cursor sobre la parte del arco entre dos intersecciones y haz clic. El borde recortado conserva su curvatura; solo cambia su longitud.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

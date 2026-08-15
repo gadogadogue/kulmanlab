@@ -65,6 +65,8 @@ Kommandot projicerar markörens position på den entitet markören befinner sig 
 
 Entiteterna som används som **klippgränser** kan vara Line, Arc, Circle, Ellipse eller Polyline. Text-, Spline-, Dimension- och Leader-entiteter registrerar aldrig skärningar, så de kan inte heller fungera som gränser.
 
+En Polylines **bågsegment** (ritade med Arc-växeln, eller importerade) klipps precis som dess raka segment — håll muspekaren över bågdelen mellan två skärningar och klicka. Den klippta kanten behåller sin krökning; bara längden ändras.
+
 ## Trim jämfört med Extend
 
 | | Trim | Extend |

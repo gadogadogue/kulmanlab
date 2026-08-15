@@ -65,6 +65,8 @@ Umarnin yana projekta matsayin mai nuni a kan abin da aka riƙe kuma yana samun 
 
 Abubuwan da ake amfani da su a matsayin **iyakokin yankewa** za su iya kasancewa Line, Arc, Circle, Ellipse ko Polyline. Abubuwan Text, Spline, Dimension, da Leader ba sa taɓa yin rijistar mahaɗa, don haka su ma ba za su iya zama iyaka ba.
 
+**Sassan baka** na Polyline (waɗanda aka zana da sauyawa Arc, ko aka shigo da su) suna yankewa daidai kamar sassansa madaidaita — riƙe da kai kan sashin baka tsakanin mahaɗai biyu sannan ka danna. Gefen da aka yanke yana ci gaba da lanƙwasarsa; tsawonsa kaɗai ke canjawa.
+
 ## Trim da Extend
 
 | | Trim | Extend |

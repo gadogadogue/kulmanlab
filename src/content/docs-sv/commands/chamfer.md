@@ -40,6 +40,10 @@ När två linjer korsar varandra tillämpas chamfern på det hörn som definiera
 
 För polylines avgör klickpositionen vilket **segment** av polylinen som deltar, och den närmaste vertexen på skärningssidan är den som klipps.
 
+När båda klicken hamnar på samma polyline måste det andra klicket vara på ett segment som är en verklig granne till det första — de delar hörnvertexen mellan sig — annars avvisas klicket; två icke-angränsande segment har inget gemensamt hörn för en chamfer att fasa.
+
+Ett bågsegment i en polyline väljs aldrig för fasning — bara raka segment räknas, så att hålla muspekaren nära en bågdel letar istället efter det närmaste raka segmentet.
+
 ## Vad kommandot skapar
 
 - Den första entitetens ändpunkt (eller polyline-vertex) närmast skärningen flyttas till punkten **T1**, belägen d1 längs den första entiteten från skärningen.

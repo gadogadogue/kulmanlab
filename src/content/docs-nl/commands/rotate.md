@@ -45,8 +45,15 @@ Een live spookpreview van de geroteerde entiteiten volgt de cursorhoek nadat het
 |-----|--------|
 | `0`–`9`, `.` | Voeg cijfer toe aan de hoekwaarde |
 | `-` | Negatieve hoek (alleen als eerste teken) |
+| `C` | Copy-modus schakelen (voordat u cijfers typt) |
 | `Backspace` | Verwijder het laatst getypte teken |
 | `Enter` | Pas rotatie toe met de getypte hoek |
+
+## Een kopie roteren
+
+Druk op **C** bij de hoekprompt — voordat u cijfers typt — om de **Copy**-modus te schakelen, hetzelfde inline-optiepatroon dat AutoCAD's ROTATE-commando gebruikt. De prompt toont de huidige status als `[Copy=true]` / `[Copy=false]`, en nogmaals op **C** drukken schakelt het terug.
+
+Met Copy aan blijft de oorspronkelijke selectie ongewijzigd op zijn plaats staan bij het toepassen van de rotatie, en worden er in plaats daarvan nieuwe, geroteerde kopieën van elke geselecteerde entiteit toegevoegd. Met Copy uit (standaard) roteert de selectie zoals gebruikelijk op zijn plaats.
 
 ## Hoekrichting
 
@@ -64,6 +71,7 @@ Veelgebruikte waarden: `90` = kwartslag, `180` = halve slag, `-90` = tegenoverge
 | `Enter` / `Space` | Bevestig selectie |
 | `0`–`9`, `.`, `-` | Start X-coördinaatinvoer (basispuntfase), of hoekwaarde (hoekfase) |
 | `,` | Vergrendel X en ga naar Y-invoer (basispuntfase) |
+| `C` | Copy-modus schakelen (hoekfase, voordat u cijfers typt) |
 | `Backspace` | Verwijder laatst getypte teken |
 | `Enter` | Bevestig coördinaat of pas rotatie toe |
 | `Escape` | Annuleren en resetten |

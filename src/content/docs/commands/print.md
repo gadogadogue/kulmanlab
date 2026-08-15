@@ -1,7 +1,7 @@
 ---
 title: Print Command — Export the Drawing as PNG, JPEG, WebP, or PDF
-description: The Print command opens the Print Manager — a dedicated export window with a live preview, format selector, monochrome toggle, and optional area selection. Exports up to 2000×2000 px. Supports PNG, JPEG, WebP, and PDF.
-keywords: [CAD export PNG, CAD export PDF, print CAD drawing, print manager, monochrome export, kulmanlab export]
+description: The Print command opens the Print Manager — a dedicated export window with a live preview that exactly matches the exported file, a Quality/DPI setting, format selector, monochrome toggle, and optional area crop. Supports PNG, JPEG, WebP, and PDF.
+keywords: [CAD export PNG, CAD export PDF, print CAD drawing, print manager, print quality DPI, monochrome export, kulmanlab export]
 group: file
 order: 4
 ---
@@ -14,6 +14,8 @@ The `print` command opens the **Print Manager** — a dedicated export window wi
 
 Click the **Print** toolbar button or type `print` in the terminal. The Print Manager opens immediately showing a preview of the current viewport.
 
+The preview is rendered through the exact same code path, at the exact same pixel resolution, as the file you eventually export — changing Quality, Monochrome, or the export area all re-render the preview immediately, so what you see is what downloads, not an approximation of it.
+
 ## Print Manager layout
 
 The window has two panels:
@@ -24,10 +26,26 @@ The window has two panels:
 
 | Control | Description |
 |---------|-------------|
-| **Change Area** | Crop to a custom rectangle on the canvas (see below) |
-| **Monochrome** toggle | Convert all colored lines to black — on by default for clean print output |
+| **Change Area** | Crop to a custom rectangle on the canvas (see below) — actually crops the exported image, including on a layout with paper space, not just the on-screen preview |
+| **Quality** dropdown | Sets the export resolution (see below) |
+| **Monochrome** toggle | Force every entity to solid black ink — on by default for clean print output |
 | **Format** dropdown | PNG, JPEG, WebP, or PDF |
 | **Export** button | Generate and download the file |
+
+## Quality and resolution
+
+The **Quality** dropdown sets the DPI the export is rendered at:
+
+| Quality | DPI |
+|---------|-----|
+| Draft | 72 |
+| Normal *(default)* | 150 |
+| Presentation | 300 |
+| Max | 600 |
+
+Higher Quality produces a larger, sharper image at the same physical size — line weights scale up together with the resolution, so a line keeps the same *physical* thickness on paper at any Quality setting rather than looking thinner as DPI increases. The one exception is a hairline (lineweight `0`), which AutoCAD defines as "the thinnest line the output device can draw" — it stays a fixed 1-pixel width at every Quality level instead of scaling, matching how it behaves on the live canvas.
+
+Changing Quality re-renders the preview immediately, so you see the actual sharpness (and file size trade-off) before exporting.
 
 ## Selecting a custom export area
 
@@ -48,13 +66,14 @@ The preview canvas resizes dynamically to match the **exact aspect ratio** of th
 | **PNG** | Lossless, sharp lines | White background, no transparency |
 | **JPEG** | Smaller file for sharing | 95% quality, slight compression |
 | **WebP** | Smallest file for web | Same 95% quality, better compression than JPEG |
-| **PDF** | Print-ready documents | Image embedded at 150 DPI inside PDF container |
+| **PDF** | Print-ready documents | Image embedded inside a PDF container at the selected Quality's DPI, sized so the page prints at true physical scale |
 
 The exported file is named `kulman-<timestamp>.<ext>` and downloads automatically.
 
 ## Export resolution and background
 
-- Maximum resolution: **2000 × 2000 pixels**, scaled proportionally to the selected area.
+- **Model space / viewport export**: capped at 2000 × 2000 pixels at the default Normal (150 DPI) Quality, scaled proportionally to the selected area; the cap scales with Quality too — Draft caps lower, Presentation and Max cap higher (up to 8000 × 8000 at Max/600 DPI).
+- **Layout (paper space) export**: sized directly from the layout's paper dimensions at the selected DPI — e.g. an A4 sheet (210 × 297 mm) at Normal quality exports at roughly 1240 × 1754 px — so it isn't subject to the 2000 px viewport cap.
 - Background is always **white**.
 - Layers marked as **non-plotting** are excluded from the export.
 

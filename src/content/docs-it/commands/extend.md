@@ -48,6 +48,8 @@ I seguenti tipi di entità vengono ignorati come limiti — un'entità non si es
 
 Tutti gli altri tipi (Line, Arc, Circle, Ellipse, Polyline, Dimension) servono come limiti validi.
 
+Se il primo o l'ultimo segmento di una Polyline è esso stesso un segmento ad arco (disegnato con l'opzione Arc), estenderlo fa crescere l'arco lungo il proprio cerchio — come quando si estende un Arc autonomo — invece di trattarlo come un segmento dritto.
+
 ## Riferimento tastiera
 
 | Tasto | Azione |

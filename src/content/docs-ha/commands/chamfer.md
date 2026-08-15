@@ -40,6 +40,10 @@ Idan layi biyu suka haɗu da juna, ana amfani da chamfer a kan kusurwar da matsa
 
 Ga Polylines, matsayin dannawa yana bayyana wace **sashe** na polyline ke shiga ciki, kuma vertex mafi kusa da gefen mahaɗa shine wanda za a yanke.
 
+Idan duka dannawa biyu suka faɗo a kan polyline ɗaya, dannawa ta biyu dole ta kasance sashi wanda shi ne makwabci na gaskiya na na farko — suna raba tudun kusurwa a tsakaninsu — in ba haka ba, ana ƙin dannawar; sassa biyu marasa maƙwabtaka ba su da kusurwa gama gari da chamfer zai iya sassaƙa.
+
+Sashin baka na polyline ba a taɓa zaɓarsa don chamfer ba — sassa madaidaita kawai ake ƙidaya, don haka riƙe da kai kusa da sashin baka yana neman sashi madaidaici mafi kusa a maimako.
+
 ## Abin da umarnin ke ƙirƙira
 
 - Ƙarshen abu na farko (ko vertex na polyline) mafi kusa da mahaɗa ana motsa shi zuwa tabo **T1**, wanda yake d1 a kan abu na farko daga mahaɗa.

@@ -29,6 +29,12 @@ Vinduet har to paneler:
 | **Format**-rullemenu | PNG, JPEG, WebP eller PDF |
 | **Export**-knap | Generér og download filen |
 
+## Kvalitet og opløsning
+
+Rullemenuen **Quality** angiver den DPI, eksporten renderes med: Draft (72), Normal (150, standard), Presentation (300) eller Max (600). Højere Quality giver et større, skarpere billede i samme fysiske størrelse — linjetykkelser skaleres sammen med opløsningen, så en linje bevarer samme fysiske tykkelse på papir ved enhver Quality-indstilling. Den ene undtagelse er en hårlinje (linjetykkelse 0), som forbliver en fast bredde på 1 pixel på ethvert Quality-niveau.
+
+At ændre Quality genrenderer forhåndsvisningen med det samme, så du ser den faktiske skarphed før eksport.
+
 ## Vælge et brugerdefineret eksportområde
 
 Som standard viser forhåndsvisningen nøjagtigt det, der var synligt på lærredet, da du åbnede Print Manager. For at eksportere et specifikt område:

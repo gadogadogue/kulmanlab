@@ -45,8 +45,15 @@ Podgląd widma obróconychElementów podąża za kątem kursora po ustawieniu pu
 |---------|-------|
 | `0`–`9`, `.` | Dodaj cyfrę do wartości kąta |
 | `-` | Ujemny kąt (tylko jako pierwszy znak) |
+| `C` | Przełącz tryb Copy (przed wpisaniem jakiejkolwiek cyfry) |
 | `Backspace` | Usuń ostatnio wpisany znak |
 | `Enter` | Zastosuj obrót przy wpisanym kącie |
+
+## Obracanie kopii
+
+Naciśnij **C** przy monicie o kąt — przed wpisaniem jakiejkolwiek cyfry — aby przełączyć tryb **Copy**, ten sam wzorzec opcji wbudowanej, którego używa polecenie ROTATE w AutoCAD. Monit pokazuje bieżący stan jako `[Copy=true]` / `[Copy=false]`, a ponowne naciśnięcie **C** przełącza go z powrotem.
+
+Gdy Copy jest włączone, zastosowanie obrotu pozostawia oryginalne zaznaczenie niezmienione na miejscu i zamiast tego dodaje nowe, obrócone kopie każdego zaznaczonego elementu. Gdy Copy jest wyłączone (domyślnie), zaznaczenie obraca się w miejscu jak zwykle.
 
 ## Kierunek kąta
 
@@ -64,6 +71,7 @@ Typowe wartości: `90` = ćwierć obrotu, `180` = pół obrotu, `-90` = przeciwn
 | `Enter` / `Spacja` | Potwierdź zaznaczenie |
 | `0`–`9`, `.`, `-` | Rozpocznij wprowadzanie współrzędnej X (faza punktu bazowego) lub wartość kąta (faza kąta) |
 | `,` | Zablokuj X i przejdź do wprowadzania Y (faza punktu bazowego) |
+| `C` | Przełącz tryb Copy (faza kąta, przed wpisaniem jakiejkolwiek cyfry) |
 | `Backspace` | Usuń ostatnio wpisany znak |
 | `Enter` | Potwierdź współrzędną lub zastosuj obrót |
 | `Escape` | Anuluj i zresetuj |

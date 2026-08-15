@@ -40,6 +40,10 @@ Quando due linee si incrociano, lo smusso viene applicato nell'angolo definito d
 
 Per le Polyline, la posizione di clic determina quale **segmento** della polilinea partecipa, e il vertice più vicino sul lato dell'intersezione è quello che viene tagliato.
 
+Quando entrambi i clic cadono sulla stessa polilinea, il secondo clic deve essere un segmento realmente vicino al primo — condividono il vertice dell'angolo tra loro — altrimenti il clic viene rifiutato; due segmenti non adiacenti non hanno un angolo condiviso da smussare.
+
+Un segmento ad arco di una polilinea non viene mai selezionato per lo smusso — contano solo i segmenti dritti, quindi passando il cursore vicino a una porzione ad arco si cerca invece il segmento dritto più vicino.
+
 ## Cosa crea il comando
 
 - Il punto finale della prima entità (o vertice della polilinea) più vicino all'intersezione viene spostato al punto **T1**, situato a d1 lungo la prima entità dall'intersezione.

@@ -673,7 +673,7 @@ When two lines cross each other, the chamfer is applied on the corner defined by
 - Click near one end of the first entity to select that half.
 - Move the cursor to the desired half of the second entity — the dashed preview updates live.
 
-For Polylines, the click position determines which **segment** of the polyline participates, and the nearest vertex on the intersection side is the one that gets trimmed.
+For Polylines, the click position determines which **segment** of the polyline participates, and the nearest vertex on the intersection side is the one that gets trimmed. When both picks land on the same polyline, the second pick must be a true neighbor of the first — sharing the corner vertex between them — or it's rejected. An **arc segment** of a polyline is never picked; only straight segments count.
 
 ## What the command creates
 
@@ -1591,6 +1591,8 @@ The following entity types are ignored as boundaries — an entity does not exte
 - Spline
 
 All other types (Line, Arc, Circle, Ellipse, Polyline, Dimension) serve as valid boundaries.
+
+If a [Polyline](./polyline)'s first or last segment is itself an arc (drawn with the Arc toggle), extending it grows the arc along its own circle — the same way extending a standalone [Arc](./arc) does — rather than treating it as straight.
 
 ## Keyboard reference
 
@@ -2868,7 +2870,7 @@ The fastest way to pan: **hold the middle mouse button and drag** at any time, e
 
 # Polyline
 
-The `polyline` command draws a connected path of any number of straight segments, all stored as a single `LWPOLYLINE` entity. Because the entire path is one object, selecting it selects every segment at once — move, rotate, or scale the whole shape in a single operation. This is the key distinction from chained [Lines](./line), where each segment is an independent entity.
+The `polyline` command draws a connected path of any number of straight or arc segments, all stored as a single `LWPOLYLINE` entity. Because the entire path is one object, selecting it selects every segment at once — move, rotate, or scale the whole shape in a single operation. This is the key distinction from chained [Lines](./line), where each segment is an independent entity.
 
 Polylines can also be **closed**: the [Rectangle](./rectangle) command uses the same `LWPOLYLINE` entity with a close flag set.
 
@@ -2889,6 +2891,12 @@ Polylines can also be **closed**: the [Rectangle](./rectangle) command uses the 
 
 Pressing **Escape** at any time discards all placed points and exits the command.
 
+## Drawing an arc segment
+
+Press **A** at any point after the first vertex to toggle Arc mode — the same inline-option pattern AutoCAD's PLINE command uses, mirroring [Rotate](./rotate)'s `Copy` option. The prompt shows the current state as `[Arc=true]` / `[Arc=false]`; pressing **A** again flips it back, so straight and arc segments can be freely mixed in one polyline.
+
+While Arc mode is on, each new segment is a **tangent-continuation arc** — AutoCAD's default arc behavior with no center/radius/direction sub-options. It starts tangent to whatever came right before it (the previous line's direction, or the previous arc's end tangent); the very first segment of a polyline defaults to heading due east, having nothing to be tangent to.
+
 ## Angle locking and exact segment length
 
 The same 45° snap logic as the [Line](./line#angle-locking-and-exact-length-input) command applies between any two consecutive points. When locked to an axis:
@@ -2907,6 +2915,7 @@ The current accumulated length appears in the terminal prompt in real time. Clic
 | Key | Action |
 |-----|--------|
 | `0`–`9`, `.`, `-` | Build up segment length (angle lock must be active) |
+| `A` | Toggle Arc mode for the next segment (after the first vertex, no input in progress) |
 | `Backspace` | Delete last typed character |
 | `Enter` | Confirm typed length, or finish the polyline if no length is typed and ≥ 2 points exist |
 | `Space` | Finish the polyline (same as Enter when no length is typed) |
@@ -2923,6 +2932,8 @@ A selected polyline shows two types of grips:
 
 The segment-midpoint grip is unique to polylines — it lets you slide an individual segment sideways without changing its length. On a [Line](./line), the midpoint grip instead activates the Move command for the whole entity.
 
+An **arc segment** grips the same way as a straight one — dragging either endpoint or the segment-midpoint grip reshapes it, holding the bulge (included angle) constant and refitting through the new position, the same behavior an [Arc](./arc) entity's own grips use.
+
 There is no single "move the whole polyline" grip. To move the entire path use the [Move](./move) command.
 
 ## Selecting polylines
@@ -2937,7 +2948,7 @@ Because a polyline is one entity, a crossing selection that touches any segment 
 
 ## Supported edit commands
 
-Polylines support all general transformations and offset, but **not** trim or extend (those are [Line](./line)-only):
+Polylines support every general transformation, plus offset, trim, extend, and chamfer — arc segments are fully supported by all of these except Chamfer, which only ever picks a **straight** segment:
 
 | Command | What happens to the polyline |
 |---------|------------------------------|
@@ -2946,8 +2957,13 @@ Polylines support all general transformations and offset, but **not** trim or ex
 | [Rotate](./rotate) | Rotates all vertices around the chosen base point |
 | [Mirror](./mirror) | Reflects all vertices across the mirror axis |
 | [Scale](./scale) | Scales all vertices uniformly from the base point |
-| [Offset](./offset) | Creates a parallel polyline at a fixed perpendicular distance |
+| [Offset](./offset) | Creates a parallel polyline at a fixed perpendicular distance — arc segments offset to a new radius |
+| [Trim](./trim) | Removes the portion between two intersection points, straight or arc segments alike |
+| [Extend](./extend) | Stretches the first or last segment to the next boundary — an arc terminal segment grows along its own circle |
+| [Chamfer](./chamfer) | Bevels a corner between two adjacent **straight** segments; an arc segment at that corner is skipped when picking |
 | [Delete](./delete) | Removes the polyline from the drawing |
+
+Fillet does not support polylines at all.
 
 ## Properties
 
@@ -2977,13 +2993,16 @@ When a polyline is selected the properties panel shows:
 |---|---------|------|
 | Entity count | One `LWPOLYLINE` for the whole path | One `LINE` per segment |
 | Closed shape | Yes (close flag) | No |
-| Trim / Extend | No | Yes — segment by segment |
+| Arc segments | Yes, per-segment via the `Arc` toggle | No — needs a separate [Arc](./arc) entity |
+| Trim / Extend | Yes | Yes — segment by segment |
 | Segment-midpoint grip | Translates the whole segment | Activates Move for the entity |
 | Best for | Outlines, contours, shapes you keep whole | Construction lines, geometry you'll trim |
 
 ## DXF — LWPOLYLINE entity
 
 Polylines are saved as `LWPOLYLINE` entities in the DXF file. All properties — vertex coordinates, closed flag, color, layer, linetype, linetype scale, and thickness — round-trip without loss. Rectangles drawn with the [Rectangle](./rectangle) command also save as `LWPOLYLINE` (closed, four vertices) and are indistinguishable at the DXF level.
+
+Each vertex also carries a **bulge** (DXF group code 42) — 0 for a straight segment, or the signed tangent-of-quarter-angle value AutoCAD uses for a curved one. Bulges round-trip losslessly, so arc segments imported from another CAD application render, select, grip-edit, trim, extend, and hatch exactly like ones drawn here with the Arc option.
 
 `LWPOLYLINE` entities from any DXF-compatible application (AutoCAD, LibreCAD, etc.) are read back as fully editable polylines in the editor.
 
@@ -2997,6 +3016,8 @@ The `print` command opens the **Print Manager** — a dedicated export window wi
 
 Click the **Print** toolbar button or type `print` in the terminal. The Print Manager opens immediately showing a preview of the current viewport.
 
+The preview renders through the exact same code path, at the exact same pixel resolution, as the file you eventually export — changing Quality, Monochrome, or the export area all re-render the preview immediately, so what you see is what downloads, not an approximation of it.
+
 ## Print Manager layout
 
 The window has two panels:
@@ -3007,8 +3028,9 @@ The window has two panels:
 
 | Control | Description |
 |---------|-------------|
-| **Change Area** | Crop to a custom rectangle on the canvas (see below) |
-| **Monochrome** toggle | Convert all colored lines to black — on by default for clean print output. Rendered as a single pass over the finished image rather than a per-entity effect, so it stays fast even on large plots — a 90,000-entity drawing renders in around 70ms |
+| **Change Area** | Crop to a custom rectangle on the canvas (see below) — actually crops the exported image, including on a layout with paper space, not just the on-screen preview |
+| **Quality** dropdown | Export DPI: Draft 72, Normal 150 (default), Presentation 300, Max 600. Line weights scale with it, so a line keeps the same physical thickness on paper at any Quality; a hairline (lineweight 0) stays a fixed 1px regardless |
+| **Monochrome** toggle | Forces every entity's color to solid black ink at render time — on by default for clean print output. Rendered as a single pass over the finished image rather than a per-entity effect, so it stays fast even on large plots — a 90,000-entity drawing renders in around 70ms |
 | **Format** dropdown | PNG, JPEG, WebP, or PDF |
 | **Export** button | Generate and download the file |
 
@@ -3031,13 +3053,14 @@ The preview canvas resizes dynamically to match the **exact aspect ratio** of th
 | **PNG** | Lossless, sharp lines | White background, no transparency |
 | **JPEG** | Smaller file for sharing | 95% quality, slight compression |
 | **WebP** | Smallest file for web | Same 95% quality, better compression than JPEG |
-| **PDF** | Print-ready documents | Image embedded at 150 DPI inside PDF container |
+| **PDF** | Print-ready documents | Image embedded inside a PDF container at the selected Quality's DPI, sized so the page prints at true physical scale |
 
 The exported file is named `kulman-<timestamp>.<ext>` and downloads automatically.
 
 ## Export resolution and background
 
-- Maximum resolution: **2000 × 2000 pixels**, scaled proportionally to the selected area.
+- **Model space / viewport export**: capped at 2000 × 2000 px at the default Normal (150 DPI) Quality, scaled proportionally to the selected area; the cap itself scales with Quality (down at Draft, up to 8000 × 8000 at Max/600 DPI).
+- **Layout (paper space) export**: sized directly from the layout's paper dimensions at the selected DPI (e.g. A4 at Normal ≈ 1240 × 1754 px) — not subject to the 2000 px viewport cap.
 - Background is always **white**.
 - Layers marked as **non-plotting** are excluded from the export.
 
@@ -3228,8 +3251,15 @@ A live ghost preview of the rotated entities follows the cursor angle after the 
 |-----|--------|
 | `0`–`9`, `.` | Append digit to the angle value |
 | `-` | Negative angle (first character only) |
+| `C` | Toggle Copy mode (before typing any digits) |
 | `Backspace` | Delete the last typed character |
 | `Enter` | Apply rotation at the typed angle |
+
+## Rotating a copy
+
+Press **C** at the angle prompt — before typing any digits — to toggle **Copy** mode, the same inline-option pattern AutoCAD's ROTATE command uses. The prompt shows the current state as `[Copy=true]` / `[Copy=false]`; pressing **C** again flips it back.
+
+With Copy on, applying the rotation leaves the original selection untouched in place and adds new, rotated copies of each selected entity instead. With Copy off (the default), the selection rotates in place as usual.
 
 ## Angle direction
 
@@ -3246,6 +3276,7 @@ Common values: `90` = quarter turn, `180` = half turn, `-90` = opposite quarter 
 |-----|--------|
 | `Enter` / `Space` | Confirm selection |
 | `0`–`9`, `.`, `-` | Build up angle value |
+| `C` | Toggle Copy mode (angle phase, before typing any digits) |
 | `Backspace` | Delete last typed character |
 | `Enter` | Apply rotation |
 | `Escape` | Cancel and reset |
@@ -3699,6 +3730,8 @@ The command projects the cursor position onto the hovered entity and finds all i
 | Text, Spline, Dimension, Leader | No |
 
 The entities used as **cutting boundaries** can be a Line, Arc, Circle, Ellipse, or Polyline.
+
+A [Polyline](./polyline)'s arc segments (drawn with the Arc toggle, or imported) trim exactly like its straight segments — hover the arc portion between two intersections and click. The trimmed edge keeps its curvature; only its length changes.
 
 ## Trim vs Extend
 

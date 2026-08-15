@@ -65,6 +65,8 @@ Der Befehl projiziert die Cursorposition auf die überfahrene Entität und finde
 
 Die als **Schnittgrenzen** verwendeten Entitäten können eine Line, ein Arc, Circle, eine Ellipse oder Polyline sein. Text-, Spline-, Bemaßungs- und Leader-Entitäten registrieren nie Schnittpunkte, sie können also ebenfalls nicht als Grenzen dienen.
 
+Ein Polyline-**Bogensegment** (mit dem Arc-Umschalter gezeichnet oder importiert) wird genauso wie seine geraden Segmente geschnitten — über den Bogenabschnitt zwischen zwei Schnittpunkten fahren und klicken. Die geschnittene Kante behält ihre Krümmung; nur ihre Länge ändert sich.
+
 ## Trim vs. Extend
 
 | | Trim | Extend |

@@ -45,8 +45,15 @@ Pratonton hantu langsung entiti yang diputar mengikuti sudut kursor selepas titi
 |---------|---------|
 | `0`–`9`, `.` | Tambah digit pada nilai sudut |
 | `-` | Sudut negatif (aksara pertama sahaja) |
+| `C` | Togol mod Copy (sebelum menaip sebarang digit) |
 | `Backspace` | Padam aksara terakhir yang ditaip |
 | `Enter` | Gunakan putaran pada sudut yang ditaip |
+
+## Memutar salinan
+
+Tekan **C** pada gesaan sudut — sebelum menaip sebarang digit — untuk togol mod **Copy**, corak pilihan sebaris yang sama yang digunakan oleh arahan ROTATE AutoCAD. Gesaan menunjukkan keadaan semasa sebagai `[Copy=true]` / `[Copy=false]`, dan menekan **C** sekali lagi menukarnya semula.
+
+Dengan Copy dihidupkan, mengaplikasikan putaran membiarkan pemilihan asal tidak disentuh di tempatnya dan sebaliknya menambah salinan baharu yang diputar bagi setiap entiti yang dipilih. Dengan Copy dimatikan (lalai), pemilihan berputar di tempatnya seperti biasa.
 
 ## Arah sudut
 
@@ -64,6 +71,7 @@ Nilai biasa: `90` = suku pusingan, `180` = separuh pusingan, `-90` = suku pusing
 | `Enter` / `Space` | Sahkan pemilihan |
 | `0`–`9`, `.`, `-` | Mula kemasukan koordinat X (fasa titik asas), atau nilai sudut (fasa sudut) |
 | `,` | Kunci X dan beralih ke kemasukan Y (fasa titik asas) |
+| `C` | Togol mod Copy (fasa sudut, sebelum menaip sebarang digit) |
 | `Backspace` | Padam aksara terakhir yang ditaip |
 | `Enter` | Sahkan koordinat atau gunakan putaran |
 | `Escape` | Batal dan tetapkan semula |

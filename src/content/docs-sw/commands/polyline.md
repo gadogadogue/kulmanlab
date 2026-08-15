@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Amri ya `polyline` inachora njia iliyounganishwa ya idadi yoyote ya sehemu za mstari, zote zikihifadhiwa kama kipande kimoja cha `LWPOLYLINE`. Kwa sababu njia nzima ni kitu kimoja, kuichagua kunachagua kila sehemu mara moja — hamisha, zungusha, au pima umbo zima katika operesheni moja. Hii ndiyo tofauti kuu kutoka kwa [Lines](../line/) zilizounganishwa, ambapo kila sehemu ni kipande huru.
+Amri ya `polyline` inachora njia iliyounganishwa ya idadi yoyote ya sehemu za mstari au mviringo, zote zikihifadhiwa kama kipande kimoja cha `LWPOLYLINE`. Kwa sababu njia nzima ni kitu kimoja, kuichagua kunachagua kila sehemu mara moja — hamisha, zungusha, au pima umbo zima katika operesheni moja. Hii ndiyo tofauti kuu kutoka kwa [Lines](../line/) zilizounganishwa, ambapo kila sehemu ni kipande huru.
 
 Polylines pia zinaweza **kufungwa**: amri ya [Rectangle](../rectangle/) inatumia kipande hicho hicho cha `LWPOLYLINE` na alama ya kufunga iliyowekwa.
 
@@ -28,6 +28,12 @@ Polylines pia zinaweza **kufungwa**: amri ya [Rectangle](../rectangle/) inatumia
 ```
 
 Kubonyeza **Escape** wakati wowote kunafuta nukta zote zilizowekwa na kutoka kwa amri.
+
+## Kuchora sehemu ya mviringo
+
+Bonyeza **A** wakati wowote baada ya ncha ya kwanza kubadilisha hali ya Arc — mtindo uleule wa chaguo la ndani ya mstari ambao amri ya PLINE ya AutoCAD hutumia, ukiakisi chaguo la Copy la Rotate. Ombi linaonyesha hali ya sasa kama `[Arc=true]` / `[Arc=false]`; kubonyeza **A** tena hubadilisha kurudi, hivyo sehemu za mstari na mviringo zinaweza kuchanganywa kwa uhuru katika polyline moja.
+
+Hali ya Arc ikiwa imewashwa, kila sehemu mpya ni mviringo wa mwendelezo wa tanjenti — huanza tanjenti kwa kile kilichokuja kabla yake moja kwa moja (mwelekeo wa sehemu ya mstari iliyotangulia, au tanjenti ya mwisho ya mviringo uliotangulia); sehemu ya kwanza kabisa huelekea mashariki kwa chaguo-msingi, kwa kuwa haina chochote cha kuwa tanjenti nayo.
 
 ## Uingizaji wa kuratibu
 
@@ -57,6 +63,7 @@ Urefu uliyokusanywa wa sasa unaonekana kwenye kidokezo cha terminal moja kwa moj
 |--------|---------|
 | `0`–`9`, `.`, `-` | Anza uingizaji wa kuratibu ya X, au urefu wa sehemu ukiwa pembe imefungwa |
 | `,` | Funga X na nenda kwa uingizaji wa Y |
+| `A` | Badilisha hali ya Arc kwa sehemu inayofuata (baada ya ncha ya kwanza, bila uingizaji unaoendelea) |
 | `Backspace` | Futa herufi ya mwisho iliyoandikwa |
 | `Enter` | Thibitisha kuratibu au urefu ulioandikwa, au maliza polyline kama hakuna kilichoandikwa na nukta ≥ 2 zipo |
 | `Space` | Maliza polyline (sawa na Enter wakati hakuna uingizaji unaoendelea) |
@@ -87,7 +94,7 @@ Kwa sababu polyline ni kipande kimoja, uchaguzi wa kupita unaogusa sehemu yoyote
 
 ## Amri za uhariri zinazosaidiwa
 
-Polylines zinasaidia mabadiliko yote ya kawaida na offset, lakini **si** trim au extend (hizo ni za [Line](../line/) pekee):
+Polylines zinasaidia kila mabadiliko ya kawaida, pamoja na offset, trim, extend, na chamfer (kwa chamfer ni sehemu za moja kwa moja pekee zinazohesabiwa):
 
 | Amri | Kinachotokea kwa polyline |
 |------|--------------------------|
@@ -97,7 +104,12 @@ Polylines zinasaidia mabadiliko yote ya kawaida na offset, lakini **si** trim au
 | [Mirror](../mirror/) | Huakisi ncha zote kwenye mhimili wa kioo |
 | [Scale](../scale/) | Hupima ncha zote kwa usawa kutoka kwa nukta ya msingi |
 | [Offset](../offset/) | Huunda polyline sambamba kwa umbali wa perpendicular uliowekwa |
+| [Trim](../trim/) | Huondoa sehemu kati ya makutano mawili, kwa sehemu za moja kwa moja au mviringo sawa |
+| [Extend](../extend/) | Hunyoosha sehemu ya kwanza au ya mwisho hadi mpaka unaofuata |
+| [Chamfer](../chamfer/) | Hupinda kona kati ya sehemu mbili za moja kwa moja zilizo jirani |
 | [Delete](../delete/) | Huondoa polyline kutoka kwa mchoro |
+
+Fillet hazitumiki kabisa kwa polylines.
 
 ## Sifa
 
@@ -127,7 +139,8 @@ Polyline inapochaguliwa paneli ya sifa inaonyesha:
 |---|---------|------|
 | Hesabu ya vipande | Moja `LWPOLYLINE` kwa njia nzima | Moja `LINE` kwa kila sehemu |
 | Umbo lililofungwa | Ndiyo (alama ya kufunga) | Hapana |
-| Trim / Extend | Hapana | Ndiyo — sehemu kwa sehemu |
+| Sehemu za mviringo | Ndiyo, kwa kila sehemu kupitia kigeuza `Arc` | Hapana — sehemu iliyopinda inahitaji kipande cha [Arc](../arc/) tofauti |
+| Trim / Extend | Ndiyo | Ndiyo — sehemu kwa sehemu |
 | Kishiko cha katikati ya sehemu | Hutafsiri sehemu nzima | Inawasha Move kwa kipande |
 | Bora kwa | Mihtasari, mipaka, maumbo unayotunza kamili | Mistari ya ujenzi, jiometri utakayokata |
 

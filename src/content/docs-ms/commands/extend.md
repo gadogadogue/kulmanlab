@@ -48,6 +48,8 @@ Jenis entiti berikut diabaikan sebagai sempadan — entiti tidak dilanjutkan unt
 
 Semua jenis lain (Line, Arc, Circle, Ellipse, Polyline, Dimension) berfungsi sebagai sempadan yang sah.
 
+Jika segmen pertama atau terakhir Polyline itu sendiri adalah segmen lengkok (dilukis dengan suis Arc), memanjangkannya menyebabkan lengkok itu berkembang sepanjang bulatannya sendiri — sama seperti memanjangkan Arc yang berdiri sendiri — dan bukannya dilayan sebagai segmen lurus.
+
 ## Rujukan papan kekunci
 
 | Kekunci | Tindakan |

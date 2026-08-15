@@ -45,8 +45,15 @@ Kierrettyjen entiteettien elävä haamuesikatselu seuraa kohdistimen kulmaa peru
 |-----|--------|
 | `0`–`9`, `.` | Lisää numero kulma-arvoon |
 | `-` | Negatiivinen kulma (vain ensimmäinen merkki) |
+| `C` | Vaihda Copy-tila (ennen kuin kirjoitat mitään numeroita) |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
 | `Enter` | Sovella kierto kirjoitetulle kulmalle |
+
+## Kopion kierto
+
+Paina **C** kulmakehotteessa — ennen kuin kirjoitat mitään numeroita — vaihtaaksesi **Copy**-tilan, saman sisäisen vaihtoehtomallin, jota AutoCADin ROTATE-komento käyttää. Kehote näyttää nykyisen tilan muodossa `[Copy=true]` / `[Copy=false]`, ja **C**:n painaminen uudelleen vaihtaa sen takaisin.
+
+Kun Copy on päällä, kierron soveltaminen jättää alkuperäisen valinnan koskemattomaksi paikoilleen ja lisää sen sijaan uusia, kierrettyjä kopioita jokaisesta valitusta entiteetistä. Kun Copy on pois päältä (oletus), valinta kiertyy paikallaan tavalliseen tapaan.
 
 ## Kulman suunta
 
@@ -64,6 +71,7 @@ Yleiset arvot: `90` = neljännesikierros, `180` = puolikierros, `-90` = vastakka
 | `Enter` / `Space` | Vahvista valinta |
 | `0`–`9`, `.`, `-` | Aloita X-koordinaatin syöttö (perustepistevaihe), tai kulma-arvo (kulmavaihe) |
 | `,` | Lukitse X ja siirry Y:n syöttöön (perustepistevaihe) |
+| `C` | Vaihda Copy-tila (kulmavaihe, ennen kuin kirjoitat mitään numeroita) |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
 | `Enter` | Vahvista koordinaatti tai sovella kierto |
 | `Escape` | Peruuta ja nollaa |

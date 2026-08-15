@@ -65,6 +65,8 @@ Arahan mengunjurkan kedudukan kursor ke atas entiti yang dituding dan mencari se
 
 Entiti yang digunakan sebagai **sempadan pemotongan** boleh menjadi Line, Arc, Circle, Ellipse atau Polyline. Entiti Text, Spline, Dimension dan Leader tidak pernah mencatat persimpangan, jadi ia juga tidak boleh berfungsi sebagai sempadan.
 
+**Segmen lengkok** Polyline (dilukis dengan suis Arc, atau diimport) dipotong sama seperti segmen lurusnya — tuding kursor ke atas bahagian lengkok antara dua persilangan dan klik. Tepi yang dipotong mengekalkan kelengkungannya; hanya panjangnya berubah.
+
 ## Trim berbanding Extend
 
 | | Trim | Extend |

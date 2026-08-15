@@ -65,6 +65,8 @@ Il comando proietta la posizione del cursore sull'entità passata e trova tutti 
 
 Le entità usate come **bordi di taglio** possono essere una Line, un Arc, Circle, un'Ellipse o Polyline. Le entità Text, Spline, Dimension e Leader non registrano mai intersezioni, quindi non possono nemmeno fungere da bordi.
 
+I **segmenti ad arco** di una Polyline (disegnati con l'opzione Arc, o importati) vengono tagliati esattamente come i segmenti dritti — passa il cursore sulla porzione di arco tra due intersezioni e clicca. Il bordo tagliato mantiene la sua curvatura; cambia solo la lunghezza.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

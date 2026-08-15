@@ -40,6 +40,10 @@ Quando duas linhas se cruzam, o chanfro é aplicado no canto definido pelas posi
 
 Para Polylines, a posição do clique determina qual **segmento** da polilinha participa, e o vértice mais próximo do lado da interseção é o que é cortado.
 
+Quando ambos os cliques caem na mesma polilinha, o segundo clique deve ser um segmento que seja realmente vizinho do primeiro — eles compartilham o vértice do canto entre si — ou o clique é rejeitado; dois segmentos não adjacentes não têm um canto compartilhado para o chamfer chanfrar.
+
+Um segmento de arco de uma polilinha nunca é selecionado para chanfro — apenas segmentos retos contam, então passar o cursor perto de uma parte de arco procura o segmento reto mais próximo em vez disso.
+
 ## O que o comando cria
 
 - O ponto final da primeira entidade (ou vértice da polilinha) mais próximo da interseção é movido para o ponto **T1**, localizado a d1 ao longo da primeira entidade a partir da interseção.

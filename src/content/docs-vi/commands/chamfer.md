@@ -38,6 +38,10 @@ Khi hai đường thẳng giao nhau, chamfer được áp dụng tại góc đư
 - Bấm gần một đầu của thực thể đầu tiên để chọn nửa đó.
 - Di chuyển con trỏ sang nửa mong muốn của thực thể thứ hai — xem trước đường đứt nét cập nhật trực tiếp.
 
+Khi cả hai lần bấm đều rơi vào cùng một polyline, lần bấm thứ hai phải là một đoạn thực sự liền kề với đoạn đầu tiên — chúng chia sẻ đỉnh góc giữa chúng — nếu không lần bấm sẽ bị từ chối; hai đoạn không liền kề không có góc chung để chamfer vát.
+
+Một đoạn cung của polyline không bao giờ được chọn để chamfer — chỉ các đoạn thẳng mới được tính, vì vậy di chuột gần một phần cung sẽ tìm đoạn thẳng gần nhất thay thế.
+
 ## Lệnh Tạo Ra Gì
 
 - Điểm cuối của thực thể đầu tiên gần giao điểm nhất được di chuyển đến điểm **T1**, nằm cách giao điểm d1 dọc theo thực thể đầu tiên.

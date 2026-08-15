@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Perintah `polyline` menggambar jalur terhubung dengan sejumlah segmen lurus, semua disimpan sebagai satu entitas `LWPOLYLINE`. Karena seluruh jalur adalah satu objek, memilihnya memilih setiap segmen sekaligus — pindahkan, putar, atau skalakan seluruh bentuk dalam satu operasi. Ini adalah perbedaan utama dari [Line](../line/) yang dirantai, di mana setiap segmen adalah entitas independen.
+Perintah `polyline` menggambar jalur terhubung dengan sejumlah segmen lurus atau busur, semua disimpan sebagai satu entitas `LWPOLYLINE`. Karena seluruh jalur adalah satu objek, memilihnya memilih setiap segmen sekaligus — pindahkan, putar, atau skalakan seluruh bentuk dalam satu operasi. Ini adalah perbedaan utama dari [Line](../line/) yang dirantai, di mana setiap segmen adalah entitas independen.
 
 Polyline juga bisa **ditutup**: perintah [Rectangle](../rectangle/) menggunakan entitas `LWPOLYLINE` yang sama dengan flag close yang diatur.
 
@@ -28,6 +28,12 @@ Polyline juga bisa **ditutup**: perintah [Rectangle](../rectangle/) menggunakan 
 ```
 
 Menekan **Escape** kapan saja akan membuang semua titik yang ditempatkan dan keluar dari perintah.
+
+## Menggambar segmen busur
+
+Tekan **A** kapan saja setelah titik pertama untuk mengalihkan mode Arc — pola opsi inline yang sama yang digunakan perintah PLINE AutoCAD, mencerminkan opsi Copy pada Rotate. Prompt menampilkan status saat ini sebagai `[Arc=true]` / `[Arc=false]`; menekan **A** lagi akan membaliknya, sehingga segmen lurus dan busur dapat dicampur secara bebas dalam satu polyline.
+
+Saat mode Arc aktif, setiap segmen baru adalah busur kelanjutan tangen — dimulai bersinggungan dengan apa yang datang tepat sebelumnya (arah segmen garis sebelumnya, atau tangen akhir busur sebelumnya); segmen paling pertama secara default mengarah ke timur, karena tidak ada apa pun untuk disinggungnya.
 
 ## Entri koordinat
 
@@ -57,6 +63,7 @@ Panjang yang terakumulasi saat ini muncul di prompt terminal secara real time. M
 |-----|--------|
 | `0`–`9`, `.`, `-` | Mulai entri koordinat X, atau panjang segmen saat sudut terkunci |
 | `,` | Kunci X dan pindah ke entri Y |
+| `A` | Alihkan mode Arc untuk segmen berikutnya (setelah titik pertama, tanpa input yang sedang berlangsung) |
 | `Backspace` | Hapus karakter terakhir yang diketik |
 | `Enter` | Konfirmasi koordinat atau panjang yang diketik, atau selesaikan polyline jika tidak ada yang diketik dan ≥ 2 titik ada |
 | `Space` | Selesaikan polyline (sama dengan Enter saat tidak ada input yang sedang berlangsung) |
@@ -87,7 +94,7 @@ Karena polyline adalah satu entitas, seleksi persilangan yang menyentuh segmen m
 
 ## Perintah edit yang didukung
 
-Polyline mendukung semua transformasi umum dan offset, tetapi **tidak** trim atau extend (itu khusus untuk [Line](../line/)):
+Polyline mendukung setiap transformasi umum, ditambah offset, trim, extend, dan chamfer (untuk chamfer hanya segmen lurus yang dihitung):
 
 | Perintah | Apa yang terjadi pada polyline |
 |---------|------------------------------|
@@ -97,7 +104,12 @@ Polyline mendukung semua transformasi umum dan offset, tetapi **tidak** trim ata
 | [Mirror](../mirror/) | Memantulkan semua vertex melintasi sumbu cermin |
 | [Scale](../scale/) | Menskalakan semua vertex secara seragam dari titik dasar |
 | [Offset](../offset/) | Membuat polyline paralel pada jarak tegak lurus yang tetap |
+| [Trim](../trim/) | Menghapus bagian antara dua perpotongan, pada segmen lurus maupun busur |
+| [Extend](../extend/) | Memperpanjang segmen pertama atau terakhir hingga batas berikutnya |
+| [Chamfer](../chamfer/) | Membuat chamfer pada sudut antara dua segmen lurus yang berdekatan |
 | [Delete](../delete/) | Menghapus polyline dari gambar |
+
+Fillet sama sekali tidak mendukung polyline.
 
 ## Properti
 
@@ -127,7 +139,8 @@ Ketika polyline dipilih, panel properti menampilkan:
 |---|---------|------|
 | Jumlah entitas | Satu `LWPOLYLINE` untuk seluruh jalur | Satu `LINE` per segmen |
 | Bentuk tertutup | Ya (flag close) | Tidak |
-| Trim / Extend | Tidak | Ya — segmen demi segmen |
+| Segmen busur | Ya, per segmen melalui sakelar `Arc` | Tidak — segmen melengkung memerlukan entitas [Arc](../arc/) terpisah |
+| Trim / Extend | Ya | Ya — segmen demi segmen |
 | Grip titik tengah segmen | Menerjemahkan seluruh segmen | Mengaktifkan Move untuk entitas |
 | Terbaik untuk | Garis luar, kontur, bentuk yang dijaga utuh | Garis konstruksi, geometri yang akan dipotong |
 

@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-`polyline` komutu, tek bir `LWPOLYLINE` nesnesi olarak saklanan herhangi sayıda düz segmentten oluşan bağlantılı yol çizer. Tüm yol tek bir nesne olduğundan, seçmek her segmenti aynı anda seçer — tüm şekli tek bir işlemle taşıyın, döndürün veya ölçeklendirin. Bu, her segmentin bağımsız nesne olduğu zincirleme [Lines](../line/) komutundan temel farktır.
+`polyline` komutu, tek bir `LWPOLYLINE` nesnesi olarak saklanan herhangi sayıda düz veya yay segmentinden oluşan bağlantılı yol çizer. Tüm yol tek bir nesne olduğundan, seçmek her segmenti aynı anda seçer — tüm şekli tek bir işlemle taşıyın, döndürün veya ölçeklendirin. Bu, her segmentin bağımsız nesne olduğu zincirleme [Lines](../line/) komutundan temel farktır.
 
 Çoklu çizgiler ayrıca **kapatılabilir**: [Rectangle](../rectangle/) komutu kapatma bayrağı ayarlanmış aynı `LWPOLYLINE` nesnesini kullanır.
 
@@ -28,6 +28,12 @@ order: 2
 ```
 
 Herhangi bir zamanda **Escape** tuşuna basmak tüm yerleştirilen noktaları iptal eder ve komuttan çıkar.
+
+## Yay segmenti çizme
+
+Yay modunu değiştirmek için ilk köşe noktasından sonra herhangi bir noktada **A** tuşuna basın — bu, AutoCAD'in PLINE komutunun kullandığı ve Rotate'in Copy seçeneğini yansıtan aynı satır içi seçenek desenidir. İstem geçerli durumu `[Arc=true]` / `[Arc=false]` olarak gösterir; **A** tuşuna tekrar basmak onu geri çevirir, böylece düz ve yay segmentleri bir çoklu çizgide serbestçe karıştırılabilir.
+
+Yay modu açıkken, her yeni segment teğet-devam yayıdır — hemen öncesinde gelen şeye teğet olarak başlar (önceki çizgi segmentinin yönü veya önceki yayın bitiş teğeti); ilk segment, teğet olacağı hiçbir şey olmadığından varsayılan olarak doğuya yönelir.
 
 ## Koordinat Girişi
 
@@ -57,6 +63,7 @@ Geçerli biriktirilen uzunluk terminal isteminde gerçek zamanlı görüntüleni
 |-----|-------|
 | `0`–`9`, `.`, `-` | X koordinatı girişini veya açı kilitliyken segment uzunluğunu başlatır |
 | `,` | X'i kilitler ve Y girişine geçer |
+| `A` | Sonraki segment için Arc modunu değiştirir (ilk köşe noktasından sonra, devam eden giriş yokken) |
 | `Backspace` | Son girilen karakteri siler |
 | `Enter` | Girilen koordinatı veya uzunluğu onaylar ya da giriş yoksa ve ≥ 2 nokta varsa çoklu çizgiyi tamamlar |
 | `Boşluk` | Çoklu çizgiyi tamamlar (giriş devam etmiyorken Enter ile aynı) |
@@ -87,7 +94,7 @@ Tüm çoklu çizgiyi taşımak için ayrı bir tutamaç yoktur. Tüm yolu taşı
 
 ## Desteklenen Düzenleme Komutları
 
-Çoklu çizgiler tüm yaygın dönüşümleri ve ofseti destekler, ancak kırpma veya uzatmayı **desteklemez** (bunlar yalnızca [Line](../line/) içindir):
+Çoklu çizgiler her genel dönüşümü, ayrıca ofset, kırpma, uzatma ve pah kırmayı destekler (pah kırmada yalnızca düz segmentler sayılır):
 
 | Komut | Çoklu çizgiye ne olur |
 |-------|----------------------|
@@ -97,7 +104,12 @@ Tüm çoklu çizgiyi taşımak için ayrı bir tutamaç yoktur. Tüm yolu taşı
 | [Mirror](../mirror/) | Tüm köşeleri ayna ekseni boyunca yansıtır |
 | [Scale](../scale/) | Tüm köşeleri temel noktadan eşit ölçekler |
 | [Offset](../offset/) | Sabit dik mesafede paralel çoklu çizgi oluşturur |
+| [Trim](../trim/) | İki kesişim noktası arasındaki bölümü, düz veya yay segmentlerinde aynı şekilde kaldırır |
+| [Extend](../extend/) | İlk veya son segmenti bir sonraki sınıra kadar uzatır |
+| [Chamfer](../chamfer/) | İki komşu düz segment arasında bir köşeyi pahlar |
 | [Delete](../delete/) | Çoklu çizgiyi çizimden siler |
+
+Fillet, çoklu çizgileri hiç desteklemez.
 
 ## Özellikler
 
@@ -125,7 +137,8 @@ Tüm çoklu çizgiyi taşımak için ayrı bir tutamaç yoktur. Tüm yolu taşı
 |---|---------|------|
 | Nesne sayısı | Tüm yol için bir `LWPOLYLINE` | Segment başına bir `LINE` |
 | Kapalı şekil | Evet (kapatma bayrağı) | Hayır |
-| Trim / Extend | Hayır | Evet — segment bazında |
+| Yay segmentleri | Evet, `Arc` anahtarıyla segment bazında | Hayır — eğri bir segment ayrı bir [Arc](../arc/) nesnesi gerektirir |
+| Trim / Extend | Evet | Evet — segment bazında |
 | Orta nokta tutamacı | Tüm segmenti taşır | Nesne için Move'u etkinleştirir |
 | En iyi | Bütün kalan kontürler, ana hatlar, şekiller | İnşaat çizgileri, kırpılacak geometri |
 

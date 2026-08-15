@@ -29,6 +29,12 @@ A janela tem dois painéis:
 | **Formato** (menu suspenso) | PNG, JPEG, WebP ou PDF |
 | **Exportar** (botão) | Gera e baixa o arquivo |
 
+## Qualidade e resolução
+
+O menu suspenso **Qualidade** define o DPI no qual a exportação é renderizada: Rascunho (72), Normal (150, padrão), Apresentação (300) ou Máxima (600). Uma Qualidade mais alta produz uma imagem maior e mais nítida no mesmo tamanho físico — as espessuras de linha aumentam junto com a resolução, então uma linha mantém a mesma espessura física no papel em qualquer configuração de Qualidade. A única exceção é uma linha fina (espessura 0), que permanece com largura fixa de 1 pixel em qualquer nível de Qualidade.
+
+Alterar a Qualidade renderiza novamente a visualização imediatamente, para que você veja a nitidez real antes de exportar.
+
 ## Selecionando uma área de exportação personalizada
 
 Por padrão a prévia mostra exatamente o que estava visível no canvas quando você abriu o Print Manager. Para exportar uma região específica:

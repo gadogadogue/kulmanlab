@@ -56,7 +56,7 @@ KulmanLab provides a full set of 2D drawing commands accessible via the toolbar,
 | Tool | Description |
 |------|-------------|
 | **Line** | Draw individual line segments. Click to set start and end points. Chainable into connected sequences. |
-| **Polyline** | Create multi-segment paths as a single LWPolyline entity. Supports open and closed paths. |
+| **Polyline** | Create multi-segment paths as a single LWPolyline entity. Supports open and closed paths, plus AutoCAD-style tangent arc segments via an `Arc` toggle (press A) mixed freely with straight ones. |
 | **Rectangle** | Draw an axis-aligned rectangle by two corner points. Stored as a closed LWPolyline. |
 | **Circle** | Define by center point and radius. Supports typed numeric radius input. |
 | **Arc** | Draw a circular arc through three points on the circumference. |
@@ -87,14 +87,14 @@ Patterns come from a shared library managed by **Hatch Manager**: built-in defau
 |---------|----------|-------------|
 | **Move** | All entities | Relocate selected objects by base point and displacement. |
 | **Copy** | All entities | Duplicate selected objects to a new location. |
-| **Rotate** | All entities | Rotate around a base point by a specified angle. |
+| **Rotate** | All entities | Rotate around a base point by a specified angle. A `Copy` toggle (press C) rotates duplicates instead of the original selection. |
 | **Mirror** | All entities | Reflect across a mirror axis defined by two points. |
 | **Scale** | All entities | Resize from a base point by a numeric scale factor. |
 | **Offset** | Line, Circle, Arc, Ellipse, Polyline | Create a parallel copy at a specified distance. |
 | **Trim** | Line, Arc, Circle, Ellipse, Polyline | Remove the portion of an entity between two intersection points. |
 | **Extend** | Line, Arc, Ellipse, Polyline | Stretch an entity's endpoint to reach a boundary. |
 | **Fillet** | Line to line | Round a sharp corner between two lines with an arc. |
-| **Chamfer** | Line to line | Bevel a corner between two lines with a straight cut. |
+| **Chamfer** | Line and Polyline (straight segments) | Bevel a corner with a straight cut. On a Polyline, both picks must be true adjacent neighbor segments. |
 | **Delete** | All entities | Remove selected objects from the drawing. |
 | **Match Properties** | All entities | Copy color, layer, linetype, and lineweight from one entity to others. |
 

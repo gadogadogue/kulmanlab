@@ -48,6 +48,8 @@ Følgende entitetstyper ignoreres som grænser — en entitet forlænges ikke fo
 
 Alle andre typer (Line, Arc, Circle, Ellipse, Polyline, Dimension) fungerer som gyldige grænser.
 
+Hvis en Polylines første eller sidste segment selv er et buesegment (tegnet med Arc-kontakten), får en forlængelse buen til at vokse langs sin egen cirkel — nøjagtig som at forlænge en selvstændig Arc — i stedet for at blive behandlet som et lige segment.
+
 ## Tastaturreference
 
 | Tast | Handling |

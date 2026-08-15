@@ -65,6 +65,8 @@ Nag-p-project ang command ng posisyon ng cursor papunta sa hino-hover na entity 
 
 Ang mga entity na ginagamit bilang **cutting boundary** ay puwedeng Line, Arc, Circle, Ellipse, o Polyline. Hindi kailanman nagre-register ng intersection ang mga entity na Text, Spline, Dimension, at Leader, kaya hindi rin sila puwedeng maging boundary.
 
+Ang mga **arc segment** ng Polyline (iginuhit gamit ang Arc toggle, o na-import) ay tinatrim nang eksaktong tulad ng mga straight segment nito — i-hover ang cursor sa bahagi ng arc sa pagitan ng dalawang intersection at i-click. Ang na-trim na gilid ay nananatili ang curvature nito; ang haba lang nito ang nagbabago.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

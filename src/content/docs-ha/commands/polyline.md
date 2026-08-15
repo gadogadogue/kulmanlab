@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Umarnin `polyline` yana zana hanya mai haɗuwa na kowace adadin sassa madaidaici, dukkansu an ajiye su a matsayin abin `LWPOLYLINE` ɗaya. Domin dukkan hanyar abu ɗaya ne, zaɓen ta yana zaɓen kowace sashi lokaci ɗaya — motsa, juya, ko canza girman dukkan sifar a aiki ɗaya. Wannan shine babban bambanci daga layukan da aka sarƙa ([Lines](../line/)), inda kowace sashi abu ne mai zaman kansa.
+Umarnin `polyline` yana zana hanya mai haɗuwa na kowace adadin sassa madaidaici ko baka, dukkansu an ajiye su a matsayin abin `LWPOLYLINE` ɗaya. Domin dukkan hanyar abu ɗaya ne, zaɓen ta yana zaɓen kowace sashi lokaci ɗaya — motsa, juya, ko canza girman dukkan sifar a aiki ɗaya. Wannan shine babban bambanci daga layukan da aka sarƙa ([Lines](../line/)), inda kowace sashi abu ne mai zaman kansa.
 
 Polylines suma za su iya kasancewa **an rufe**: umarnin [Rectangle](../rectangle/) yana amfani da abin `LWPOLYLINE` iri ɗaya tare da tutar rufewa an saita ta.
 
@@ -28,6 +28,12 @@ Polylines suma za su iya kasancewa **an rufe**: umarnin [Rectangle](../rectangle
 ```
 
 Dannawa **Escape** a kowane lokaci yana kawar da dukkan tabon da aka sanya kuma yana fita daga umarnin.
+
+## Zana sashin baka
+
+Danna **A** a kowane lokaci bayan tudu na farko don sauya yanayin Arc — irin salon zaɓi na cikin layi ɗaya wanda umarnin PLINE na AutoCAD ke amfani da shi, yana nuna zaɓin Copy na Rotate. Tambayar tana nuna yanayin yanzu a matsayin `[Arc=true]` / `[Arc=false]`; sake danna **A** yana mayar da shi, don haka sassa madaidaita da baka za su iya haɗuwa cikin walwala a cikin polyline ɗaya.
+
+Idan an kunna yanayin Arc, kowane sabon sashi baka ne mai ci gaba na taɓawa — yana farawa tare da taɓa abin da ya zo kai tsaye kafin shi (shugabancin sashin layin da ya gabata, ko taɓawar ƙarshe ta bakan da ya gabata); sashi na farko kaɗai yana fuskantar gabas ta tsohuwa, saboda babu abin da zai taɓa shi.
 
 ## Shigar da daidaitawa
 
@@ -57,6 +63,7 @@ Tsawon da aka tara na yanzu yana bayyana a tambayar tashar umarni a lokaci na ra
 |-----|--------|
 | `0`–`9`, `.`, `-` | Fara shigar da daidaitawar X, ko tsawon sashi yayin kulle-kusurwa |
 | `,` | Kulle X ka koma shigar da Y |
+| `A` | Sauya yanayin Arc don sashi na gaba (bayan tudu na farko, ba tare da shigarwa mai gudana ba) |
 | `Backspace` | Share tsohon harafi na ƙarshe da aka rubuta |
 | `Enter` | Tabbatar da daidaitawa ko tsawo da aka rubuta, ko kammala polyline idan babu abin da aka rubuta kuma ≥ tabo 2 sun kasance |
 | `Space` | Kammala polyline (iri ɗaya da Enter idan babu shigarwa a tsari) |
@@ -87,7 +94,7 @@ Domin polyline abu ɗaya ne, zaɓi mai haɗuwa da ke taɓa kowace sashi yana za�
 
 ## Umarnin gyara da ake goyon baya
 
-Polylines suna goyon bayan dukkan canjin gaba ɗaya da offset, amma **ba** trim ko extend ba (waɗannan ga [Line](../line/) kaɗai):
+Polylines suna goyon bayan kowane canji na gaba ɗaya, tare da offset, trim, extend, da chamfer (a chamfer, sassa madaidaita kaɗai ake ƙidaya):
 
 | Umarni | Abin da ke faruwa da polyline |
 |---------|------------------------------|
@@ -97,7 +104,12 @@ Polylines suna goyon bayan dukkan canjin gaba ɗaya da offset, amma **ba** trim 
 | [Mirror](../mirror/) | Yana yin madubi na dukkan vertices a kan axis na madubi |
 | [Scale](../scale/) | Yana canza girman dukkan vertices iri ɗaya daga tabon tushe |
 | [Offset](../offset/) | Yana ƙirƙirar polyline mai daidaici a nisa ta hankalta kwaɓe |
+| [Trim](../trim/) | Yana cire sashin da ke tsakanin mahaɗai biyu, ga sassa madaidaita ko baka daidai |
+| [Extend](../extend/) | Yana tsawaita sashi na farko ko na ƙarshe zuwa iyaka ta gaba |
+| [Chamfer](../chamfer/) | Yana sassaƙa kusurwa tsakanin sassa madaidaita biyu makwabta |
 | [Delete](../delete/) | Yana cire polyline daga zanen |
+
+Fillet ba ya goyon bayan polylines ko kaɗan.
 
 ## Abubuwan
 
@@ -127,7 +139,8 @@ Idan polyline ya zaɓa, panel na abubuwa yana nuna:
 |---|---------|------|
 | Adadin abubuwa | `LWPOLYLINE` ɗaya ga dukkan hanya | `LINE` ɗaya ga kowane sashi |
 | Sifa rufe | Eh (tutar rufewa) | Aʼa |
-| Trim / Extend | Aʼa | Eh — sashi bayan sashi |
+| Sassan baka | Eh, kowane sashi ta hanyar sauyawa `Arc` | Aʼa — sashi mai lanƙwasa yana buƙatar abin [Arc](../arc/) daban |
+| Trim / Extend | Eh | Eh — sashi bayan sashi |
 | Grip na tsakiyar-sashi | Yana motsa dukkan sashi | Yana kunna Move ga abin |
 | Mafi kyau don | Wajaje, contours, sifofi da za ka riƙe cikakke | Layukan gini, geometry da za ka yanke |
 

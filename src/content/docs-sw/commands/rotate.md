@@ -45,8 +45,15 @@ Hakiki ya kivuli ya vipande vilivyozungushwa inafuata pembe ya kishale baada ya 
 |--------|---------|
 | `0`–`9`, `.` | Ongeza tarakimu kwa thamani ya pembe |
 | `-` | Pembe hasi (herufi ya kwanza tu) |
+| `C` | Badilisha hali ya Copy (kabla ya kuandika tarakimu yoyote) |
 | `Backspace` | Futa herufi ya mwisho iliyoandikwa |
 | `Enter` | Tekeleza kuzungushwa kwa pembe iliyoandikwa |
+
+## Kuzungusha nakala
+
+Bonyeza **C** kwenye ombi la pembe — kabla ya kuandika tarakimu yoyote — kubadilisha hali ya **Copy**, mtindo uleule wa chaguo la ndani ya mstari ambao amri ya ROTATE ya AutoCAD hutumia. Ombi linaonyesha hali ya sasa kama `[Copy=true]` / `[Copy=false]`, na kubonyeza **C** tena hubadilisha kurudi.
+
+Copy ikiwa imewashwa, kutekeleza mzunguko huacha uteuzi wa awali bila kubadilika mahali pake na badala yake huongeza nakala mpya, zilizozungushwa za kila kipande kilichochaguliwa. Copy ikiwa imezimwa (chaguo-msingi), uteuzi huzunguka mahali pake kama kawaida.
 
 ## Mwelekeo wa pembe
 
@@ -64,6 +71,7 @@ Thamani za kawaida: `90` = zamu ya robo, `180` = zamu ya nusu, `-90` = zamu ya r
 | `Enter` / `Space` | Thibitisha uchaguzi |
 | `0`–`9`, `.`, `-` | Anza uingizaji wa kuratibu ya X (awamu ya nukta ya msingi), au thamani ya pembe (awamu ya pembe) |
 | `,` | Funga X na nenda kwa uingizaji wa Y (awamu ya nukta ya msingi) |
+| `C` | Badilisha hali ya Copy (awamu ya pembe, kabla ya kuandika tarakimu yoyote) |
 | `Backspace` | Futa herufi ya mwisho iliyoandikwa |
 | `Enter` | Thibitisha kuratibu au tekeleza kuzungushwa |
 | `Escape` | Futa na rejesha |

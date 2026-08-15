@@ -8,7 +8,7 @@ order: 2
 
 # Polyline
 
-Der Befehl `polyline` zeichnet einen verbundenen Pfad aus beliebig vielen geraden Segmenten, der als eine einzige `LWPOLYLINE`-Entität gespeichert wird. Da der gesamte Pfad ein Objekt ist, wählt das Auswählen alle Segmente gleichzeitig aus — verschieben, drehen oder skalieren Sie die gesamte Form in einem einzigen Vorgang. Dies ist der wesentliche Unterschied zu verketteten [Linien](../line/), wo jedes Segment eine unabhängige Entität ist.
+Der Befehl `polyline` zeichnet einen verbundenen Pfad aus beliebig vielen geraden oder Bogensegmenten, der als eine einzige `LWPOLYLINE`-Entität gespeichert wird. Da der gesamte Pfad ein Objekt ist, wählt das Auswählen alle Segmente gleichzeitig aus — verschieben, drehen oder skalieren Sie die gesamte Form in einem einzigen Vorgang. Dies ist der wesentliche Unterschied zu verketteten [Linien](../line/), wo jedes Segment eine unabhängige Entität ist.
 
 Polylinien können auch **geschlossen** werden: Der Befehl [Rectangle](../rectangle/) verwendet dieselbe `LWPOLYLINE`-Entität mit einem gesetzten Schließen-Flag.
 
@@ -28,6 +28,12 @@ Polylinien können auch **geschlossen** werden: Der Befehl [Rectangle](../rectan
 ```
 
 Das Drücken von **Escape** jederzeit verwirft alle platzierten Punkte und beendet den Befehl.
+
+## Ein Bogensegment zeichnen
+
+Drücken Sie an jedem Punkt nach dem ersten Scheitelpunkt **A**, um den Bogenmodus umzuschalten — dasselbe Inline-Optionsmuster, das AutoCADs PLINE-Befehl verwendet, analog zu Rotates Copy-Option. Die Eingabeaufforderung zeigt den aktuellen Status als `[Arc=true]` / `[Arc=false]`; erneutes Drücken von **A** schaltet ihn zurück, sodass sich gerade und Bogensegmente frei in einer Polylinie mischen lassen.
+
+Bei aktiviertem Bogenmodus ist jedes neue Segment ein tangential fortgesetzter Bogen — er beginnt tangential zu dem, was direkt davor kam (die Richtung des vorherigen Liniensegments oder die Endtangente des vorherigen Bogens); das allererste Segment verläuft standardmäßig nach Osten, da nichts vorhanden ist, wozu es tangential sein könnte.
 
 ## Koordinateneingabe
 
@@ -57,6 +63,7 @@ Die aktuell angesammelte Länge erscheint in Echtzeit in der Terminal-Eingabeauf
 |-------|--------|
 | `0`–`9`, `.`, `-` | X-Koordinateneingabe starten oder Segmentlänge bei Winkelsperre |
 | `,` | X sperren und zu Y-Eingabe wechseln |
+| `A` | Bogenmodus für das nächste Segment umschalten (nach dem ersten Scheitelpunkt, ohne laufende Eingabe) |
 | `Backspace` | Letztes getipptes Zeichen löschen |
 | `Enter` | Getippte Koordinate oder Länge bestätigen, oder Polylinie beenden wenn nichts getippt und ≥ 2 Punkte vorhanden |
 | `Space` | Polylinie beenden (wie Enter, wenn keine Eingabe läuft) |
@@ -87,7 +94,7 @@ Da eine Polylinie eine Entität ist, wählt eine schneidende Auswahl, die ein be
 
 ## Unterstützte Bearbeitungsbefehle
 
-Polylinien unterstützen alle allgemeinen Transformationen und offset, aber **nicht** trim oder extend (diese sind nur für [Linie](../line/)):
+Polylinien unterstützen jede allgemeine Transformation sowie Offset, Trim, Extend und Chamfer (bei Chamfer zählen nur gerade Segmente):
 
 | Befehl | Wirkung auf die Polylinie |
 |--------|--------------------------|
@@ -97,7 +104,12 @@ Polylinien unterstützen alle allgemeinen Transformationen und offset, aber **ni
 | [Mirror](../mirror/) | Spiegelt alle Scheitelpunkte über die Spiegelachse |
 | [Scale](../scale/) | Skaliert alle Scheitelpunkte gleichmäßig vom Basispunkt aus |
 | [Offset](../offset/) | Erstellt eine parallele Polylinie in einem festen senkrechten Abstand |
+| [Trim](../trim/) | Entfernt den Abschnitt zwischen zwei Schnittpunkten, bei geraden wie Bogensegmenten gleichermaßen |
+| [Extend](../extend/) | Verlängert das erste oder letzte Segment bis zur nächsten Begrenzung |
+| [Chamfer](../chamfer/) | Fast eine Ecke zwischen zwei benachbarten geraden Segmenten ab |
 | [Delete](../delete/) | Entfernt die Polylinie aus der Zeichnung |
+
+Fillet unterstützt Polylinien überhaupt nicht.
 
 ## Eigenschaften
 
@@ -127,7 +139,8 @@ Wenn eine Polylinie ausgewählt ist, zeigt das Eigenschaftenpanel:
 |---|----------|-------|
 | Entitätsanzahl | Eine `LWPOLYLINE` für den gesamten Pfad | Eine `LINE` pro Segment |
 | Geschlossene Form | Ja (Schließen-Flag) | Nein |
-| Trim / Extend | Nein | Ja — Segment für Segment |
+| Bogensegmente | Ja, pro Segment über den `Arc`-Umschalter | Nein — ein gebogenes Segment benötigt eine separate [Arc](../arc/)-Entität |
+| Trim / Extend | Ja | Ja — Segment für Segment |
 | Segment-Mittelpunkt-Griffpunkt | Verschiebt das gesamte Segment | Aktiviert Move für die Entität |
 | Am besten für | Umrisse, Konturen, Formen, die ganz bleiben | Konstruktionslinien, Geometrie zum Trimmen |
 

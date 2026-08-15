@@ -28,6 +28,12 @@ Cửa sổ có hai bảng:
 | Dropdown **Format** | PNG, JPEG, WebP hoặc PDF |
 | Nút **Export** | Tạo và tải xuống tệp |
 
+## Chất lượng và độ phân giải
+
+Menu thả xuống **Quality** đặt DPI mà bản xuất được kết xuất: Draft (72), Normal (150, mặc định), Presentation (300), hoặc Max (600). Quality cao hơn tạo ra hình ảnh lớn hơn, sắc nét hơn ở cùng kích thước vật lý — độ dày đường thay đổi theo độ phân giải, vì vậy một đường giữ nguyên độ dày vật lý trên giấy ở bất kỳ cài đặt Quality nào. Ngoại lệ duy nhất là đường tóc (độ dày đường 0), vẫn giữ chiều rộng cố định 1 pixel ở mọi mức Quality.
+
+Thay đổi Quality sẽ kết xuất lại bản xem trước ngay lập tức, để bạn thấy độ sắc nét thực tế trước khi xuất.
+
 ## Chọn vùng xuất tùy chỉnh
 
 Mặc định, bản xem trước hiển thị chính xác những gì hiển thị trên canvas khi bạn mở Print Manager. Để xuất một vùng cụ thể:

@@ -48,6 +48,8 @@ Nauʼukan abubuwa masu zuwa ana yin banza da su a matsayin iyaka — abu ba ya t
 
 Dukkan sauran nauʼukan (Line, Arc, Circle, Ellipse, Polyline, Dimension) suna aiki a matsayin iyakoki masu inganci.
 
+Idan sashi na farko ko na ƙarshe na Polyline shi kansa baka ne (wanda aka zana da sauyawa Arc), tsawaita shi yana sa bakan ya girma tare da da'irarsa — daidai yadda ake tsawaita Arc mai zaman kansa — maimakon a bi da shi a matsayin sashi madaidaici.
+
 ## Marfe na maɓallan madannai
 
 | Maɓalli | Aiki |

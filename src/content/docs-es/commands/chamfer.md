@@ -40,6 +40,10 @@ Cuando dos líneas se cruzan, el chamfer se aplica en la esquina definida por la
 
 Para Polylines, la posición del clic determina qué **segmento** de la polilínea participa, y el vértice más cercano en el lado de la intersección es el que se recorta.
 
+Cuando ambos clics caen en la misma polilínea, el segundo clic debe ser un segmento que sea un verdadero vecino del primero — comparten el vértice de la esquina entre ellos — o el clic se rechaza; dos segmentos no adyacentes no tienen una esquina compartida para que un chamfer la biselee.
+
+Un segmento de arco de una polilínea nunca se selecciona para chamfer — solo cuentan los segmentos rectos, así que pasar el cursor cerca de una porción de arco busca en su lugar el segmento recto más cercano.
+
 ## Qué crea el comando
 
 - El extremo de la primera entidad (o vértice de polilínea) más cercano a la intersección se mueve al punto **T1**, ubicado a d1 a lo largo de la primera entidad desde la intersección.

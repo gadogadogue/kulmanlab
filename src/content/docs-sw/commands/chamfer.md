@@ -40,6 +40,10 @@ Wakati mistari miwili inakutana, chamfer inatumika kwenye kona inayofafanuliwa n
 
 Kwa Polylines, nafasi ya klik inaamua **sehemu** ya polyline inayoshiriki, na kilele cha karibu zaidi kwenye upande wa makutano ndicho kinachokatakatwa.
 
+Wakati mibofyo yote miwili inaangukia kwenye polyline moja, mbofyo wa pili lazima uwe sehemu ambayo ni jirani wa kweli wa wa kwanza — zinashiriki kilele cha kona kati yao — vinginevyo mbofyo unakataliwa; sehemu mbili zisizo jirani hazina kona ya pamoja ya kupinda kwa chamfer.
+
+Sehemu ya mviringo ya polyline haichaguliwi kamwe kwa chamfer — sehemu za moja kwa moja tu ndizo zinazohesabiwa, hivyo kuelea karibu na sehemu ya mviringo hutafuta badala yake sehemu ya moja kwa moja iliyo karibu zaidi.
+
 ## Amri inachounda
 
 - Ncha ya kipengele cha kwanza (au kilele cha polyline) kilicho karibu zaidi na makutano kinahamishiwa pointi **T1**, iko d1 kando ya kipengele cha kwanza kutoka makutano.

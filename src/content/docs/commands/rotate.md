@@ -1,7 +1,7 @@
 ---
 title: Rotate Command — Rotate Entities Around a Base Point
-description: The Rotate command rotates selected entities around a chosen base point. Angle can be typed precisely or set by clicking — the cursor direction from base point to click determines the angle. Positive angles are counter-clockwise in DXF coordinates.
-keywords: [CAD rotate command, rotate entities CAD, rotate objects angle, counter-clockwise rotation CAD, typed angle rotate, kulmanlab]
+description: The Rotate command rotates selected entities around a chosen base point. Angle can be typed precisely or set by clicking. A Copy toggle (press C) rotates duplicates instead of the originals. Positive angles are counter-clockwise in DXF coordinates.
+keywords: [CAD rotate command, rotate entities CAD, rotate objects angle, rotate and copy CAD, counter-clockwise rotation CAD, typed angle rotate, kulmanlab]
 group: edit
 order: 3
 ---
@@ -45,8 +45,15 @@ A live ghost preview of the rotated entities follows the cursor angle after the 
 |-----|--------|
 | `0`–`9`, `.` | Append digit to the angle value |
 | `-` | Negative angle (first character only) |
+| `C` | Toggle Copy mode (before typing any digits) |
 | `Backspace` | Delete the last typed character |
 | `Enter` | Apply rotation at the typed angle |
+
+## Rotating a copy
+
+Press **C** at the angle prompt — before typing any digits — to toggle **Copy** mode, the same inline-option pattern AutoCAD's ROTATE command uses. The prompt shows the current state as `[Copy=true]` / `[Copy=false]`, and pressing **C** again flips it back.
+
+With Copy on, applying the rotation leaves the original selection untouched in place and adds **new, rotated copies** of each selected entity instead. With Copy off (the default), the selection rotates in place as usual.
 
 ## Angle direction
 
@@ -64,6 +71,7 @@ Common values: `90` = quarter turn, `180` = half turn, `-90` = opposite quarter 
 | `Enter` / `Space` | Confirm selection |
 | `0`–`9`, `.`, `-` | Start X coordinate entry (base-point phase), or angle value (angle phase) |
 | `,` | Lock X and move to Y entry (base-point phase) |
+| `C` | Toggle Copy mode (angle phase, before typing any digits) |
 | `Backspace` | Delete last typed character |
 | `Enter` | Confirm coordinate or apply rotation |
 | `Escape` | Cancel and reset |

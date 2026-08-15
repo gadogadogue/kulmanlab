@@ -65,6 +65,8 @@ Polecenie rzutuje pozycję kursora na wskazywany element i znajduje wszystkie pu
 
 Elementy używane jako **granice cięcia** mogą być typu Line, Arc, Circle, Ellipse lub Polyline. Elementy Tekst, Splajn, Wymiar i Linia prowadząca nigdy nie rejestrują przecięć, więc również nie mogą pełnić roli granicy.
 
+**Segmenty łukowe** Polyline (narysowane przełącznikiem Arc lub zaimportowane) są przycinane dokładnie tak samo jak segmenty proste — najedź kursorem na fragment łuku między dwoma przecięciami i kliknij. Przycięta krawędź zachowuje swoją krzywiznę; zmienia się tylko długość.
+
 ## Przytnij a Przedłuż
 
 | | Przytnij | Przedłuż |

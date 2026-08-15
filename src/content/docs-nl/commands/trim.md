@@ -65,6 +65,8 @@ Het commando projecteert de cursorpositie op de gehoverde entiteit en zoekt alle
 
 De entiteiten die als **snijgrenzen** worden gebruikt, kunnen Line, Arc, Circle, Ellipse of Polyline zijn. Text-, Spline-, Dimension- en Leader-entiteiten registreren nooit snijpunten, dus die kunnen ook niet als grens functioneren.
 
+De **boogsegmenten** van een Polyline (getekend met de Arc-schakelaar, of geïmporteerd) worden precies zo gesneden als de rechte segmenten — beweeg de cursor over het booggedeelte tussen twee snijpunten en klik. De gesneden rand behoudt zijn kromming; alleen de lengte verandert.
+
 ## Trim vs Extend
 
 | | Trim | Extend |

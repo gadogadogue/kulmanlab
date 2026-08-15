@@ -45,8 +45,15 @@ Una vista previa fantasma en vivo de las entidades rotadas sigue el ángulo del 
 |-------|--------|
 | `0`–`9`, `.` | Añadir dígito al valor del ángulo |
 | `-` | Ángulo negativo (solo como primer carácter) |
+| `C` | Alternar el modo Copy (antes de escribir cualquier dígito) |
 | `Backspace` | Borrar el último carácter escrito |
 | `Enter` | Aplicar la rotación al ángulo escrito |
+
+## Rotar una copia
+
+Presiona **C** en la solicitud de ángulo — antes de escribir cualquier dígito — para alternar el modo **Copy**, el mismo patrón de opción en línea que usa el comando ROTATE de AutoCAD. La solicitud muestra el estado actual como `[Copy=true]` / `[Copy=false]`, y presionar **C** de nuevo lo revierte.
+
+Con Copy activado, aplicar la rotación deja la selección original intacta en su lugar y en su lugar añade nuevas copias rotadas de cada entidad seleccionada. Con Copy desactivado (predeterminado), la selección rota en su lugar como de costumbre.
 
 ## Dirección del ángulo
 
@@ -64,6 +71,7 @@ Valores habituales: `90` = un cuarto de vuelta, `180` = media vuelta, `-90` = el
 | `Enter` / `Space` | Confirmar selección |
 | `0`–`9`, `.`, `-` | Comenzar entrada de coordenada X (fase de punto base), o valor de ángulo (fase de ángulo) |
 | `,` | Fijar X y pasar a entrada Y (fase de punto base) |
+| `C` | Alternar el modo Copy (fase de ángulo, antes de escribir cualquier dígito) |
 | `Backspace` | Borrar el último carácter escrito |
 | `Enter` | Confirmar coordenada o aplicar rotación |
 | `Escape` | Cancelar y reiniciar |

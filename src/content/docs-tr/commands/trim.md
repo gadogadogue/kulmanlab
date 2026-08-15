@@ -65,6 +65,8 @@ Komut, imleç konumunu üzerine gelinen nesneye yansıtır ve nesnenin diğer ne
 
 **Kesim sınırları** olarak kullanılan nesneler bir Line, Arc, Circle, Ellipse veya Polyline olabilir. Metin, Spline, Ölçü ve Gösterge nesneleri hiçbir zaman kesişim kaydetmez, bu yüzden onlar da sınır olarak işlev göremez.
 
+Bir Polyline'ın **yay segmentleri** (Arc anahtarıyla çizilmiş veya içe aktarılmış) düz segmentleri gibi tam olarak kırpılır — iki kesişim arasındaki yay kısmının üzerine gelin ve tıklayın. Kırpılan kenar eğriliğini korur; yalnızca uzunluğu değişir.
+
 ## Trim - Extend Karşılaştırması
 
 | | Trim | Extend |
