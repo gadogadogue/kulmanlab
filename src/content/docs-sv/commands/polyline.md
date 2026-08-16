@@ -31,7 +31,7 @@ Att trycka på **Escape** när som helst kasserar alla placerade punkter och avs
 
 ## Rita ett bågsegment
 
-Tryck på **A** när som helst efter den första vertexen för att växla Arc-läget — samma inline-alternativmönster som AutoCADs PLINE-kommando använder, vilket speglar Rotates Copy-alternativ. Frågan visar det aktuella läget som `[Arc=true]` / `[Arc=false]`; att trycka på **A** igen växlar tillbaka det, så raka och bågsegment kan blandas fritt i en polyline.
+Tryck på **A** när som helst efter den första vertexen för att växla Arc-läget — samma inline-alternativmönster som Rotates Copy-alternativ använder. Frågan visar det aktuella läget som `[Arc=true]` / `[Arc=false]`; att trycka på **A** igen växlar tillbaka det, så raka och bågsegment kan blandas fritt i en polyline.
 
 När Arc-läget är på är varje nytt segment en tangentiell fortsättningsbåge — den börjar tangentiellt till det som kom direkt före den (föregående linjesegments riktning, eller föregående bågens sluttangent); det allra första segmentet pekar som standard österut, eftersom det inte har något att vara tangentiellt till.
 

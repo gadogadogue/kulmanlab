@@ -26,7 +26,7 @@ Klicka på vilket mönster som helst i listan (eller använd `↑`/`↓`) för a
 ## Ladda upp en anpassad mönsterfil
 
 1. Klicka på **Add .pat File** i dialogrutans sidfot.
-2. Välj en `.pat`-fil — standardformatet för AutoCAD hatch-mönster. En enskild fil definierar ofta många namngivna mönster samtidigt; de visas alla som separata poster grupperade under den filens namn.
+2. Välj en `.pat`-fil — standardformatet för hatch-mönster. En enskild fil definierar ofta många namngivna mönster samtidigt; de visas alla som separata poster grupperade under den filens namn.
 3. Uppladdade filer sparas permanent i webbläsaren (IndexedDB), sorterade med senast tillagda först, och laddas automatiskt om nästa gång du öppnar KulmanLab CAD.
 
 Att ladda upp en fil som definierar ett mönster med samma namn som ett inbyggt **skuggar** standardvärdet — detta är det stödda sättet att få Autodesks officiella mönsterdefinitioner: ladda upp en riktig `acad.pat`, så tar dess versioner av ANSI31 och de andra standardnamnen över från KulmanLabs egna approximationer.

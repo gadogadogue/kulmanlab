@@ -101,7 +101,7 @@ Preview na ja yana nuna iyaka a matsayin layin da aka tsagaggi maimakon cikawa m
 
 ## DXF — Abu na HATCH
 
-Ana **shigo da** hatches daga abubuwan `HATCH`: KulmanLab yana karanta geometry na iyaka tare da sunan pattern, scale, da angle (DXF group codes 70/41/52) — **ba** ya karanta ma'anonin layukan pattern din kansa da AutoCAD ke rubutawa a cikin fayil din. Maimakon haka, ana neman sunan pattern a cikin laburaren pattern na KulmanLab kansa (tsoffin da aka gina tare da duk abin da ka loda a cikin [Hatch Manager](../hatch-manager/)). Sunan da ba ya cikin laburarenka yana koma zuwa ANSI31 don zanen ya ci gaba da karantawa a matsayin hatched, kuma ana rubuta bayani sau daya.
+Ana **shigo da** hatches daga abubuwan `HATCH`: KulmanLab yana karanta geometry na iyaka tare da sunan pattern, scale, da angle (DXF group codes 70/41/52) — **ba** ya karanta ma'anonin layukan pattern din kansa da aka rubuta a cikin fayil din. Maimakon haka, ana neman sunan pattern a cikin laburaren pattern na KulmanLab kansa (tsoffin da aka gina tare da duk abin da ka loda a cikin [Hatch Manager](../hatch-manager/)). Sunan da ba ya cikin laburarenka yana koma zuwa ANSI31 don zanen ya ci gaba da karantawa a matsayin hatched, kuma ana rubuta bayani sau daya.
 
 Har yanzu ba a karanta lups na spline da wasu applications suka rubuta ba (DXF boundary edge type 4).
 

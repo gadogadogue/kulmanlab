@@ -1,6 +1,6 @@
 ---
 title: Polyline Command — Draw Multi-Segment Paths as a Single Entity
-description: The Polyline command draws any number of connected straight or arc segments stored as one LWPOLYLINE entity. Toggle Arc mode with A for AutoCAD-style tangent arc segments. Vertex and segment-midpoint grips let you reshape any part of the path, straight or curved, after creation.
+description: The Polyline command draws any number of connected straight or arc segments stored as one LWPOLYLINE entity. Toggle Arc mode with A for tangent-continuation arc segments. Vertex and segment-midpoint grips let you reshape any part of the path, straight or curved, after creation.
 keywords: [CAD polyline command, draw polyline CAD, multi-segment path CAD, polyline arc segment, LWPOLYLINE bulge, LWPOLYLINE DXF, reshape polyline, vertex grip CAD, offset polyline, kulmanlab]
 group: shapes
 order: 2
@@ -31,7 +31,7 @@ Pressing **Escape** at any time discards all placed points and exits the command
 
 ## Drawing an arc segment
 
-Press **A** at any point after the first vertex to toggle Arc mode — the same inline-option pattern AutoCAD's PLINE command uses, mirroring [Rotate](../rotate/)'s `Copy` option. The prompt shows the current state as `[Arc=true]` / `[Arc=false]`, and pressing **A** again flips it back, so you can freely mix straight and arc segments in one polyline.
+Press **A** at any point after the first vertex to toggle Arc mode — the same inline-option pattern [Rotate](../rotate/)'s `Copy` option uses. The prompt shows the current state as `[Arc=true]` / `[Arc=false]`, and pressing **A** again flips it back, so you can freely mix straight and arc segments in one polyline.
 
 ```
   ●──────●
@@ -41,7 +41,7 @@ Press **A** at any point after the first vertex to toggle Arc mode — the same 
             ●  ← click to add
 ```
 
-While Arc mode is on, each new segment is a **tangent-continuation arc** — AutoCAD's default arc behavior with no sub-options for center, radius, or direction. The arc starts tangent to whatever came right before it: tangent to the previous segment's own direction if that segment was a line, or tangent to the previous arc's end if it was itself an arc. The very first segment of a polyline (with no prior segment to be tangent to) defaults to heading due east.
+While Arc mode is on, each new segment is a **tangent-continuation arc** — the default arc behavior, with no sub-options for center, radius, or direction. The arc starts tangent to whatever came right before it: tangent to the previous segment's own direction if that segment was a line, or tangent to the previous arc's end if it was itself an arc. The very first segment of a polyline (with no prior segment to be tangent to) defaults to heading due east.
 
 Toggling back to `[Arc=false]` resumes straight segments from wherever the last vertex landed, and you can toggle again for another arc — there's no limit on how many times you switch within one polyline.
 
@@ -161,6 +161,6 @@ When a polyline is selected the properties panel shows:
 
 Polylines are saved as `LWPOLYLINE` entities in the DXF file. All properties — vertex coordinates, closed flag, color, layer, linetype, linetype scale, and thickness — round-trip without loss. Rectangles drawn with the [Rectangle](../rectangle/) command also save as `LWPOLYLINE` (closed, four vertices) and are indistinguishable at the DXF level.
 
-Each vertex also carries a **bulge** (DXF group code 42) — 0 for a straight segment to the next vertex, or the signed tangent-of-quarter-angle value AutoCAD itself uses for a curved one (positive bulge sweeps counter-clockwise, negative clockwise). Bulges round-trip losslessly, so a polyline with arc segments imported from another CAD application's DXF renders, selects, grip-edits, trims, extends, and hatches exactly like one drawn here with the Arc option.
+Each vertex also carries a **bulge** (DXF group code 42) — 0 for a straight segment to the next vertex, or the signed tangent-of-quarter-angle bulge value for a curved one (positive bulge sweeps counter-clockwise, negative clockwise). Bulges round-trip losslessly, so a polyline with arc segments imported from another CAD application's DXF renders, selects, grip-edits, trims, extends, and hatches exactly like one drawn here with the Arc option.
 
 `LWPOLYLINE` entities from any DXF-compatible application (LibreCAD, FreeCAD, etc.) are read back as fully editable polylines in the editor.

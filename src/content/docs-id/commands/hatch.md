@@ -101,7 +101,7 @@ Pratinjau seret menampilkan batas sebagai garis putus-putus alih-alih isian soli
 
 ## DXF — Entitas HATCH
 
-Hatch **diimpor** dari entitas `HATCH`: KulmanLab membaca geometri batas beserta nama, skala, dan sudut pola (kode grup DXF 70/41/52) — KulmanLab **tidak** membaca definisi garis pola sendiri yang ditulis AutoCAD secara inline dalam file. Sebagai gantinya, nama pola dicari di pustaka pola KulmanLab sendiri (default bawaan ditambah apa pun yang telah Anda unggah di [Hatch Manager](../hatch-manager/)). Nama yang tidak ada di pustaka Anda akan kembali ke ANSI31 sehingga gambar tetap terbaca sebagai hatched, dan catatan dicatat sekali.
+Hatch **diimpor** dari entitas `HATCH`: KulmanLab membaca geometri batas beserta nama, skala, dan sudut pola (kode grup DXF 70/41/52) — KulmanLab **tidak** membaca definisi garis pola sendiri yang ditulis secara inline dalam file. Sebagai gantinya, nama pola dicari di pustaka pola KulmanLab sendiri (default bawaan ditambah apa pun yang telah Anda unggah di [Hatch Manager](../hatch-manager/)). Nama yang tidak ada di pustaka Anda akan kembali ke ANSI31 sehingga gambar tetap terbaca sebagai hatched, dan catatan dicatat sekali.
 
 Loop yang dibatasi spline yang ditulis oleh aplikasi lain (tipe tepi batas DXF 4) belum dibaca.
 

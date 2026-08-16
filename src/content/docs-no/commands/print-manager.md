@@ -55,7 +55,7 @@ Nedtrekksmenyen **Quality** angir DPI-en eksporten rendres med:
 | Presentation | 300 |
 | Max | 600 |
 
-Høyere Quality gir et større, skarpere bilde i samme fysiske størrelse — linjetykkelser skaleres sammen med oppløsningen, slik at en linje beholder samme *fysiske* tykkelse på papir uansett Quality-innstilling, i stedet for å se tynnere ut ved økende DPI. Det ene unntaket er en hårlinje (linjetykkelse `0`), som AutoCAD definerer som "den tynneste linjen utdataenheten kan tegne" — den forblir en fast bredde på 1 piksel på ethvert Quality-nivå, akkurat som den oppfører seg på det levende lerretet.
+Høyere Quality gir et større, skarpere bilde i samme fysiske størrelse — linjetykkelser skaleres sammen med oppløsningen, slik at en linje beholder samme *fysiske* tykkelse på papir uansett Quality-innstilling, i stedet for å se tynnere ut ved økende DPI. Det ene unntaket er en hårlinje (linjetykkelse `0`), som tradisjonelt defineres som "den tynneste linjen utdataenheten kan tegne" — den forblir en fast bredde på 1 piksel på ethvert Quality-nivå, akkurat som den oppfører seg på det levende lerretet.
 
 Å endre Quality rendrer forhåndsvisningen på nytt umiddelbart, slik at du ser den faktiske skarpheten (og avveiningen i filstørrelse) før eksport.
 

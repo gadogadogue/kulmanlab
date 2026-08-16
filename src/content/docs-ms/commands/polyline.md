@@ -31,7 +31,7 @@ Menekan **Escape** pada bila-bila masa membuang semua titik yang diletakkan dan 
 
 ## Melukis segmen lengkok
 
-Tekan **A** pada bila-bila masa selepas bucu pertama untuk togol mod Arc — corak pilihan sebaris yang sama yang digunakan oleh arahan PLINE AutoCAD, mencerminkan pilihan Copy Rotate. Gesaan menunjukkan keadaan semasa sebagai `[Arc=true]` / `[Arc=false]`; menekan **A** sekali lagi menukarnya semula, jadi segmen lurus dan lengkok boleh dicampur dengan bebas dalam satu poliline.
+Tekan **A** pada bila-bila masa selepas bucu pertama untuk togol mod Arc — corak pilihan sebaris yang sama yang digunakan oleh pilihan Copy Rotate. Gesaan menunjukkan keadaan semasa sebagai `[Arc=true]` / `[Arc=false]`; menekan **A** sekali lagi menukarnya semula, jadi segmen lurus dan lengkok boleh dicampur dengan bebas dalam satu poliline.
 
 Apabila mod Arc dihidupkan, setiap segmen baharu ialah lengkok kesinambungan tangen — ia bermula secara tangen kepada apa yang datang sejurus sebelumnya (arah segmen garis sebelumnya, atau tangen hujung lengkok sebelumnya); segmen pertama sekali secara lalai menghala ke timur, kerana tiada apa untuk ditangeninya.
 

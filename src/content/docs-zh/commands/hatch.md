@@ -101,7 +101,7 @@ Text、Multileader 和 Dimension 图元永远不会被当作边界。
 
 ## DXF — HATCH 图元
 
-Hatch 从 `HATCH` 图元**导入**：KulmanLab 读取边界几何图形，以及图案的名称、比例和角度（DXF 组码 70/41/52）—— 它**不会**读取 AutoCAD 内联写入文件中的图案自身线条定义。相反，图案名称会在 KulmanLab 自己的图案库中查找（内置默认图案加上你在 [Hatch Manager](../hatch-manager/) 中上传的任何内容）。库中不存在的名称会回退为 ANSI31，使图形仍然显示为已 hatch，并且会记录一次提示。
+Hatch 从 `HATCH` 图元**导入**：KulmanLab 读取边界几何图形，以及图案的名称、比例和角度（DXF 组码 70/41/52）—— 它**不会**读取 内联写入文件中的图案自身线条定义。相反，图案名称会在 KulmanLab 自己的图案库中查找（内置默认图案加上你在 [Hatch Manager](../hatch-manager/) 中上传的任何内容）。库中不存在的名称会回退为 ANSI31，使图形仍然显示为已 hatch，并且会记录一次提示。
 
 由其他应用程序写入的样条线约束环路（DXF 边界边类型 4）尚不支持读取。
 

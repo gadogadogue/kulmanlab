@@ -31,7 +31,7 @@ Das Drücken von **Escape** jederzeit verwirft alle platzierten Punkte und beend
 
 ## Ein Bogensegment zeichnen
 
-Drücken Sie an jedem Punkt nach dem ersten Scheitelpunkt **A**, um den Bogenmodus umzuschalten — dasselbe Inline-Optionsmuster, das AutoCADs PLINE-Befehl verwendet, analog zu Rotates Copy-Option. Die Eingabeaufforderung zeigt den aktuellen Status als `[Arc=true]` / `[Arc=false]`; erneutes Drücken von **A** schaltet ihn zurück, sodass sich gerade und Bogensegmente frei in einer Polylinie mischen lassen.
+Drücken Sie an jedem Punkt nach dem ersten Scheitelpunkt **A**, um den Bogenmodus umzuschalten — dasselbe Inline-Optionsmuster, das Rotates Copy-Option verwendet. Die Eingabeaufforderung zeigt den aktuellen Status als `[Arc=true]` / `[Arc=false]`; erneutes Drücken von **A** schaltet ihn zurück, sodass sich gerade und Bogensegmente frei in einer Polylinie mischen lassen.
 
 Bei aktiviertem Bogenmodus ist jedes neue Segment ein tangential fortgesetzter Bogen — er beginnt tangential zu dem, was direkt davor kam (die Richtung des vorherigen Liniensegments oder die Endtangente des vorherigen Bogens); das allererste Segment verläuft standardmäßig nach Osten, da nichts vorhanden ist, wozu es tangential sein könnte.
 

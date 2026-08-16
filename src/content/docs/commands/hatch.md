@@ -101,7 +101,7 @@ A drag preview shows the boundary as a dashed outline rather than a solid fill w
 
 ## DXF — HATCH entity
 
-Hatches **import** from `HATCH` entities: KulmanLab reads the boundary geometry along with the pattern name, scale, and angle (DXF group codes 70/41/52) — it does **not** read the pattern's own line definitions that AutoCAD writes inline into the file. Instead, the pattern name is looked up in KulmanLab's own pattern library (built-in defaults plus anything you've uploaded in [Hatch Manager](../hatch-manager/)). A name that isn't in your library falls back to ANSI31 so the drawing still reads as hatched, and a note is logged once.
+Hatches **import** from `HATCH` entities: KulmanLab reads the boundary geometry along with the pattern name, scale, and angle (DXF group codes 70/41/52) — it does **not** read the pattern's own line definitions written inline into the file. Instead, the pattern name is looked up in KulmanLab's own pattern library (built-in defaults plus anything you've uploaded in [Hatch Manager](../hatch-manager/)). A name that isn't in your library falls back to ANSI31 so the drawing still reads as hatched, and a note is logged once.
 
 Spline-bounded loops written by other applications (DXF boundary edge type 4) are not yet read.
 

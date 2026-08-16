@@ -26,7 +26,7 @@ Clique em qualquer padrão na lista (ou use `↑`/`↓`) para pré-visualizá-lo
 ## Enviando um arquivo de padrão personalizado
 
 1. Clique em **Add .pat File** no rodapé da caixa de diálogo.
-2. Escolha um arquivo `.pat` — o formato padrão de hatch do AutoCAD. Um único arquivo frequentemente define muitos padrões nomeados de uma vez; todos aparecem como entradas separadas agrupadas sob o nome desse arquivo.
+2. Escolha um arquivo `.pat` — o formato padrão de hatch. Um único arquivo frequentemente define muitos padrões nomeados de uma vez; todos aparecem como entradas separadas agrupadas sob o nome desse arquivo.
 3. Arquivos enviados são salvos permanentemente no navegador (IndexedDB), classificados com os mais recentemente adicionados primeiro, e recarregados automaticamente na próxima vez que você abrir o KulmanLab CAD.
 
 Enviar um arquivo que define um padrão com o mesmo nome que um integrado **substitui** o padrão — esta é a forma suportada de obter as definições oficiais de padrão da Autodesk: envie um `acad.pat` real, e suas versões de ANSI31 e dos outros nomes padrão assumem o lugar das aproximações próprias do KulmanLab.

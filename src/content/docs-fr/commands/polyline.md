@@ -31,7 +31,7 @@ Appuyer sur **Échap** à tout moment abandonne tous les points placés et quitt
 
 ## Tracer un segment d'arc
 
-Appuyez sur **A** à tout moment après le premier sommet pour basculer le mode Arc — le même modèle d'option en ligne que la commande PLINE d'AutoCAD utilise, reflétant l'option Copy de Rotate. L'invite affiche l'état actuel sous la forme `[Arc=true]` / `[Arc=false]` ; appuyer à nouveau sur **A** le fait basculer en arrière, de sorte que les segments droits et d'arc peuvent être librement mélangés dans une polyligne.
+Appuyez sur **A** à tout moment après le premier sommet pour basculer le mode Arc — le même modèle d'option en ligne que l'option Copy de Rotate utilise. L'invite affiche l'état actuel sous la forme `[Arc=true]` / `[Arc=false]` ; appuyer à nouveau sur **A** le fait basculer en arrière, de sorte que les segments droits et d'arc peuvent être librement mélangés dans une polyligne.
 
 Lorsque le mode Arc est actif, chaque nouveau segment est un arc à continuation tangentielle — il commence tangent à ce qui précédait juste avant (la direction du segment de ligne précédent, ou la tangente de fin de l'arc précédent) ; le tout premier segment est orienté par défaut vers l'est, n'ayant rien auquel être tangent.
 

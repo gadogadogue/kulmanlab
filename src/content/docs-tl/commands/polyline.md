@@ -31,7 +31,7 @@ Ang pagpindot ng **Escape** anumang oras ay nag-a-discard ng lahat ng nailagay n
 
 ## Pagguhit ng arc segment
 
-Pindutin ang **A** anumang oras pagkatapos ng unang vertex para i-toggle ang Arc mode — ang parehong inline-option pattern na ginagamit ng PLINE command ng AutoCAD, na sumasalamin sa Copy option ng Rotate. Ipinapakita ng prompt ang kasalukuyang estado bilang `[Arc=true]` / `[Arc=false]`; ang muling pagpindot ng **A** ay ibinabalik ito, kaya ang straight at arc segment ay puwedeng malayang paghaluin sa isang polyline.
+Pindutin ang **A** anumang oras pagkatapos ng unang vertex para i-toggle ang Arc mode — ang parehong inline-option pattern na ginagamit ng Copy option ng Rotate. Ipinapakita ng prompt ang kasalukuyang estado bilang `[Arc=true]` / `[Arc=false]`; ang muling pagpindot ng **A** ay ibinabalik ito, kaya ang straight at arc segment ay puwedeng malayang paghaluin sa isang polyline.
 
 Kapag naka-on ang Arc mode, ang bawat bagong segment ay isang tangent-continuation arc — nagsisimula itong tangent sa kung ano ang dumaan kaagad bago rito (ang direksyon ng naunang line segment, o ang end tangent ng naunang arc); ang pinakaunang segment ay default na pumupunta sa silangan, dahil wala itong dapat maging tangent.
 

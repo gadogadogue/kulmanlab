@@ -31,7 +31,7 @@ Pressionar **Escape** a qualquer momento descarta todos os pontos posicionados e
 
 ## Desenhando um segmento de arco
 
-Pressione **A** a qualquer momento após o primeiro vértice para alternar o modo Arc — o mesmo padrão de opção inline que o comando PLINE do AutoCAD usa, espelhando a opção Copy do Rotate. O prompt mostra o estado atual como `[Arc=true]` / `[Arc=false]`; pressionar **A** novamente o reverte, para que segmentos retos e de arco possam ser livremente misturados em uma polilinha.
+Pressione **A** a qualquer momento após o primeiro vértice para alternar o modo Arc — o mesmo padrão de opção inline que a opção Copy do Rotate usa. O prompt mostra o estado atual como `[Arc=true]` / `[Arc=false]`; pressionar **A** novamente o reverte, para que segmentos retos e de arco possam ser livremente misturados em uma polilinha.
 
 Com o modo Arc ativado, cada novo segmento é um arco de continuação tangencial — começa tangente ao que veio logo antes (a direção do segmento de linha anterior, ou a tangente final do arco anterior); o primeiríssimo segmento aponta para leste por padrão, por não ter nada a que ser tangente.
 

@@ -31,7 +31,7 @@ Herhangi bir zamanda **Escape** tuşuna basmak tüm yerleştirilen noktaları ip
 
 ## Yay segmenti çizme
 
-Yay modunu değiştirmek için ilk köşe noktasından sonra herhangi bir noktada **A** tuşuna basın — bu, AutoCAD'in PLINE komutunun kullandığı ve Rotate'in Copy seçeneğini yansıtan aynı satır içi seçenek desenidir. İstem geçerli durumu `[Arc=true]` / `[Arc=false]` olarak gösterir; **A** tuşuna tekrar basmak onu geri çevirir, böylece düz ve yay segmentleri bir çoklu çizgide serbestçe karıştırılabilir.
+Yay modunu değiştirmek için ilk köşe noktasından sonra herhangi bir noktada **A** tuşuna basın — bu, Rotate'in Copy seçeneğinin kullandığı aynı satır içi seçenek desenidir. İstem geçerli durumu `[Arc=true]` / `[Arc=false]` olarak gösterir; **A** tuşuna tekrar basmak onu geri çevirir, böylece düz ve yay segmentleri bir çoklu çizgide serbestçe karıştırılabilir.
 
 Yay modu açıkken, her yeni segment teğet-devam yayıdır — hemen öncesinde gelen şeye teğet olarak başlar (önceki çizgi segmentinin yönü veya önceki yayın bitiş teğeti); ilk segment, teğet olacağı hiçbir şey olmadığından varsayılan olarak doğuya yönelir.
 

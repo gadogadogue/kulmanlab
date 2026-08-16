@@ -1,7 +1,7 @@
 ---
 title: "Align — Kuhamisha, Kuzungusha, Kupima kwa Jozi za Pointi"
 description: "Amri ya Align huweka upya vipengele vilivyochaguliwa kwa kutumia jozi moja au mbili za pointi za chanzo/marudio — inachanganya kuhamisha, kuzungusha, na kupima sawia kwa hiari katika operesheni moja. Inafanya kazi kama mchanganyiko wa Move + Rotate + Scale."
-keywords: [amri ya align CAD, kupatanisha vipengele CAD, kuhamisha kuzungusha kupima, upatanisho wa jozi za pointi, sawa na ALIGN ya AutoCAD, kulmanlab]
+keywords: [amri ya align CAD, kupatanisha vipengele CAD, kuhamisha kuzungusha kupima, upatanisho wa jozi za pointi, kulmanlab]
 group: edit
 order: 6
 ---

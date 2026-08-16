@@ -51,7 +51,7 @@ En levende spøkelsesforhåndsvisning av de roterte entitetene følger markørvi
 
 ## Rotere en kopi
 
-Trykk **C** ved vinkelspørringen — før du skriver inn noen sifre — for å veksle **Copy**-modus, det samme inline-alternativmønsteret som AutoCADs ROTATE-kommando bruker. Spørringen viser gjeldende tilstand som `[Copy=true]` / `[Copy=false]`, og å trykke **C** igjen bytter den tilbake.
+Trykk **C** ved vinkelspørringen — før du skriver inn noen sifre — for å veksle **Copy**-modus, det samme inline-alternativmønsteret som [Polyline](../polyline/)s Arc-alternativ bruker. Spørringen viser gjeldende tilstand som `[Copy=true]` / `[Copy=false]`, og å trykke **C** igjen bytter den tilbake.
 
 Med Copy på lar det å bruke rotasjonen det opprinnelige utvalget stå uendret på plass, og legger i stedet til nye, roterte kopier av hver valgte entitet. Med Copy av (standard) roterer utvalget på plass som vanlig.
 

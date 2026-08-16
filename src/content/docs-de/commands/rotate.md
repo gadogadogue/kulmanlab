@@ -51,7 +51,7 @@ Eine Live-Geistervorschau der gedrehten Entitäten folgt dem Cursorwinkel, nachd
 
 ## Eine Kopie drehen
 
-Drücken Sie **C** an der Winkelabfrage — bevor Sie Ziffern eingeben — um den **Copy**-Modus umzuschalten, dasselbe Inline-Optionsmuster, das AutoCADs ROTATE-Befehl verwendet. Die Eingabeaufforderung zeigt den aktuellen Status als `[Copy=true]` / `[Copy=false]`; erneutes Drücken von **C** schaltet ihn zurück.
+Drücken Sie **C** an der Winkelabfrage — bevor Sie Ziffern eingeben — um den **Copy**-Modus umzuschalten, dasselbe Inline-Optionsmuster, das [Polyline](../polyline/)s `Arc`-Option verwendet. Die Eingabeaufforderung zeigt den aktuellen Status als `[Copy=true]` / `[Copy=false]`; erneutes Drücken von **C** schaltet ihn zurück.
 
 Bei aktiviertem Copy bleibt die ursprüngliche Auswahl unverändert an ihrem Platz, und stattdessen werden neue, gedrehte Kopien jeder ausgewählten Entität hinzugefügt. Bei deaktiviertem Copy (Standard) dreht sich die Auswahl wie gewohnt an Ort und Stelle.
 

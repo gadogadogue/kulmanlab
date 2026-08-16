@@ -101,7 +101,7 @@ Un'anteprima di trascinamento mostra il contorno come una linea tratteggiata inv
 
 ## DXF — entità HATCH
 
-Gli hatch vengono **importati** da entità `HATCH`: KulmanLab legge la geometria del contorno insieme al nome, alla scala e all'angolo del motivo (codici gruppo DXF 70/41/52) — **non** legge le definizioni di linee proprie del motivo che AutoCAD scrive incorporate nel file. Invece, il nome del motivo viene cercato nella libreria di motivi propria di KulmanLab (predefiniti integrati più tutto ciò che hai caricato in [Hatch Manager](../hatch-manager/)). Un nome non presente nella tua libreria ricade su ANSI31 affinché il disegno continui a leggersi come hatched, e una nota viene registrata una volta.
+Gli hatch vengono **importati** da entità `HATCH`: KulmanLab legge la geometria del contorno insieme al nome, alla scala e all'angolo del motivo (codici gruppo DXF 70/41/52) — **non** legge le definizioni di linee proprie del motivo incorporate nel file. Invece, il nome del motivo viene cercato nella libreria di motivi propria di KulmanLab (predefiniti integrati più tutto ciò che hai caricato in [Hatch Manager](../hatch-manager/)). Un nome non presente nella tua libreria ricade su ANSI31 affinché il disegno continui a leggersi come hatched, e una nota viene registrata una volta.
 
 Gli anelli delimitati da spline scritti da altre applicazioni (tipo di bordo contorno DXF 4) non vengono ancora letti.
 

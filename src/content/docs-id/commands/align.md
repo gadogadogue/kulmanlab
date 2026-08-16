@@ -1,7 +1,7 @@
 ---
 title: Align — Menerjemahkan, Memutar, Menskala dengan Pasangan Titik
 description: Perintah Align memposisikan ulang entitas yang dipilih menggunakan satu atau dua pasang titik sumber/tujuan — menggabungkan translasi, rotasi, dan penskalaan seragam opsional dalam satu operasi. Bekerja seperti gabungan Move + Rotate + Scale.
-keywords: [perintah align CAD, meratakan entitas CAD, translasi rotasi skala, perataan pasangan titik, setara ALIGN AutoCAD, kulmanlab]
+keywords: [perintah align CAD, meratakan entitas CAD, translasi rotasi skala, perataan pasangan titik, kulmanlab]
 group: edit
 order: 6
 ---

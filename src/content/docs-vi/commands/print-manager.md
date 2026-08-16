@@ -55,7 +55,7 @@ Menu thả xuống **Quality** đặt DPI mà bản xuất được kết xuất
 | Presentation | 300 |
 | Max | 600 |
 
-Quality cao hơn tạo ra hình ảnh lớn hơn, sắc nét hơn ở cùng kích thước vật lý — độ dày đường thay đổi theo độ phân giải, vì vậy một đường giữ nguyên độ dày *vật lý* trên giấy ở bất kỳ cài đặt Quality nào, thay vì trông mỏng hơn khi DPI tăng. Ngoại lệ duy nhất là đường tóc (độ dày đường `0`), mà AutoCAD định nghĩa là "đường mỏng nhất mà thiết bị xuất có thể vẽ" — nó vẫn giữ chiều rộng cố định 1 pixel ở mọi mức Quality, đúng như cách nó hoạt động trên canvas trực tiếp.
+Quality cao hơn tạo ra hình ảnh lớn hơn, sắc nét hơn ở cùng kích thước vật lý — độ dày đường thay đổi theo độ phân giải, vì vậy một đường giữ nguyên độ dày *vật lý* trên giấy ở bất kỳ cài đặt Quality nào, thay vì trông mỏng hơn khi DPI tăng. Ngoại lệ duy nhất là đường tóc (độ dày đường `0`), thường được định nghĩa là "đường mỏng nhất mà thiết bị xuất có thể vẽ" — nó vẫn giữ chiều rộng cố định 1 pixel ở mọi mức Quality, đúng như cách nó hoạt động trên canvas trực tiếp.
 
 Thay đổi Quality sẽ kết xuất lại bản xem trước ngay lập tức, để bạn thấy độ sắc nét thực tế (và sự đánh đổi về kích thước tệp) trước khi xuất.
 

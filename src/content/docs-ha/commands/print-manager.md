@@ -55,7 +55,7 @@ Menu na **Quality** yana saita DPI wanda ake bayarwa dashi:
 | Presentation | 300 |
 | Max | 600 |
 
-Inganci mafi girma yana samar da hoto mafi girma da tsabta a girman zahiri iri ɗaya — kaurin layi yana daidaitawa tare da ƙuduri, don haka layi yana ci gaba da kauri *na zahiri* iri ɗaya a takarda a kowane saitin Quality, maimakon ya bayyana siriri yayin da DPI ke ƙaruwa. Kawai togiya ita ce layin gashi (kauri `0`), wanda AutoCAD ke bayyana a matsayin "layin da ya fi siriri da na'urar fitarwa za ta iya zanawa" — ya ci gaba da faɗi mai tsayayye na pixel 1 a kowane matakin Quality, daidai yadda yake nuna hali a kan canvas mai rai.
+Inganci mafi girma yana samar da hoto mafi girma da tsabta a girman zahiri iri ɗaya — kaurin layi yana daidaitawa tare da ƙuduri, don haka layi yana ci gaba da kauri *na zahiri* iri ɗaya a takarda a kowane saitin Quality, maimakon ya bayyana siriri yayin da DPI ke ƙaruwa. Kawai togiya ita ce layin gashi (kauri `0`), wanda ake bayyanawa gargajiya a matsayin "layin da ya fi siriri da na'urar fitarwa za ta iya zanawa" — ya ci gaba da faɗi mai tsayayye na pixel 1 a kowane matakin Quality, daidai yadda yake nuna hali a kan canvas mai rai.
 
 Canza Quality yana sake bayarwa da preview nan take, don haka kake ganin tsabta ta gaskiya (da daidaita girman fayil) kafin fitarwa.
 

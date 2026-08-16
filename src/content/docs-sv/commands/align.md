@@ -1,7 +1,7 @@
 ---
 title: "Align-kommandot — Flytta, rotera och skala entiteter med punktpar"
 description: "Align-kommandot placerar om valda entiteter med hjälp av ett eller två käll-/målpunktpar — kombinerar förflyttning, rotation och valfri enhetlig skalning i en enda operation. Fungerar som en kombination av Move + Rotate + Scale."
-keywords: [CAD align-kommando, justera entiteter CAD, flytta rotera skala, punktparsjustering, motsvarighet till AutoCAD ALIGN, kulmanlab]
+keywords: [CAD align-kommando, justera entiteter CAD, flytta rotera skala, punktparsjustering, kulmanlab]
 group: edit
 order: 6
 ---

@@ -22,7 +22,7 @@ order: 1
 
 | 형식 | 확장자 | 사용 시기 |
 |------|--------|----------|
-| **DXF** | `.dxf` | AutoCAD, FreeCAD, LibreCAD 또는 기타 CAD 도구에서의 도면 |
+| **DXF** | `.dxf` | FreeCAD, LibreCAD 또는 기타 CAD 도구에서의 도면 |
 | **JSON** *(기본)* | `.json` | KulmanLab CAD에서 이전에 저장한 도면 — 완전한 충실도 |
 
 ## DXF에서 가져오는 내용

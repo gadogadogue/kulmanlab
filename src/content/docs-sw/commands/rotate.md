@@ -51,7 +51,7 @@ Hakiki ya kivuli ya vipande vilivyozungushwa inafuata pembe ya kishale baada ya 
 
 ## Kuzungusha nakala
 
-Bonyeza **C** kwenye ombi la pembe — kabla ya kuandika tarakimu yoyote — kubadilisha hali ya **Copy**, mtindo uleule wa chaguo la ndani ya mstari ambao amri ya ROTATE ya AutoCAD hutumia. Ombi linaonyesha hali ya sasa kama `[Copy=true]` / `[Copy=false]`, na kubonyeza **C** tena hubadilisha kurudi.
+Bonyeza **C** kwenye ombi la pembe — kabla ya kuandika tarakimu yoyote — kubadilisha hali ya **Copy**, mtindo uleule wa chaguo la ndani ya mstari ambao chaguo la Arc la [Polyline](../polyline/) hutumia. Ombi linaonyesha hali ya sasa kama `[Copy=true]` / `[Copy=false]`, na kubonyeza **C** tena hubadilisha kurudi.
 
 Copy ikiwa imewashwa, kutekeleza mzunguko huacha uteuzi wa awali bila kubadilika mahali pake na badala yake huongeza nakala mpya, zilizozungushwa za kila kipande kilichochaguliwa. Copy ikiwa imezimwa (chaguo-msingi), uteuzi huzunguka mahali pake kama kawaida.
 

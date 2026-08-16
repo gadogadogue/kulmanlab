@@ -1,7 +1,7 @@
 ---
 title: Align — Motsawa, Juyawa, da Canza Girman Abubuwa da Nauʼin Tabo
 description: Umarnin Align yana sake matsayin abubuwan da aka zaɓa ta amfani da nauʼi ɗaya ko biyu na tabon tushe/manufa, yana haɗa motsawa, juyawa, da canza girma iri ɗaya na zaɓi zuwa aiki guda ɗaya. Yana aiki kamar haɗin Move + Rotate + Scale.
-keywords: [umarnin align CAD, daidaita abubuwa CAD, motsawa juyawa canza girma, daidaitawar nauʼin tabo, kamanceceniyar AutoCAD ALIGN, kulmanlab]
+keywords: [umarnin align CAD, daidaita abubuwa CAD, motsawa juyawa canza girma, daidaitawar nauʼin tabo, kulmanlab]
 group: edit
 order: 6
 ---

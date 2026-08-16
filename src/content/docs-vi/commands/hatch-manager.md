@@ -26,7 +26,7 @@ Nhấp vào bất kỳ mẫu nào trong danh sách (hoặc dùng `↑`/`↓`) đ
 ## Tải Lên Tệp Mẫu Tùy Chỉnh
 
 1. Nhấp **Add .pat File** ở chân hộp thoại.
-2. Chọn một tệp `.pat` — định dạng mẫu hatch tiêu chuẩn của AutoCAD. Một tệp duy nhất thường định nghĩa nhiều mẫu có tên cùng một lúc; tất cả xuất hiện dưới dạng các mục riêng biệt được nhóm dưới tên của tệp đó.
+2. Chọn một tệp `.pat` — định dạng mẫu hatch tiêu chuẩn. Một tệp duy nhất thường định nghĩa nhiều mẫu có tên cùng một lúc; tất cả xuất hiện dưới dạng các mục riêng biệt được nhóm dưới tên của tệp đó.
 3. Các tệp đã tải lên được lưu vĩnh viễn trong trình duyệt (IndexedDB), sắp xếp theo thứ tự tệp thêm gần đây nhất trước, và tự động tải lại vào lần tiếp theo bạn mở KulmanLab CAD.
 
 Việc tải lên một tệp định nghĩa mẫu có cùng tên với một mẫu tích hợp sẽ **che khuất** mặc định — đây là cách được hỗ trợ để có được các định nghĩa mẫu chính thức của Autodesk: tải lên một `acad.pat` thật, và các phiên bản ANSI31 cũng như các tên tiêu chuẩn khác của nó sẽ thay thế các xấp xỉ riêng của KulmanLab.

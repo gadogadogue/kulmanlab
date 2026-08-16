@@ -26,7 +26,7 @@ Klik mana-mana corak dalam senarai (atau gunakan `↑`/`↓`) untuk melihat prat
 ## Memuat Naik Fail Corak Tersuai
 
 1. Klik **Add .pat File** di footer dialog.
-2. Pilih fail `.pat` — format corak hatch standard AutoCAD. Satu fail selalunya mentakrifkan banyak corak bernama sekali gus; semuanya muncul sebagai entri berasingan yang dikumpulkan di bawah nama fail itu.
+2. Pilih fail `.pat` — format corak hatch standard. Satu fail selalunya mentakrifkan banyak corak bernama sekali gus; semuanya muncul sebagai entri berasingan yang dikumpulkan di bawah nama fail itu.
 3. Fail yang dimuat naik disimpan secara kekal dalam pelayar (IndexedDB), diisih mengikut yang paling baru ditambah dahulu, dan dimuat semula secara automatik pada kali seterusnya anda membuka KulmanLab CAD.
 
 Memuat naik fail yang mentakrifkan corak dengan nama yang sama seperti yang terbina dalam **mengatasi** lalai — ini adalah cara yang disokong untuk mendapatkan definisi corak rasmi Autodesk: muat naik `acad.pat` sebenar, dan versi ANSI31 dan nama standard lainnya mengambil alih daripada anggaran KulmanLab sendiri.

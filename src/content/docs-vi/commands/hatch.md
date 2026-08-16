@@ -101,7 +101,7 @@ Bản xem trước khi kéo hiển thị đường viền dưới dạng đườ
 
 ## DXF — Thực Thể HATCH
 
-Hatch được **nhập** từ các thực thể `HATCH`: KulmanLab đọc hình học đường viền cùng với tên, tỷ lệ và góc của mẫu (mã nhóm DXF 70/41/52) — nó **không** đọc các định nghĩa đường riêng của mẫu mà AutoCAD viết inline trong tệp. Thay vào đó, tên mẫu được tra cứu trong thư viện mẫu riêng của KulmanLab (các mặc định tích hợp cộng với bất cứ thứ gì bạn đã tải lên trong [Hatch Manager](../hatch-manager/)). Một tên không có trong thư viện của bạn sẽ quay về ANSI31 để bản vẽ vẫn được đọc là đã hatch, và một ghi chú được ghi log một lần.
+Hatch được **nhập** từ các thực thể `HATCH`: KulmanLab đọc hình học đường viền cùng với tên, tỷ lệ và góc của mẫu (mã nhóm DXF 70/41/52) — nó **không** đọc các định nghĩa đường riêng của mẫu được viết inline trong tệp. Thay vào đó, tên mẫu được tra cứu trong thư viện mẫu riêng của KulmanLab (các mặc định tích hợp cộng với bất cứ thứ gì bạn đã tải lên trong [Hatch Manager](../hatch-manager/)). Một tên không có trong thư viện của bạn sẽ quay về ANSI31 để bản vẽ vẫn được đọc là đã hatch, và một ghi chú được ghi log một lần.
 
 Các vòng bị giới hạn bởi spline được viết bởi các ứng dụng khác (loại cạnh viền DXF 4) chưa được đọc.
 

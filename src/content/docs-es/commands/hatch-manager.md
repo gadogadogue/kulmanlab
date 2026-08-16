@@ -26,7 +26,7 @@ Haz clic en cualquier patrón de la lista (o usa `↑`/`↓`) para verlo en vist
 ## Subir un archivo de patrón personalizado
 
 1. Haz clic en **Add .pat File** en el pie del diálogo.
-2. Elige un archivo `.pat` — el formato estándar de patrones de hatch de AutoCAD. Un solo archivo suele definir muchos patrones con nombre a la vez; todos aparecen como entradas separadas agrupadas bajo el nombre de ese archivo.
+2. Elige un archivo `.pat` — el formato estándar de patrones de hatch. Un solo archivo suele definir muchos patrones con nombre a la vez; todos aparecen como entradas separadas agrupadas bajo el nombre de ese archivo.
 3. Los archivos subidos se guardan permanentemente en el navegador (IndexedDB), ordenados con el más recientemente añadido primero, y se recargan automáticamente la próxima vez que abras KulmanLab CAD.
 
 Subir un archivo que define un patrón con el mismo nombre que uno incorporado **sustituye** al predeterminado — esta es la forma admitida de obtener las definiciones oficiales de patrones de Autodesk: sube un `acad.pat` real, y sus versiones de ANSI31 y los demás nombres estándar toman el relevo de las aproximaciones propias de KulmanLab.

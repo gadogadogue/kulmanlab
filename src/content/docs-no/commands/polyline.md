@@ -31,7 +31,7 @@ Polylinjer kan også være **lukket**: [Rectangle](../rectangle/)-kommandoen bru
 
 ## Tegne et buesegment
 
-Trykk **A** når som helst etter det første hjørnet for å veksle Arc-modus — det samme inline-alternativmønsteret som AutoCADs PLINE-kommando bruker, som gjenspeiler Copy-alternativet til Rotate. Spørringen viser gjeldende tilstand som `[Arc=true]` / `[Arc=false]`; å trykke **A** igjen bytter den tilbake, slik at rette og buesegmenter fritt kan blandes i én polylinje.
+Trykk **A** når som helst etter det første hjørnet for å veksle Arc-modus — det samme inline-alternativmønsteret som Copy-alternativet til Rotate bruker. Spørringen viser gjeldende tilstand som `[Arc=true]` / `[Arc=false]`; å trykke **A** igjen bytter den tilbake, slik at rette og buesegmenter fritt kan blandes i én polylinje.
 
 Når Arc-modus er på, er hvert nytt segment en tangentiell fortsettelsesbue — den starter tangentielt til det som kom rett før den (retningen til det forrige rette segmentet, eller sluttangensen til den forrige buen); det aller første segmentet peker som standard mot øst, siden det ikke har noe å være tangentiell til.
 

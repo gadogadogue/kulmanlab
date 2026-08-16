@@ -51,7 +51,7 @@ En levende spøgelsesforhåndsvisning af de roterede entiteter følger markørvi
 
 ## Roter en kopi
 
-Tryk **C** ved vinkelprompten — inden du skriver nogen tal — for at skifte **Copy**-tilstand, samme inline-indstillingsmønster som AutoCADs ROTATE-kommando bruger. Prompten viser den aktuelle tilstand som `[Copy=true]` / `[Copy=false]`, og at trykke **C** igen skifter den tilbage.
+Tryk **C** ved vinkelprompten — inden du skriver nogen tal — for at skifte **Copy**-tilstand, samme inline-indstillingsmønster som [Polyline](../polyline/)s Arc-indstilling bruger. Prompten viser den aktuelle tilstand som `[Copy=true]` / `[Copy=false]`, og at trykke **C** igen skifter den tilbage.
 
 Med Copy slået til efterlader anvendelse af rotationen den oprindelige markering uændret på plads og tilføjer i stedet nye, roterede kopier af hver markeret entitet. Med Copy slået fra (standard) roterer markeringen på plads som sædvanligt.
 

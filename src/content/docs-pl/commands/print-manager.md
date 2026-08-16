@@ -55,7 +55,7 @@ Rozwijana lista **Quality** ustawia DPI, w jakim renderowany jest eksport:
 | Presentation | 300 |
 | Max | 600 |
 
-Wyższa Jakość daje większy, ostrzejszy obraz przy tym samym fizycznym rozmiarze — grubości linii skalują się razem z rozdzielczością, więc linia zachowuje tę samą *fizyczną* grubość na papierze przy dowolnym ustawieniu Jakości, zamiast wyglądać cieniej wraz ze wzrostem DPI. Jedynym wyjątkiem jest cienka linia (grubość `0`), którą AutoCAD definiuje jako „najcieńszą linię, jaką może narysować urządzenie wyjściowe” — pozostaje o stałej szerokości 1 piksela na każdym poziomie Jakości, dokładnie tak, jak zachowuje się na płótnie na żywo.
+Wyższa Jakość daje większy, ostrzejszy obraz przy tym samym fizycznym rozmiarze — grubości linii skalują się razem z rozdzielczością, więc linia zachowuje tę samą *fizyczną* grubość na papierze przy dowolnym ustawieniu Jakości, zamiast wyglądać cieniej wraz ze wzrostem DPI. Jedynym wyjątkiem jest cienka linia (grubość `0`), którą tradycyjnie definiuje się jako „najcieńszą linię, jaką może narysować urządzenie wyjściowe” — pozostaje o stałej szerokości 1 piksela na każdym poziomie Jakości, dokładnie tak, jak zachowuje się na płótnie na żywo.
 
 Zmiana Jakości natychmiast ponownie renderuje podgląd, dzięki czemu widzisz rzeczywistą ostrość (i kompromis w rozmiarze pliku) przed eksportem.
 

@@ -101,7 +101,7 @@ Bir sürükleme önizlemesi, siz sürüklerken sınırı katı bir dolgu yerine 
 
 ## DXF — HATCH Nesnesi
 
-Hatch'ler `HATCH` nesnelerinden **içe aktarılır**: KulmanLab, sınır geometrisini desenin adı, ölçeği ve açısıyla birlikte okur (DXF grup kodları 70/41/52) — AutoCAD'in dosyaya satır içi olarak yazdığı desenin kendi çizgi tanımlarını **okumaz**. Bunun yerine, desen adı KulmanLab'ın kendi desen kitaplığında aranır (yerleşik varsayılanlar artı [Hatch Manager](../hatch-manager/)'a yüklediğiniz her şey). Kitaplığınızda olmayan bir ad, çizimin hâlâ hatch'lenmiş olarak okunması için ANSI31'e geri döner ve bir not bir kez günlüğe kaydedilir.
+Hatch'ler `HATCH` nesnelerinden **içe aktarılır**: KulmanLab, sınır geometrisini desenin adı, ölçeği ve açısıyla birlikte okur (DXF grup kodları 70/41/52) — dosyaya satır içi olarak yazılan desenin kendi çizgi tanımlarını **okumaz**. Bunun yerine, desen adı KulmanLab'ın kendi desen kitaplığında aranır (yerleşik varsayılanlar artı [Hatch Manager](../hatch-manager/)'a yüklediğiniz her şey). Kitaplığınızda olmayan bir ad, çizimin hâlâ hatch'lenmiş olarak okunması için ANSI31'e geri döner ve bir not bir kez günlüğe kaydedilir.
 
 Diğer uygulamalar tarafından yazılan spline sınırlı döngüler (DXF sınır kenar türü 4) henüz okunmuyor.
 

@@ -26,7 +26,7 @@ Napsauta mitä tahansa kuviota luettelossa (tai käytä `↑`/`↓`) esikatsella
 ## Mukautetun kuviotiedoston lataaminen
 
 1. Napsauta **Add .pat File** valintaikkunan alatunnisteessa.
-2. Valitse `.pat`-tiedosto — tavallinen AutoCADin hatch-kuviomuoto. Yksi tiedosto määrittää usein monta nimettyä kuviota kerralla; ne kaikki näkyvät erillisinä merkintöinä ryhmiteltynä kyseisen tiedoston nimen alle.
+2. Valitse `.pat`-tiedosto — tavallinen hatch-kuviomuoto. Yksi tiedosto määrittää usein monta nimettyä kuviota kerralla; ne kaikki näkyvät erillisinä merkintöinä ryhmiteltynä kyseisen tiedoston nimen alle.
 3. Ladatut tiedostot tallennetaan pysyvästi selaimeen (IndexedDB), lajiteltuna viimeksi lisätty ensin, ja ne ladataan automaattisesti uudelleen seuraavalla kerralla, kun avaat KulmanLab CAD:n.
 
 Tiedoston lataaminen, joka määrittää saman nimisen kuvion kuin sisäänrakennettu, **peittää** oletuksen — tämä on tuettu tapa saada Autodeskin viralliset kuviomääritykset: lataa oikea `acad.pat`, ja sen versiot ANSI31:stä ja muista vakionimistä ottavat paikan KulmanLabin omilta likiarvoilta.

@@ -51,7 +51,7 @@ Una vista previa fantasma en vivo de las entidades rotadas sigue el ángulo del 
 
 ## Rotar una copia
 
-Presiona **C** en la solicitud de ángulo — antes de escribir cualquier dígito — para alternar el modo **Copy**, el mismo patrón de opción en línea que usa el comando ROTATE de AutoCAD. La solicitud muestra el estado actual como `[Copy=true]` / `[Copy=false]`, y presionar **C** de nuevo lo revierte.
+Presiona **C** en la solicitud de ángulo — antes de escribir cualquier dígito — para alternar el modo **Copy**, el mismo patrón de opción en línea que usa la opción `Arc` de [Polyline](../polyline/). La solicitud muestra el estado actual como `[Copy=true]` / `[Copy=false]`, y presionar **C** de nuevo lo revierte.
 
 Con Copy activado, aplicar la rotación deja la selección original intacta en su lugar y en su lugar añade nuevas copias rotadas de cada entidad seleccionada. Con Copy desactivado (predeterminado), la selección rota en su lugar como de costumbre.
 

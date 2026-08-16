@@ -31,7 +31,7 @@ Kubonyeza **Escape** wakati wowote kunafuta nukta zote zilizowekwa na kutoka kwa
 
 ## Kuchora sehemu ya mviringo
 
-Bonyeza **A** wakati wowote baada ya ncha ya kwanza kubadilisha hali ya Arc — mtindo uleule wa chaguo la ndani ya mstari ambao amri ya PLINE ya AutoCAD hutumia, ukiakisi chaguo la Copy la Rotate. Ombi linaonyesha hali ya sasa kama `[Arc=true]` / `[Arc=false]`; kubonyeza **A** tena hubadilisha kurudi, hivyo sehemu za mstari na mviringo zinaweza kuchanganywa kwa uhuru katika polyline moja.
+Bonyeza **A** wakati wowote baada ya ncha ya kwanza kubadilisha hali ya Arc — mtindo uleule wa chaguo la ndani ya mstari ambao chaguo la Copy la Rotate hutumia. Ombi linaonyesha hali ya sasa kama `[Arc=true]` / `[Arc=false]`; kubonyeza **A** tena hubadilisha kurudi, hivyo sehemu za mstari na mviringo zinaweza kuchanganywa kwa uhuru katika polyline moja.
 
 Hali ya Arc ikiwa imewashwa, kila sehemu mpya ni mviringo wa mwendelezo wa tanjenti — huanza tanjenti kwa kile kilichokuja kabla yake moja kwa moja (mwelekeo wa sehemu ya mstari iliyotangulia, au tanjenti ya mwisho ya mviringo uliotangulia); sehemu ya kwanza kabisa huelekea mashariki kwa chaguo-msingi, kwa kuwa haina chochote cha kuwa tanjenti nayo.
 

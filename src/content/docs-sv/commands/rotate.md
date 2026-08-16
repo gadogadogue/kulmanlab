@@ -51,7 +51,7 @@ En levande ghost-förhandsvisning av de roterade entiteterna följer markörens 
 
 ## Rotera en kopia
 
-Tryck på **C** vid vinkelfrågan — innan du skriver några siffror — för att växla läget **Copy**, samma inline-alternativmönster som AutoCADs ROTATE-kommando använder. Frågan visar det aktuella läget som `[Copy=true]` / `[Copy=false]`, och att trycka på **C** igen växlar tillbaka det.
+Tryck på **C** vid vinkelfrågan — innan du skriver några siffror — för att växla läget **Copy**, samma inline-alternativmönster som [Polyline](../polyline/)s Arc-alternativ använder. Frågan visar det aktuella läget som `[Copy=true]` / `[Copy=false]`, och att trycka på **C** igen växlar tillbaka det.
 
 Med Copy på lämnar tillämpning av rotationen den ursprungliga markeringen orörd på plats och lägger istället till nya, roterade kopior av varje markerad entitet. Med Copy av (standard) roterar markeringen på plats som vanligt.
 

@@ -51,7 +51,7 @@ A live ghost preview of the rotated entities follows the cursor angle after the 
 
 ## Rotating a copy
 
-Press **C** at the angle prompt — before typing any digits — to toggle **Copy** mode, the same inline-option pattern AutoCAD's ROTATE command uses. The prompt shows the current state as `[Copy=true]` / `[Copy=false]`, and pressing **C** again flips it back.
+Press **C** at the angle prompt — before typing any digits — to toggle **Copy** mode, the same inline-option pattern [Polyline](../polyline/)'s `Arc` toggle uses. The prompt shows the current state as `[Copy=true]` / `[Copy=false]`, and pressing **C** again flips it back.
 
 With Copy on, applying the rotation leaves the original selection untouched in place and adds **new, rotated copies** of each selected entity instead. With Copy off (the default), the selection rotates in place as usual.
 

@@ -26,7 +26,7 @@ Klikk på et hvilket som helst mønster i listen (eller bruk `↑`/`↓`) for å
 ## Laste opp en tilpasset mønsterfil
 
 1. Klikk på **Add .pat File** i bunnteksten på dialogen.
-2. Velg en `.pat`-fil — det vanlige AutoCAD hatch-mønsterformatet. En enkelt fil definerer ofte mange navngitte mønstre samtidig; de vises alle som separate oppføringer gruppert under navnet på den filen.
+2. Velg en `.pat`-fil — det vanlige hatch-mønsterformatet. En enkelt fil definerer ofte mange navngitte mønstre samtidig; de vises alle som separate oppføringer gruppert under navnet på den filen.
 3. Opplastede filer lagres permanent i nettleseren (IndexedDB), sortert med sist tilføyde først, og lastes automatisk inn på nytt neste gang du åpner KulmanLab CAD.
 
 Å laste opp en fil som definerer et mønster med samme navn som et innebygd, **overskygger** standarden — dette er den støttede måten å få Autodesks offisielle mønsterdefinisjoner på: last opp en ekte `acad.pat`, og versjonene dens av ANSI31 og de andre standardnavnene overtar fra KulmanLabs egne tilnærminger.

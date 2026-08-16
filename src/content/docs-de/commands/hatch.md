@@ -101,7 +101,7 @@ Eine Zieh-Vorschau zeigt die Randkontur als gestrichelte Umrisslinie statt als d
 
 ## DXF — HATCH-Element
 
-Hatch-Elemente werden aus `HATCH`-Elementen **importiert**: KulmanLab liest die Randgeometrie zusammen mit Mustername, Skalierung und Winkel (DXF-Gruppencodes 70/41/52) — es liest **nicht** die eigenen Linien-Definitionen des Musters, die AutoCAD inline in die Datei schreibt. Stattdessen wird der Mustername in KulmanLabs eigener Musterbibliothek nachgeschlagen (eingebaute Standards plus alles, was Sie im [Hatch Manager](../hatch-manager/) hochgeladen haben). Ein Name, der nicht in Ihrer Bibliothek ist, fällt auf ANSI31 zurück, sodass die Zeichnung weiterhin schraffiert erscheint, und ein Hinweis wird einmal protokolliert.
+Hatch-Elemente werden aus `HATCH`-Elementen **importiert**: KulmanLab liest die Randgeometrie zusammen mit Mustername, Skalierung und Winkel (DXF-Gruppencodes 70/41/52) — es liest **nicht** die eigenen Linien-Definitionen des Musters, die inline in die Datei geschrieben werden. Stattdessen wird der Mustername in KulmanLabs eigener Musterbibliothek nachgeschlagen (eingebaute Standards plus alles, was Sie im [Hatch Manager](../hatch-manager/) hochgeladen haben). Ein Name, der nicht in Ihrer Bibliothek ist, fällt auf ANSI31 zurück, sodass die Zeichnung weiterhin schraffiert erscheint, und ein Hinweis wird einmal protokolliert.
 
 Splinebegrenzte Schleifen, die von anderen Anwendungen geschrieben wurden (DXF-Randkantentyp 4), werden noch nicht gelesen.
 

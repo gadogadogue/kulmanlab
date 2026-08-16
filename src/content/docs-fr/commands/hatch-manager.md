@@ -26,7 +26,7 @@ Cliquez sur n'importe quel motif de la liste (ou utilisez `↑`/`↓`) pour le p
 ## Téléverser un fichier de motifs personnalisé
 
 1. Cliquez sur **Add .pat File** dans le pied de la boîte de dialogue.
-2. Choisissez un fichier `.pat` — le format standard des motifs de hachures d'AutoCAD. Un seul fichier définit souvent de nombreux motifs nommés à la fois ; ils apparaissent tous comme des entrées distinctes groupées sous le nom de ce fichier.
+2. Choisissez un fichier `.pat` — le format standard des motifs de hachures. Un seul fichier définit souvent de nombreux motifs nommés à la fois ; ils apparaissent tous comme des entrées distinctes groupées sous le nom de ce fichier.
 3. Les fichiers téléversés sont enregistrés de façon permanente dans le navigateur (IndexedDB), triés du plus récemment ajouté en premier, et rechargés automatiquement la prochaine fois que vous ouvrez KulmanLab CAD.
 
 Téléverser un fichier qui définit un motif portant le même nom qu'un motif intégré **supplante** la valeur par défaut — c'est la méthode prise en charge pour obtenir les définitions de motifs officielles d'Autodesk : téléversez un véritable `acad.pat`, et ses versions d'ANSI31 et des autres noms standards prennent le relais des approximations propres à KulmanLab.

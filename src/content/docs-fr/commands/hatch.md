@@ -101,7 +101,7 @@ Un aperçu de glissement affiche le contour comme un contour en pointillés au l
 
 ## DXF — entité HATCH
 
-Les hatchs sont **importés** depuis des entités `HATCH` : KulmanLab lit la géométrie du contour ainsi que le nom, l'échelle et l'angle du motif (codes de groupe DXF 70/41/52) — il ne lit **pas** les définitions de lignes propres du motif qu'AutoCAD écrit intégrées dans le fichier. À la place, le nom du motif est recherché dans la propre bibliothèque de motifs de KulmanLab (valeurs par défaut intégrées plus tout ce que vous avez téléversé dans [Hatch Manager](../hatch-manager/)). Un nom absent de votre bibliothèque revient à ANSI31 afin que le dessin continue à se lire comme hachuré, et une note est enregistrée une fois.
+Les hatchs sont **importés** depuis des entités `HATCH` : KulmanLab lit la géométrie du contour ainsi que le nom, l'échelle et l'angle du motif (codes de groupe DXF 70/41/52) — il ne lit **pas** les définitions de lignes propres du motif intégrées dans le fichier. À la place, le nom du motif est recherché dans la propre bibliothèque de motifs de KulmanLab (valeurs par défaut intégrées plus tout ce que vous avez téléversé dans [Hatch Manager](../hatch-manager/)). Un nom absent de votre bibliothèque revient à ANSI31 afin que le dessin continue à se lire comme hachuré, et une note est enregistrée une fois.
 
 Les boucles délimitées par des splines écrites par d'autres applications (type de bord de contour DXF 4) ne sont pas encore lues.
 

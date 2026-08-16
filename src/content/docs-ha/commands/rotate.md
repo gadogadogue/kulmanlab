@@ -51,7 +51,7 @@ Preview mai fatalwa mai rai na abubuwan da aka juya yana bin kusurwar mai nuni b
 
 ## Juya kwafi
 
-Danna **C** a tambayar kusurwa — kafin rubuta wani lamba — don sauya yanayin **Copy**, irin salon zaɓi na cikin layi ɗaya wanda umarnin ROTATE na AutoCAD ke amfani da shi. Tambayar tana nuna yanayin yanzu a matsayin `[Copy=true]` / `[Copy=false]`, kuma sake danna **C** yana mayar da shi.
+Danna **C** a tambayar kusurwa — kafin rubuta wani lamba — don sauya yanayin **Copy**, irin salon zaɓi na cikin layi ɗaya wanda zaɓin Arc na [Polyline](../polyline/) ke amfani da shi. Tambayar tana nuna yanayin yanzu a matsayin `[Copy=true]` / `[Copy=false]`, kuma sake danna **C** yana mayar da shi.
 
 Idan an kunna Copy, yin amfani da juyawa yana barin zaɓin asali ba tare da canzawa a wurinsa ba kuma a maimako yana ƙara sabbin kwafi, waɗanda aka juya na kowane abu da aka zaɓa. Idan an kashe Copy (tsohuwar), zaɓin yana juyawa a wurinsa kamar yadda aka saba.
 

@@ -51,7 +51,7 @@ Pratonton hantu langsung entiti yang diputar mengikuti sudut kursor selepas titi
 
 ## Memutar salinan
 
-Tekan **C** pada gesaan sudut — sebelum menaip sebarang digit — untuk togol mod **Copy**, corak pilihan sebaris yang sama yang digunakan oleh arahan ROTATE AutoCAD. Gesaan menunjukkan keadaan semasa sebagai `[Copy=true]` / `[Copy=false]`, dan menekan **C** sekali lagi menukarnya semula.
+Tekan **C** pada gesaan sudut — sebelum menaip sebarang digit — untuk togol mod **Copy**, corak pilihan sebaris yang sama yang digunakan oleh pilihan Arc [Polyline](../polyline/). Gesaan menunjukkan keadaan semasa sebagai `[Copy=true]` / `[Copy=false]`, dan menekan **C** sekali lagi menukarnya semula.
 
 Dengan Copy dihidupkan, mengaplikasikan putaran membiarkan pemilihan asal tidak disentuh di tempatnya dan sebaliknya menambah salinan baharu yang diputar bagi setiap entiti yang dipilih. Dengan Copy dimatikan (lalai), pemilihan berputar di tempatnya seperti biasa.
 

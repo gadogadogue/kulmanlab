@@ -101,7 +101,7 @@ Uma pré-visualização de arraste exibe o contorno como um contorno tracejado e
 
 ## DXF — entidade HATCH
 
-Os hatches são **importados** de entidades `HATCH`: o KulmanLab lê a geometria do contorno junto com o nome, a escala e o ângulo do padrão (códigos de grupo DXF 70/41/52) — ele **não** lê as próprias definições de linha do padrão que o AutoCAD escreve embutidas no arquivo. Em vez disso, o nome do padrão é procurado na própria biblioteca de padrões do KulmanLab (padrões integrados mais o que você enviou no [Hatch Manager](../hatch-manager/)). Um nome que não está na sua biblioteca recorre a ANSI31 para que o desenho ainda seja lido como hatched, e uma nota é registrada uma vez.
+Os hatches são **importados** de entidades `HATCH`: o KulmanLab lê a geometria do contorno junto com o nome, a escala e o ângulo do padrão (códigos de grupo DXF 70/41/52) — ele **não** lê as próprias definições de linha do padrão embutidas no arquivo. Em vez disso, o nome do padrão é procurado na própria biblioteca de padrões do KulmanLab (padrões integrados mais o que você enviou no [Hatch Manager](../hatch-manager/)). Um nome que não está na sua biblioteca recorre a ANSI31 para que o desenho ainda seja lido como hatched, e uma nota é registrada uma vez.
 
 Laços delimitados por spline escritos por outras aplicações (tipo de borda de contorno DXF 4) ainda não são lidos.
 

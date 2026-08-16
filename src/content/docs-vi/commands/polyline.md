@@ -1,6 +1,6 @@
 ---
 title: Lệnh Polyline — Vẽ Đường Dẫn Nhiều Đoạn Thành Một Thực Thể
-description: Lệnh Polyline vẽ bất kỳ số lượng đoạn thẳng hoặc đoạn cung nối nhau được lưu dưới dạng một thực thể LWPOLYLINE. Bật chế độ Arc bằng phím A để vẽ đoạn cung kiểu AutoCAD. Điểm kéo đỉnh và điểm giữa đoạn cho phép định hình lại bất kỳ phần nào của đường dẫn sau khi tạo.
+description: Lệnh Polyline vẽ bất kỳ số lượng đoạn thẳng hoặc đoạn cung nối nhau được lưu dưới dạng một thực thể LWPOLYLINE. Bật chế độ Arc bằng phím A để vẽ đoạn cung tiếp tuyến liên tục. Điểm kéo đỉnh và điểm giữa đoạn cho phép định hình lại bất kỳ phần nào của đường dẫn sau khi tạo.
 group: shapes
 order: 2
 ---
@@ -20,7 +20,7 @@ Nhấn **Escape** bất kỳ lúc nào để loại bỏ tất cả điểm đã
 
 ## Vẽ một đoạn cung
 
-Nhấn **A** bất kỳ lúc nào sau đỉnh đầu tiên để bật/tắt chế độ Arc — cùng kiểu tùy chọn nội tuyến mà lệnh PLINE của AutoCAD sử dụng, phản ánh tùy chọn Copy của Rotate. Lời nhắc hiển thị trạng thái hiện tại là `[Arc=true]` / `[Arc=false]`; nhấn **A** lần nữa sẽ chuyển nó trở lại, để đoạn thẳng và đoạn cung có thể tự do trộn lẫn trong một đường đa đoạn.
+Nhấn **A** bất kỳ lúc nào sau đỉnh đầu tiên để bật/tắt chế độ Arc — cùng kiểu tùy chọn nội tuyến mà tùy chọn Copy của Rotate sử dụng. Lời nhắc hiển thị trạng thái hiện tại là `[Arc=true]` / `[Arc=false]`; nhấn **A** lần nữa sẽ chuyển nó trở lại, để đoạn thẳng và đoạn cung có thể tự do trộn lẫn trong một đường đa đoạn.
 
 Khi chế độ Arc bật, mỗi đoạn mới là một cung tiếp tuyến liên tục — nó bắt đầu tiếp tuyến với đoạn ngay trước đó (hướng của đoạn thẳng trước, hoặc tiếp tuyến cuối của cung trước); đoạn đầu tiên mặc định hướng về phía đông, vì không có gì để tiếp tuyến với nó.
 

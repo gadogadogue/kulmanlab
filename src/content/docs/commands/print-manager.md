@@ -55,7 +55,7 @@ The **Quality** dropdown sets the DPI the export is rendered at:
 | Presentation | 300 |
 | Max | 600 |
 
-Higher Quality produces a larger, sharper image at the same physical size — line weights scale up together with the resolution, so a line keeps the same *physical* thickness on paper at any Quality setting rather than looking thinner as DPI increases. The one exception is a hairline (lineweight `0`), which AutoCAD defines as "the thinnest line the output device can draw" — it stays a fixed 1-pixel width at every Quality level instead of scaling, matching how it behaves on the live canvas.
+Higher Quality produces a larger, sharper image at the same physical size — line weights scale up together with the resolution, so a line keeps the same *physical* thickness on paper at any Quality setting rather than looking thinner as DPI increases. The one exception is a hairline (lineweight `0`), conventionally defined as "the thinnest line the output device can draw" — it stays a fixed 1-pixel width at every Quality level instead of scaling, matching how it behaves on the live canvas.
 
 Changing Quality re-renders the preview immediately, so you see the actual sharpness (and file size trade-off) before exporting.
 

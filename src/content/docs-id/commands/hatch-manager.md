@@ -26,7 +26,7 @@ Klik pola apa pun dalam daftar (atau gunakan `↑`/`↓`) untuk melihat pratinja
 ## Mengunggah File Pola Kustom
 
 1. Klik **Add .pat File** di footer dialog.
-2. Pilih file `.pat` — format pola hatch standar AutoCAD. Satu file sering mendefinisikan banyak pola bernama sekaligus; semuanya muncul sebagai entri terpisah yang dikelompokkan di bawah nama file tersebut.
+2. Pilih file `.pat` — format pola hatch standar. Satu file sering mendefinisikan banyak pola bernama sekaligus; semuanya muncul sebagai entri terpisah yang dikelompokkan di bawah nama file tersebut.
 3. File yang diunggah disimpan secara permanen di browser (IndexedDB), diurutkan berdasarkan yang paling baru ditambahkan terlebih dahulu, dan dimuat ulang secara otomatis saat berikutnya Anda membuka KulmanLab CAD.
 
 Mengunggah file yang mendefinisikan pola dengan nama yang sama seperti pola bawaan akan **menggantikan** default — ini adalah cara yang didukung untuk mendapatkan definisi pola resmi Autodesk: unggah `acad.pat` asli, dan versi ANSI31 dan nama standar lainnya mengambil alih dari perkiraan KulmanLab sendiri.

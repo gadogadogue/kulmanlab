@@ -1,7 +1,7 @@
 ---
 title: Align — Verplaats, Draai en Schaal Entiteiten met Puntparen
 description: Het commando Align verplaatst geselecteerde entiteiten met een of twee paren bron-/doelpunten en combineert verplaatsen, draaien en optioneel uniform schalen in één bewerking. Werkt als een combinatie van Move + Rotate + Scale.
-keywords: [CAD align commando, entiteiten uitlijnen CAD, verplaatsen draaien schalen, puntpaar uitlijning, AutoCAD ALIGN equivalent, kulmanlab]
+keywords: [CAD align commando, entiteiten uitlijnen CAD, verplaatsen draaien schalen, puntpaar uitlijning, kulmanlab]
 group: edit
 order: 6
 ---

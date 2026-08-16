@@ -101,7 +101,7 @@ Podgląd przeciągania pokazuje kontur jako przerywany zarys zamiast pełnego wy
 
 ## DXF — element HATCH
 
-Hatch są **importowane** z elementów `HATCH`: KulmanLab odczytuje geometrię konturu wraz z nazwą, skalą i kątem wzoru (kody grup DXF 70/41/52) — **nie** odczytuje własnych definicji linii wzoru, które AutoCAD zapisuje w pliku w sposób wbudowany. Zamiast tego nazwa wzoru jest wyszukiwana we własnej bibliotece wzorów KulmanLab (wbudowane domyślne plus wszystko, co przesłałeś w [Hatch Manager](../hatch-manager/)). Nazwa, której nie ma w Twojej bibliotece, powraca do ANSI31, aby rysunek nadal czytał się jako pokryty hatchem, a notatka jest zapisywana raz.
+Hatch są **importowane** z elementów `HATCH`: KulmanLab odczytuje geometrię konturu wraz z nazwą, skalą i kątem wzoru (kody grup DXF 70/41/52) — **nie** odczytuje własnych definicji linii wzoru, które są zapisywane w pliku w sposób wbudowany. Zamiast tego nazwa wzoru jest wyszukiwana we własnej bibliotece wzorów KulmanLab (wbudowane domyślne plus wszystko, co przesłałeś w [Hatch Manager](../hatch-manager/)). Nazwa, której nie ma w Twojej bibliotece, powraca do ANSI31, aby rysunek nadal czytał się jako pokryty hatchem, a notatka jest zapisywana raz.
 
 Pętle ograniczone splajnem, zapisane przez inne aplikacje (typ krawędzi konturu DXF 4), nie są jeszcze odczytywane.
 

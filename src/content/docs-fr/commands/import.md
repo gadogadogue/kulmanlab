@@ -22,7 +22,7 @@ Vous pouvez également glisser-déposer un fichier directement sur le canevas.
 
 | Format | Extension | Quand l'utiliser |
 |--------|-----------|-----------------|
-| **DXF** | `.dxf` | Dessins de AutoCAD, FreeCAD, LibreCAD ou d'autres outils CAO |
+| **DXF** | `.dxf` | Dessins de FreeCAD, LibreCAD ou d'autres outils CAO |
 | **JSON** *(natif)* | `.json` | Dessins précédemment enregistrés depuis KulmanLab CAD — fidélité totale |
 
 ## Ce qui est importé depuis DXF

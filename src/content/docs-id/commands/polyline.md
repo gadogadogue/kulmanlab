@@ -31,7 +31,7 @@ Menekan **Escape** kapan saja akan membuang semua titik yang ditempatkan dan kel
 
 ## Menggambar segmen busur
 
-Tekan **A** kapan saja setelah titik pertama untuk mengalihkan mode Arc — pola opsi inline yang sama yang digunakan perintah PLINE AutoCAD, mencerminkan opsi Copy pada Rotate. Prompt menampilkan status saat ini sebagai `[Arc=true]` / `[Arc=false]`; menekan **A** lagi akan membaliknya, sehingga segmen lurus dan busur dapat dicampur secara bebas dalam satu polyline.
+Tekan **A** kapan saja setelah titik pertama untuk mengalihkan mode Arc — pola opsi inline yang sama yang digunakan opsi Copy pada Rotate. Prompt menampilkan status saat ini sebagai `[Arc=true]` / `[Arc=false]`; menekan **A** lagi akan membaliknya, sehingga segmen lurus dan busur dapat dicampur secara bebas dalam satu polyline.
 
 Saat mode Arc aktif, setiap segmen baru adalah busur kelanjutan tangen — dimulai bersinggungan dengan apa yang datang tepat sebelumnya (arah segmen garis sebelumnya, atau tangen akhir busur sebelumnya); segmen paling pertama secara default mengarah ke timur, karena tidak ada apa pun untuk disinggungnya.
 

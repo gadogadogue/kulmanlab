@@ -33,7 +33,7 @@ Lệnh `rotate` xoay các thực thể đã chọn quanh điểm cơ sở. Bạn
 
 ## Xoay một bản sao
 
-Nhấn **C** tại lời nhắc góc — trước khi gõ bất kỳ chữ số nào — để bật/tắt chế độ **Copy**, cùng kiểu tùy chọn nội tuyến mà lệnh ROTATE của AutoCAD sử dụng. Lời nhắc hiển thị trạng thái hiện tại là `[Copy=true]` / `[Copy=false]`, và nhấn **C** lần nữa sẽ chuyển nó trở lại.
+Nhấn **C** tại lời nhắc góc — trước khi gõ bất kỳ chữ số nào — để bật/tắt chế độ **Copy**, cùng kiểu tùy chọn nội tuyến mà tùy chọn Arc của [Polyline](../polyline/) sử dụng. Lời nhắc hiển thị trạng thái hiện tại là `[Copy=true]` / `[Copy=false]`, và nhấn **C** lần nữa sẽ chuyển nó trở lại.
 
 Khi Copy bật, áp dụng phép xoay để nguyên vùng chọn gốc tại chỗ và thay vào đó thêm các bản sao mới, đã xoay của mỗi thực thể được chọn. Khi Copy tắt (mặc định), vùng chọn xoay tại chỗ như bình thường.
 

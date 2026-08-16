@@ -51,7 +51,7 @@ Pratinjau bayangan langsung dari entitas yang diputar mengikuti sudut kursor set
 
 ## Memutar salinan
 
-Tekan **C** pada prompt sudut — sebelum mengetik digit apa pun — untuk mengalihkan mode **Copy**, pola opsi inline yang sama yang digunakan perintah ROTATE AutoCAD. Prompt menampilkan status saat ini sebagai `[Copy=true]` / `[Copy=false]`, dan menekan **C** lagi akan membaliknya.
+Tekan **C** pada prompt sudut — sebelum mengetik digit apa pun — untuk mengalihkan mode **Copy**, pola opsi inline yang sama yang digunakan opsi Arc [Polyline](../polyline/). Prompt menampilkan status saat ini sebagai `[Copy=true]` / `[Copy=false]`, dan menekan **C** lagi akan membaliknya.
 
 Dengan Copy aktif, menerapkan rotasi membiarkan seleksi asli tetap di tempatnya tanpa perubahan dan sebagai gantinya menambahkan salinan baru yang diputar dari setiap entitas yang dipilih. Dengan Copy nonaktif (default), seleksi berputar di tempat seperti biasa.
 

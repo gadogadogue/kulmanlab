@@ -51,7 +51,7 @@ Un aperçu fantôme en direct des entités pivotées suit l'angle du curseur une
 
 ## Faire pivoter une copie
 
-Appuyez sur **C** à l'invite d'angle — avant de saisir un chiffre — pour basculer le mode **Copy**, le même modèle d'option en ligne que la commande ROTATE d'AutoCAD utilise. L'invite affiche l'état actuel sous la forme `[Copy=true]` / `[Copy=false]`, et appuyer à nouveau sur **C** le fait basculer en arrière.
+Appuyez sur **C** à l'invite d'angle — avant de saisir un chiffre — pour basculer le mode **Copy**, le même modèle d'option en ligne que l'option `Arc` de [Polyline](../polyline/) utilise. L'invite affiche l'état actuel sous la forme `[Copy=true]` / `[Copy=false]`, et appuyer à nouveau sur **C** le fait basculer en arrière.
 
 Avec Copy activé, appliquer la rotation laisse la sélection originale intacte à sa place et ajoute à la place de nouvelles copies pivotées de chaque entité sélectionnée. Avec Copy désactivé (par défaut), la sélection pivote sur place comme d'habitude.
 

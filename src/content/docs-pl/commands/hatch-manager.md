@@ -26,7 +26,7 @@ Kliknij dowolny wzór na liście (lub użyj `↑`/`↓`), aby zobaczyć jego pod
 ## Przesyłanie niestandardowego pliku wzoru
 
 1. Kliknij **Add .pat File** w stopce okna dialogowego.
-2. Wybierz plik `.pat` — standardowy format wzorów hatch programu AutoCAD. Pojedynczy plik często definiuje wiele nazwanych wzorów naraz; wszystkie pojawiają się jako osobne pozycje pogrupowane pod nazwą tego pliku.
+2. Wybierz plik `.pat` — standardowy format wzorów hatch. Pojedynczy plik często definiuje wiele nazwanych wzorów naraz; wszystkie pojawiają się jako osobne pozycje pogrupowane pod nazwą tego pliku.
 3. Przesłane pliki są zapisywane trwale w przeglądarce (IndexedDB), posortowane od najnowszych dodanych, i automatycznie wczytywane ponownie przy następnym otwarciu KulmanLab CAD.
 
 Przesłanie pliku definiującego wzór o tej samej nazwie co wbudowany **przesłania** domyślny — to obsługiwany sposób na uzyskanie oficjalnych definicji wzorów Autodesk: prześlij prawdziwy `acad.pat`, a jego wersje ANSI31 i innych standardowych nazw przejmą miejsce własnych przybliżeń KulmanLab.

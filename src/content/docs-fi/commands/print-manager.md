@@ -55,7 +55,7 @@ Blueprint toistaa perinteisen syanotyyppisen arkkitehtuuritulosteen ilmeen — v
 | Presentation | 300 |
 | Max | 600 |
 
-Korkeampi Quality tuottaa suuremman, terävämmän kuvan samassa fyysisessä koossa — viivanpaksuudet skaalautuvat resoluution mukana, joten viiva säilyttää saman *fyysisen* paksuuden paperilla millä tahansa Quality-asetuksella, sen sijaan että näyttäisi ohuemmalta DPI:n kasvaessa. Ainoa poikkeus on hiusviiva (viivanpaksuus `0`), jonka AutoCAD määrittelee "ohuimmaksi viivaksi, jonka tulostuslaite voi piirtää" — se pysyy kiinteänä 1 pikselin levyisenä jokaisella Quality-tasolla, aivan kuten se käyttäytyy elävällä piirtoalueella.
+Korkeampi Quality tuottaa suuremman, terävämmän kuvan samassa fyysisessä koossa — viivanpaksuudet skaalautuvat resoluution mukana, joten viiva säilyttää saman *fyysisen* paksuuden paperilla millä tahansa Quality-asetuksella, sen sijaan että näyttäisi ohuemmalta DPI:n kasvaessa. Ainoa poikkeus on hiusviiva (viivanpaksuus `0`), joka määritellään perinteisesti "ohuimmaksi viivaksi, jonka tulostuslaite voi piirtää" — se pysyy kiinteänä 1 pikselin levyisenä jokaisella Quality-tasolla, aivan kuten se käyttäytyy elävällä piirtoalueella.
 
 Quality-asetuksen muuttaminen renderöi esikatselun heti uudelleen, joten näet todellisen terävyyden (ja tiedostokoon kompromissin) ennen vientiä.
 

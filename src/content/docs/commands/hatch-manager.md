@@ -26,7 +26,7 @@ Click any pattern in the list (or use `↑`/`↓`) to preview it on the right �
 ## Uploading a custom pattern file
 
 1. Click **Add .pat File** in the dialog footer.
-2. Choose a `.pat` file — the standard AutoCAD hatch pattern format. A single file commonly defines many named patterns at once; all of them appear as separate entries grouped under that file's name.
+2. Choose a `.pat` file — the standard hatch pattern format. A single file commonly defines many named patterns at once; all of them appear as separate entries grouped under that file's name.
 3. Uploaded files are saved permanently in the browser (IndexedDB), sorted most-recently-added first, and reload automatically the next time you open KulmanLab CAD.
 
 Uploading a file that defines a pattern with the same name as a built-in one **shadows** the default — this is the supported way to get Autodesk's authoritative pattern definitions: upload a real `acad.pat` and its versions of ANSI31 and the other standard names take over from KulmanLab's own approximations.

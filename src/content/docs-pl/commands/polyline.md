@@ -31,7 +31,7 @@ Naciśnięcie **Escape** w dowolnym momencie odrzuca wszystkie umieszczone punkt
 
 ## Rysowanie segmentu łukowego
 
-Naciśnij **A** w dowolnym momencie po pierwszym wierzchołku, aby przełączyć tryb Arc — ten sam wzorzec opcji wbudowanej, którego używa polecenie PLINE w AutoCAD, odzwierciedlający opcję Copy polecenia Rotate. Monit pokazuje bieżący stan jako `[Arc=true]` / `[Arc=false]`; ponowne naciśnięcie **A** przełącza go z powrotem, dzięki czemu proste i łukowe segmenty można swobodnie mieszać w jednej polilinii.
+Naciśnij **A** w dowolnym momencie po pierwszym wierzchołku, aby przełączyć tryb Arc — ten sam wzorzec opcji wbudowanej, którego używa opcja Copy polecenia Rotate. Monit pokazuje bieżący stan jako `[Arc=true]` / `[Arc=false]`; ponowne naciśnięcie **A** przełącza go z powrotem, dzięki czemu proste i łukowe segmenty można swobodnie mieszać w jednej polilinii.
 
 Gdy tryb Arc jest włączony, każdy nowy segment jest łukiem stycznej kontynuacji — zaczyna się stycznie do tego, co było bezpośrednio przed nim (kierunek poprzedniego segmentu prostego lub styczna końcowa poprzedniego łuku); sam pierwszy segment domyślnie kieruje się na wschód, ponieważ nie ma niczego, do czego mógłby być styczny.
 

@@ -101,7 +101,7 @@ Een sleepvoorbeeld toont de rand als een gestippelde omtrek in plaats van een vo
 
 ## DXF — HATCH-entiteit
 
-Hatches worden **geïmporteerd** vanuit `HATCH`-entiteiten: KulmanLab leest de randgeometrie samen met de naam, schaal en hoek van het patroon (DXF-groepscodes 70/41/52) — het leest **niet** de eigen lijndefinities van het patroon die AutoCAD inline in het bestand schrijft. In plaats daarvan wordt de patroonnaam opgezocht in KulmanLabs eigen patroonbibliotheek (ingebouwde standaarden plus alles wat u heeft geüpload in [Hatch Manager](../hatch-manager/)). Een naam die niet in uw bibliotheek staat, valt terug op ANSI31 zodat de tekening nog steeds als gehatcht leest, en er wordt eenmalig een opmerking gelogd.
+Hatches worden **geïmporteerd** vanuit `HATCH`-entiteiten: KulmanLab leest de randgeometrie samen met de naam, schaal en hoek van het patroon (DXF-groepscodes 70/41/52) — het leest **niet** de eigen lijndefinities van het patroon die inline in het bestand worden geschreven. In plaats daarvan wordt de patroonnaam opgezocht in KulmanLabs eigen patroonbibliotheek (ingebouwde standaarden plus alles wat u heeft geüpload in [Hatch Manager](../hatch-manager/)). Een naam die niet in uw bibliotheek staat, valt terug op ANSI31 zodat de tekening nog steeds als gehatcht leest, en er wordt eenmalig een opmerking gelogd.
 
 Splinebegrensde lussen die door andere toepassingen zijn geschreven (DXF-randtype 4) worden nog niet gelezen.
 

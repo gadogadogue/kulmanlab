@@ -26,7 +26,7 @@ Danna kowane pattern a cikin jerin (ko yi amfani da `↑`/`↓`) don yi masa pre
 ## Loda Fayil na Pattern na Musamman
 
 1. Danna **Add .pat File** a kasan akwatin tattaunawa.
-2. Zabi fayil na `.pat` — tsarin AutoCAD na yau da kullum na pattern na hatch. Fayil daya sau da yawa yana bayyana pattern masu suna da yawa a lokaci daya; duka suna bayyana a matsayin shigarwar daban-daban da aka rarraba a karkashin sunan wannan fayil.
+2. Zabi fayil na `.pat` — tsarin yau da kullum na pattern na hatch. Fayil daya sau da yawa yana bayyana pattern masu suna da yawa a lokaci daya; duka suna bayyana a matsayin shigarwar daban-daban da aka rarraba a karkashin sunan wannan fayil.
 3. Ana ajiye fayilolin da aka loda a kai a cikin browser (IndexedDB), an tsara su daga na baya-bayan nan da aka kara, kuma ana sake lodawa su ta atomatik lokacin da ka sake bude KulmanLab CAD.
 
 Lodawa fayil da ke bayyana pattern da ke da suna daya da wanda aka gina **yana rufe** tsohon — wannan shine hanyar da ake goyon baya don samun ma'anonin pattern na hukuma na Autodesk: loda ainihin `acad.pat`, kuma sigoginsa na ANSI31 da sauran sunayen daidai suna daukar wurin kimantawar KulmanLab kansa.

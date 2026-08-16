@@ -1,7 +1,7 @@
 ---
 title: Align — Translater, pivoter, redimensionner par paire de points
 description: La commande Align repositionne les entités sélectionnées à l'aide d'une ou deux paires de points source/destination — combinant translation, rotation et une mise à l'échelle uniforme facultative en une seule opération. Fonctionne comme un Move + Rotate + Scale combinés.
-keywords: [commande align CAO, aligner entités CAO, translater pivoter redimensionner, alignement par paire de points, équivalent ALIGN AutoCAD, kulmanlab]
+keywords: [commande align CAO, aligner entités CAO, translater pivoter redimensionner, alignement par paire de points, kulmanlab]
 group: edit
 order: 6
 ---

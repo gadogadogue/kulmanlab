@@ -55,7 +55,7 @@ Menu lungsur **Quality** menetapkan DPI eksport dirender:
 | Presentation | 300 |
 | Max | 600 |
 
-Kualiti yang lebih tinggi menghasilkan imej yang lebih besar dan lebih tajam pada saiz fizikal yang sama — ketebalan garis berskala bersama resolusi, jadi garis mengekalkan ketebalan *fizikal* yang sama di atas kertas pada mana-mana tetapan Kualiti, bukannya kelihatan lebih nipis apabila DPI meningkat. Satu pengecualian ialah garis rerambut (ketebalan garis `0`), yang ditakrifkan oleh AutoCAD sebagai "garis paling nipis yang boleh dilukis oleh peranti output" — ia kekal pada lebar tetap 1 piksel pada mana-mana tahap Kualiti, sama seperti kelakuannya pada kanvas langsung.
+Kualiti yang lebih tinggi menghasilkan imej yang lebih besar dan lebih tajam pada saiz fizikal yang sama — ketebalan garis berskala bersama resolusi, jadi garis mengekalkan ketebalan *fizikal* yang sama di atas kertas pada mana-mana tetapan Kualiti, bukannya kelihatan lebih nipis apabila DPI meningkat. Satu pengecualian ialah garis rerambut (ketebalan garis `0`), yang ditakrifkan secara konvensional sebagai "garis paling nipis yang boleh dilukis oleh peranti output" — ia kekal pada lebar tetap 1 piksel pada mana-mana tahap Kualiti, sama seperti kelakuannya pada kanvas langsung.
 
 Menukar Kualiti serta-merta memberikan pratonton semula, jadi anda dapat melihat ketajaman sebenar (dan pertukaran saiz fail) sebelum mengeksport.
 

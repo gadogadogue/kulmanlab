@@ -101,7 +101,7 @@ En dra-forhåndsvisning viser grensen som et stiplet omriss i stedet for en soli
 
 ## DXF — HATCH-entitet
 
-Hatcher **importeres** fra `HATCH`-entiteter: KulmanLab leser grensegeometrien sammen med mønsterets navn, skalering og vinkel (DXF-gruppekoder 70/41/52) — den leser **ikke** mønsterets egne linjedefinisjoner som AutoCAD skriver innebygd i filen. I stedet slås mønsternavnet opp i KulmanLabs eget mønsterbibliotek (innebygde standarder pluss alt du har lastet opp i [Hatch Manager](../hatch-manager/)). Et navn som ikke finnes i biblioteket ditt, faller tilbake til ANSI31 slik at tegningen fortsatt leses som hatchet, og et notat logges én gang.
+Hatcher **importeres** fra `HATCH`-entiteter: KulmanLab leser grensegeometrien sammen med mønsterets navn, skalering og vinkel (DXF-gruppekoder 70/41/52) — den leser **ikke** mønsterets egne linjedefinisjoner som er innebygd i filen. I stedet slås mønsternavnet opp i KulmanLabs eget mønsterbibliotek (innebygde standarder pluss alt du har lastet opp i [Hatch Manager](../hatch-manager/)). Et navn som ikke finnes i biblioteket ditt, faller tilbake til ANSI31 slik at tegningen fortsatt leses som hatchet, og et notat logges én gang.
 
 Splinebegrensede løkker skrevet av andre applikasjoner (DXF-grensekanttype 4) leses ennå ikke.
 

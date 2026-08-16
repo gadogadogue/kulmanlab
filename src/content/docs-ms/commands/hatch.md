@@ -101,7 +101,7 @@ Pratonton seret memaparkan sempadan sebagai garis putus-putus bukannya isian pej
 
 ## DXF — Entiti HATCH
 
-Hatch **diimport** daripada entiti `HATCH`: KulmanLab membaca geometri sempadan bersama nama, skala, dan sudut corak (kod kumpulan DXF 70/41/52) — ia **tidak** membaca definisi garis corak itu sendiri yang ditulis AutoCAD secara inline dalam fail. Sebaliknya, nama corak dicari dalam pustaka corak KulmanLab sendiri (lalai terbina dalam ditambah apa sahaja yang anda muat naik dalam [Hatch Manager](../hatch-manager/)). Nama yang tiada dalam pustaka anda kembali kepada ANSI31 supaya lukisan masih dibaca sebagai hatched, dan nota dicatat sekali.
+Hatch **diimport** daripada entiti `HATCH`: KulmanLab membaca geometri sempadan bersama nama, skala, dan sudut corak (kod kumpulan DXF 70/41/52) — ia **tidak** membaca definisi garis corak itu sendiri yang ditulis secara inline dalam fail. Sebaliknya, nama corak dicari dalam pustaka corak KulmanLab sendiri (lalai terbina dalam ditambah apa sahaja yang anda muat naik dalam [Hatch Manager](../hatch-manager/)). Nama yang tiada dalam pustaka anda kembali kepada ANSI31 supaya lukisan masih dibaca sebagai hatched, dan nota dicatat sekali.
 
 Gelung bersempadan spline yang ditulis oleh aplikasi lain (jenis tepi sempadan DXF 4) belum dibaca lagi.
 

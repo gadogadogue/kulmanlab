@@ -26,7 +26,7 @@ Klik op een patroon in de lijst (of gebruik `↑`/`↓`) om het rechts te bekijk
 ## Een aangepast patroonbestand uploaden
 
 1. Klik op **Add .pat File** in de voettekst van het dialoogvenster.
-2. Kies een `.pat`-bestand — het standaard AutoCAD hatch-patroonformaat. Eén bestand definieert vaak veel benoemde patronen tegelijk; ze verschijnen allemaal als afzonderlijke items, gegroepeerd onder de naam van dat bestand.
+2. Kies een `.pat`-bestand — het standaard hatch-patroonformaat. Eén bestand definieert vaak veel benoemde patronen tegelijk; ze verschijnen allemaal als afzonderlijke items, gegroepeerd onder de naam van dat bestand.
 3. Geüploade bestanden worden permanent opgeslagen in de browser (IndexedDB), gesorteerd op meest recent toegevoegd eerst, en automatisch opnieuw geladen de volgende keer dat u KulmanLab CAD opent.
 
 Het uploaden van een bestand dat een patroon met dezelfde naam als een ingebouwd patroon definieert, **overschaduwt** de standaard — dit is de ondersteunde manier om Autodesks officiële patroondefinities te krijgen: upload een echte `acad.pat`, en de versies daarvan van ANSI31 en de andere standaardnamen nemen het over van KulmanLabs eigen benaderingen.

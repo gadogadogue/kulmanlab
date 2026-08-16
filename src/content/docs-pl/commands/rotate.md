@@ -51,7 +51,7 @@ Podgląd widma obróconychElementów podąża za kątem kursora po ustawieniu pu
 
 ## Obracanie kopii
 
-Naciśnij **C** przy monicie o kąt — przed wpisaniem jakiejkolwiek cyfry — aby przełączyć tryb **Copy**, ten sam wzorzec opcji wbudowanej, którego używa polecenie ROTATE w AutoCAD. Monit pokazuje bieżący stan jako `[Copy=true]` / `[Copy=false]`, a ponowne naciśnięcie **C** przełącza go z powrotem.
+Naciśnij **C** przy monicie o kąt — przed wpisaniem jakiejkolwiek cyfry — aby przełączyć tryb **Copy**, ten sam wzorzec opcji wbudowanej, którego używa opcja `Arc` w [Polyline](../polyline/). Monit pokazuje bieżący stan jako `[Copy=true]` / `[Copy=false]`, a ponowne naciśnięcie **C** przełącza go z powrotem.
 
 Gdy Copy jest włączone, zastosowanie obrotu pozostawia oryginalne zaznaczenie niezmienione na miejscu i zamiast tego dodaje nowe, obrócone kopie każdego zaznaczonego elementu. Gdy Copy jest wyłączone (domyślnie), zaznaczenie obraca się w miejscu jak zwykle.
 

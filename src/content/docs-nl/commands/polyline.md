@@ -31,7 +31,7 @@ Op elk moment op **Escape** drukken verwijdert alle geplaatste punten en sluit h
 
 ## Een boogsegment tekenen
 
-Druk op **A** op elk moment na het eerste hoekpunt om de Arc-modus te schakelen — hetzelfde inline-optiepatroon dat AutoCAD's PLINE-commando gebruikt, wat de Copy-optie van Rotate weerspiegelt. De prompt toont de huidige status als `[Arc=true]` / `[Arc=false]`; nogmaals op **A** drukken schakelt het terug, zodat rechte en boogsegmenten vrij kunnen worden gemengd in één polylijn.
+Druk op **A** op elk moment na het eerste hoekpunt om de Arc-modus te schakelen — hetzelfde inline-optiepatroon dat de Copy-optie van Rotate gebruikt. De prompt toont de huidige status als `[Arc=true]` / `[Arc=false]`; nogmaals op **A** drukken schakelt het terug, zodat rechte en boogsegmenten vrij kunnen worden gemengd in één polylijn.
 
 Wanneer de Arc-modus aan staat, is elk nieuw segment een tangentieel vervolgboog — deze begint tangentieel aan wat er net voor kwam (de richting van het vorige rechte segment, of de eindtangens van de vorige boog); het allereerste segment wijst standaard naar het oosten, omdat er niets is om tangentieel aan te zijn.
 

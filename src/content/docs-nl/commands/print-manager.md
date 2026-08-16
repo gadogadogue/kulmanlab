@@ -55,7 +55,7 @@ De **Quality**-vervolgkeuzelijst stelt de DPI in waarmee de export wordt gerende
 | Presentation | 300 |
 | Max | 600 |
 
-Hogere Quality levert een groter, scherper beeld op bij dezelfde fysieke grootte — lijndiktes schalen mee met de resolutie, zodat een lijn bij elke Quality-instelling dezelfde *fysieke* dikte op papier behoudt, in plaats van dunner te lijken naarmate de DPI toeneemt. De enige uitzondering is een haarlijn (lijndikte `0`), die AutoCAD definieert als "de dunste lijn die het uitvoerapparaat kan tekenen" — deze blijft bij elk Quality-niveau een vaste breedte van 1 pixel behouden, net zoals op het live canvas.
+Hogere Quality levert een groter, scherper beeld op bij dezelfde fysieke grootte — lijndiktes schalen mee met de resolutie, zodat een lijn bij elke Quality-instelling dezelfde *fysieke* dikte op papier behoudt, in plaats van dunner te lijken naarmate de DPI toeneemt. De enige uitzondering is een haarlijn (lijndikte `0`), die conventioneel wordt gedefinieerd als "de dunste lijn die het uitvoerapparaat kan tekenen" — deze blijft bij elk Quality-niveau een vaste breedte van 1 pixel behouden, net zoals op het live canvas.
 
 Het wijzigen van Quality rendert de voorvertoning direct opnieuw, zodat u de werkelijke scherpte (en de afweging in bestandsgrootte) ziet vóór het exporteren.
 

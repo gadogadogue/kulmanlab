@@ -31,7 +31,7 @@ Dannawa **Escape** a kowane lokaci yana kawar da dukkan tabon da aka sanya kuma 
 
 ## Zana sashin baka
 
-Danna **A** a kowane lokaci bayan tudu na farko don sauya yanayin Arc — irin salon zaɓi na cikin layi ɗaya wanda umarnin PLINE na AutoCAD ke amfani da shi, yana nuna zaɓin Copy na Rotate. Tambayar tana nuna yanayin yanzu a matsayin `[Arc=true]` / `[Arc=false]`; sake danna **A** yana mayar da shi, don haka sassa madaidaita da baka za su iya haɗuwa cikin walwala a cikin polyline ɗaya.
+Danna **A** a kowane lokaci bayan tudu na farko don sauya yanayin Arc — irin salon zaɓi na cikin layi ɗaya wanda zaɓin Copy na Rotate ke amfani da shi. Tambayar tana nuna yanayin yanzu a matsayin `[Arc=true]` / `[Arc=false]`; sake danna **A** yana mayar da shi, don haka sassa madaidaita da baka za su iya haɗuwa cikin walwala a cikin polyline ɗaya.
 
 Idan an kunna yanayin Arc, kowane sabon sashi baka ne mai ci gaba na taɓawa — yana farawa tare da taɓa abin da ya zo kai tsaye kafin shi (shugabancin sashin layin da ya gabata, ko taɓawar ƙarshe ta bakan da ya gabata); sashi na farko kaɗai yana fuskantar gabas ta tsohuwa, saboda babu abin da zai taɓa shi.
 

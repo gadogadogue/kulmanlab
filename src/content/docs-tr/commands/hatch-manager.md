@@ -26,7 +26,7 @@ Listedeki herhangi bir desene tıklayın (veya `↑`/`↓` kullanın) sağda ön
 ## Özel Bir Desen Dosyası Yükleme
 
 1. İletişim kutusunun alt bilgisinde **Add .pat File**'a tıklayın.
-2. Bir `.pat` dosyası seçin — standart AutoCAD hatch desen formatı. Tek bir dosya genellikle birçok adlı deseni aynı anda tanımlar; hepsi o dosyanın adı altında gruplandırılmış ayrı girişler olarak görünür.
+2. Bir `.pat` dosyası seçin — standart hatch desen formatı. Tek bir dosya genellikle birçok adlı deseni aynı anda tanımlar; hepsi o dosyanın adı altında gruplandırılmış ayrı girişler olarak görünür.
 3. Yüklenen dosyalar tarayıcıda (IndexedDB) kalıcı olarak saklanır, en son eklenen önce sıralanır ve bir sonraki KulmanLab CAD'i açtığınızda otomatik olarak yeniden yüklenir.
 
 Yerleşik bir desenle aynı ada sahip bir desen tanımlayan bir dosya yüklemek varsayılanın **önüne geçer** — bu, Autodesk'in yetkili desen tanımlarını almanın desteklenen yoludur: gerçek bir `acad.pat` yükleyin ve ANSI31'in ve diğer standart adların sürümleri KulmanLab'ın kendi yaklaşık değerlerinin yerini alır.

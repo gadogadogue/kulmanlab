@@ -101,7 +101,7 @@ En dra-förhandsvisning visar konturen som en streckad kontur i stället för en
 
 ## DXF — HATCH-entitet
 
-Hatchar **importeras** från `HATCH`-entiteter: KulmanLab läser konturgeometrin tillsammans med mönstrets namn, skala och vinkel (DXF-gruppkoder 70/41/52) — den läser **inte** mönstrets egna linjedefinitioner som AutoCAD skriver inbäddade i filen. Istället slås mönsternamnet upp i KulmanLabs eget mönsterbibliotek (inbyggda standarder plus allt du har laddat upp i [Hatch Manager](../hatch-manager/)). Ett namn som inte finns i ditt bibliotek faller tillbaka till ANSI31 så att ritningen fortfarande läses som hatchad, och en anteckning loggas en gång.
+Hatchar **importeras** från `HATCH`-entiteter: KulmanLab läser konturgeometrin tillsammans med mönstrets namn, skala och vinkel (DXF-gruppkoder 70/41/52) — den läser **inte** mönstrets egna linjedefinitioner som är inbäddade i filen. Istället slås mönsternamnet upp i KulmanLabs eget mönsterbibliotek (inbyggda standarder plus allt du har laddat upp i [Hatch Manager](../hatch-manager/)). Ett namn som inte finns i ditt bibliotek faller tillbaka till ANSI31 så att ritningen fortfarande läses som hatchad, och en anteckning loggas en gång.
 
 Splinbegränsade slingor skrivna av andra applikationer (DXF-gränskanttyp 4) läses ännu inte.
 

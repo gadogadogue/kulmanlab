@@ -55,7 +55,7 @@ Das Dropdown **Qualität** legt die DPI fest, mit der der Export gerendert wird:
 | Presentation | 300 |
 | Max | 600 |
 
-Eine höhere Qualität erzeugt ein größeres, schärferes Bild bei gleicher physischer Größe — Linienstärken skalieren zusammen mit der Auflösung, sodass eine Linie bei jeder Qualitätsstufe die gleiche *physische* Dicke auf dem Papier behält, statt bei steigender DPI dünner zu wirken. Die einzige Ausnahme ist eine Haarlinie (Linienstärke `0`), die AutoCAD als "die dünnste Linie, die das Ausgabegerät zeichnen kann" definiert — sie behält bei jeder Qualitätsstufe eine feste Breite von 1 Pixel, genau wie auf der Live-Zeichenfläche.
+Eine höhere Qualität erzeugt ein größeres, schärferes Bild bei gleicher physischer Größe — Linienstärken skalieren zusammen mit der Auflösung, sodass eine Linie bei jeder Qualitätsstufe die gleiche *physische* Dicke auf dem Papier behält, statt bei steigender DPI dünner zu wirken. Die einzige Ausnahme ist eine Haarlinie (Linienstärke `0`), die herkömmlich als "die dünnste Linie, die das Ausgabegerät zeichnen kann" definiert wird — sie behält bei jeder Qualitätsstufe eine feste Breite von 1 Pixel, genau wie auf der Live-Zeichenfläche.
 
 Eine Änderung der Qualität rendert die Vorschau sofort neu, sodass Sie die tatsächliche Schärfe (und den Kompromiss bei der Dateigröße) vor dem Export sehen.
 

@@ -101,7 +101,7 @@ Una vista previa de arrastre muestra el contorno como un contorno discontinuo en
 
 ## DXF — entidad HATCH
 
-Los hatch se **importan** desde entidades `HATCH`: KulmanLab lee la geometría del contorno junto con el nombre, la escala y el ángulo del patrón (códigos de grupo DXF 70/41/52) — **no** lee las propias definiciones de líneas del patrón que AutoCAD escribe insertadas en el archivo. En su lugar, el nombre del patrón se busca en la propia biblioteca de patrones de KulmanLab (predeterminados incorporados más lo que hayas subido en [Hatch Manager](../hatch-manager/)). Un nombre que no esté en tu biblioteca recurre a ANSI31 para que el dibujo se siga leyendo como hatched, y se registra un aviso una sola vez.
+Los hatch se **importan** desde entidades `HATCH`: KulmanLab lee la geometría del contorno junto con el nombre, la escala y el ángulo del patrón (códigos de grupo DXF 70/41/52) — **no** lee las propias definiciones de líneas del patrón que se insertan en el archivo. En su lugar, el nombre del patrón se busca en la propia biblioteca de patrones de KulmanLab (predeterminados incorporados más lo que hayas subido en [Hatch Manager](../hatch-manager/)). Un nombre que no esté en tu biblioteca recurre a ANSI31 para que el dibujo se siga leyendo como hatched, y se registra un aviso una sola vez.
 
 Los bucles delimitados por spline escritos por otras aplicaciones (tipo de arista de contorno DXF 4) todavía no se leen.
 

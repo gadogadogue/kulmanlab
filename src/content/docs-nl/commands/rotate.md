@@ -51,7 +51,7 @@ Een live spookpreview van de geroteerde entiteiten volgt de cursorhoek nadat het
 
 ## Een kopie roteren
 
-Druk op **C** bij de hoekprompt — voordat u cijfers typt — om de **Copy**-modus te schakelen, hetzelfde inline-optiepatroon dat AutoCAD's ROTATE-commando gebruikt. De prompt toont de huidige status als `[Copy=true]` / `[Copy=false]`, en nogmaals op **C** drukken schakelt het terug.
+Druk op **C** bij de hoekprompt — voordat u cijfers typt — om de **Copy**-modus te schakelen, hetzelfde inline-optiepatroon dat [Polyline](../polyline/)'s Arc-optie gebruikt. De prompt toont de huidige status als `[Copy=true]` / `[Copy=false]`, en nogmaals op **C** drukken schakelt het terug.
 
 Met Copy aan blijft de oorspronkelijke selectie ongewijzigd op zijn plaats staan bij het toepassen van de rotatie, en worden er in plaats daarvan nieuwe, geroteerde kopieën van elke geselecteerde entiteit toegevoegd. Met Copy uit (standaard) roteert de selectie zoals gebruikelijk op zijn plaats.
 

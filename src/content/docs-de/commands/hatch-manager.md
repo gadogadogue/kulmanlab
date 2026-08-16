@@ -26,7 +26,7 @@ Klicken Sie auf ein beliebiges Muster in der Liste (oder verwenden Sie `↑`/`�
 ## Eine benutzerdefinierte Musterdatei hochladen
 
 1. Klicken Sie in der Fußzeile des Dialogs auf **Add .pat File**.
-2. Wählen Sie eine `.pat`-Datei — das übliche AutoCAD-Hatch-Musterformat. Eine einzelne Datei definiert oft viele benannte Muster auf einmal; alle erscheinen als separate Einträge, gruppiert unter dem Namen dieser Datei.
+2. Wählen Sie eine `.pat`-Datei — das übliche Hatch-Musterformat. Eine einzelne Datei definiert oft viele benannte Muster auf einmal; alle erscheinen als separate Einträge, gruppiert unter dem Namen dieser Datei.
 3. Hochgeladene Dateien werden dauerhaft im Browser (IndexedDB) gespeichert, sortiert nach zuletzt hinzugefügt zuerst, und werden beim nächsten Öffnen von KulmanLab CAD automatisch neu geladen.
 
 Das Hochladen einer Datei, die ein Muster mit demselben Namen wie ein eingebautes definiert, **überlagert** den Standard — dies ist der unterstützte Weg, um Autodesks maßgebliche Musterdefinitionen zu erhalten: Laden Sie eine echte `acad.pat` hoch, und ihre Versionen von ANSI31 und den anderen Standardnamen übernehmen von KulmanLabs eigenen Näherungen.

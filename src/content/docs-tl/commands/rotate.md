@@ -51,7 +51,7 @@ Sinusundan ng live ghost preview ng na-rotate na entity ang angle ng cursor pagk
 
 ## Pag-ikot ng kopya
 
-Pindutin ang **C** sa angle prompt — bago mag-type ng anumang digit — para i-toggle ang **Copy** mode, ang parehong inline-option pattern na ginagamit ng ROTATE command ng AutoCAD. Ipinapakita ng prompt ang kasalukuyang estado bilang `[Copy=true]` / `[Copy=false]`, at ang muling pagpindot ng **C** ay ibinabalik ito.
+Pindutin ang **C** sa angle prompt — bago mag-type ng anumang digit — para i-toggle ang **Copy** mode, ang parehong inline-option pattern na ginagamit ng Arc option ng [Polyline](../polyline/). Ipinapakita ng prompt ang kasalukuyang estado bilang `[Copy=true]` / `[Copy=false]`, at ang muling pagpindot ng **C** ay ibinabalik ito.
 
 Kapag naka-on ang Copy, ang paglalapat ng rotation ay nag-iiwan sa orihinal na seleksyon na hindi nagagalaw sa lugar at sa halip ay nagdaragdag ng bago, umikot na mga kopya ng bawat napiling entity. Kapag naka-off ang Copy (default), umiikot ang seleksyon sa lugar tulad ng dati.
 

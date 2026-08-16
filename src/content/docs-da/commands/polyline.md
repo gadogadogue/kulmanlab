@@ -31,7 +31,7 @@ At trykke **Escape** når som helst kasserer alle placerede punkter og afslutter
 
 ## Tegne et buesegment
 
-Tryk **A** når som helst efter det første hjørne for at skifte Arc-tilstand — samme inline-indstillingsmønster som AutoCADs PLINE-kommando bruger, hvilket afspejler Copy-indstillingen for Rotate. Prompten viser den aktuelle tilstand som `[Arc=true]` / `[Arc=false]`; at trykke **A** igen skifter den tilbage, så lige og buesegmenter frit kan blandes i én polylinje.
+Tryk **A** når som helst efter det første hjørne for at skifte Arc-tilstand — samme inline-indstillingsmønster som Copy-indstillingen for Rotate bruger. Prompten viser den aktuelle tilstand som `[Arc=true]` / `[Arc=false]`; at trykke **A** igen skifter den tilbage, så lige og buesegmenter frit kan blandes i én polylinje.
 
 Når Arc-tilstand er slået til, er hvert nyt segment en tangential fortsættelsesbue — den starter tangentielt til det, der kom lige før den (retningen på det forrige lige segment, eller sluttangenten på den forrige bue); det allerførste segment peger som standard mod øst, da det ikke har noget at være tangentiel til.
 

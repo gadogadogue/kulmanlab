@@ -101,7 +101,7 @@ Vetoesikatselu näyttää rajan katkoviivakonttuurina täytön sijaan kun vedät
 
 ## DXF — HATCH-entiteetti
 
-Hatchit **tuodaan** `HATCH`-entiteeteistä: KulmanLab lukee rajageometrian sekä kuvion nimen, skaalan ja kulman (DXF-ryhmäkoodit 70/41/52) — se **ei** lue kuvion omia viivamäärityksiä, jotka AutoCAD kirjoittaa tiedostoon upotettuna. Sen sijaan kuvion nimi haetaan KulmanLabin omasta kuviokirjastosta (sisäänrakennetut oletukset plus mitä tahansa, mitä olet ladannut [Hatch Manager](../hatch-manager/)issa). Nimi, jota ei ole kirjastossasi, palautuu ANSI31:een, jotta piirustus näyttää edelleen hatchatulta, ja huomautus kirjataan kerran.
+Hatchit **tuodaan** `HATCH`-entiteeteistä: KulmanLab lukee rajageometrian sekä kuvion nimen, skaalan ja kulman (DXF-ryhmäkoodit 70/41/52) — se **ei** lue kuvion omia viivamäärityksiä, jotka on upotettu tiedostoon. Sen sijaan kuvion nimi haetaan KulmanLabin omasta kuviokirjastosta (sisäänrakennetut oletukset plus mitä tahansa, mitä olet ladannut [Hatch Manager](../hatch-manager/)issa). Nimi, jota ei ole kirjastossasi, palautuu ANSI31:een, jotta piirustus näyttää edelleen hatchatulta, ja huomautus kirjataan kerran.
 
 Muiden sovellusten kirjoittamia spline-rajattuja silmukoita (DXF-rajareunatyyppi 4) ei vielä lueta.
 

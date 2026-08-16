@@ -51,7 +51,7 @@ Kierrettyjen entiteettien elävä haamuesikatselu seuraa kohdistimen kulmaa peru
 
 ## Kopion kierto
 
-Paina **C** kulmakehotteessa — ennen kuin kirjoitat mitään numeroita — vaihtaaksesi **Copy**-tilan, saman sisäisen vaihtoehtomallin, jota AutoCADin ROTATE-komento käyttää. Kehote näyttää nykyisen tilan muodossa `[Copy=true]` / `[Copy=false]`, ja **C**:n painaminen uudelleen vaihtaa sen takaisin.
+Paina **C** kulmakehotteessa — ennen kuin kirjoitat mitään numeroita — vaihtaaksesi **Copy**-tilan, saman sisäisen vaihtoehtomallin, jota [Polyline](../polyline/)n Arc-vaihtoehto käyttää. Kehote näyttää nykyisen tilan muodossa `[Copy=true]` / `[Copy=false]`, ja **C**:n painaminen uudelleen vaihtaa sen takaisin.
 
 Kun Copy on päällä, kierron soveltaminen jättää alkuperäisen valinnan koskemattomaksi paikoilleen ja lisää sen sijaan uusia, kierrettyjä kopioita jokaisesta valitusta entiteetistä. Kun Copy on pois päältä (oletus), valinta kiertyy paikallaan tavalliseen tapaan.
 

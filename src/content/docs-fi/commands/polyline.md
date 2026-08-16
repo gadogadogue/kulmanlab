@@ -31,7 +31,7 @@ Polylinjat voivat olla myös **suljettuja**: [Rectangle](../rectangle/)-komento 
 
 ## Kaarisegmentin piirtäminen
 
-Paina **A** milloin tahansa ensimmäisen kärjen jälkeen vaihtaaksesi Arc-tilan — sama sisäinen vaihtoehtomalli, jota AutoCADin PLINE-komento käyttää, mikä heijastaa Rotaten Copy-vaihtoehtoa. Kehote näyttää nykyisen tilan muodossa `[Arc=true]` / `[Arc=false]`; **A**:n painaminen uudelleen vaihtaa sen takaisin, joten suoria ja kaarisegmenttejä voi vapaasti sekoittaa yhdessä polylinjassa.
+Paina **A** milloin tahansa ensimmäisen kärjen jälkeen vaihtaaksesi Arc-tilan — sama sisäinen vaihtoehtomalli, jota Rotaten Copy-vaihtoehto käyttää. Kehote näyttää nykyisen tilan muodossa `[Arc=true]` / `[Arc=false]`; **A**:n painaminen uudelleen vaihtaa sen takaisin, joten suoria ja kaarisegmenttejä voi vapaasti sekoittaa yhdessä polylinjassa.
 
 Kun Arc-tila on päällä, jokainen uusi segmentti on tangentiaalinen jatkokaari — se alkaa tangentiaalisesti siitä, mikä tuli juuri ennen sitä (edellisen suoran segmentin suunta tai edellisen kaaren päätangentti); aivan ensimmäinen segmentti osoittaa oletuksena itään, koska sillä ei ole mitään, mihin olla tangentiaalinen.
 

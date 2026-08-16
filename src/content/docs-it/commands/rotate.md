@@ -51,7 +51,7 @@ Un'anteprima fantasma live delle entità ruotate segue l'angolo del cursore dopo
 
 ## Ruotare una copia
 
-Premi **C** al prompt dell'angolo — prima di digitare qualsiasi cifra — per attivare/disattivare la modalità **Copy**, lo stesso modello di opzione inline usato dal comando ROTATE di AutoCAD. Il prompt mostra lo stato attuale come `[Copy=true]` / `[Copy=false]`, e premere di nuovo **C** lo inverte.
+Premi **C** al prompt dell'angolo — prima di digitare qualsiasi cifra — per attivare/disattivare la modalità **Copy**, lo stesso modello di opzione inline usato dall'opzione `Arc` di [Polyline](../polyline/). Il prompt mostra lo stato attuale come `[Copy=true]` / `[Copy=false]`, e premere di nuovo **C** lo inverte.
 
 Con Copy attivo, applicare la rotazione lascia la selezione originale intatta al suo posto e aggiunge invece nuove copie ruotate di ogni entità selezionata. Con Copy disattivo (predefinito), la selezione ruota sul posto come al solito.
 

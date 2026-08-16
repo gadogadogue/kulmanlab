@@ -101,7 +101,7 @@ Muhtasari wa kuvuta huonyesha mpaka kama mstari uliokatika badala ya ujazaji tha
 
 ## DXF — Kiumbe cha HATCH
 
-Hatch **huingizwa** kutoka kwa viumbe vya `HATCH`: KulmanLab husoma jiometri ya mpaka pamoja na jina, kipimo, na pembe ya muundo (misimbo ya kikundi cha DXF 70/41/52) — **haisomi** ufafanuzi wa mistari ya muundo wenyewe ambao AutoCAD huandika ndani ya faili. Badala yake, jina la muundo hutafutwa katika maktaba ya muundo ya KulmanLab yenyewe (chaguo-msingi zilizojengwa ndani pamoja na chochote ulichopakia katika [Hatch Manager](../hatch-manager/)). Jina ambalo halipo kwenye maktaba yako hurudi kwa ANSI31 ili mchoro uendelee kusomwa kama umewekwa hatch, na kumbukumbu huandikwa mara moja.
+Hatch **huingizwa** kutoka kwa viumbe vya `HATCH`: KulmanLab husoma jiometri ya mpaka pamoja na jina, kipimo, na pembe ya muundo (misimbo ya kikundi cha DXF 70/41/52) — **haisomi** ufafanuzi wa mistari ya muundo wenyewe ambao huandikwa ndani ya faili. Badala yake, jina la muundo hutafutwa katika maktaba ya muundo ya KulmanLab yenyewe (chaguo-msingi zilizojengwa ndani pamoja na chochote ulichopakia katika [Hatch Manager](../hatch-manager/)). Jina ambalo halipo kwenye maktaba yako hurudi kwa ANSI31 ili mchoro uendelee kusomwa kama umewekwa hatch, na kumbukumbu huandikwa mara moja.
 
 Vitanzi vilivyofungwa na spline vilivyoandikwa na programu nyingine (aina ya ukingo wa mpaka wa DXF 4) bado havisomwi.
 

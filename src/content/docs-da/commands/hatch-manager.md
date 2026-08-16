@@ -26,7 +26,7 @@ Klik på et vilkårligt mønster i listen (eller brug `↑`/`↓`) for at forhå
 ## Uploade en brugerdefineret mønsterfil
 
 1. Klik på **Add .pat File** i dialogens sidefod.
-2. Vælg en `.pat`-fil — det almindelige AutoCAD hatch-mønsterformat. En enkelt fil definerer ofte mange navngivne mønstre på én gang; de vises alle som separate poster grupperet under den fils navn.
+2. Vælg en `.pat`-fil — det almindelige hatch-mønsterformat. En enkelt fil definerer ofte mange navngivne mønstre på én gang; de vises alle som separate poster grupperet under den fils navn.
 3. Uploadede filer gemmes permanent i browseren (IndexedDB), sorteret senest tilføjet først, og genindlæses automatisk næste gang du åbner KulmanLab CAD.
 
 At uploade en fil, der definerer et mønster med samme navn som et indbygget, **overskygger** standarden — dette er den understøttede måde at få Autodesks autoritative mønsterdefinitioner: upload en rigtig `acad.pat`, og dens versioner af ANSI31 og de andre standardnavne overtager fra KulmanLabs egne tilnærmelser.

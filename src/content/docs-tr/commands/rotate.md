@@ -51,7 +51,7 @@ Temel noktayı ayarladıktan sonra döndürülen nesnelerin canlı önizleme hay
 
 ## Bir kopyayı döndürme
 
-**Copy** modunu değiştirmek için açı isteminde — herhangi bir rakam yazmadan önce — **C** tuşuna basın; bu, AutoCAD'in ROTATE komutunun kullandığı aynı satır içi seçenek desenidir. İstem geçerli durumu `[Copy=true]` / `[Copy=false]` olarak gösterir ve **C** tuşuna tekrar basmak onu geri çevirir.
+**Copy** modunu değiştirmek için açı isteminde — herhangi bir rakam yazmadan önce — **C** tuşuna basın; bu, [Polyline](../polyline/)'ın Arc seçeneğinin kullandığı aynı satır içi seçenek desenidir. İstem geçerli durumu `[Copy=true]` / `[Copy=false]` olarak gösterir ve **C** tuşuna tekrar basmak onu geri çevirir.
 
 Copy açıkken, döndürmeyi uygulamak orijinal seçimi olduğu yerde değiştirmeden bırakır ve bunun yerine seçilen her nesnenin döndürülmüş yeni kopyalarını ekler. Copy kapalıyken (varsayılan), seçim her zamanki gibi yerinde döner.
 

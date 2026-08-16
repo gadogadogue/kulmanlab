@@ -55,7 +55,7 @@ Il menu a tendina **Quality** imposta il DPI a cui viene renderizzata l'esportaz
 | Presentation | 300 |
 | Max | 600 |
 
-Una Qualità più alta produce un'immagine più grande e nitida alla stessa dimensione fisica — gli spessori delle linee si scalano insieme alla risoluzione, quindi una linea mantiene lo stesso spessore *fisico* su carta a qualsiasi impostazione di Qualità, invece di apparire più sottile all'aumentare del DPI. L'unica eccezione è una linea sottile (spessore `0`), che AutoCAD definisce come "la linea più sottile che il dispositivo di output può disegnare" — resta a una larghezza fissa di 1 pixel a qualsiasi livello di Qualità, come si comporta sul canvas live.
+Una Qualità più alta produce un'immagine più grande e nitida alla stessa dimensione fisica — gli spessori delle linee si scalano insieme alla risoluzione, quindi una linea mantiene lo stesso spessore *fisico* su carta a qualsiasi impostazione di Qualità, invece di apparire più sottile all'aumentare del DPI. L'unica eccezione è una linea sottile (spessore `0`), convenzionalmente definita come "la linea più sottile che il dispositivo di output può disegnare" — resta a una larghezza fissa di 1 pixel a qualsiasi livello di Qualità, come si comporta sul canvas live.
 
 Cambiare la Qualità ri-renderizza immediatamente l'anteprima, così vedi la nitidezza reale (e il compromesso sulla dimensione del file) prima di esportare.
 
