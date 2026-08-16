@@ -108,7 +108,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 | [Import](./commands/import/) | DXF- oder JSON-Zeichnungsdatei öffnen |
 | [New File](./commands/new-file/) | Neue leere Zeichnung beginnen |
 | [File Manager](./commands/file-manager/) | Im Browser gespeicherte Zeichnungen durchsuchen, umbenennen oder löschen |
-| [Print](./commands/print/) | Zeichnungsbereich als Bild oder PDF exportieren |
+| [Print Manager](./commands/print-manager/) | Zeichnungsbereich als Bild oder PDF exportieren |
 | [Export](./commands/export/) | Zeichnung als DXF oder JSON herunterladen |
 | [WipeStorage](./commands/wipestorage/) | Alle Zeichnungen aus dem Browser-Speicher löschen |
 

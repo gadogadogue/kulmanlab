@@ -108,7 +108,7 @@ order: 1
 | [Import](./commands/import/) | DXF veya JSON çizim dosyası açar |
 | [New File](./commands/new-file/) | Yeni boş çizim başlatır |
 | [File Manager](./commands/file-manager/) | Tarayıcınızda kayıtlı çizimlere göz atın, adlarını değiştirin veya silin |
-| [Print](./commands/print/) | Çizim alanını resim veya PDF olarak dışa aktarır |
+| [Print Manager](./commands/print-manager/) | Çizim alanını resim veya PDF olarak dışa aktarır |
 | [Export](./commands/export/) | Çizimi DXF veya JSON formatında indirir |
 | [Wipe Storage](./commands/wipestorage/) | Tarayıcı deposundan tüm çizimleri temizler |
 

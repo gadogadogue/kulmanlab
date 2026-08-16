@@ -108,7 +108,7 @@ order: 1
 | [Import](./commands/import/) | Ανοίγει αρχείο DXF ή JSON |
 | [New File](./commands/new-file/) | Ξεκινά ένα νέο κενό σχέδιο |
 | [File Manager](./commands/file-manager/) | Περιήγηση, μετονομασία ή διαγραφή σχεδίων αποθηκευμένων στο πρόγραμμα περιήγησης |
-| [Print](./commands/print/) | Εξάγει περιοχή σχεδίου ως εικόνα ή PDF |
+| [Print Manager](./commands/print-manager/) | Εξάγει περιοχή σχεδίου ως εικόνα ή PDF |
 | [Export](./commands/export/) | Κατεβάζει το σχέδιο ως DXF ή JSON |
 | [WipeStorage](./commands/wipestorage/) | Διαγράφει όλα τα σχέδια από την αποθήκευση του browser |
 

@@ -140,7 +140,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Click <strong>Print</strong> — the file downloads to your computer.',
         ],
         links: [
-          { label: 'Print command', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -318,7 +318,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Klicken Sie auf <strong>Print</strong> — die Datei wird auf Ihren Computer heruntergeladen.',
         ],
         links: [
-          { label: 'Print-Befehl', slug: 'commands/print' },
+          { label: 'Druck-Manager', slug: 'commands/print-manager' },
           { label: 'Page Manager', slug: 'commands/page-manager' },
         ],
       },
@@ -495,7 +495,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Haz clic en <strong>Print</strong>: el archivo se descarga a tu equipo.',
         ],
         links: [
-          { label: 'Comando Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -672,7 +672,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Cliquez sur <strong>Print</strong> — le fichier se télécharge sur votre ordinateur.',
         ],
         links: [
-          { label: 'Commande Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -849,7 +849,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Fai clic su <strong>Print</strong>: il file viene scaricato sul tuo computer.',
         ],
         links: [
-          { label: 'Comando Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -1026,7 +1026,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Clique em <strong>Print</strong> — o arquivo é baixado para o seu computador.',
         ],
         links: [
-          { label: 'Comando Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -1203,7 +1203,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Натисніть <strong>Print</strong> — файл завантажиться на ваш комп\'ютер.',
         ],
         links: [
-          { label: 'Команда Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -1380,7 +1380,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '<strong>Print</strong>\'e tıklayın — dosya bilgisayarınıza indirilir.',
         ],
         links: [
-          { label: 'Print komutu', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -1557,7 +1557,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '点击 <strong>Print</strong>——文件将下载到你的电脑。',
         ],
         links: [
-          { label: 'Print 命令', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -1734,7 +1734,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '<strong>Print</strong> क्लिक करें — फ़ाइल आपके कंप्यूटर में डाउनलोड हो जाती है।',
         ],
         links: [
-          { label: 'Print कमांड', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -1911,7 +1911,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'انقر <strong>Print</strong> — يُنزَّل الملف إلى حاسوبك.',
         ],
         links: [
-          { label: 'أمر Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -2088,7 +2088,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Klik <strong>Print</strong> — file terunduh ke komputer Anda.',
         ],
         links: [
-          { label: 'Perintah Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -2265,7 +2265,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '<strong>Print</strong> をクリック — ファイルがコンピューターにダウンロードされます。',
         ],
         links: [
-          { label: 'Print コマンド', slug: 'commands/print' },
+          { label: '印刷マネージャー', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -2442,7 +2442,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Kliknij <strong>Print</strong> — plik pobierze się na Twój komputer.',
         ],
         links: [
-          { label: 'Polecenie Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -2619,7 +2619,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '<strong>Print</strong>를 클릭하면 파일이 컴퓨터로 다운로드됩니다.',
         ],
         links: [
-          { label: 'Print 명령', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -2796,7 +2796,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Nhấp <strong>Print</strong> — tệp được tải về máy tính của bạn.',
         ],
         links: [
-          { label: 'Lệnh Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -2973,7 +2973,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'คลิก <strong>Print</strong> — ไฟล์จะดาวน์โหลดลงคอมพิวเตอร์ของคุณ',
         ],
         links: [
-          { label: 'คำสั่ง Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -3150,7 +3150,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Klik <strong>Print</strong> — fail dimuat turun ke komputer anda.',
         ],
         links: [
-          { label: 'Perintah Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -3327,7 +3327,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '<strong>Print</strong>-এ ক্লিক করুন — ফাইলটি আপনার কম্পিউটারে ডাউনলোড হবে।',
         ],
         links: [
-          { label: 'Print কমান্ড', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -3504,7 +3504,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Bofya <strong>Print</strong> — faili hupakuliwa kwenye kompyuta yako.',
         ],
         links: [
-          { label: 'Amri ya Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -3681,7 +3681,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '<strong>Print</strong> دبائیں — فائل آپ کے کمپیوٹر میں ڈاؤن لوڈ ہو جائے گی۔',
         ],
         links: [
-          { label: 'Print کمانڈ', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -3858,7 +3858,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Κάντε κλικ στο <strong>Print</strong> — το αρχείο κατεβαίνει στον υπολογιστή σας.',
         ],
         links: [
-          { label: 'Εντολή Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -4035,7 +4035,7 @@ export const howtoContent: Record<string, HowToContent> = {
           '<strong>Print</strong> ਦਬਾਓ — ਫਾਈਲ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਵਿੱਚ ਡਾਊਨਲੋਡ ਹੋ ਜਾਵੇਗੀ।',
         ],
         links: [
-          { label: 'Print ਕਮਾਂਡ', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -4212,7 +4212,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Klicka på <strong>Print</strong> — filen laddas ner till din dator.',
         ],
         links: [
-          { label: 'Kommandot Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -4389,7 +4389,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'I-click ang <strong>Print</strong> — mada-download ang file sa iyong computer.',
         ],
         links: [
-          { label: 'Command na Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -4566,7 +4566,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Klik op <strong>Print</strong> — het bestand wordt naar uw computer gedownload.',
         ],
         links: [
-          { label: 'Print-commando', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -4743,7 +4743,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'לחצו <strong>Print</strong> — הקובץ יורד למחשב שלכם.',
         ],
         links: [
-          { label: 'פקודת Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'מנהל עמוד', slug: 'commands/page-manager' },
         ],
       },
@@ -4920,7 +4920,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Danna <strong>Print</strong> — fayil zai sauka a kwamfutarka.',
         ],
         links: [
-          { label: 'Umarnin Print', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page Manager', slug: 'commands/page-manager' },
         ],
       },
@@ -5097,7 +5097,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Klikk <strong>Print</strong> — filen lastes ned til datamaskinen din.',
         ],
         links: [
-          { label: 'Print-kommando', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -5274,7 +5274,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Klik <strong>Print</strong> — filen downloades til din computer.',
         ],
         links: [
-          { label: 'Print-kommando', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },
@@ -5451,7 +5451,7 @@ export const howtoContent: Record<string, HowToContent> = {
           'Napsauta <strong>Print</strong> — tiedosto latautuu tietokoneellesi.',
         ],
         links: [
-          { label: 'Print-komento', slug: 'commands/print' },
+          { label: 'Print Manager', slug: 'commands/print-manager' },
           { label: 'Page manager', slug: 'commands/page-manager' },
         ],
       },

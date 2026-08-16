@@ -108,7 +108,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 | [Import](./commands/import/) | Mở tệp bản vẽ DXF hoặc JSON |
 | [New File](./commands/new-file/) | Bắt đầu bản vẽ trống mới |
 | [File Manager](./commands/file-manager/) | Duyệt, đổi tên, hoặc xóa bản vẽ đã lưu trong trình duyệt của bạn |
-| [Print](./commands/print/) | Xuất vùng bản vẽ dưới dạng hình ảnh hoặc PDF |
+| [Print Manager](./commands/print-manager/) | Xuất vùng bản vẽ dưới dạng hình ảnh hoặc PDF |
 | [Export](./commands/export/) | Tải xuống bản vẽ dưới dạng DXF hoặc JSON |
 | [WipeStorage](./commands/wipestorage/) | Xóa tất cả bản vẽ khỏi bộ nhớ trình duyệt |
 

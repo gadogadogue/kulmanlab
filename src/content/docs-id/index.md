@@ -108,7 +108,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 | [Import](./commands/import/) | Membuka file gambar DXF atau JSON |
 | [New File](./commands/new-file/) | Memulai gambar kosong yang baru |
 | [File Manager](./commands/file-manager/) | Menjelajahi, mengganti nama, atau menghapus gambar yang tersimpan di browser Anda |
-| [Print](./commands/print/) | Mengekspor area gambar sebagai gambar atau PDF |
+| [Print Manager](./commands/print-manager/) | Mengekspor area gambar sebagai gambar atau PDF |
 | [Export](./commands/export/) | Mengunduh gambar sebagai DXF atau JSON |
 | [WipeStorage](./commands/wipestorage/) | Menghapus semua gambar dari penyimpanan browser |
 

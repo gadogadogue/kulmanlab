@@ -108,7 +108,7 @@ Välkommen till **KulmanLab CAD**-kommandoreferensen. [KulmanLab CAD](https://ku
 | [Import](./commands/import/) | Öppna en DXF- eller JSON-ritfil |
 | [New File](./commands/new-file/) | Starta en ny tom ritning |
 | [File Manager](./commands/file-manager/) | Bläddra bland, byt namn på eller ta bort ritningar sparade i webbläsaren |
-| [Print](./commands/print/) | Exportera ett ritningsområde som en bild eller PDF |
+| [Print Manager](./commands/print-manager/) | Exportera ett ritningsområde som en bild eller PDF |
 | [Export](./commands/export/) | Ladda ner ritningen som DXF eller JSON |
 | [WipeStorage](./commands/wipestorage/) | Rensa alla ritningar från webbläsarens lagring |
 

@@ -108,7 +108,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 | [Import](./commands/import/) | Buksan ang DXF o JSON drawing file |
 | [New File](./commands/new-file/) | Simulan ang bagong blangkong drawing |
 | [File Manager](./commands/file-manager/) | Mag-browse, magpalit ng pangalan, o magbura ng mga drawing na naka-save sa iyong browser |
-| [Print](./commands/print/) | I-export ang drawing area bilang image o PDF |
+| [Print Manager](./commands/print-manager/) | I-export ang drawing area bilang image o PDF |
 | [Export](./commands/export/) | I-download ang drawing bilang DXF o JSON |
 | [WipeStorage](./commands/wipestorage/) | Burahin ang lahat ng drawing mula sa browser storage |
 

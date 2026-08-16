@@ -285,7 +285,7 @@ Use **Tab** to cycle through autocomplete suggestions. Use the **Up/Down** arrow
 - **Properties Panel** — view and edit properties of the selected entity
 - **Hatch Manager** — browse the hatch pattern library and upload custom `.pat` pattern files
 - **File Manager** — open, save, and manage drawings stored locally
-- **Print Manager** — configure page size, scale, and print or export to PDF
+- **Print Manager** — configure page size, scale, and print or export to PDF; choose a print style — Default (full color), Monochrome (solid black ink), or Blueprint (white ink on a Prussian-blue page with a reference grid)
 - **Dimension Styles** — configure arrow size, text height, and extension line offsets
 - **Dark / Light theme** — toggle between themes; preference is saved across sessions
 

@@ -108,7 +108,7 @@ order: 1
 | [Import](./commands/import/) | একটি DXF বা JSON ড্রয়িং ফাইল খুলুন |
 | [New File](./commands/new-file/) | একটি নতুন ফাঁকা ড্রয়িং শুরু করুন |
 | [File Manager](./commands/file-manager/) | আপনার ব্রাউজারে সংরক্ষিত ড্রয়িং ব্রাউজ করুন, নাম পরিবর্তন করুন, বা মুছুন |
-| [Print](./commands/print/) | একটি ড্রয়িং এলাকা ছবি বা PDF হিসেবে এক্সপোর্ট করুন |
+| [Print Manager](./commands/print-manager/) | একটি ড্রয়িং এলাকা ছবি বা PDF হিসেবে এক্সপোর্ট করুন |
 | [Export](./commands/export/) | ড্রয়িংটি DXF বা JSON হিসেবে ডাউনলোড করুন |
 | [WipeStorage](./commands/wipestorage/) | ব্রাউজার স্টোরেজ থেকে সমস্ত ড্রয়িং মুছুন |
 

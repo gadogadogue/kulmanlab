@@ -107,7 +107,7 @@ order: 1
 | [Import](./commands/import/) | DXF ਜਾਂ JSON ਡਰਾਇੰਗ ਫ਼ਾਈਲ ਖੋਲ੍ਹੋ |
 | [New File](./commands/new-file/) | ਨਵੀਂ ਖਾਲੀ ਡਰਾਇੰਗ ਸ਼ੁਰੂ ਕਰੋ |
 | [File Manager](./commands/file-manager/) | ਆਪਣੇ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਸੇਵ ਡਰਾਇੰਗਾਂ ਨੂੰ ਬ੍ਰਾਊਜ਼ ਕਰੋ, ਨਾਮ ਬਦਲੋ, ਜਾਂ ਮਿਟਾਓ |
-| [Print](./commands/print/) | ਡਰਾਇੰਗ ਖੇਤਰ ਨੂੰ ਚਿੱਤਰ ਜਾਂ PDF ਵਜੋਂ ਐਕਸਪੋਰਟ ਕਰੋ |
+| [Print Manager](./commands/print-manager/) | ਡਰਾਇੰਗ ਖੇਤਰ ਨੂੰ ਚਿੱਤਰ ਜਾਂ PDF ਵਜੋਂ ਐਕਸਪੋਰਟ ਕਰੋ |
 | [Export](./commands/export/) | ਡਰਾਇੰਗ ਨੂੰ DXF ਜਾਂ JSON ਵਜੋਂ ਡਾਊਨਲੋਡ ਕਰੋ |
 | [WipeStorage](./commands/wipestorage/) | ਬ੍ਰਾਊਜ਼ਰ ਸਟੋਰੇਜ ਵਿੱਚੋਂ ਸਾਰੀਆਂ ਡਰਾਇੰਗਾਂ ਸਾਫ਼ ਕਰੋ |
 

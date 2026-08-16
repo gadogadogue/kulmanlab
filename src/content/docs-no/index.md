@@ -108,7 +108,7 @@ Velkommen til **KulmanLab CAD**s kommandoreferanse. [KulmanLab CAD](https://kulm
 | [Import](./commands/import/) | Åpne en DXF- eller JSON-tegnefil |
 | [New File](./commands/new-file/) | Start en ny, tom tegning |
 | [File Manager](./commands/file-manager/) | Bla gjennom, omdøp eller slett tegninger lagret i nettleseren din |
-| [Print](./commands/print/) | Eksporter et tegningsområde som et bilde eller PDF |
+| [Print Manager](./commands/print-manager/) | Eksporter et tegningsområde som et bilde eller PDF |
 | [Export](./commands/export/) | Last ned tegningen som DXF eller JSON |
 | [WipeStorage](./commands/wipestorage/) | Fjern alle tegninger fra nettleserlagring |
 

@@ -108,7 +108,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 | [Import](./commands/import/) | Open a DXF or JSON drawing file |
 | [New File](./commands/new-file/) | Start a fresh blank drawing |
 | [File Manager](./commands/file-manager/) | Browse, rename, or delete drawings saved in your browser |
-| [Print](./commands/print/) | Export a drawing area as an image or PDF |
+| [Print Manager](./commands/print-manager/) | Export a drawing area as an image or PDF |
 | [Export](./commands/export/) | Download the drawing as DXF or JSON |
 | [WipeStorage](./commands/wipestorage/) | Clear all drawings from browser storage |
 

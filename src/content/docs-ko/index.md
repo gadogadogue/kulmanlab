@@ -108,7 +108,7 @@ order: 1
 | [Import](./commands/import/) | DXF 또는 JSON 도면 파일 열기 |
 | [New File](./commands/new-file/) | 새 빈 도면 시작 |
 | [File Manager](./commands/file-manager/) | 브라우저에 저장된 도면 찾아보기, 이름 변경, 또는 삭제 |
-| [Print](./commands/print/) | 도면 영역을 이미지 또는 PDF로 내보내기 |
+| [Print Manager](./commands/print-manager/) | 도면 영역을 이미지 또는 PDF로 내보내기 |
 | [Export](./commands/export/) | 도면을 DXF 또는 JSON으로 다운로드 |
 | [Wipe Storage](./commands/wipestorage/) | 브라우저 저장소에서 모든 도면 지우기 |
 

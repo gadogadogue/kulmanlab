@@ -108,7 +108,7 @@ order: 1
 | [Import](./commands/import/) | DXF या JSON ड्राइंग फ़ाइल खोलें |
 | [New File](./commands/new-file/) | नई खाली ड्राइंग शुरू करें |
 | [File Manager](./commands/file-manager/) | अपने ब्राउज़र में सेव ड्राइंग ब्राउज़ करें, नाम बदलें, या डिलीट करें |
-| [Print](./commands/print/) | ड्राइंग क्षेत्र को इमेज या PDF के रूप में निर्यात करें |
+| [Print Manager](./commands/print-manager/) | ड्राइंग क्षेत्र को इमेज या PDF के रूप में निर्यात करें |
 | [Export](./commands/export/) | ड्राइंग को DXF या JSON के रूप में डाउनलोड करें |
 | [WipeStorage](./commands/wipestorage/) | ब्राउज़र स्टोरेज से सभी ड्राइंग साफ़ करें |
 

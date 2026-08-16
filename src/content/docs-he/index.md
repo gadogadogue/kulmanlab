@@ -108,7 +108,7 @@ order: 1
 | [Import](./commands/import/) | פתיחת קובץ שרטוט DXF או JSON |
 | [New File](./commands/new-file/) | התחלת שרטוט ריק חדש |
 | [File Manager](./commands/file-manager/) | עיון, שינוי שם או מחיקה של שרטוטים השמורים בדפדפן שלכם |
-| [Print](./commands/print/) | ייצוא אזור שרטוט כתמונה או PDF |
+| [Print Manager](./commands/print-manager/) | ייצוא אזור שרטוט כתמונה או PDF |
 | [Export](./commands/export/) | הורדת השרטוט כ-DXF או JSON |
 | [WipeStorage](./commands/wipestorage/) | ניקוי כל השרטוטים מאחסון הדפדפן |
 

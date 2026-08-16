@@ -108,7 +108,7 @@ order: 1
 | [Import](./commands/import/) | فتح ملف رسم DXF أو JSON |
 | [New File](./commands/new-file/) | بدء رسم فارغ جديد |
 | [File Manager](./commands/file-manager/) | تصفح الرسومات المحفوظة في متصفحك أو إعادة تسميتها أو حذفها |
-| [Print](./commands/print/) | تصدير منطقة رسم كصورة أو PDF |
+| [Print Manager](./commands/print-manager/) | تصدير منطقة رسم كصورة أو PDF |
 | [Export](./commands/export/) | تنزيل الرسم بصيغة DXF أو JSON |
 | [Wipe Storage](./commands/wipestorage/) | مسح جميع الرسومات من تخزين المتصفح |
 

@@ -108,7 +108,7 @@ order: 1
 | [Import](./commands/import/) | 打开 DXF 或 JSON 图形文件 |
 | [New File](./commands/new-file/) | 开始一个全新的空白图形 |
 | [File Manager](./commands/file-manager/) | 浏览、重命名或删除保存在浏览器中的图形 |
-| [Print](./commands/print/) | 将图形区域导出为图像或 PDF |
+| [Print Manager](./commands/print-manager/) | 将图形区域导出为图像或 PDF |
 | [Export](./commands/export/) | 以 DXF 或 JSON 格式下载图形 |
 | [Wipe Storage](./commands/wipestorage/) | 清除浏览器存储中的所有图形 |
 

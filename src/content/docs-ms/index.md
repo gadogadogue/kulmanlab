@@ -108,7 +108,7 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [Import](./commands/import/) | Buka fail lukisan DXF atau JSON |
 | [New File](./commands/new-file/) | Mulakan lukisan kosong baharu |
 | [File Manager](./commands/file-manager/) | Menyemak imbas, menamakan semula, atau memadam lukisan yang disimpan dalam pelayar anda |
-| [Print](./commands/print/) | Eksport kawasan lukisan sebagai imej atau PDF |
+| [Print Manager](./commands/print-manager/) | Eksport kawasan lukisan sebagai imej atau PDF |
 | [Export](./commands/export/) | Muat turun lukisan sebagai DXF atau JSON |
 | [WipeStorage](./commands/wipestorage/) | Padamkan semua lukisan daripada storan pelayar |
 

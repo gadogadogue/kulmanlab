@@ -108,7 +108,7 @@ Bem-vindo à referência de comandos do **KulmanLab CAD**. O [KulmanLab CAD](htt
 | [Import](./commands/import/) | Abre um arquivo de desenho DXF ou JSON |
 | [New File](./commands/new-file/) | Inicia um novo desenho em branco |
 | [File Manager](./commands/file-manager/) | Navegue, renomeie ou exclua desenhos salvos no navegador |
-| [Print](./commands/print/) | Exporta uma área do desenho como imagem ou PDF |
+| [Print Manager](./commands/print-manager/) | Exporta uma área do desenho como imagem ou PDF |
 | [Export](./commands/export/) | Baixa o desenho como DXF ou JSON |
 | [Wipe Storage](./commands/wipestorage/) | Apaga todos os desenhos do armazenamento do navegador |
 

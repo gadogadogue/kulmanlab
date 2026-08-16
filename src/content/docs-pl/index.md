@@ -108,7 +108,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Import](./commands/import/) | Otwiera plik rysunku DXF lub JSON |
 | [New File](./commands/new-file/) | Tworzy nowy pusty rysunek |
 | [File Manager](./commands/file-manager/) | Przeglądaj, zmieniaj nazwę lub usuwaj rysunki zapisane w przeglądarce |
-| [Print](./commands/print/) | Eksportuje obszar rysunku jako obraz lub PDF |
+| [Print Manager](./commands/print-manager/) | Eksportuje obszar rysunku jako obraz lub PDF |
 | [Export](./commands/export/) | Pobiera rysunek jako DXF lub JSON |
 | [Wipe Storage](./commands/wipestorage/) | Usuwa wszystkie rysunki z pamięci przeglądarki |
 
