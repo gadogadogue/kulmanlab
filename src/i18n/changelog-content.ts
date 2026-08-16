@@ -7,6 +7,23 @@ export type Release = {
 
 export const releases: Release[] = [
   {
+    version: "2026.08.16.ae2fea1",
+    date: "August 16, 2026",
+    title: "Polyline: Arc segments & Explode; Print Manager fixes and Blueprint style",
+    highlights: [
+      "New: Polyline gains an AutoCAD-style Arc option for placing arc segments while drawing (tangent-continuation by default) — Trim, Extend, Offset, Chamfer, and intersection detection are all arc-aware now, so editing a polyline with arc segments works the same as a straight one.",
+      "New Explode command breaks a polyline into its individual Line and Arc entities.",
+      "New: Rotate gains an AutoCAD-style Copy option — press C to toggle it, and the rotation is applied to new copies instead of the original in place.",
+      "New: Print Manager's Style selector gains a third option, Blueprint, alongside Default and Monochrome — white ink on a deep Prussian-blue page with a faint reference grid sized to look the same density at any Quality setting.",
+      "Fixed: Print Manager's preview now renders at the exact same pixel size as the real export instead of approximating it, and changing Quality re-renders it immediately; line weights now scale with print DPI instead of a fixed pixel count, so a line keeps the same physical thickness on paper at any Quality setting (hairline / lineweight 0 stays a fixed 1px, matching how AutoCAD defines it).",
+      "Fixed: a selected print area now actually crops layout (paper-space) exports instead of always exporting the whole sheet, including on a layout whose units aren't real mm; monochrome rendering now forces black ink at the source instead of thresholding pixel brightness afterward, removing an artifact that could double a thin line's apparent width.",
+      "Fixed two polyline-arc bugs found while building the Arc option: Trim could compute the arc immediately next to a cut backwards, and a clockwise arc segment could report intersections on the wrong ~300° span, trimming away far more of the polyline than intended.",
+      "Fixed: Chamfer's second pick on a polyline now requires a true neighboring segment instead of silently chamfering a non-adjacent pair; extending a polyline's first segment now grows from the correct end and direction.",
+      "Fixed: Backspace no longer deletes a selection while you're still typing a command.",
+      "Tuned command-suggestion tie-breaking so Extend ranks above Export and FileManager/Delete rank lower when they share a prefix with another command.",
+    ],
+  },
+  {
     version: "2026.08.13.1df92de",
     date: "August 13, 2026",
     title: "Command suggestions, selection filtering & finish-with-Enter polish",
@@ -407,6 +424,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   en: releases.map(r => ({ title: r.title, highlights: r.highlights })),
   de: [
     {
+      title: "Polyline: Bogensegmente & Explode; Druckmanager-Korrekturen und Blueprint-Stil",
+      highlights: [
+        "Neu: Polyline erhält eine AutoCAD-artige Arc-Option zum Setzen von Bogensegmenten beim Zeichnen (standardmäßig tangential fortgesetzt) — Trim, Extend, Offset, Chamfer und die Schnittpunkterkennung sind jetzt alle bogenfähig, sodass das Bearbeiten einer Polyline mit Bogensegmenten genauso funktioniert wie bei geraden Segmenten.",
+        "Neuer Explode-Befehl zerlegt eine Polyline in ihre einzelnen Line- und Arc-Entitäten.",
+        "Neu: Rotate erhält eine AutoCAD-artige Copy-Option — C umschalten, und die Drehung wird auf neue Kopien angewendet statt auf das Original an Ort und Stelle.",
+        "Neu: Der Style-Selektor des Druckmanagers erhält mit Blueprint eine dritte Option neben Default und Monochrome — weiße Tinte auf einer tiefblauen (Preußischblau) Seite mit einem dezenten Referenzraster, das bei jeder Quality-Einstellung gleich dicht wirkt.",
+        "Behoben: Die Vorschau des Druckmanagers wird jetzt in exakt derselben Pixelgröße gerendert wie der tatsächliche Export, statt sie nur anzunähern, und eine Änderung von Quality rendert sie sofort neu; Linienstärken skalieren jetzt mit der Druck-DPI statt mit einer festen Pixelzahl, sodass eine Linie bei jeder Quality-Einstellung dieselbe physische Dicke auf Papier behält (Haarlinie/Linienstärke 0 bleibt fest bei 1 Pixel, wie von AutoCAD definiert).",
+        "Behoben: Ein ausgewählter Druckbereich schneidet Layout-Exporte (Papierbereich) jetzt tatsächlich zu, statt immer das ganze Blatt zu exportieren, auch bei einem Layout, dessen Einheiten nicht echte mm sind; das monochrome Rendering erzwingt jetzt schwarze Tinte direkt an der Quelle statt die Pixelhelligkeit nachträglich zu schwellwerten, wodurch ein Artefakt entfällt, das die scheinbare Breite einer dünnen Linie verdoppeln konnte.",
+        "Zwei beim Bau der Arc-Option entdeckte Polyline-Bogen-Fehler behoben: Trim konnte den Bogen unmittelbar neben einem Schnitt rückwärts berechnen, und ein im Uhrzeigersinn verlaufendes Bogensegment konnte Schnittpunkte auf dem falschen ~300°-Bereich melden, wodurch weit mehr von der Polyline weggeschnitten wurde als beabsichtigt.",
+        "Behoben: Die zweite Auswahl von Chamfer auf einer Polyline erfordert jetzt ein echtes Nachbarsegment, statt stillschweigend ein nicht angrenzendes Paar abzufasen; das Verlängern des ersten Segments einer Polyline wächst jetzt vom richtigen Ende und in die richtige Richtung.",
+        "Behoben: Backspace löscht die Auswahl nicht mehr, während noch ein Befehl eingegeben wird.",
+        "Die Priorisierung bei Befehlsvorschlägen angepasst, sodass Extend vor Export und FileManager/Delete niedriger eingestuft werden, wenn sie sich ein Präfix mit einem anderen Befehl teilen.",
+      ],
+    },
+    {
       title: "Intelligentere Befehlsvorschläge, Auswahlfilter & Fertigstellen mit Enter",
       highlights: [
         "Befehlsvorschläge berücksichtigen jetzt Buchstaben an beliebiger Stelle im Befehlsnamen, nicht nur am Anfang, sortiert nach Trefferqualität und dann danach, wie oft Sie den Befehl tatsächlich verwenden; die Liste ist mit der Maus anklickbar, scrollt beim Durchschalten mit Tab, damit die ausgewählte Vorschau sichtbar bleibt, ist auf rund 10 Zeilen begrenzt und hebt nur die getroffenen Buchstaben direkt im Text hervor, statt ein komplettes Geistertextwort zu überlagern",
@@ -747,6 +779,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   es: [
+    {
+      title: "Polyline: segmentos de arco y Explode; correcciones del gestor de impresión y estilo Blueprint",
+      highlights: [
+        "Nuevo: Polyline incorpora una opción Arc al estilo AutoCAD para colocar segmentos de arco mientras se dibuja (continuación tangencial por defecto) — Trim, Extend, Offset, Chamfer y la detección de intersecciones ahora reconocen los arcos, así que editar una polilínea con segmentos de arco funciona igual que con segmentos rectos.",
+        "Nuevo comando Explode descompone una polilínea en sus entidades Line y Arc individuales.",
+        "Nuevo: Rotate incorpora una opción Copy al estilo AutoCAD — pulsa C para activarla, y la rotación se aplica a copias nuevas en lugar de al original en su sitio.",
+        "Nuevo: el selector Style del gestor de impresión suma una tercera opción, Blueprint, junto a Default y Monochrome — tinta blanca sobre una página azul prusia profundo con una cuadrícula de referencia tenue dimensionada para verse igual de densa en cualquier ajuste de Quality.",
+        "Corregido: la vista previa del gestor de impresión ahora se renderiza al mismo tamaño de píxel exacto que la exportación real en lugar de aproximarlo, y cambiar Quality la vuelve a renderizar de inmediato; los grosores de línea ahora escalan con el DPI de impresión en lugar de un número fijo de píxeles, así que una línea mantiene el mismo grosor físico en papel en cualquier ajuste de Quality (la línea capilar / grosor 0 se mantiene fija en 1 píxel, tal como la define AutoCAD).",
+        "Corregido: un área de impresión seleccionada ahora sí recorta las exportaciones de layout (espacio de papel) en lugar de exportar siempre la hoja completa, incluso en un layout cuyas unidades no son mm reales; el renderizado en escala de grises ahora fuerza tinta negra en el origen en lugar de aplicar un umbral de brillo de píxeles después, eliminando un artefacto que podía duplicar el grosor aparente de una línea fina.",
+        "Corregidos dos errores de arcos en polilíneas descubiertos al construir la opción Arc: Trim podía calcular al revés el arco justo junto a un corte, y un segmento de arco en sentido horario podía reportar intersecciones en el arco de ~300° equivocado, recortando mucha más polilínea de la prevista.",
+        "Corregido: la segunda selección de Chamfer en una polilínea ahora exige un segmento vecino real en lugar de biselar en silencio un par no adyacente; extender el primer segmento de una polilínea ahora crece desde el extremo y la dirección correctos.",
+        "Corregido: Retroceso ya no elimina una selección mientras todavía estás escribiendo un comando.",
+        "Ajustado el desempate de sugerencias de comandos para que Extend quede por encima de Export, y FileManager/Delete queden más abajo, cuando comparten prefijo con otro comando.",
+      ],
+    },
     {
       title: "Sugerencias de comandos más inteligentes, filtro de selección y finalizar con Enter",
       highlights: [
@@ -1089,6 +1136,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   fr: [
     {
+      title: "Polyline : segments d'arc & Explode ; corrections du gestionnaire d'impression et style Blueprint",
+      highlights: [
+        "Nouveau : Polyline reçoit une option Arc façon AutoCAD pour placer des segments d'arc pendant le tracé (continuation tangentielle par défaut) — Trim, Extend, Offset, Chamfer et la détection d'intersections gèrent désormais les arcs, si bien qu'éditer une polyligne avec des segments d'arc fonctionne comme avec des segments droits.",
+        "Nouvelle commande Explode qui décompose une polyligne en ses entités Line et Arc individuelles.",
+        "Nouveau : Rotate reçoit une option Copy façon AutoCAD — appuyez sur C pour l'activer, la rotation s'applique alors à de nouvelles copies plutôt qu'à l'original sur place.",
+        "Nouveau : le sélecteur Style du gestionnaire d'impression gagne une troisième option, Blueprint, aux côtés de Default et Monochrome — encre blanche sur une page bleu de Prusse profond avec une grille de référence discrète dimensionnée pour paraître aussi dense à tout réglage de Quality.",
+        "Corrigé : l'aperçu du gestionnaire d'impression est désormais rendu exactement à la même taille de pixels que l'export réel au lieu de l'approximer, et changer Quality le re-rend immédiatement ; les épaisseurs de trait s'adaptent maintenant au DPI d'impression plutôt qu'à un nombre de pixels fixe, si bien qu'un trait garde la même épaisseur physique sur papier à tout réglage de Quality (le trait fin / épaisseur 0 reste fixé à 1 pixel, comme AutoCAD le définit).",
+        "Corrigé : une zone d'impression sélectionnée recadre désormais réellement les exports de layout (espace papier) au lieu de toujours exporter la feuille entière, y compris sur un layout dont les unités ne sont pas de vrais mm ; le rendu en niveaux de gris force maintenant l'encre noire à la source au lieu d'appliquer un seuillage de luminosité des pixels après coup, ce qui supprime un artefact pouvant doubler l'épaisseur apparente d'un trait fin.",
+        "Corrigé deux bugs d'arcs sur polyligne découverts en construisant l'option Arc : Trim pouvait calculer à l'envers l'arc juste à côté d'une coupe, et un segment d'arc horaire pouvait signaler des intersections sur le mauvais arc d'environ 300°, coupant bien plus de la polyligne que prévu.",
+        "Corrigé : la deuxième sélection de Chamfer sur une polyligne exige désormais un segment vraiment voisin au lieu de chanfreiner silencieusement une paire non adjacente ; prolonger le premier segment d'une polyligne part désormais de la bonne extrémité et dans la bonne direction.",
+        "Corrigé : Retour arrière ne supprime plus une sélection pendant que vous êtes encore en train de taper une commande.",
+        "Ajusté le départage des suggestions de commandes pour qu'Extend passe devant Export, et que FileManager/Delete soient classés plus bas, quand ils partagent un préfixe avec une autre commande.",
+      ],
+    },
+    {
       title: "Suggestions de commandes plus intelligentes, filtre de sélection et validation avec Entrée",
       highlights: [
         "Les suggestions de commandes correspondent désormais à des lettres n'importe où dans le nom d'une commande, pas seulement au début, classées par qualité de correspondance puis par fréquence d'utilisation réelle ; la liste est cliquable à la souris, défile pour garder la suggestion sélectionnée visible lors du cycle avec Tab, se limite à environ 10 lignes, et met en surbrillance uniquement les lettres correspondantes à leur place au lieu de superposer un mot fantôme complet",
@@ -1428,6 +1490,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   it: [
+    {
+      title: "Polyline: segmenti ad arco & Explode; correzioni del gestore di stampa e stile Blueprint",
+      highlights: [
+        "Nuovo: Polyline guadagna un'opzione Arc in stile AutoCAD per inserire segmenti ad arco durante il disegno (continuazione tangente di default) — Trim, Extend, Offset, Chamfer e il rilevamento delle intersezioni ora gestiscono gli archi, quindi modificare una polilinea con segmenti ad arco funziona come con quelli dritti.",
+        "Nuovo comando Explode scompone una polilinea nelle sue entità Line e Arc individuali.",
+        "Nuovo: Rotate guadagna un'opzione Copy in stile AutoCAD — premi C per attivarla, e la rotazione viene applicata a nuove copie invece che all'originale sul posto.",
+        "Nuovo: il selettore Style del gestore di stampa guadagna una terza opzione, Blueprint, accanto a Default e Monochrome — inchiostro bianco su una pagina blu Prussia profondo con una griglia di riferimento tenue dimensionata per apparire ugualmente densa a qualsiasi impostazione di Quality.",
+        "Corretto: l'anteprima del gestore di stampa ora viene renderizzata esattamente alla stessa dimensione in pixel dell'esportazione reale invece di approssimarla, e cambiare Quality la ri-renderizza immediatamente; gli spessori delle linee ora si scalano con il DPI di stampa invece che con un numero fisso di pixel, quindi una linea mantiene lo stesso spessore fisico su carta a qualsiasi impostazione di Quality (la linea sottile / spessore 0 resta fissa a 1 pixel, come la definisce AutoCAD).",
+        "Corretto: un'area di stampa selezionata ora ritaglia davvero le esportazioni di layout (spazio carta) invece di esportare sempre l'intero foglio, anche su un layout le cui unità non sono mm reali; il rendering monocromatico ora forza l'inchiostro nero alla fonte invece di applicare una soglia di luminosità dei pixel in seguito, eliminando un artefatto che poteva raddoppiare lo spessore apparente di una linea sottile.",
+        "Corretti due bug degli archi su polilinea scoperti costruendo l'opzione Arc: Trim poteva calcolare al contrario l'arco appena accanto a un taglio, e un segmento ad arco orario poteva segnalare intersezioni sull'arco sbagliato di ~300°, tagliando via molta più polilinea del previsto.",
+        "Corretto: la seconda selezione di Chamfer su una polilinea ora richiede un segmento davvero vicino invece di smussare silenziosamente una coppia non adiacente; estendere il primo segmento di una polilinea ora cresce dall'estremità e nella direzione corrette.",
+        "Corretto: Backspace non elimina più una selezione mentre si sta ancora digitando un comando.",
+        "Regolato lo spareggio dei suggerimenti comandi così che Extend si classifichi sopra Export, e FileManager/Delete più in basso, quando condividono un prefisso con un altro comando.",
+      ],
+    },
     {
       title: "Suggerimenti comandi più intelligenti, filtro selezione e conferma con Invio",
       highlights: [
@@ -1770,6 +1847,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   pt: [
     {
+      title: "Polyline: segmentos de arco & Explode; correções do gerenciador de impressão e estilo Blueprint",
+      highlights: [
+        "Novo: Polyline ganha uma opção Arc no estilo AutoCAD para colocar segmentos de arco ao desenhar (continuação tangente por padrão) — Trim, Extend, Offset, Chamfer e a detecção de interseções agora reconhecem arcos, então editar uma polilinha com segmentos de arco funciona igual a uma reta.",
+        "Novo comando Explode decompõe uma polilinha em suas entidades Line e Arc individuais.",
+        "Novo: Rotate ganha uma opção Copy no estilo AutoCAD — pressione C para alternar, e a rotação é aplicada a novas cópias em vez do original no lugar.",
+        "Novo: o seletor Style do gerenciador de impressão ganha uma terceira opção, Blueprint, ao lado de Default e Monochrome — tinta branca sobre uma página azul da Prússia profundo com uma grade de referência sutil dimensionada para parecer igualmente densa em qualquer configuração de Quality.",
+        "Corrigido: a prévia do gerenciador de impressão agora é renderizada exatamente no mesmo tamanho de pixel da exportação real em vez de aproximá-la, e mudar Quality a renderiza novamente de imediato; as espessuras de linha agora escalam com o DPI de impressão em vez de um número fixo de pixels, então uma linha mantém a mesma espessura física no papel em qualquer configuração de Quality (a linha fina / espessura 0 permanece fixa em 1 pixel, exatamente como o AutoCAD define).",
+        "Corrigido: uma área de impressão selecionada agora realmente recorta exportações de layout (espaço de papel) em vez de sempre exportar a folha inteira, inclusive em um layout cujas unidades não são mm reais; a renderização monocromática agora força tinta preta na origem em vez de aplicar um limiar de brilho de pixel depois, eliminando um artefato que podia dobrar a espessura aparente de uma linha fina.",
+        "Corrigidos dois bugs de arco em polilinha descobertos ao construir a opção Arc: Trim podia calcular o arco ao lado de um corte ao contrário, e um segmento de arco horário podia reportar interseções no arco errado de ~300°, cortando muito mais da polilinha do que o pretendido.",
+        "Corrigido: a segunda seleção do Chamfer em uma polilinha agora exige um segmento realmente vizinho em vez de chanfrar silenciosamente um par não adjacente; estender o primeiro segmento de uma polilinha agora cresce a partir da extremidade e direção corretas.",
+        "Corrigido: Backspace não apaga mais uma seleção enquanto você ainda está digitando um comando.",
+        "Ajustado o desempate de sugestões de comando para que Extend fique acima de Export, e FileManager/Delete fiquem mais abaixo, quando compartilham um prefixo com outro comando.",
+      ],
+    },
+    {
       title: "Sugestões de comandos mais inteligentes, filtro de seleção e finalizar com Enter",
       highlights: [
         "As sugestões de comando agora correspondem a letras em qualquer parte do nome do comando, não apenas no início, classificadas pela qualidade da correspondência e depois pela frequência real de uso; a lista é clicável com o mouse, rola para manter a sugestão selecionada visível ao alternar com Tab, tem um limite de cerca de 10 linhas e destaca apenas as letras correspondentes no lugar, em vez de sobrepor uma palavra fantasma inteira",
@@ -2110,6 +2202,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   uk: [
+    {
+      title: "Polyline: дугові сегменти та Explode; виправлення менеджера друку та стиль Blueprint",
+      highlights: [
+        "Нове: Polyline отримує опцію Arc у стилі AutoCAD для розміщення дугових сегментів під час малювання (за замовчуванням дотичне продовження) — Trim, Extend, Offset, Chamfer і виявлення перетинів тепер враховують дуги, тож редагування полілінії з дуговими сегментами працює так само, як і з прямими.",
+        "Нова команда Explode розбиває полілінію на окремі об'єкти Line та Arc.",
+        "Нове: Rotate отримує опцію Copy у стилі AutoCAD — натисніть C, щоб увімкнути її, і обертання застосовується до нових копій, а не до оригіналу на місці.",
+        "Нове: перемикач Style менеджера друку отримує третій варіант, Blueprint, поруч із Default і Monochrome — біле чорнило на глибокій прусько-синій сторінці з ледь помітною довідковою сіткою, що виглядає однаково густо за будь-якого налаштування Quality.",
+        "Виправлено: попередній перегляд менеджера друку тепер рендериться в точно тому самому розмірі пікселів, що й реальний експорт, замість наближення до нього, а зміна Quality миттєво повторно рендерить його; товщина ліній тепер масштабується разом із DPI друку замість фіксованої кількості пікселів, тож лінія зберігає однакову фізичну товщину на папері за будь-якого налаштування Quality (тонка лінія / товщина 0 залишається фіксованою в 1 піксель, як це визначає AutoCAD).",
+        "Виправлено: вибрана ділянка друку тепер справді обрізає експорт макета (паперового простору) замість завжди експортувати весь аркуш, зокрема на макеті, одиниці якого не є справжніми мм; монохромний рендеринг тепер примусово застосовує чорне чорнило одразу в джерелі замість порогової обробки яскравості пікселів згодом, усуваючи артефакт, який міг подвоювати видиму товщину тонкої лінії.",
+        "Виправлено дві помилки дуг полілінії, виявлені під час створення опції Arc: Trim міг обчислювати дугу одразу біля розрізу навпаки, а дуговий сегмент за годинниковою стрілкою міг повідомляти про перетини на неправильній дузі ~300°, обрізаючи набагато більше полілінії, ніж передбачалося.",
+        "Виправлено: другий вибір Chamfer на полілінії тепер вимагає справді сусіднього сегмента замість мовчазного фасетування невідповідної пари; видовження першого сегмента полілінії тепер росте з правильного кінця та в правильному напрямку.",
+        "Виправлено: Backspace більше не видаляє виділення, поки ви ще вводите команду.",
+        "Скориговано розв'язання нічиїх у підказках команд так, щоб Extend посідав вище за Export, а FileManager/Delete — нижче, коли вони мають спільний префікс з іншою командою.",
+      ],
+    },
     {
       title: "Розумніші підказки команд, фільтр виділення й завершення клавішею Enter",
       highlights: [
@@ -2452,6 +2559,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   tr: [
     {
+      title: "Polyline: Yay segmentleri & Explode; Print Manager düzeltmeleri ve Blueprint stili",
+      highlights: [
+        "Yeni: Polyline, çizim sırasında yay segmentleri yerleştirmek için AutoCAD tarzı bir Arc seçeneği kazanıyor (varsayılan olarak teğetsel devam) — Trim, Extend, Offset, Chamfer ve kesişim tespiti artık yay farkında, böylece yay segmentli bir polyline'ı düzenlemek düz segmentli biriyle aynı şekilde çalışıyor.",
+        "Yeni Explode komutu bir polyline'ı kendi Line ve Arc varlıklarına ayırıyor.",
+        "Yeni: Rotate, AutoCAD tarzı bir Copy seçeneği kazanıyor — açmak için C'ye basın, döndürme orijinali yerinde döndürmek yerine yeni kopyalara uygulanır.",
+        "Yeni: Print Manager'ın Style seçici, Default ve Monochrome'un yanına üçüncü bir seçenek olarak Blueprint ekliyor — herhangi bir Quality ayarında aynı yoğunlukta görünecek şekilde boyutlandırılmış hafif bir referans ızgarasıyla derin Prusya mavisi bir sayfa üzerinde beyaz mürekkep.",
+        "Düzeltildi: Print Manager'ın önizlemesi artık gerçek dışa aktarmayla tam olarak aynı piksel boyutunda render ediliyor, yaklaşık bir tahmin yerine; Quality'yi değiştirmek önizlemeyi hemen yeniden render ediyor; çizgi kalınlıkları artık sabit bir piksel sayısı yerine baskı DPI'ıyla ölçekleniyor, böylece bir çizgi herhangi bir Quality ayarında kağıt üzerinde aynı fiziksel kalınlığı koruyor (ince çizgi / kalınlık 0, AutoCAD'in tanımladığı gibi sabit 1 piksel olarak kalıyor).",
+        "Düzeltildi: seçilen bir baskı alanı artık her zaman tüm sayfayı dışa aktarmak yerine, birimleri gerçek mm olmayan bir düzende bile, düzen (kağıt alanı) dışa aktarmalarını gerçekten kırpıyor; tek renkli render artık sonradan piksel parlaklığına eşik uygulamak yerine kaynakta siyah mürekkep zorluyor, ince bir çizginin görünen genişliğini ikiye katlayabilen bir kusuru ortadan kaldırıyor.",
+        "Arc seçeneği inşa edilirken bulunan iki polyline-yay hatası düzeltildi: Trim, bir kesimin hemen yanındaki yayı ters hesaplayabiliyordu ve saat yönünde bir yay segmenti, yanlış ~300°'lik yay üzerinde kesişimler bildirebiliyordu, bu da polyline'ın amaçlanandan çok daha fazlasının kesilmesine yol açıyordu.",
+        "Düzeltildi: bir polyline üzerinde Chamfer'ın ikinci seçimi artık komşu olmayan bir çifti sessizce pahlamak yerine gerçek bir komşu segment gerektiriyor; bir polyline'ın ilk segmentini uzatmak artık doğru uçtan ve doğru yönden büyüyor.",
+        "Düzeltildi: hâlâ bir komut yazarken Backspace artık bir seçimi silmiyor.",
+        "Komut önerisi eşitlik bozma sıralaması, başka bir komutla önek paylaştıklarında Extend'in Export'un üzerinde, FileManager/Delete'in ise daha altta sıralanacağı şekilde ayarlandı.",
+      ],
+    },
+    {
       title: "Daha akıllı komut önerileri, seçim filtresi ve Enter ile bitirme",
       highlights: [
         "Komut önerileri artık yalnızca baştaki değil, komut adının herhangi bir yerindeki harflerle eşleşiyor; önce eşleşme kalitesine, ardından komutu gerçekte ne sıklıkla kullandığınıza göre sıralanıyor. Liste fareyle tıklanabilir, Tab ile döngü yaparken seçili öneriyi görünür tutmak için kayıyor, yaklaşık 10 satırla sınırlı ve tam bir hayalet kelimeyi üst üste bindirmek yerine yalnızca eşleşen harfleri yerinde vurguluyor",
@@ -2792,6 +2914,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   zh: [
+    {
+      title: "Polyline：圆弧线段与 Explode；打印管理器修复与 Blueprint 样式",
+      highlights: [
+        "新增：Polyline 获得类似 AutoCAD 的 Arc 选项，可在绘制时放置圆弧线段(默认与前一段相切延续)——Trim、Extend、Offset、Chamfer 和相交检测现在都能识别圆弧，因此编辑带圆弧线段的多段线与编辑直线段的方式相同。",
+        "新增 Explode 命令，将一条多段线拆分为独立的 Line 和 Arc 实体。",
+        "新增：Rotate 获得类似 AutoCAD 的 Copy 选项——按 C 切换,旋转将应用到新副本而不是原地旋转原对象。",
+        "新增：打印管理器的 Style 选择器在 Default 和 Monochrome 之外新增第三个选项 Blueprint——深普鲁士蓝页面上的白色墨迹，配有淡淡的参考网格，在任何 Quality 设置下密度看起来都一样。",
+        "修复：打印管理器的预览现在以与实际导出完全相同的像素尺寸渲染，而不再只是近似值，更改 Quality 会立即重新渲染预览；线宽现在随打印 DPI 缩放，而不是固定像素数，因此线条在任何 Quality 设置下在纸面上都保持相同的物理粗细(细线／线宽 0 始终固定为 1 像素，与 AutoCAD 的定义一致)。",
+        "修复：选定的打印区域现在能真正裁剪布局(纸张空间)导出，而不是始终导出整张图纸，即便布局的单位不是真实毫米也是如此；单色渲染现在在源头强制使用黑色墨水，而不是事后对像素亮度做阈值处理，消除了可能使细线视觉宽度加倍的瑕疵。",
+        "修复了构建 Arc 选项时发现的两个多段线圆弧错误：Trim 可能会把紧邻剪切处的圆弧算反，顺时针方向的圆弧线段可能会在错误的约 300° 弧段上报告交点，导致裁剪掉的多段线远多于预期。",
+        "修复：在多段线上进行 Chamfer 的第二次拾取现在要求选中真正相邻的线段，而不是悄悄对不相邻的一对线段做倒角；延伸多段线的第一段现在会从正确的端点和方向生长。",
+        "修复：仍在输入命令时，Backspace 不再删除当前选择。",
+        "调整了命令建议的并列排序规则，使 Extend 排在 Export 之上，FileManager／Delete 在与其他命令共享前缀时排位更低。",
+      ],
+    },
     {
       title: "更智能的命令建议、选择过滤与用 Enter 完成命令",
       highlights: [
@@ -3134,6 +3271,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   hi: [
     {
+      title: "Polyline: आर्क सेगमेंट और Explode; प्रिंट मैनेजर सुधार और Blueprint स्टाइल",
+      highlights: [
+        "नया: Polyline को ड्राइंग के दौरान आर्क सेगमेंट रखने के लिए AutoCAD-स्टाइल Arc विकल्प मिलता है (डिफ़ॉल्ट रूप से टैंजेंट-कंटिन्यूएशन) — Trim, Extend, Offset, Chamfer, और इंटरसेक्शन डिटेक्शन अब सभी आर्क-अवेयर हैं, इसलिए आर्क सेगमेंट वाली पॉलीलाइन को एडिट करना सीधी पॉलीलाइन जैसा ही काम करता है।",
+        "नया Explode कमांड पॉलीलाइन को उसकी अलग-अलग Line और Arc एंटिटीज़ में तोड़ता है।",
+        "नया: Rotate को AutoCAD-स्टाइल Copy विकल्प मिलता है — इसे टॉगल करने के लिए C दबाएं, और रोटेशन मूल ऑब्जेक्ट के बजाय नई कॉपियों पर लागू होता है।",
+        "नया: प्रिंट मैनेजर के Style सेलेक्टर में Default और Monochrome के साथ तीसरा विकल्प Blueprint जुड़ा — गहरे प्रशियन-ब्लू पेज पर सफ़ेद स्याही, साथ में एक हल्की रेफरेंस ग्रिड जो किसी भी Quality सेटिंग पर एक जैसी सघनता दिखाती है।",
+        "ठीक किया गया: प्रिंट मैनेजर का प्रीव्यू अब वास्तविक एक्सपोर्ट जैसे अनुमान के बजाय बिल्कुल उसी पिक्सल साइज़ पर रेंडर होता है, और Quality बदलने पर प्रीव्यू तुरंत फिर से रेंडर होता है; लाइन की मोटाई अब एक स्थिर पिक्सल संख्या के बजाय प्रिंट DPI के साथ स्केल होती है, ताकि लाइन किसी भी Quality सेटिंग पर कागज़ पर वही भौतिक मोटाई बनाए रखे (हेयरलाइन/मोटाई 0 हमेशा स्थिर 1 पिक्सल रहती है, ठीक जैसे AutoCAD इसे परिभाषित करता है)।",
+        "ठीक किया गया: चयनित प्रिंट क्षेत्र अब हमेशा पूरी शीट एक्सपोर्ट करने के बजाय लेआउट (पेपर स्पेस) एक्सपोर्ट को वाकई क्रॉप करता है, यहां तक कि उस लेआउट पर भी जिसकी इकाइयां असली मिमी नहीं हैं; मोनोक्रोम रेंडरिंग अब बाद में पिक्सल ब्राइटनेस को थ्रेशोल्ड करने के बजाय स्रोत पर ही काली स्याही थोपती है, जिससे वह गड़बड़ी दूर हो गई जो एक पतली लाइन की दिखने वाली चौड़ाई को दोगुना कर सकती थी।",
+        "Arc विकल्प बनाते समय मिली दो पॉलीलाइन-आर्क गड़बड़ियां ठीक कीं: Trim किसी कट के ठीक बगल वाले आर्क को उल्टा कैलकुलेट कर सकता था, और एक क्लॉकवाइज़ आर्क सेगमेंट गलत ~300° के आर्क पर इंटरसेक्शन बता सकता था, जिससे इच्छा से कहीं ज़्यादा पॉलीलाइन ट्रिम हो जाती थी।",
+        "ठीक किया गया: किसी पॉलीलाइन पर Chamfer की दूसरी पिक अब वाकई पड़ोसी सेगमेंट की मांग करती है, बजाय इसके कि चुपचाप किसी असंबद्ध जोड़े को चैम्फर कर दे; पॉलीलाइन के पहले सेगमेंट को एक्सटेंड करना अब सही सिरे और दिशा से बढ़ता है।",
+        "ठीक किया गया: कमांड टाइप करते समय अब Backspace चयन को डिलीट नहीं करता।",
+        "कमांड सुझावों की टाई-ब्रेकिंग को ट्यून किया गया ताकि Extend, Export से ऊपर रैंक करे, और FileManager/Delete किसी और कमांड के साथ प्रीफ़िक्स शेयर करने पर नीचे रैंक करें।",
+      ],
+    },
+    {
       title: "स्मार्ट कमांड सुझाव, चयन फ़िल्टर और Enter से पूरा करना",
       highlights: [
         "कमांड सुझाव अब कमांड नाम में कहीं भी अक्षरों से मेल खाते हैं, न कि केवल शुरुआत में; पहले मिलान की गुणवत्ता के आधार पर और फिर आप उस कमांड का वास्तव में कितनी बार उपयोग करते हैं, उसके आधार पर क्रमबद्ध होते हैं। सूची माउस से क्लिक करने योग्य है, Tab से चक्र लगाते समय चयनित सुझाव को दृश्य में रखने के लिए स्क्रॉल होती है, लगभग 10 पंक्तियों तक सीमित है, और पूरे भूत-शब्द को ओवरले करने के बजाय केवल मेल खाने वाले अक्षरों को उनकी जगह पर हाइलाइट करती है",
@@ -3474,6 +3626,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ar: [
+    {
+      title: "Polyline: مقاطع Arc وأمر Explode؛ إصلاحات مدير الطباعة ونمط Blueprint",
+      highlights: [
+        "جديد: يكتسب Polyline خيار Arc على طراز AutoCAD لوضع مقاطع منحنية أثناء الرسم (استمرار مماسي افتراضياً) — أصبحت Trim وExtend وOffset وChamfer واكتشاف التقاطعات كلها واعية بالأقواس، لذا يعمل تعديل polyline بمقاطع منحنية تماماً كما يعمل مع المقاطع المستقيمة.",
+        "أمر Explode جديد يفكك polyline إلى كيانات Line وArc المنفصلة الخاصة بها.",
+        "جديد: يكتسب Rotate خيار Copy على طراز AutoCAD — اضغط C لتبديله، ويُطبَّق الدوران على نسخ جديدة بدلاً من الأصل في مكانه.",
+        "جديد: يكتسب محدد Style في مدير الطباعة خياراً ثالثاً، Blueprint، إلى جانب Default وMonochrome — حبر أبيض على صفحة زرقاء بروسية داكنة مع شبكة مرجعية خفيفة مصممة لتبدو بنفس الكثافة عند أي إعداد لـ Quality.",
+        "تم الإصلاح: تُعرض الآن معاينة مدير الطباعة بنفس حجم البكسل تماماً كالتصدير الفعلي بدلاً من تقريبه، وتغيير Quality يعيد عرض المعاينة فوراً؛ تتناسب سماكات الخطوط الآن مع دقة الطباعة (DPI) بدلاً من عدد بكسلات ثابت، لذا يحافظ الخط على نفس السماكة الفعلية على الورق عند أي إعداد لـ Quality (يبقى الخط الشعري/السماكة 0 ثابتاً عند بكسل واحد، تماماً كما يعرّفه AutoCAD).",
+        "تم الإصلاح: تقتصّ الآن منطقة الطباعة المحددة فعلياً تصدير التخطيط (المساحة الورقية) بدلاً من تصدير الورقة كاملة دائماً، حتى في تخطيط لا تكون وحداته مم حقيقية؛ يفرض التصيير الأحادي اللون الآن الحبر الأسود من المصدر بدلاً من تطبيق عتبة سطوع البكسل لاحقاً، مما يزيل خللاً كان يمكن أن يضاعف السماكة الظاهرة لخط رفيع.",
+        "تم إصلاح خللين في أقواس polyline اكتُشفا أثناء بناء خيار Arc: كان بإمكان Trim حساب القوس المجاور مباشرة لعملية قص بشكل معكوس، وكان بإمكان مقطع قوس باتجاه عقارب الساعة الإبلاغ عن تقاطعات على القوس الخاطئ من حوالي 300°، مما يقص جزءاً من polyline أكبر بكثير من المقصود.",
+        "تم الإصلاح: يتطلب الالتقاط الثاني لـ Chamfer على polyline الآن مقطعاً مجاوراً حقيقياً بدلاً من تفصيص زوج غير متجاور بصمت؛ أصبح تمديد المقطع الأول لـ polyline الآن ينمو من الطرف والاتجاه الصحيحين.",
+        "تم الإصلاح: لم يعد Backspace يحذف التحديد أثناء كتابة أمر.",
+        "تم ضبط كسر التعادل في اقتراحات الأوامر بحيث يُصنَّف Extend فوق Export، ويُصنَّف FileManager/Delete أدنى، عندما يشتركان في بادئة مع أمر آخر.",
+      ],
+    },
     {
       title: "اقتراحات أوامر أذكى، وفلترة التحديد، والإنهاء بمفتاح Enter",
       highlights: [
@@ -3816,6 +3983,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   id: [
     {
+      title: "Polyline: segmen Arc & Explode; perbaikan manajer cetak dan gaya Blueprint",
+      highlights: [
+        "Baru: Polyline mendapat opsi Arc bergaya AutoCAD untuk menempatkan segmen busur saat menggambar (kelanjutan tangen secara default) — Trim, Extend, Offset, Chamfer, dan deteksi perpotongan kini semua sadar-busur, sehingga mengedit polyline dengan segmen busur bekerja sama seperti segmen lurus.",
+        "Perintah Explode baru memecah polyline menjadi entitas Line dan Arc individualnya.",
+        "Baru: Rotate mendapat opsi Copy bergaya AutoCAD — tekan C untuk mengalihkannya, dan rotasi diterapkan pada salinan baru, bukan pada aslinya di tempat.",
+        "Baru: pemilih Style pada manajer cetak mendapat opsi ketiga, Blueprint, di samping Default dan Monochrome — tinta putih di atas halaman biru Prusia gelap dengan grid referensi samar yang berukuran agar terlihat sama padatnya pada pengaturan Quality apa pun.",
+        "Diperbaiki: pratinjau manajer cetak kini dirender pada ukuran piksel yang persis sama dengan hasil ekspor sebenarnya, bukan sekadar perkiraan, dan mengubah Quality langsung merender ulang pratinjau; ketebalan garis kini berskala dengan DPI cetak alih-alih jumlah piksel tetap, sehingga garis mempertahankan ketebalan fisik yang sama di atas kertas pada pengaturan Quality apa pun (garis rambut / ketebalan 0 tetap pada 1 piksel tetap, sesuai definisi AutoCAD).",
+        "Diperbaiki: area cetak yang dipilih kini benar-benar memotong ekspor layout (ruang kertas) alih-alih selalu mengekspor seluruh lembar, termasuk pada layout yang satuannya bukan mm sebenarnya; rendering monokrom kini memaksa tinta hitam pada sumbernya alih-alih menerapkan ambang batas kecerahan piksel setelahnya, menghilangkan artefak yang bisa menggandakan ketebalan tampak dari garis tipis.",
+        "Memperbaiki dua bug busur-polyline yang ditemukan saat membangun opsi Arc: Trim bisa menghitung busur tepat di sebelah potongan secara terbalik, dan segmen busur searah jarum jam bisa melaporkan perpotongan pada busur ~300° yang salah, memotong jauh lebih banyak polyline daripada yang dimaksudkan.",
+        "Diperbaiki: pemilihan kedua Chamfer pada polyline kini memerlukan segmen tetangga yang sebenarnya, alih-alih diam-diam mem-champer pasangan yang tidak berdekatan; memperpanjang segmen pertama polyline kini tumbuh dari ujung dan arah yang benar.",
+        "Diperbaiki: Backspace tidak lagi menghapus seleksi saat Anda masih mengetik perintah.",
+        "Menyetel ulang pemutus seri saran perintah sehingga Extend berperingkat di atas Export, dan FileManager/Delete berperingkat lebih rendah, saat berbagi awalan dengan perintah lain.",
+      ],
+    },
+    {
       title: "Saran perintah yang lebih cerdas, filter seleksi & selesaikan dengan Enter",
       highlights: [
         "Saran perintah kini mencocokkan huruf di mana saja dalam nama perintah, bukan hanya di awal, diurutkan berdasarkan kualitas kecocokan lalu seberapa sering Anda benar-benar menggunakan perintah tersebut; daftar dapat diklik dengan mouse, otomatis menggulir agar saran yang dipilih tetap terlihat saat berpindah dengan Tab, dibatasi sekitar 10 baris, dan hanya menyorot huruf yang cocok di tempatnya, bukan menumpuk seluruh kata bayangan",
@@ -4156,6 +4338,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ja: [
+    {
+      title: "Polyline：円弧セグメントとExplode；印刷マネージャーの修正とBlueprintスタイル",
+      highlights: [
+        "新機能：Polylineに、描画中に円弧セグメントを配置できるAutoCADスタイルのArcオプションが追加(デフォルトは接線方向への継続)——Trim、Extend、Offset、Chamfer、交差判定はすべて円弧に対応し、円弧セグメントを含むポリラインの編集が直線セグメントと同じように動作するようになりました。",
+        "新しいExplodeコマンドで、ポリラインを個々のLineおよびArcエンティティに分解できます。",
+        "新機能：RotateにAutoCADスタイルのCopyオプションが追加——Cキーで切り替えると、回転が元のオブジェクトをその場で回転させる代わりに新しいコピーに適用されます。",
+        "新機能：印刷マネージャーのStyleセレクターに、DefaultとMonochromeに加えて3つ目の選択肢Blueprintが追加——濃いプルシアンブルーのページに白いインクで描画し、どのQuality設定でも同じ密度に見えるようサイズ調整されたかすかな参照グリッド付きです。",
+        "修正：印刷マネージャーのプレビューは、近似ではなく実際のエクスポートとまったく同じピクセルサイズでレンダリングされるようになり、Qualityを変更すると即座にプレビューが再レンダリングされます。線の太さは固定ピクセル数ではなく印刷DPIに応じてスケールするようになり、どのQuality設定でも用紙上の線の物理的な太さが同じに保たれます(ヘアライン／太さ0は、AutoCADの定義どおり常に固定1ピクセルのままです)。",
+        "修正：選択した印刷範囲が、単位が実際のmmではないレイアウトも含め、常にシート全体をエクスポートするのではなく、レイアウト(用紙空間)のエクスポートを実際にトリミングするようになりました。モノクロレンダリングは、後からピクセルの明度にしきい値処理を行う代わりに、ソースの時点で黒インクを強制するようになり、細い線の見かけの太さが2倍になるアーティファクトを解消しました。",
+        "Arcオプションの構築中に見つかったポリライン円弧の2つのバグを修正：Trimがカットのすぐ隣の円弧を逆に計算してしまうことがあった問題と、時計回りの円弧セグメントが誤った約300°の弧上で交点を報告し、意図したよりはるかに多くのポリラインがトリミングされてしまう問題です。",
+        "修正：ポリライン上でのChamferの2回目のピックが、隣接しないペアを黙って面取りする代わりに、実際に隣接するセグメントを要求するようになりました。ポリラインの最初のセグメントを延長すると、正しい端と方向から伸びるようになりました。",
+        "修正：コマンドをまだ入力している最中にBackspaceキーで選択が削除されなくなりました。",
+        "他のコマンドとプレフィックスを共有する場合に、ExtendがExportより上位に、FileManager／Deleteがより下位にランクされるよう、コマンド候補の同点判定を調整しました。",
+      ],
+    },
     {
       title: "よりスマートなコマンド候補、選択フィルター、Enterでの確定",
       highlights: [
@@ -4498,6 +4695,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   pl: [
     {
+      title: "Polyline: segmenty łuku i Explode; poprawki menedżera druku i styl Blueprint",
+      highlights: [
+        "Nowość: Polyline zyskuje opcję Arc w stylu AutoCAD do umieszczania segmentów łuku podczas rysowania (domyślnie kontynuacja styczna) — Trim, Extend, Offset, Chamfer i wykrywanie przecięć rozpoznają teraz łuki, więc edycja polilinii z segmentami łuku działa tak samo jak z prostymi.",
+        "Nowe polecenie Explode rozbija polilinię na osobne encje Line i Arc.",
+        "Nowość: Rotate zyskuje opcję Copy w stylu AutoCAD — naciśnij C, aby ją przełączyć, a obrót zostanie zastosowany do nowych kopii zamiast do oryginału w miejscu.",
+        "Nowość: selektor Style menedżera druku zyskuje trzecią opcję, Blueprint, obok Default i Monochrome — biały atrament na głębokiej stronie w kolorze błękitu pruskiego z delikatną siatką odniesienia, wyglądającą tak samo gęsto przy dowolnym ustawieniu Quality.",
+        "Naprawiono: podgląd menedżera druku jest teraz renderowany w dokładnie tym samym rozmiarze pikseli co rzeczywisty eksport, zamiast go przybliżać, a zmiana Quality natychmiast ponownie go renderuje; grubości linii skalują się teraz z DPI druku zamiast ze stałą liczbą pikseli, więc linia zachowuje tę samą fizyczną grubość na papierze przy dowolnym ustawieniu Quality (cienka linia / grubość 0 pozostaje stała na 1 piksel, zgodnie z definicją AutoCAD).",
+        "Naprawiono: zaznaczony obszar druku faktycznie przycina teraz eksporty układu (przestrzeni papieru) zamiast zawsze eksportować cały arkusz, także przy układzie, którego jednostki nie są prawdziwymi mm; renderowanie monochromatyczne wymusza teraz czarny atrament u źródła zamiast progowania jasności pikseli później, eliminując artefakt, który mógł podwajać widoczną grubość cienkiej linii.",
+        "Naprawiono dwa błędy łuków polilinii wykryte podczas budowy opcji Arc: Trim mógł obliczyć łuk tuż obok cięcia odwrotnie, a segment łuku zgodny z ruchem wskazówek zegara mógł zgłaszać przecięcia na niewłaściwym łuku ~300°, przycinając znacznie więcej polilinii niż zamierzono.",
+        "Naprawiono: drugie zaznaczenie Chamfer na polilinii wymaga teraz naprawdę sąsiedniego segmentu zamiast po cichu fazować niesąsiadującą parę; wydłużanie pierwszego segmentu polilinii rośnie teraz od właściwego końca i we właściwym kierunku.",
+        "Naprawiono: Backspace nie usuwa już zaznaczenia podczas wpisywania polecenia.",
+        "Dostrojono rozstrzyganie remisów w podpowiedziach poleceń, tak aby Extend był wyżej niż Export, a FileManager/Delete niżej, gdy dzielą prefiks z innym poleceniem.",
+      ],
+    },
+    {
       title: "Sprytniejsze podpowiedzi poleceń, filtrowanie zaznaczenia i kończenie klawiszem Enter",
       highlights: [
         "Podpowiedzi poleceń dopasowują teraz litery w dowolnym miejscu nazwy polecenia, nie tylko na początku, i są sortowane najpierw według jakości dopasowania, a potem według tego, jak często faktycznie używasz danego polecenia; listę można klikać myszą, przewija się, aby zaznaczona podpowiedź pozostała widoczna podczas przełączania klawiszem Tab, jest ograniczona do około 10 wierszy i podświetla tylko dopasowane litery w miejscu, zamiast nakładać całe słowo-widmo",
@@ -4838,6 +5050,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   ko: [
+    {
+      title: "Polyline: 호(Arc) 세그먼트 & Explode; 인쇄 관리자 수정 및 Blueprint 스타일",
+      highlights: [
+        "신규: Polyline에 그리는 동안 호 세그먼트를 배치할 수 있는 AutoCAD 스타일의 Arc 옵션이 추가되었습니다(기본값은 접선 방향 연속) — Trim, Extend, Offset, Chamfer, 교차 감지가 모두 호를 인식하게 되어, 호 세그먼트가 있는 폴리라인을 편집하는 방식이 직선 세그먼트와 동일하게 작동합니다.",
+        "새로운 Explode 명령이 폴리라인을 개별 Line 및 Arc 엔티티로 분해합니다.",
+        "신규: Rotate에 AutoCAD 스타일의 Copy 옵션이 추가되었습니다 — C를 눌러 전환하면, 회전이 원본을 제자리에서 회전시키는 대신 새 복사본에 적용됩니다.",
+        "신규: 인쇄 관리자의 Style 선택기에 Default, Monochrome과 함께 세 번째 옵션인 Blueprint가 추가되었습니다 — 짙은 프러시안 블루 페이지 위에 흰색 잉크로 표현되며, 어떤 Quality 설정에서도 동일한 밀도로 보이도록 크기가 조정된 은은한 참조 격자가 함께 제공됩니다.",
+        "수정: 인쇄 관리자의 미리보기가 이제 근사값이 아니라 실제 내보내기와 정확히 동일한 픽셀 크기로 렌더링되며, Quality를 변경하면 미리보기가 즉시 다시 렌더링됩니다. 선 두께는 이제 고정된 픽셀 수 대신 인쇄 DPI에 따라 스케일링되어, 어떤 Quality 설정에서도 종이 위의 선이 동일한 물리적 두께를 유지합니다(헤어라인/두께 0은 AutoCAD의 정의대로 항상 고정된 1픽셀로 유지됩니다).",
+        "수정: 선택한 인쇄 영역이 이제 단위가 실제 mm가 아닌 레이아웃에서도, 항상 전체 시트를 내보내는 대신 레이아웃(용지 공간) 내보내기를 실제로 잘라냅니다. 단색 렌더링은 이제 나중에 픽셀 밝기에 임계값을 적용하는 대신 소스에서 바로 검은색 잉크를 강제 적용하여, 가는 선의 겉보기 두께가 두 배로 보이던 아티팩트를 제거했습니다.",
+        "Arc 옵션을 구축하는 과정에서 발견된 두 가지 폴리라인 호 버그를 수정했습니다: Trim이 절단 바로 옆의 호를 거꾸로 계산할 수 있었던 문제와, 시계 방향 호 세그먼트가 잘못된 약 300° 호에서 교차점을 보고하여 의도한 것보다 훨씬 많은 폴리라인이 잘려나가던 문제입니다.",
+        "수정: 폴리라인에서 Chamfer의 두 번째 선택이 이제 인접하지 않은 세그먼트 쌍을 조용히 모따기하는 대신 실제로 인접한 세그먼트를 요구합니다. 폴리라인의 첫 번째 세그먼트를 연장하면 이제 올바른 끝점과 방향에서 자라납니다.",
+        "수정: 아직 명령어를 입력하는 중일 때 Backspace가 더 이상 선택을 삭제하지 않습니다.",
+        "다른 명령어와 접두사를 공유할 때 Extend가 Export보다 위에, FileManager/Delete가 더 아래에 순위가 매겨지도록 명령어 제안의 동점 처리 순위를 조정했습니다.",
+      ],
+    },
     {
       title: "더 똑똑한 명령어 제안, 선택 필터링, Enter로 완료하기",
       highlights: [
@@ -5180,6 +5407,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   vi: [
     {
+      title: "Polyline: đoạn cung & Explode; sửa lỗi trình quản lý in và kiểu Blueprint",
+      highlights: [
+        "Mới: Polyline có tùy chọn Arc kiểu AutoCAD để đặt các đoạn cung khi vẽ (mặc định tiếp tục theo tiếp tuyến) — Trim, Extend, Offset, Chamfer và phát hiện giao điểm giờ đều nhận biết cung, nên chỉnh sửa một polyline có đoạn cung hoạt động giống như với đoạn thẳng.",
+        "Lệnh Explode mới tách một polyline thành các thực thể Line và Arc riêng lẻ.",
+        "Mới: Rotate có tùy chọn Copy kiểu AutoCAD — nhấn C để bật/tắt, phép xoay sẽ áp dụng cho bản sao mới thay vì xoay bản gốc tại chỗ.",
+        "Mới: bộ chọn Style của trình quản lý in có thêm tùy chọn thứ ba, Blueprint, bên cạnh Default và Monochrome — mực trắng trên nền trang xanh Phổ đậm với lưới tham chiếu mờ nhạt được đặt kích thước để trông có cùng mật độ ở mọi thiết lập Quality.",
+        "Đã sửa: bản xem trước của trình quản lý in giờ được kết xuất ở đúng kích thước pixel như bản xuất thực tế thay vì chỉ là ước lượng gần đúng, và thay đổi Quality sẽ kết xuất lại bản xem trước ngay lập tức; độ dày đường giờ chia tỉ lệ theo DPI in thay vì một số pixel cố định, nên một đường giữ nguyên độ dày vật lý trên giấy ở bất kỳ thiết lập Quality nào (đường tóc / độ dày 0 vẫn cố định ở 1 pixel, đúng như AutoCAD định nghĩa).",
+        "Đã sửa: một vùng in đã chọn giờ thực sự cắt các bản xuất layout (không gian giấy) thay vì luôn xuất toàn bộ tờ giấy, kể cả trên layout có đơn vị không phải mm thực; kết xuất đơn sắc giờ buộc dùng mực đen ngay từ nguồn thay vì áp ngưỡng độ sáng pixel sau đó, loại bỏ một lỗi hiển thị có thể làm tăng gấp đôi độ dày biểu kiến của một đường mảnh.",
+        "Đã sửa hai lỗi cung-polyline phát hiện khi xây dựng tùy chọn Arc: Trim có thể tính ngược cung ngay cạnh một điểm cắt, và một đoạn cung theo chiều kim đồng hồ có thể báo cáo giao điểm trên cung ~300° sai, cắt bỏ nhiều phần polyline hơn dự định.",
+        "Đã sửa: lần chọn thứ hai của Chamfer trên một polyline giờ yêu cầu một đoạn liền kề thực sự thay vì âm thầm vát cạnh một cặp không liền kề; kéo dài đoạn đầu tiên của polyline giờ mọc ra từ đúng đầu mút và đúng hướng.",
+        "Đã sửa: Backspace không còn xóa lựa chọn khi bạn vẫn đang gõ một lệnh.",
+        "Điều chỉnh cách phân định thứ hạng khi hòa của gợi ý lệnh để Extend xếp trên Export, và FileManager/Delete xếp thấp hơn, khi chúng chung tiền tố với một lệnh khác.",
+      ],
+    },
+    {
       title: "Gợi ý lệnh thông minh hơn, lọc lựa chọn & hoàn tất bằng Enter",
       highlights: [
         "Gợi ý lệnh giờ đây khớp với các chữ cái ở bất kỳ vị trí nào trong tên lệnh, không chỉ ở đầu, được xếp hạng theo chất lượng khớp trước rồi đến tần suất bạn thực sự sử dụng lệnh đó; danh sách có thể nhấp chuột, tự cuộn để giữ gợi ý đang chọn trong tầm nhìn khi chuyển bằng Tab, giới hạn khoảng 10 dòng, và chỉ tô sáng đúng các chữ cái khớp tại chỗ thay vì phủ cả một từ mờ",
@@ -5520,6 +5762,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   th: [
+    {
+      title: "Polyline: ส่วนโค้ง & Explode; แก้ไขตัวจัดการการพิมพ์และสไตล์ Blueprint",
+      highlights: [
+        "ใหม่: Polyline ได้รับตัวเลือก Arc สไตล์ AutoCAD สำหรับวางส่วนโค้งขณะวาด (ค่าเริ่มต้นคือต่อเนื่องแบบสัมผัส) — Trim, Extend, Offset, Chamfer และการตรวจจับจุดตัดรองรับส่วนโค้งแล้วทั้งหมด ทำให้การแก้ไข polyline ที่มีส่วนโค้งทำงานเหมือนกับเส้นตรง",
+        "คำสั่ง Explode ใหม่แยก polyline ออกเป็นเอนทิตี Line และ Arc แต่ละชิ้น",
+        "ใหม่: Rotate ได้รับตัวเลือก Copy สไตล์ AutoCAD — กด C เพื่อสลับ และการหมุนจะถูกนำไปใช้กับสำเนาใหม่แทนที่จะหมุนต้นฉบับในตำแหน่งเดิม",
+        "ใหม่: ตัวเลือก Style ของตัวจัดการการพิมพ์ได้ตัวเลือกที่สาม Blueprint นอกเหนือจาก Default และ Monochrome — หมึกสีขาวบนหน้ากระดาษสีน้ำเงินปรัสเซียนเข้ม พร้อมตารางอ้างอิงจาง ๆ ที่ปรับขนาดให้ดูมีความหนาแน่นเท่ากันในทุกการตั้งค่า Quality",
+        "แก้ไข: ตัวอย่างของตัวจัดการการพิมพ์เรนเดอร์ที่ขนาดพิกเซลเดียวกันทุกประการกับการส่งออกจริงแล้ว แทนที่จะเป็นเพียงค่าประมาณ และการเปลี่ยน Quality จะเรนเดอร์ตัวอย่างใหม่ทันที ความหนาของเส้นปรับตาม DPI การพิมพ์แทนจำนวนพิกเซลคงที่ ทำให้เส้นคงความหนาจริงบนกระดาษเท่าเดิมในทุกการตั้งค่า Quality (เส้นบาง/ความหนา 0 ยังคงกว้าง 1 พิกเซลคงที่ตามที่ AutoCAD กำหนด)",
+        "แก้ไข: พื้นที่พิมพ์ที่เลือกไว้ครอบตัดการส่งออก layout (พื้นที่กระดาษ) ได้จริงแล้ว แทนที่จะส่งออกทั้งแผ่นเสมอ แม้กระทั่งบน layout ที่หน่วยไม่ใช่มิลลิเมตรจริง การเรนเดอร์ขาวดำบังคับใช้หมึกสีดำตั้งแต่ต้นทางแล้ว แทนการทำ threshold ความสว่างของพิกเซลภายหลัง ซึ่งขจัดข้อบกพร่องที่อาจทำให้ความหนาที่มองเห็นของเส้นบางเพิ่มเป็นสองเท่า",
+        "แก้ไขบั๊กเกี่ยวกับส่วนโค้งของ polyline สองรายการที่พบระหว่างการสร้างตัวเลือก Arc: Trim อาจคำนวณส่วนโค้งที่อยู่ติดกับจุดตัดผิดทิศทาง และส่วนโค้งตามเข็มนาฬิกาอาจรายงานจุดตัดบนส่วนโค้งที่ผิดประมาณ 300° ทำให้ตัด polyline ออกไปมากกว่าที่ตั้งใจไว้มาก",
+        "แก้ไข: การเลือกจุดที่สองของ Chamfer บน polyline ต้องเป็นส่วนที่อยู่ติดกันจริง ๆ แล้ว แทนที่จะเลี่ยงมุมคู่ที่ไม่ติดกันอย่างเงียบ ๆ การขยายส่วนแรกของ polyline เติบโตจากปลายและทิศทางที่ถูกต้องแล้ว",
+        "แก้ไข: Backspace ไม่ลบสิ่งที่เลือกอีกต่อไปขณะที่คุณยังพิมพ์คำสั่งอยู่",
+        "ปรับการตัดสินเสมอของคำแนะนำคำสั่งให้ Extend อยู่เหนือ Export และ FileManager/Delete อยู่ต่ำกว่า เมื่อมีคำนำหน้าร่วมกับคำสั่งอื่น",
+      ],
+    },
     {
       title: "คำแนะนำคำสั่งที่ฉลาดขึ้น การกรองการเลือก และการจบด้วย Enter",
       highlights: [
@@ -5862,6 +6119,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   ms: [
     {
+      title: "Polyline: segmen Arc & Explode; pembaikan pengurus cetak dan gaya Blueprint",
+      highlights: [
+        "Baharu: Polyline mendapat pilihan Arc gaya AutoCAD untuk meletakkan segmen lengkok semasa melukis (sambungan tangen secara lalai) — Trim, Extend, Offset, Chamfer, dan pengesanan persilangan kini semuanya sedar-lengkok, jadi menyunting polyline dengan segmen lengkok berfungsi sama seperti segmen lurus.",
+        "Arahan Explode baharu memecahkan polyline kepada entiti Line dan Arc individunya.",
+        "Baharu: Rotate mendapat pilihan Copy gaya AutoCAD — tekan C untuk togol, dan putaran akan digunakan pada salinan baharu bukannya asal di tempatnya.",
+        "Baharu: pemilih Style pengurus cetak mendapat pilihan ketiga, Blueprint, di samping Default dan Monochrome — dakwat putih di atas halaman biru Prussia gelap dengan grid rujukan samar yang bersaiz supaya kelihatan sama padat pada mana-mana tetapan Quality.",
+        "Dibaiki: pratonton pengurus cetak kini dipaparkan pada saiz piksel yang tepat sama dengan eksport sebenar bukannya anggaran, dan menukar Quality serta-merta memaparkan semula pratonton; ketebalan garis kini berskala dengan DPI cetak bukannya bilangan piksel tetap, jadi garis mengekalkan ketebalan fizikal yang sama di atas kertas pada mana-mana tetapan Quality (garis rerambut / ketebalan 0 kekal tetap pada 1 piksel, sepertimana AutoCAD mentakrifkannya).",
+        "Dibaiki: kawasan cetak yang dipilih kini benar-benar memangkas eksport susun atur (ruang kertas) bukannya sentiasa mengeksport keseluruhan helaian, termasuk pada susun atur yang unitnya bukan mm sebenar; pemaparan monokrom kini memaksa dakwat hitam pada sumber bukannya menggunakan ambang kecerahan piksel selepas itu, menghapuskan artifak yang boleh menggandakan ketebalan kelihatan garis nipis.",
+        "Membaiki dua pepijat lengkok-polyline yang ditemui semasa membina pilihan Arc: Trim boleh mengira lengkok bersebelahan potongan secara terbalik, dan segmen lengkok mengikut jam boleh melaporkan persilangan pada lengkok ~300° yang salah, memangkas jauh lebih banyak polyline daripada yang dimaksudkan.",
+        "Dibaiki: pemilihan kedua Chamfer pada polyline kini memerlukan segmen jiran yang benar bukannya secara senyap memangkas pasangan yang tidak bersebelahan; melanjutkan segmen pertama polyline kini tumbuh dari hujung dan arah yang betul.",
+        "Dibaiki: Backspace tidak lagi memadam pemilihan semasa anda masih menaip arahan.",
+        "Diselaraskan pemecah seri cadangan arahan supaya Extend berada di atas Export, dan FileManager/Delete lebih rendah, apabila berkongsi awalan dengan arahan lain.",
+      ],
+    },
+    {
       title: "Cadangan arahan lebih pintar, penapisan pemilihan & selesai dengan Enter",
       highlights: [
         "Cadangan arahan kini sepadan dengan huruf di mana-mana bahagian nama arahan, bukan hanya di permulaan, disusun mengikut kualiti padanan dahulu kemudian kekerapan anda benar-benar menggunakan arahan itu; senarai boleh diklik dengan tetikus, menatal secara automatik untuk memastikan cadangan yang dipilih kelihatan semasa beralih dengan Tab, terhad kepada kira-kira 10 baris, dan hanya menyerlahkan huruf yang sepadan di tempatnya dan bukannya menindih keseluruhan perkataan hantu",
@@ -6202,6 +6474,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   bn: [
+    {
+      title: "Polyline: আর্ক সেগমেন্ট ও Explode; প্রিন্ট ম্যানেজার সংশোধন এবং Blueprint স্টাইল",
+      highlights: [
+        "নতুন: Polyline-এ আঁকার সময় আর্ক সেগমেন্ট বসানোর জন্য AutoCAD-স্টাইল Arc অপশন যুক্ত হয়েছে (ডিফল্টে ট্যানজেন্ট-কন্টিনিউয়েশন) — Trim, Extend, Offset, Chamfer এবং ইন্টারসেকশন শনাক্তকরণ এখন সবই আর্ক-সচেতন, তাই আর্ক সেগমেন্টসহ একটি পলিলাইন এডিট করা সরল সেগমেন্টের মতোই কাজ করে।",
+        "নতুন Explode কমান্ড একটি পলিলাইনকে তার পৃথক Line ও Arc এনটিটিতে ভেঙে দেয়।",
+        "নতুন: Rotate-এ AutoCAD-স্টাইল Copy অপশন যুক্ত হয়েছে — টগল করতে C চাপুন, তখন ঘূর্ণন মূল বস্তুর জায়গায় না ঘুরিয়ে নতুন কপির উপর প্রয়োগ হয়।",
+        "নতুন: প্রিন্ট ম্যানেজারের Style সিলেক্টরে Default ও Monochrome-এর পাশাপাশি তৃতীয় অপশন Blueprint যুক্ত হয়েছে — গাঢ় প্রুশিয়ান-ব্লু পেজে সাদা কালি, সঙ্গে একটি হালকা রেফারেন্স গ্রিড যা যেকোনো Quality সেটিংয়ে একই ঘনত্বে দেখায়।",
+        "সংশোধিত: প্রিন্ট ম্যানেজারের প্রিভিউ এখন প্রকৃত এক্সপোর্টের অনুমান না করে ঠিক একই পিক্সেল সাইজে রেন্ডার হয়, এবং Quality পরিবর্তন করলে প্রিভিউ সঙ্গে সঙ্গে আবার রেন্ডার হয়; লাইনের পুরুত্ব এখন একটি স্থির পিক্সেল সংখ্যার বদলে প্রিন্ট DPI অনুযায়ী স্কেল হয়, ফলে যেকোনো Quality সেটিংয়ে কাগজে লাইনের ভৌত পুরুত্ব একই থাকে (হেয়ারলাইন/পুরুত্ব ০ AutoCAD যেভাবে সংজ্ঞায়িত করে সেভাবেই সবসময় স্থির ১ পিক্সেল থাকে)।",
+        "সংশোধিত: নির্বাচিত প্রিন্ট এলাকা এখন সবসময় পুরো শিট এক্সপোর্ট করার বদলে লেআউট (পেপার স্পেস) এক্সপোর্টকে সত্যিই ক্রপ করে, এমনকি এমন লেআউটেও যার একক প্রকৃত মিমি নয়; মনোক্রোম রেন্ডারিং এখন পরে পিক্সেল উজ্জ্বলতার থ্রেশহোল্ড করার বদলে সোর্সেই কালো কালি বাধ্যতামূলক করে, যা একটি পাতলা লাইনের দৃশ্যমান পুরুত্ব দ্বিগুণ করে দিতে পারত এমন একটি ত্রুটি দূর করেছে।",
+        "Arc অপশন তৈরি করার সময় পাওয়া দুটি পলিলাইন-আর্ক বাগ সংশোধন করা হয়েছে: Trim কোনো কাটের ঠিক পাশের আর্ক উল্টো হিসাব করতে পারত, এবং ক্লকওয়াইজ আর্ক সেগমেন্ট ভুল ~৩০০° আর্কে ইন্টারসেকশন রিপোর্ট করতে পারত, যার ফলে ইচ্ছার চেয়ে অনেক বেশি পলিলাইন ট্রিম হয়ে যেত।",
+        "সংশোধিত: একটি পলিলাইনে Chamfer-এর দ্বিতীয় পিক এখন সত্যিকারের প্রতিবেশী সেগমেন্ট দাবি করে, চুপচাপ কোনো অ-সংলগ্ন জোড়াকে চ্যামফার করার বদলে; একটি পলিলাইনের প্রথম সেগমেন্ট এক্সটেন্ড করলে এখন সঠিক প্রান্ত ও দিক থেকে বাড়ে।",
+        "সংশোধিত: আপনি এখনও কমান্ড টাইপ করার সময় Backspace আর সিলেকশন মুছে দেয় না।",
+        "কমান্ড সাজেশনের টাই-ব্রেকিং টিউন করা হয়েছে যাতে Extend, Export-এর উপরে র‍্যাঙ্ক করে, এবং FileManager/Delete অন্য কোনো কমান্ডের সঙ্গে প্রিফিক্স শেয়ার করলে নিচে র‍্যাঙ্ক করে।",
+      ],
+    },
     {
       title: "আরও স্মার্ট কমান্ড সাজেশন, সিলেকশন ফিল্টার এবং Enter দিয়ে শেষ করা",
       highlights: [
@@ -6563,6 +6850,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   sw: [
+    {
+      title: "Polyline: sehemu za Arc na Explode; masahihisho ya kidhibiti cha uchapishaji na mtindo wa Blueprint",
+      highlights: [
+        "Mpya: Polyline sasa ina chaguo la Arc la mtindo wa AutoCAD kwa kuweka sehemu za mkunjo wakati wa kuchora (kuendelea kwa tanjenti kwa chaguo-msingi) — Trim, Extend, Offset, Chamfer, na utambuzi wa makutano sasa vyote vinatambua mikunjo, hivyo kuhariri polyline yenye sehemu za mkunjo hufanya kazi sawa na sehemu za mstari ulionyooka.",
+        "Amri mpya ya Explode inavunja polyline kuwa entiti zake binafsi za Line na Arc.",
+        "Mpya: Rotate sasa ina chaguo la Copy la mtindo wa AutoCAD — bonyeza C kubadilisha, na mzunguko unatumika kwa nakala mpya badala ya ile ya asili mahali pake.",
+        "Mpya: kishuka cha Style cha kidhibiti cha uchapishaji sasa kina chaguo la tatu, Blueprint, pamoja na Default na Monochrome — wino mweupe kwenye ukurasa wa bluu ya Prussia ya kina wenye gridi ya rejea hafifu iliyopimwa ili ionekane na msongamano uleule katika mpangilio wowote wa Quality.",
+        "Imesahihishwa: hakiki ya kidhibiti cha uchapishaji sasa hutolewa kwa ukubwa wa pikseli uleule kabisa na usafirishaji halisi badala ya kukadiria tu, na kubadilisha Quality hurenderi upya hakiki mara moja; unene wa mistari sasa hupima kulingana na DPI ya uchapishaji badala ya idadi thabiti ya pikseli, hivyo mstari hudumisha unene uleule halisi kwenye karatasi katika mpangilio wowote wa Quality (mstari mwembamba / unene 0 hubaki thabiti kwenye pikseli 1, sawasawa na jinsi AutoCAD inavyoufafanua).",
+        "Imesahihishwa: eneo la uchapishaji lililochaguliwa sasa hupunguza kwa hakika usafirishaji wa muundo (nafasi ya karatasi) badala ya kusafirisha karatasi nzima kila wakati, hata kwenye muundo ambao vipimo vyake si mm halisi; uonyeshaji wa monochrome sasa unalazimisha wino mweusi kwenye chanzo badala ya kutumia kizingiti cha mwangaza wa pikseli baadaye, ikiondoa hitilafu iliyoweza kuongeza mara mbili unene unaoonekana wa mstari mwembamba.",
+        "Imesahihisha hitilafu mbili za mikunjo ya polyline zilizogunduliwa wakati wa kujenga chaguo la Arc: Trim iliweza kuhesabu mkunjo ulio karibu kabisa na mkato kwa mgeuko, na sehemu ya mkunjo inayozunguka kama saa iliweza kuripoti makutano kwenye mkunjo mbaya wa ~300°, ikikata sehemu kubwa zaidi ya polyline kuliko iliyokusudiwa.",
+        "Imesahihishwa: uteuzi wa pili wa Chamfer kwenye polyline sasa unahitaji sehemu jirani ya kweli badala ya kukata pembe kimya kimya kwa jozi isiyo jirani; kurefusha sehemu ya kwanza ya polyline sasa hukua kutoka mwisho na mwelekeo sahihi.",
+        "Imesahihishwa: Backspace haifuti tena uteuzi wakati bado unaandika amri.",
+        "Imerekebisha uamuzi wa sare wa mapendekezo ya amri ili Extend iwe juu ya Export, na FileManager/Delete ziwe chini zaidi, zinaposhiriki kiambishi awali na amri nyingine.",
+      ],
+    },
     {
       title: "Mapendekezo mahiri zaidi ya amri, uchujaji wa uteuzi na kumaliza kwa Enter",
       highlights: [
@@ -6926,6 +7228,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   ur: [
     {
+      title: "Polyline: Arc سیگمنٹس اور Explode؛ پرنٹ مینیجر کی اصلاحات اور Blueprint اسٹائل",
+      highlights: [
+        "نیا: Polyline کو ڈرائنگ کے دوران آرک سیگمنٹس رکھنے کے لیے AutoCAD طرز کا Arc آپشن ملتا ہے (ڈیفالٹ پر tangent-continuation) — Trim، Extend، Offset، Chamfer، اور انٹرسیکشن ڈیٹیکشن اب سب آرک سے واقف ہیں، اس لیے آرک سیگمنٹس والی پولی لائن میں ترمیم بالکل سیدھی پولی لائن کی طرح کام کرتی ہے۔",
+        "نیا Explode کمانڈ پولی لائن کو اس کی الگ Line اور Arc اینٹیٹیز میں توڑ دیتا ہے۔",
+        "نیا: Rotate کو AutoCAD طرز کا Copy آپشن ملتا ہے — اسے ٹوگل کرنے کے لیے C دبائیں، اور گردش اصل شے کو اپنی جگہ گھمانے کے بجائے نئی کاپیوں پر لاگو ہوتی ہے۔",
+        "نیا: پرنٹ مینیجر کے Style سلیکٹر کو Default اور Monochrome کے ساتھ ایک تیسرا آپشن Blueprint ملتا ہے — گہرے پرشیئن بلیو صفحے پر سفید سیاہی، ایک ہلکی حوالہ گرڈ کے ساتھ جو کسی بھی Quality سیٹنگ پر یکساں کثافت دکھاتی ہے۔",
+        "درست کیا گیا: پرنٹ مینیجر کا پیش نظارہ اب اندازہ لگانے کے بجائے اصل ایکسپورٹ جیسے بالکل اسی پکسل سائز پر رینڈر ہوتا ہے، اور Quality تبدیل کرنے سے پیش نظارہ فوراً دوبارہ رینڈر ہوتا ہے؛ لائن کی موٹائی اب ایک مستقل پکسل تعداد کی بجائے پرنٹ DPI کے ساتھ سکیل ہوتی ہے، اس لیے کوئی بھی Quality سیٹنگ پر لائن کاغذ پر وہی حقیقی موٹائی برقرار رکھتی ہے (ہیئر لائن/موٹائی 0 ہمیشہ مستقل 1 پکسل رہتی ہے، بالکل جیسے AutoCAD اسے بیان کرتا ہے)۔",
+        "درست کیا گیا: منتخب پرنٹ رقبہ اب ہمیشہ پوری شیٹ ایکسپورٹ کرنے کے بجائے لے آؤٹ (پیپر اسپیس) ایکسپورٹس کو واقعی کراپ کرتا ہے، یہاں تک کہ ایسے لے آؤٹ پر بھی جس کی اکائیاں حقیقی ملی میٹر نہیں ہیں؛ مونوکروم رینڈرنگ اب بعد میں پکسل چمک کا حد بندی کرنے کے بجائے سورس پر ہی کالی سیاہی مسلط کرتی ہے، جس سے وہ خرابی ختم ہو گئی جو ایک پتلی لائن کی ظاہری موٹائی کو دوگنا کر سکتی تھی۔",
+        "Arc آپشن بناتے وقت ملنے والی دو پولی لائن-آرک خرابیاں درست کی گئیں: Trim کسی کٹ کے بالکل ساتھ والے آرک کو الٹا حساب کر سکتا تھا، اور گھڑی کی سمت والا آرک سیگمنٹ غلط ~300° آرک پر انٹرسیکشنز بتا سکتا تھا، جس سے ارادے سے کہیں زیادہ پولی لائن ٹرم ہو جاتی تھی۔",
+        "درست کیا گیا: کسی پولی لائن پر Chamfer کا دوسرا انتخاب اب خاموشی سے غیر ملحقہ جوڑے کو چیمفر کرنے کے بجائے واقعی پڑوسی سیگمنٹ کا تقاضا کرتا ہے؛ پولی لائن کے پہلے سیگمنٹ کو بڑھانا اب درست سرے اور سمت سے بڑھتا ہے۔",
+        "درست کیا گیا: کمانڈ ابھی ٹائپ کرتے وقت Backspace اب سلیکشن ڈیلیٹ نہیں کرتا۔",
+        "کمانڈ تجاویز کی ٹائی بریکنگ کو ٹیون کیا گیا تاکہ Extend، Export سے اوپر رینک کرے، اور FileManager/Delete کسی اور کمانڈ کے ساتھ پریفکس شیئر کرنے پر نیچے رینک کریں۔",
+      ],
+    },
+    {
       title: "زیادہ ذہین کمانڈ تجاویز، سلیکشن فلٹر اور Enter سے مکمل کرنا",
       highlights: [
         "کمانڈ تجاویز اب کمانڈ کے نام میں کہیں بھی موجود حروف سے میل کھاتی ہیں، نہ کہ صرف شروع میں؛ پہلے میچ کے معیار کے حساب سے اور پھر آپ اس کمانڈ کو حقیقت میں کتنی بار استعمال کرتے ہیں اس کے حساب سے ترتیب دی جاتی ہیں۔ فہرست ماؤس سے کلک کی جا سکتی ہے، Tab سے سائیکل کرتے وقت منتخب تجویز کو نظر میں رکھنے کے لیے خودکار اسکرول ہوتی ہے، تقریباً 10 قطاروں تک محدود ہے، اور مکمل بھوت لفظ اوورلے کرنے کے بجائے صرف میل کھانے والے حروف کو ان کی جگہ پر نمایاں کرتی ہے",
@@ -7025,6 +7342,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   el: [
     {
+      title: "Polyline: τμήματα τόξου & Explode· διορθώσεις διαχειριστή εκτύπωσης και στυλ Blueprint",
+      highlights: [
+        "Νέο: Το Polyline αποκτά μια επιλογή Arc στυλ AutoCAD για τοποθέτηση τμημάτων τόξου κατά τη σχεδίαση (συνέχιση εφαπτόμενης από προεπιλογή) — τα Trim, Extend, Offset, Chamfer και η ανίχνευση τομών αναγνωρίζουν πλέον τόξα, οπότε η επεξεργασία μιας πολυγραμμής με τμήματα τόξου λειτουργεί όπως και με ευθύγραμμα τμήματα.",
+        "Η νέα εντολή Explode διασπά μια πολυγραμμή στις μεμονωμένες οντότητες Line και Arc της.",
+        "Νέο: Το Rotate αποκτά μια επιλογή Copy στυλ AutoCAD — πατήστε C για εναλλαγή, και η περιστροφή εφαρμόζεται σε νέα αντίγραφα αντί στο πρωτότυπο επί τόπου.",
+        "Νέο: ο επιλογέας Style του διαχειριστή εκτύπωσης αποκτά μια τρίτη επιλογή, Blueprint, δίπλα στα Default και Monochrome — λευκό μελάνι σε βαθιά πρωσικού μπλε σελίδα με ένα διακριτικό πλέγμα αναφοράς που έχει μέγεθος ώστε να φαίνεται εξίσου πυκνό σε οποιαδήποτε ρύθμιση Quality.",
+        "Διορθώθηκε: η προεπισκόπηση του διαχειριστή εκτύπωσης αποδίδεται τώρα στο ακριβώς ίδιο μέγεθος pixel με την πραγματική εξαγωγή αντί να την προσεγγίζει, και η αλλαγή της Quality αποδίδει ξανά αμέσως την προεπισκόπηση· τα πάχη γραμμών κλιμακώνονται πλέον με το DPI εκτύπωσης αντί για σταθερό αριθμό pixel, οπότε μια γραμμή διατηρεί το ίδιο φυσικό πάχος στο χαρτί σε οποιαδήποτε ρύθμιση Quality (η πολύ λεπτή γραμμή / πάχος 0 παραμένει σταθερή στο 1 pixel, όπως ακριβώς την ορίζει το AutoCAD).",
+        "Διορθώθηκε: μια επιλεγμένη περιοχή εκτύπωσης πλέον πράγματι περικόπτει τις εξαγωγές διάταξης (χώρου χαρτιού) αντί να εξάγει πάντα ολόκληρο το φύλλο, ακόμη και σε διάταξη της οποίας οι μονάδες δεν είναι πραγματικά mm· η ασπρόμαυρη απόδοση επιβάλλει πλέον μαύρο μελάνι στην πηγή αντί να εφαρμόζει κατώφλι φωτεινότητας pixel εκ των υστέρων, εξαλείφοντας ένα ελάττωμα που μπορούσε να διπλασιάσει το φαινομενικό πάχος μιας λεπτής γραμμής.",
+        "Διορθώθηκαν δύο σφάλματα τόξων πολυγραμμής που εντοπίστηκαν κατά την κατασκευή της επιλογής Arc: το Trim μπορούσε να υπολογίσει ανάποδα το τόξο ακριβώς δίπλα σε μια κοπή, και ένα τμήμα τόξου με φορά ωρολογίου μπορούσε να αναφέρει τομές στο λάθος τόξο ~300°, περικόπτοντας πολύ περισσότερη πολυγραμμή απ' όσο προοριζόταν.",
+        "Διορθώθηκε: η δεύτερη επιλογή του Chamfer σε μια πολυγραμμή απαιτεί πλέον ένα πραγματικά γειτονικό τμήμα αντί να λοξοτέμνει σιωπηλά ένα μη γειτονικό ζεύγος· η επέκταση του πρώτου τμήματος μιας πολυγραμμής αναπτύσσεται πλέον από το σωστό άκρο και προς τη σωστή κατεύθυνση.",
+        "Διορθώθηκε: το Backspace δεν διαγράφει πλέον μια επιλογή ενώ πληκτρολογείτε ακόμη μια εντολή.",
+        "Ρυθμίστηκε η επίλυση ισοπαλιών στις προτάσεις εντολών ώστε το Extend να κατατάσσεται πάνω από το Export, και τα FileManager/Delete χαμηλότερα, όταν μοιράζονται πρόθεμα με άλλη εντολή.",
+      ],
+    },
+    {
       title: "Εξυπνότερες προτάσεις εντολών, φιλτράρισμα επιλογής & ολοκλήρωση με Enter",
       highlights: [
         "Οι προτάσεις εντολών πλέον ταιριάζουν γράμματα οπουδήποτε μέσα στο όνομα μιας εντολής, όχι μόνο στην αρχή, ταξινομημένες πρώτα κατά ποιότητα ταιριάσματος και έπειτα κατά το πόσο συχνά χρησιμοποιείτε πράγματι την εντολή· η λίστα είναι κλικαρίσιμη με το ποντίκι, κάνει κύλιση ώστε η επιλεγμένη πρόταση να παραμένει ορατή κατά την εναλλαγή με το Tab, περιορίζεται σε περίπου 10 γραμμές, και επισημαίνει μόνο τα γράμματα που ταιριάζουν στη θέση τους αντί να επικαλύπτει μια ολόκληρη φανταστική λέξη",
@@ -7122,6 +7454,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     { title: 'Αναβάθμιση Angular, τεκμηρίωση & προσαρμοστικό πλέγμα', highlights: ['Αναβάθμιση Angular 19 → 20 → 21', 'Πλήρης ιστότοπος τεκμηρίωσης εντολών', 'Προσαρμοστικό πλέγμα CAD', 'Πίνακας ιστορικού (Αναίρεση / Ιστορικό / Επανάληψη)'] },
   ],
   pa: [
+    {
+      title: "Polyline: Arc ਸੈਗਮੈਂਟਸ ਅਤੇ Explode; ਪ੍ਰਿੰਟ ਮੈਨੇਜਰ ਸੁਧਾਰ ਅਤੇ Blueprint ਸਟਾਈਲ",
+      highlights: [
+        "ਨਵਾਂ: Polyline ਨੂੰ ਡਰਾਇੰਗ ਕਰਦੇ ਸਮੇਂ ਆਰਕ ਸੈਗਮੈਂਟਸ ਰੱਖਣ ਲਈ AutoCAD-ਸ਼ੈਲੀ ਦਾ Arc ਵਿਕਲਪ ਮਿਲਦਾ ਹੈ (ਡਿਫਾਲਟ ਰੂਪ ਵਿੱਚ tangent-continuation) — Trim, Extend, Offset, Chamfer, ਅਤੇ ਇੰਟਰਸੈਕਸ਼ਨ ਖੋਜ ਹੁਣ ਸਾਰੇ ਆਰਕ-ਜਾਗਰੂਕ ਹਨ, ਇਸ ਲਈ ਆਰਕ ਸੈਗਮੈਂਟਸ ਵਾਲੀ ਪੌਲੀਲਾਈਨ ਨੂੰ ਸੰਪਾਦਿਤ ਕਰਨਾ ਸਿੱਧੀ ਪੌਲੀਲਾਈਨ ਵਾਂਗ ਹੀ ਕੰਮ ਕਰਦਾ ਹੈ।",
+        "ਨਵਾਂ Explode ਕਮਾਂਡ ਪੌਲੀਲਾਈਨ ਨੂੰ ਇਸਦੀਆਂ ਵੱਖਰੀਆਂ Line ਅਤੇ Arc ਐਂਟਿਟੀਜ਼ ਵਿੱਚ ਤੋੜਦਾ ਹੈ।",
+        "ਨਵਾਂ: Rotate ਨੂੰ AutoCAD-ਸ਼ੈਲੀ ਦਾ Copy ਵਿਕਲਪ ਮਿਲਦਾ ਹੈ — ਇਸਨੂੰ ਟੌਗਲ ਕਰਨ ਲਈ C ਦਬਾਓ, ਅਤੇ ਘੁਮਾਓ ਅਸਲ ਵਸਤੂ ਨੂੰ ਉਸਦੀ ਥਾਂ 'ਤੇ ਘੁਮਾਉਣ ਦੀ ਬਜਾਏ ਨਵੀਆਂ ਕਾਪੀਆਂ 'ਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।",
+        "ਨਵਾਂ: ਪ੍ਰਿੰਟ ਮੈਨੇਜਰ ਦੇ Style ਸਿਲੈਕਟਰ ਨੂੰ Default ਅਤੇ Monochrome ਦੇ ਨਾਲ ਤੀਜਾ ਵਿਕਲਪ Blueprint ਮਿਲਦਾ ਹੈ — ਗੂੜ੍ਹੇ ਪ੍ਰੂਸ਼ੀਅਨ-ਬਲੂ ਪੇਜ 'ਤੇ ਸਫ਼ੈਦ ਸਿਆਹੀ, ਇੱਕ ਹਲਕੀ ਰੈਫਰੈਂਸ ਗਰਿੱਡ ਨਾਲ ਜੋ ਕਿਸੇ ਵੀ Quality ਸੈਟਿੰਗ 'ਤੇ ਇੱਕੋ ਜਿਹੀ ਸੰਘਣਤਾ ਦਿਖਾਉਂਦੀ ਹੈ।",
+        "ਠੀਕ ਕੀਤਾ ਗਿਆ: ਪ੍ਰਿੰਟ ਮੈਨੇਜਰ ਦਾ ਪ੍ਰੀਵਿਊ ਹੁਣ ਅੰਦਾਜ਼ਾ ਲਗਾਉਣ ਦੀ ਬਜਾਏ ਅਸਲ ਐਕਸਪੋਰਟ ਵਰਗੇ ਬਿਲਕੁਲ ਉਸੇ ਪਿਕਸਲ ਸਾਈਜ਼ 'ਤੇ ਰੈਂਡਰ ਹੁੰਦਾ ਹੈ, ਅਤੇ Quality ਬਦਲਣ ਨਾਲ ਪ੍ਰੀਵਿਊ ਤੁਰੰਤ ਦੁਬਾਰਾ ਰੈਂਡਰ ਹੁੰਦਾ ਹੈ; ਲਾਈਨ ਦੀ ਮੋਟਾਈ ਹੁਣ ਇੱਕ ਸਥਿਰ ਪਿਕਸਲ ਗਿਣਤੀ ਦੀ ਬਜਾਏ ਪ੍ਰਿੰਟ DPI ਨਾਲ ਸਕੇਲ ਹੁੰਦੀ ਹੈ, ਇਸ ਲਈ ਕੋਈ ਵੀ Quality ਸੈਟਿੰਗ 'ਤੇ ਲਾਈਨ ਕਾਗਜ਼ 'ਤੇ ਉਹੀ ਭੌਤਿਕ ਮੋਟਾਈ ਬਰਕਰਾਰ ਰੱਖਦੀ ਹੈ (ਹੇਅਰਲਾਈਨ/ਮੋਟਾਈ 0 ਹਮੇਸ਼ਾ ਸਥਿਰ 1 ਪਿਕਸਲ ਰਹਿੰਦੀ ਹੈ, ਬਿਲਕੁਲ ਜਿਵੇਂ AutoCAD ਇਸਨੂੰ ਪਰਿਭਾਸ਼ਿਤ ਕਰਦਾ ਹੈ)।",
+        "ਠੀਕ ਕੀਤਾ ਗਿਆ: ਚੁਣਿਆ ਗਿਆ ਪ੍ਰਿੰਟ ਖੇਤਰ ਹੁਣ ਹਮੇਸ਼ਾ ਪੂਰੀ ਸ਼ੀਟ ਐਕਸਪੋਰਟ ਕਰਨ ਦੀ ਬਜਾਏ ਲੇਆਉਟ (ਪੇਪਰ ਸਪੇਸ) ਐਕਸਪੋਰਟਸ ਨੂੰ ਸੱਚਮੁੱਚ ਕ੍ਰੌਪ ਕਰਦਾ ਹੈ, ਇੱਥੋਂ ਤੱਕ ਕਿ ਅਜਿਹੇ ਲੇਆਉਟ 'ਤੇ ਵੀ ਜਿਸ ਦੀਆਂ ਇਕਾਈਆਂ ਅਸਲ ਮਿਮੀ ਨਹੀਂ ਹਨ; ਮੋਨੋਕ੍ਰੋਮ ਰੈਂਡਰਿੰਗ ਹੁਣ ਬਾਅਦ ਵਿੱਚ ਪਿਕਸਲ ਚਮਕ ਦੀ ਥ੍ਰੈਸ਼ਹੋਲਡਿੰਗ ਕਰਨ ਦੀ ਬਜਾਏ ਸਰੋਤ 'ਤੇ ਹੀ ਕਾਲੀ ਸਿਆਹੀ ਲਾਗੂ ਕਰਦੀ ਹੈ, ਜਿਸ ਨਾਲ ਉਹ ਖਰਾਬੀ ਦੂਰ ਹੋ ਗਈ ਜੋ ਇੱਕ ਪਤਲੀ ਲਾਈਨ ਦੀ ਦਿੱਖ ਮੋਟਾਈ ਨੂੰ ਦੁੱਗਣਾ ਕਰ ਸਕਦੀ ਸੀ।",
+        "Arc ਵਿਕਲਪ ਬਣਾਉਂਦੇ ਸਮੇਂ ਮਿਲੀਆਂ ਦੋ ਪੌਲੀਲਾਈਨ-ਆਰਕ ਖਰਾਬੀਆਂ ਠੀਕ ਕੀਤੀਆਂ ਗਈਆਂ: Trim ਕਿਸੇ ਕੱਟ ਦੇ ਬਿਲਕੁਲ ਨਾਲ ਵਾਲੇ ਆਰਕ ਨੂੰ ਉਲਟਾ ਹਿਸਾਬ ਲਗਾ ਸਕਦਾ ਸੀ, ਅਤੇ ਘੜੀ ਦੀ ਦਿਸ਼ਾ ਵਾਲਾ ਆਰਕ ਸੈਗਮੈਂਟ ਗਲਤ ~300° ਆਰਕ 'ਤੇ ਇੰਟਰਸੈਕਸ਼ਨਸ ਦੱਸ ਸਕਦਾ ਸੀ, ਜਿਸ ਨਾਲ ਇਰਾਦੇ ਨਾਲੋਂ ਕਿਤੇ ਜ਼ਿਆਦਾ ਪੌਲੀਲਾਈਨ ਟ੍ਰਿਮ ਹੋ ਜਾਂਦੀ ਸੀ।",
+        "ਠੀਕ ਕੀਤਾ ਗਿਆ: ਇੱਕ ਪੌਲੀਲਾਈਨ 'ਤੇ Chamfer ਦੀ ਦੂਜੀ ਚੋਣ ਹੁਣ ਚੁੱਪਚਾਪ ਗੈਰ-ਨਾਲ ਲੱਗਦੇ ਜੋੜੇ ਨੂੰ ਚੈਂਫਰ ਕਰਨ ਦੀ ਬਜਾਏ ਸੱਚਮੁੱਚ ਨਾਲ ਲੱਗਦੇ ਸੈਗਮੈਂਟ ਦੀ ਮੰਗ ਕਰਦੀ ਹੈ; ਪੌਲੀਲਾਈਨ ਦੇ ਪਹਿਲੇ ਸੈਗਮੈਂਟ ਨੂੰ ਵਧਾਉਣਾ ਹੁਣ ਸਹੀ ਸਿਰੇ ਅਤੇ ਦਿਸ਼ਾ ਤੋਂ ਵਧਦਾ ਹੈ।",
+        "ਠੀਕ ਕੀਤਾ ਗਿਆ: ਕਮਾਂਡ ਟਾਈਪ ਕਰਦੇ ਸਮੇਂ ਹੁਣ Backspace ਚੋਣ ਨੂੰ ਮਿਟਾਉਂਦਾ ਨਹੀਂ।",
+        "ਕਮਾਂਡ ਸੁਝਾਵਾਂ ਦੀ ਟਾਈ-ਬ੍ਰੇਕਿੰਗ ਨੂੰ ਟਿਊਨ ਕੀਤਾ ਗਿਆ ਤਾਂ ਜੋ Extend, Export ਤੋਂ ਉੱਪਰ ਰੈਂਕ ਕਰੇ, ਅਤੇ FileManager/Delete ਕਿਸੇ ਹੋਰ ਕਮਾਂਡ ਨਾਲ ਪ੍ਰੀਫਿਕਸ ਸਾਂਝਾ ਕਰਨ 'ਤੇ ਹੇਠਾਂ ਰੈਂਕ ਕਰਨ।",
+      ],
+    },
     {
       title: "ਵਧੇਰੇ ਸਮਾਰਟ ਕਮਾਂਡ ਸੁਝਾਅ, ਚੋਣ ਫਿਲਟਰ ਅਤੇ Enter ਨਾਲ ਖਤਮ ਕਰਨਾ",
       highlights: [
@@ -7464,6 +7811,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
   sv: [
     {
+      title: "Polyline: bågsegment & Explode; korrigeringar för Utskriftshanteraren och Blueprint-stil",
+      highlights: [
+        "Nytt: Polyline får ett AutoCAD-liknande Arc-alternativ för att placera bågsegment medan du ritar (tangentfortsättning som standard) — Trim, Extend, Offset, Chamfer och skärningsdetektering är nu alla bågmedvetna, så att redigera en polyline med bågsegment fungerar likadant som med raka segment.",
+        "Nytt Explode-kommando delar upp en polyline i dess enskilda Line- och Arc-entiteter.",
+        "Nytt: Rotate får ett AutoCAD-liknande Copy-alternativ — tryck C för att växla det, och rotationen tillämpas på nya kopior istället för på originalet på plats.",
+        "Nytt: Style-väljaren i Utskriftshanteraren får ett tredje alternativ, Blueprint, vid sidan av Default och Monochrome — vit bläck på en djupt preussiskt blå sida med ett svagt referensrutnät som är dimensionerat för att se lika tätt ut vid vilken Quality-inställning som helst.",
+        "Åtgärdat: förhandsgranskningen i Utskriftshanteraren renderas nu i exakt samma pixelstorlek som den faktiska exporten istället för att bara approximera den, och att ändra Quality renderar om förhandsgranskningen direkt; linjetjocklekar skalas nu med utskrifts-DPI istället för ett fast antal pixlar, så en linje behåller samma fysiska tjocklek på papper vid vilken Quality-inställning som helst (hårlinje / tjocklek 0 förblir fast på 1 pixel, precis som AutoCAD definierar den).",
+        "Åtgärdat: ett valt utskriftsområde beskär nu faktiskt layout-export (pappersyta) istället för att alltid exportera hela arket, även på en layout vars enheter inte är riktiga mm; monokrom rendering tvingar nu fram svart bläck vid källan istället för att tröskla pixelns ljusstyrka i efterhand, vilket tar bort en artefakt som kunde fördubbla en tunn linjes synliga tjocklek.",
+        "Åtgärdade två polyline-bågfel som upptäcktes vid byggandet av Arc-alternativet: Trim kunde beräkna bågen intill en klippning bakvänt, och ett medurs bågsegment kunde rapportera skärningar på fel ~300°-båge, vilket klippte bort mycket mer av polylinjen än avsett.",
+        "Åtgärdat: Chamfers andra val på en polyline kräver nu ett verkligt angränsande segment istället för att tyst fasa ett icke-angränsande par; att förlänga det första segmentet av en polyline växer nu från rätt ände och riktning.",
+        "Åtgärdat: Backspace tar inte längre bort ett urval medan du fortfarande skriver ett kommando.",
+        "Justerade avgörandet vid oavgjort i kommandoförslag så att Extend rankas över Export, och FileManager/Delete rankas lägre, när de delar prefix med ett annat kommando.",
+      ],
+    },
+    {
       title: "Smartare kommandoförslag, urvalsfiltrering & avsluta med Enter",
       highlights: [
         "Kommandoförslag matchar nu bokstäver var som helst i ett kommandos namn, inte bara i början, rankade först efter matchningskvalitet och sedan efter hur ofta du faktiskt använder kommandot; listan är klickbar med musen, rullar för att hålla det valda förslaget synligt när du växlar med Tab, är begränsad till cirka 10 rader och markerar bara de matchande bokstäverna på plats istället för att lägga ett helt spökord ovanpå",
@@ -7804,6 +8166,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
     },
   ],
   tl: [
+    {
+      title: "Polyline: Arc segments & Explode; ayos sa Print Manager at Blueprint na style",
+      highlights: [
+        "Bago: Nagkakaroon ang Polyline ng AutoCAD-style na opsyon na Arc para maglagay ng arc segments habang gumuguhit (tangent-continuation bilang default) — arc-aware na ngayon ang Trim, Extend, Offset, Chamfer, at intersection detection, kaya ang pag-edit ng polyline na may arc segments ay parehong gumagana gaya ng straight segments.",
+        "Ang bagong Explode command ay naghihiwalay ng polyline sa mga indibidwal na Line at Arc entity nito.",
+        "Bago: Nagkakaroon ang Rotate ng AutoCAD-style na opsyon na Copy — pindutin ang C para i-toggle ito, at ang pag-ikot ay ilalapat sa mga bagong kopya sa halip na sa orihinal sa kinaroroonan nito.",
+        "Bago: Nagkakaroon ang Style selector ng Print Manager ng ikatlong opsyon, ang Blueprint, kasama ang Default at Monochrome — puting tinta sa isang malalim na Prussian-blue na page na may banayad na reference grid na sinukat para magmukhang parehong density sa anumang setting ng Quality.",
+        "Naayos: ang preview ng Print Manager ay ngayon nagre-render sa eksaktong parehong pixel size gaya ng aktwal na export sa halip na tantiyahin ito lamang, at ang pagbabago ng Quality ay agad na nagre-render ulit ng preview; ang linewidth ay sumusunod na ngayon sa scale ng print DPI sa halip na fixed na bilang ng pixel, kaya ang linya ay nananatiling parehong physical thickness sa papel kahit anong Quality setting (ang hairline / thickness 0 ay nananatiling fixed sa 1 pixel, eksakto kung paano ito tinutukoy ng AutoCAD).",
+        "Naayos: ang napiling print area ay talagang kino-crop na ngayon ang layout (paper space) exports sa halip na palaging i-export ang buong sheet, kabilang sa layout na ang mga unit nito ay hindi tunay na mm; ang monochrome rendering ay ngayon ay pinipilit ang itim na tinta sa source sa halip na mag-threshold ng pixel brightness pagkatapos, na nag-aalis ng artifact na maaaring mag-doble sa nakikitang kapal ng manipis na linya.",
+        "Naayos ang dalawang polyline-arc bug na natuklasan habang binubuo ang opsyong Arc: maaaring baligtad na makalkula ng Trim ang arc na katabi mismo ng isang putol, at maaaring mag-ulat ng intersections sa maling ~300° na arc ang isang clockwise na arc segment, na nagtatrim ng mas malaking bahagi ng polyline kaysa sa nilalayon.",
+        "Naayos: ang ikalawang pagpili ng Chamfer sa isang polyline ay nangangailangan na ngayon ng tunay na kalapit na segment sa halip na tahimik na cha-chamfer ng hindi magkatabing pares; ang pagpapahaba sa unang segment ng isang polyline ay tumutubo na ngayon mula sa tamang dulo at direksyon.",
+        "Naayos: hindi na binubura ng Backspace ang seleksyon habang nagta-type ka pa ng command.",
+        "In-tune ang tie-breaking ng mungkahi ng command para mas mataas ang ranggo ng Extend kaysa sa Export, at mas mababa ang ranggo ng FileManager/Delete, kapag nagbabahagi sila ng prefix sa ibang command.",
+      ],
+    },
     {
       title: "Mas matalinong mungkahi ng command, pag-filter ng seleksyon & pagtatapos gamit ang Enter",
       highlights: [
@@ -8147,6 +8524,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   nl: [
     {
+      title: "Polyline: boogsegmenten & Explode; correcties printmanager en Blueprint-stijl",
+      highlights: [
+        "Nieuw: Polyline krijgt een AutoCAD-achtige Arc-optie om boogsegmenten te plaatsen tijdens het tekenen (standaard tangentiële voortzetting) — Trim, Extend, Offset, Chamfer en intersectiedetectie zijn nu allemaal boogbewust, zodat het bewerken van een polyline met boogsegmenten hetzelfde werkt als met rechte segmenten.",
+        "Nieuw Explode-commando splitst een polyline op in de afzonderlijke Line- en Arc-entiteiten.",
+        "Nieuw: Rotate krijgt een AutoCAD-achtige Copy-optie — druk op C om deze te schakelen, waarna de rotatie wordt toegepast op nieuwe kopieën in plaats van op het origineel ter plaatse.",
+        "Nieuw: de Style-keuzelijst van de printmanager krijgt een derde optie, Blueprint, naast Default en Monochrome — witte inkt op een diep Pruisisch blauwe pagina met een subtiel referentierooster dat zo gedimensioneerd is dat het bij elke Quality-instelling even dicht oogt.",
+        "Opgelost: de preview van de printmanager wordt nu gerenderd op exact dezelfde pixelgrootte als de daadwerkelijke export in plaats van deze slechts te benaderen, en het wijzigen van Quality rendert de preview direct opnieuw; lijndiktes schalen nu mee met de afdruk-DPI in plaats van een vast aantal pixels, zodat een lijn dezelfde fysieke dikte op papier behoudt bij elke Quality-instelling (haarlijn/dikte 0 blijft vast op 1 pixel, precies zoals AutoCAD dit definieert).",
+        "Opgelost: een geselecteerd afdrukgebied snijdt nu daadwerkelijk layout-exports (papierruimte) bij in plaats van altijd het hele vel te exporteren, ook bij een layout waarvan de eenheden geen echte mm zijn; monochrome rendering dwingt nu zwarte inkt af bij de bron in plaats van achteraf de pixelhelderheid te drempelen, waardoor een artefact verdwijnt dat de schijnbare dikte van een dunne lijn kon verdubbelen.",
+        "Twee polyline-boogbugs opgelost die zijn ontdekt tijdens het bouwen van de Arc-optie: Trim kon de boog direct naast een snede omgekeerd berekenen, en een boogsegment met de klok mee kon intersecties melden op de verkeerde boog van ~300°, waardoor veel meer van de polyline werd bijgesneden dan bedoeld.",
+        "Opgelost: de tweede selectie van Chamfer op een polyline vereist nu een echt aangrenzend segment in plaats van stilzwijgend een niet-aangrenzend paar af te schuinen; het verlengen van het eerste segment van een polyline groeit nu vanaf het juiste uiteinde en in de juiste richting.",
+        "Opgelost: Backspace verwijdert niet langer een selectie terwijl u nog een commando aan het typen bent.",
+        "De gelijkspelbeslissing voor commando-suggesties afgestemd zodat Extend hoger scoort dan Export, en FileManager/Delete lager, wanneer ze een voorvoegsel delen met een ander commando.",
+      ],
+    },
+    {
       title: "Slimmere commando-suggesties, selectiefilter & afronden met Enter",
       highlights: [
         "Commandosuggesties matchen nu letters overal in de naam van een commando, niet alleen aan het begin, gerangschikt eerst op matchkwaliteit en daarna op hoe vaak u het commando daadwerkelijk gebruikt; de lijst is met de muis klikbaar, scrollt om de geselecteerde suggestie in beeld te houden tijdens het doorlopen met Tab, is beperkt tot ongeveer 10 rijen, en markeert alleen de overeenkomende letters op hun plek in plaats van een heel spookwoord eroverheen te leggen",
@@ -8488,6 +8880,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   he: [
+    {
+      title: "Polyline: קטעי קשת ו-Explode; תיקוני מנהל ההדפסה וסגנון Blueprint",
+      highlights: [
+        "חדש: Polyline מקבל אפשרות Arc בסגנון AutoCAD להצבת קטעי קשת תוך כדי ציור (המשכיות משיקה כברירת מחדל) — Trim, Extend, Offset, Chamfer וזיהוי החיתוכים מודעים כעת לקשתות, כך שעריכת פוליליין עם קטעי קשת פועלת בדיוק כמו עם קטעים ישרים.",
+        "פקודת Explode חדשה מפרקת פוליליין לישויות ה-Line וה-Arc הנפרדות שלה.",
+        "חדש: Rotate מקבל אפשרות Copy בסגנון AutoCAD — לחצו C כדי להפעיל/לכבות, והסיבוב יחול על עותקים חדשים במקום על המקור במקומו.",
+        "חדש: בורר ה-Style של מנהל ההדפסה מקבל אפשרות שלישית, Blueprint, לצד Default ו-Monochrome — דיו לבן על עמוד כחול פרוסי עמוק עם רשת ייחוס עדינה שגודלה נקבע כך שתיראה באותה צפיפות בכל הגדרת Quality.",
+        "תוקן: התצוגה המקדימה של מנהל ההדפסה מעובדת כעת בדיוק באותו גודל פיקסלים כמו הייצוא בפועל במקום לקרב אותו בלבד, ושינוי Quality מעבד מחדש את התצוגה המקדימה מיד; עובי הקווים משתנה כעת יחד עם ה-DPI של ההדפסה במקום מספר פיקסלים קבוע, כך שקו שומר על אותו עובי פיזי על הנייר בכל הגדרת Quality (קו שערה / עובי 0 נשאר קבוע ברוחב פיקסל אחד, בדיוק כפי ש-AutoCAD מגדיר זאת).",
+        "תוקן: אזור הדפסה שנבחר חותך כעת בפועל ייצואי layout (שטח נייר) במקום לייצא תמיד את הגיליון כולו, גם ב-layout שהיחידות שלו אינן מ״מ אמיתיים; עיבוד שחור-לבן כעת כופה דיו שחור במקור במקום להחיל סף בהירות פיקסלים בדיעבד, מה שמסיר פגם שיכול היה להכפיל את העובי הנראה של קו דק.",
+        "תוקנו שני באגים בקשתות פוליליין שהתגלו במהלך בניית אפשרות ה-Arc: Trim יכול היה לחשב הפוך את הקשת הצמודה ישירות לחיתוך, וקטע קשת בכיוון השעון יכול היה לדווח על חיתוכים על קשת ה-~300° השגויה, וכך לחתוך חלק גדול בהרבה מהפוליליין ממה שהתכוונו.",
+        "תוקן: הבחירה השנייה של Chamfer בפוליליין דורשת כעת קטע שכן אמיתי במקום לקצץ בשקט זווית של זוג לא סמוך; הארכת הקטע הראשון של פוליליין גדלה כעת מהקצה והכיוון הנכונים.",
+        "תוקן: Backspace כבר לא מוחק בחירה בזמן שאתם עדיין מקלידים פקודה.",
+        "כווננו את שבירת השוויון בהצעות הפקודה כך ש-Extend מדורג מעל Export, ו-FileManager/Delete מדורגים נמוך יותר, כאשר הם חולקים קידומת עם פקודה אחרת.",
+      ],
+    },
     {
       title: "הצעות פקודה חכמות יותר, סינון בחירה וסיום באמצעות Enter",
       highlights: [
@@ -8831,6 +9238,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   ha: [
     {
+      title: "Polyline: sassan Arc & Explode; gyare-gyaren manajan bugawa da salon Blueprint",
+      highlights: [
+        "Sabo: Polyline yanzu tana da zaɓin Arc irin na AutoCAD don sanya sassan baka yayin zana (tangent-continuation ta tsoho) — Trim, Extend, Offset, Chamfer, da gano mahaɗa duk yanzu suna sanin baka, don haka gyara polyline mai sassan baka yana aiki daidai da layin madaidaici.",
+        "Sabon umarnin Explode yana rarraba polyline zuwa entities na Line da Arc daban-daban nasa.",
+        "Sabo: Rotate yanzu tana da zaɓin Copy irin na AutoCAD — danna C don sauyawa, kuma juyawa za a yi amfani da ita ga sabbin kwafi maimakon ainihin abu a wurinsa.",
+        "Sabo: dropdown na Style na manajan bugawa yanzu tana da zaɓi na uku, Blueprint, tare da Default da Monochrome — tawada fari a kan shafi mai shuɗi mai zurfi na Prussian tare da rigar tunani mai laushi wanda aka auna girmansa domin ya bayyana da kauri iri ɗaya a kowane saitin Quality.",
+        "An gyara: preview na manajan bugawa yanzu ana bayarwa da daidai girman pixel guda da ainihin fitarwa maimakon kimantawa kawai, kuma canza Quality yana sake bayar da preview nan take; kaurin layi yanzu yana daidaitawa tare da DPI na bugawa maimakon adadin pixel tsayayye, don haka layi yana ci gaba da kauri na zahiri iri ɗaya a takarda a kowane saitin Quality (layin gashi / kauri 0 ya ci gaba da tsayayye a pixel 1, daidai yadda AutoCAD ke bayyana shi).",
+        "An gyara: yankin bugawa da aka zaɓa yanzu yana yanke fitarwar tsari (sararin takarda) da gaske maimakon koyaushe fitar da dukkan takardar, ko da a tsari wanda ma'aunansa ba mm na gaskiya ba ne; bayarwar monochrome yanzu tana tilasta tawada baki a tushen maimakon amfani da iyakar haske na pixel daga baya, wanda ke kawar da lahani wanda zai iya ninka kauri bayyanannen layin siriri sau biyu.",
+        "An gyara kurakurai biyu na baka-polyline da aka gano yayin gina zaɓin Arc: Trim na iya lissafta bakan da ke kusa da yankewa a baya-baya, kuma sashin baka mai zagayowar agogo na iya bayar da rahoton mahaɗa a kan bakan ~300° mara daidai, yana yankan yawancin polyline fiye da abin da aka nufa.",
+        "An gyara: zaɓi na biyu na Chamfer akan polyline yanzu yana buƙatar sashi maƙwabta na gaskiya maimakon shiru-shiru fasa nau'i marasa maƙwabtaka; tsawaita sashin farko na polyline yanzu yana girma daga daidai gefe da shugabanci.",
+        "An gyara: Backspace baya ƙara share zaɓi yayin da har yanzu kake rubuta umarni.",
+        "An daidaita warware kunnen-kunne na shawarwarin umarni domin Extend ta zama sama da Export, kuma FileManager/Delete su zama ƙasa, lokacin da suke raba prefix da wani umarni.",
+      ],
+    },
+    {
       title: "Shawarwarin umarni masu wayo, tace zaɓi & kammalawa da Enter",
       highlights: [
         "Shawarwarin umarni yanzu suna dacewa da haruffa a ko'ina cikin sunan umarnin, ba kawai a farko ba, an tsara su bisa ingancin dacewa da farko sannan yadda kuke amfani da umarnin a zahiri; jerin ana iya danna shi da linzamin kwamfuta, yana gungurawa don ci gaba da nuna shawarar da aka zaɓa yayin sauyawa da Tab, an iyakance shi zuwa kusan layuka 10, kuma yana haskaka haruffan da suka dace kawai a wurinsu maimakon lulluɓe da wani cikakken kalmar-fatalwa",
@@ -9172,6 +9594,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   no: [
+    {
+      title: "Polyline: buesegmenter & Explode; korrigeringer for Print Manager og Blueprint-stil",
+      highlights: [
+        "Nytt: Polyline får et AutoCAD-lignende Arc-alternativ for å plassere buesegmenter mens du tegner (tangentfortsettelse som standard) — Trim, Extend, Offset, Chamfer og skjæringsdeteksjon er nå alle buebevisste, slik at redigering av en polyline med buesegmenter fungerer på samme måte som med rette segmenter.",
+        "Ny Explode-kommando deler en polyline opp i sine individuelle Line- og Arc-entiteter.",
+        "Nytt: Rotate får et AutoCAD-lignende Copy-alternativ — trykk C for å slå det av/på, og rotasjonen brukes på nye kopier i stedet for originalen på plass.",
+        "Nytt: Style-velgeren i Print Manager får et tredje alternativ, Blueprint, ved siden av Default og Monochrome — hvitt blekk på en dyp preussisk blå side med et svakt referanserutenett som er dimensjonert for å se like tett ut ved enhver Quality-innstilling.",
+        "Fikset: forhåndsvisningen i Print Manager rendres nå i nøyaktig samme pikselstørrelse som den faktiske eksporten i stedet for bare å tilnærme den, og å endre Quality rendrer forhåndsvisningen på nytt umiddelbart; linjetykkelser skaleres nå med utskrifts-DPI i stedet for et fast antall piksler, slik at en linje beholder samme fysiske tykkelse på papir uansett Quality-innstilling (hårlinje/tykkelse 0 forblir fast på 1 piksel, akkurat slik AutoCAD definerer den).",
+        "Fikset: et valgt utskriftsområde beskjærer nå faktisk layout-eksport (papirområde) i stedet for alltid å eksportere hele arket, også på et layout hvis enheter ikke er ekte mm; monokrom rendering tvinger nå frem svart blekk ved kilden i stedet for å terskle pikselens lysstyrke i etterkant, noe som fjerner en artefakt som kunne doble den tilsynelatende tykkelsen til en tynn linje.",
+        "Fikset to polyline-buefeil som ble oppdaget under bygging av Arc-alternativet: Trim kunne beregne buen rett ved siden av et kutt bakvendt, og et buesegment med klokken kunne rapportere skjæringer på feil ~300°-bue, og klippet dermed bort mye mer av polylinjen enn tiltenkt.",
+        "Fikset: det andre valget for Chamfer på en polyline krever nå et faktisk nabosegment i stedet for å stille fase et ikke-tilstøtende par; å forlenge det første segmentet av en polyline vokser nå fra riktig ende og retning.",
+        "Fikset: Backspace sletter ikke lenger et utvalg mens du fortsatt skriver en kommando.",
+        "Justerte uavgjort-avgjørelsen for kommandoforslag slik at Extend rangeres over Export, og FileManager/Delete rangeres lavere, når de deler prefiks med en annen kommando.",
+      ],
+    },
     {
       title: "Smartere kommandoforslag, valgfiltrering & avslutt med Enter",
       highlights: [
@@ -9515,6 +9952,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
 
   da: [
     {
+      title: "Polyline: buesegmenter & Explode; rettelser til Print Manager og Blueprint-stil",
+      highlights: [
+        "Nyt: Polyline får en AutoCAD-lignende Arc-mulighed til at placere buesegmenter, mens du tegner (tangentfortsættelse som standard) — Trim, Extend, Offset, Chamfer og skæringsdetektion er nu alle buebevidste, så redigering af en polylinje med buesegmenter fungerer på samme måde som med lige segmenter.",
+        "Ny Explode-kommando opdeler en polylinje i dens individuelle Line- og Arc-elementer.",
+        "Nyt: Rotate får en AutoCAD-lignende Copy-mulighed — tryk på C for at slå den til/fra, og rotationen anvendes på nye kopier i stedet for originalen på stedet.",
+        "Nyt: Style-vælgeren i Print Manager får en tredje mulighed, Blueprint, ved siden af Default og Monochrome — hvidt blæk på en dybt preussisk blå side med et svagt referencegitter, der er dimensioneret til at se lige tæt ud ved enhver Quality-indstilling.",
+        "Rettet: Forhåndsvisningen i Print Manager gengives nu i nøjagtig samme pixelstørrelse som den faktiske eksport i stedet for blot at tilnærme den, og ændring af Quality gengiver straks forhåndsvisningen igen; linjetykkelser skalerer nu med udskrifts-DPI i stedet for et fast antal pixels, så en linje bevarer samme fysiske tykkelse på papir ved enhver Quality-indstilling (hårlinje/tykkelse 0 forbliver fast på 1 pixel, præcis som AutoCAD definerer den).",
+        "Rettet: et valgt printområde beskærer nu faktisk layout-eksport (papirområde) i stedet for altid at eksportere hele arket, også på et layout, hvis enheder ikke er ægte mm; monokrom gengivelse tvinger nu sort blæk igennem ved kilden i stedet for at tærskelværdisætte pixelens lysstyrke bagefter, hvilket fjerner en artefakt, der kunne fordoble en tynd linjes tilsyneladende tykkelse.",
+        "Rettede to polylinje-buefejl, der blev opdaget under opbygningen af Arc-muligheden: Trim kunne beregne buen lige ved siden af et snit baglæns, og et buesegment med uret kunne rapportere skæringer på den forkerte ~300°-bue, hvilket klippede meget mere af polylinjen væk end tilsigtet.",
+        "Rettet: det andet valg af Chamfer på en polylinje kræver nu et reelt naboliggende segment i stedet for stiltiende at fase et ikke-tilstødende par; forlængelse af det første segment af en polylinje vokser nu fra den korrekte ende og retning.",
+        "Rettet: Backspace sletter ikke længere et valg, mens du stadig er i gang med at skrive en kommando.",
+        "Justerede uafgjort-afgørelsen for kommandoforslag, så Extend rangeres over Export, og FileManager/Delete rangeres lavere, når de deler præfiks med en anden kommando.",
+      ],
+    },
+    {
       title: "Smartere kommandoforslag, valgfiltrering & afslut med Enter",
       highlights: [
         "Kommandoforslag matcher nu bogstaver hvor som helst i et kommandonavn, ikke kun i starten, rangeret først efter matchkvalitet og derefter efter hvor ofte du rent faktisk bruger kommandoen; listen kan klikkes med musen, scroller for at holde det valgte forslag synligt, når du skifter med Tab, er begrænset til omkring 10 rækker, og fremhæver kun de matchende bogstaver på deres plads i stedet for at lægge et helt spøgelsesord ovenpå",
@@ -9856,6 +10308,21 @@ export const releaseTranslations: Record<string, { title: string; highlights: st
   ],
 
   fi: [
+    {
+      title: "Polyline: kaarisegmentit & Explode; Print Managerin korjaukset ja Blueprint-tyyli",
+      highlights: [
+        "Uutta: Polyline saa AutoCAD-tyylisen Arc-valinnan kaarisegmenttien asettamiseen piirtämisen aikana (oletuksena tangenttijatko) — Trim, Extend, Offset, Chamfer ja leikkauspisteiden tunnistus ovat nyt kaikki kaaritietoisia, joten kaarisegmenttejä sisältävän polylinen muokkaaminen toimii samalla tavalla kuin suorien segmenttien.",
+        "Uusi Explode-komento pilkkoo polylinen sen yksittäisiin Line- ja Arc-entiteetteihin.",
+        "Uutta: Rotate saa AutoCAD-tyylisen Copy-valinnan — vaihda se päälle/pois painamalla C, jolloin kierto kohdistuu uusiin kopioihin alkuperäisen kääntämisen sijaan paikallaan.",
+        "Uutta: Print Managerin Style-valikko saa kolmannen vaihtoehdon, Blueprintin, Defaultin ja Monochromen rinnalle — valkoista mustetta syvän preussinsinisellä sivulla, jossa on himmeä apuviivasto, jonka koko on suhteutettu niin, että se näyttää yhtä tiheältä millä tahansa Quality-asetuksella.",
+        "Korjattu: Print Managerin esikatselu renderöidään nyt täsmälleen samassa pikselikoossa kuin varsinainen vienti sen approksimoinnin sijaan, ja Quality-asetuksen muuttaminen renderöi esikatselun heti uudelleen; viivanpaksuudet skaalautuvat nyt tulostuksen DPI:n mukana kiinteän pikselimäärän sijaan, joten viiva säilyttää saman fyysisen paksuuden paperilla millä tahansa Quality-asetuksella (hiusviiva/paksuus 0 pysyy kiinteänä 1 pikselissä, aivan kuten AutoCAD sen määrittelee).",
+        "Korjattu: valittu tulostusalue rajaa nyt oikeasti layout-viennit (paperitila) sen sijaan, että koko arkki vietäisiin aina kokonaan, myös layoutilla, jonka yksiköt eivät ole todellisia millejä; mustavalkorenderöinti pakottaa nyt mustan musteen lähteessä sen sijaan, että pikselin kirkkautta kynnystettäisiin jälkikäteen, mikä poistaa artefaktin, joka saattoi kaksinkertaistaa ohuen viivan näennäisen paksuuden.",
+        "Korjasi kaksi Arc-valintaa rakennettaessa löydettyä polyline-kaarivikaa: Trim saattoi laskea leikkauksen välittömässä läheisyydessä olevan kaaren väärinpäin, ja myötäpäivään kulkeva kaarisegmentti saattoi ilmoittaa leikkauspisteitä väärällä ~300°:n kaarella, mikä leikkasi paljon enemmän polylinesta pois kuin oli tarkoitus.",
+        "Korjattu: Chamferin toinen valinta polylinella vaatii nyt todella viereisen segmentin sen sijaan, että se hiljaa viistäisi ei-vierekkäisen parin; polylinen ensimmäisen segmentin jatkaminen kasvaa nyt oikeasta päästä ja suunnasta.",
+        "Korjattu: Askelpalautin ei enää poista valintaa, kun kirjoitat vielä komentoa.",
+        "Säädettiin komentoehdotusten tasapelin ratkaisua niin, että Extend sijoittuu Exportin yläpuolelle ja FileManager/Delete alemmas, kun ne jakavat etuliitteen toisen komennon kanssa.",
+      ],
+    },
     {
       title: "Älykkäämmät komentoehdotukset, valinnan suodatus & lopetus Enterillä",
       highlights: [
