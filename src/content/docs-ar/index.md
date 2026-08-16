@@ -41,6 +41,7 @@ order: 1
 | [Offset](./commands/offset/) | إنشاء نسخة متوازية لعنصر على مسافة محددة |
 | [Fillet](./commands/fillet/) | تقريب زاوية بين خطين بقوس مماسي |
 | [Chamfer](./commands/chamfer/) | شطب زاوية مائلة بين خطين أو خطوط متعددة |
+| [Explode](./commands/explode/) | يفكك الخطوط المتعددة إلى خطوط وأقواس منفصلة |
 | [Undo](./commands/undo/) | تراجع عن الإجراء الأخير |
 | [Redo](./commands/redo/) | إعادة الإجراء الأخير الذي تم التراجع عنه |
 | [Array Grid](./commands/array-grid/) | تكرار العناصر في شبكة مستطيلة من الصفوف والأعمدة |

@@ -41,6 +41,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 | [Offset](./commands/offset/) | Create a parallel copy of an entity at a given distance |
 | [Fillet](./commands/fillet/) | Round a corner between two lines with a tangent arc |
 | [Chamfer](./commands/chamfer/) | Cut a straight diagonal corner between two lines or polylines |
+| [Explode](./commands/explode/) | Break a polyline into its individual line and arc entities |
 | [Undo](./commands/undo/) | Undo the last action |
 | [Redo](./commands/redo/) | Redo the last undone action |
 | [Array Grid](./commands/array-grid/) | Repeat entities in a rectangular grid of rows and columns |

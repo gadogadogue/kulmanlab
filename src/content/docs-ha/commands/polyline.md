@@ -107,6 +107,7 @@ Polylines suna goyon bayan kowane canji na gaba ɗaya, tare da offset, trim, ext
 | [Trim](../trim/) | Yana cire sashin da ke tsakanin mahaɗai biyu, ga sassa madaidaita ko baka daidai |
 | [Extend](../extend/) | Yana tsawaita sashi na farko ko na ƙarshe zuwa iyaka ta gaba |
 | [Chamfer](../chamfer/) | Yana sassaƙa kusurwa tsakanin sassa madaidaita biyu makwabta |
+| [Explode](../explode/) | Yana rarraba polyline zuwa entities masu zaman kansu na layi da baka, ɗaya ga kowane sashi |
 | [Delete](../delete/) | Yana cire polyline daga zanen |
 
 Fillet ba ya goyon bayan polylines ko kaɗan.

@@ -107,6 +107,7 @@ Sinusuportahan ng mga polyline ang bawat general na transformation, kasama ang o
 | [Trim](../trim/) | Inaalis ang bahagi sa pagitan ng dalawang intersection, sa straight man o arc segment |
 | [Extend](../extend/) | Pinapahaba ang unang o huling segment hanggang sa susunod na boundary |
 | [Chamfer](../chamfer/) | Nag-be-bevel ng sulok sa pagitan ng dalawang katabing straight segment |
+| [Explode](../explode/) | Naghihiwalay sa polyline tungo sa mga independiyenteng line at arc entity, isa kada segment |
 | [Delete](../delete/) | Inaalis ang polyline sa drawing |
 
 Hindi kailanman sinusuportahan ng Fillet ang mga polyline.

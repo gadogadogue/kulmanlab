@@ -107,6 +107,7 @@ Polilinhas suportam toda transformação geral, além de offset, trim, extend e 
 | [Trim](../trim/) | Remove a parte entre duas interseções, em segmentos retos ou de arco igualmente |
 | [Extend](../extend/) | Estende o primeiro ou último segmento até o próximo limite |
 | [Chamfer](../chamfer/) | Chanfra um canto entre dois segmentos retos adjacentes |
+| [Explode](../explode/) | Decompõe a polilinha em entidades de linha e arco independentes, uma por segmento |
 | [Delete](../delete/) | Remove a polilinha do desenho |
 
 Fillet não suporta polilinhas de forma alguma.

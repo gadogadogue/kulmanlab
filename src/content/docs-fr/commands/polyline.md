@@ -107,6 +107,7 @@ Les polylignes supportent toute transformation générale, ainsi que l'offset, l
 | [Trim](../trim/) | Supprime la portion entre deux intersections, segments droits ou d'arc indifféremment |
 | [Extend](../extend/) | Prolonge le premier ou dernier segment jusqu'à la limite suivante |
 | [Chamfer](../chamfer/) | Biseaute un coin entre deux segments droits adjacents |
+| [Explode](../explode/) | Décompose la polyligne en entités ligne et arc indépendantes, une par segment |
 | [Delete](../delete/) | Supprime la polyligne du dessin |
 
 Fillet ne supporte pas du tout les polylignes.

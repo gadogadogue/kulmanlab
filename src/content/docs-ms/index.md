@@ -41,6 +41,7 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [Offset](./commands/offset/) | Cipta salinan selari entiti pada jarak tertentu |
 | [Fillet](./commands/fillet/) | Bundarkan sudut antara dua garis dengan lengkok tangen |
 | [Chamfer](./commands/chamfer/) | Potong sudut pepenjuru lurus antara dua garis atau poliline |
+| [Explode](./commands/explode/) | Memecahkan poliline kepada garis dan lengkok individu |
 | [Undo](./commands/undo/) | Batal tindakan terakhir |
 | [Redo](./commands/redo/) | Buat semula tindakan yang dibatalkan |
 | [Array Grid](./commands/array-grid/) | Ulang entiti dalam grid segi empat tepat baris dan lajur |

@@ -41,6 +41,7 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [Offset](./commands/offset/) | Unda nakili sambamba ya kipengele kwa umbali fulani |
 | [Fillet](./commands/fillet/) | Pinda kona kati ya mistari miwili kwa upinde unaogusa |
 | [Chamfer](./commands/chamfer/) | Kata kona ya mstari wa diagonal kati ya mistari miwili au polylines |
+| [Explode](./commands/explode/) | Inavunja polyline kuwa mistari na mikunjo binafsi |
 | [Undo](./commands/undo/) | Tendua hatua ya mwisho |
 | [Redo](./commands/redo/) | Rudia hatua ya mwisho iliyotendulewa |
 | [Array Grid](./commands/array-grid/) | Rudia vipengele katika gridi ya mstatili ya safu mlalo na safu wima |

@@ -41,6 +41,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 | [Offset](./commands/offset/) | Gumawa ng parallel na kopya ng entity sa tiyak na distansya |
 | [Fillet](./commands/fillet/) | I-round ang sulok sa pagitan ng dalawang linya gamit ang tangent arc |
 | [Chamfer](./commands/chamfer/) | Gumawa ng straight diagonal na sulok sa pagitan ng dalawang linya o polyline |
+| [Explode](./commands/explode/) | Naghihiwalay ng polyline sa mga indibidwal na linya at arko nito |
 | [Undo](./commands/undo/) | I-undo ang huling aksyon |
 | [Redo](./commands/redo/) | I-redo ang huling na-undo na aksyon |
 | [Array Grid](./commands/array-grid/) | Ulitin ang mga entity sa isang rectangular grid ng row at column |

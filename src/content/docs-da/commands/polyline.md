@@ -107,6 +107,7 @@ Polylinjer understøtter enhver generel transformation, plus offset, trim, exten
 | [Trim](../trim/) | Fjerner delen mellem to skæringspunkter, for lige og buesegmenter ens |
 | [Extend](../extend/) | Forlænger det første eller sidste segment til næste grænse |
 | [Chamfer](../chamfer/) | Faser et hjørne mellem to tilstødende lige segmenter |
+| [Explode](../explode/) | Opdeler polylinjen i selvstændige linje- og bueelementer, ét pr. segment |
 | [Delete](../delete/) | Fjerner polylinjen fra tegningen |
 
 Fillet understøtter slet ikke polylinjer.

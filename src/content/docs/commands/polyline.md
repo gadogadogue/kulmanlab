@@ -120,6 +120,7 @@ Polylines support every general transformation, plus offset, trim, extend, and c
 | [Extend](../extend/) | Stretches the polyline's first or last segment to the next boundary — an arc terminal segment grows along its own circle |
 | [Chamfer](../chamfer/) | Bevels a corner between two **adjacent straight** segments only; an arc segment at that corner is skipped when picking |
 | [Delete](../delete/) | Removes the polyline from the drawing |
+| [Explode](../explode/) | Breaks the polyline apart into standalone Line and Arc entities, one per segment |
 
 Fillet does not support polylines at all — pick the individual [Line](../line/) entities instead, or use an arc segment drawn directly with the Arc option above.
 

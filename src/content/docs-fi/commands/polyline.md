@@ -107,6 +107,7 @@ Polylinjat tukevat jokaista yleistä muunnosta sekä offsetia, trimiä, extendi�
 | [Trim](../trim/) | Poistaa osan kahden leikkauspisteen välillä, sekä suorilla että kaarisegmenteillä |
 | [Extend](../extend/) | Jatkaa ensimmäistä tai viimeistä segmenttiä seuraavaan rajaan |
 | [Chamfer](../chamfer/) | Viistää kulman kahden vierekkäisen suoran segmentin välillä |
+| [Explode](../explode/) | Pilkkoo polylinen itsenäisiksi viiva- ja kaarielementeiksi, yksi per segmentti |
 | [Delete](../delete/) | Poistaa polylinjan piirustuksesta |
 
 Fillet ei tue polylinjoja lainkaan.

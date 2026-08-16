@@ -107,6 +107,7 @@ Poliline menyokong setiap transformasi umum, ditambah offset, trim, extend, dan 
 | [Trim](../trim/) | Membuang bahagian antara dua persilangan, sama ada segmen lurus atau lengkok |
 | [Extend](../extend/) | Memanjangkan segmen pertama atau terakhir ke sempadan seterusnya |
 | [Chamfer](../chamfer/) | Memberkas sudut antara dua segmen lurus bersebelahan |
+| [Explode](../explode/) | Memecahkan poliline kepada entiti garis dan lengkok berasingan, satu bagi setiap segmen |
 | [Delete](../delete/) | Membuang poliline daripada lukisan |
 
 Fillet langsung tidak menyokong poliline.

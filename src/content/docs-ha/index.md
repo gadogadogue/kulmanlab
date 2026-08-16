@@ -41,6 +41,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Offset](./commands/offset/) | Ƙirƙiri kwafi mai daidaici na wani abu a nisan da aka bayar |
 | [Fillet](./commands/fillet/) | Zagaye kusurwa tsakanin layi biyu da baka mai taɓawa |
 | [Chamfer](./commands/chamfer/) | Yanke kusurwar diagonal madaidaiciya tsakanin layi biyu ko polylines |
+| [Explode](./commands/explode/) | Yana rarraba polyline zuwa layuka da baka daban-daban |
 | [Undo](./commands/undo/) | Soke aikin ƙarshe |
 | [Redo](./commands/redo/) | Sake yin aikin ƙarshe da aka soke |
 | [Array Grid](./commands/array-grid/) | Maimaita abubuwa a cikin grid mai kusurwa huɗu na layuka da ginshiƙai |

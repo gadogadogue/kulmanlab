@@ -41,6 +41,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Offset](./commands/offset/) | Tworzy równoległą kopię elementu w podanej odległości |
 | [Fillet](./commands/fillet/) | Zaokrągla narożnik między dwiema liniami łukiem stycznych |
 | [Chamfer](./commands/chamfer/) | Ścina prosty ukośny narożnik między dwiema liniami lub poliliniami |
+| [Explode](./commands/explode/) | Rozbija polilinię na osobne linie i łuki |
 | [Undo](./commands/undo/) | Cofa ostatnią akcję |
 | [Redo](./commands/redo/) | Ponawia ostatnio cofniętą akcję |
 | [Array Grid](./commands/array-grid/) | Powiela elementy w prostokątnej siatce wierszy i kolumn |

@@ -107,6 +107,7 @@ Polylines zinasaidia kila mabadiliko ya kawaida, pamoja na offset, trim, extend,
 | [Trim](../trim/) | Huondoa sehemu kati ya makutano mawili, kwa sehemu za moja kwa moja au mviringo sawa |
 | [Extend](../extend/) | Hunyoosha sehemu ya kwanza au ya mwisho hadi mpaka unaofuata |
 | [Chamfer](../chamfer/) | Hupinda kona kati ya sehemu mbili za moja kwa moja zilizo jirani |
+| [Explode](../explode/) | Inavunja polyline kuwa entiti huru za mstari na mkunjo, moja kwa kila sehemu |
 | [Delete](../delete/) | Huondoa polyline kutoka kwa mchoro |
 
 Fillet hazitumiki kabisa kwa polylines.

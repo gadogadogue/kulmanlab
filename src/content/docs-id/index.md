@@ -41,6 +41,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 | [Offset](./commands/offset/) | Membuat salinan paralel dari entitas pada jarak tertentu |
 | [Fillet](./commands/fillet/) | Membulatkan sudut antara dua garis dengan busur tangen |
 | [Chamfer](./commands/chamfer/) | Memotong sudut diagonal lurus antara dua garis atau polyline |
+| [Explode](./commands/explode/) | Memecah polyline menjadi garis dan busur individual |
 | [Undo](./commands/undo/) | Membatalkan aksi terakhir |
 | [Redo](./commands/redo/) | Mengulangi aksi yang dibatalkan |
 | [Array Grid](./commands/array-grid/) | Mengulang entitas dalam kisi persegi panjang berisi baris dan kolom |

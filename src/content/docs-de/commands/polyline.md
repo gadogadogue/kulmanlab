@@ -107,6 +107,7 @@ Polylinien unterstützen jede allgemeine Transformation sowie Offset, Trim, Exte
 | [Trim](../trim/) | Entfernt den Abschnitt zwischen zwei Schnittpunkten, bei geraden wie Bogensegmenten gleichermaßen |
 | [Extend](../extend/) | Verlängert das erste oder letzte Segment bis zur nächsten Begrenzung |
 | [Chamfer](../chamfer/) | Fast eine Ecke zwischen zwei benachbarten geraden Segmenten ab |
+| [Explode](../explode/) | Zerlegt die Polylinie in eigenständige Linien- und Bogen-Entitäten, eine pro Segment |
 | [Delete](../delete/) | Entfernt die Polylinie aus der Zeichnung |
 
 Fillet unterstützt Polylinien überhaupt nicht.

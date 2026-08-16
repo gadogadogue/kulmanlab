@@ -107,6 +107,7 @@ Las polilíneas admiten toda transformación general, además de offset, trim, e
 | [Trim](../trim/) | Elimina la parte entre dos intersecciones, en segmentos rectos o de arco por igual |
 | [Extend](../extend/) | Extiende el primer o último segmento hasta el siguiente límite |
 | [Chamfer](../chamfer/) | Bisela una esquina entre dos segmentos rectos adyacentes |
+| [Explode](../explode/) | Descompone la polilínea en entidades de línea y arco independientes, una por segmento |
 | [Delete](../delete/) | Elimina la polilínea del dibujo |
 
 Fillet no admite polilíneas en absoluto.

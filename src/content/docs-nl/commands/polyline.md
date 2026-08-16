@@ -107,6 +107,7 @@ Polylijnen ondersteunen elke algemene transformatie, plus offset, trim, extend e
 | [Trim](../trim/) | Verwijdert het deel tussen twee snijpunten, bij rechte en boogsegmenten gelijk |
 | [Extend](../extend/) | Verlengt het eerste of laatste segment tot de volgende rand |
 | [Chamfer](../chamfer/) | Schuint een hoek af tussen twee aangrenzende rechte segmenten |
+| [Explode](../explode/) | Splitst de polylijn op in zelfstandige lijn- en boogentiteiten, één per segment |
 | [Delete](../delete/) | Verwijdert de polylijn uit de tekening |
 
 Chamfer's tegenhanger Fillet ondersteunt polylijnen helemaal niet.

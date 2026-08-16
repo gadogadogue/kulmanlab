@@ -107,6 +107,7 @@ Polyline mendukung setiap transformasi umum, ditambah offset, trim, extend, dan 
 | [Trim](../trim/) | Menghapus bagian antara dua perpotongan, pada segmen lurus maupun busur |
 | [Extend](../extend/) | Memperpanjang segmen pertama atau terakhir hingga batas berikutnya |
 | [Chamfer](../chamfer/) | Membuat chamfer pada sudut antara dua segmen lurus yang berdekatan |
+| [Explode](../explode/) | Memecah polyline menjadi entitas garis dan busur yang berdiri sendiri, satu per segmen |
 | [Delete](../delete/) | Menghapus polyline dari gambar |
 
 Fillet sama sekali tidak mendukung polyline.

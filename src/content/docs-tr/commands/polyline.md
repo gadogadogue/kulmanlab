@@ -107,6 +107,7 @@ Tüm çoklu çizgiyi taşımak için ayrı bir tutamaç yoktur. Tüm yolu taşı
 | [Trim](../trim/) | İki kesişim noktası arasındaki bölümü, düz veya yay segmentlerinde aynı şekilde kaldırır |
 | [Extend](../extend/) | İlk veya son segmenti bir sonraki sınıra kadar uzatır |
 | [Chamfer](../chamfer/) | İki komşu düz segment arasında bir köşeyi pahlar |
+| [Explode](../explode/) | Çoklu çizgiyi segment başına bir tane olmak üzere bağımsız çizgi ve yay varlıklarına ayırır |
 | [Delete](../delete/) | Çoklu çizgiyi çizimden siler |
 
 Fillet, çoklu çizgileri hiç desteklemez.

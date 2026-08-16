@@ -107,6 +107,7 @@ Polilinie obsługują każdą ogólną transformację, a także odsunięcie, prz
 | [Trim](../trim/) | Usuwa fragment między dwoma przecięciami, zarówno dla segmentów prostych, jak i łukowych |
 | [Extend](../extend/) | Przedłuża pierwszy lub ostatni segment do kolejnej granicy |
 | [Chamfer](../chamfer/) | Fazuje narożnik między dwoma sąsiednimi prostymi segmentami |
+| [Explode](../explode/) | Rozbija polilinię na niezależne encje linii i łuku, po jednej na segment |
 | [Delete](../delete/) | Usuwa polilinię z rysunku |
 
 Fillet w ogóle nie obsługuje polilinii.
