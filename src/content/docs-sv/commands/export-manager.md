@@ -1,71 +1,74 @@
 ---
-title: Export — Ladda ner ritningar som DXF eller JSON i KulmanLab CAD
-description: Export-kommandot laddar ner den aktuella ritningen som en DXF- eller JSON-fil (nativ). JSON bevarar alla entiteter inklusive dimensioner och ledare; DXF är kompatibelt med andra CAD-verktyg.
-keywords: [exportera DXF, exportera CAD-fil, ladda ner DXF webbläsare, spara DXF online, exportera JSON CAD, KulmanLab export, CAD-filnedladdning, DXF-export, spara ritning till fil, DXF-nedladdning]
+title: Export Manager — Ladda ner ritningar som DXF eller JSON
+description: Export Manager laddar ner den aktuella ritningen som en DXF- eller JSON-fil (nativ). Varje format listar exakt vilka entitetstyper det innehåller, sida vid sida, så att du kan se innan du laddar ner vad DXF utelämnar — för närvarande hatchmönster, mått, ledare och text.
+keywords: [exportera DXF, exportera CAD-fil, ladda ner DXF webbläsare, spara DXF online, exportera JSON CAD, KulmanLab export, ladda ner CAD-fil, DXF-export, spara ritning som fil, DXF-nedladdning]
 group: file
 order: 5
 ---
 
-# Export
+# Export Manager
 
-**Export**-kommandot laddar ner den aktuella ritningen till ditt filsystem. Två format är tillgängliga: **DXF** för kompatibilitet med andra CAD-verktyg och **JSON** för sparningar med full trohet inom KulmanLab CAD.
+Kommandot `exportmanager` laddar ner den aktuella ritningen till ditt filsystem. Två format är tillgängliga, visade som kort sida vid sida: **DXF** för kompatibilitet med andra CAD-verktyg och **JSON** för lagring med full trohet inom KulmanLab CAD — varje kort listar exakt vilka entitetstyper det formatet innehåller.
 
-## Så här exporterar du
+## Så exporterar du
 
-1. Klicka på verktygsfältsknappen **Export** (nedladdningsikon) i File-panelen.
-2. Popup-fönstret **Export-hanteraren** öppnas.
-3. Klicka på ett formatkort för att välja format — **JSON** eller **DXF**.
-4. Klicka på knappen **Export**. Filen laddas ner automatiskt till din standardmapp för nedladdningar.
+1. Klicka på verktygsfältsknappen **Export** (nedladdningsikon) i filpanelen, eller skriv `exportmanager` i terminalen.
+2. Popup-fönstret **Export Manager** öppnas och visar JSON- och DXF-korten sida vid sida, vart och ett med en lista över vad som exporteras (och för DXF, vad som utelämnas).
+3. Klicka på ett kort för att välja format — **JSON** eller **DXF**.
+4. Klicka på knappen **Export \<FORMAT\>**. Filen laddas automatiskt ner till din standardmapp för nedladdningar.
+
+Tryck på `Escape` för att stänga popup-fönstret utan att exportera.
 
 ## Välja ett format
 
 | Format | Filändelse | Bäst för | Begränsningar |
-|--------|-----------|----------|-------------|
-| **JSON** *(nativt)* | `.json` | Spara arbete för att öppna igen i KulmanLab CAD | Inte kompatibelt med andra CAD-verktyg |
-| **DXF** | `.dxf` | Dela med FreeCAD, LibreCAD, etc. | Dimensioner och ledare exporteras inte |
+|--------|------------|----------|----------------|
+| **JSON** *(nativ)* | `.json` | Spara arbete för att öppna igen i KulmanLab CAD | Inte kompatibelt med andra CAD-verktyg |
+| **DXF** | `.dxf` | Delning med FreeCAD, LibreCAD, osv. | Hatchmönster, mått, ledare och text exporteras inte |
 
-**När du ska använda JSON:** när du vill spara en fullständig kopia av ditt arbete. JSON är KulmanLabs nativa format och bevarar varje entitet exakt — inklusive dimensioner, ledare och all lagerdata.
+**När du ska använda JSON:** när du vill spara en fullständig kopia av ditt arbete. JSON är KulmanLabs nativa format och bevarar varje entitet exakt — inklusive mått, ledare, hatchmönster och all lagerdata.
 
-**När du ska använda DXF:** när du behöver lämna över ritningen till någon som använder ett annat CAD-program. Den exporterade filen använder DXF-formatet AC1012 och kan öppnas i de flesta DXF-kompatibla verktyg.
+**När du ska använda DXF:** när du behöver lämna över ritningen till någon som använder en annan CAD-applikation. Den exporterade filen använder AC1032 DXF-format och kan öppnas i de flesta DXF-kompatibla verktyg.
 
 ## Vad som exporteras per format
 
 ### JSON-export
 
-Alla entitetstyper inkluderas:
+Varje entitetstyp ingår:
 
-- Linjer, cirklar, bågar, ellipser, polylinjer, splines, text
-- Dimensioner (linjär, justerad, fortsatt, radie, diameter)
-- Multileaders
-- Hatchar, inklusive deras mönster, skala, vinkel och origo
-- Lagerdefinitioner, linjetypstabeller och hatch-mönstertabeller
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
+- Mått (linjär, justerad, fortsatt, radie, diameter)
+- Leaders (multiledare)
+- Hatches, inklusive deras mönster, skala, vinkel och ursprung
+- Layers och Linetypes
 
 ### DXF-export
 
-Endast geometrientiteter inkluderas:
+Endast geometrientiteter ingår:
 
-- Linjer, cirklar, bågar, ellipser, polylinjer (exporteras som `LWPOLYLINE`), splines, text
-- Lagerdefinitioner och linjetypstabeller
+- Lines, Circles, Arcs, Ellipses, Polylines (exporterade som `LWPOLYLINE`), Splines
+- Layers och Linetypes
 
-**Ingår inte i DXF:** dimensionsentiteter, multileaders och hatchar. Dimensioner och multileaders använder KulmanLab-specifika datastrukturer som inte kan representeras troget i standard-DXF; hatchar exporteras ännu inte alls till DXF, även om de importeras från det. Om din ritning har någon av dessa, använd JSON eller [Print](../print/) för att fånga dem.
+**Exporteras inte till DXF:** hatchmönster, mått, leaders och text. Mått och leaders använder KulmanLab-specifika datastrukturer som inte kan representeras troget i standard-DXF; hatchmönster exporteras inte alls till DXF ännu, även om de importeras därifrån; textexport är inte heller implementerat ännu. Om din ritning har något av detta, använd JSON eller [Print Manager](../print-manager/) för att fånga dem.
 
-## Exporterat filnamn
+## Namn på exporterad fil
 
 Den nedladdade filen namnges efter den aktuella ritningsfilen (t.ex. `myplan.json`). Filändelsen ändras för att matcha det valda formatet.
 
-## Skillnaden mellan Export och Print
+## Skillnad mellan Export Manager och Print Manager
 
-| Funktion | Export | Print |
-|---------|--------|-------|
+| Funktion | Export Manager | Print Manager |
+|----------|-----------------|-----------------|
 | Utdata | Vektorkällfil (.dxf / .json) | Rasterbild (.png / .jpeg / .webp / .pdf) |
 | Redigerbar i andra verktyg | Ja (DXF) | Nej |
-| Bevarar lager och linjetyper | Ja | Nej (renderas platt) |
-| Fångar dimensioner och ledare | Endast JSON | Ja |
+| Bevarar layers & linetypes | Ja | Nej (renderas platt) |
+| Fångar mått & leaders | Endast JSON | Ja |
 
-Använd **Export** när du behöver en redigerbar fil. Använd [Print](../print/) när du behöver en visuell ögonblicksbild.
+Använd **Export Manager** när du behöver en redigerbar fil. Använd [Print Manager](../print-manager/) när du behöver en visuell ögonblicksbild.
 
 ## Relaterade kommandon
 
 - [Import](../import/) — öppna en DXF- eller JSON-fil
-- [Print](../print/) — exportera ritytan som en PNG-, JPEG-, WebP- eller PDF-bild
-- [File Manager](../file-manager/) — bläddra bland ritningar sparade i webbläsarens lagring
+- [Print Manager](../print-manager/) — exportera ritytan som en PNG-, JPEG-, WebP- eller PDF-bild
+- [File Manager](../file-manager/) — bläddra bland ritningar sparade i webbläsarlagring

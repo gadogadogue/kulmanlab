@@ -1,71 +1,74 @@
 ---
-title: Export — I-download ang mga Drawing bilang DXF o JSON
-description: Ida-download ng Export command ang kasalukuyang drawing bilang isang DXF o JSON (native) file. Pinapanatili ng JSON ang lahat ng entities kasama ang dimensions at leaders; ang DXF ay compatible sa iba pang CAD tools.
-keywords: [i-export ang DXF, i-export ang CAD file, i-download ang DXF sa browser, i-save ang DXF online, i-export ang JSON CAD, KulmanLab export, CAD file download, DXF export, i-save ang drawing bilang file, DXF download]
+title: Export Manager — I-download ang mga Drawing bilang DXF o JSON
+description: Ini-download ng Export Manager ang kasalukuyang drawing bilang DXF o JSON (native) na file. Nakalista sa bawat format nang eksakto kung anong mga entity type ang dala nito, magkatabi, para makita mo bago mag-download kung ano ang tinatanggal ng DXF — sa ngayon ay Hatches, Dimensions, Leaders, at Text.
+keywords: [export DXF, export CAD file, i-download ang DXF sa browser, i-save ang DXF online, export JSON CAD, KulmanLab export, i-download ang CAD file, DXF export, i-save ang drawing sa file, DXF download]
 group: file
 order: 5
 ---
 
-# Export
+# Export Manager
 
-Ida-download ng **Export** command ang kasalukuyang drawing patungo sa iyong file system. May dalawang available na format: **DXF** para sa compatibility sa ibang CAD tools at **JSON** para sa full-fidelity na pag-save sa loob ng KulmanLab CAD.
+Ini-download ng command na `exportmanager` ang kasalukuyang drawing sa file system mo. May dalawang format na available, ipinapakita bilang magkatabing card: **DXF** para sa compatibility sa ibang CAD tool at **JSON** para sa full-fidelity na pag-save sa loob ng KulmanLab CAD — nakalista sa bawat card nang eksakto kung anong mga entity type ang dala ng format na iyon.
 
 ## Paano mag-export
 
-1. I-click ang **Export** toolbar button (download icon) sa File panel.
-2. Magbubukas ang **Export Manager** popup.
-3. I-click ang isang format card para piliin ang format — **JSON** o **DXF**.
-4. I-click ang **Export** button. Awtomatikong nada-download ang file patungo sa iyong default downloads folder.
+1. I-click ang **Export** toolbar button (download icon) sa File panel, o i-type ang `exportmanager` sa terminal.
+2. Bubukas ang **Export Manager** popup na nagpapakita ng JSON at DXF card nang magkatabi, bawat isa ay nakalista kung ano ang ie-export (at, para sa DXF, kung ano ang tinatanggal).
+3. I-click ang isang card para piliin ang format — **JSON** o **DXF**.
+4. I-click ang **Export \<FORMAT\>** na button. Awtomatikong nada-download ang file sa iyong default downloads folder.
+
+Pindutin ang `Escape` para isara ang popup nang hindi nag-export.
 
 ## Pagpili ng format
 
 | Format | Extension | Pinakamainam para sa | Mga limitasyon |
-|--------|-----------|----------|-------------|
-| **JSON** *(native)* | `.json` | Pag-save ng trabaho para buksan muli sa KulmanLab CAD | Hindi compatible sa ibang CAD tools |
-| **DXF** | `.dxf` | Pagshe-share sa FreeCAD, LibreCAD, atbp. | Hindi kasama sa export ang Dimensions at leaders |
+|--------|-----------|----------------------|-----------------|
+| **JSON** *(native)* | `.json` | Pag-save ng trabaho para buksan muli sa KulmanLab CAD | Hindi compatible sa ibang CAD tool |
+| **DXF** | `.dxf` | Pagbabahagi sa FreeCAD, LibreCAD, atbp. | Hindi ie-export ang Hatches, Dimensions, Leaders, at Text |
 
-**Kailan gagamitin ang JSON:** anumang oras na gusto mong i-save ang isang kumpletong kopya ng iyong trabaho. Ang JSON ay native format ng KulmanLab at pinapanatili nang eksakto ang bawat entity — kasama ang dimensions, leaders, at lahat ng layer data.
+**Kailan gagamitin ang JSON:** anumang oras na gusto mong i-save ang kumpletong kopya ng iyong trabaho. Ang JSON ang native format ng KulmanLab at eksaktong pinapanatili ang bawat entity — kasama ang Dimensions, Leaders, Hatches, at lahat ng data ng layer.
 
-**Kailan gagamitin ang DXF:** kapag kailangan mong ipasa ang drawing sa taong gumagamit ng ibang CAD application. Gumagamit ang na-export na file ng AC1012 DXF format at puwedeng buksan sa karamihan ng mga tool na compatible sa DXF.
+**Kailan gagamitin ang DXF:** kapag kailangan mong ibigay ang drawing sa taong gumagamit ng ibang CAD application. Ang na-export na file ay gumagamit ng AC1032 DXF format at maaaring buksan sa karamihan ng mga tool na compatible sa DXF.
 
-## Ano ang na-e-export bawat format
+## Ano ang ine-export bawat format
 
 ### JSON export
 
-Kasama ang lahat ng entity types:
+Kasama ang bawat entity type:
 
-- Lines, circles, arcs, ellipses, polylines, splines, text
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
 - Dimensions (linear, aligned, continued, radius, diameter)
-- Multileaders
-- Hatch, kasama ang pattern, scale, angle, at origin nito
-- Layer definitions, linetype tables, at hatch pattern tables
+- Leaders (multileaders)
+- Hatches, kasama ang pattern, scale, angle, at origin nito
+- Layers at Linetypes
 
 ### DXF export
 
-Kasama lang ang geometry-only entities:
+Mga geometry entity lang ang kasama:
 
-- Lines, circles, arcs, ellipses, polylines (na-export bilang `LWPOLYLINE`), splines, text
-- Layer definitions at linetype tables
+- Lines, Circles, Arcs, Ellipses, Polylines (ine-export bilang `LWPOLYLINE`), Splines
+- Layers at Linetypes
 
-**Hindi kasama sa DXF:** ang dimension entities, multileaders, at hatch. Gumagamit ang dimensions at multileaders ng KulmanLab-specific na data structures na hindi puwedeng katawanin nang tapat sa standard na DXF; hindi pa na-e-export ang hatch sa DXF, kahit pa na-i-import ito mula rito. Kung mayroon nito ang iyong drawing, gamitin ang JSON o [Print](../print/) para makuha ang mga ito.
+**Hindi ine-export sa DXF:** Hatches, Dimensions, Leaders, at Text. Gumagamit ang Dimensions at Leaders ng mga istruktura ng datos na partikular sa KulmanLab na hindi maaaring ipakita nang tapat sa standard na DXF; hindi pa talaga ine-export ang Hatches sa DXF, kahit na ini-import ang mga ito mula rito; hindi pa rin naipapatupad ang pag-export ng Text. Kung mayroon ang drawing mo ng alinman sa mga ito, gamitin ang JSON o [Print Manager](../print-manager/) para makuha ang mga ito.
 
 ## Pangalan ng na-export na file
 
-Ang na-download na file ay pinangalanan ayon sa kasalukuyang drawing file (hal. `myplan.json`). Nagbabago ang extension para tumugma sa napiling format.
+Ang na-download na file ay pinangalanan batay sa kasalukuyang drawing file (hal. `myplan.json`). Nagbabago ang extension para tumugma sa napiling format.
 
-## Pagkakaiba ng Export at Print
+## Pagkakaiba ng Export Manager at Print Manager
 
-| Feature | Export | Print |
-|---------|--------|-------|
+| Feature | Export Manager | Print Manager |
+|---------|-----------------|-----------------|
 | Output | Vector source file (.dxf / .json) | Raster image (.png / .jpeg / .webp / .pdf) |
-| Editable sa ibang tools | Oo (DXF) | Hindi |
-| Pinapanatili ang layers & linetypes | Oo | Hindi (naka-render nang patag) |
-| Kinukuha ang dimensions & leaders | JSON lang | Oo |
+| Maaaring i-edit sa ibang tool | Oo (DXF) | Hindi |
+| Pinapanatili ang layers at linetypes | Oo | Hindi (naka-render na patag) |
+| Nakukuha ang dimensions at leaders | JSON lang | Oo |
 
-Gamitin ang **Export** kapag kailangan mo ng editable na file. Gamitin ang [Print](../print/) kapag kailangan mo ng visual snapshot.
+Gamitin ang **Export Manager** kapag kailangan mo ng file na maaaring i-edit. Gamitin ang [Print Manager](../print-manager/) kapag kailangan mo ng visual na snapshot.
 
-## Kaugnay na commands
+## Mga kaugnay na command
 
-- [Import](../import/) — buksan ang isang DXF o JSON file
-- [Print](../print/) — i-export ang canvas bilang isang PNG, JPEG, WebP, o PDF na larawan
+- [Import](../import/) — magbukas ng DXF o JSON file
+- [Print Manager](../print-manager/) — i-export ang canvas bilang PNG, JPEG, WebP, o PDF na larawan
 - [File Manager](../file-manager/) — mag-browse ng mga drawing na naka-save sa browser storage

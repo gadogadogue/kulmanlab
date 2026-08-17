@@ -1,71 +1,74 @@
 ---
-title: Export — Scarica Disegni come DXF o JSON in KulmanLab CAD
-description: Il comando Export scarica il disegno corrente come file DXF o JSON (nativo). JSON preserva tutte le entità incluse quote e leader; DXF è compatibile con altri strumenti CAD.
-keywords: [esporta DXF, esporta file CAD, scarica DXF browser, salva DXF online, esporta JSON CAD, KulmanLab export, scarica file CAD, download DXF, salva disegno su file]
+title: Export Manager — Scaricare Disegni come DXF o JSON
+description: Export Manager scarica il disegno corrente come file DXF o JSON (nativo). Ogni formato elenca esattamente quali tipi di entità trasporta, affiancati, così puoi vedere prima di scaricare cosa DXF lascia fuori — attualmente hatch, quote, leader e testo.
+keywords: [esporta DXF, esporta file CAD, scarica DXF browser, salva DXF online, esporta JSON CAD, esportazione KulmanLab, scarica file CAD, esportazione DXF, salva disegno su file, download DXF]
 group: file
 order: 5
 ---
 
-# Export
+# Export Manager
 
-Il comando **Export** scarica il disegno corrente nel tuo file system. Sono disponibili due formati: **DXF** per la compatibilità con altri strumenti CAD e **JSON** per salvataggi ad alta fedeltà all'interno di KulmanLab CAD.
+Il comando `exportmanager` scarica il disegno corrente sul tuo file system. Sono disponibili due formati, mostrati come schede affiancate: **DXF** per la compatibilità con altri strumenti CAD e **JSON** per salvataggi a piena fedeltà all'interno di KulmanLab CAD — ogni scheda elenca esattamente quali tipi di entità trasporta quel formato.
 
 ## Come esportare
 
-1. Clicca il pulsante **Export** nella barra degli strumenti (icona download) nel pannello File.
-2. Si apre il popup **Gestore esportazione**.
-3. Clicca su una scheda formato per selezionare il formato — **JSON** o **DXF**.
-4. Clicca il pulsante **Export**. Il file viene scaricato automaticamente nella cartella dei download predefinita.
+1. Clicca sul pulsante **Export** della barra degli strumenti (icona di download) nel pannello file, oppure digita `exportmanager` nel terminale.
+2. Si apre il popup **Export Manager**, che mostra le schede JSON e DXF affiancate, ciascuna con l'elenco di cosa viene esportato (e, per DXF, cosa viene lasciato fuori).
+3. Clicca su una scheda per selezionare il formato — **JSON** o **DXF**.
+4. Clicca sul pulsante **Export \<FORMAT\>**. Il file viene scaricato automaticamente nella cartella download predefinita.
 
-## Scelta del formato
+Premi `Esc` per chiudere il popup senza esportare.
+
+## Scegliere un formato
 
 | Formato | Estensione | Ideale per | Limitazioni |
-|---------|------------|------------|-------------|
-| **JSON** *(nativo)* | `.json` | Salvare lavoro da riaprire in KulmanLab CAD | Non compatibile con altri strumenti CAD |
-| **DXF** | `.dxf` | Condivisione con FreeCAD, LibreCAD, ecc. | Quote e leader non vengono esportati |
+|---------|-----------|-----------|-------------|
+| **JSON** *(nativo)* | `.json` | Salvare il lavoro da riaprire in KulmanLab CAD | Non compatibile con altri strumenti CAD |
+| **DXF** | `.dxf` | Condivisione con FreeCAD, LibreCAD, ecc. | Hatch, quote, leader e testo non vengono esportati |
 
-**Quando usare JSON:** ogni volta che vuoi salvare una copia completa del tuo lavoro. JSON è il formato nativo di KulmanLab e preserva ogni entità esattamente — incluse quote, leader e tutti i dati dei layer.
+**Quando usare JSON:** ogni volta che vuoi salvare una copia completa del tuo lavoro. JSON è il formato nativo di KulmanLab e preserva ogni entità esattamente — incluse quote, leader, hatch e tutti i dati dei layer.
 
-**Quando usare DXF:** quando devi consegnare il disegno a qualcuno che usa un'altra applicazione CAD. Il file esportato usa il formato DXF AC1012 e può essere aperto dalla maggior parte degli strumenti compatibili con DXF.
+**Quando usare DXF:** quando devi consegnare il disegno a qualcuno che usa un'altra applicazione CAD. Il file esportato usa il formato DXF AC1032 e può essere aperto nella maggior parte degli strumenti compatibili con DXF.
 
 ## Cosa viene esportato per formato
 
 ### Esportazione JSON
 
-Tutti i tipi di entità sono inclusi:
+Ogni tipo di entità è incluso:
 
-- Linee, cerchi, archi, ellissi, polilinee, spline, testo
-- Quote (lineare, allineata, continua, raggio, diametro)
-- Multilinee guida
-- Hatch, incluso motivo, scala, angolo e origine
-- Definizioni layer, tabelle tipo linea e tabelle dei motivi hatch
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
+- Quote (lineare, allineata, continuata, raggio, diametro)
+- Leaders (multileader)
+- Hatches, incluso il loro motivo, scala, angolo e origine
+- Layers e Linetypes
 
 ### Esportazione DXF
 
 Sono incluse solo le entità geometriche:
 
-- Linee, cerchi, archi, ellissi, polilinee (esportate come `LWPOLYLINE`), spline, testo
-- Definizioni layer e tabelle tipo linea
+- Lines, Circles, Arcs, Ellipses, Polylines (esportate come `LWPOLYLINE`), Splines
+- Layers e Linetypes
 
-**Non inclusi nel DXF:** entità quota, multilinee guida e hatch. Le quote e le multilinee guida usano strutture dati specifiche di KulmanLab che non possono essere rappresentate fedelmente in DXF standard; gli hatch non vengono ancora esportati affatto in DXF, sebbene vengano importati da esso. Se il tuo disegno ha uno di questi, usa JSON o [Print](../print/) per catturarli.
+**Non esportato in DXF:** hatch, quote, leader e testo. Le quote e i leader usano strutture dati specifiche di KulmanLab che non possono essere rappresentate fedelmente in DXF standard; gli hatch al momento non vengono affatto esportati in DXF, anche se vengono importati da esso; anche l'esportazione del testo non è ancora implementata. Se il tuo disegno contiene uno di questi elementi, usa JSON o [Print Manager](../print-manager/) per acquisirli.
 
 ## Nome del file esportato
 
-Il file scaricato prende il nome dal file di disegno corrente (es. `miopiano.json`). L'estensione cambia in base al formato scelto.
+Il file scaricato prende il nome dal file di disegno corrente (es. `myplan.json`). L'estensione cambia in base al formato scelto.
 
-## Differenza tra Export e Print
+## Differenza tra Export Manager e Print Manager
 
-| Funzione | Export | Print |
-|----------|--------|-------|
+| Funzione | Export Manager | Print Manager |
+|----------|-----------------|-----------------|
 | Output | File sorgente vettoriale (.dxf / .json) | Immagine raster (.png / .jpeg / .webp / .pdf) |
 | Modificabile in altri strumenti | Sì (DXF) | No |
-| Preserva layer e tipi linea | Sì | No (renderizzato piatto) |
+| Preserva layer e linetype | Sì | No (renderizzato piatto) |
 | Cattura quote e leader | Solo JSON | Sì |
 
-Usa **Export** quando hai bisogno di un file modificabile. Usa [Print](../print/) quando hai bisogno di un'istantanea visiva.
+Usa **Export Manager** quando hai bisogno di un file modificabile. Usa [Print Manager](../print-manager/) quando hai bisogno di un'istantanea visiva.
 
 ## Comandi correlati
 
 - [Import](../import/) — apri un file DXF o JSON
-- [Print](../print/) — esporta il canvas come immagine PNG, JPEG, WebP o PDF
-- [File Manager](../file-manager/) — sfoglia i disegni salvati nell'archivio del browser
+- [Print Manager](../print-manager/) — esporta la tela come immagine PNG, JPEG, WebP o PDF
+- [File Manager](../file-manager/) — sfoglia i disegni salvati nell'archiviazione del browser

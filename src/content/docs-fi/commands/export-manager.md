@@ -1,71 +1,74 @@
 ---
-title: Export — Lataa Piirustuksia DXF- tai JSON-muodossa
-description: Export-komento lataa nykyisen piirustuksen DXF- tai JSON (natiivi) -tiedostona. JSON säilyttää kaikki entiteetit mukaan lukien mitat ja johtimet; DXF on yhteensopiva muiden CAD-työkalujen kanssa.
-keywords: [vie DXF, vie CAD-tiedosto, lataa DXF selain, tallenna DXF verkossa, vie JSON CAD, KulmanLab vienti, CAD-tiedoston lataus, DXF-vienti, tallenna piirustus tiedostoon, DXF-lataus]
+title: Export Manager — Lataa piirustuksia DXF- tai JSON-muodossa
+description: Export Manager lataa nykyisen piirustuksen DXF- tai JSON-tiedostona (natiivi). Kumpikin muoto listaa tarkasti, mitä entiteettityyppejä se sisältää, rinnakkain, jotta näet ennen latausta, mitä DXF jättää pois — tällä hetkellä hatchit, mitat, viitejohtimet ja tekstin.
+keywords: [vie DXF, vie CAD-tiedosto, lataa DXF selaimessa, tallenna DXF verkossa, vie JSON CAD, KulmanLab vienti, lataa CAD-tiedosto, DXF-vienti, tallenna piirustus tiedostoon, DXF-lataus]
 group: file
 order: 5
 ---
 
-# Export
+# Export Manager
 
-Komento **Export** lataa nykyisen piirustuksen tiedostojärjestelmääsi. Kaksi muotoa on käytettävissä: **DXF** yhteensopivuutta varten muiden CAD-työkalujen kanssa ja **JSON** täydellisen tarkkuuden tallennuksiin KulmanLab CAD:issa.
+Komento `exportmanager` lataa nykyisen piirustuksen tiedostojärjestelmääsi. Käytettävissä on kaksi muotoa, näytettynä rinnakkaisina kortteina: **DXF** yhteensopivuutta varten muiden CAD-työkalujen kanssa ja **JSON** täysin uskollista tallennusta varten KulmanLab CAD:n sisällä — kumpikin kortti listaa tarkasti, mitä entiteettityyppejä kyseinen muoto sisältää.
 
-## Näin viet tiedoston
+## Näin viet
 
-1. Napsauta **Export**-painiketta (latauskuvake) File-paneelissa työkalurivillä.
-2. **Export Manager** -ponnahdusikkuna avautuu.
-3. Napsauta muotokorttia valitaksesi muodon — **JSON** tai **DXF**.
-4. Napsauta **Export**-painiketta. Tiedosto latautuu automaattisesti oletuslatauskansioosi.
+1. Napsauta työkalurivin **Export**-painiketta (latauskuvake) tiedostopaneelissa, tai kirjoita `exportmanager` terminaaliin.
+2. **Export Manager** -ponnahdusikkuna avautuu näyttäen JSON- ja DXF-kortit rinnakkain, kumpikin listaten mitä viedään (ja DXF:n osalta, mitä jätetään pois).
+3. Napsauta korttia valitaksesi muodon — **JSON** tai **DXF**.
+4. Napsauta **Export \<FORMAT\>** -painiketta. Tiedosto ladataan automaattisesti oletuslatauskansioosi.
+
+Paina `Escape` sulkeaksesi ponnahdusikkunan viemättä mitään.
 
 ## Muodon valitseminen
 
 | Muoto | Tiedostopääte | Paras käyttö | Rajoitukset |
-|--------|-----------|----------|-------------|
-| **JSON** *(natiivi)* | `.json` | Työn tallentaminen uudelleenavaamista varten KulmanLab CAD:issa | Ei yhteensopiva muiden CAD-työkalujen kanssa |
-| **DXF** | `.dxf` | Jakaminen FreeCADin, LibreCADin jne. kanssa | Mittoja ja johtimia ei viedä |
+|-------|----------------|--------------|-------------|
+| **JSON** *(natiivi)* | `.json` | Työn tallentaminen uudelleen avattavaksi KulmanLab CAD:ssa | Ei yhteensopiva muiden CAD-työkalujen kanssa |
+| **DXF** | `.dxf` | Jakaminen FreeCAD:n, LibreCAD:n jne. kanssa | Hatchit, mitat, viitejohtimet ja teksti eivät vie |
 
-**Milloin käyttää JSON-muotoa:** aina kun haluat tallentaa täydellisen kopion työstäsi. JSON on KulmanLabin natiivi muoto ja säilyttää jokaisen entiteetin tarkasti — mukaan lukien mitat, johtimet ja kaikki tasotiedot.
+**Milloin käyttää JSON:ia:** aina kun haluat tallentaa täydellisen kopion työstäsi. JSON on KulmanLabin natiivi muoto ja säilyttää jokaisen entiteetin tarkasti — mukaan lukien mitat, viitejohtimet, hatchit ja kaikki tasotiedot.
 
-**Milloin käyttää DXF-muotoa:** kun sinun täytyy luovuttaa piirustus jollekin, joka käyttää toista CAD-sovellusta. Viety tiedosto käyttää AC1012 DXF -muotoa ja voidaan avata useimmissa DXF-yhteensopivissa työkaluissa.
+**Milloin käyttää DXF:ää:** kun sinun täytyy luovuttaa piirustus jollekulle, joka käyttää toista CAD-sovellusta. Viety tiedosto käyttää AC1032 DXF-muotoa ja voidaan avata useimmissa DXF-yhteensopivissa työkaluissa.
 
-## Mitä viedään muodoittain
+## Mitä kukin muoto vie
 
 ### JSON-vienti
 
-Kaikki entiteettityypit sisältyvät:
+Jokainen entiteettityyppi sisältyy:
 
-- Viivat, ympyrät, kaaret, ellipsit, murtoviivat, splinit, teksti
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
 - Mitat (lineaarinen, kohdistettu, jatkettu, säde, halkaisija)
-- Multileaderit
-- Hatchit, mukaan lukien niiden kuvio, skaala, kulma ja origo
-- Tasomääritykset, linetype-taulukot ja hatch-kuviotaulukot
+- Leaders (multileaderit)
+- Hatchit, mukaan lukien niiden kuvio, mittakaava, kulma ja origo
+- Layers ja Linetypes
 
 ### DXF-vienti
 
 Vain geometriaentiteetit sisältyvät:
 
-- Viivat, ympyrät, kaaret, ellipsit, murtoviivat (viety `LWPOLYLINE`-muodossa), splinit, teksti
-- Tasomääritykset ja linetype-taulukot
+- Lines, Circles, Arcs, Ellipses, Polylines (viety muodossa `LWPOLYLINE`), Splines
+- Layers ja Linetypes
 
-**Ei sisälly DXF:ään:** mitta-entiteetit, multileaderit ja hatchit. Mitat ja multileaderit käyttävät KulmanLab-kohtaisia tietorakenteita, joita ei voida esittää tarkasti standardissa DXF:ssä; hatchit eivät vielä vie lainkaan DXF:ään, vaikka ne tuodaan siitä. Jos piirustuksessasi on jokin näistä, käytä JSON:ia tai [Print](../print/)-komentoa taltioidaksesi ne.
+**Ei viedä DXF:ään:** hatchit, mitat, leaderit ja teksti. Mitat ja leaderit käyttävät KulmanLab-kohtaisia tietorakenteita, joita ei voida esittää uskollisesti tavallisessa DXF:ssä; hatcheja ei viedä DXF:ään lainkaan vielä, vaikka niitä tuodaan siitä; myöskään tekstin vientiä ei ole vielä toteutettu. Jos piirustuksessasi on jokin näistä, käytä JSON:ia tai [Print Manageria](../print-manager/) niiden tallentamiseen.
 
 ## Viedyn tiedoston nimi
 
-Ladattu tiedosto nimetään nykyisen piirustustiedoston mukaan (esim. `myplan.json`). Tiedostopääte vaihtuu valitun muodon mukaan.
+Ladattu tiedosto nimetään nykyisen piirustustiedoston mukaan (esim. `myplan.json`). Tiedostopääte muuttuu valitun muodon mukaan.
 
-## Ero Export- ja Print-komentojen välillä
+## Ero Export Managerin ja Print Managerin välillä
 
-| Ominaisuus | Export | Print |
-|---------|--------|-------|
-| Tulos | Vektorimuotoinen lähdetiedosto (.dxf / .json) | Rasterikuva (.png / .jpeg / .webp / .pdf) |
+| Ominaisuus | Export Manager | Print Manager |
+|------------|-----------------|-----------------|
+| Tuloste | Vektorilähdetiedosto (.dxf / .json) | Rasterikuva (.png / .jpeg / .webp / .pdf) |
 | Muokattavissa muissa työkaluissa | Kyllä (DXF) | Ei |
-| Säilyttää tasot ja linetyypit | Kyllä | Ei (renderöity tasaisesti) |
-| Taltioi mitat ja johtimet | Vain JSON | Kyllä |
+| Säilyttää layerit & linetypet | Kyllä | Ei (renderöity litteäksi) |
+| Tallentaa mitat & leaderit | Vain JSON | Kyllä |
 
-Käytä **Export**-komentoa, kun tarvitset muokattavan tiedoston. Käytä [Print](../print/)-komentoa, kun tarvitset visuaalisen tilannekuvan.
+Käytä **Export Manageria**, kun tarvitset muokattavan tiedoston. Käytä [Print Manageria](../print-manager/), kun tarvitset visuaalisen tilannekuvan.
 
 ## Liittyvät komennot
 
 - [Import](../import/) — avaa DXF- tai JSON-tiedosto
-- [Print](../print/) — vie piirtoalue PNG-, JPEG-, WebP- tai PDF-kuvana
+- [Print Manager](../print-manager/) — vie kangas PNG-, JPEG-, WebP- tai PDF-kuvana
 - [File Manager](../file-manager/) — selaa selaimen tallennustilaan tallennettuja piirustuksia

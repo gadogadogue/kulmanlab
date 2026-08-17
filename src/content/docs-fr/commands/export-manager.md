@@ -1,71 +1,74 @@
 ---
-title: Export — Télécharger des Dessins en DXF ou JSON
-description: La commande Export télécharge le dessin actuel en fichier DXF (compatible) ou JSON (natif). JSON préserve toutes les entités y compris les cotes et répères ; DXF est compatible avec d'autres outils CAO.
-keywords: [exporter DXF, exporter fichier CAO, télécharger DXF navigateur, sauvegarder DXF en ligne, exporter JSON CAO, export KulmanLab, téléchargement fichier CAO, exportation DXF, sauvegarder dessin en fichier, téléchargement DXF]
+title: Gestionnaire d'exportation — Télécharger des Dessins en DXF ou JSON
+description: Le Gestionnaire d'exportation télécharge le dessin actuel sous forme de fichier DXF ou JSON (natif). Chaque format liste exactement quels types d'entités il transporte, côte à côte, afin que vous voyiez avant de télécharger ce que DXF laisse de côté — actuellement les hachures, cotes, leaders et texte.
+keywords: [exporter DXF, exporter fichier CAO, télécharger DXF navigateur, enregistrer DXF en ligne, exporter JSON CAO, export KulmanLab, télécharger fichier CAO, export DXF, enregistrer dessin en fichier, téléchargement DXF]
 group: file
 order: 5
 ---
 
-# Export
+# Gestionnaire d'exportation
 
-La commande **Export** télécharge le dessin actuel vers votre système de fichiers. Deux formats sont disponibles : **DXF** pour la compatibilité avec d'autres outils CAO et **JSON** pour des sauvegardes haute fidélité dans KulmanLab CAD.
+La commande `exportmanager` télécharge le dessin actuel vers votre système de fichiers. Deux formats sont disponibles, affichés sous forme de cartes côte à côte : **DXF** pour la compatibilité avec d'autres outils CAO et **JSON** pour des sauvegardes haute fidélité au sein de KulmanLab CAD — chaque carte liste exactement quels types d'entités ce format transporte.
 
 ## Comment exporter
 
-1. Cliquez sur le bouton **Export** dans la barre d'outils (icône téléchargement) dans le panneau Fichier.
-2. La fenêtre contextuelle du **Gestionnaire d'export** s'ouvre.
-3. Cliquez sur une carte de format pour le sélectionner — **JSON** ou **DXF**.
-4. Cliquez sur le bouton **Export**. Le fichier se télécharge automatiquement vers votre dossier de téléchargements par défaut.
+1. Cliquez sur le bouton **Export** de la barre d'outils (icône de téléchargement) dans le panneau fichier, ou tapez `exportmanager` dans le terminal.
+2. La fenêtre **Gestionnaire d'exportation** s'ouvre, affichant les cartes JSON et DXF côte à côte, chacune listant ce qui est exporté (et, pour DXF, ce qui est laissé de côté).
+3. Cliquez sur une carte pour sélectionner le format — **JSON** ou **DXF**.
+4. Cliquez sur le bouton **Export \<FORMAT\>**. Le fichier est téléchargé automatiquement dans votre dossier de téléchargements par défaut.
+
+Appuyez sur `Échap` pour fermer la fenêtre sans exporter.
 
 ## Choisir un format
 
 | Format | Extension | Idéal pour | Limitations |
-|--------|-----------|------------|-------------|
-| **JSON** *(natif)* | `.json` | Sauvegarder du travail pour le rouvrir dans KulmanLab CAD | Non compatible avec d'autres outils CAO |
-| **DXF** | `.dxf` | Partager avec FreeCAD, LibreCAD, etc. | Les cotes et répères ne sont pas exportés |
+|--------|-----------|-----------|-------------|
+| **JSON** *(natif)* | `.json` | Enregistrer un travail pour le rouvrir dans KulmanLab CAD | Non compatible avec d'autres outils CAO |
+| **DXF** | `.dxf` | Partage avec FreeCAD, LibreCAD, etc. | Les hachures, cotes, leaders et le texte ne sont pas exportés |
 
-**Quand utiliser JSON :** chaque fois que vous voulez sauvegarder une copie complète de votre travail. JSON est le format natif de KulmanLab et préserve chaque entité exactement — y compris les cotes, les répères et toutes les données de calques.
+**Quand utiliser JSON :** dès que vous voulez enregistrer une copie complète de votre travail. JSON est le format natif de KulmanLab et conserve chaque entité exactement — y compris les cotes, leaders, hachures et toutes les données de calques.
 
-**Quand utiliser DXF :** quand vous devez livrer le dessin à quelqu'un utilisant une autre application CAO. Le fichier exporté utilise le format DXF AC1012 et peut être ouvert dans la plupart des outils compatibles DXF.
+**Quand utiliser DXF :** lorsque vous devez transmettre le dessin à quelqu'un utilisant une autre application CAO. Le fichier exporté utilise le format DXF AC1032 et peut être ouvert dans la plupart des outils compatibles DXF.
 
 ## Ce qui est exporté par format
 
 ### Export JSON
 
-Tous les types d'entités sont inclus :
+Chaque type d'entité est inclus :
 
-- Lignes, cercles, arcs, ellipses, polylignes, splines, texte
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
 - Cotes (linéaire, alignée, continue, rayon, diamètre)
-- Multirépères
-- Hachures, y compris leur motif, échelle, angle et origine
-- Définitions de calques, tables de types de ligne et tables de motifs de hachures
+- Leaders (multileaders)
+- Hatches, y compris leur motif, échelle, angle et origine
+- Layers et Linetypes
 
 ### Export DXF
 
 Seules les entités géométriques sont incluses :
 
-- Lignes, cercles, arcs, ellipses, polylignes (exportées comme `LWPOLYLINE`), splines, texte
-- Définitions de calques et tables de types de ligne
+- Lines, Circles, Arcs, Ellipses, Polylines (exportées en `LWPOLYLINE`), Splines
+- Layers et Linetypes
 
-**Non inclus dans DXF :** entités de cotes, multirépères et hachures. Les cotes et multirépères utilisent des structures de données spécifiques à KulmanLab qui ne peuvent pas être représentées fidèlement en DXF standard ; les hachures ne s'exportent pas du tout encore en DXF, bien qu'elles s'importent depuis celui-ci. Si votre dessin comporte l'un de ces éléments, utilisez JSON ou [Print](../print/) pour les capturer.
+**Non exportés en DXF :** hachures, cotes, leaders et texte. Les cotes et leaders utilisent des structures de données propres à KulmanLab qui ne peuvent pas être représentées fidèlement en DXF standard ; les hachures ne s'exportent pas du tout en DXF pour l'instant, bien qu'elles s'importent depuis celui-ci ; l'export du texte n'est pas non plus implémenté. Si votre dessin contient l'un de ces éléments, utilisez JSON ou le [Gestionnaire d'impression](../print-manager/) pour les capturer.
 
 ## Nom du fichier exporté
 
-Le fichier téléchargé porte le nom du fichier de dessin actuel (ex. `myplan.json`). L'extension change pour correspondre au format choisi.
+Le fichier téléchargé porte le nom du fichier de dessin actuel (p. ex. `myplan.json`). L'extension change pour correspondre au format choisi.
 
-## Différence entre Export et Print
+## Différence entre le Gestionnaire d'exportation et le Gestionnaire d'impression
 
-| Caractéristique | Export | Print |
-|-----------------|--------|-------|
-| Sortie | Fichier source vectoriel (.dxf / .json) | Image rastérisée (.png / .jpeg / .webp / .pdf) |
+| Fonctionnalité | Gestionnaire d'exportation | Gestionnaire d'impression |
+|-----------------|------------------------------|------------------------------|
+| Sortie | Fichier source vectoriel (.dxf / .json) | Image matricielle (.png / .jpeg / .webp / .pdf) |
 | Modifiable dans d'autres outils | Oui (DXF) | Non |
-| Préserve calques et types de ligne | Oui | Non (rendu plat) |
-| Capture cotes et répères | JSON uniquement | Oui |
+| Conserve layers & linetypes | Oui | Non (rendu à plat) |
+| Capture cotes & leaders | JSON uniquement | Oui |
 
-Utilisez **Export** quand vous avez besoin d'un fichier modifiable. Utilisez [Print](../print/) quand vous avez besoin d'un instantané visuel.
+Utilisez le **Gestionnaire d'exportation** lorsque vous avez besoin d'un fichier modifiable. Utilisez le [Gestionnaire d'impression](../print-manager/) lorsque vous avez besoin d'un instantané visuel.
 
 ## Commandes associées
 
 - [Import](../import/) — ouvrir un fichier DXF ou JSON
-- [Print](../print/) — exporter le canevas en image PNG, JPEG, WebP ou PDF
-- [File Manager](../file-manager/) — parcourir les dessins sauvegardés dans le stockage du navigateur
+- [Gestionnaire d'impression](../print-manager/) — exporter le canevas sous forme d'image PNG, JPEG, WebP ou PDF
+- [File Manager](../file-manager/) — parcourir les dessins enregistrés dans le stockage du navigateur

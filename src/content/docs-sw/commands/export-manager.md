@@ -1,71 +1,74 @@
 ---
-title: Export — Pakua Michoro kama DXF au JSON katika KulmanLab CAD
-description: "Amri ya Export hupakua mchoro wa sasa kama faili la DXF au JSON (asili). JSON huhifadhi viumbe vyote ikiwa ni pamoja na vipimo na viongozi; DXF inaweza kufanya kazi na zana nyingine za CAD."
-keywords: [export DXF, export CAD file, download DXF browser, save DXF online, export JSON CAD, KulmanLab export, CAD file download, DXF export, save drawing to file, DXF download]
+title: Export Manager — Pakua Michoro kama DXF au JSON
+description: Export Manager inapakua mchoro wa sasa kama faili ya DXF au JSON (asili). Kila muundo unaorodhesha kwa usahihi ni aina zipi za entiti unazobeba, kando kando, ili uone kabla ya kupakua kile DXF kinachoacha — kwa sasa hatches, dimensions, leaders, na text.
+keywords: [hamisha DXF, hamisha faili ya CAD, pakua DXF kivinjari, hifadhi DXF mtandaoni, hamisha JSON CAD, uhamishaji wa KulmanLab, pakua faili ya CAD, uhamishaji wa DXF, hifadhi mchoro kwenye faili, upakuaji wa DXF]
 group: file
 order: 5
 ---
 
-# Export
+# Export Manager
 
-Amri ya **Export** hupakua mchoro wa sasa kwenye mfumo wako wa faili. Miundo miwili inapatikana: **DXF** kwa utangamano na zana nyingine za CAD na **JSON** kwa uhifadhi wa kina ndani ya KulmanLab CAD.
+Amri ya `exportmanager` inapakua mchoro wa sasa kwenye mfumo wako wa faili. Miundo miwili inapatikana, inayoonyeshwa kama kadi kando kando: **DXF** kwa uwiano na zana nyingine za CAD na **JSON** kwa uhifadhi wa uaminifu kamili ndani ya KulmanLab CAD — kila kadi inaorodhesha kwa usahihi ni aina zipi za entiti muundo huo unazobeba.
 
-## Jinsi ya kuexport
+## Jinsi ya kuhamisha
 
-1. Bonyeza kitufe cha **Export** kwenye upau wa zana (ikoni ya kupakua) kwenye jopo la Faili.
-2. Dirisha la **Export Manager** linafunguka.
-3. Bonyeza kadi ya muundo kuchagua muundo — **JSON** au **DXF**.
-4. Bonyeza kitufe cha **Export**. Faili linapakuliwa kwenye folda yako ya upakuaji kiotomatiki.
+1. Bonyeza kitufe cha **Export** kwenye upau wa zana (aikoni ya kupakua) katika paneli ya faili, au andika `exportmanager` kwenye terminal.
+2. Popup ya **Export Manager** inafunguka ikionyesha kadi za JSON na DXF kando kando, kila moja ikiorodhesha kinachohamishwa (na, kwa DXF, kinachoachwa).
+3. Bonyeza kadi ili kuchagua muundo — **JSON** au **DXF**.
+4. Bonyeza kitufe cha **Export \<FORMAT\>**. Faili inapakuliwa moja kwa moja kwenye folda yako ya chaguo-msingi ya upakuaji.
+
+Bonyeza `Escape` kufunga popup bila kuhamisha.
 
 ## Kuchagua muundo
 
-| Muundo | Kiendelezi | Bora kwa | Vikwazo |
-|--------|-----------|----------|-------------|
-| **JSON** *(asili)* | `.json` | Kuhifadhi kazi ili kuifungua tena katika KulmanLab CAD | Haitangamani na zana nyingine za CAD |
-| **DXF** | `.dxf` | Kushiriki na FreeCAD, LibreCAD, n.k. | Vipimo na viongozi haviorodheshwi |
+| Muundo | Kiambishi | Bora kwa | Vikwazo |
+|--------|-----------|----------|---------|
+| **JSON** *(asili)* | `.json` | Kuhifadhi kazi ili kufungua tena katika KulmanLab CAD | Haifanani na zana nyingine za CAD |
+| **DXF** | `.dxf` | Kushiriki na FreeCAD, LibreCAD, n.k. | Hatches, dimensions, leaders, na text hazihamishwi |
 
-**Lini utumie JSON:** wakati wowote unapotaka kuhifadhi nakala kamili ya kazi yako. JSON ni muundo asili wa KulmanLab na huhifadhi kila kiumbe kikamilifu — ikiwa ni pamoja na vipimo, viongozi, na data zote za tabaka.
+**Wakati wa kutumia JSON:** wakati wowote unapotaka kuhifadhi nakala kamili ya kazi yako. JSON ni muundo asili wa KulmanLab na unadumisha kila entiti kwa usahihi — ikiwa ni pamoja na dimensions, leaders, hatches, na data zote za layer.
 
-**Lini utumie DXF:** unapohitaji kutoa mchoro kwa mtu anayetumia programu nyingine ya CAD. Faili iliyoexportwa hutumia muundo wa DXF wa AC1012 na inaweza kufunguliwa katika zana nyingi zinazotangamana na DXF.
+**Wakati wa kutumia DXF:** unapohitaji kukabidhi mchoro kwa mtu anayetumia programu nyingine ya CAD. Faili iliyohamishwa hutumia muundo wa DXF wa AC1032 na inaweza kufunguliwa katika zana nyingi zinazolingana na DXF.
 
-## Kinachoorodheshwa kwa kila muundo
+## Kinachohamishwa kwa kila muundo
 
-### Export ya JSON
+### Uhamishaji wa JSON
 
-Aina zote za viumbe zimejumuishwa:
+Kila aina ya entiti imejumuishwa:
 
-- Mistari, duara, archi, duaradufu, polyline, spline, maandishi
-- Vipimo (mstari, sawa, kuendelea, eneo, kipenyo)
-- Vielelezo vingi
-- Hatch, ikijumuisha muundo wake, kipimo, pembe, na chanzo chake
-- Ufafanuzi wa tabaka, jedwali za aina za mstari, na jedwali za muundo wa hatch
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
+- Dimensions (linear, aligned, continued, radius, diameter)
+- Leaders (multileaders)
+- Hatches, ikiwa ni pamoja na pattern, scale, angle, na origin yake
+- Layers na Linetypes
 
-### Export ya DXF
+### Uhamishaji wa DXF
 
-Viumbe vya jiometri pekee vimejumuishwa:
+Ni entiti za jiometri tu zilizojumuishwa:
 
-- Mistari, duara, archi, duaradufu, polyline (zinaexportwa kama `LWPOLYLINE`), spline, maandishi
-- Ufafanuzi wa tabaka na jedwali za aina za mstari
+- Lines, Circles, Arcs, Ellipses, Polylines (zinahamishwa kama `LWPOLYLINE`), Splines
+- Layers na Linetypes
 
-**Haijajumuishwa katika DXF:** viumbe vya kipimo, vielelezo vingi, na hatch. Vipimo na vielelezo vingi hutumia miundo ya data maalum ya KulmanLab ambayo haiwezi kuwakilishwa kikamilifu katika DXF ya kawaida; hatch bado hazijaexportwi kabisa kwenda DXF, ingawa huingizwa kutoka humo. Ikiwa mchoro wako una kimojawapo cha hivi, tumia JSON au [Print](../print/) kuvikamata.
+**Havihamishwi kwenda DXF:** hatches, dimensions, leaders, na text. Dimensions na leaders hutumia miundo ya data maalum ya KulmanLab ambayo haiwezi kuwakilishwa kwa uaminifu katika DXF ya kawaida; hatches bado hazihamishwi kabisa kwenda DXF, ingawa zinaingizwa kutoka humo; uhamishaji wa text pia bado haujatekelezwa. Ikiwa mchoro wako una chochote kati ya hivi, tumia JSON au [Print Manager](../print-manager/) kuvikamata.
 
-## Jina la faili lililoorodheshwa
+## Jina la faili iliyohamishwa
 
-Faili linalopakuliwa lina jina la faili la mchoro wa sasa (mfano: `myplan.json`). Kiendelezi hubadilika kulingana na muundo uliochaguliwa.
+Faili iliyopakuliwa inaitwa kulingana na faili ya mchoro wa sasa (mfano `myplan.json`). Kiambishi hubadilika kulingana na muundo uliochaguliwa.
 
-## Tofauti kati ya Export na Print
+## Tofauti kati ya Export Manager na Print Manager
 
-| Kipengele | Export | Print |
-|---------|--------|-------|
-| Matokeo | Faili la chanzo cha vektа (.dxf / .json) | Picha ya rasta (.png / .jpeg / .webp / .pdf) |
+| Kipengele | Export Manager | Print Manager |
+|-----------|-----------------|-----------------|
+| Matokeo | Faili chanzo cha vector (.dxf / .json) | Picha ya raster (.png / .jpeg / .webp / .pdf) |
 | Inaweza kuhaririwa katika zana nyingine | Ndiyo (DXF) | Hapana |
-| Huhifadhi tabaka na aina za mstari | Ndiyo | Hapana (inatolewa tambarare) |
-| Hunakili vipimo na viongozi | JSON pekee | Ndiyo |
+| Inadumisha layers na linetypes | Ndiyo | Hapana (inaonyeshwa gorofa) |
+| Inakamata dimensions na leaders | JSON tu | Ndiyo |
 
-Tumia **Export** unapohitaji faili linaloweza kuhaririwa. Tumia [Print](../print/) unapohitaji picha ya kuona.
+Tumia **Export Manager** unapohitaji faili inayoweza kuhaririwa. Tumia [Print Manager](../print-manager/) unapohitaji picha ya haraka ya kuona.
 
 ## Amri zinazohusiana
 
-- [Import](../import/) — fungua faili la DXF au JSON
-- [Print](../print/) — exporta turubai kama picha ya PNG, JPEG, WebP, au PDF
+- [Import](../import/) — fungua faili ya DXF au JSON
+- [Print Manager](../print-manager/) — hamisha kanvasi kama picha ya PNG, JPEG, WebP, au PDF
 - [File Manager](../file-manager/) — vinjari michoro iliyohifadhiwa katika hifadhi ya kivinjari

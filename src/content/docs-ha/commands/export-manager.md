@@ -1,71 +1,74 @@
 ---
-title: Export — Sauke Zanen-zane a matsayin DXF ko JSON
-description: Umarnin Export yana sauke zanen na yanzu a matsayin fayil na DXF ko JSON (na asali). JSON yana kiyaye dukkan abubuwa ciki har da girma-girma da leaders; DXF yana dacewa da wasu kayan aikin CAD.
-keywords: [fitar da DXF, fitar da fayil na CAD, saukar DXF ta burauza, ajiye DXF ta kan layi, fitar da JSON CAD, KulmanLab export, saukar fayil na CAD, fitar da DXF, ajiye zane a matsayin fayil, saukar DXF]
+title: "Export Manager — Sauke Zane a matsayin DXF ko JSON"
+description: "Export Manager yana sauke zanen na yanzu a matsayin fayil na DXF ko JSON (na asali). Kowane tsari yana lissafa ainihin nau'ikan entities da yake ɗauka, kusa da juna, domin ka gani kafin sauke abin da DXF ke barin — a yanzu Hatches, Dimensions, Leaders, da Text."
+keywords: [fitar da DXF, fitar da fayil na CAD, sauke DXF ta burauza, adana DXF ta kan layi, fitar da JSON CAD, fitarwar KulmanLab, sauke fayil na CAD, fitar da DXF, adana zane a fayil, sauke DXF]
 group: file
 order: 5
 ---
 
-# Export
+# Export Manager
 
-Umarnin **Export** yana sauke zanen na yanzu zuwa tsarin fayil naka. Tsari biyu ake da su: **DXF** don dacewa da wasu kayan aikin CAD da **JSON** don ajiya cikakke a cikin KulmanLab CAD.
+Umarnin `exportmanager` yana sauke zanen na yanzu zuwa tsarin fayil ɗinka. Akwai tsari biyu, ana nuna su a matsayin katunan kusa da juna: **DXF** don dacewa da sauran kayan aikin CAD da **JSON** don ajiya cikakke a cikin KulmanLab CAD — kowane katin yana lissafa ainihin nau'ikan entities da wannan tsarin ke ɗauka.
 
-## Yadda za a fitar
+## Yadda ake fitarwa
 
-1. Danna maɓallin kayan aiki na **Export** (alamar sauke) a panel na File.
-2. Popup ɗin **Export Manager** yana buɗewa.
-3. Danna kati na tsari don zaɓen tsari — **JSON** ko **DXF**.
-4. Danna maɓallin **Export**. Fayil yana sauka zuwa folder ɗin sauke ka na tsoho kai tsaye.
+1. Danna maɓallin **Export** na kayan aiki (aikon sauke) a cikin panel na fayil, ko rubuta `exportmanager` a tashar umarni.
+2. Popup ɗin **Export Manager** yana buɗewa yana nuna katunan JSON da DXF kusa da juna, kowanne yana lissafa abin da ake fitarwa (kuma, ga DXF, abin da ake barin).
+3. Danna kati don zaɓar tsari — **JSON** ko **DXF**.
+4. Danna maɓallin **Export \<FORMAT\>**. Ana sauke fayil ɗin kai tsaye zuwa babban fayil na saukewa naka.
+
+Danna `Escape` don rufe popup ɗin ba tare da fitarwa ba.
 
 ## Zaɓen tsari
 
-| Tsari | Ƙari | Mafi kyau don | Iyaka |
-|--------|-----------|----------|-------------|
-| **JSON** *(na asali)* | `.json` | Ajiye aiki don sake buɗewa a KulmanLab CAD | Ba ya dacewa da wasu kayan aikin CAD |
-| **DXF** | `.dxf` | Bayarwa da FreeCAD, LibreCAD, da sauransu | Ba a fitar da girma-girma da leaders ba |
+| Tsari | Ƙari | Mafi kyau don | Iyakoki |
+|-------|------|----------------|---------|
+| **JSON** *(na asali)* | `.json` | Ajiye aiki don sake buɗewa a KulmanLab CAD | Ba ya dacewa da sauran kayan aikin CAD |
+| **DXF** | `.dxf` | Raba tare da FreeCAD, LibreCAD, da sauransu | Hatches, Dimensions, Leaders, da Text ba a fitar dasu ba |
 
-**Yaushe za a yi amfani da JSON:** kowane lokaci da kake son ajiye cikakken kwafin aikinka. JSON shine tsarin asali na KulmanLab kuma yana kiyaye kowane abu daidai — ciki har da girma-girma, leaders, da dukkan bayanan layer.
+**Yaushe za a yi amfani da JSON:** duk lokacin da kake son ajiye cikakkiyar kwafin aikinka. JSON shine tsarin asali na KulmanLab kuma yana dawwamar da kowace entity daidai — ciki har da Dimensions, Leaders, Hatches, da duk bayanan Layer.
 
-**Yaushe za a yi amfani da DXF:** idan kana bukatar bayar da zanen ga wani mai amfani da wata manhajar CAD. Fayil ɗin da aka fitar yana amfani da tsarin DXF na AC1012 kuma za a iya buɗe shi a yawancin kayan aiki masu dacewa da DXF.
+**Yaushe za a yi amfani da DXF:** lokacin da kake buƙatar mika zanen ga wani wanda ke amfani da wata manhajar CAD. Fayil ɗin da aka fitar yana amfani da tsarin DXF na AC1032 kuma ana iya buɗe shi a mafi yawan kayan aikin da suka dace da DXF.
 
-## Abin da ake fitarwa a kowace tsari
+## Abin da ake fitarwa a kowane tsari
 
 ### Fitar da JSON
 
-Ana haɗa dukkan nauʼukan abubuwa:
+Kowane nau'in entity yana ciki:
 
-- Layi, da'irori, baka, ellipses, polylines, splines, rubutu
-- Girma-girma (layi, daidaici, ci-gaba, radius, diameter)
-- Multileaders
-- Hatches, tare da pattern, scale, angle, da origin dinsu
-- Ma'anonin layer, tebur na nauʼukan layi, da tebur na pattern na hatch
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
+- Dimensions (madaidaici, daidaitacce, ci gaba, radius, diameter)
+- Leaders (multileaders)
+- Hatches, ciki har da pattern, scale, angle, da origin nasu
+- Layers da Linetypes
 
 ### Fitar da DXF
 
-Ana haɗa abubuwan geometry kaɗai:
+Kawai entities na geometry ne ake ciki:
 
-- Layi, da'irori, baka, ellipses, polylines (an fitar da su a matsayin `LWPOLYLINE`), splines, rubutu
-- Ma'anonin layer da tebur na nauʼukan layi
+- Lines, Circles, Arcs, Ellipses, Polylines (ana fitar dasu a matsayin `LWPOLYLINE`), Splines
+- Layers da Linetypes
 
-**Ba a haɗa su a DXF ba:** abubuwan girma-girma, multileaders, da hatches. Girma-girma da multileaders suna amfani da tsarin bayanai na musamman ga KulmanLab da ba za a iya wakiltar su daidai a DXF na yau da kullum ba; hatches ba a fitar da su zuwa DXF ko kadan ba tukuna, ko da yake ana shigo da su daga ciki. Idan zanenka yana da daya daga cikin wadannan, yi amfani da JSON ko [Print](../print/) don kama su.
+**Ba a fitar zuwa DXF ba:** Hatches, Dimensions, Leaders, da Text. Dimensions da Leaders suna amfani da tsarin bayanai na musamman na KulmanLab wanda ba za a iya wakilta daidai a cikin DXF na yau da kullum ba; ba a fitar da Hatches zuwa DXF ko kaɗan ba tukuna, ko da yake ana shigo dasu daga can; fitar da Text ma ba a aiwatar dashi ba tukuna. Idan zanenka yana da ɗayan waɗannan, yi amfani da JSON ko [Print Manager](../print-manager/) don kama su.
 
 ## Sunan fayil ɗin da aka fitar
 
-Fayil ɗin da aka sauke ana masa suna bisa fayilin zane na yanzu (misali `myplan.json`). Ƙarin yana canzawa don dacewa da tsarin da aka zaɓa.
+Ana sanya wa fayil ɗin da aka sauke suna bisa fayil ɗin zane na yanzu (misali `myplan.json`). Ƙarin yana canzawa don ya dace da tsarin da aka zaɓa.
 
-## Bambanci tsakanin Export da Print
+## Bambanci tsakanin Export Manager da Print Manager
 
-| Fasali | Export | Print |
-|---------|--------|-------|
-| Fitarwa | Fayil na tushen vector (.dxf / .json) | Hoto na raster (.png / .jpeg / .webp / .pdf) |
-| Ana iya gyarawa a wasu kayan aiki | Eh (DXF) | Aʼa |
-| Yana kiyaye layers da nauʼukan layi | Eh | Aʼa (an rinda shi flat) |
-| Yana kama girma-girma da leaders | JSON kaɗai | Eh |
+| Fasali | Export Manager | Print Manager |
+|--------|-----------------|-----------------|
+| Fitarwa | Fayil na tushen vector (.dxf / .json) | Hoton raster (.png / .jpeg / .webp / .pdf) |
+| Ana iya gyara a wasu kayan aiki | Eh (DXF) | A'a |
+| Yana dawwamar da Layers & Linetypes | Eh | A'a (an rendar shi lebur) |
+| Yana kama Dimensions & Leaders | JSON kawai | Eh |
 
-Yi amfani da **Export** idan kana bukatar fayil da za a iya gyarawa. Yi amfani da [Print](../print/) idan kana bukatar hoto na wucin gadi.
+Yi amfani da **Export Manager** lokacin da kake buƙatar fayil da za a iya gyarawa. Yi amfani da [Print Manager](../print-manager/) lokacin da kake buƙatar hoton gani.
 
-## Umarni masu alaƙa
+## Umarnin da suka shafi wannan
 
 - [Import](../import/) — buɗe fayil na DXF ko JSON
-- [Print](../print/) — fitar da canvas a matsayin hoto na PNG, JPEG, WebP, ko PDF
-- [File Manager](../file-manager/) — bincika zanen-zanen da aka ajiye a ajiyar burauza
+- [Print Manager](../print-manager/) — fitar da canvas a matsayin hoton PNG, JPEG, WebP, ko PDF
+- [File Manager](../file-manager/) — bincika zane-zanen da aka ajiye a cikin ajiyar burauza

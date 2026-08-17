@@ -1,71 +1,74 @@
 ---
-title: Export — Pobieranie rysunków jako DXF lub JSON w KulmanLab CAD
-description: Polecenie Export pobiera bieżący rysunek jako plik DXF lub JSON (natywny). JSON zachowuje wszystkie elementy łącznie z wymiarami i liniami prowadzącymi; DXF jest zgodny z innymi narzędziami CAD.
-keywords: [eksport DXF, eksport pliku CAD, pobieranie DXF w przeglądarce, zapis DXF online, eksport JSON CAD, KulmanLab eksport, pobieranie pliku CAD, eksport DXF, zapis rysunku do pliku, pobieranie DXF]
+title: Export Manager — Pobierz Rysunki jako DXF lub JSON
+description: Export Manager pobiera bieżący rysunek jako plik DXF lub JSON (natywny). Każdy format dokładnie wymienia, jakie typy elementów przenosi, obok siebie, dzięki czemu przed pobraniem widać, co pomija DXF — obecnie hatch, wymiary, odnośniki i tekst.
+keywords: [eksport DXF, eksport pliku CAD, pobierz DXF przeglądarka, zapisz DXF online, eksport JSON CAD, eksport KulmanLab, pobierz plik CAD, eksport DXF, zapisz rysunek do pliku, pobieranie DXF]
 group: file
 order: 5
 ---
 
-# Export
+# Export Manager
 
-Polecenie **Eksport** pobiera bieżący rysunek do systemu plików. Dostępne są dwa formaty: **DXF** dla zgodności z innymi narzędziami CAD i **JSON** do zapisywania z pełną wiernością w KulmanLab CAD.
+Polecenie `exportmanager` pobiera bieżący rysunek do systemu plików. Dostępne są dwa formaty, pokazane jako karty obok siebie: **DXF** dla zgodności z innymi narzędziami CAD i **JSON** dla zapisu z pełną wiernością wewnątrz KulmanLab CAD — każda karta dokładnie wymienia, jakie typy elementów przenosi dany format.
 
 ## Jak eksportować
 
-1. Kliknij przycisk **Eksport** na pasku narzędzi (ikona pobierania) w panelu Plik.
-2. Otwiera się okno podręczne **Menedżer eksportu**.
-3. Kliknij kartę formatu, aby wybrać format — **JSON** lub **DXF**.
-4. Kliknij przycisk **Eksportuj**. Plik automatycznie pobiera się do domyślnego folderu pobierania.
+1. Kliknij przycisk **Export** na pasku narzędzi (ikona pobierania) w panelu plików lub wpisz `exportmanager` w terminalu.
+2. Otwiera się okno **Export Manager**, pokazujące karty JSON i DXF obok siebie, każda z listą tego, co jest eksportowane (a dla DXF — co jest pomijane).
+3. Kliknij kartę, aby wybrać format — **JSON** lub **DXF**.
+4. Kliknij przycisk **Export \<FORMAT\>**. Plik zostanie automatycznie pobrany do domyślnego folderu pobierania.
 
-## Wybieranie formatu
+Naciśnij `Escape`, aby zamknąć okno bez eksportowania.
+
+## Wybór formatu
 
 | Format | Rozszerzenie | Najlepsze do | Ograniczenia |
-|--------|-------------|----------|-------------|
+|--------|-------------|--------------|--------------|
 | **JSON** *(natywny)* | `.json` | Zapisywanie pracy do ponownego otwarcia w KulmanLab CAD | Niekompatybilny z innymi narzędziami CAD |
-| **DXF** | `.dxf` | Udostępnianie narzędziom FreeCAD, LibreCAD itp. | Wymiary i linie prowadzące nie są eksportowane |
+| **DXF** | `.dxf` | Udostępnianie w FreeCAD, LibreCAD itp. | Hatch, wymiary, odnośniki i tekst nie są eksportowane |
 
-**Kiedy używać JSON:** zawsze, gdy chcesz zapisać kompletną kopię swojej pracy. JSON to natywny format KulmanLab i zachowuje każdy element dokładnie — w tym wymiary, linie prowadzące i wszystkie dane warstw.
+**Kiedy używać JSON:** zawsze, gdy chcesz zapisać pełną kopię swojej pracy. JSON to natywny format KulmanLab, który dokładnie zachowuje każdy element — w tym wymiary, odnośniki, hatch i wszystkie dane warstw.
 
-**Kiedy używać DXF:** gdy potrzebujesz przekazać rysunek komuś używającemu innej aplikacji CAD. Eksportowany plik używa formatu DXF AC1012 i można go otworzyć w większości narzędzi zgodnych z DXF.
+**Kiedy używać DXF:** gdy musisz przekazać rysunek komuś korzystającemu z innej aplikacji CAD. Wyeksportowany plik używa formatu DXF AC1032 i można go otworzyć w większości narzędzi zgodnych z DXF.
 
 ## Co jest eksportowane w każdym formacie
 
 ### Eksport JSON
 
-Uwzględniane są wszystkie typy elementów:
+Uwzględniony jest każdy typ elementu:
 
-- Linie, okręgi, łuki, elipsy, polilinie, splajny, tekst
-- Wymiary (liniowe, wyrównane, kontynuowane, promienia, średnicy)
-- Linie wielokierunkowe
-- Elementy hatch, wraz z ich wzorem, skalą, kątem i punktem początkowym
-- Definicje warstw, tabele typów linii i tabele wzorów hatch
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
+- Wymiary (liniowy, wyrównany, ciągły, promień, średnica)
+- Leaders (multileadery)
+- Hatches, wraz z ich wzorem, skalą, kątem i punktem początkowym
+- Layers i Linetypes
 
 ### Eksport DXF
 
-Uwzględniane są tylko elementy geometryczne:
+Uwzględnione są tylko elementy geometryczne:
 
-- Linie, okręgi, łuki, elipsy, polilinie (eksportowane jako `LWPOLYLINE`), splajny, tekst
-- Definicje warstw i tabele typów linii
+- Lines, Circles, Arcs, Ellipses, Polylines (eksportowane jako `LWPOLYLINE`), Splines
+- Layers i Linetypes
 
-**Nie uwzględnione w DXF:** elementy wymiarowe, linie wielokierunkowe i elementy hatch. Wymiary i linie wielokierunkowe używają specyficznych dla KulmanLab struktur danych, których nie można wiernie odwzorować w standardowym DXF; elementy hatch nie są jeszcze w ogóle eksportowane do DXF, mimo że są z niego importowane. Jeśli rysunek zawiera którykolwiek z nich, użyj JSON lub [Print](../print/), aby je uchwycić.
+**Nieeksportowane do DXF:** hatch, wymiary, leadery i tekst. Wymiary i leadery używają struktur danych specyficznych dla KulmanLab, których nie można wiernie przedstawić w standardowym DXF; hatch w ogóle nie jest jeszcze eksportowany do DXF, mimo że jest z niego importowany; eksport tekstu również nie jest jeszcze zaimplementowany. Jeśli twój rysunek zawiera którykolwiek z tych elementów, użyj JSON lub [Menedżera druku](../print-manager/), aby je zachować.
 
 ## Nazwa eksportowanego pliku
 
-Pobrany plik jest nazwany na podstawie bieżącego pliku rysunku (np. `mojplan.json`). Rozszerzenie zmienia się zgodnie z wybranym formatem.
+Pobrany plik otrzymuje nazwę na podstawie bieżącego pliku rysunku (np. `myplan.json`). Rozszerzenie zmienia się zgodnie z wybranym formatem.
 
-## Różnica między Eksportem a Drukowaniem
+## Różnica między Export Manager a Menedżerem druku
 
-| Cecha | Eksport | Drukowanie |
-|-------|--------|-------|
-| Wyjście | Plik źródłowy wektora (.dxf / .json) | Obraz rastrowy (.png / .jpeg / .webp / .pdf) |
+| Funkcja | Export Manager | Menedżer druku |
+|---------|-----------------|-----------------|
+| Wyjście | Plik źródłowy wektorowy (.dxf / .json) | Obraz rastrowy (.png / .jpeg / .webp / .pdf) |
 | Edytowalny w innych narzędziach | Tak (DXF) | Nie |
-| Zachowuje warstwy i typy linii | Tak | Nie (renderowany płasko) |
-| Przechwytuje wymiary i linie prowadzące | Tylko JSON | Tak |
+| Zachowuje layers i linetypes | Tak | Nie (renderowane płasko) |
+| Przechwytuje wymiary i leadery | Tylko JSON | Tak |
 
-Użyj **Eksportu**, gdy potrzebujesz edytowalnego pliku. Użyj [Print](../print/), gdy potrzebujesz wizualnej migawki.
+Użyj **Export Manager**, gdy potrzebujesz edytowalnego pliku. Użyj [Menedżera druku](../print-manager/), gdy potrzebujesz wizualnego zrzutu.
 
 ## Powiązane polecenia
 
-- [Import](../import/) — otwieranie pliku DXF lub JSON
-- [Print](../print/) — eksportowanie płótna jako obraz PNG, JPEG, WebP lub PDF
-- [File Manager](../file-manager/) — przeglądanie rysunków zapisanych w pamięci przeglądarki
+- [Import](../import/) — otwórz plik DXF lub JSON
+- [Menedżer druku](../print-manager/) — eksportuj płótno jako obraz PNG, JPEG, WebP lub PDF
+- [File Manager](../file-manager/) — przeglądaj rysunki zapisane w pamięci przeglądarki

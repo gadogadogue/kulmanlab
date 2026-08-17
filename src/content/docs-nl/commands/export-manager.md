@@ -1,71 +1,74 @@
 ---
-title: Export — Tekeningen Downloaden als DXF of JSON
-description: Het Export-commando downloadt de huidige tekening als een DXF- of JSON-bestand (native). JSON behoudt alle entiteiten inclusief maatvoering en leaders; DXF is compatibel met andere CAD-tools.
-keywords: [DXF exporteren, CAD-bestand exporteren, DXF downloaden browser, DXF opslaan online, JSON exporteren CAD, KulmanLab export, CAD-bestand downloaden, DXF export, tekening opslaan als bestand, DXF download]
+title: Export Manager — Tekeningen downloaden als DXF of JSON
+description: De Export Manager downloadt de huidige tekening als een DXF- of JSON-bestand (native). Elk formaat toont precies welke entiteitstypen het bevat, naast elkaar, zodat u vóór het downloaden ziet wat DXF weglaat — momenteel hatches, maatvoeringen, leiders en tekst.
+keywords: [DXF exporteren, CAD-bestand exporteren, DXF downloaden in browser, DXF online opslaan, JSON CAD exporteren, KulmanLab export, CAD-bestand downloaden, DXF-export, tekening opslaan als bestand, DXF-download]
 group: file
 order: 5
 ---
 
-# Export
+# Export Manager
 
-Het **Export**-commando downloadt de huidige tekening naar uw bestandssysteem. Er zijn twee formaten beschikbaar: **DXF** voor compatibiliteit met andere CAD-tools en **JSON** voor volledig getrouwe opslag binnen KulmanLab CAD.
+Het `exportmanager`-commando downloadt de huidige tekening naar uw bestandssysteem. Er zijn twee formaten beschikbaar, weergegeven als kaarten naast elkaar: **DXF** voor compatibiliteit met andere CAD-tools en **JSON** voor opslag met volledige getrouwheid binnen KulmanLab CAD — elke kaart toont precies welke entiteitstypen dat formaat bevat.
 
-## Hoe te exporteren
+## Zo exporteert u
 
-1. Klik op de **Export**-werkbalkknop (downloadicoon) in het Bestand-paneel.
-2. De popup **Export Manager** opent.
-3. Klik op een formaatkaart om het formaat te kiezen — **JSON** of **DXF**.
-4. Klik op de knop **Export**. Het bestand wordt automatisch naar uw standaard downloadmap gedownload.
+1. Klik op de **Export**-werkbalkknop (downloadpictogram) in het bestandspaneel, of typ `exportmanager` in de terminal.
+2. De pop-up **Export Manager** opent en toont de JSON- en DXF-kaarten naast elkaar, elk met een overzicht van wat wordt geëxporteerd (en, voor DXF, wat wordt weggelaten).
+3. Klik op een kaart om het formaat te selecteren — **JSON** of **DXF**.
+4. Klik op de knop **Export \<FORMAT\>**. Het bestand wordt automatisch gedownload naar uw standaard downloadmap.
+
+Druk op `Escape` om de pop-up te sluiten zonder te exporteren.
 
 ## Een formaat kiezen
 
-| Formaat | Extensie | Ideaal voor | Beperkingen |
-|--------|-----------|----------|-------------|
-| **JSON** *(native)* | `.json` | Werk opslaan om opnieuw te openen in KulmanLab CAD | Niet compatibel met andere CAD-tools |
-| **DXF** | `.dxf` | Delen met FreeCAD, LibreCAD, enz. | Maatvoering en leaders worden niet geëxporteerd |
+| Formaat | Extensie | Beste voor | Beperkingen |
+|---------|----------|-----------|-------------|
+| **JSON** *(native)* | `.json` | Werk opslaan om later opnieuw te openen in KulmanLab CAD | Niet compatibel met andere CAD-tools |
+| **DXF** | `.dxf` | Delen met FreeCAD, LibreCAD, enz. | Hatches, maatvoeringen, leiders en tekst worden niet geëxporteerd |
 
-**Wanneer JSON gebruiken:** altijd wanneer u een volledige kopie van uw werk wilt opslaan. JSON is het native formaat van KulmanLab en behoudt elke entiteit exact — inclusief maatvoering, leaders en alle laaggegevens.
+**Wanneer JSON gebruiken:** wanneer u een volledige kopie van uw werk wilt opslaan. JSON is het native formaat van KulmanLab en behoudt elke entiteit exact — inclusief maatvoeringen, leiders, hatches en alle laaggegevens.
 
-**Wanneer DXF gebruiken:** wanneer u de tekening moet overdragen aan iemand die een andere CAD-toepassing gebruikt. Het geëxporteerde bestand gebruikt het AC1012 DXF-formaat en kan worden geopend in de meeste DXF-compatibele tools.
+**Wanneer DXF gebruiken:** wanneer u de tekening moet overdragen aan iemand die een andere CAD-toepassing gebruikt. Het geëxporteerde bestand gebruikt het AC1032 DXF-formaat en kan worden geopend in de meeste DXF-compatibele tools.
 
-## Wat wordt geëxporteerd per formaat
+## Wat er per formaat wordt geëxporteerd
 
 ### JSON-export
 
-Alle entiteitstypen worden meegenomen:
+Elk entiteitstype is inbegrepen:
 
-- Lijnen, cirkels, bogen, ellipsen, polylijnen, splines, tekst
-- Maatvoering (lineair, uitgelijnd, doorlopend, radius, diameter)
-- Multileaders
+- Lines, Circles, Arcs, Ellipses, Polylines, Splines
+- Text
+- Maatvoeringen (linear, aligned, continued, radius, diameter)
+- Leaders (multileaders)
 - Hatches, inclusief hun patroon, schaal, hoek en oorsprong
-- Laagdefinities, lijntypetabellen en hatch-patroontabellen
+- Layers en Linetypes
 
 ### DXF-export
 
-Alleen geometrie-entiteiten worden meegenomen:
+Alleen geometrie-entiteiten zijn inbegrepen:
 
-- Lijnen, cirkels, bogen, ellipsen, polylijnen (geëxporteerd als `LWPOLYLINE`), splines, tekst
-- Laagdefinities en lijntypetabellen
+- Lines, Circles, Arcs, Ellipses, Polylines (geëxporteerd als `LWPOLYLINE`), Splines
+- Layers en Linetypes
 
-**Niet inbegrepen in DXF:** maatvoeringsentiteiten, multileaders en hatches. Maatvoering en multileaders gebruiken KulmanLab-specifieke gegevensstructuren die niet getrouw kunnen worden weergegeven in standaard-DXF; hatches worden nog helemaal niet naar DXF geëxporteerd, hoewel ze er wel uit worden geïmporteerd. Als uw tekening een van deze bevat, gebruik dan JSON of [Print](../print/) om ze vast te leggen.
+**Niet geëxporteerd naar DXF:** hatches, maatvoeringen, leiders en tekst. Maatvoeringen en leiders gebruiken KulmanLab-specifieke datastructuren die niet getrouw kunnen worden weergegeven in standaard-DXF; hatches worden momenteel helemaal niet naar DXF geëxporteerd, ook al worden ze er wel uit geïmporteerd; tekstexport is ook nog niet geïmplementeerd. Als uw tekening een van deze bevat, gebruik dan JSON of de [Print Manager](../print-manager/) om ze vast te leggen.
 
 ## Naam van het geëxporteerde bestand
 
-Het gedownloade bestand wordt genoemd naar het huidige tekeningbestand (bijv. `myplan.json`). De extensie verandert overeenkomstig het gekozen formaat.
+Het gedownloade bestand krijgt de naam van het huidige tekeningbestand (bijv. `myplan.json`). De extensie verandert overeenkomstig het gekozen formaat.
 
-## Verschil tussen Export en Print
+## Verschil tussen Export Manager en Print Manager
 
-| Functie | Export | Print |
-|---------|--------|-------|
-| Uitvoer | Vectorbronbestand (.dxf / .json) | Rasterafbeelding (.png / .jpeg / .webp / .pdf) |
+| Functie | Export Manager | Print Manager |
+|---------|-----------------|-----------------|
+| Uitvoer | Vector bronbestand (.dxf / .json) | Rasterafbeelding (.png / .jpeg / .webp / .pdf) |
 | Bewerkbaar in andere tools | Ja (DXF) | Nee |
-| Behoudt lagen & lijntypen | Ja | Nee (plat gerenderd) |
-| Legt maatvoering & leaders vast | Alleen JSON | Ja |
+| Behoudt layers & linetypes | Ja | Nee (plat gerenderd) |
+| Legt maatvoeringen & leiders vast | Alleen JSON | Ja |
 
-Gebruik **Export** wanneer u een bewerkbaar bestand nodig heeft. Gebruik [Print](../print/) wanneer u een visuele momentopname nodig heeft.
+Gebruik **Export Manager** wanneer u een bewerkbaar bestand nodig heeft. Gebruik de [Print Manager](../print-manager/) wanneer u een visuele momentopname nodig heeft.
 
 ## Gerelateerde commando's
 
-- [Import](../import/) — een DXF- of JSON-bestand openen
-- [Print](../print/) — het canvas exporteren als PNG-, JPEG-, WebP- of PDF-afbeelding
-- [File Manager](../file-manager/) — tekeningen bladeren die in browseropslag zijn opgeslagen
+- [Import](../import/) — open een DXF- of JSON-bestand
+- [Print Manager](../print-manager/) — exporteer het canvas als een PNG-, JPEG-, WebP- of PDF-afbeelding
+- [File Manager](../file-manager/) — blader door tekeningen die zijn opgeslagen in de browseropslag
