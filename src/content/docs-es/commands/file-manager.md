@@ -54,7 +54,7 @@ KulmanLab guarda los dibujos en **IndexedDB**, una base de datos integrada en tu
 - Cada navegador y dispositivo tiene su propio almacenamiento independiente. Un dibujo guardado en Chrome en un ordenador no aparece en Firefox, ni en otra máquina.
 - Este almacenamiento **puede borrarse sin previo aviso** — al borrar datos del sitio o el historial de navegación, quedarse sin espacio en disco, usar una ventana privada/de incógnito, reinstalar el navegador o el sistema operativo, o cambiar de dispositivo. Ninguno de estos casos te da la oportunidad de recuperar lo que había.
 
-**La única forma fiable de mantener un dibujo a salvo es [exportarlo](../export/)** a tu propio almacenamiento. Usa `.json` (el formato nativo de KulmanLab) cuando sea posible — preserva cada entidad con exactitud; usa `.dxf` cuando necesites compatibilidad con otras herramientas CAD. Haz esto con todo aquello cuya pérdida lamentarías, y antes de borrar datos del navegador, cambiar de navegador o dispositivo, o guardar el equipo por un tiempo.
+**La única forma fiable de mantener un dibujo a salvo es [exportarlo](../export-manager/)** a tu propio almacenamiento. Usa `.json` (el formato nativo de KulmanLab) cuando sea posible — preserva cada entidad con exactitud; usa `.dxf` cuando necesites compatibilidad con otras herramientas CAD. Haz esto con todo aquello cuya pérdida lamentarías, y antes de borrar datos del navegador, cambiar de navegador o dispositivo, o guardar el equipo por un tiempo.
 
 ## Carga automática de archivos al iniciar
 
@@ -73,6 +73,6 @@ Los archivos nuevos e importados reciben un nombre simple — sin marca de tiemp
 ## Comandos relacionados
 
 - [Import](../import/) — cargar un dibujo desde tu sistema de archivos al almacenamiento del navegador
-- [Export](../export/) — descargar un dibujo a tu sistema de archivos
+- [Export Manager](../export-manager/) — descargar un dibujo a tu sistema de archivos
 - [New File](../new-file/) — iniciar un dibujo en blanco (también se guarda automáticamente)
 - [WipeStorage](../wipestorage/) — borrar todos los archivos guardados del almacenamiento del navegador

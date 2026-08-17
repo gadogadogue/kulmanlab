@@ -54,7 +54,7 @@ Ana ajiye zanen kai tsaye zuwa ajiyar burauza (IndexedDB) bayan shigarwa, don ha
 
 ## Abin da ke faruwa da zanen na yanzu
 
-Shigarwa yana maye gurbin canvas na yanzu. Babu haɗuwa ko ƙarawa. Idan kana da canje-canje da ba a ajiye ba, [fitar](../export/) da zanen na yanzu tukuna.
+Shigarwa yana maye gurbin canvas na yanzu. Babu haɗuwa ko ƙarawa. Idan kana da canje-canje da ba a ajiye ba, [fitar](../export-manager/) da zanen na yanzu tukuna.
 
 ## A farawa
 
@@ -70,6 +70,6 @@ KulmanLab yana sake buɗe fayil ɗin da aka gyara kwanan nan kai tsaye idan shaf
 
 ## Umarni masu alaƙa
 
-- [Export](../export/) — sauke zanen na yanzu a matsayin DXF ko JSON
+- [Export Manager](../export-manager/) — sauke zanen na yanzu a matsayin DXF ko JSON
 - [File Manager](../file-manager/) — bincika kuma mayar da zanen-zanen da aka ajiye a burauza
 - [New File](../new-file/) — fara zane mai tsabta

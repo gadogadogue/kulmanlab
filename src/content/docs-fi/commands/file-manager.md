@@ -54,7 +54,7 @@ KulmanLab tallentaa piirustukset **IndexedDB**:hen, selaimeesi sisäänrakennett
 - Jokaisella selaimella ja laitteella on oma itsenäinen tallennustila. Yhdellä tietokoneella Chromessa tallennettu piirustus ei näy Firefoxissa tai toisella laitteella.
 - Tämä tallennustila **voi tyhjentyä ilman varoitusta** — sivustotietojen tai selaushistorian tyhjentämisen, levytilan vähyyden, yksityisen/incognito-ikkunan käytön, selaimen tai käyttöjärjestelmän uudelleenasennuksen, tai laitteen vaihtamisen vuoksi. Mikään näistä ei anna sinulle mahdollisuutta palauttaa sitä, mitä siellä oli.
 
-**Ainoa luotettava tapa pitää piirustus turvassa on [viedä](../export/) se omaan tallennustilaasi.** Käytä `.json`-muotoa (KulmanLabin natiivi muoto), kun mahdollista — se säilyttää jokaisen entiteetin täsmälleen; käytä `.dxf`-muotoa, kun tarvitset yhteensopivuutta muiden CAD-työkalujen kanssa. Tee näin kaikelle, minkä menettämisestä harmittelisit, sekä ennen selaintietojen tyhjentämistä, selaimen tai laitteen vaihtamista, tai koneen pitkäaikaista säilytykseen laittamista.
+**Ainoa luotettava tapa pitää piirustus turvassa on [viedä](../export-manager/) se omaan tallennustilaasi.** Käytä `.json`-muotoa (KulmanLabin natiivi muoto), kun mahdollista — se säilyttää jokaisen entiteetin täsmälleen; käytä `.dxf`-muotoa, kun tarvitset yhteensopivuutta muiden CAD-työkalujen kanssa. Tee näin kaikelle, minkä menettämisestä harmittelisit, sekä ennen selaintietojen tyhjentämistä, selaimen tai laitteen vaihtamista, tai koneen pitkäaikaista säilytykseen laittamista.
 
 ## Automaattinen tiedoston lataus käynnistyksessä
 
@@ -73,6 +73,6 @@ Uudet ja tuodut tiedostot saavat yksinkertaisen nimen — aikaleimaa ei enää l
 ## Liittyvät komennot
 
 - [Import](../import/) — lataa piirustus tiedostojärjestelmästäsi selaimen tallennustilaan
-- [Export](../export/) — lataa piirustus tiedostojärjestelmääsi
+- [Export Manager](../export-manager/) — lataa piirustus tiedostojärjestelmääsi
 - [New File](../new-file/) — aloita tyhjä piirustus (tallennetaan myös automaattisesti)
 - [WipeStorage](../wipestorage/) — tyhjennä kaikki tallennetut tiedostot selaimen tallennustilasta

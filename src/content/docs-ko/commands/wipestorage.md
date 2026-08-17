@@ -45,5 +45,5 @@ order: 6
 ## 관련 명령어
 
 - [File Manager](../file-manager/) — 브라우저 저장소에서 저장된 도면 보기 및 개별 파일 삭제
-- [Export](../export/) — 지우기 전에 도면을 DXF 또는 JSON으로 저장
+- [Export Manager](../export-manager/) — 지우기 전에 도면을 DXF 또는 JSON으로 저장
 - [New File](../new-file/) — 기존 저장소를 지우지 않고 빈 도면 시작

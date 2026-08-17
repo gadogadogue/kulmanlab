@@ -54,7 +54,7 @@ KulmanLab menyimpan gambar ke **IndexedDB**, sebuah database yang terpasang di b
 - Setiap browser dan perangkat memiliki penyimpanan independennya sendiri. Gambar yang disimpan di Chrome pada satu komputer tidak akan muncul di Firefox, atau di perangkat lain.
 - Penyimpanan ini **dapat terhapus tanpa peringatan** — dengan menghapus data situs atau riwayat penjelajahan, kehabisan ruang disk, menggunakan jendela privat/incognito, menginstal ulang browser atau OS, atau berganti perangkat. Tidak satu pun dari situasi ini memberi Anda kesempatan untuk memulihkan apa yang ada di sana.
 
-**Satu-satunya cara yang andal untuk menjaga keamanan gambar adalah dengan [mengekspornya](../export/) ke penyimpanan Anda sendiri.** Gunakan `.json` (format native KulmanLab) jika memungkinkan — ini menyimpan setiap entitas secara tepat; gunakan `.dxf` jika Anda memerlukan kompatibilitas dengan alat CAD lain. Lakukan ini untuk apa pun yang akan membuat Anda kecewa jika hilang, dan sebelum menghapus data browser, berganti browser atau perangkat, atau menyimpan mesin untuk sementara waktu.
+**Satu-satunya cara yang andal untuk menjaga keamanan gambar adalah dengan [mengekspornya](../export-manager/) ke penyimpanan Anda sendiri.** Gunakan `.json` (format native KulmanLab) jika memungkinkan — ini menyimpan setiap entitas secara tepat; gunakan `.dxf` jika Anda memerlukan kompatibilitas dengan alat CAD lain. Lakukan ini untuk apa pun yang akan membuat Anda kecewa jika hilang, dan sebelum menghapus data browser, berganti browser atau perangkat, atau menyimpan mesin untuk sementara waktu.
 
 ## Pemuatan file otomatis saat startup
 
@@ -73,6 +73,6 @@ File baru dan yang diimpor mendapatkan nama sederhana — tidak ada cap waktu ya
 ## Perintah terkait
 
 - [Import](../import/) — muat gambar dari sistem file Anda ke penyimpanan browser
-- [Export](../export/) — unduh gambar ke sistem file Anda
+- [Export Manager](../export-manager/) — unduh gambar ke sistem file Anda
 - [New File](../new-file/) — mulai gambar kosong (juga disimpan secara otomatis)
 - [WipeStorage](../wipestorage/) — hapus semua file yang tersimpan dari penyimpanan browser

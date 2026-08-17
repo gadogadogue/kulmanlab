@@ -26,7 +26,7 @@ File パネルの **New File** ツールバーボタン（新規ページアイ�
 
 ## 警告 — 未保存の作業は破棄されます
 
-**New File** をクリックすると、現在のキャンバス上のすべてのエンティティが警告なしに破棄されます。現在の図面を保持したい場合は、先に[Export](../export/)してください。
+**New File** をクリックすると、現在のキャンバス上のすべてのエンティティが警告なしに破棄されます。現在の図面を保持したい場合は、先に[Export Manager](../export-manager/)してください。
 
 ## New File と Import の使い分け
 
@@ -34,10 +34,10 @@ File パネルの **New File** ツールバーボタン（新規ページアイ�
 |-----|---------|
 | 最初から図面を作成する | **New File** |
 | 既存の DXF または JSON ファイルを開く | [Import](../import/) |
-| 図面をコピーしてバリアントを作成する | 現在のファイルを[Export](../export/)してから、コピーを[Import](../import/) |
+| 図面をコピーしてバリアントを作成する | 現在のファイルを[Export Manager](../export-manager/)してから、コピーを[Import](../import/) |
 
 ## 関連コマンド
 
 - [Import](../import/) — 既存の DXF または JSON 図面を開く
-- [Export](../export/) — 新規作成前に図面をダウンロード
+- [Export Manager](../export-manager/) — 新規作成前に図面をダウンロード
 - [File Manager](../file-manager/) — ブラウザーストレージから以前の図面を復元

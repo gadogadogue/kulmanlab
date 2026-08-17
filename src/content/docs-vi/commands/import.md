@@ -51,7 +51,7 @@ Tệp được nhập giữ nguyên tên gốc. Nếu tên đó đã được d�
 
 ## Điều gì xảy ra với bản vẽ hiện tại
 
-Import thay thế canvas hiện tại. Không có tính năng hợp nhất hoặc thêm vào. Nếu bạn có thay đổi chưa lưu, hãy [Export](../export/) bản vẽ hiện tại trước.
+Import thay thế canvas hiện tại. Không có tính năng hợp nhất hoặc thêm vào. Nếu bạn có thay đổi chưa lưu, hãy [Export Manager](../export-manager/) bản vẽ hiện tại trước.
 
 ## Xử lý sự cố
 
@@ -62,6 +62,6 @@ Import thay thế canvas hiện tại. Không có tính năng hợp nhất hoặ
 
 ## Các lệnh liên quan
 
-- [Export](../export/) — tải bản vẽ hiện tại dưới dạng DXF hoặc JSON
+- [Export Manager](../export-manager/) — tải bản vẽ hiện tại dưới dạng DXF hoặc JSON
 - [File Manager](../file-manager/) — duyệt và khôi phục bản vẽ đã lưu trong trình duyệt
 - [New File](../new-file/) — bắt đầu bản vẽ trắng

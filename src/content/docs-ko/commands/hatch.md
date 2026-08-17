@@ -105,7 +105,7 @@ Hatch는 `HATCH` 객체에서 **가져오기**됩니다: KulmanLab은 경계 지
 
 다른 애플리케이션이 작성한 스플라인으로 경계가 지정된 루프(DXF 경계 에지 유형 4)는 아직 읽히지 않습니다.
 
-Hatch는 현재 DXF로 **내보내기**되지 않습니다 — hatch를 포함하는 도면을 저장할 때 hatch를 유지하려면 [Export](../export/)의 `.json` 형식을 사용하세요; `.dxf` 형식은 이를 생략합니다.
+Hatch는 현재 DXF로 **내보내기**되지 않습니다 — hatch를 포함하는 도면을 저장할 때 hatch를 유지하려면 [Export Manager](../export-manager/)의 `.json` 형식을 사용하세요; `.dxf` 형식은 이를 생략합니다.
 
 ## 관련 명령
 

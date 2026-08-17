@@ -54,7 +54,7 @@ De tekening wordt na het importeren automatisch opgeslagen in de browseropslag (
 
 ## Wat er met de huidige tekening gebeurt
 
-Importeren vervangt het huidige canvas. Er is geen samenvoegen of toevoegen. Als u niet-opgeslagen wijzigingen heeft, [exporteer](../export/) dan eerst de huidige tekening.
+Importeren vervangt het huidige canvas. Er is geen samenvoegen of toevoegen. Als u niet-opgeslagen wijzigingen heeft, [exporteer](../export-manager/) dan eerst de huidige tekening.
 
 ## Bij het opstarten
 
@@ -70,6 +70,6 @@ KulmanLab opent automatisch het meest recent bewerkte bestand opnieuw wanneer de
 
 ## Gerelateerde commando's
 
-- [Export](../export/) — download de huidige tekening als DXF of JSON
+- [Export Manager](../export-manager/) — download de huidige tekening als DXF of JSON
 - [File Manager](../file-manager/) — blader door en herstel tekeningen die in de browser zijn opgeslagen
 - [New File](../new-file/) — start een lege tekening

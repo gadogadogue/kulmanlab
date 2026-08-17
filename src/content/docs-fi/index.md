@@ -110,7 +110,7 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 | [New File](./commands/new-file/) | Aloita uusi, tyhjä piirustus |
 | [File Manager](./commands/file-manager/) | Selaa, nimeä uudelleen tai poista selaimeen tallennettuja piirustuksia |
 | [Print Manager](./commands/print-manager/) | Vie piirustusalue kuvana tai PDF-tiedostona |
-| [Export](./commands/export/) | Lataa piirustus DXF- tai JSON-muodossa |
+| [Export Manager](./commands/export-manager/) | Lataa piirustus DXF- tai JSON-muodossa |
 | [WipeStorage](./commands/wipestorage/) | Poista kaikki piirustukset selaimen tallennustilasta |
 
 ## Palautuminen

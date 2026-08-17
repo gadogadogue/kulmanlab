@@ -105,7 +105,7 @@ Hatchar **importeras** från `HATCH`-entiteter: KulmanLab läser konturgeometrin
 
 Splinbegränsade slingor skrivna av andra applikationer (DXF-gränskanttyp 4) läses ännu inte.
 
-Hatchar exporteras för närvarande inte till DXF — använd `.json`-formatet från [Export](../export/) för att bevara en hatch när du sparar en ritning som innehåller en; `.dxf`-formatet utelämnar den.
+Hatchar exporteras för närvarande inte till DXF — använd `.json`-formatet från [Export Manager](../export-manager/) för att bevara en hatch när du sparar en ritning som innehåller en; `.dxf`-formatet utelämnar den.
 
 ## Relaterade kommandon
 

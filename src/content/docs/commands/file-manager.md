@@ -54,7 +54,7 @@ KulmanLab saves drawings to **IndexedDB**, a database built into your browser:
 - Each browser and device has its own independent storage. A drawing saved in Chrome on one computer does not appear in Firefox, or on another machine.
 - This storage **can be cleared without warning** — by clearing site data or browsing history, running low on disk space, using a private/incognito window, reinstalling the browser or OS, or switching devices. None of these give you a chance to recover what was there.
 
-**The only reliable way to keep a drawing safe is to [export](../export/) it to your own storage.** Use `.json` (KulmanLab's native format) when possible — it preserves every entity exactly; use `.dxf` when you need compatibility with other CAD tools. Do this for anything you'd be upset to lose, and before clearing browser data, switching browsers or devices, or putting the machine away for a while.
+**The only reliable way to keep a drawing safe is to [export](../export-manager/) it to your own storage.** Use `.json` (KulmanLab's native format) when possible — it preserves every entity exactly; use `.dxf` when you need compatibility with other CAD tools. Do this for anything you'd be upset to lose, and before clearing browser data, switching browsers or devices, or putting the machine away for a while.
 
 ## Automatic file loading on startup
 
@@ -73,6 +73,6 @@ New and imported files get a plain name — no timestamp is baked in. If that na
 ## Related commands
 
 - [Import](../import/) — load a drawing from your file system into browser storage
-- [Export](../export/) — download a drawing to your file system
+- [Export Manager](../export-manager/) — download a drawing to your file system
 - [New File](../new-file/) — start a blank drawing (also saved automatically)
 - [WipeStorage](../wipestorage/) — clear all saved files from browser storage

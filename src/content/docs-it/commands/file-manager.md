@@ -54,7 +54,7 @@ KulmanLab salva i disegni in **IndexedDB**, un database integrato nel tuo browse
 - Ciascun browser e dispositivo ha il proprio archivio indipendente. Un disegno salvato in Chrome su un computer non compare in Firefox, né su un'altra macchina.
 - Questo archivio **può essere cancellato senza preavviso** — cancellando i dati del sito o la cronologia di navigazione, per spazio su disco insufficiente, usando una finestra privata/in incognito, reinstallando il browser o il sistema operativo, o cambiando dispositivo. Nessuno di questi casi ti dà la possibilità di recuperare ciò che c'era.
 
-**L'unico modo affidabile per mettere al sicuro un disegno è [esportarlo](../export/) nel tuo archivio personale.** Usa `.json` (il formato nativo di KulmanLab) quando possibile — preserva ogni entità esattamente; usa `.dxf` quando ti serve compatibilità con altri strumenti CAD. Fallo per qualsiasi cosa di cui ti dispiacerebbe la perdita, e prima di cancellare i dati del browser, cambiare browser o dispositivo, o mettere via la macchina per un po'.
+**L'unico modo affidabile per mettere al sicuro un disegno è [esportarlo](../export-manager/) nel tuo archivio personale.** Usa `.json` (il formato nativo di KulmanLab) quando possibile — preserva ogni entità esattamente; usa `.dxf` quando ti serve compatibilità con altri strumenti CAD. Fallo per qualsiasi cosa di cui ti dispiacerebbe la perdita, e prima di cancellare i dati del browser, cambiare browser o dispositivo, o mettere via la macchina per un po'.
 
 ## Caricamento automatico dei file all'avvio
 
@@ -73,6 +73,6 @@ I file nuovi e importati ricevono un nome semplice — nessun timestamp viene in
 ## Comandi correlati
 
 - [Import](../import/) — carica un disegno dal tuo file system nell'archivio del browser
-- [Export](../export/) — scarica un disegno nel tuo file system
+- [Export Manager](../export-manager/) — scarica un disegno nel tuo file system
 - [New File](../new-file/) — inizia un disegno vuoto (salvato anche automaticamente)
 - [WipeStorage](../wipestorage/) — cancella tutti i file salvati dall'archivio del browser

@@ -105,7 +105,7 @@ Hatch są **importowane** z elementów `HATCH`: KulmanLab odczytuje geometrię k
 
 Pętle ograniczone splajnem, zapisane przez inne aplikacje (typ krawędzi konturu DXF 4), nie są jeszcze odczytywane.
 
-Hatch obecnie nie są **eksportowane** do DXF — użyj formatu `.json` z [Export](../export/), aby zachować hatch podczas zapisywania rysunku, który go zawiera; format `.dxf` go pomija.
+Hatch obecnie nie są **eksportowane** do DXF — użyj formatu `.json` z [Export Manager](../export-manager/), aby zachować hatch podczas zapisywania rysunku, który go zawiera; format `.dxf` go pomija.
 
 ## Powiązane polecenia
 

@@ -54,7 +54,7 @@ Le dessin est automatiquement sauvegardé dans le stockage du navigateur (Indexe
 
 ## Ce qui se passe avec le dessin actuel
 
-L'importation remplace le canevas actuel. Il n'y a pas de fusion ni d'ajout. Si vous avez des modifications non enregistrées, [exportez](../export/) d'abord le dessin actuel.
+L'importation remplace le canevas actuel. Il n'y a pas de fusion ni d'ajout. Si vous avez des modifications non enregistrées, [exportez](../export-manager/) d'abord le dessin actuel.
 
 ## Au démarrage
 
@@ -70,6 +70,6 @@ KulmanLab rouvre automatiquement le fichier modifié le plus récemment quand la
 
 ## Commandes associées
 
-- [Export](../export/) — télécharger le dessin actuel en DXF ou JSON
+- [Export Manager](../export-manager/) — télécharger le dessin actuel en DXF ou JSON
 - [File Manager](../file-manager/) — parcourir et restaurer les dessins sauvegardés dans le navigateur
 - [New File](../new-file/) — démarrer un dessin vierge

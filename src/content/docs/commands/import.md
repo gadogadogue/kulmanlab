@@ -54,7 +54,7 @@ The drawing is automatically saved to browser storage (IndexedDB) after import, 
 
 ## What happens to the current drawing
 
-Importing replaces the current canvas. There is no merge or append. If you have unsaved changes, [export](../export/) the current drawing first.
+Importing replaces the current canvas. There is no merge or append. If you have unsaved changes, [export](../export-manager/) the current drawing first.
 
 ## On startup
 
@@ -70,6 +70,6 @@ KulmanLab automatically reopens the most recently edited file when the page load
 
 ## Related commands
 
-- [Export](../export/) — download the current drawing as DXF or JSON
+- [Export Manager](../export-manager/) — download the current drawing as DXF or JSON
 - [File Manager](../file-manager/) — browse and restore drawings saved in the browser
 - [New File](../new-file/) — start a blank drawing

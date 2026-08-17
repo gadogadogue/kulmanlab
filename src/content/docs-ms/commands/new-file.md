@@ -26,7 +26,7 @@ Fail disimpan ke storan pelayar secara automatik dan muncul dalam [File Manager]
 
 ## Amaran — kerja yang tidak disimpan dibuang
 
-Mengklik **New File** membuang semua entiti pada kanvas semasa tanpa amaran. Jika anda ingin menyimpan lukisan semasa, [eksport](../export/) dahulu.
+Mengklik **New File** membuang semua entiti pada kanvas semasa tanpa amaran. Jika anda ingin menyimpan lukisan semasa, [eksport](../export-manager/) dahulu.
 
 ## Bila menggunakan New File berbanding Import
 
@@ -34,10 +34,10 @@ Mengklik **New File** membuang semua entiti pada kanvas semasa tanpa amaran. Jik
 |---------|------------------------|
 | Memulakan lukisan dari awal | **New File** |
 | Membuka fail DXF atau JSON sedia ada | [Import](../import/) |
-| Menyalin lukisan untuk bekerja pada varian | [Eksport](../export/) fail semasa, kemudian [Import](../import/) salinan |
+| Menyalin lukisan untuk bekerja pada varian | [Eksport](../export-manager/) fail semasa, kemudian [Import](../import/) salinan |
 
 ## Arahan berkaitan
 
 - [Import](../import/) — buka lukisan DXF atau JSON sedia ada
-- [Export](../export/) — muat turun lukisan sebelum memulakan baharu
+- [Export Manager](../export-manager/) — muat turun lukisan sebelum memulakan baharu
 - [File Manager](../file-manager/) — pulihkan lukisan sebelumnya dari storan pelayar

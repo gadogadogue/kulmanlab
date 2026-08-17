@@ -105,7 +105,7 @@ Hatch 从 `HATCH` 图元**导入**：KulmanLab 读取边界几何图形，以及
 
 由其他应用程序写入的样条线约束环路（DXF 边界边类型 4）尚不支持读取。
 
-Hatch 目前不会**导出**到 DXF —— 在保存包含 hatch 的图形时，请使用 [Export](../export/) 的 `.json` 格式来保留 hatch；`.dxf` 格式会将其省略。
+Hatch 目前不会**导出**到 DXF —— 在保存包含 hatch 的图形时，请使用 [Export Manager](../export-manager/) 的 `.json` 格式来保留 hatch；`.dxf` 格式会将其省略。
 
 ## 相关命令
 

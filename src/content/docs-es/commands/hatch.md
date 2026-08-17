@@ -105,7 +105,7 @@ Los hatch se **importan** desde entidades `HATCH`: KulmanLab lee la geometría d
 
 Los bucles delimitados por spline escritos por otras aplicaciones (tipo de arista de contorno DXF 4) todavía no se leen.
 
-Los hatch actualmente no se **exportan** a DXF — usa el formato `.json` de [Export](../export/) para conservar un hatch al guardar un dibujo que lo incluya; el formato `.dxf` lo omite.
+Los hatch actualmente no se **exportan** a DXF — usa el formato `.json` de [Export Manager](../export-manager/) para conservar un hatch al guardar un dibujo que lo incluya; el formato `.dxf` lo omite.
 
 ## Comandos relacionados
 

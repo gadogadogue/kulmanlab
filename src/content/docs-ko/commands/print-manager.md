@@ -98,7 +98,7 @@ Blueprint는 전통적인 사이아노타입 건축 도면의 모습을 재현�
 | 레이어 및 선종류 보존 | 아니오(평면 렌더링) | 예 |
 | 치수 및 지시선 캡처 | 예 | JSON만 가능 |
 
-시각적 스냅샷이 필요할 때 **인쇄**를 사용합니다. 편집 가능한 파일이 필요하면 [Export](../export/)를 사용합니다.
+시각적 스냅샷이 필요할 때 **인쇄**를 사용합니다. 편집 가능한 파일이 필요하면 [Export Manager](../export-manager/)를 사용합니다.
 
 ## 키보드 참고
 
@@ -109,5 +109,5 @@ Blueprint는 전통적인 사이아노타입 건축 도면의 모습을 재현�
 
 ## 관련 명령어
 
-- [Export](../export/) — 현재 도면을 DXF 또는 JSON으로 다운로드
+- [Export Manager](../export-manager/) — 현재 도면을 DXF 또는 JSON으로 다운로드
 - [File Manager](../file-manager/) — 브라우저 저장소에서 도면 탐색 및 복원

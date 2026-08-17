@@ -105,7 +105,7 @@ Les hatchs sont **importés** depuis des entités `HATCH` : KulmanLab lit la gé
 
 Les boucles délimitées par des splines écrites par d'autres applications (type de bord de contour DXF 4) ne sont pas encore lues.
 
-Les hatchs ne s'**exportent** pas actuellement en DXF — utilisez le format `.json` d'[Export](../export/) pour conserver un hatch lors de l'enregistrement d'un dessin qui en comporte un ; le format `.dxf` l'omet.
+Les hatchs ne s'**exportent** pas actuellement en DXF — utilisez le format `.json` d'[Export Manager](../export-manager/) pour conserver un hatch lors de l'enregistrement d'un dessin qui en comporte un ; le format `.dxf` l'omet.
 
 ## Commandes associées
 

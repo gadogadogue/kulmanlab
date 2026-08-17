@@ -110,7 +110,7 @@ order: 1
 | [New File](./commands/new-file/) | 空白の新しい図面を開始する |
 | [File Manager](./commands/file-manager/) | ブラウザに保存された図面を参照、名前変更、または削除する |
 | [Print Manager](./commands/print-manager/) | 図面エリアを画像または PDF としてエクスポートする |
-| [Export](./commands/export/) | 図面を DXF または JSON でダウンロードする |
+| [Export Manager](./commands/export-manager/) | 図面を DXF または JSON でダウンロードする |
 | [WipeStorage](./commands/wipestorage/) | ブラウザストレージからすべての図面を削除する |
 
 ## 復旧

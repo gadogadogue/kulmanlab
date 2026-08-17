@@ -54,7 +54,7 @@ Piirustus tallennetaan automaattisesti selaimen tallennustilaan (IndexedDB) tuon
 
 ## Mitä nykyiselle piirustukselle tapahtuu
 
-Tuominen korvaa nykyisen piirtoalueen. Yhdistämistä tai lisäämistä ei tapahdu. Jos sinulla on tallentamattomia muutoksia, [vie](../export/) nykyinen piirustus ensin.
+Tuominen korvaa nykyisen piirtoalueen. Yhdistämistä tai lisäämistä ei tapahdu. Jos sinulla on tallentamattomia muutoksia, [vie](../export-manager/) nykyinen piirustus ensin.
 
 ## Käynnistyksessä
 
@@ -70,6 +70,6 @@ KulmanLab avaa automaattisesti uudelleen viimeksi muokatun tiedoston sivun latau
 
 ## Liittyvät komennot
 
-- [Export](../export/) — lataa nykyinen piirustus DXF- tai JSON-muodossa
+- [Export Manager](../export-manager/) — lataa nykyinen piirustus DXF- tai JSON-muodossa
 - [File Manager](../file-manager/) — selaa ja palauta selaimeen tallennettuja piirustuksia
 - [New File](../new-file/) — aloita tyhjä piirustus

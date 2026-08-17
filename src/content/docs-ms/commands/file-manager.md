@@ -54,7 +54,7 @@ KulmanLab menyimpan lukisan ke **IndexedDB**, pangkalan data yang terbina dalam 
 - Setiap pelayar dan peranti mempunyai storan bebas mereka sendiri. Lukisan yang disimpan dalam Chrome pada satu komputer tidak muncul dalam Firefox, atau pada mesin lain.
 - Storan ini **boleh dikosongkan tanpa amaran** — dengan mengosongkan data tapak atau sejarah pelayaran, kehabisan ruang cakera, menggunakan tetingkap peribadi/inkognito, memasang semula pelayar atau OS, atau menukar peranti. Tiada satu pun daripada situasi ini memberi anda peluang untuk memulihkan apa yang ada di sana.
 
-**Satu-satunya cara yang boleh diharap untuk memastikan lukisan anda selamat ialah [mengeksportnya](../export/) ke storan anda sendiri.** Gunakan `.json` (format natif KulmanLab) apabila boleh — ia mengekalkan setiap entiti dengan tepat; gunakan `.dxf` apabila anda memerlukan keserasian dengan alat CAD lain. Lakukan ini untuk apa-apa yang anda akan kecewa jika hilang, dan sebelum mengosongkan data pelayar, menukar pelayar atau peranti, atau menyimpan mesin untuk seketika.
+**Satu-satunya cara yang boleh diharap untuk memastikan lukisan anda selamat ialah [mengeksportnya](../export-manager/) ke storan anda sendiri.** Gunakan `.json` (format natif KulmanLab) apabila boleh — ia mengekalkan setiap entiti dengan tepat; gunakan `.dxf` apabila anda memerlukan keserasian dengan alat CAD lain. Lakukan ini untuk apa-apa yang anda akan kecewa jika hilang, dan sebelum mengosongkan data pelayar, menukar pelayar atau peranti, atau menyimpan mesin untuk seketika.
 
 ## Pemuatan fail automatik semasa permulaan
 
@@ -73,6 +73,6 @@ Fail baharu dan fail yang diimport mendapat nama biasa — tiada cap masa dibena
 ## Arahan berkaitan
 
 - [Import](../import/) — muatkan lukisan daripada sistem fail anda ke storan pelayar
-- [Export](../export/) — muat turun lukisan ke sistem fail anda
+- [Export Manager](../export-manager/) — muat turun lukisan ke sistem fail anda
 - [New File](../new-file/) — mulakan lukisan kosong (turut disimpan secara automatik)
 - [WipeStorage](../wipestorage/) — kosongkan semua fail yang disimpan daripada storan pelayar

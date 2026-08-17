@@ -26,7 +26,7 @@ File secara otomatis disimpan ke penyimpanan browser dan muncul dalam [File Mana
 
 ## Peringatan — pekerjaan yang belum disimpan akan dibuang
 
-Mengklik **New File** membuang semua entitas di kanvas saat ini tanpa peringatan. Jika Anda ingin menyimpan gambar saat ini, [ekspor](../export/) terlebih dahulu.
+Mengklik **New File** membuang semua entitas di kanvas saat ini tanpa peringatan. Jika Anda ingin menyimpan gambar saat ini, [ekspor](../export-manager/) terlebih dahulu.
 
 ## Kapan menggunakan New File vs Import
 
@@ -34,10 +34,10 @@ Mengklik **New File** membuang semua entitas di kanvas saat ini tanpa peringatan
 |-----------|-------------------|
 | Memulai gambar dari awal | **New File** |
 | Membuka file DXF atau JSON yang ada | [Import](../import/) |
-| Menyalin gambar untuk bekerja pada varian | [Ekspor](../export/) file saat ini, kemudian [Impor](../import/) salinannya |
+| Menyalin gambar untuk bekerja pada varian | [Ekspor](../export-manager/) file saat ini, kemudian [Impor](../import/) salinannya |
 
 ## Perintah terkait
 
 - [Import](../import/) — buka gambar DXF atau JSON yang ada
-- [Export](../export/) — unduh gambar sebelum memulai yang baru
+- [Export Manager](../export-manager/) — unduh gambar sebelum memulai yang baru
 - [File Manager](../file-manager/) — pulihkan gambar sebelumnya dari penyimpanan browser

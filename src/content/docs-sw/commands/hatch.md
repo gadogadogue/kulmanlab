@@ -105,7 +105,7 @@ Hatch **huingizwa** kutoka kwa viumbe vya `HATCH`: KulmanLab husoma jiometri ya 
 
 Vitanzi vilivyofungwa na spline vilivyoandikwa na programu nyingine (aina ya ukingo wa mpaka wa DXF 4) bado havisomwi.
 
-Hatch kwa sasa hazi**export**wi kwenda DXF — tumia muundo wa `.json` wa [Export](../export/) kuhifadhi hatch unapohifadhi mchoro unaoijumuisha; muundo wa `.dxf` unaiacha nje.
+Hatch kwa sasa hazi**export**wi kwenda DXF — tumia muundo wa `.json` wa [Export Manager](../export-manager/) kuhifadhi hatch unapohifadhi mchoro unaoijumuisha; muundo wa `.dxf` unaiacha nje.
 
 ## Amri Zinazohusiana
 

@@ -105,7 +105,7 @@ Hatcher **importeres** fra `HATCH`-entiteter: KulmanLab leser grensegeometrien s
 
 Splinebegrensede løkker skrevet av andre applikasjoner (DXF-grensekanttype 4) leses ennå ikke.
 
-Hatcher eksporteres for øyeblikket ikke til DXF — bruk `.json`-formatet fra [Export](../export/) for å bevare en hatch når du lagrer en tegning som inneholder én; `.dxf`-formatet utelater den.
+Hatcher eksporteres for øyeblikket ikke til DXF — bruk `.json`-formatet fra [Export Manager](../export-manager/) for å bevare en hatch når du lagrer en tegning som inneholder én; `.dxf`-formatet utelater den.
 
 ## Relaterte kommandoer
 

@@ -54,7 +54,7 @@ Tegningen gemmes automatisk i browserlagring (IndexedDB) efter import, så den v
 
 ## Hvad der sker med den aktuelle tegning
 
-Import erstatter det aktuelle lærred. Der er ingen sammenlægning eller tilføjelse. Hvis du har ugemte ændringer, [eksportér](../export/) den aktuelle tegning først.
+Import erstatter det aktuelle lærred. Der er ingen sammenlægning eller tilføjelse. Hvis du har ugemte ændringer, [eksportér](../export-manager/) den aktuelle tegning først.
 
 ## Ved opstart
 
@@ -70,6 +70,6 @@ KulmanLab genåbner automatisk den senest redigerede fil, når siden indlæses. 
 
 ## Relaterede kommandoer
 
-- [Export](../export/) — download den aktuelle tegning som DXF eller JSON
+- [Export Manager](../export-manager/) — download den aktuelle tegning som DXF eller JSON
 - [File Manager](../file-manager/) — gennemse og gendan tegninger gemt i browseren
 - [New File](../new-file/) — start en tom tegning

@@ -54,7 +54,7 @@ KulmanLab yana ajiye zanen-zane a **IndexedDB**, bayanan da aka gina a cikin bur
 - Kowace burauza da naʼura suna da ajiyarsu mai zaman kansa. Zane da aka ajiye a Chrome a kwamfuta ɗaya ba zai bayyana a Firefox ba, ko a wata naʼura.
 - Ana iya share wannan ajiya **ba tare da gargaɗi ba** — ta hanyar sharewar bayanan shafi ko tarihin lilo, rashin sarari a diski, amfani da taga mai zaman kansa/incognito, sake shigar da burauza ko OS, ko canza naʼura. Babu ɗayan waɗannan da zai baka dama ka dawo da abin da ke can.
 
-**Hanya tabbatacciya kaɗai don adana zane ita ce ta [fitar da shi](../export/) zuwa ajiyarka. Yi amfani da `.json` (tsarin gida na KulmanLab) idan zai yiwu — yana riƙe kowane abu daidai; yi amfani da `.dxf` idan kana bukatar dacewa da wasu kayan aikin CAD. Yi wannan don duk abin da za ka yi baƙin ciki idan ka rasa shi, kuma kafin sharewar bayanan burauza, canza burauza ko naʼura, ko ajiye na'urar na ɗan lokaci.**
+**Hanya tabbatacciya kaɗai don adana zane ita ce ta [fitar da shi](../export-manager/) zuwa ajiyarka. Yi amfani da `.json` (tsarin gida na KulmanLab) idan zai yiwu — yana riƙe kowane abu daidai; yi amfani da `.dxf` idan kana bukatar dacewa da wasu kayan aikin CAD. Yi wannan don duk abin da za ka yi baƙin ciki idan ka rasa shi, kuma kafin sharewar bayanan burauza, canza burauza ko naʼura, ko ajiye na'urar na ɗan lokaci.**
 
 ## Loda fayil kai tsaye a farawa
 
@@ -73,6 +73,6 @@ Sabbin fayiloli da waɗanda aka shigo da su suna samun suna mai sauƙi — ba a 
 ## Umarni masu alaƙa
 
 - [Import](../import/) — loda zane daga tsarin fayil naka zuwa ajiyar burauza
-- [Export](../export/) — sauke zane zuwa tsarin fayil naka
+- [Export Manager](../export-manager/) — sauke zane zuwa tsarin fayil naka
 - [New File](../new-file/) — fara zane mai tsabta (ana ajiye shi kai tsaye ma)
 - [WipeStorage](../wipestorage/) — share dukkan fayilolin da aka ajiye daga ajiyar burauza

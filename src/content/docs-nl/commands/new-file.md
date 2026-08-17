@@ -26,7 +26,7 @@ Het bestand wordt automatisch opgeslagen in browseropslag en verschijnt in [File
 
 ## Waarschuwing — niet-opgeslagen werk gaat verloren
 
-Klikken op **New File** verwijdert alle entiteiten op het huidige canvas zonder waarschuwing. Als u de huidige tekening wilt behouden, [exporteer](../export/) deze dan eerst.
+Klikken op **New File** verwijdert alle entiteiten op het huidige canvas zonder waarschuwing. Als u de huidige tekening wilt behouden, [exporteer](../export-manager/) deze dan eerst.
 
 ## Wanneer New File versus Import gebruiken
 
@@ -34,10 +34,10 @@ Klikken op **New File** verwijdert alle entiteiten op het huidige canvas zonder 
 |-----------|-------------------|
 | Een tekening vanaf nul beginnen | **New File** |
 | Een bestaand DXF- of JSON-bestand openen | [Import](../import/) |
-| Een tekening kopiëren om aan een variant te werken | [Exporteer](../export/) het huidige bestand, en [importeer](../import/) daarna de kopie |
+| Een tekening kopiëren om aan een variant te werken | [Exporteer](../export-manager/) het huidige bestand, en [importeer](../import/) daarna de kopie |
 
 ## Gerelateerde commando's
 
 - [Import](../import/) — een bestaande DXF- of JSON-tekening openen
-- [Export](../export/) — de tekening downloaden voordat u opnieuw begint
+- [Export Manager](../export-manager/) — de tekening downloaden voordat u opnieuw begint
 - [File Manager](../file-manager/) — een eerdere tekening herstellen uit browseropslag

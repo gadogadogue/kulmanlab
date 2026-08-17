@@ -54,7 +54,7 @@ O desenho é automaticamente salvo no armazenamento do navegador (IndexedDB) ap�
 
 ## O que acontece com o desenho atual
 
-Importar substitui o canvas atual. Não há mesclagem ou acréscimo. Se você tiver alterações não salvas, [exporte](../export/) o desenho atual primeiro.
+Importar substitui o canvas atual. Não há mesclagem ou acréscimo. Se você tiver alterações não salvas, [exporte](../export-manager/) o desenho atual primeiro.
 
 ## Na inicialização
 
@@ -70,6 +70,6 @@ O KulmanLab reabre automaticamente o arquivo editado mais recentemente quando a 
 
 ## Comandos relacionados
 
-- [Export](../export/) — baixar o desenho atual como DXF ou JSON
+- [Export Manager](../export-manager/) — baixar o desenho atual como DXF ou JSON
 - [File Manager](../file-manager/) — navegar e restaurar desenhos salvos no navegador
 - [New File](../new-file/) — iniciar um desenho em branco

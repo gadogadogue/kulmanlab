@@ -105,7 +105,7 @@ Hatch **diimport** daripada entiti `HATCH`: KulmanLab membaca geometri sempadan 
 
 Gelung bersempadan spline yang ditulis oleh aplikasi lain (jenis tepi sempadan DXF 4) belum dibaca lagi.
 
-Hatch pada masa ini tidak **dieksport** ke DXF — gunakan format `.json` daripada [Export](../export/) untuk mengekalkan hatch semasa menyimpan lukisan yang mengandungi satu; format `.dxf` mengetepikannya.
+Hatch pada masa ini tidak **dieksport** ke DXF — gunakan format `.json` daripada [Export Manager](../export-manager/) untuk mengekalkan hatch semasa menyimpan lukisan yang mengandungi satu; format `.dxf` mengetepikannya.
 
 ## Arahan Berkaitan
 

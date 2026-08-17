@@ -105,7 +105,7 @@ Ang mga hatch ay **na-i-import** mula sa `HATCH` entities: binabasa ng KulmanLab
 
 Ang mga loop na naka-bound ng spline na isinulat ng ibang applications (DXF boundary edge type 4) ay hindi pa nababasa.
 
-Ang mga hatch sa kasalukuyan ay hindi **na-e-export** sa DXF — gamitin ang `.json` format ng [Export](../export/) para mapanatili ang isang hatch kapag nagse-save ng drawing na may kasama nito; inaalis ito ng `.dxf` format.
+Ang mga hatch sa kasalukuyan ay hindi **na-e-export** sa DXF — gamitin ang `.json` format ng [Export Manager](../export-manager/) para mapanatili ang isang hatch kapag nagse-save ng drawing na may kasama nito; inaalis ito ng `.dxf` format.
 
 ## Mga Kaugnay na Command
 

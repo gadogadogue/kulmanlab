@@ -105,7 +105,7 @@ Hatch'ler `HATCH` nesnelerinden **içe aktarılır**: KulmanLab, sınır geometr
 
 Diğer uygulamalar tarafından yazılan spline sınırlı döngüler (DXF sınır kenar türü 4) henüz okunmuyor.
 
-Hatch'ler şu anda DXF'ye **dışa aktarılmıyor** — bir hatch içeren bir çizimi kaydederken onu korumak için [Export](../export/)'un `.json` formatını kullanın; `.dxf` formatı onu atlar.
+Hatch'ler şu anda DXF'ye **dışa aktarılmıyor** — bir hatch içeren bir çizimi kaydederken onu korumak için [Export Manager](../export-manager/)'un `.json` formatını kullanın; `.dxf` formatı onu atlar.
 
 ## İlgili Komutlar
 

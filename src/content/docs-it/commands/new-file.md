@@ -26,7 +26,7 @@ Il file viene salvato automaticamente nell'archivio del browser e appare nel [Fi
 
 ## Attenzione — il lavoro non salvato viene eliminato
 
-Cliccare **New File** elimina tutte le entità sul canvas corrente senza avviso. Se vuoi mantenere il disegno corrente, [esportalo](../export/) prima.
+Cliccare **New File** elimina tutte le entità sul canvas corrente senza avviso. Se vuoi mantenere il disegno corrente, [esportalo](../export-manager/) prima.
 
 ## Quando usare New File vs Importa
 
@@ -34,10 +34,10 @@ Cliccare **New File** elimina tutte le entità sul canvas corrente senza avviso.
 |------------|-------------------|
 | Iniziare un disegno da zero | **New File** |
 | Aprire un file DXF o JSON esistente | [Importa](../import/) |
-| Copiare un disegno per lavorare su una variante | [Esporta](../export/) il file corrente, poi [Importa](../import/) la copia |
+| Copiare un disegno per lavorare su una variante | [Esporta](../export-manager/) il file corrente, poi [Importa](../import/) la copia |
 
 ## Comandi correlati
 
 - [Importa](../import/) — apri un disegno DXF o JSON esistente
-- [Esporta](../export/) — scarica il disegno prima di iniziarne uno nuovo
+- [Esporta](../export-manager/) — scarica il disegno prima di iniziarne uno nuovo
 - [File Manager](../file-manager/) — ripristina un disegno precedente dall'archivio del browser

@@ -54,7 +54,7 @@ DXF 文件中存在的图层定义和线型表也会被导入。
 
 ## 对当前图形的影响
 
-导入会替换当前画布。没有合并或追加功能。如果您有未保存的更改，请先[Export](../export/)当前图形。
+导入会替换当前画布。没有合并或追加功能。如果您有未保存的更改，请先[Export Manager](../export-manager/)当前图形。
 
 ## 启动时
 
@@ -70,6 +70,6 @@ DXF 文件中存在的图层定义和线型表也会被导入。
 
 ## 相关命令
 
-- [Export](../export/) — 将当前图形下载为 DXF 或 JSON
+- [Export Manager](../export-manager/) — 将当前图形下载为 DXF 或 JSON
 - [File Manager](../file-manager/) — 浏览并恢复保存在浏览器中的图形
 - [New File](../new-file/) — 开始空白图形

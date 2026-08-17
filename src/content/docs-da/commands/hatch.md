@@ -105,7 +105,7 @@ Hatches **importeres** fra `HATCH`-entiteter: KulmanLab læser grænsegeometrien
 
 Spline-afgrænsede løkker skrevet af andre applikationer (DXF-grænsekant-type 4) læses endnu ikke.
 
-Hatches **eksporteres** i øjeblikket ikke til DXF — brug `.json`-formatet fra [Export](../export/) for at bevare en hatch, når du gemmer en tegning, der indeholder én; `.dxf`-formatet udelader den.
+Hatches **eksporteres** i øjeblikket ikke til DXF — brug `.json`-formatet fra [Export Manager](../export-manager/) for at bevare en hatch, når du gemmer en tegning, der indeholder én; `.dxf`-formatet udelader den.
 
 ## Relaterede kommandoer
 

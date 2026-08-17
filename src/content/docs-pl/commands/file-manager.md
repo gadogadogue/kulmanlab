@@ -54,7 +54,7 @@ KulmanLab zapisuje rysunki w **IndexedDB**, bazie danych wbudowanej w Twoją prz
 - Każda przeglądarka i urządzenie mają własną, niezależną pamięć. Rysunek zapisany w Chrome na jednym komputerze nie pojawi się w Firefoksie ani na innym urządzeniu.
 - Ta pamięć **może zostać wyczyszczona bez ostrzeżenia** — poprzez czyszczenie danych witryny lub historii przeglądania, brak miejsca na dysku, korzystanie z okna prywatnego/incognito, ponowną instalację przeglądarki lub systemu operacyjnego, albo zmianę urządzenia. Żadna z tych sytuacji nie daje szansy na odzyskanie tego, co tam było.
 
-**Jedynym niezawodnym sposobem na zabezpieczenie rysunku jest [wyeksportowanie](../export/) go do własnej pamięci.** Używaj `.json` (natywnego formatu KulmanLab), gdy to możliwe — zachowuje dokładnie każdy element; używaj `.dxf`, gdy potrzebujesz kompatybilności z innymi narzędziami CAD. Rób to dla wszystkiego, czego utratą byłbyś zmartwiony, oraz przed czyszczeniem danych przeglądarki, zmianą przeglądarki lub urządzenia, albo odłożeniem komputera na dłuższy czas.
+**Jedynym niezawodnym sposobem na zabezpieczenie rysunku jest [wyeksportowanie](../export-manager/) go do własnej pamięci.** Używaj `.json` (natywnego formatu KulmanLab), gdy to możliwe — zachowuje dokładnie każdy element; używaj `.dxf`, gdy potrzebujesz kompatybilności z innymi narzędziami CAD. Rób to dla wszystkiego, czego utratą byłbyś zmartwiony, oraz przed czyszczeniem danych przeglądarki, zmianą przeglądarki lub urządzenia, albo odłożeniem komputera na dłuższy czas.
 
 ## Automatyczne wczytywanie pliku przy uruchomieniu
 
@@ -73,6 +73,6 @@ Nowe i zaimportowane pliki otrzymują zwykłą nazwę — bez wbudowanego znaczn
 ## Powiązane polecenia
 
 - [Import](../import/) — wczytaj rysunek z systemu plików do pamięci przeglądarki
-- [Export](../export/) — pobierz rysunek do systemu plików
+- [Export Manager](../export-manager/) — pobierz rysunek do systemu plików
 - [New File](../new-file/) — rozpocznij pusty rysunek (również zapisywany automatycznie)
 - [WipeStorage](../wipestorage/) — wyczyść wszystkie zapisane pliki z pamięci przeglądarki

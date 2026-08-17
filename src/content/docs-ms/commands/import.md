@@ -54,7 +54,7 @@ Lukisan disimpan secara automatik ke storan pelayar (IndexedDB) selepas import, 
 
 ## Apa yang berlaku pada lukisan semasa
 
-Mengimport menggantikan kanvas semasa. Tiada penggabungan atau penambahan. Jika anda mempunyai perubahan yang belum disimpan, [eksport](../export/) lukisan semasa dahulu.
+Mengimport menggantikan kanvas semasa. Tiada penggabungan atau penambahan. Jika anda mempunyai perubahan yang belum disimpan, [eksport](../export-manager/) lukisan semasa dahulu.
 
 ## Semasa permulaan
 
@@ -70,6 +70,6 @@ KulmanLab membuka semula fail yang paling baru-baru ini diedit secara automatik 
 
 ## Arahan berkaitan
 
-- [Export](../export/) — muat turun lukisan semasa sebagai DXF atau JSON
+- [Export Manager](../export-manager/) — muat turun lukisan semasa sebagai DXF atau JSON
 - [File Manager](../file-manager/) — semak imbas dan pulihkan lukisan yang disimpan dalam pelayar
 - [New File](../new-file/) — mulakan lukisan kosong

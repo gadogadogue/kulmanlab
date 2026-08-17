@@ -105,7 +105,7 @@ Hatch **diimpor** dari entitas `HATCH`: KulmanLab membaca geometri batas beserta
 
 Loop yang dibatasi spline yang ditulis oleh aplikasi lain (tipe tepi batas DXF 4) belum dibaca.
 
-Hatch saat ini tidak **diekspor** ke DXF — gunakan format `.json` dari [Export](../export/) untuk mempertahankan hatch saat menyimpan gambar yang menyertakannya; format `.dxf` menghilangkannya.
+Hatch saat ini tidak **diekspor** ke DXF — gunakan format `.json` dari [Export Manager](../export-manager/) untuk mempertahankan hatch saat menyimpan gambar yang menyertakannya; format `.dxf` menghilangkannya.
 
 ## Perintah Terkait
 

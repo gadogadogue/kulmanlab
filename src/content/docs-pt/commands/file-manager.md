@@ -54,7 +54,7 @@ O KulmanLab salva desenhos no **IndexedDB**, um banco de dados embutido no seu n
 - Cada navegador e dispositivo tem seu próprio armazenamento independente. Um desenho salvo no Chrome em um computador não aparecerá no Firefox, nem em outro dispositivo.
 - Este armazenamento **pode ser apagado sem aviso** — ao limpar os dados do site ou o histórico de navegação, por falta de espaço em disco, ao usar uma janela privada/anônima, ao reinstalar o navegador ou o sistema operacional, ou ao trocar de dispositivo. Nenhuma dessas situações lhe dá a chance de recuperar o que estava lá.
 
-**A única forma confiável de manter um desenho seguro é [exportá-lo](../export/) para o seu próprio armazenamento.** Use `.json` (o formato nativo do KulmanLab) quando possível — ele preserva cada entidade exatamente; use `.dxf` quando precisar de compatibilidade com outras ferramentas CAD. Faça isso para qualquer coisa cuja perda o deixaria chateado, e antes de limpar os dados do navegador, trocar de navegador ou dispositivo, ou guardar a máquina por um tempo.
+**A única forma confiável de manter um desenho seguro é [exportá-lo](../export-manager/) para o seu próprio armazenamento.** Use `.json` (o formato nativo do KulmanLab) quando possível — ele preserva cada entidade exatamente; use `.dxf` quando precisar de compatibilidade com outras ferramentas CAD. Faça isso para qualquer coisa cuja perda o deixaria chateado, e antes de limpar os dados do navegador, trocar de navegador ou dispositivo, ou guardar a máquina por um tempo.
 
 ## Carregamento automático de arquivo na inicialização
 
@@ -73,6 +73,6 @@ Arquivos novos e importados recebem um nome simples — nenhum timestamp é inco
 ## Comandos relacionados
 
 - [Import](../import/) — carregar um desenho do seu sistema de arquivos para o armazenamento do navegador
-- [Export](../export/) — baixar um desenho para o seu sistema de arquivos
+- [Export Manager](../export-manager/) — baixar um desenho para o seu sistema de arquivos
 - [New File](../new-file/) — iniciar um desenho em branco (também salvo automaticamente)
 - [WipeStorage](../wipestorage/) — limpar todos os arquivos salvos do armazenamento do navegador

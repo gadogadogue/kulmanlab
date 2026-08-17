@@ -26,7 +26,7 @@ order: 2
 
 ## 警告 — 未保存的工作将被丢弃
 
-单击**New File**会在无警告的情况下丢弃当前画布上的所有图元。如果要保留当前图形，请先[Export](../export/)。
+单击**New File**会在无警告的情况下丢弃当前画布上的所有图元。如果要保留当前图形，请先[Export Manager](../export-manager/)。
 
 ## 何时使用 New File vs Import
 
@@ -34,10 +34,10 @@ order: 2
 |-----------|-------------------|
 | 从头开始绘制 | **New File** |
 | 打开现有 DXF 或 JSON 文件 | [Import](../import/) |
-| 复制图形以处理变体 | [Export](../export/)当前文件，然后[Import](../import/)副本 |
+| 复制图形以处理变体 | [Export Manager](../export-manager/)当前文件，然后[Import](../import/)副本 |
 
 ## 相关命令
 
 - [Import](../import/) — 打开现有 DXF 或 JSON 图形
-- [Export](../export/) — 在开始新文件前下载图形
+- [Export Manager](../export-manager/) — 在开始新文件前下载图形
 - [File Manager](../file-manager/) — 从浏览器存储恢复以前的图形

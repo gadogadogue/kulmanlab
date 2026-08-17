@@ -105,7 +105,7 @@ Hatchit **tuodaan** `HATCH`-entiteeteistä: KulmanLab lukee rajageometrian sekä
 
 Muiden sovellusten kirjoittamia spline-rajattuja silmukoita (DXF-rajareunatyyppi 4) ei vielä lueta.
 
-Hatchit eivät tällä hetkellä **vie** DXF:ään — käytä [Export](../export/)in `.json`-muotoa säilyttääksesi hatchin tallentaessasi sen sisältävää piirustusta; `.dxf`-muoto jättää sen pois.
+Hatchit eivät tällä hetkellä **vie** DXF:ään — käytä [Export Manager](../export-manager/)in `.json`-muotoa säilyttääksesi hatchin tallentaessasi sen sisältävää piirustusta; `.dxf`-muoto jättää sen pois.
 
 ## Liittyvät komennot
 

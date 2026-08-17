@@ -110,7 +110,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [New File](./commands/new-file/) | Fara sabon zane mai tsabta |
 | [File Manager](./commands/file-manager/) | Bincika, sake suna, ko share zanen-zanen da aka ajiye a burauzarka |
 | [Print Manager](./commands/print-manager/) | Fitar da yankin zane a matsayin hoto ko PDF |
-| [Export](./commands/export/) | Sauke zanen a matsayin DXF ko JSON |
+| [Export Manager](./commands/export-manager/) | Sauke zanen a matsayin DXF ko JSON |
 | [WipeStorage](./commands/wipestorage/) | Share dukkan zanen-zane daga ajiyar burauza |
 
 ## Farfaɗowa

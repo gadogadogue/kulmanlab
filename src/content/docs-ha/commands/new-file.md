@@ -26,7 +26,7 @@ Ana ajiye fayil zuwa ajiyar burauza kai tsaye kuma yana bayyana a [File Manager]
 
 ## Faɗakarwa — aiki da ba a ajiye ba yana ɓacewa
 
-Dannawa **New File** yana kawar da dukkan abubuwa a kan canvas na yanzu ba tare da faɗakarwa ba. Idan kana son riƙe zanen na yanzu, [fitar](../export/) da shi tukuna.
+Dannawa **New File** yana kawar da dukkan abubuwa a kan canvas na yanzu ba tare da faɗakarwa ba. Idan kana son riƙe zanen na yanzu, [fitar](../export-manager/) da shi tukuna.
 
 ## Yaushe za a yi amfani da New File a maimakon Import
 
@@ -34,10 +34,10 @@ Dannawa **New File** yana kawar da dukkan abubuwa a kan canvas na yanzu ba tare 
 |-----------|-------------------|
 | Farawa zane daga fara | **New File** |
 | Buɗe fayil na DXF ko JSON da ke akwai | [Import](../import/) |
-| Kwafin zane don yin aiki a kansa | [Fitar](../export/) da fayil na yanzu, sannan [shigo](../import/) da kwafin |
+| Kwafin zane don yin aiki a kansa | [Fitar](../export-manager/) da fayil na yanzu, sannan [shigo](../import/) da kwafin |
 
 ## Umarni masu alaƙa
 
 - [Import](../import/) — buɗe zane na DXF ko JSON da ke akwai
-- [Export](../export/) — sauke zanen kafin farawa sake
+- [Export Manager](../export-manager/) — sauke zanen kafin farawa sake
 - [File Manager](../file-manager/) — mayar da zane na baya daga ajiyar burauza

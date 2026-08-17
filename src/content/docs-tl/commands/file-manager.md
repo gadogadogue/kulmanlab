@@ -54,7 +54,7 @@ Sino-save ng KulmanLab ang mga drawing sa **IndexedDB**, isang database na built
 - Ang bawat browser at device ay may sariling independiyenteng storage. Ang isang drawing na na-save sa Chrome sa isang computer ay hindi lumalabas sa Firefox, o sa ibang makina.
 - Ang storage na ito ay **puwedeng mabura nang walang babala** — sa pamamagitan ng pag-clear ng site data o browsing history, pagkaubos ng disk space, paggamit ng private/incognito window, muling pag-install ng browser o OS, o paglipat ng device. Wala sa mga ito ang nagbibigay sa iyo ng pagkakataong mabawi ang nawala.
 
-**Ang tanging maaasahang paraan para mapanatiling ligtas ang isang drawing ay ang [i-export](../export/) ito patungo sa sarili mong storage.** Gamitin ang `.json` (native na format ng KulmanLab) hangga't maaari — pinapanatili nito ang bawat entity nang eksakto; gamitin ang `.dxf` kapag kailangan mo ng compatibility sa ibang CAD tools. Gawin ito para sa anumang mawawalan ka ng loob kung mawala, at bago mag-clear ng browser data, lumipat ng browser o device, o itago ang makina nang matagal.
+**Ang tanging maaasahang paraan para mapanatiling ligtas ang isang drawing ay ang [i-export](../export-manager/) ito patungo sa sarili mong storage.** Gamitin ang `.json` (native na format ng KulmanLab) hangga't maaari — pinapanatili nito ang bawat entity nang eksakto; gamitin ang `.dxf` kapag kailangan mo ng compatibility sa ibang CAD tools. Gawin ito para sa anumang mawawalan ka ng loob kung mawala, at bago mag-clear ng browser data, lumipat ng browser o device, o itago ang makina nang matagal.
 
 ## Awtomatikong pag-load ng file sa startup
 
@@ -73,6 +73,6 @@ Ang mga bagong gawa at na-import na file ay nakakakuha ng plain na pangalan — 
 ## Kaugnay na commands
 
 - [Import](../import/) — i-load ang isang drawing mula sa iyong file system patungo sa browser storage
-- [Export](../export/) — i-download ang isang drawing patungo sa iyong file system
+- [Export Manager](../export-manager/) — i-download ang isang drawing patungo sa iyong file system
 - [New File](../new-file/) — simulan ang isang blangkong drawing (awtomatiko ring na-save)
 - [WipeStorage](../wipestorage/) — burahin ang lahat ng saved files mula sa browser storage

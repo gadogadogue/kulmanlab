@@ -54,7 +54,7 @@ Rysunek jest automatycznie zapisywany w pamięci przeglądarki (IndexedDB) po za
 
 ## Co dzieje się z bieżącym rysunkiem
 
-Import zastępuje bieżące płótno. Nie ma scalania ani dołączania. Jeśli masz niezapisane zmiany, najpierw [Export](../export/) bieżący rysunek.
+Import zastępuje bieżące płótno. Nie ma scalania ani dołączania. Jeśli masz niezapisane zmiany, najpierw [Export Manager](../export-manager/) bieżący rysunek.
 
 ## Przy uruchomieniu
 
@@ -70,6 +70,6 @@ KulmanLab automatycznie ponownie otwiera ostatnio edytowany plik przy ładowaniu
 
 ## Powiązane polecenia
 
-- [Export](../export/) — pobieranie bieżącego rysunku jako DXF lub JSON
+- [Export Manager](../export-manager/) — pobieranie bieżącego rysunku jako DXF lub JSON
 - [File Manager](../file-manager/) — przeglądanie i przywracanie rysunków zapisanych w przeglądarce
 - [New File](../new-file/) — tworzenie pustego rysunku

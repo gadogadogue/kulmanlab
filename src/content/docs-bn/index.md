@@ -110,7 +110,7 @@ order: 1
 | [New File](./commands/new-file/) | একটি নতুন ফাঁকা ড্রয়িং শুরু করুন |
 | [File Manager](./commands/file-manager/) | আপনার ব্রাউজারে সংরক্ষিত ড্রয়িং ব্রাউজ করুন, নাম পরিবর্তন করুন, বা মুছুন |
 | [Print Manager](./commands/print-manager/) | একটি ড্রয়িং এলাকা ছবি বা PDF হিসেবে এক্সপোর্ট করুন |
-| [Export](./commands/export/) | ড্রয়িংটি DXF বা JSON হিসেবে ডাউনলোড করুন |
+| [Export Manager](./commands/export-manager/) | ড্রয়িংটি DXF বা JSON হিসেবে ডাউনলোড করুন |
 | [WipeStorage](./commands/wipestorage/) | ব্রাউজার স্টোরেজ থেকে সমস্ত ড্রয়িং মুছুন |
 
 ## পুনরুদ্ধার

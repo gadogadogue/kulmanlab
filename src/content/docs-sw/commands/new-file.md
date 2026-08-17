@@ -26,7 +26,7 @@ Faili huhifadhiwa kwenye hifadhi ya kivinjari kiotomatiki, inaonekana katika [Fi
 
 ## Onyo — kazi ambayo haijahifadhiwa itapotea
 
-Kubonyeza **New File** hutupilia mbali vipengele vyote kwenye turubai ya sasa bila onyo. Kama unataka kuhifadhi mchoro wa sasa, [hamisha](../export/) kwanza.
+Kubonyeza **New File** hutupilia mbali vipengele vyote kwenye turubai ya sasa bila onyo. Kama unataka kuhifadhi mchoro wa sasa, [hamisha](../export-manager/) kwanza.
 
 ## Lini kutumia New File dhidi ya Import
 
@@ -34,10 +34,10 @@ Kubonyeza **New File** hutupilia mbali vipengele vyote kwenye turubai ya sasa bi
 |------|--------------------------|
 | Kuanza mchoro kutoka mwanzo | **New File** |
 | Kufungua faili ya DXF au JSON iliyopo | [Import](../import/) |
-| Kunakili mchoro kufanya kazi kwenye toleo | [Hamisha](../export/) faili ya sasa, kisha [ingiza](../import/) nakala |
+| Kunakili mchoro kufanya kazi kwenye toleo | [Hamisha](../export-manager/) faili ya sasa, kisha [ingiza](../import/) nakala |
 
 ## Amri zinazohusiana
 
 - [Import](../import/) — fungua mchoro wa DXF au JSON uliopo
-- [Export](../export/) — pakua mchoro kabla ya kuanza upya
+- [Export Manager](../export-manager/) — pakua mchoro kabla ya kuanza upya
 - [File Manager](../file-manager/) — rejesha mchoro wa awali kutoka kwa hifadhi ya kivinjari

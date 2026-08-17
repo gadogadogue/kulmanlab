@@ -110,7 +110,7 @@ order: 1
 | [New File](./commands/new-file/) | بدء رسم فارغ جديد |
 | [File Manager](./commands/file-manager/) | تصفح الرسومات المحفوظة في متصفحك أو إعادة تسميتها أو حذفها |
 | [Print Manager](./commands/print-manager/) | تصدير منطقة رسم كصورة أو PDF |
-| [Export](./commands/export/) | تنزيل الرسم بصيغة DXF أو JSON |
+| [Export Manager](./commands/export-manager/) | تنزيل الرسم بصيغة DXF أو JSON |
 | [Wipe Storage](./commands/wipestorage/) | مسح جميع الرسومات من تخزين المتصفح |
 
 ## الاسترداد

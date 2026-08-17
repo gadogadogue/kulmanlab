@@ -54,7 +54,7 @@ KulmanLab slaat tekeningen op in **IndexedDB**, een database die ingebouwd is in
 - Elke browser en elk apparaat heeft zijn eigen onafhankelijke opslag. Een tekening die is opgeslagen in Chrome op de ene computer verschijnt niet in Firefox, of op een andere machine.
 - Deze opslag **kan zonder waarschuwing worden gewist** — door sitegegevens of browsegeschiedenis te wissen, door weinig schijfruimte, door gebruik van een privé-/incognitovenster, door de browser of het besturingssysteem opnieuw te installeren, of door van apparaat te wisselen. Geen van deze gevallen geeft u de kans om te herstellen wat er stond.
 
-**De enige betrouwbare manier om een tekening veilig te bewaren, is deze te [exporteren](../export/) naar uw eigen opslag.** Gebruik `.json` (het native formaat van KulmanLab) waar mogelijk — dit behoudt elke entiteit exact; gebruik `.dxf` wanneer u compatibiliteit met andere CAD-tools nodig heeft. Doe dit voor alles wat u niet zou willen verliezen, en voordat u browsergegevens wist, van browser of apparaat wisselt, of de machine een tijdje wegzet.
+**De enige betrouwbare manier om een tekening veilig te bewaren, is deze te [exporteren](../export-manager/) naar uw eigen opslag.** Gebruik `.json` (het native formaat van KulmanLab) waar mogelijk — dit behoudt elke entiteit exact; gebruik `.dxf` wanneer u compatibiliteit met andere CAD-tools nodig heeft. Doe dit voor alles wat u niet zou willen verliezen, en voordat u browsergegevens wist, van browser of apparaat wisselt, of de machine een tijdje wegzet.
 
 ## Automatisch bestand laden bij opstart
 
@@ -73,7 +73,7 @@ Nieuwe en geïmporteerde bestanden krijgen een eenvoudige naam — er wordt geen
 ## Gerelateerde commando's
 
 - [Import](../import/) — laad een tekening vanuit uw bestandssysteem in browseropslag
-- [Export](../export/) — download een tekening naar uw bestandssysteem
+- [Export Manager](../export-manager/) — download een tekening naar uw bestandssysteem
 - [New File](../new-file/) — start een lege tekening (ook automatisch opgeslagen)
 - [WipeStorage](../wipestorage/) — wis alle opgeslagen bestanden uit browseropslag
 </content>

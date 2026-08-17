@@ -105,7 +105,7 @@ Hatch-Elemente werden aus `HATCH`-Elementen **importiert**: KulmanLab liest die 
 
 Splinebegrenzte Schleifen, die von anderen Anwendungen geschrieben wurden (DXF-Randkantentyp 4), werden noch nicht gelesen.
 
-Hatch-Elemente werden derzeit **nicht** nach DXF exportiert — verwenden Sie das `.json`-Format von [Export](../export/), um einen Hatch beim Speichern einer Zeichnung zu erhalten, die einen enthält; das `.dxf`-Format lässt ihn weg.
+Hatch-Elemente werden derzeit **nicht** nach DXF exportiert — verwenden Sie das `.json`-Format von [Export Manager](../export-manager/), um einen Hatch beim Speichern einer Zeichnung zu erhalten, die einen enthält; das `.dxf`-Format lässt ihn weg.
 
 ## Verwandte Befehle
 

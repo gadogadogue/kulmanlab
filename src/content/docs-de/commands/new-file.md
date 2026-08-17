@@ -26,7 +26,7 @@ Die Datei wird automatisch im Browser-Speicher gespeichert und erscheint im [Fil
 
 ## Warnung — nicht gespeicherte Arbeit wird verworfen
 
-Das Klicken auf **New File** verwirft alle Entitäten auf der aktuellen Zeichenfläche ohne Warnung. Wenn Sie die aktuelle Zeichnung behalten möchten, [exportieren](../export/) Sie sie zuerst.
+Das Klicken auf **New File** verwirft alle Entitäten auf der aktuellen Zeichenfläche ohne Warnung. Wenn Sie die aktuelle Zeichnung behalten möchten, [exportieren](../export-manager/) Sie sie zuerst.
 
 ## Wann New File vs. Import verwenden
 
@@ -34,10 +34,10 @@ Das Klicken auf **New File** verwirft alle Entitäten auf der aktuellen Zeichenf
 |-----------|------------------|
 | Eine Zeichnung von Grund auf beginnen | **New File** |
 | Eine vorhandene DXF- oder JSON-Datei öffnen | [Import](../import/) |
-| Eine Zeichnung kopieren, um an einer Variante zu arbeiten | Aktuelle Datei [exportieren](../export/), dann die Kopie [importieren](../import/) |
+| Eine Zeichnung kopieren, um an einer Variante zu arbeiten | Aktuelle Datei [exportieren](../export-manager/), dann die Kopie [importieren](../import/) |
 
 ## Verwandte Befehle
 
 - [Import](../import/) — eine vorhandene DXF- oder JSON-Zeichnung öffnen
-- [Export](../export/) — die Zeichnung herunterladen, bevor Sie neu beginnen
+- [Export Manager](../export-manager/) — die Zeichnung herunterladen, bevor Sie neu beginnen
 - [File Manager](../file-manager/) — eine frühere Zeichnung aus dem Browser-Speicher wiederherstellen

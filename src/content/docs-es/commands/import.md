@@ -54,7 +54,7 @@ El dibujo se guarda automáticamente en el almacenamiento del navegador (Indexed
 
 ## Qué ocurre con el dibujo actual
 
-Importar reemplaza el lienzo actual. No hay fusión ni añadido. Si tienes cambios sin guardar, [exporta](../export/) el dibujo actual primero.
+Importar reemplaza el lienzo actual. No hay fusión ni añadido. Si tienes cambios sin guardar, [exporta](../export-manager/) el dibujo actual primero.
 
 ## Al iniciar
 
@@ -70,6 +70,6 @@ KulmanLab reabre automáticamente el archivo editado más recientemente cuando s
 
 ## Comandos relacionados
 
-- [Export](../export/) — descargar el dibujo actual como DXF o JSON
+- [Export Manager](../export-manager/) — descargar el dibujo actual como DXF o JSON
 - [File Manager](../file-manager/) — explorar y restaurar dibujos guardados en el navegador
 - [New File](../new-file/) — iniciar un dibujo en blanco

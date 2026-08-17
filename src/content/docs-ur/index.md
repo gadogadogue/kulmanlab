@@ -110,7 +110,7 @@ order: 1
 | [New File](./commands/new-file/) | نئی خالی ڈرائنگ شروع کریں |
 | [File Manager](./commands/file-manager/) | اپنے براؤزر میں محفوظ ڈرائنگز کو براؤز کریں، نام تبدیل کریں، یا حذف کریں |
 | [Print Manager](./commands/print-manager/) | ڈرائنگ کا علاقہ تصویر یا PDF کے طور پر برآمد کریں |
-| [Export](./commands/export/) | ڈرائنگ کو DXF یا JSON کے طور پر ڈاؤن لوڈ کریں |
+| [Export Manager](./commands/export-manager/) | ڈرائنگ کو DXF یا JSON کے طور پر ڈاؤن لوڈ کریں |
 | [WipeStorage](./commands/wipestorage/) | براؤزر اسٹوریج سے تمام ڈرائنگز صاف کریں |
 
 ## بازیابی

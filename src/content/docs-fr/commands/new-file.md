@@ -26,7 +26,7 @@ Le fichier est automatiquement sauvegardé dans le stockage du navigateur, appar
 
 ## Avertissement — le travail non enregistré est perdu
 
-Cliquer sur **New File** supprime toutes les entités du canevas actuel sans avertissement. Si vous souhaitez conserver le dessin actuel, [exportez-le](../export/) d'abord.
+Cliquer sur **New File** supprime toutes les entités du canevas actuel sans avertissement. Si vous souhaitez conserver le dessin actuel, [exportez-le](../export-manager/) d'abord.
 
 ## Quand utiliser New File vs Import
 
@@ -34,10 +34,10 @@ Cliquer sur **New File** supprime toutes les entités du canevas actuel sans ave
 |-----------|-------------------|
 | Démarrer un dessin depuis zéro | **New File** |
 | Ouvrir un fichier DXF ou JSON existant | [Import](../import/) |
-| Copier un dessin pour travailler sur une variante | [Exportez](../export/) le fichier actuel, puis [importez](../import/) la copie |
+| Copier un dessin pour travailler sur une variante | [Exportez](../export-manager/) le fichier actuel, puis [importez](../import/) la copie |
 
 ## Commandes associées
 
 - [Import](../import/) — ouvrir un dessin DXF ou JSON existant
-- [Export](../export/) — télécharger le dessin avant d'en commencer un nouveau
+- [Export Manager](../export-manager/) — télécharger le dessin avant d'en commencer un nouveau
 - [File Manager](../file-manager/) — restaurer un dessin précédent depuis le stockage du navigateur

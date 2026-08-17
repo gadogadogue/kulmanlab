@@ -54,7 +54,7 @@ Die Zeichnung wird nach dem Import automatisch im Browser-Speicher (IndexedDB) g
 
 ## Was mit der aktuellen Zeichnung passiert
 
-Beim Import wird die aktuelle Zeichenfläche ersetzt. Es gibt keine Zusammenführung oder Ergänzung. Wenn Sie nicht gespeicherte Änderungen haben, [exportieren](../export/) Sie die aktuelle Zeichnung zuerst.
+Beim Import wird die aktuelle Zeichenfläche ersetzt. Es gibt keine Zusammenführung oder Ergänzung. Wenn Sie nicht gespeicherte Änderungen haben, [exportieren](../export-manager/) Sie die aktuelle Zeichnung zuerst.
 
 ## Beim Start
 
@@ -70,6 +70,6 @@ KulmanLab öffnet beim Laden der Seite automatisch die zuletzt bearbeitete Datei
 
 ## Verwandte Befehle
 
-- [Export](../export/) — aktuelle Zeichnung als DXF oder JSON herunterladen
+- [Export Manager](../export-manager/) — aktuelle Zeichnung als DXF oder JSON herunterladen
 - [File Manager](../file-manager/) — im Browser gespeicherte Zeichnungen durchsuchen und wiederherstellen
 - [New File](../new-file/) — eine leere Zeichnung starten

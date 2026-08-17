@@ -105,7 +105,7 @@ Os hatches são **importados** de entidades `HATCH`: o KulmanLab lê a geometria
 
 Laços delimitados por spline escritos por outras aplicações (tipo de borda de contorno DXF 4) ainda não são lidos.
 
-Os hatches atualmente não são **exportados** para DXF — use o formato `.json` do [Export](../export/) para preservar um hatch ao salvar um desenho que o inclua; o formato `.dxf` o omite.
+Os hatches atualmente não são **exportados** para DXF — use o formato `.json` do [Export Manager](../export-manager/) para preservar um hatch ao salvar um desenho que o inclua; o formato `.dxf` o omite.
 
 ## Comandos relacionados
 

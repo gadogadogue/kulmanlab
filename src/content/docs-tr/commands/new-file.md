@@ -26,7 +26,7 @@ Dosya tarayıcı deposuna otomatik olarak kaydedilir, [File Manager](../file-man
 
 ## Uyarı — Kaydedilmemiş Çalışma Silinir
 
-**New File**'a tıklamak, geçerli tuvaldeki tüm nesneleri uyarı vermeden atar. Geçerli çizimi saklamak istiyorsanız, önce [dışa aktarın](../export/).
+**New File**'a tıklamak, geçerli tuvaldeki tüm nesneleri uyarı vermeden atar. Geçerli çizimi saklamak istiyorsanız, önce [dışa aktarın](../export-manager/).
 
 ## New File - Import Karşılaştırması
 
@@ -34,10 +34,10 @@ Dosya tarayıcı deposuna otomatik olarak kaydedilir, [File Manager](../file-man
 |-----------|-------------------|
 | Sıfırdan çizim başlatma | **New File** |
 | Mevcut DXF veya JSON dosyası açma | [Import](../import/) |
-| Bir varyant üzerinde çalışmak için çizimi kopyalama | Mevcut dosyayı [Export](../export/) edin, ardından kopyayı [Import](../import/) edin |
+| Bir varyant üzerinde çalışmak için çizimi kopyalama | Mevcut dosyayı [Export Manager](../export-manager/) edin, ardından kopyayı [Import](../import/) edin |
 
 ## İlgili Komutlar
 
 - [Import](../import/) — mevcut DXF veya JSON çizimini açar
-- [Export](../export/) — sıfırdan başlamadan önce çizimi indirir
+- [Export Manager](../export-manager/) — sıfırdan başlamadan önce çizimi indirir
 - [File Manager](../file-manager/) — tarayıcı deposundan önceki çizimi geri yükler

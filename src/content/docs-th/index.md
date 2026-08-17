@@ -110,7 +110,7 @@ order: 1
 | [New File](./commands/new-file/) | เริ่มภาพวาดเปล่าใหม่ |
 | [File Manager](./commands/file-manager/) | เรียกดู เปลี่ยนชื่อ หรือลบภาพวาดที่บันทึกในเบราว์เซอร์ของคุณ |
 | [Print Manager](./commands/print-manager/) | ส่งออกพื้นที่ภาพวาดเป็นรูปภาพหรือ PDF |
-| [Export](./commands/export/) | ดาวน์โหลดภาพวาดเป็น DXF หรือ JSON |
+| [Export Manager](./commands/export-manager/) | ดาวน์โหลดภาพวาดเป็น DXF หรือ JSON |
 | [WipeStorage](./commands/wipestorage/) | ล้างภาพวาดทั้งหมดจากหน่วยความจำเบราว์เซอร์ |
 
 ## การกู้คืน

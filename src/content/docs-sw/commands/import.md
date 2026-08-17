@@ -54,7 +54,7 @@ Mchoro huhifadhiwa kiotomatiki kwenye hifadhi ya kivinjari (IndexedDB) baada ya 
 
 ## Kinachotokea kwa mchoro wa sasa
 
-Kuingiza hubadilisha turubai ya sasa. Hakuna kuunganisha au kuongeza. Ikiwa una mabadiliko ambayo hayajahifadhiwa, [hamisha](../export/) mchoro wa sasa kwanza.
+Kuingiza hubadilisha turubai ya sasa. Hakuna kuunganisha au kuongeza. Ikiwa una mabadiliko ambayo hayajahifadhiwa, [hamisha](../export-manager/) mchoro wa sasa kwanza.
 
 ## Wakati wa kuanza
 
@@ -70,6 +70,6 @@ KulmanLab hufungua upya kiotomatiki faili iliyohaririwa hivi karibuni zaidi ukur
 
 ## Amri zinazohusiana
 
-- [Export](../export/) — pakua mchoro wa sasa kama DXF au JSON
+- [Export Manager](../export-manager/) — pakua mchoro wa sasa kama DXF au JSON
 - [File Manager](../file-manager/) — tazama na urejeshe michoro iliyohifadhiwa kwenye kivinjari
 - [New File](../new-file/) — anza mchoro tupu

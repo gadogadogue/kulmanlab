@@ -54,7 +54,7 @@ KulmanLab sparar ritningar i **IndexedDB**, en databas inbyggd i din webbläsare
 - Varje webbläsare och enhet har sin egen oberoende lagring. En ritning som sparats i Chrome på en dator visas inte i Firefox, eller på en annan enhet.
 - Denna lagring **kan raderas utan förvarning** — genom att rensa webbplatsdata eller webbhistorik, brist på diskutrymme, användning av ett privat/inkognitofönster, ominstallation av webbläsare eller operativsystem, eller byte av enhet. Ingen av dessa situationer ger dig en chans att återställa det som fanns där.
 
-**Det enda tillförlitliga sättet att hålla en ritning säker är att [exportera](../export/) den till din egen lagring.** Använd `.json` (KulmanLabs egna format) när det är möjligt — det bevarar varje entitet exakt; använd `.dxf` när du behöver kompatibilitet med andra CAD-verktyg. Gör detta för allt du skulle bli ledsen över att förlora, och innan du rensar webbläsardata, byter webbläsare eller enhet, eller lägger undan datorn för ett tag.
+**Det enda tillförlitliga sättet att hålla en ritning säker är att [exportera](../export-manager/) den till din egen lagring.** Använd `.json` (KulmanLabs egna format) när det är möjligt — det bevarar varje entitet exakt; använd `.dxf` när du behöver kompatibilitet med andra CAD-verktyg. Gör detta för allt du skulle bli ledsen över att förlora, och innan du rensar webbläsardata, byter webbläsare eller enhet, eller lägger undan datorn för ett tag.
 
 ## Automatisk filinläsning vid uppstart
 
@@ -73,6 +73,6 @@ Nya och importerade filer får ett enkelt namn — ingen tidsstämpel bakas in. 
 ## Relaterade kommandon
 
 - [Import](../import/) — ladda en ritning från ditt filsystem till webbläsarens lagring
-- [Export](../export/) — ladda ner en ritning till ditt filsystem
+- [Export Manager](../export-manager/) — ladda ner en ritning till ditt filsystem
 - [New File](../new-file/) — starta en tom ritning (sparas också automatiskt)
 - [WipeStorage](../wipestorage/) — rensa alla sparade filer från webbläsarens lagring

@@ -54,7 +54,7 @@ KulmanLab speichert Zeichnungen in **IndexedDB**, einer in Ihren Browser eingeba
 - Jeder Browser und jedes Gerät hat seinen eigenen unabhängigen Speicher. Eine in Chrome auf einem Computer gespeicherte Zeichnung erscheint nicht in Firefox oder auf einem anderen Gerät.
 - Dieser Speicher **kann ohne Vorwarnung gelöscht werden** — durch das Löschen von Websitedaten oder des Browserverlaufs, bei knappem Speicherplatz, in einem privaten Fenster/Inkognito-Fenster, bei einer Neuinstallation des Browsers oder Betriebssystems, oder beim Wechsel des Geräts. Keiner dieser Fälle gibt Ihnen die Möglichkeit, das Verlorene wiederherzustellen.
 
-**Der einzig verlässliche Weg, eine Zeichnung zu sichern, ist der [Export](../export/)** in Ihren eigenen Speicher. Verwenden Sie nach Möglichkeit `.json` (das native Format von KulmanLab) — es bewahrt jede Entität exakt; verwenden Sie `.dxf`, wenn Sie Kompatibilität mit anderen CAD-Werkzeugen benötigen. Tun Sie dies für alles, dessen Verlust Sie ärgern würde, sowie bevor Sie Browserdaten löschen, den Browser oder das Gerät wechseln oder den Rechner für längere Zeit weglegen.
+**Der einzig verlässliche Weg, eine Zeichnung zu sichern, ist der [Export Manager](../export-manager/)** in Ihren eigenen Speicher. Verwenden Sie nach Möglichkeit `.json` (das native Format von KulmanLab) — es bewahrt jede Entität exakt; verwenden Sie `.dxf`, wenn Sie Kompatibilität mit anderen CAD-Werkzeugen benötigen. Tun Sie dies für alles, dessen Verlust Sie ärgern würde, sowie bevor Sie Browserdaten löschen, den Browser oder das Gerät wechseln oder den Rechner für längere Zeit weglegen.
 
 ## Automatisches Laden von Dateien beim Start
 
@@ -73,6 +73,6 @@ Neue und importierte Dateien erhalten einen einfachen Namen — ohne eingebettet
 ## Verwandte Befehle
 
 - [Import](../import/) — eine Zeichnung von Ihrem Dateisystem in den Browser-Speicher laden
-- [Export](../export/) — eine Zeichnung auf Ihr Dateisystem herunterladen
+- [Export Manager](../export-manager/) — eine Zeichnung auf Ihr Dateisystem herunterladen
 - [New File](../new-file/) — eine leere Zeichnung beginnen (wird ebenfalls automatisch gespeichert)
 - [WipeStorage](../wipestorage/) — alle gespeicherten Dateien aus dem Browser-Speicher löschen

@@ -110,7 +110,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Fit view', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -155,7 +155,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'File Manager panel', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Wipe storage', slug: 'commands/wipestorage' },
         ],
       },
@@ -288,7 +288,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Ansicht einpassen', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -332,7 +332,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Dateien-Panel', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Speicher löschen', slug: 'commands/wipestorage' },
         ],
       },
@@ -465,7 +465,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Encuadrar vista', slug: 'commands/fit' },
-          { label: 'Exportar', slug: 'commands/export' },
+          { label: 'Exportar', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -509,7 +509,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Panel de archivos', slug: 'commands/file-manager' },
-          { label: 'Exportar', slug: 'commands/export' },
+          { label: 'Exportar', slug: 'commands/export-manager' },
           { label: 'Borrar almacenamiento', slug: 'commands/wipestorage' },
         ],
       },
@@ -642,7 +642,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Cadrer la vue', slug: 'commands/fit' },
-          { label: 'Exporter', slug: 'commands/export' },
+          { label: 'Exporter', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -686,7 +686,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Panneau des fichiers', slug: 'commands/file-manager' },
-          { label: 'Exporter', slug: 'commands/export' },
+          { label: 'Exporter', slug: 'commands/export-manager' },
           { label: 'Effacer le stockage', slug: 'commands/wipestorage' },
         ],
       },
@@ -819,7 +819,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Inquadra vista', slug: 'commands/fit' },
-          { label: 'Esporta', slug: 'commands/export' },
+          { label: 'Esporta', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -863,7 +863,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Pannello file', slug: 'commands/file-manager' },
-          { label: 'Esporta', slug: 'commands/export' },
+          { label: 'Esporta', slug: 'commands/export-manager' },
           { label: 'Svuota memoria', slug: 'commands/wipestorage' },
         ],
       },
@@ -996,7 +996,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Enquadrar vista', slug: 'commands/fit' },
-          { label: 'Exportar', slug: 'commands/export' },
+          { label: 'Exportar', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -1040,7 +1040,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Painel de arquivos', slug: 'commands/file-manager' },
-          { label: 'Exportar', slug: 'commands/export' },
+          { label: 'Exportar', slug: 'commands/export-manager' },
           { label: 'Limpar armazenamento', slug: 'commands/wipestorage' },
         ],
       },
@@ -1173,7 +1173,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Вписати вид', slug: 'commands/fit' },
-          { label: 'Експорт', slug: 'commands/export' },
+          { label: 'Експорт', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -1217,7 +1217,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Панель файлів', slug: 'commands/file-manager' },
-          { label: 'Експорт', slug: 'commands/export' },
+          { label: 'Експорт', slug: 'commands/export-manager' },
           { label: 'Очистити сховище', slug: 'commands/wipestorage' },
         ],
       },
@@ -1350,7 +1350,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Görünümü sığdır', slug: 'commands/fit' },
-          { label: 'Dışa aktar', slug: 'commands/export' },
+          { label: 'Dışa aktar', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -1394,7 +1394,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Dosyalar paneli', slug: 'commands/file-manager' },
-          { label: 'Dışa aktar', slug: 'commands/export' },
+          { label: 'Dışa aktar', slug: 'commands/export-manager' },
           { label: 'Depolamayı temizle', slug: 'commands/wipestorage' },
         ],
       },
@@ -1527,7 +1527,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: '适配视图', slug: 'commands/fit' },
-          { label: '导出', slug: 'commands/export' },
+          { label: '导出', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -1571,7 +1571,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: '文件面板', slug: 'commands/file-manager' },
-          { label: '导出', slug: 'commands/export' },
+          { label: '导出', slug: 'commands/export-manager' },
           { label: '清空存储', slug: 'commands/wipestorage' },
         ],
       },
@@ -1704,7 +1704,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'दृश्य फ़िट करें', slug: 'commands/fit' },
-          { label: 'निर्यात', slug: 'commands/export' },
+          { label: 'निर्यात', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -1748,7 +1748,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'फ़ाइल पैनल', slug: 'commands/file-manager' },
-          { label: 'निर्यात', slug: 'commands/export' },
+          { label: 'निर्यात', slug: 'commands/export-manager' },
           { label: 'स्टोरेज मिटाएँ', slug: 'commands/wipestorage' },
         ],
       },
@@ -1881,7 +1881,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'ملاءمة العرض', slug: 'commands/fit' },
-          { label: 'تصدير', slug: 'commands/export' },
+          { label: 'تصدير', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -1925,7 +1925,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'لوحة الملفات', slug: 'commands/file-manager' },
-          { label: 'تصدير', slug: 'commands/export' },
+          { label: 'تصدير', slug: 'commands/export-manager' },
           { label: 'مسح التخزين', slug: 'commands/wipestorage' },
         ],
       },
@@ -2058,7 +2058,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Muat tampilan', slug: 'commands/fit' },
-          { label: 'Ekspor', slug: 'commands/export' },
+          { label: 'Ekspor', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -2102,7 +2102,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Panel file', slug: 'commands/file-manager' },
-          { label: 'Ekspor', slug: 'commands/export' },
+          { label: 'Ekspor', slug: 'commands/export-manager' },
           { label: 'Hapus penyimpanan', slug: 'commands/wipestorage' },
         ],
       },
@@ -2235,7 +2235,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'ビューを全体表示', slug: 'commands/fit' },
-          { label: 'エクスポート', slug: 'commands/export' },
+          { label: 'エクスポート', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -2279,7 +2279,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'ファイルパネル', slug: 'commands/file-manager' },
-          { label: 'エクスポート', slug: 'commands/export' },
+          { label: 'エクスポート', slug: 'commands/export-manager' },
           { label: 'ストレージ消去', slug: 'commands/wipestorage' },
         ],
       },
@@ -2412,7 +2412,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Dopasuj widok', slug: 'commands/fit' },
-          { label: 'Eksport', slug: 'commands/export' },
+          { label: 'Eksport', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -2456,7 +2456,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Panel plików', slug: 'commands/file-manager' },
-          { label: 'Eksport', slug: 'commands/export' },
+          { label: 'Eksport', slug: 'commands/export-manager' },
           { label: 'Czyszczenie pamięci', slug: 'commands/wipestorage' },
         ],
       },
@@ -2589,7 +2589,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: '뷰 맞춤', slug: 'commands/fit' },
-          { label: '내보내기', slug: 'commands/export' },
+          { label: '내보내기', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -2633,7 +2633,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: '파일 패널', slug: 'commands/file-manager' },
-          { label: '내보내기', slug: 'commands/export' },
+          { label: '내보내기', slug: 'commands/export-manager' },
           { label: '저장소 비우기', slug: 'commands/wipestorage' },
         ],
       },
@@ -2766,7 +2766,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Vừa khung nhìn', slug: 'commands/fit' },
-          { label: 'Xuất', slug: 'commands/export' },
+          { label: 'Xuất', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -2810,7 +2810,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Bảng tệp', slug: 'commands/file-manager' },
-          { label: 'Xuất', slug: 'commands/export' },
+          { label: 'Xuất', slug: 'commands/export-manager' },
           { label: 'Xóa bộ nhớ', slug: 'commands/wipestorage' },
         ],
       },
@@ -2943,7 +2943,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'พอดีมุมมอง', slug: 'commands/fit' },
-          { label: 'ส่งออก', slug: 'commands/export' },
+          { label: 'ส่งออก', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -2987,7 +2987,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'แผงไฟล์', slug: 'commands/file-manager' },
-          { label: 'ส่งออก', slug: 'commands/export' },
+          { label: 'ส่งออก', slug: 'commands/export-manager' },
           { label: 'ล้างพื้นที่จัดเก็บ', slug: 'commands/wipestorage' },
         ],
       },
@@ -3120,7 +3120,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Muat paparan', slug: 'commands/fit' },
-          { label: 'Eksport', slug: 'commands/export' },
+          { label: 'Eksport', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -3164,7 +3164,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Panel fail', slug: 'commands/file-manager' },
-          { label: 'Eksport', slug: 'commands/export' },
+          { label: 'Eksport', slug: 'commands/export-manager' },
           { label: 'Kosongkan storan', slug: 'commands/wipestorage' },
         ],
       },
@@ -3297,7 +3297,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'ভিউ ফিট', slug: 'commands/fit' },
-          { label: 'রপ্তানি', slug: 'commands/export' },
+          { label: 'রপ্তানি', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -3341,7 +3341,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'ফাইল প্যানেল', slug: 'commands/file-manager' },
-          { label: 'রপ্তানি', slug: 'commands/export' },
+          { label: 'রপ্তানি', slug: 'commands/export-manager' },
           { label: 'স্টোরেজ মোছা', slug: 'commands/wipestorage' },
         ],
       },
@@ -3474,7 +3474,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Panga mwonekano', slug: 'commands/fit' },
-          { label: 'Hamisha', slug: 'commands/export' },
+          { label: 'Hamisha', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -3518,7 +3518,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Paneli ya faili', slug: 'commands/file-manager' },
-          { label: 'Hamisha', slug: 'commands/export' },
+          { label: 'Hamisha', slug: 'commands/export-manager' },
           { label: 'Futa hifadhi', slug: 'commands/wipestorage' },
         ],
       },
@@ -3651,7 +3651,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'منظر فٹ کریں', slug: 'commands/fit' },
-          { label: 'برآمد', slug: 'commands/export' },
+          { label: 'برآمد', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -3695,7 +3695,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'فائل پینل', slug: 'commands/file-manager' },
-          { label: 'برآمد', slug: 'commands/export' },
+          { label: 'برآمد', slug: 'commands/export-manager' },
           { label: 'اسٹوریج صاف کریں', slug: 'commands/wipestorage' },
         ],
       },
@@ -3828,7 +3828,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Προσαρμογή προβολής', slug: 'commands/fit' },
-          { label: 'Εξαγωγή', slug: 'commands/export' },
+          { label: 'Εξαγωγή', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -3872,7 +3872,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Πάνελ αρχείων', slug: 'commands/file-manager' },
-          { label: 'Εξαγωγή', slug: 'commands/export' },
+          { label: 'Εξαγωγή', slug: 'commands/export-manager' },
           { label: 'Καθαρισμός χώρου', slug: 'commands/wipestorage' },
         ],
       },
@@ -4005,7 +4005,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'ਵਿਊ ਫਿੱਟ ਕਰੋ', slug: 'commands/fit' },
-          { label: 'ਐਕਸਪੋਰਟ', slug: 'commands/export' },
+          { label: 'ਐਕਸਪੋਰਟ', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -4049,7 +4049,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'ਫਾਈਲ ਪੈਨਲ', slug: 'commands/file-manager' },
-          { label: 'ਐਕਸਪੋਰਟ', slug: 'commands/export' },
+          { label: 'ਐਕਸਪੋਰਟ', slug: 'commands/export-manager' },
           { label: 'ਸਟੋਰੇਜ ਮਿਟਾਓ', slug: 'commands/wipestorage' },
         ],
       },
@@ -4182,7 +4182,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Anpassa vy', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -4226,7 +4226,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Filpanelen', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Rensa lagring', slug: 'commands/wipestorage' },
         ],
       },
@@ -4359,7 +4359,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Fit view', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -4403,7 +4403,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Panel ng mga file', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Burahin ang storage', slug: 'commands/wipestorage' },
         ],
       },
@@ -4536,7 +4536,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Weergave passend maken', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -4580,7 +4580,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Bestanden-paneel', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Opslag wissen', slug: 'commands/wipestorage' },
         ],
       },
@@ -4713,7 +4713,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'גיזום', slug: 'commands/trim' },
           { label: 'התאמת תצוגה', slug: 'commands/fit' },
-          { label: 'ייצוא', slug: 'commands/export' },
+          { label: 'ייצוא', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -4757,7 +4757,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'פאנל קבצים', slug: 'commands/file-manager' },
-          { label: 'ייצוא', slug: 'commands/export' },
+          { label: 'ייצוא', slug: 'commands/export-manager' },
           { label: 'ניקוי אחסון', slug: 'commands/wipestorage' },
         ],
       },
@@ -4890,7 +4890,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Fit', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -4934,7 +4934,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Panel na Files', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Wipe Storage', slug: 'commands/wipestorage' },
         ],
       },
@@ -5067,7 +5067,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Fit-visning', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -5111,7 +5111,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Files-panel', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Wipe storage', slug: 'commands/wipestorage' },
         ],
       },
@@ -5244,7 +5244,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Fit-visning', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -5288,7 +5288,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Files-panel', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Wipe storage', slug: 'commands/wipestorage' },
         ],
       },
@@ -5421,7 +5421,7 @@ export const howtoContent: Record<string, HowToContent> = {
         links: [
           { label: 'Trim', slug: 'commands/trim' },
           { label: 'Fit-näkymä', slug: 'commands/fit' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
         ],
       },
       {
@@ -5465,7 +5465,7 @@ export const howtoContent: Record<string, HowToContent> = {
         ],
         links: [
           { label: 'Files-paneeli', slug: 'commands/file-manager' },
-          { label: 'Export', slug: 'commands/export' },
+          { label: 'Export', slug: 'commands/export-manager' },
           { label: 'Wipe storage', slug: 'commands/wipestorage' },
         ],
       },

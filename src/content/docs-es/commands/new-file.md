@@ -26,7 +26,7 @@ El archivo se guarda automáticamente en el almacenamiento del navegador y apare
 
 ## Advertencia — el trabajo no guardado se descarta
 
-Hacer clic en **New File** descarta todas las entidades del lienzo actual sin advertencia. Si deseas conservar el dibujo actual, [expórtalo](../export/) primero.
+Hacer clic en **New File** descarta todas las entidades del lienzo actual sin advertencia. Si deseas conservar el dibujo actual, [expórtalo](../export-manager/) primero.
 
 ## Cuándo usar New File vs Import
 
@@ -34,10 +34,10 @@ Hacer clic en **New File** descarta todas las entidades del lienzo actual sin ad
 |-----------|-------------------|
 | Comenzar un dibujo desde cero | **New File** |
 | Abrir un archivo DXF o JSON existente | [Import](../import/) |
-| Copiar un dibujo para trabajar en una variante | [Exporta](../export/) el archivo actual, luego [importa](../import/) la copia |
+| Copiar un dibujo para trabajar en una variante | [Exporta](../export-manager/) el archivo actual, luego [importa](../import/) la copia |
 
 ## Comandos relacionados
 
 - [Import](../import/) — abrir un dibujo DXF o JSON existente
-- [Export](../export/) — descargar el dibujo antes de comenzar uno nuevo
+- [Export Manager](../export-manager/) — descargar el dibujo antes de comenzar uno nuevo
 - [File Manager](../file-manager/) — restaurar un dibujo anterior desde el almacenamiento del navegador

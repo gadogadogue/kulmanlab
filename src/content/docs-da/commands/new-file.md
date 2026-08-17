@@ -26,7 +26,7 @@ Filen gemmes automatisk i browserlagring og vises i [File Manager](../file-manag
 
 ## Advarsel — ugemt arbejde kasseres
 
-At klikke på **New File** kasserer alle entiteter på det aktuelle lærred uden advarsel. Hvis du vil beholde den aktuelle tegning, [eksportér](../export/) den først.
+At klikke på **New File** kasserer alle entiteter på det aktuelle lærred uden advarsel. Hvis du vil beholde den aktuelle tegning, [eksportér](../export-manager/) den først.
 
 ## Hvornår du bør bruge New File vs Import
 
@@ -34,10 +34,10 @@ At klikke på **New File** kasserer alle entiteter på det aktuelle lærred uden
 |-----------|-------------------|
 | Starte en tegning fra bunden | **New File** |
 | Åbne en eksisterende DXF- eller JSON-fil | [Import](../import/) |
-| Kopiere en tegning for at arbejde på en variant | [Eksportér](../export/) den aktuelle fil, [importér](../import/) derefter kopien |
+| Kopiere en tegning for at arbejde på en variant | [Eksportér](../export-manager/) den aktuelle fil, [importér](../import/) derefter kopien |
 
 ## Relaterede kommandoer
 
 - [Import](../import/) — åbn en eksisterende DXF- eller JSON-tegning
-- [Export](../export/) — download tegningen, før du starter forfra
+- [Export Manager](../export-manager/) — download tegningen, før du starter forfra
 - [File Manager](../file-manager/) — gendan en tidligere tegning fra browserlagring

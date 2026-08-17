@@ -54,7 +54,7 @@ Ritningen sparas automatiskt i webbläsarens lagring (IndexedDB) efter importen,
 
 ## Vad som händer med den aktuella ritningen
 
-Import ersätter den aktuella ritytan. Det finns ingen sammanslagning eller tillägg. Om du har osparade ändringar, [exportera](../export/) den aktuella ritningen först.
+Import ersätter den aktuella ritytan. Det finns ingen sammanslagning eller tillägg. Om du har osparade ändringar, [exportera](../export-manager/) den aktuella ritningen först.
 
 ## Vid uppstart
 
@@ -70,6 +70,6 @@ KulmanLab öppnar automatiskt den senast redigerade filen när sidan laddas. Om 
 
 ## Relaterade kommandon
 
-- [Export](../export/) — ladda ner den aktuella ritningen som DXF eller JSON
+- [Export Manager](../export-manager/) — ladda ner den aktuella ritningen som DXF eller JSON
 - [File Manager](../file-manager/) — bläddra bland och återställ ritningar sparade i webbläsaren
 - [New File](../new-file/) — starta en tom ritning

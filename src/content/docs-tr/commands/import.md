@@ -54,7 +54,7 @@ Desteklenmeyen DXF türlerini kullanan nesneler sessizce atlanır — çizimin g
 
 ## Geçerli Çizime Ne Olur
 
-İçe aktarma, geçerli tuvali değiştirir. Birleştirme veya ekleme yoktur. Kaydedilmemiş değişiklikleriniz varsa, önce geçerli çizimi [dışa aktarın](../export/).
+İçe aktarma, geçerli tuvali değiştirir. Birleştirme veya ekleme yoktur. Kaydedilmemiş değişiklikleriniz varsa, önce geçerli çizimi [dışa aktarın](../export-manager/).
 
 ## Başlangıçta
 
@@ -70,6 +70,6 @@ KulmanLab, sayfa yüklendiğinde en son düzenlenen dosyayı otomatik olarak yen
 
 ## İlgili Komutlar
 
-- [Export](../export/) — mevcut çizimi DXF veya JSON olarak indirir
+- [Export Manager](../export-manager/) — mevcut çizimi DXF veya JSON olarak indirir
 - [File Manager](../file-manager/) — tarayıcıda kaydedilen çizimlere göz atar ve geri yükler
 - [New File](../new-file/) — boş çizim başlatır

@@ -26,7 +26,7 @@ Awtomatikong na-save ang file sa browser storage, lilitaw sa [File Manager](../f
 
 ## Babala — natatanggal ang hindi na-save na trabaho
 
-Ang pag-click sa **New File** ay tinatanggal ang lahat ng entities sa kasalukuyang canvas nang walang babala. Kung gusto mong panatilihin ang kasalukuyang drawing, [i-export](../export/) muna ito.
+Ang pag-click sa **New File** ay tinatanggal ang lahat ng entities sa kasalukuyang canvas nang walang babala. Kung gusto mong panatilihin ang kasalukuyang drawing, [i-export](../export-manager/) muna ito.
 
 ## Kailan gagamitin ang New File kumpara sa Import
 
@@ -34,10 +34,10 @@ Ang pag-click sa **New File** ay tinatanggal ang lahat ng entities sa kasalukuya
 |-----------|-------------------|
 | Magsisimula ng drawing mula sa wala | **New File** |
 | Magbubukas ng umiiral na DXF o JSON file | [Import](../import/) |
-| Kokopyahin ang isang drawing para gawan ng variant | [Export](../export/) ang kasalukuyang file, pagkatapos ay [i-import](../import/) ang kopya |
+| Kokopyahin ang isang drawing para gawan ng variant | [Export Manager](../export-manager/) ang kasalukuyang file, pagkatapos ay [i-import](../import/) ang kopya |
 
 ## Kaugnay na commands
 
 - [Import](../import/) — buksan ang umiiral na DXF o JSON drawing
-- [Export](../export/) — i-download ang drawing bago magsimula ng panibago
+- [Export Manager](../export-manager/) — i-download ang drawing bago magsimula ng panibago
 - [File Manager](../file-manager/) — i-restore ang naunang drawing mula sa browser storage

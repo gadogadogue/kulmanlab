@@ -54,7 +54,7 @@ Awtomatikong na-save ang drawing sa browser storage (IndexedDB) pagkatapos ng im
 
 ## Ano ang mangyayari sa kasalukuyang drawing
 
-Pinapalitan ng pag-import ang kasalukuyang canvas. Walang merge o append. Kung mayroon kang unsaved changes, [i-export](../export/) muna ang kasalukuyang drawing.
+Pinapalitan ng pag-import ang kasalukuyang canvas. Walang merge o append. Kung mayroon kang unsaved changes, [i-export](../export-manager/) muna ang kasalukuyang drawing.
 
 ## Sa startup
 
@@ -70,6 +70,6 @@ Awtomatikong binubuksan muli ng KulmanLab ang huling na-edit na file kapag nag-l
 
 ## Kaugnay na commands
 
-- [Export](../export/) — i-download ang kasalukuyang drawing bilang DXF o JSON
+- [Export Manager](../export-manager/) — i-download ang kasalukuyang drawing bilang DXF o JSON
 - [File Manager](../file-manager/) — mag-browse at mag-restore ng mga drawing na naka-save sa browser
 - [New File](../new-file/) — simulan ang isang blangkong drawing

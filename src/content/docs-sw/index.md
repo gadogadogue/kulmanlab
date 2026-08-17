@@ -110,7 +110,7 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [New File](./commands/new-file/) | Anza mchoro mpya tupu |
 | [File Manager](./commands/file-manager/) | Vinjari, badilisha jina, au futa michoro iliyohifadhiwa kwenye kivinjari chako |
 | [Print Manager](./commands/print-manager/) | Safirisha eneo la mchoro kama picha au PDF |
-| [Export](./commands/export/) | Pakua mchoro kama DXF au JSON |
+| [Export Manager](./commands/export-manager/) | Pakua mchoro kama DXF au JSON |
 | [WipeStorage](./commands/wipestorage/) | Futa michoro yote kutoka kwenye hifadhi ya kivinjari |
 
 ## Uokoaji

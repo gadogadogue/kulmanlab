@@ -54,7 +54,7 @@ Gambar secara otomatis disimpan ke penyimpanan browser (IndexedDB) setelah diimp
 
 ## Apa yang terjadi pada gambar saat ini
 
-Mengimpor menggantikan kanvas saat ini. Tidak ada penggabungan atau penambahan. Jika Anda memiliki perubahan yang belum disimpan, [ekspor](../export/) gambar saat ini terlebih dahulu.
+Mengimpor menggantikan kanvas saat ini. Tidak ada penggabungan atau penambahan. Jika Anda memiliki perubahan yang belum disimpan, [ekspor](../export-manager/) gambar saat ini terlebih dahulu.
 
 ## Saat startup
 
@@ -70,6 +70,6 @@ KulmanLab secara otomatis membuka kembali file yang terakhir diedit ketika halam
 
 ## Perintah terkait
 
-- [Export](../export/) — unduh gambar saat ini sebagai DXF atau JSON
+- [Export Manager](../export-manager/) — unduh gambar saat ini sebagai DXF atau JSON
 - [File Manager](../file-manager/) — jelajahi dan pulihkan gambar yang tersimpan di browser
 - [New File](../new-file/) — mulai gambar kosong

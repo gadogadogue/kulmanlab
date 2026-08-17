@@ -54,7 +54,7 @@ KulmanLab inahifadhi michoro kwenye **IndexedDB**, hifadhidata iliyojengwa ndani
 - Kila kivinjari na kifaa kina hifadhi yake ya kujitegemea. Mchoro uliohifadhiwa kwenye Chrome katika kompyuta moja hautaonekana kwenye Firefox, au kwenye kifaa kingine.
 - Hifadhi hii **inaweza kufutwa bila onyo** — kwa kufuta data ya tovuti au historia ya kuvinjari, kukosa nafasi ya diski, kutumia dirisha la faragha/incognito, kusakinisha upya kivinjari au mfumo wa uendeshaji, au kubadilisha kifaa. Hakuna hali yoyote kati ya hizi inayokupa nafasi ya kurejesha kilichokuwepo hapo.
 
-**Njia pekee ya kuaminika ya kuweka mchoro salama ni [kuuhamisha](../export/) kwenye hifadhi yako mwenyewe.** Tumia `.json` (muundo asili wa KulmanLab) inapowezekana — huhifadhi kila kitu kwa usahihi; tumia `.dxf` unapohitaji ulinganifu na zana nyingine za CAD. Fanya hivi kwa chochote ambacho ungehuzunika kukipoteza, na kabla ya kufuta data ya kivinjari, kubadilisha kivinjari au kifaa, au kuweka kando mashine kwa muda.
+**Njia pekee ya kuaminika ya kuweka mchoro salama ni [kuuhamisha](../export-manager/) kwenye hifadhi yako mwenyewe.** Tumia `.json` (muundo asili wa KulmanLab) inapowezekana — huhifadhi kila kitu kwa usahihi; tumia `.dxf` unapohitaji ulinganifu na zana nyingine za CAD. Fanya hivi kwa chochote ambacho ungehuzunika kukipoteza, na kabla ya kufuta data ya kivinjari, kubadilisha kivinjari au kifaa, au kuweka kando mashine kwa muda.
 
 ## Upakiaji wa faili kiotomatiki wakati wa kuanza
 
@@ -73,6 +73,6 @@ Faili mpya na zilizoingizwa hupata jina rahisi — hakuna muhuri wa wakati unaow
 ## Amri zinazohusiana
 
 - [Import](../import/) — pakia mchoro kutoka kwa mfumo wa faili wako kwenye hifadhi ya kivinjari
-- [Export](../export/) — pakua mchoro kwenye mfumo wako wa faili
+- [Export Manager](../export-manager/) — pakua mchoro kwenye mfumo wako wa faili
 - [New File](../new-file/) — anza mchoro tupu (pia unahifadhiwa kiotomatiki)
 - [WipeStorage](../wipestorage/) — futa faili zote zilizohifadhiwa kutoka kwa hifadhi ya kivinjari

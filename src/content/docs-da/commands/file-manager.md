@@ -54,7 +54,7 @@ KulmanLab gemmer tegninger i **IndexedDB**, en database indbygget i din browser:
 - Hver browser og enhed har sin egen uafhængige lagring. En tegning gemt i Chrome på én computer vises ikke i Firefox eller på en anden maskine.
 - Denne lagring **kan blive ryddet uden varsel** — ved rydning af webstedsdata eller browserhistorik, ved lav diskplads, ved brug af et privat/inkognitovindue, ved geninstallation af browseren eller styresystemet, eller ved skift af enhed. Ingen af disse giver dig mulighed for at gendanne det, der var der.
 
-**Den eneste pålidelige måde at holde en tegning sikker på er at [eksportere](../export/) den** til din egen lagring. Brug `.json` (KulmanLabs eget format), når det er muligt — det bevarer hver entitet nøjagtigt; brug `.dxf`, når du har brug for kompatibilitet med andre CAD-værktøjer. Gør dette for alt, du ville blive ked af at miste, og før du rydder browserdata, skifter browser eller enhed, eller stiller maskinen væk i en periode.
+**Den eneste pålidelige måde at holde en tegning sikker på er at [eksportere](../export-manager/) den** til din egen lagring. Brug `.json` (KulmanLabs eget format), når det er muligt — det bevarer hver entitet nøjagtigt; brug `.dxf`, når du har brug for kompatibilitet med andre CAD-værktøjer. Gør dette for alt, du ville blive ked af at miste, og før du rydder browserdata, skifter browser eller enhed, eller stiller maskinen væk i en periode.
 
 ## Automatisk filindlæsning ved opstart
 
@@ -73,6 +73,6 @@ Nye og importerede filer får et enkelt navn — uden indlejret tidsstempel. Hvi
 ## Relaterede kommandoer
 
 - [Import](../import/) — indlæs en tegning fra dit filsystem i browserlagring
-- [Export](../export/) — download en tegning til dit filsystem
+- [Export Manager](../export-manager/) — download en tegning til dit filsystem
 - [New File](../new-file/) — start en tom tegning (gemmes også automatisk)
 - [WipeStorage](../wipestorage/) — ryd alle gemte filer fra browserlagring

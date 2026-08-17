@@ -110,7 +110,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 | [New File](./commands/new-file/) | Memulai gambar kosong yang baru |
 | [File Manager](./commands/file-manager/) | Menjelajahi, mengganti nama, atau menghapus gambar yang tersimpan di browser Anda |
 | [Print Manager](./commands/print-manager/) | Mengekspor area gambar sebagai gambar atau PDF |
-| [Export](./commands/export/) | Mengunduh gambar sebagai DXF atau JSON |
+| [Export Manager](./commands/export-manager/) | Mengunduh gambar sebagai DXF atau JSON |
 | [WipeStorage](./commands/wipestorage/) | Menghapus semua gambar dari penyimpanan browser |
 
 ## Pemulihan

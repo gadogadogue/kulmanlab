@@ -110,7 +110,7 @@ order: 1
 | [New File](./commands/new-file/) | Розпочати новий порожній кресленик |
 | [File Manager](./commands/file-manager/) | Переглядайте, перейменовуйте або видаляйте креслення, збережені у браузері |
 | [Print Manager](./commands/print-manager/) | Експортувати область кресленика як зображення або PDF |
-| [Export](./commands/export/) | Завантажити кресленик у форматі DXF або JSON |
+| [Export Manager](./commands/export-manager/) | Завантажити кресленик у форматі DXF або JSON |
 | [Wipe Storage](./commands/wipestorage/) | Очистити всі кресленики зі сховища браузера |
 
 ## Відновлення

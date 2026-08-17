@@ -25,7 +25,7 @@ Tệp được lưu vào bộ nhớ trình duyệt tự động, xuất hiện t
 
 ## Cảnh báo — công việc chưa lưu bị xóa
 
-Nhấp **New File** xóa tất cả thực thể trên canvas hiện tại mà không có cảnh báo. Nếu bạn muốn giữ bản vẽ hiện tại, hãy [Export](../export/) nó trước.
+Nhấp **New File** xóa tất cả thực thể trên canvas hiện tại mà không có cảnh báo. Nếu bạn muốn giữ bản vẽ hiện tại, hãy [Export Manager](../export-manager/) nó trước.
 
 ## Khi nào dùng New File vs Import
 
@@ -33,10 +33,10 @@ Nhấp **New File** xóa tất cả thực thể trên canvas hiện tại mà k
 |-----------|----------------------|
 | Bắt đầu bản vẽ từ đầu | **New File** |
 | Mở tệp DXF hoặc JSON hiện có | [Import](../import/) |
-| Sao chép bản vẽ để làm biến thể | [Export](../export/) tệp hiện tại, sau đó [Import](../import/) bản sao |
+| Sao chép bản vẽ để làm biến thể | [Export Manager](../export-manager/) tệp hiện tại, sau đó [Import](../import/) bản sao |
 
 ## Các lệnh liên quan
 
 - [Import](../import/) — mở bản vẽ DXF hoặc JSON hiện có
-- [Export](../export/) — tải bản vẽ trước khi bắt đầu mới
+- [Export Manager](../export-manager/) — tải bản vẽ trước khi bắt đầu mới
 - [File Manager](../file-manager/) — khôi phục bản vẽ trước đó từ bộ nhớ trình duyệt

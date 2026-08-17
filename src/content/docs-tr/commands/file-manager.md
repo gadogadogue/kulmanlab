@@ -54,7 +54,7 @@ KulmanLab, çizimleri tarayıcınıza yerleşik bir veritabanı olan **IndexedDB
 - Her tarayıcı ve cihazın kendi bağımsız deposu vardır. Bir bilgisayarda Chrome'da kaydedilen bir çizim Firefox'ta veya başka bir makinede görünmez.
 - Bu depo **uyarı vermeden temizlenebilir** — site verilerini veya tarama geçmişini temizleyerek, disk alanının azalmasıyla, gizli/gizli tarama penceresi kullanarak, tarayıcıyı veya işletim sistemini yeniden yükleyerek ya da cihaz değiştirerek. Bunların hiçbiri orada olanı kurtarma şansı vermez.
 
-**Bir çizimi güvende tutmanın tek güvenilir yolu, onu kendi deponuza [dışa aktarmaktır](../export/).** Mümkün olduğunda `.json` (KulmanLab'ın yerel formatı) kullanın — her nesneyi tam olarak korur; başka CAD araçlarıyla uyumluluk gerektiğinde `.dxf` kullanın. Kaybetmek istemeyeceğiniz her şey için bunu yapın; ayrıca tarayıcı verilerini temizlemeden, tarayıcı veya cihaz değiştirmeden ya da makineyi bir süreliğine bir kenara koymadan önce de yapın.
+**Bir çizimi güvende tutmanın tek güvenilir yolu, onu kendi deponuza [dışa aktarmaktır](../export-manager/).** Mümkün olduğunda `.json` (KulmanLab'ın yerel formatı) kullanın — her nesneyi tam olarak korur; başka CAD araçlarıyla uyumluluk gerektiğinde `.dxf` kullanın. Kaybetmek istemeyeceğiniz her şey için bunu yapın; ayrıca tarayıcı verilerini temizlemeden, tarayıcı veya cihaz değiştirmeden ya da makineyi bir süreliğine bir kenara koymadan önce de yapın.
 
 ## Başlangıçta otomatik dosya yükleme
 
@@ -73,6 +73,6 @@ Yeni ve içe aktarılan dosyalar sade bir ad alır — içine hiçbir zaman damg
 ## İlgili Komutlar
 
 - [Import](../import/) — dosya sisteminizden tarayıcı deposuna bir çizim yükler
-- [Export](../export/) — bir çizimi dosya sisteminize indirir
+- [Export Manager](../export-manager/) — bir çizimi dosya sisteminize indirir
 - [New File](../new-file/) — boş bir çizim başlatır (ayrıca otomatik olarak kaydedilir)
 - [WipeStorage](../wipestorage/) — tarayıcı deposundan tüm kaydedilen dosyaları temizler

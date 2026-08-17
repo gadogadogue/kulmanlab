@@ -54,7 +54,7 @@ KulmanLab sauvegarde les dessins dans **IndexedDB**, une base de données intég
 - Chaque navigateur et appareil a son propre stockage indépendant. Un dessin sauvegardé dans Chrome sur un ordinateur n'apparaîtra pas dans Firefox, ni sur un autre appareil.
 - Ce stockage **peut être effacé sans avertissement** — en effaçant les données du site ou l'historique de navigation, en cas de manque d'espace disque, en utilisant une fenêtre privée/incognito, en réinstallant le navigateur ou le système d'exploitation, ou en changeant d'appareil. Aucune de ces situations ne vous donne la chance de récupérer ce qui s'y trouvait.
 
-**La seule façon fiable de protéger un dessin est de l'[exporter](../export/) vers votre propre stockage.** Utilisez `.json` (le format natif de KulmanLab) autant que possible — il préserve chaque entité exactement ; utilisez `.dxf` lorsque vous avez besoin de compatibilité avec d'autres outils de CAO. Faites-le pour tout ce dont la perte vous contrarierait, et avant d'effacer les données du navigateur, de changer de navigateur ou d'appareil, ou de ranger la machine pour un moment.
+**La seule façon fiable de protéger un dessin est de l'[exporter](../export-manager/) vers votre propre stockage.** Utilisez `.json` (le format natif de KulmanLab) autant que possible — il préserve chaque entité exactement ; utilisez `.dxf` lorsque vous avez besoin de compatibilité avec d'autres outils de CAO. Faites-le pour tout ce dont la perte vous contrarierait, et avant d'effacer les données du navigateur, de changer de navigateur ou d'appareil, ou de ranger la machine pour un moment.
 
 ## Chargement automatique du fichier au démarrage
 
@@ -73,6 +73,6 @@ Les nouveaux fichiers et les fichiers importés reçoivent un nom simple — auc
 ## Commandes associées
 
 - [Import](../import/) — charger un dessin depuis votre système de fichiers vers le stockage du navigateur
-- [Export](../export/) — télécharger un dessin vers votre système de fichiers
+- [Export Manager](../export-manager/) — télécharger un dessin vers votre système de fichiers
 - [New File](../new-file/) — démarrer un dessin vierge (aussi sauvegardé automatiquement)
 - [WipeStorage](../wipestorage/) — effacer tous les fichiers sauvegardés du stockage du navigateur

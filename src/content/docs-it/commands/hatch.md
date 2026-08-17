@@ -105,7 +105,7 @@ Gli hatch vengono **importati** da entità `HATCH`: KulmanLab legge la geometria
 
 Gli anelli delimitati da spline scritti da altre applicazioni (tipo di bordo contorno DXF 4) non vengono ancora letti.
 
-Gli hatch attualmente non vengono **esportati** in DXF — usa il formato `.json` di [Export](../export/) per conservare un hatch quando salvi un disegno che lo include; il formato `.dxf` lo omette.
+Gli hatch attualmente non vengono **esportati** in DXF — usa il formato `.json` di [Export Manager](../export-manager/) per conservare un hatch quando salvi un disegno che lo include; il formato `.dxf` lo omette.
 
 ## Comandi correlati
 

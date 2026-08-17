@@ -105,7 +105,7 @@ Hatches worden **geïmporteerd** vanuit `HATCH`-entiteiten: KulmanLab leest de r
 
 Splinebegrensde lussen die door andere toepassingen zijn geschreven (DXF-randtype 4) worden nog niet gelezen.
 
-Hatches worden momenteel niet **geëxporteerd** naar DXF — gebruik het `.json`-formaat van [Export](../export/) om een hatch te behouden bij het opslaan van een tekening die er een bevat; het `.dxf`-formaat laat deze weg.
+Hatches worden momenteel niet **geëxporteerd** naar DXF — gebruik het `.json`-formaat van [Export Manager](../export-manager/) om een hatch te behouden bij het opslaan van een tekening die er een bevat; het `.dxf`-formaat laat deze weg.
 
 ## Gerelateerde commando's
 

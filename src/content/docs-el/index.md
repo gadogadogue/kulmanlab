@@ -110,7 +110,7 @@ order: 1
 | [New File](./commands/new-file/) | Ξεκινά ένα νέο κενό σχέδιο |
 | [File Manager](./commands/file-manager/) | Περιήγηση, μετονομασία ή διαγραφή σχεδίων αποθηκευμένων στο πρόγραμμα περιήγησης |
 | [Print Manager](./commands/print-manager/) | Εξάγει περιοχή σχεδίου ως εικόνα ή PDF |
-| [Export](./commands/export/) | Κατεβάζει το σχέδιο ως DXF ή JSON |
+| [Export Manager](./commands/export-manager/) | Κατεβάζει το σχέδιο ως DXF ή JSON |
 | [WipeStorage](./commands/wipestorage/) | Διαγράφει όλα τα σχέδια από την αποθήκευση του browser |
 
 ## Ανάκτηση

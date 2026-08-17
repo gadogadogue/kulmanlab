@@ -8,7 +8,7 @@ order: 6
 
 # Wipe Storage
 
-`wipestorage` komutu, tarayıcının yerel deposundaki tüm çizimleri ve kaydedilen verileri siler. İşlem **geri alınamaz** — kullanmadan önce önemli çizimleri [Export](../export/) ile kaydedin.
+`wipestorage` komutu, tarayıcının yerel deposundaki tüm çizimleri ve kaydedilen verileri siler. İşlem **geri alınamaz** — kullanmadan önce önemli çizimleri [Export Manager](../export-manager/) ile kaydedin.
 
 ## Depoyu Temizleme
 

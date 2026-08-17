@@ -26,7 +26,7 @@ Tiedosto tallennetaan automaattisesti selaimen tallennustilaan ja näkyy [File M
 
 ## Varoitus — tallentamaton työ hylätään
 
-**New File**-painikkeen napsauttaminen hylkää kaikki nykyisen piirtoalueen entiteetit ilman varoitusta. Jos haluat säilyttää nykyisen piirustuksen, [vie](../export/) se ensin.
+**New File**-painikkeen napsauttaminen hylkää kaikki nykyisen piirtoalueen entiteetit ilman varoitusta. Jos haluat säilyttää nykyisen piirustuksen, [vie](../export-manager/) se ensin.
 
 ## Milloin käyttää New Filea vs Importia
 
@@ -34,10 +34,10 @@ Tiedosto tallennetaan automaattisesti selaimen tallennustilaan ja näkyy [File M
 |-----------|-------------------|
 | Piirustuksen aloittaminen alusta | **New File** |
 | Olemassa olevan DXF- tai JSON-tiedoston avaaminen | [Import](../import/) |
-| Piirustuksen kopioiminen variaation työstämiseksi | [Vie](../export/) nykyinen tiedosto, [tuo](../import/) sitten kopio |
+| Piirustuksen kopioiminen variaation työstämiseksi | [Vie](../export-manager/) nykyinen tiedosto, [tuo](../import/) sitten kopio |
 
 ## Liittyvät komennot
 
 - [Import](../import/) — avaa olemassa oleva DXF- tai JSON-piirustus
-- [Export](../export/) — lataa piirustus ennen alusta aloittamista
+- [Export Manager](../export-manager/) — lataa piirustus ennen alusta aloittamista
 - [File Manager](../file-manager/) — palauta aiempi piirustus selaimen tallennustilasta

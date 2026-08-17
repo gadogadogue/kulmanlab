@@ -26,7 +26,7 @@ order: 2
 
 ## 경고 — 저장되지 않은 작업이 삭제됨
 
-**새 파일**을 클릭하면 경고 없이 현재 캔버스의 모든 객체가 삭제됩니다. 현재 도면을 보관하려면 먼저 [Export](../export/)하세요.
+**새 파일**을 클릭하면 경고 없이 현재 캔버스의 모든 객체가 삭제됩니다. 현재 도면을 보관하려면 먼저 [Export Manager](../export-manager/)하세요.
 
 ## 새 파일 vs 가져오기 — 언제 무엇을 사용할지
 
@@ -34,10 +34,10 @@ order: 2
 |------|----------|
 | 처음부터 도면 시작 | **새 파일** |
 | 기존 DXF 또는 JSON 파일 열기 | [Import](../import/) |
-| 변형을 작업하기 위해 도면 복사 | 현재 파일을 [Export](../export/)한 다음 복사본을 [Import](../import/) |
+| 변형을 작업하기 위해 도면 복사 | 현재 파일을 [Export Manager](../export-manager/)한 다음 복사본을 [Import](../import/) |
 
 ## 관련 명령어
 
 - [Import](../import/) — 기존 DXF 또는 JSON 도면 열기
-- [Export](../export/) — 새로 시작하기 전에 도면 다운로드
+- [Export Manager](../export-manager/) — 새로 시작하기 전에 도면 다운로드
 - [File Manager](../file-manager/) — 브라우저 저장소에서 이전 도면 복원

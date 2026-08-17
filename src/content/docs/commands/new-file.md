@@ -26,7 +26,7 @@ The file is saved to browser storage automatically and appears in the [File Mana
 
 ## Warning — unsaved work is discarded
 
-Clicking **New File** discards all entities on the current canvas without warning. If you want to keep the current drawing, [export](../export/) it first.
+Clicking **New File** discards all entities on the current canvas without warning. If you want to keep the current drawing, [export](../export-manager/) it first.
 
 ## When to use New File vs Import
 
@@ -34,10 +34,10 @@ Clicking **New File** discards all entities on the current canvas without warnin
 |-----------|-------------------|
 | Starting a drawing from scratch | **New File** |
 | Opening an existing DXF or JSON file | [Import](../import/) |
-| Copying a drawing to work on a variant | [Export](../export/) the current file, then [Import](../import/) the copy |
+| Copying a drawing to work on a variant | [Export Manager](../export-manager/) the current file, then [Import](../import/) the copy |
 
 ## Related commands
 
 - [Import](../import/) — open an existing DXF or JSON drawing
-- [Export](../export/) — download the drawing before starting fresh
+- [Export Manager](../export-manager/) — download the drawing before starting fresh
 - [File Manager](../file-manager/) — restore a previous drawing from browser storage

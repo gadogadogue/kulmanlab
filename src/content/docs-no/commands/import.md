@@ -54,7 +54,7 @@ Tegningen lagres automatisk til nettleserlagring (IndexedDB) etter import, slik 
 
 ## Hva som skjer med gjeldende tegning
 
-Import erstatter gjeldende lerret. Det finnes ingen sammenslåing eller tillegg. Hvis du har ulagrede endringer, [eksporter](../export/) gjeldende tegning først.
+Import erstatter gjeldende lerret. Det finnes ingen sammenslåing eller tillegg. Hvis du har ulagrede endringer, [eksporter](../export-manager/) gjeldende tegning først.
 
 ## Ved oppstart
 
@@ -70,6 +70,6 @@ KulmanLab åpner automatisk den sist redigerte filen på nytt når siden lastes 
 
 ## Relaterte kommandoer
 
-- [Export](../export/) — last ned gjeldende tegning som DXF eller JSON
+- [Export Manager](../export-manager/) — last ned gjeldende tegning som DXF eller JSON
 - [File Manager](../file-manager/) — bla gjennom og gjenopprett tegninger lagret i nettleseren
 - [New File](../new-file/) — start en tom tegning

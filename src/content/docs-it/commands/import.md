@@ -54,7 +54,7 @@ Il disegno viene automaticamente salvato nell'archivio del browser (IndexedDB) d
 
 ## Cosa succede al disegno corrente
 
-L'importazione sostituisce il canvas corrente. Non c'è unione o aggiunta. Se hai modifiche non salvate, [esporta](../export/) il disegno corrente prima.
+L'importazione sostituisce il canvas corrente. Non c'è unione o aggiunta. Se hai modifiche non salvate, [esporta](../export-manager/) il disegno corrente prima.
 
 ## All'avvio
 
@@ -70,6 +70,6 @@ KulmanLab riapre automaticamente il file più recentemente modificato quando la 
 
 ## Comandi correlati
 
-- [Export](../export/) — scarica il disegno corrente come DXF o JSON
+- [Export Manager](../export-manager/) — scarica il disegno corrente come DXF o JSON
 - [File Manager](../file-manager/) — sfoglia e ripristina i disegni salvati nel browser
 - [New File](../new-file/) — inizia un disegno vuoto

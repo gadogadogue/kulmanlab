@@ -54,7 +54,7 @@ KulmanLab은 다음 DXF 객체 유형을 파싱합니다:
 
 ## 현재 도면에 일어나는 일
 
-가져오기는 현재 캔버스를 대체합니다. 병합이나 추가가 없습니다. 저장되지 않은 변경 사항이 있으면 먼저 현재 도면을 [Export](../export/)하세요.
+가져오기는 현재 캔버스를 대체합니다. 병합이나 추가가 없습니다. 저장되지 않은 변경 사항이 있으면 먼저 현재 도면을 [Export Manager](../export-manager/)하세요.
 
 ## 시작 시
 
@@ -70,6 +70,6 @@ KulmanLab CAD는 페이지가 로드될 때 저장소에서 가장 최근에 편
 
 ## 관련 명령어
 
-- [Export](../export/) — 현재 도면을 DXF 또는 JSON으로 다운로드
+- [Export Manager](../export-manager/) — 현재 도면을 DXF 또는 JSON으로 다운로드
 - [File Manager](../file-manager/) — 브라우저에 저장된 도면 탐색 및 복원
 - [New File](../new-file/) — 빈 도면 시작

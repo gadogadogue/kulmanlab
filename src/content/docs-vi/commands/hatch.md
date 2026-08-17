@@ -105,7 +105,7 @@ Hatch được **nhập** từ các thực thể `HATCH`: KulmanLab đọc hình
 
 Các vòng bị giới hạn bởi spline được viết bởi các ứng dụng khác (loại cạnh viền DXF 4) chưa được đọc.
 
-Hatch hiện không **xuất** sang DXF — dùng định dạng `.json` của [Export](../export/) để giữ lại một hatch khi lưu bản vẽ có chứa nó; định dạng `.dxf` sẽ bỏ qua nó.
+Hatch hiện không **xuất** sang DXF — dùng định dạng `.json` của [Export Manager](../export-manager/) để giữ lại một hatch khi lưu bản vẽ có chứa nó; định dạng `.dxf` sẽ bỏ qua nó.
 
 ## Các Lệnh Liên Quan
 

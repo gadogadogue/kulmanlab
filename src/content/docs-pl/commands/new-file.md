@@ -26,7 +26,7 @@ Plik jest automatycznie zapisywany w pamięci przeglądarki, pojawia się w [Fil
 
 ## Ostrzeżenie — niezapisana praca zostanie odrzucona
 
-Kliknięcie **Nowy plik** odrzuca wszystkie elementy na bieżącym płótnie bez ostrzeżenia. Jeśli chcesz zachować bieżący rysunek, najpierw [Export](../export/) go.
+Kliknięcie **Nowy plik** odrzuca wszystkie elementy na bieżącym płótnie bez ostrzeżenia. Jeśli chcesz zachować bieżący rysunek, najpierw [Export Manager](../export-manager/) go.
 
 ## Kiedy używać Nowego pliku a Importu
 
@@ -34,10 +34,10 @@ Kliknięcie **Nowy plik** odrzuca wszystkie elementy na bieżącym płótnie bez
 |-----------|-------------------|
 | Rozpoczynanie rysunku od zera | **Nowy plik** |
 | Otwieranie istniejącego pliku DXF lub JSON | [Import](../import/) |
-| Kopiowanie rysunku do pracy nad wariantem | [Export](../export/) bieżący plik, następnie [Import](../import/) kopię |
+| Kopiowanie rysunku do pracy nad wariantem | [Export Manager](../export-manager/) bieżący plik, następnie [Import](../import/) kopię |
 
 ## Powiązane polecenia
 
 - [Import](../import/) — otwieranie istniejącego rysunku DXF lub JSON
-- [Export](../export/) — pobieranie rysunku przed rozpoczęciem od nowa
+- [Export Manager](../export-manager/) — pobieranie rysunku przed rozpoczęciem od nowa
 - [File Manager](../file-manager/) — przywracanie poprzedniego rysunku z pamięci przeglądarki

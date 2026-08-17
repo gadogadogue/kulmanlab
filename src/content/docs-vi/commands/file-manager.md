@@ -54,7 +54,7 @@ KulmanLab lưu bản vẽ vào **IndexedDB**, một cơ sở dữ liệu đượ
 - Mỗi trình duyệt và thiết bị có bộ lưu trữ độc lập riêng. Một bản vẽ được lưu trong Chrome trên một máy tính sẽ không xuất hiện trong Firefox, hay trên một máy khác.
 - Bộ lưu trữ này **có thể bị xóa mà không có cảnh báo** — do xóa dữ liệu trang web hoặc lịch sử duyệt web, hết dung lượng ổ đĩa, dùng cửa sổ riêng tư/ẩn danh, cài lại trình duyệt hoặc hệ điều hành, hoặc chuyển sang thiết bị khác. Không có trường hợp nào trong số này cho bạn cơ hội khôi phục lại những gì đã có.
 
-**Cách duy nhất đáng tin cậy để giữ an toàn cho một bản vẽ là [export](../export/) nó ra bộ nhớ riêng của bạn.** Dùng `.json` (định dạng gốc của KulmanLab) khi có thể — nó lưu giữ chính xác mọi thực thể; dùng `.dxf` khi bạn cần tương thích với các công cụ CAD khác. Hãy làm điều này với bất kỳ thứ gì bạn sẽ tiếc nếu mất, và trước khi xóa dữ liệu trình duyệt, chuyển trình duyệt hoặc thiết bị, hay cất máy đi một thời gian.
+**Cách duy nhất đáng tin cậy để giữ an toàn cho một bản vẽ là [export](../export-manager/) nó ra bộ nhớ riêng của bạn.** Dùng `.json` (định dạng gốc của KulmanLab) khi có thể — nó lưu giữ chính xác mọi thực thể; dùng `.dxf` khi bạn cần tương thích với các công cụ CAD khác. Hãy làm điều này với bất kỳ thứ gì bạn sẽ tiếc nếu mất, và trước khi xóa dữ liệu trình duyệt, chuyển trình duyệt hoặc thiết bị, hay cất máy đi một thời gian.
 
 ## Tự động tải tệp khi khởi động
 
@@ -73,7 +73,7 @@ Tệp mới và tệp được nhập vào nhận một tên đơn giản — kh
 ## Các lệnh liên quan
 
 - [Import](../import/) — tải một bản vẽ từ hệ thống tệp của bạn vào bộ nhớ trình duyệt
-- [Export](../export/) — tải một bản vẽ xuống hệ thống tệp của bạn
+- [Export Manager](../export-manager/) — tải một bản vẽ xuống hệ thống tệp của bạn
 - [New File](../new-file/) — bắt đầu một bản vẽ trắng (cũng được lưu tự động)
 - [WipeStorage](../wipestorage/) — xóa tất cả tệp đã lưu khỏi bộ nhớ trình duyệt
 </content>

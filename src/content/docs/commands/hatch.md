@@ -105,7 +105,7 @@ Hatches **import** from `HATCH` entities: KulmanLab reads the boundary geometry 
 
 Spline-bounded loops written by other applications (DXF boundary edge type 4) are not yet read.
 
-Hatches do not currently **export** to DXF — use [Export](../export/)'s `.json` format to keep a hatch when saving a drawing that includes one; the `.dxf` format leaves it out.
+Hatches do not currently **export** to DXF — use [Export Manager](../export-manager/)'s `.json` format to keep a hatch when saving a drawing that includes one; the `.dxf` format leaves it out.
 
 ## Related commands
 

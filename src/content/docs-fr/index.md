@@ -110,7 +110,7 @@ Bienvenue dans la référence des commandes **KulmanLab CAD**. [KulmanLab CAD](h
 | [New File](./commands/new-file/) | Démarre un nouveau dessin vierge |
 | [File Manager](./commands/file-manager/) | Parcourir, renommer ou supprimer les dessins enregistrés dans le navigateur |
 | [Print Manager](./commands/print-manager/) | Exporte une zone de dessin en image ou PDF |
-| [Export](./commands/export/) | Télécharge le dessin en DXF ou JSON |
+| [Export Manager](./commands/export-manager/) | Télécharge le dessin en DXF ou JSON |
 | [WipeStorage](./commands/wipestorage/) | Efface tous les dessins du stockage du navigateur |
 
 ## Récupération
