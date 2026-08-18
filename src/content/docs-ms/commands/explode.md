@@ -19,7 +19,7 @@ Dua cara untuk menjalankannya, corak yang sama seperti [Delete](../delete/):
 **Pilih dahulu, kemudian explode** — laluan paling pantas:
 
 1. Pilih satu atau lebih polyline pada kanvas.
-2. Taip `explode` dalam terminal, atau klik butang **Explode** pada bar alat (ikon bom pada panel Edit).
+2. Taip `explode` dalam terminal, atau klik butang **Explode** pada panel Edit.
 
 Polyline yang dipilih akan di-explode serta-merta — tiada langkah pengesahan berasingan, kerana sesuatu telah dipilih.
 

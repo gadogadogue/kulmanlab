@@ -40,7 +40,7 @@ Velkommen til **KulmanLab CAD**s kommandoreference. [KulmanLab CAD](https://kulm
 | [Trim](./commands/trim/) | Trim et linjesegment ved skæringspunkterne |
 | [Extend](./commands/extend/) | Forlæng en linje til nærmeste grænseskæring |
 | [Offset](./commands/offset/) | Lav en parallel kopi af en entitet i en given afstand |
-| [Fillet](./commands/fillet/) | Afrund et hjørne mellem to linjer med en tangentbue |
+| [Fillet](./commands/fillet/) | Afrund et hjørne mellem to linjer, buer eller polylinjesegmenter med en tangentbue |
 | [Chamfer](./commands/chamfer/) | Skær et lige diagonalt hjørne mellem to linjer eller polylinjer |
 | [Explode](./commands/explode/) | Opdeler en polylinje i dens individuelle linjer og buer |
 | [Undo](./commands/undo/) | Fortryd seneste handling |

@@ -106,7 +106,7 @@ Because a polyline is one entity, a crossing selection that touches any segment 
 
 ## Supported edit commands
 
-Polylines support every general transformation, plus offset, trim, extend, and chamfer — arc segments are fully supported by all of these except Chamfer, which only ever picks a **straight** segment (an arc segment can't be chamfered; use [Fillet](../fillet/)-style reasoning by hand, or trim it back first):
+Polylines support every general transformation, plus offset, trim, extend, fillet, and chamfer — arc segments are fully supported by all of these except Chamfer, which only ever picks a **straight** segment (an arc segment can't be chamfered — use [Fillet](../fillet/) instead, or trim it back first):
 
 | Command | What happens to the polyline |
 |---------|------------------------------|
@@ -118,11 +118,12 @@ Polylines support every general transformation, plus offset, trim, extend, and c
 | [Offset](../offset/) | Creates a parallel polyline at a fixed perpendicular distance — arc segments offset to a new radius, same as a standalone [Arc](../arc/) |
 | [Trim](../trim/) | Removes the portion of the polyline between two intersection points, straight or arc segments alike |
 | [Extend](../extend/) | Stretches the polyline's first or last segment to the next boundary — an arc terminal segment grows along its own circle |
+| [Fillet](../fillet/) | Rounds a corner between two **adjacent** segments, straight or arc, with a tangent arc folded into the polyline as a new bulge segment |
 | [Chamfer](../chamfer/) | Bevels a corner between two **adjacent straight** segments only; an arc segment at that corner is skipped when picking |
 | [Delete](../delete/) | Removes the polyline from the drawing |
 | [Explode](../explode/) | Breaks the polyline apart into standalone Line and Arc entities, one per segment |
 
-Fillet does not support polylines at all — pick the individual [Line](../line/) entities instead, or use an arc segment drawn directly with the Arc option above.
+Filleting one of a polyline's segments against something other than its own neighboring segment doesn't stay a simple in-place edit — see [Fillet](../fillet/) for what results (merged into a single new polyline, joined by the fillet arc).
 
 ## Properties
 

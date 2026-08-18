@@ -77,4 +77,4 @@ Den infogade linjen ärver de aktuella inställningarna för linjevikt, färg, l
 | Hörntyp | Rakt snitt | Rundad båge |
 | Inmatning | Två avstånd (d1, d2) | En radie |
 | Infogad entitet | Line | Arc |
-| Entiteter som stöds | Linjer och Polylines | Endast linjer |
+| Entiteter som stöds | Linjer och Polylines (endast raka segment) | Linjer, Arcs och Polylines (raka eller bågsegment) |

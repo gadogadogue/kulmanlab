@@ -39,7 +39,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 | [Trim](./commands/trim/) | Trim a line segment at its intersections |
 | [Extend](./commands/extend/) | Extend a line to the nearest boundary intersection |
 | [Offset](./commands/offset/) | Create a parallel copy of an entity at a given distance |
-| [Fillet](./commands/fillet/) | Round a corner between two lines with a tangent arc |
+| [Fillet](./commands/fillet/) | Round a corner between two lines, arcs, or polyline segments with a tangent arc |
 | [Chamfer](./commands/chamfer/) | Cut a straight diagonal corner between two lines or polylines |
 | [Explode](./commands/explode/) | Break a polyline into its individual line and arc entities |
 | [Undo](./commands/undo/) | Undo the last action |

@@ -19,7 +19,7 @@ Zwei Wege, dasselbe Muster wie bei [Delete](../delete/):
 **Vorauswahl, dann explodieren** — der schnellste Weg:
 
 1. Eine oder mehrere Polylinien auf der Zeichenfläche auswählen.
-2. `explode` im Terminal eingeben oder auf die Schaltfläche **Explode** in der Symbolleiste klicken (das Bomben-Symbol im Edit-Panel).
+2. `explode` im Terminal eingeben oder auf die Schaltfläche **Explode** im Edit-Panel klicken.
 
 Die ausgewählten Polylinien werden sofort explodiert — kein separater Bestätigungsschritt, da bereits etwas ausgewählt ist.
 

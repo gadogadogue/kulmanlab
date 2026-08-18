@@ -39,7 +39,7 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [Trim](./commands/trim/) | Potong segmen garis pada persilangannya |
 | [Extend](./commands/extend/) | Panjangkan garis ke persimpangan sempadan terdekat |
 | [Offset](./commands/offset/) | Cipta salinan selari entiti pada jarak tertentu |
-| [Fillet](./commands/fillet/) | Bundarkan sudut antara dua garis dengan lengkok tangen |
+| [Fillet](./commands/fillet/) | Bundarkan sudut antara dua garis, lengkok, atau segmen poliline dengan lengkok tangen |
 | [Chamfer](./commands/chamfer/) | Potong sudut pepenjuru lurus antara dua garis atau poliline |
 | [Explode](./commands/explode/) | Memecahkan poliline kepada garis dan lengkok individu |
 | [Undo](./commands/undo/) | Batal tindakan terakhir |

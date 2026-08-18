@@ -708,7 +708,7 @@ The inserted line inherits the current lineweight, color, layer, and linetype se
 | Corner type | Straight cut | Rounded arc |
 | Input | Two distances (d1, d2) | One radius |
 | Inserted entity | Line | Arc |
-| Supported entities | Lines and Polylines | Lines only |
+| Supported entities | Line and Polyline (straight segments only) | Line, Arc, and Polyline (straight or arc segments) |
 
 ---
 
@@ -1484,6 +1484,61 @@ Ellipses are saved as `ELLIPSE` entities in the DXF file. The format stores the 
 
 ---
 
+# Explode
+
+The `explode` command breaks a [Polyline](./polyline) into its separate [Line](./line) and [Arc](./arc) entities — one per segment, exactly where the polyline's own vertices were. The pieces take the polyline's place and keep its lineweight, color, layer, and linetype.
+
+Explode works on **Polyline** entities only.
+
+## Using explode
+
+Two ways to run it, the same pattern as [Delete](./delete):
+
+**Select first, then explode** — the fastest path:
+
+1. Select one or more polylines on the canvas.
+2. Type `explode` in the terminal, or click the **Explode** button in the Edit panel.
+
+The selected polylines explode immediately — no separate confirmation step, since something is already selected.
+
+**Activate, then select**:
+
+1. Type `explode` or click the toolbar button with nothing selected.
+2. **Select polylines** — click to toggle, or drag to select by area.
+3. Press **Enter** or **Space** to confirm and explode the selected polylines.
+
+Only polylines are picked during selection — clicking a Line, Circle, or any other entity does nothing, and an area drag ignores everything except polylines inside or crossing its boundary.
+
+## What you get
+
+Each segment of the polyline becomes its own entity:
+
+- A **straight segment** becomes a **Line**.
+- An **arc segment** (from Polyline's [Arc option](./polyline)) becomes an **Arc**, matching the original curve's center, radius, and sweep exactly.
+
+Each resulting Line and Arc inherits the source polyline's **lineweight, color, layer, linetype, and linetype scale** — nothing about the geometry's appearance changes, it's just now several independent entities instead of one connected polyline.
+
+Explode can be undone in one step with [Undo](./undo), like any other edit.
+
+## Selection during the command
+
+| Method | Behaviour |
+|--------|-----------|
+| **Click** | Toggles the polyline under the cursor in/out of the selection; clicking a non-polyline entity does nothing |
+| **Drag right** (strict) | Selects only polylines fully inside the box |
+| **Drag left** (crossing) | Selects polylines that cross the box boundary |
+| **Enter** / **Space** | Confirms and explodes the selected polylines |
+
+## Supported entities
+
+| Entity | Supported |
+|--------|-----------|
+| Polyline / Rectangle | Yes |
+| Line, Arc, Circle, Ellipse | No — nothing to explode |
+| Text, Spline, Dimension, Leader, Hatch | No |
+
+---
+
 # Export
 
 The **Export** command downloads the current drawing to your file system. Two formats are available: **DXF** for compatibility with other CAD tools and **JSON** for full-fidelity saves within KulmanLab CAD.
@@ -1681,17 +1736,17 @@ New and imported files get a **plain name — no timestamp is baked in**. If tha
 
 # Fillet
 
-The `fillet` command rounds the corner between two [Line](./line) entities by inserting a tangent arc of a given radius and trimming each line back to the point where the arc begins. The result is a smooth, radiused corner connecting both lines.
+The `fillet` command rounds the corner between two [Line](./line), [Arc](./arc), or [Polyline](./polyline) segments by inserting a tangent arc of a given radius, and trims (or merges) the selected entities to that point.
 
-Fillet works on **Line entities only**.
+Fillet works on **Line, Arc, and Polyline** entities — including a polyline's own straight or arc segments.
 
 ## Using fillet
 
 1. Type `fillet` in the terminal or click the **Fillet** toolbar button.
 2. **Type the fillet radius** and press **Enter**.
-3. **Click the first line** — the portion you click determines which side of any intersection is kept.
-4. **Hover over the second line** — a dashed arc preview shows the resulting fillet. Move the cursor to the side you want to keep.
-5. **Click** to apply. Both lines are trimmed and the arc is inserted.
+3. **Click the first line, arc, or polyline segment** — the portion you click determines which side of any intersection is kept.
+4. **Hover over the second entity** — a dashed arc preview shows the resulting fillet. Move the cursor to the side you want to keep.
+5. **Click** to apply.
 
 ```
   Before:                     After fillet (radius r):
@@ -1701,20 +1756,26 @@ Fillet works on **Line entities only**.
                 │
 ```
 
-## Side selection for intersecting lines
+## Side selection for intersecting entities
 
-When two lines cross each other, the fillet is applied on the corner defined by the click positions — the portion of each line on the **same side as the cursor** is kept.
+When two entities cross each other, the fillet is applied on the corner defined by the click positions — the portion of each entity on the **same side as the cursor** is kept.
 
-- Click near one end of the first line to select that half.
-- Move the cursor to the desired half of the second line — the dashed preview updates live.
+- Click near one end of the first entity to select that half.
+- Move the cursor to the desired half of the second entity — the dashed preview updates live.
 
 ## What the command creates
 
-- The first line's endpoint nearest to the intersection is moved to the tangent point **T1**.
-- The second line's endpoint nearest to the intersection is moved to the tangent point **T2**.
-- A new Arc entity is inserted from **T1** to **T2**, tangent to both lines.
+The result depends on what you selected:
 
-The inserted arc inherits the current lineweight, color, layer, and linetype settings.
+- **Two independent Line/Arc entities**, or any pair that doesn't include an open polyline: both are trimmed to the tangent points **T1**/**T2**, and a new Arc entity is inserted between them.
+- **Two segments of the same polyline that share a corner vertex**: no new entity — the fillet becomes part of the polyline itself. The corner vertex is replaced by two tangent points, and the arc between them is stored as that edge's bulge value — exactly how a rounded polyline corner round-trips through DXF.
+- **Every other case involving an open polyline** — two different open polylines, or an open polyline and an independent Line/Arc: both are merged into **one new polyline**, with each side kept to its tangent point and the fillet arc added as an extra bulge segment, replacing the original entities.
+
+The inserted or extended arc inherits the current lineweight, color, layer, and linetype settings (or, when it merges into a polyline, the polyline's own settings).
+
+## Corners with no real angle to round
+
+If the two selected segments already meet tangentially at a shared vertex — a straight polyline corner, or a line that smoothly becomes a tangent-continuation arc segment — there is no real corner for any circle to round. Fillet detects this and refuses rather than producing a degenerate loop, showing `cannot fillet: no tangent circle fits there`.
 
 ## Keyboard reference
 
@@ -1722,15 +1783,17 @@ The inserted arc inherits the current lineweight, color, layer, and linetype set
 |-----|--------|
 | `0`–`9`, `.` | Append digit to the radius value |
 | `Backspace` | Delete last typed character |
-| `Enter` | Confirm the typed radius and move to line selection |
+| `Enter` / `Space` | Confirm the typed radius and move to entity selection |
 | `Escape` | Cancel and reset |
 
 ## Supported entities
 
 | Entity | Supported |
 |--------|-----------|
-| Line | Yes — as both first and second entity |
-| Arc, Circle, Ellipse, Polyline | No |
+| Line | Yes |
+| Arc | Yes |
+| Polyline (straight or arc segment) | Yes |
+| Circle, Ellipse | No |
 | Text, Spline, Dimension, Leader | No |
 
 ## Fillet vs Chamfer
@@ -1740,7 +1803,7 @@ The inserted arc inherits the current lineweight, color, layer, and linetype set
 | Corner type | Rounded arc | Straight cut |
 | Input | One radius | Two distances (d1, d2) |
 | Inserted entity | Arc | Line |
-| Supported entities | Lines only | Lines and Polylines |
+| Supported entities | Line, Arc, and Polyline (straight or arc segments) | Line and Polyline (straight segments only) |
 
 ---
 
@@ -2948,7 +3011,7 @@ Because a polyline is one entity, a crossing selection that touches any segment 
 
 ## Supported edit commands
 
-Polylines support every general transformation, plus offset, trim, extend, and chamfer — arc segments are fully supported by all of these except Chamfer, which only ever picks a **straight** segment:
+Polylines support every general transformation, plus offset, trim, extend, chamfer, and fillet — arc segments are fully supported by all of these except Chamfer, which only ever picks a **straight** segment:
 
 | Command | What happens to the polyline |
 |---------|------------------------------|
@@ -2961,9 +3024,9 @@ Polylines support every general transformation, plus offset, trim, extend, and c
 | [Trim](./trim) | Removes the portion between two intersection points, straight or arc segments alike |
 | [Extend](./extend) | Stretches the first or last segment to the next boundary — an arc terminal segment grows along its own circle |
 | [Chamfer](./chamfer) | Bevels a corner between two adjacent **straight** segments; an arc segment at that corner is skipped when picking |
+| [Fillet](./fillet) | Rounds the corner between two adjacent segments (straight or arc) of the same polyline as a tangent-arc bulge; filleting across another open polyline or an independent Line/Arc merges both into a new polyline |
+| [Explode](./explode) | Breaks the polyline into independent Line and Arc entities, one per segment |
 | [Delete](./delete) | Removes the polyline from the drawing |
-
-Fillet does not support polylines at all.
 
 ## Properties
 
@@ -3081,7 +3144,7 @@ The `rectangle` command draws an axis-aligned rectangle defined by two opposite 
 
 1. Type `rectangle` in the terminal or click the **Rectangle** toolbar button.
 2. **Click the first corner**.
-3. **Click the opposite corner** — the rectangle is placed instantly and the command exits.
+3. **Click the opposite corner** — the rectangle is placed instantly and the command exits. See [Dimension entry](#dimension-entry) below to type an exact width/height instead.
 
 ```
   ● (first click)────────────┐
@@ -3095,13 +3158,27 @@ The two clicks can be any pair of diagonally opposite corners — top-left + bot
 
 Press **Escape** after the first click to cancel. There is nothing to cancel before the first click is placed.
 
+## Dimension entry
+
+At any point after the first corner is placed, press **D** to type the rectangle's exact width and height instead of freely picking the opposite corner:
+
+1. **Type the width** and press **Enter**.
+2. **Type the height** and press **Enter**.
+3. Move the cursor — the rectangle is now pinned to the first corner at the typed size, with only the direction it extends toward the cursor's quadrant changing.
+4. **Click** to place the rectangle in that direction.
+
+Pressing **D** again at the direction-pick step brings the typed width/height back pre-filled and editable, so values can be corrected before picking a direction.
+
+The typed width and height are **remembered** and appear pre-filled the next time Dimension entry is used.
+
 ## Keyboard reference
 
 | Key | Action |
 |-----|--------|
+| `D` | Enter Dimension entry mode (after the first corner is placed), or re-edit the typed values at the direction-pick step |
 | `Escape` | Cancel after first corner is placed |
 
-No angle locking or length input — the sides are always horizontal and vertical by definition.
+No angle locking — the sides are always horizontal and vertical by definition.
 
 ## Grip editing — reshaping after creation
 

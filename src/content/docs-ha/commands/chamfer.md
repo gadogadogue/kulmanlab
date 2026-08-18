@@ -77,4 +77,4 @@ Layin da aka sanya yana gado nauyin layi, launi, layer, da saitunan nauʼin layi
 | Nauʼin kusurwa | Yankewa madaidaiciya | Baka mai zagaye |
 | Shigarwa | Nisa biyu (d1, d2) | Radius ɗaya |
 | Abu da aka sanya | Line | Arc |
-| Abubuwan da ake goyon baya | Lines da Polylines | Lines kaɗai |
+| Abubuwan da ake goyon baya | Line da Polyline (sassa madaidaita kaɗai) | Line, Arc, da Polyline (sashi madaidaici ko na baka) |

@@ -94,7 +94,7 @@ Eftersom en polyline är en enda entitet markerar en korsande markering som ber�
 
 ## Kommandon som stöds för redigering
 
-Polylinjer stöder varje allmän transformation, plus offset, trim, extend och chamfer (för chamfer räknas endast raka segment):
+Polylinjer stöder varje allmän transformation, plus offset, trim, extend, fillet och chamfer (för chamfer räknas endast raka segment):
 
 | Kommando | Vad som händer med polylinjen |
 |---------|------------------------------|
@@ -106,11 +106,12 @@ Polylinjer stöder varje allmän transformation, plus offset, trim, extend och c
 | [Offset](../offset/) | Skapar en parallell polyline på ett fast vinkelrätt avstånd |
 | [Trim](../trim/) | Tar bort delen mellan två skärningspunkter, raka och bågsegment lika |
 | [Extend](../extend/) | Förlänger det första eller sista segmentet till nästa gräns |
+| [Fillet](../fillet/) | Rundar ett hörn mellan två **intilliggande** segment, raka eller bågar, med en tangentiell båge som infogas i polylinjen som ett nytt bulge-segment |
 | [Chamfer](../chamfer/) | Fasar ett hörn mellan två intilliggande raka segment |
 | [Explode](../explode/) | Delar upp polylinjen i fristående linje- och bågentiteter, en per segment |
 | [Delete](../delete/) | Tar bort polylinjen från ritningen |
 
-Fillet stöder inte polylinjer alls.
+Att filleta ett polylinjesegment mot något annat än sitt eget grannsegment förblir inte en enkel redigering på plats — se [Fillet](../fillet/) för resultatet (sammanslagning till en enda ny polylinje, sammanlänkad av fillet-bågen).
 
 ## Egenskaper
 

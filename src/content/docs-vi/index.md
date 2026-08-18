@@ -39,7 +39,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 | [Trim](./commands/trim/) | Cắt đoạn đường thẳng tại các giao điểm |
 | [Extend](./commands/extend/) | Kéo dài đường thẳng đến giao điểm ranh giới gần nhất |
 | [Offset](./commands/offset/) | Tạo bản sao song song của đối tượng ở khoảng cách cho trước |
-| [Fillet](./commands/fillet/) | Bo góc giữa hai đường thẳng bằng cung tiếp tuyến |
+| [Fillet](./commands/fillet/) | Bo góc giữa hai đường thẳng, cung hoặc đoạn polyline bằng cung tiếp tuyến |
 | [Chamfer](./commands/chamfer/) | Vát góc thẳng giữa hai đường thẳng hoặc đường đa đoạn |
 | [Explode](./commands/explode/) | Tách một đường đa đoạn thành các đoạn thẳng và cung riêng lẻ |
 | [Undo](./commands/undo/) | Hoàn tác thao tác vừa thực hiện |

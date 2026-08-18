@@ -77,4 +77,4 @@ Wstawiona linia dziedziczy bieżące ustawienia grubości linii, koloru, warstwy
 | Typ narożnika | Proste cięcie | Zaokrąglony łuk |
 | Wejście | Dwie odległości (d1, d2) | Jeden promień |
 | Wstawiony element | Linia | Łuk |
-| Obsługiwane elementy | Linie i Polilinie | Tylko linie |
+| Obsługiwane elementy | Linie i Polilinie (tylko segmenty proste) | Linie, Łuki i Polilinie (segmenty proste lub łukowe) |

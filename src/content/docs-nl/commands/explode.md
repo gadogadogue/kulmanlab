@@ -19,7 +19,7 @@ Twee manieren om het uit te voeren, hetzelfde patroon als [Delete](../delete/):
 **Eerst selecteren, dan exploderen** — de snelste weg:
 
 1. Selecteer één of meer polylijnen op het canvas.
-2. Typ `explode` in de terminal, of klik op de werkbalkknop **Explode** (het bomicoontje in het Edit-paneel).
+2. Typ `explode` in de terminal, of klik op de knop **Explode** in het Edit-paneel.
 
 De geselecteerde polylijnen worden direct geëxplodeerd — geen aparte bevestigingsstap, omdat er al iets geselecteerd is.
 

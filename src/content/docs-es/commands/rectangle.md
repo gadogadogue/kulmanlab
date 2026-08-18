@@ -14,7 +14,7 @@ El comando `rectangle` dibuja un rectángulo con ejes alineados definido por dos
 
 1. Escribe `rectangle` en el terminal o haz clic en el botón de la barra de herramientas **Rectangle**.
 2. **Haz clic en la primera esquina**, o escribe `X,Y` y pulsa **Enter** para una coordenada exacta.
-3. **Haz clic en la esquina opuesta** — el rectángulo se coloca instantáneamente y el comando termina. La entrada de coordenadas también funciona aquí.
+3. **Haz clic en la esquina opuesta** — el rectángulo se coloca instantáneamente y el comando termina. La entrada de coordenadas también funciona aquí. O presiona `D` en su lugar para escribir un ancho y alto exactos — consulta [Entrada de dimensiones](#entrada-de-dimensiones) más abajo.
 
 ```
   ● (primer clic)─────────────┐
@@ -36,13 +36,27 @@ En cualquier paso de esquina puedes escribir una posición exacta:
 3. Escribe el valor Y.
 4. Pulsa **Enter** para colocar la esquina.
 
+## Entrada de dimensiones
+
+En lugar de hacer clic en una segunda esquina, presiona `D` justo después de la primera esquina para cambiar a la entrada escrita de ancho × alto:
+
+1. **Escribe el ancho** y presiona **Enter**.
+2. **Escribe el alto** y presiona **Enter** — el indicador ahora te pide elegir una dirección para el rectángulo.
+3. **Mueve el cursor** alrededor de la primera esquina — el rectángulo se previsualiza en vivo en el cuadrante (arriba-izquierda, arriba-derecha, abajo-izquierda, abajo-derecha) sobre el que se encuentra el cursor.
+4. **Haz clic** para colocarlo en esa dirección.
+
+Presiona `D` de nuevo en el paso de elegir dirección para volver a escribir el ancho y el alto, precargados con lo que acabas de escribir.
+
+El ancho y el alto se recuerdan del último rectángulo que dimensionaste: en cualquiera de los dos indicadores, el valor anterior aparece precargado y listo para confirmarse con **Enter**, o simplemente puedes empezar a escribir para reemplazarlo con un nuevo número.
+
 ## Referencia de teclado
 
 | Tecla | Acción |
 |-------|--------|
-| `0`–`9`, `.`, `-` | Comenzar entrada de coordenada X |
+| `0`–`9`, `.`, `-` | Comenzar entrada de coordenada X, o (en modo Entrada de dimensiones) el campo de ancho/alto |
 | `,` | Fijar X y pasar a entrada Y |
-| `Enter` | Confirmar coordenada escrita |
+| `D` | Después de la primera esquina, cambiar a Entrada de dimensiones; en el paso de dirección, volver a escribir ancho/alto |
+| `Enter` | Confirmar la coordenada, ancho o alto escrito |
 | `Escape` | Cancelar |
 
 Los lados son siempre horizontales y verticales — no hay bloqueo de ángulo para el comando rectangle.

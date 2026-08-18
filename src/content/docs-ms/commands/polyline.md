@@ -94,7 +94,7 @@ Kerana poliline adalah satu entiti, pemilihan silang yang menyentuh mana-mana se
 
 ## Arahan edit yang disokong
 
-Poliline menyokong setiap transformasi umum, ditambah offset, trim, extend, dan chamfer (untuk chamfer hanya segmen lurus dikira):
+Poliline menyokong setiap transformasi umum, ditambah offset, trim, extend, fillet, dan chamfer (untuk chamfer hanya segmen lurus dikira):
 
 | Arahan | Apa yang berlaku pada poliline |
 |--------|---------------------------------|
@@ -106,11 +106,12 @@ Poliline menyokong setiap transformasi umum, ditambah offset, trim, extend, dan 
 | [Offset](../offset/) | Mencipta poliline selari pada jarak tegak lurus tetap |
 | [Trim](../trim/) | Membuang bahagian antara dua persilangan, sama ada segmen lurus atau lengkok |
 | [Extend](../extend/) | Memanjangkan segmen pertama atau terakhir ke sempadan seterusnya |
+| [Fillet](../fillet/) | Membundarkan sudut antara dua segmen **bersebelahan**, lurus atau lengkok, dengan lengkok tangen yang dimasukkan ke poliline sebagai segmen bulge baharu |
 | [Chamfer](../chamfer/) | Memberkas sudut antara dua segmen lurus bersebelahan |
 | [Explode](../explode/) | Memecahkan poliline kepada entiti garis dan lengkok berasingan, satu bagi setiap segmen |
 | [Delete](../delete/) | Membuang poliline daripada lukisan |
 
-Fillet langsung tidak menyokong poliline.
+Melakukan fillet pada segmen poliline terhadap sesuatu selain segmen jirannya sendiri tidak lagi kekal sebagai edit ringkas di tempatnya — lihat [Fillet](../fillet/) untuk hasilnya (penggabungan menjadi satu poliline baharu, disatukan oleh lengkok fillet).
 
 ## Sifat
 

@@ -57,7 +57,7 @@ KulmanLab provides a full set of 2D drawing commands accessible via the toolbar,
 |------|-------------|
 | **Line** | Draw individual line segments. Click to set start and end points. Chainable into connected sequences. |
 | **Polyline** | Create multi-segment paths as a single LWPolyline entity. Supports open and closed paths, plus AutoCAD-style tangent arc segments via an `Arc` toggle (press A) mixed freely with straight ones. |
-| **Rectangle** | Draw an axis-aligned rectangle by two corner points. Stored as a closed LWPolyline. |
+| **Rectangle** | Draw an axis-aligned rectangle by two corner points (typed as `X,Y` or clicked), or press `D` after the first corner to switch to typed width × height entry — move the cursor to pick which of the four quadrants the rectangle extends into, then click to place it. The last-entered width/height is remembered as the default next time. Stored as a closed LWPolyline. |
 | **Circle** | Define by center point and radius. Supports typed numeric radius input. |
 | **Arc** | Draw a circular arc through three points on the circumference. |
 | **Ellipse** | Define by center, major axis endpoint, and minor-to-major ratio. Supports partial ellipses. |
@@ -93,9 +93,10 @@ Patterns come from a shared library managed by **Hatch Manager**: built-in defau
 | **Offset** | Line, Circle, Arc, Ellipse, Polyline | Create a parallel copy at a specified distance. |
 | **Trim** | Line, Arc, Circle, Ellipse, Polyline | Remove the portion of an entity between two intersection points. |
 | **Extend** | Line, Arc, Ellipse, Polyline | Stretch an entity's endpoint to reach a boundary. |
-| **Fillet** | Line to line | Round a sharp corner between two lines with an arc. |
+| **Fillet** | Line, Arc, Polyline (straight or arc segments) | Round a corner with a tangent arc of a specified radius. Rounding two segments of the same polyline folds the arc into it in place; filleting anything involving an open polyline instead merges both sides into a single new polyline joined by the fillet arc. Already-tangent corners (no real angle to round) are rejected. |
 | **Chamfer** | Line and Polyline (straight segments) | Bevel a corner with a straight cut. On a Polyline, both picks must be true adjacent neighbor segments. |
 | **Delete** | All entities | Remove selected objects from the drawing. |
+| **Explode** | Polyline | Break a polyline into its individual Line and Arc entities, one per segment, in place. |
 | **Match Properties** | All entities | Copy color, layer, linetype, and lineweight from one entity to others. |
 
 ---
@@ -304,7 +305,7 @@ KulmanLab is focused on 2D drafting. The following are outside its current scope
 | Paper space / multiple layouts | Single model space only |
 | Associative dimensions | Dimensions are static; not linked to geometry |
 | Attributes (ATTRIB / ATTDEF) | Not supported |
-| Fillet / chamfer on non-line entities | Lines only |
+| Chamfer on arcs or curved polyline segments | Not supported — Chamfer is line/straight-segment only; Fillet handles arcs and curved segments |
 | Mobile / touchscreen use | Desktop browsers only |
 | Collaborative real-time editing | Not supported |
 | Cloud storage or sync | Drawings are local to your browser |

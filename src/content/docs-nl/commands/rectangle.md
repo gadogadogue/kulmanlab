@@ -14,7 +14,7 @@ Het `rectangle`-commando tekent een aslijn-uitgelijnde rechthoek, gedefinieerd d
 
 1. Typ `rectangle` in de terminal of klik op de **Rectangle**-werkbalkknop.
 2. **Klik de eerste hoek** aan, of typ `X,Y` en druk op **Enter** voor een exacte coördinaat.
-3. **Klik de tegenoverliggende hoek** aan — de rechthoek wordt direct geplaatst en het commando sluit af. Coördinaatinvoer werkt hier ook.
+3. **Klik de tegenoverliggende hoek** aan — de rechthoek wordt direct geplaatst en het commando sluit af. Coördinaatinvoer werkt hier ook. Of druk in plaats daarvan op `D` om een exacte breedte en hoogte te typen — zie [Afmetingeninvoer](#afmetingeninvoer) hieronder.
 
 ```
   ● (eerste klik)────────────┐
@@ -35,13 +35,27 @@ Bij elke hoekstap kunt u een exacte positie typen:
 3. Typ de Y-waarde.
 4. Druk op **Enter** om de hoek te plaatsen.
 
+## Afmetingeninvoer
+
+In plaats van een tweede hoek aan te klikken, drukt u direct na de eerste hoek op `D` om over te schakelen naar getypte breedte-×-hoogte-invoer:
+
+1. **Typ de breedte** en druk op **Enter**.
+2. **Typ de hoogte** en druk op **Enter** — de prompt vraagt nu om een richting voor de rechthoek te kiezen.
+3. **Beweeg de cursor** rond de eerste hoek — de rechthoek wordt live in het kwadrant getoond (linksboven, rechtsboven, linksonder, rechtsonder) waar de cursor zich boven bevindt.
+4. **Klik** om hem in die richting te plaatsen.
+
+Druk bij de richtingsstap opnieuw op `D` om de breedte en hoogte opnieuw in te voeren, vooraf ingevuld met wat u zojuist heeft getypt.
+
+De breedte en hoogte worden onthouden van de laatst bemaatte rechthoek: bij beide prompts verschijnt de vorige waarde vooraf ingevuld en klaar om te bevestigen met **Enter**, of u kunt gewoon beginnen met typen om deze door een nieuw getal te vervangen.
+
 ## Toetsenbordreferentie
 
 | Toets | Actie |
 |-----|--------|
-| `0`–`9`, `.`, `-` | Start X-coördinaatinvoer |
+| `0`–`9`, `.`, `-` | Start X-coördinaatinvoer, of (in Afmetingeninvoer-modus) het breedte-/hoogteveld |
 | `,` | Vergrendel X en ga naar Y-invoer |
-| `Enter` | Bevestig getypte coördinaat |
+| `D` | Na de eerste hoek: schakel naar Afmetingeninvoer; bij de richtingsstap: breedte/hoogte opnieuw invoeren |
+| `Enter` | Bevestig getypte coördinaat, breedte of hoogte |
 | `Escape` | Annuleren |
 
 De zijden zijn altijd horizontaal en verticaal — er is geen hoekvergrendeling voor het rectangle-commando.

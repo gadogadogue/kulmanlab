@@ -40,7 +40,7 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 | [Trim](./commands/trim/) | Leikkaa viivasegmentti leikkauspisteistä |
 | [Extend](./commands/extend/) | Jatka viivaa lähimpään rajaleikkaukseen |
 | [Offset](./commands/offset/) | Luo rinnakkainen kopio entiteetistä annetulla etäisyydellä |
-| [Fillet](./commands/fillet/) | Pyöristä kulma kahden viivan välillä tangenttikaarella |
+| [Fillet](./commands/fillet/) | Pyöristä kulma kahden viivan, kaaren tai polylinjan segmentin välillä tangenttikaarella |
 | [Chamfer](./commands/chamfer/) | Leikkaa suora diagonaalikulma kahden viivan tai murtoviivan välille |
 | [Explode](./commands/explode/) | Pilkkoo polylinen sen yksittäisiin viivoihin ja kaariin |
 | [Undo](./commands/undo/) | Kumoa viimeisin toiminto |

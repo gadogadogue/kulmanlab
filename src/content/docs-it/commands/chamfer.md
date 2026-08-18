@@ -77,4 +77,4 @@ La linea inserita eredita le impostazioni correnti di peso linea, colore, layer 
 | Tipo angolo | Taglio retto | Arco arrotondato |
 | Input | Due distanze (d1, d2) | Un raggio |
 | Entità inserita | Line | Arc |
-| Entità supportate | Line e Polyline | Solo Line |
+| Entità supportate | Line e Polyline (solo segmenti dritti) | Line, Arc e Polyline (segmenti dritti o ad arco) |

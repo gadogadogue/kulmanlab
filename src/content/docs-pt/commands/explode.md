@@ -19,7 +19,7 @@ Duas formas de executá-lo, o mesmo padrão de [Delete](../delete/):
 **Selecione primeiro, depois explode** — o caminho mais rápido:
 
 1. Selecione uma ou mais polilinhas no canvas.
-2. Digite `explode` no terminal, ou clique no botão **Explode** da barra de ferramentas (o ícone de bomba no painel Edit).
+2. Digite `explode` no terminal, ou clique no botão **Explode** no painel Edit.
 
 As polilinhas selecionadas são explodidas instantaneamente — sem etapa de confirmação separada, já que algo já está selecionado.
 

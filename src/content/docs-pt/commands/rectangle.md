@@ -14,7 +14,7 @@ O comando `rectangle` desenha um retângulo alinhado aos eixos definido por dois
 
 1. Digite `rectangle` no terminal ou clique no botão **Rectangle** na barra de ferramentas.
 2. **Clique no primeiro canto**, ou digite `X,Y` e pressione **Enter** para uma coordenada exata.
-3. **Clique no canto oposto** — o retângulo é posicionado instantaneamente e o comando encerra. A entrada de coordenadas também funciona aqui.
+3. **Clique no canto oposto** — o retângulo é posicionado instantaneamente e o comando encerra. A entrada de coordenadas também funciona aqui. Ou pressione `D` para digitar uma largura e altura exatas — veja [Entrada de dimensões](#entrada-de-dimensões) abaixo.
 
 ```
   ● (primeiro clique)──────────────────┐
@@ -35,13 +35,27 @@ Em qualquer etapa dos cantos você pode digitar uma posição exata:
 3. Digite o valor Y.
 4. Pressione **Enter** para posicionar o canto.
 
+## Entrada de dimensões
+
+Em vez de clicar em um segundo canto, pressione `D` logo após o primeiro canto para mudar para a entrada digitada de largura × altura:
+
+1. **Digite a largura** e pressione **Enter**.
+2. **Digite a altura** e pressione **Enter** — o prompt agora pede para escolher uma direção para o retângulo.
+3. **Mova o cursor** ao redor do primeiro canto — o retângulo é pré-visualizado ao vivo no quadrante (superior-esquerdo, superior-direito, inferior-esquerdo, inferior-direito) em que o cursor está.
+4. **Clique** para posicioná-lo nessa direção.
+
+Pressione `D` novamente na etapa de escolha de direção para redigitar a largura e a altura, pré-preenchidas com o que você acabou de digitar.
+
+A largura e a altura são lembradas do último retângulo dimensionado: em qualquer um dos prompts, o valor anterior aparece pré-preenchido e pronto para ser confirmado com **Enter**, ou você pode simplesmente começar a digitar para substituí-lo por um novo número.
+
 ## Referência de teclado
 
 | Tecla | Ação |
 |-------|------|
-| `0`–`9`, `.`, `-` | Começa a entrada de coordenada X |
+| `0`–`9`, `.`, `-` | Começa a entrada de coordenada X, ou (no modo Entrada de dimensões) o campo largura/altura |
 | `,` | Bloqueia X e move para entrada Y |
-| `Enter` | Confirma a coordenada digitada |
+| `D` | Após o primeiro canto, muda para Entrada de dimensões; na etapa de direção, redigita largura/altura |
+| `Enter` | Confirma a coordenada, largura ou altura digitada |
 | `Escape` | Cancela |
 
 Os lados são sempre horizontais e verticais — não há travamento de ângulo para o comando retângulo.

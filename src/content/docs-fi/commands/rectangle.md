@@ -14,7 +14,7 @@ Komento `rectangle` piirtää akseleihin kohdistetun suorakulmion, jonka määri
 
 1. Kirjoita `rectangle` terminaaliin tai napsauta **Rectangle**-painiketta työkalurivillä.
 2. **Napsauta ensimmäistä kulmaa**, tai kirjoita `X,Y` ja paina **Enter** tarkkaa koordinaattia varten.
-3. **Napsauta vastakkaista kulmaa** — suorakulmio sijoitetaan välittömästi ja komento päättyy. Koordinaattien syöttö toimii myös täällä.
+3. **Napsauta vastakkaista kulmaa** — suorakulmio sijoitetaan välittömästi ja komento päättyy. Koordinaattien syöttö toimii myös täällä. Tai paina sen sijaan `D` kirjoittaaksesi tarkan leveyden ja korkeuden — katso [Mittojen syöttö](#mittojen-syöttö) alla.
 
 ```
   ● (ensimmäinen napsautus)────────────┐
@@ -35,13 +35,27 @@ Kummassakin kulmavaiheessa voit kirjoittaa tarkan sijainnin:
 3. Kirjoita Y-arvo.
 4. Paina **Enter** sijoittaaksesi kulman.
 
+## Mittojen syöttö
+
+Sen sijaan, että napsauttaisit toista kulmaa, paina `D` heti ensimmäisen kulman jälkeen vaihtaaksesi kirjoitettuun leveys-×-korkeus-syöttöön:
+
+1. **Kirjoita leveys** ja paina **Enter**.
+2. **Kirjoita korkeus** ja paina **Enter** — kehote pyytää nyt valitsemaan suunnan suorakulmiolle.
+3. **Siirrä kohdistinta** ensimmäisen kulman ympärillä — suorakulmio esikatsellaan elävästi siinä neljänneksessä (ylävasen, yläoikea, alavasen, alaoikea), jonka päällä kohdistin kulloinkin on.
+4. **Napsauta** sijoittaaksesi sen kyseiseen suuntaan.
+
+Paina `D` uudelleen suunnanvalintavaiheessa syöttääksesi leveyden ja korkeuden uudelleen, valmiiksi täytettynä juuri kirjoittamallasi.
+
+Leveys ja korkeus muistetaan viimeksi mitoitetusta suorakulmiosta: molemmissa kehotteissa edellinen arvo näkyy valmiiksi täytettynä ja valmiina vahvistettavaksi **Enter**-näppäimellä, tai voit vain alkaa kirjoittaa korvataksesi sen uudella luvulla.
+
 ## Näppäinreferenssi
 
 | Näppäin | Toiminto |
 |-----|--------|
-| `0`–`9`, `.`, `-` | Aloita X-koordinaatin syöttö |
+| `0`–`9`, `.`, `-` | Aloita X-koordinaatin syöttö, tai (Mittojen syöttö -tilassa) leveys-/korkeuskenttä |
 | `,` | Lukitse X ja siirry Y:n syöttöön |
-| `Enter` | Vahvista kirjoitettu koordinaatti |
+| `D` | Ensimmäisen kulman jälkeen: vaihda Mittojen syöttöön; suunnanvalintavaiheessa: syötä leveys/korkeus uudelleen |
+| `Enter` | Vahvista kirjoitettu koordinaatti, leveys tai korkeus |
 | `Escape` | Peruuta |
 
 Sivut ovat aina vaaka- ja pystysuoria — rectangle-komennolle ei ole kulmalukitusta.

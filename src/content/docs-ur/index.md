@@ -39,7 +39,7 @@ order: 1
 | [Trim](./commands/trim/) | لائن سیگمنٹ کو اس کے تقاطع پر تراشیں |
 | [Extend](./commands/extend/) | قریب ترین سرحدی تقاطع تک لائن کو بڑھائیں |
 | [Offset](./commands/offset/) | ایک مخصوص فاصلے پر کسی شے کی متوازی نقل بنائیں |
-| [Fillet](./commands/fillet/) | ایک مماسی قوس سے دو لائنوں کے درمیان کونے کو گول کریں |
+| [Fillet](./commands/fillet/) | ایک مماسی قوس سے دو Line، Arc، یا Polyline سیگمنٹس کے درمیان کونے کو گول کریں |
 | [Chamfer](./commands/chamfer/) | دو لائنوں یا Polylines کے درمیان ایک سیدھا ترچھا کونہ کاٹیں |
 | [Explode](./commands/explode/) | ایک پولی لائن کو اس کی الگ الگ لائنوں اور آرکس میں توڑتا ہے |
 | [Undo](./commands/undo/) | آخری عمل واپس کریں |

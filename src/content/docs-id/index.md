@@ -39,7 +39,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 | [Trim](./commands/trim/) | Memotong segmen garis pada perpotongannya |
 | [Extend](./commands/extend/) | Memperpanjang garis ke perpotongan batas terdekat |
 | [Offset](./commands/offset/) | Membuat salinan paralel dari entitas pada jarak tertentu |
-| [Fillet](./commands/fillet/) | Membulatkan sudut antara dua garis dengan busur tangen |
+| [Fillet](./commands/fillet/) | Membulatkan sudut antara dua garis, busur, atau segmen polyline dengan busur tangen |
 | [Chamfer](./commands/chamfer/) | Memotong sudut diagonal lurus antara dua garis atau polyline |
 | [Explode](./commands/explode/) | Memecah polyline menjadi garis dan busur individual |
 | [Undo](./commands/undo/) | Membatalkan aksi terakhir |

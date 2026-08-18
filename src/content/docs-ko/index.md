@@ -39,7 +39,7 @@ order: 1
 | [Trim](./commands/trim/) | 교차점에서 선 세그먼트 자르기 |
 | [Extend](./commands/extend/) | 선을 가장 가까운 경계 교차점까지 연장 |
 | [Offset](./commands/offset/) | 지정한 거리만큼 객체의 평행 복사본 생성 |
-| [Fillet](./commands/fillet/) | 두 선 사이의 모서리를 접선 호로 라운딩 |
+| [Fillet](./commands/fillet/) | 두 선, 호, 또는 폴리선 세그먼트 사이의 모서리를 접선 호로 라운딩 |
 | [Chamfer](./commands/chamfer/) | 두 선 또는 폴리선 사이의 모서리를 직선으로 경사지게 자르기 |
 | [Explode](./commands/explode/) | 폴리선을 개별 선과 호로 분해합니다 |
 | [Undo](./commands/undo/) | 마지막 작업 취소 |

@@ -14,7 +14,7 @@ Amri ya `rectangle` inachora mstatili ulioratibiwa na mhimili uliofafanuliwa na 
 
 1. Andika `rectangle` kwenye terminal au bonyeza kitufe cha **Rectangle** kwenye upau wa zana.
 2. **Bonyeza kona ya kwanza**, au andika `X,Y` na ubonyeze **Enter** kwa kuratibu sahihi.
-3. **Bonyeza kona iliyo kinyume** — mstatili huwekwa mara moja na amri hutoka. Uingizaji wa kuratibu unafanya kazi hapa pia.
+3. **Bonyeza kona iliyo kinyume** — mstatili huwekwa mara moja na amri hutoka. Uingizaji wa kuratibu unafanya kazi hapa pia. Kwa upana/urefu sahihi, angalia [Dimension entry](#dimension-entry) hapa chini.
 
 ```
   ● (bonyeza ya kwanza)────────────┐
@@ -36,12 +36,26 @@ Katika hatua yoyote ya kona unaweza kuandika nafasi sahihi:
 3. Andika thamani ya Y.
 4. Bonyeza **Enter** kuweka kona.
 
+## Dimension entry
+
+Baada ya kuweka kona ya kwanza, bonyeza **D** wakati wowote ili kuandika upana na urefu sahihi wa mstatili badala ya kutafuta kona iliyo kinyume kwa bonyeza huru:
+
+1. **Andika upana** na ubonyeze **Enter**.
+2. **Andika urefu** na ubonyeze **Enter**.
+3. Sogeza kishale — mstatili sasa umebandikwa kwenye kona ya kwanza na ukubwa uliouandika, ni mwelekeo tu unaobadilika kufuata robo ya kishale.
+4. **Bonyeza** kuweka mstatili katika mwelekeo huo.
+
+Kubonyeza **D** tena katika hatua ya kuchagua mwelekeo kunarudisha upana/urefu uliyoandika ukiwa umejazwa mapema na unaoweza kuhaririwa, ili uweze kurekebisha thamani kabla ya kuchagua mwelekeo.
+
+Upana na urefu ulioandika **hukumbukwa** na huonekana ukiwa umejazwa mapema wakati ujao unapotumia Dimension entry.
+
 ## Marejeo ya kibodi
 
 | Kitufe | Kitendo |
 |--------|---------|
 | `0`–`9`, `.`, `-` | Anza uingizaji wa kuratibu ya X |
 | `,` | Funga X na nenda kwa uingizaji wa Y |
+| `D` | Ingia kwenye hali ya Dimension entry (baada ya kona ya kwanza), au hariri tena thamani ulizoandika katika hatua ya kuchagua mwelekeo |
 | `Enter` | Thibitisha kuratibu iliyoandikwa |
 | `Escape` | Futa |
 

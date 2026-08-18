@@ -77,4 +77,4 @@ Die eingefügte Linie übernimmt die aktuellen Einstellungen für Linienstärke,
 | Eckentyp | Gerader Schnitt | Abgerundeter Bogen |
 | Eingabe | Zwei Abstände (d1, d2) | Ein Radius |
 | Eingefügtes Element | Line | Arc |
-| Unterstützte Elemente | Lines und Polylines | Nur Lines |
+| Unterstützte Elemente | Lines und Polylines (nur gerade Segmente) | Lines, Arcs und Polylines (gerade oder Bogensegmente) |

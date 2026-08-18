@@ -39,7 +39,7 @@ Bem-vindo à referência de comandos do **KulmanLab CAD**. O [KulmanLab CAD](htt
 | [Trim](./commands/trim/) | Apara um segmento de linha nas suas interseções |
 | [Extend](./commands/extend/) | Estende uma linha até a interseção de limite mais próxima |
 | [Offset](./commands/offset/) | Cria uma cópia paralela de uma entidade a uma distância definida |
-| [Fillet](./commands/fillet/) | Arredonda um canto entre duas linhas com um arco tangente |
+| [Fillet](./commands/fillet/) | Arredonda um canto entre duas linhas, arcos ou segmentos de polilinha com um arco tangente |
 | [Chamfer](./commands/chamfer/) | Cria um chanfro diagonal entre duas linhas ou polilinhas |
 | [Explode](./commands/explode/) | Decompõe uma polilinha em suas linhas e arcos individuais |
 | [Undo](./commands/undo/) | Desfaz a última ação |

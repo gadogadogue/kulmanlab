@@ -77,4 +77,4 @@ Den indsatte linje arver de aktuelle lineweight-, farve-, lag- og linetype-indst
 | Hjørnetype | Lige snit | Afrundet bue |
 | Input | To afstande (d1, d2) | Én radius |
 | Indsat entitet | Line | Arc |
-| Understøttede entiteter | Lines og Polylines | Kun Lines |
+| Understøttede entiteter | Lines og Polylines (kun lige segmenter) | Lines, Arcs og Polylines (lige eller buesegmenter) |

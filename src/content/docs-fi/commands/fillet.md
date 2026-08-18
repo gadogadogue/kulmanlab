@@ -1,24 +1,24 @@
 ---
-title: Fillet-komento — Pyöristä Kulma Kahden Viivan Välillä
-description: Fillet-komento yhdistää kaksi Line-entiteettiä tangenttikaarella, jolla on määritetty säde, ja leikkaa kummankin viivan takaisin tangenttipisteeseen. Katkoviivainen kaaren esikatselu auttaa valitsemaan oikean kulman ennen napsautusta.
-keywords: [CAD fillet-komento, pyöristä kulma CAD, fillet-kaari, tangenttikaari kaksi viivaa, kulmanlab]
+title: Fillet-komento — Pyöristä Kulma Tangenttikaarella
+description: Fillet-komento pyöristää kulman kahden Line-, Arc- tai Polyline-segmentin välillä tangenttikaarella, jolla on määritetty säde. Polylinen oman kulman pyöristäminen lisää kaaren suoraan siihen; pyöristäminen avoimen polylinen yli yhdistää molemmat puolet uudeksi polylineksi.
+keywords: [CAD fillet-komento, pyöristä kulma CAD, fillet-kaari, tangenttikaari, polylinen fillet, kaaren fillet, kulmanlab]
 group: edit
 order: 11
 ---
 
 # Fillet
 
-Komento `fillet` pyöristää kulman kahden [Line](../line/)-entiteetin välillä lisäämällä tangenttikaaren, jolla on annettu säde, ja leikkaamalla kummankin viivan takaisin pisteeseen, jossa kaari alkaa. Tuloksena on sileä, pyöristetty kulma, joka yhdistää molemmat viivat.
+Komento `fillet` pyöristää kulman kahden [Line](../line/)-, [Arc](../arc/)- tai [Polyline](../polyline/)-segmentin välillä lisäämällä tangenttikaaren, jolla on annettu säde, ja leikkaa (tai yhdistää) valitut entiteetit takaisin tähän pisteeseen.
 
-Fillet toimii vain **Line-entiteeteillä**.
+Fillet toimii **Line-, Arc- ja Polyline**-entiteeteillä — mukaan lukien polylinen omat suorat ja kaarisegmentit.
 
 ## Filletin käyttäminen
 
 1. Kirjoita `fillet` terminaaliin tai napsauta **Fillet**-painiketta työkalurivillä.
 2. **Kirjoita fillet-säde** ja paina **Enter**.
-3. **Napsauta ensimmäistä viivaa** — napsauttamasi osa määrää, kumpi puoli mahdollisesta leikkauspisteestä säilytetään.
-4. **Pidä kohdistin toisen viivan päällä** — katkoviivainen kaaren esikatselu näyttää tuloksena olevan filletin. Siirrä kohdistin puolelle, jonka haluat säilyttää.
-5. **Napsauta** soveltaaksesi. Molemmat viivat leikataan ja kaari lisätään.
+3. **Napsauta ensimmäistä viivaa, kaarta tai polylinen segmenttiä** — napsauttamasi osa määrää, kumpi puoli mahdollisesta leikkauspisteestä säilytetään.
+4. **Pidä kohdistin toisen entiteetin päällä** — katkoviivainen kaaren esikatselu näyttää tuloksena olevan filletin. Siirrä kohdistin puolelle, jonka haluat säilyttää.
+5. **Napsauta** soveltaaksesi.
 
 ```
   Ennen:                      Filletin jälkeen (säde r):
@@ -28,20 +28,26 @@ Fillet toimii vain **Line-entiteeteillä**.
                 │
 ```
 
-## Puolen valinta leikkaaville viivoille
+## Puolen valinta leikkaaville entiteeteille
 
-Kun kaksi viivaa leikkaavat toisensa, fillet sovelletaan napsautuspisteiden määrittelemään kulmaan — kummankin viivan osa **samalla puolella kuin kohdistin** säilytetään.
+Kun kaksi entiteettiä leikkaavat toisensa, fillet sovelletaan napsautuspisteiden määrittelemään kulmaan — kummankin entiteetin osa **samalla puolella kuin kohdistin** säilytetään.
 
-- Napsauta lähellä ensimmäisen viivan toista päätä valitaksesi kyseisen puoliskon.
-- Siirrä kohdistin toisen viivan haluamallesi puoliskolle — katkoviivainen esikatselu päivittyy elävästi.
+- Napsauta lähellä ensimmäisen entiteetin toista päätä valitaksesi kyseisen puoliskon.
+- Siirrä kohdistin toisen entiteetin haluamallesi puoliskolle — katkoviivainen esikatselu päivittyy elävästi.
 
 ## Mitä komento luo
 
-- Ensimmäisen viivan leikkauspistettä lähinnä oleva päätepiste siirretään tangenttipisteeseen **T1**.
-- Toisen viivan leikkauspistettä lähinnä oleva päätepiste siirretään tangenttipisteeseen **T2**.
-- Uusi Arc-entiteetti lisätään pisteestä **T1** pisteeseen **T2**, tangenttina molemmille viivoille.
+Lopputulos riippuu siitä, mitä valitsit:
 
-Lisätty kaari perii nykyiset lineweight-, väri-, taso- ja linetype-asetukset.
+- **Kaksi itsenäistä Line/Arc-entiteettiä**, tai mikä tahansa pari ilman avointa polylinjaa: molemmat leikataan takaisin tangenttipisteisiin **T1**/**T2**, ja niiden väliin lisätään uusi Arc-entiteetti.
+- **Kaksi saman polylinjan segmenttiä, jotka jakavat kulmakärjen**: ei uutta entiteettiä — filletistä tulee osa itse polylinjaa. Kulmakärki korvataan kahdella tangenttipisteellä, ja niiden välinen kaari tallennetaan kyseisen reunan bulgena — täsmälleen samoin kuin pyöristetty polylinjan kulma kulkee edestakaisin DXF:n kautta.
+- **Kaikki muu, mihin liittyy avoin polylinja** — kaksi eri avointa polylinjaa, tai avoin polylinja ja itsenäinen Line/Arc: molemmat yhdistetään **yhdeksi uudeksi polylinjaksi**, jossa kumpikin puoli säilytetään tangenttipisteeseensä asti ja yhdistetään fillet-kaarella yhtenä bulge-segmenttinä lisää, korvaten alkuperäiset entiteetit.
+
+Lisätty tai jatkettu kaari perii nykyiset lineweight-, väri-, taso- ja linetype-asetukset (tai polylinjan omat, kun se sulautuu siihen).
+
+## Kulmat ilman todellista kulmaa pyöristettäväksi
+
+Jos kaksi valittua segmenttiä kohtaavat jo tangentiaalisesti jaetussa kärjessä — suora polylinjan kulma, tai viiva joka liukuu sulavasti tangentiaaliseen jatkokaarisegmenttiin — ei ole todellista kulmaa, jonka ympyrä voisi pyöristää. Fillet havaitsee tämän ja kieltäytyy viestillä `cannot fillet: no tangent circle fits there` sen sijaan, että piirtäisi ei-toivotun silmukan.
 
 ## Näppäinreferenssi
 
@@ -49,15 +55,17 @@ Lisätty kaari perii nykyiset lineweight-, väri-, taso- ja linetype-asetukset.
 |-----|--------|
 | `0`–`9`, `.` | Lisää numero säteen arvoon |
 | `Backspace` | Poista viimeksi kirjoitettu merkki |
-| `Enter` | Vahvista kirjoitettu säde ja siirry viivan valintaan |
+| `Enter` / `Space` | Vahvista kirjoitettu säde ja siirry entiteetin valintaan |
 | `Escape` | Peruuta ja nollaa |
 
 ## Tuetut entiteetit
 
 | Entiteetti | Tuettu |
 |--------|-----------|
-| Line | Kyllä — sekä ensimmäisenä että toisena entiteettinä |
-| Arc, Circle, Ellipse, Polyline | Ei |
+| Line | Kyllä |
+| Arc | Kyllä |
+| Polyline (suora tai kaarisegmentti) | Kyllä |
+| Circle, Ellipse | Ei |
 | Text, Spline, Dimension, Leader | Ei |
 
 ## Fillet vs Chamfer
@@ -67,4 +75,4 @@ Lisätty kaari perii nykyiset lineweight-, väri-, taso- ja linetype-asetukset.
 | Kulman tyyppi | Pyöristetty kaari | Suora leikkaus |
 | Syöte | Yksi säde | Kaksi etäisyyttä (d1, d2) |
 | Lisätty entiteetti | Arc | Line |
-| Tuetut entiteetit | Vain Lines | Lines ja Polylines |
+| Tuetut entiteetit | Lines, Arcs ja Polylines (suorat tai kaarisegmentit) | Lines ja Polylines (vain suorat segmentit) |

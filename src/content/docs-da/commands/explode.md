@@ -19,7 +19,7 @@ To måder at køre det på, samme mønster som [Delete](../delete/):
 **Vælg først, opdel derefter** — den hurtigste vej:
 
 1. Vælg en eller flere polylinjer på lærredet.
-2. Skriv `explode` i terminalen, eller klik på værktøjslinjeknappen **Explode** (bombeikonet i Edit-panelet).
+2. Skriv `explode` i terminalen, eller klik på knappen **Explode** i Edit-panelet.
 
 De valgte polylinjer opdeles øjeblikkeligt — intet separat bekræftelsestrin, da noget allerede er valgt.
 

@@ -94,7 +94,7 @@ Poiché una polilinea è un'unica entità, una selezione incrociante che tocca q
 
 ## Comandi di modifica supportati
 
-Le polilinee supportano ogni trasformazione generale, oltre a offset, trim, extend e chamfer (per il chamfer contano solo i segmenti dritti):
+Le polilinee supportano ogni trasformazione generale, oltre a offset, trim, extend, fillet e chamfer (per il chamfer contano solo i segmenti dritti):
 
 | Comando | Effetto sulla polilinea |
 |---------|------------------------|
@@ -106,11 +106,12 @@ Le polilinee supportano ogni trasformazione generale, oltre a offset, trim, exte
 | [Offset](../offset/) | Crea una polilinea parallela a una distanza perpendicolare fissa |
 | [Trim](../trim/) | Rimuove la porzione tra due intersezioni, sia per segmenti dritti che ad arco |
 | [Extend](../extend/) | Estende il primo o l'ultimo segmento fino al limite successivo |
+| [Fillet](../fillet/) | Arrotonda un angolo tra due segmenti **adiacenti**, dritti o ad arco, con un arco tangente inserito nella polilinea come nuovo segmento bulge |
 | [Chamfer](../chamfer/) | Smussa un angolo tra due segmenti dritti adiacenti |
 | [Explode](../explode/) | Scompone la polilinea in entità linea e arco indipendenti, una per segmento |
 | [Delete](../delete/) | Rimuove la polilinea dal disegno |
 
-Fillet non supporta affatto le polilinee.
+Raccordare un segmento di una polilinea contro qualcosa di diverso dal proprio segmento vicino non resta una semplice modifica sul posto — vedi [Fillet](../fillet/) per il risultato (fusione in un'unica nuova polilinea, collegata dall'arco di raccordo).
 
 ## Polyline vs Linea — quando usare quale
 

@@ -77,4 +77,4 @@ Garis yang dimasukkan mewarisi tetapan lineweight, warna, lapisan, dan linetype 
 | Jenis sudut | Potongan lurus | Lengkok membulat |
 | Input | Dua jarak (d1, d2) | Satu jejari |
 | Entiti yang dimasukkan | Line | Arc |
-| Entiti yang disokong | Garis dan Poliline | Garis sahaja |
+| Entiti yang disokong | Garis dan Poliline (segmen lurus sahaja) | Garis, Lengkok dan Poliline (segmen lurus atau lengkok) |

@@ -94,7 +94,7 @@ Tüm çoklu çizgiyi taşımak için ayrı bir tutamaç yoktur. Tüm yolu taşı
 
 ## Desteklenen Düzenleme Komutları
 
-Çoklu çizgiler her genel dönüşümü, ayrıca ofset, kırpma, uzatma ve pah kırmayı destekler (pah kırmada yalnızca düz segmentler sayılır):
+Çoklu çizgiler her genel dönüşümü, ayrıca ofset, kırpma, uzatma, fillet ve pah kırmayı destekler (pah kırmada yalnızca düz segmentler sayılır):
 
 | Komut | Çoklu çizgiye ne olur |
 |-------|----------------------|
@@ -106,11 +106,12 @@ Tüm çoklu çizgiyi taşımak için ayrı bir tutamaç yoktur. Tüm yolu taşı
 | [Offset](../offset/) | Sabit dik mesafede paralel çoklu çizgi oluşturur |
 | [Trim](../trim/) | İki kesişim noktası arasındaki bölümü, düz veya yay segmentlerinde aynı şekilde kaldırır |
 | [Extend](../extend/) | İlk veya son segmenti bir sonraki sınıra kadar uzatır |
+| [Fillet](../fillet/) | İki **komşu** segment arasındaki köşeyi, düz veya yay, çoklu çizgiye yeni bir bulge segmenti olarak eklenen bir teğet yayla yuvarlar |
 | [Chamfer](../chamfer/) | İki komşu düz segment arasında bir köşeyi pahlar |
 | [Explode](../explode/) | Çoklu çizgiyi segment başına bir tane olmak üzere bağımsız çizgi ve yay varlıklarına ayırır |
 | [Delete](../delete/) | Çoklu çizgiyi çizimden siler |
 
-Fillet, çoklu çizgileri hiç desteklemez.
+Bir çoklu çizgi segmentini kendi komşu segmenti dışında bir şeye karşı filletlemek, yerinde basit bir düzenleme olarak kalmaz — sonucu görmek için (fillet yayıyla birleştirilmiş tek bir yeni çoklu çizgi) [Fillet](../fillet/) sayfasına bakın.
 
 ## Özellikler
 

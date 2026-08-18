@@ -77,4 +77,4 @@ Eklenen çizgi mevcut çizgi kalınlığı, renk, katman ve çizgi türü ayarla
 | Köşe türü | Düz kesim | Yuvarlatılmış yay |
 | Giriş | İki mesafe (d1, d2) | Tek yarıçap |
 | Eklenen nesne | Çizgi | Yay |
-| Desteklenen nesneler | Çizgiler ve Çoklu Çizgiler | Yalnızca Çizgiler |
+| Desteklenen nesneler | Çizgiler ve Çoklu Çizgiler (yalnızca düz segmentler) | Çizgiler, Yaylar ve Çoklu Çizgiler (düz veya yay segmentleri) |

@@ -77,4 +77,4 @@ De ingevoegde lijn erft de huidige instellingen voor lijndikte, kleur, laag en l
 | Hoektype | Rechte snede | Afgeronde boog |
 | Invoer | Twee afstanden (d1, d2) | Eén radius |
 | Ingevoegde entiteit | Line | Arc |
-| Ondersteunde entiteiten | Lines en Polylines | Alleen Lines |
+| Ondersteunde entiteiten | Lines en Polylines (alleen rechte segmenten) | Lines, Arcs en Polylines (rechte of boogsegmenten) |

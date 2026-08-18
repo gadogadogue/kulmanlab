@@ -14,7 +14,7 @@ Der `rectangle`-Befehl zeichnet ein achsenparalleles Rechteck, das durch zwei ge
 
 1. Geben Sie `rectangle` im Terminal ein oder klicken Sie auf die **Rectangle**-Schaltfläche in der Werkzeugleiste.
 2. **Klicken Sie die erste Ecke** an, oder geben Sie `X,Y` ein und drücken Sie **Enter** für eine exakte Koordinate.
-3. **Klicken Sie die gegenüberliegende Ecke** an — das Rechteck wird sofort platziert und der Befehl beendet. Koordinateneingabe funktioniert hier ebenfalls.
+3. **Klicken Sie die gegenüberliegende Ecke** an — das Rechteck wird sofort platziert und der Befehl beendet. Koordinateneingabe funktioniert hier ebenfalls. Oder drücken Sie stattdessen `D`, um eine exakte Breite und Höhe einzugeben — siehe [Maßeingabe](#maßeingabe) unten.
 
 ```
   ● (erster Klick)────────────┐
@@ -35,13 +35,27 @@ Bei jedem Eckenschritt können Sie eine exakte Position eingeben:
 3. Geben Sie den Y-Wert ein.
 4. Drücken Sie **Enter**, um die Ecke zu platzieren.
 
+## Maßeingabe
+
+Anstatt eine zweite Ecke anzuklicken, drücken Sie direkt nach der ersten Ecke `D`, um zur getippten Breite-×-Höhe-Eingabe zu wechseln:
+
+1. **Breite eingeben** und **Enter** drücken.
+2. **Höhe eingeben** und **Enter** drücken — die Eingabeaufforderung bittet Sie nun, eine Richtung für das Rechteck zu wählen.
+3. **Mauszeiger bewegen** um die erste Ecke — das Rechteck wird live in dem Quadranten (oben-links, oben-rechts, unten-links, unten-rechts) angezeigt, über dem sich der Mauszeiger gerade befindet.
+4. **Klicken**, um es in dieser Richtung zu platzieren.
+
+Drücken Sie beim Richtungsschritt erneut `D`, um Breite und Höhe erneut einzugeben, vorausgefüllt mit dem zuletzt Eingetippten.
+
+Breite und Höhe werden vom letzten bemaßten Rechteck übernommen: An beiden Eingabeaufforderungen erscheint der vorherige Wert vorausgefüllt und kann mit **Enter** bestätigt werden, oder Sie beginnen einfach zu tippen, um ihn durch eine neue Zahl zu ersetzen.
+
 ## Tastaturübersicht
 
 | Taste | Aktion |
 |-------|--------|
-| `0`–`9`, `.`, `-` | X-Koordinateneingabe starten |
+| `0`–`9`, `.`, `-` | X-Koordinateneingabe starten, oder (im Maßeingabe-Modus) das Breite-/Höhe-Feld |
 | `,` | X sperren und zu Y-Eingabe wechseln |
-| `Enter` | Eingegebene Koordinate bestätigen |
+| `D` | Nach der ersten Ecke: zur Maßeingabe wechseln; im Richtungsschritt: Breite/Höhe erneut eingeben |
+| `Enter` | Eingegebene Koordinate, Breite oder Höhe bestätigen |
 | `Escape` | Abbrechen |
 
 Die Seiten sind immer horizontal und vertikal — für den Rectangle-Befehl gibt es keine Winkelsperre.

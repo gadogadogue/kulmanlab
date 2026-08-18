@@ -1,24 +1,24 @@
 ---
-title: Arahan Fillet — Bundarkan Sudut antara Dua Garis
-description: Arahan Fillet menghubungkan dua entiti Line dengan lengkok tangen berjejari tertentu, memotong setiap garis kembali ke titik tangen. Pratonton lengkok bertitik-titik membantu anda memilih sudut yang betul sebelum mengklik.
-keywords: [arahan fillet CAD, bundarkan sudut CAD, lengkok fillet, lengkok tangen dua garis, kulmanlab]
+title: Arahan Fillet — Bundarkan Sudut dengan Lengkok Tangen
+description: Arahan Fillet membundarkan sudut antara dua segmen Line, Arc atau Polyline dengan lengkok tangen berjejari tertentu. Membundarkan sudut milik poliline itu sendiri memasukkan lengkok terus ke dalamnya; membundarkan merentasi poliline terbuka menggabungkan kedua-dua belah menjadi poliline baharu.
+keywords: [arahan fillet CAD, bundarkan sudut CAD, lengkok fillet, lengkok tangen, fillet poliline, fillet lengkok, kulmanlab]
 group: edit
 order: 11
 ---
 
 # Fillet
 
-Arahan `fillet` membundarkan sudut antara dua entiti [Line](../line/) dengan memasukkan lengkok tangen berjejari tertentu dan memotong setiap garis kembali ke titik di mana lengkok bermula. Hasilnya adalah sudut yang bundar dan beradi yang menghubungkan kedua-dua garis.
+Arahan `fillet` membundarkan sudut antara dua segmen [Line](../line/), [Arc](../arc/) atau [Polyline](../polyline/) dengan memasukkan lengkok tangen berjejari tertentu, memotong (atau menggabungkan) entiti yang dipilih kembali ke titik tersebut.
 
-Fillet hanya berfungsi pada **entiti Line**.
+Fillet berfungsi pada entiti **Line, Arc dan Polyline** — termasuk segmen lurus atau lengkok milik poliline itu sendiri.
 
 ## Menggunakan fillet
 
 1. Taip `fillet` dalam terminal atau klik butang bar alat **Fillet**.
 2. **Taip jejari fillet** dan tekan **Enter**.
-3. **Klik garis pertama** — bahagian yang anda klik menentukan sisi mana persimpangan yang dikekalkan.
-4. **Tuding ke garis kedua** — pratonton lengkok bertitik-titik menunjukkan fillet yang akan dihasilkan. Gerakkan kursor ke sisi yang ingin anda kekalkan.
-5. **Klik** untuk menggunakan. Kedua-dua garis dipotong dan lengkok dimasukkan.
+3. **Klik garis, lengkok atau segmen poliline pertama** — bahagian yang anda klik menentukan sisi mana persimpangan yang dikekalkan.
+4. **Tuding ke entiti kedua** — pratonton lengkok bertitik-titik menunjukkan fillet yang akan dihasilkan. Gerakkan kursor ke sisi yang ingin anda kekalkan.
+5. **Klik** untuk menggunakan.
 
 ```
   Sebelum:                     Selepas fillet (jejari r):
@@ -28,20 +28,26 @@ Fillet hanya berfungsi pada **entiti Line**.
                 │
 ```
 
-## Pemilihan sisi untuk garis yang bersilang
+## Pemilihan sisi untuk entiti yang bersilang
 
-Apabila dua garis bersilang antara satu sama lain, fillet digunakan pada sudut yang ditakrifkan oleh kedudukan klik — bahagian setiap garis pada **sisi yang sama dengan kursor** dikekalkan.
+Apabila dua entiti bersilang antara satu sama lain, fillet digunakan pada sudut yang ditakrifkan oleh kedudukan klik — bahagian setiap entiti pada **sisi yang sama dengan kursor** dikekalkan.
 
-- Klik berhampiran satu hujung garis pertama untuk memilih separuh itu.
-- Gerakkan kursor ke separuh yang dikehendaki dari garis kedua — pratonton bertitik-titik dikemas kini secara langsung.
+- Klik berhampiran satu hujung entiti pertama untuk memilih separuh itu.
+- Gerakkan kursor ke separuh yang dikehendaki dari entiti kedua — pratonton bertitik-titik dikemas kini secara langsung.
 
 ## Apa yang arahan cipta
 
-- Titik akhir garis pertama yang paling hampir dengan persimpangan digerakkan ke titik tangen **T1**.
-- Titik akhir garis kedua yang paling hampir dengan persimpangan digerakkan ke titik tangen **T2**.
-- Entiti Arc baharu dimasukkan dari **T1** ke **T2**, tangen kepada kedua-dua garis.
+Hasilnya bergantung pada apa yang anda pilih:
 
-Lengkok yang dimasukkan mewarisi tetapan lineweight, warna, lapisan, dan linetype semasa.
+- **Dua entiti Line/Arc yang berdiri sendiri**, atau mana-mana pasangan tanpa poliline terbuka: kedua-duanya dipotong kembali ke titik tangen **T1**/**T2**, dan entiti Arc baharu dimasukkan di antara mereka.
+- **Dua segmen daripada poliline yang sama yang berkongsi bucu sudut**: tiada entiti baharu — fillet menjadi sebahagian daripada poliline itu sendiri. Bucu sudut digantikan dengan dua titik tangen, dan lengkok di antara mereka disimpan sebagai nilai bulge tepi tersebut — persis seperti sudut poliline yang dibundarkan pergi dan balik melalui DXF.
+- **Semua yang lain yang melibatkan poliline terbuka** — dua poliline terbuka yang berbeza, atau poliline terbuka dan Line/Arc yang berdiri sendiri: kedua-duanya digabungkan menjadi **satu poliline baharu**, dengan setiap belah dikekalkan hingga titik tangennya dan disatukan oleh lengkok fillet sebagai segmen bulge tambahan, menggantikan entiti asal.
+
+Lengkok yang dimasukkan atau dipanjangkan mewarisi tetapan lineweight, warna, lapisan, dan linetype semasa (atau milik poliline itu sendiri, apabila digabungkan ke dalamnya).
+
+## Sudut tanpa sudut sebenar untuk dibundarkan
+
+Jika dua segmen yang dipilih sudah bertemu secara tangen pada bucu bersama — sudut poliline yang lurus, atau garis yang beralih dengan lancar ke segmen lengkok kesinambungan tangen — maka tiada sudut sebenar yang boleh dibundarkan oleh mana-mana bulatan. Fillet mengesan ini dan menolak dengan mesej `cannot fillet: no tangent circle fits there` dan bukannya melukis gelung yang tidak diingini.
 
 ## Rujukan papan kekunci
 
@@ -49,15 +55,17 @@ Lengkok yang dimasukkan mewarisi tetapan lineweight, warna, lapisan, dan linetyp
 |---------|---------|
 | `0`–`9`, `.` | Tambah digit pada nilai jejari |
 | `Backspace` | Padam aksara terakhir yang ditaip |
-| `Enter` | Sahkan jejari yang ditaip dan beralih ke pemilihan garis |
+| `Enter` / `Space` | Sahkan jejari yang ditaip dan beralih ke pemilihan entiti |
 | `Escape` | Batal dan tetapkan semula |
 
 ## Entiti yang disokong
 
 | Entiti | Disokong |
 |--------|---------|
-| Line | Ya — sebagai entiti pertama dan kedua |
-| Arc, Circle, Ellipse, Polyline | Tidak |
+| Line | Ya |
+| Arc | Ya |
+| Polyline (segmen lurus atau lengkok) | Ya |
+| Circle, Ellipse | Tidak |
 | Text, Spline, Dimension, Leader | Tidak |
 
 ## Fillet berbanding Chamfer
@@ -67,4 +75,4 @@ Lengkok yang dimasukkan mewarisi tetapan lineweight, warna, lapisan, dan linetyp
 | Jenis sudut | Lengkok membulat | Potongan lurus |
 | Input | Satu jejari | Dua jarak (d1, d2) |
 | Entiti yang dimasukkan | Arc | Line |
-| Entiti yang disokong | Garis sahaja | Garis dan Poliline |
+| Entiti yang disokong | Line, Arc dan Polyline (segmen lurus atau lengkok) | Line dan Polyline (segmen lurus sahaja) |

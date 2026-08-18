@@ -77,4 +77,4 @@ Minamana ng isinisingit na linya ang kasalukuyang lineweight, color, layer, at l
 | Uri ng Sulok | Straight cut | Rounded arc |
 | Input | Dalawang distansya (d1, d2) | Isang radius |
 | Isinisingit na Entity | Line | Arc |
-| Supported na entities | Lines at Polylines | Lines lang |
+| Supported na entities | Lines at Polylines (straight segment lamang) | Lines, Arcs, at Polylines (straight o arc segment) |

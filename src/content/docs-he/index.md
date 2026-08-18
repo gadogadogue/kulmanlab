@@ -39,7 +39,7 @@ order: 1
 | [Trim](./commands/trim/) | גיזום קטע קו בחיתוכים שלו |
 | [Extend](./commands/extend/) | הארכת קו לחיתוך הגבול הקרוב ביותר |
 | [Offset](./commands/offset/) | יצירת עותק מקביל של ישות במרחק נתון |
-| [Fillet](./commands/fillet/) | עיגול פינה בין שני קווים בקשת משיקה |
+| [Fillet](./commands/fillet/) | עיגול פינה בין שני קווים, קשתות או קטעי פוליליין בקשת משיקה |
 | [Chamfer](./commands/chamfer/) | חיתוך פינה אלכסונית ישרה בין שני קווים או פוליליינים |
 | [Explode](./commands/explode/) | מפרק פוליליין לקווים וקשתות נפרדים |
 | [Undo](./commands/undo/) | ביטול הפעולה האחרונה |

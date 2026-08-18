@@ -19,7 +19,7 @@ Njia mbili za kuiendesha, muundo uleule kama [Delete](../delete/):
 **Chagua kwanza, kisha explode** — njia ya haraka zaidi:
 
 1. Chagua polyline moja au zaidi kwenye kanvasi.
-2. Andika `explode` kwenye terminal, au bonyeza kitufe cha **Explode** kwenye upau wa zana (aikoni ya bomu kwenye paneli ya Edit).
+2. Andika `explode` kwenye terminal, au bonyeza kitufe cha **Explode** kwenye paneli ya Edit.
 
 Polyline zilizochaguliwa zinavunjwa papo hapo — hakuna hatua ya uthibitisho tofauti, kwa sababu kitu tayari kimechaguliwa.
 

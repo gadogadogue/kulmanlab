@@ -19,7 +19,7 @@ Dos formas de ejecutarlo, el mismo patrón que [Delete](../delete/):
 **Selecciona primero, luego explota** — el camino más rápido:
 
 1. Selecciona una o más polilíneas en el lienzo.
-2. Escribe `explode` en el terminal, o haz clic en el botón **Explode** de la barra de herramientas (el icono de bomba en el panel Edit).
+2. Escribe `explode` en el terminal, o haz clic en el botón **Explode** del panel Edit.
 
 Las polilíneas seleccionadas se explotan al instante — sin paso de confirmación separado, ya que algo ya está seleccionado.
 

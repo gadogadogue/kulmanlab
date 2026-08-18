@@ -39,7 +39,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Trim](./commands/trim/) | Przycina segment linii na jej przecięciach |
 | [Extend](./commands/extend/) | Przedłuża linię do najbliższego przecięcia z granicą |
 | [Offset](./commands/offset/) | Tworzy równoległą kopię elementu w podanej odległości |
-| [Fillet](./commands/fillet/) | Zaokrągla narożnik między dwiema liniami łukiem stycznych |
+| [Fillet](./commands/fillet/) | Zaokrągla narożnik między dwiema liniami, łukami lub segmentami polilinii łukiem stycznym |
 | [Chamfer](./commands/chamfer/) | Ścina prosty ukośny narożnik między dwiema liniami lub poliliniami |
 | [Explode](./commands/explode/) | Rozbija polilinię na osobne linie i łuki |
 | [Undo](./commands/undo/) | Cofa ostatnią akcję |

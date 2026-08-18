@@ -19,7 +19,7 @@ Explode yalnızca **Polyline** nesneleriyle çalışır.
 **Önce seç, sonra patlat** — en hızlı yol:
 
 1. Tuval üzerinde bir veya daha fazla polyline seçin.
-2. Terminale `explode` yazın veya araç çubuğundaki **Explode** düğmesine tıklayın (Edit panelindeki bomba simgesi).
+2. Terminale `explode` yazın veya Edit panelindeki **Explode** düğmesine tıklayın.
 
 Seçili polyline'lar anında patlatılır — zaten bir şey seçili olduğundan ayrı bir onay adımı yoktur.
 

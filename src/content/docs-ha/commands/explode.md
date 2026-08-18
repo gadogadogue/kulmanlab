@@ -19,7 +19,7 @@ Hanyoyi biyu don gudanar da ita, tsari iri ɗaya da [Delete](../delete/):
 **Zaɓi da farko, sannan explode** — hanya mafi sauri:
 
 1. Zaɓi polyline ɗaya ko fiye a kan canvas.
-2. Rubuta `explode` a tashar umarni, ko danna maɓallin **Explode** a kayan aiki (hoton bam a panel na Edit).
+2. Rubuta `explode` a tashar umarni, ko danna maɓallin **Explode** a panel na Edit.
 
 Ana fashe polyline ɗin da aka zaɓa nan take — babu wani mataki na tabbatarwa daban, tunda an riga an zaɓi wani abu.
 

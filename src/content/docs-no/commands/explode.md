@@ -19,7 +19,7 @@ To måter å kjøre det på, samme mønster som [Delete](../delete/):
 **Velg først, deretter eksploder** — den raskeste veien:
 
 1. Velg én eller flere polylinjer på lerretet.
-2. Skriv `explode` i terminalen, eller klikk på verktøylinjeknappen **Explode** (bombeikonet i Edit-panelet).
+2. Skriv `explode` i terminalen, eller klikk på knappen **Explode** i Edit-panelet.
 
 De valgte polylinjene eksploderes umiddelbart — ingen egen bekreftelse, siden noe allerede er valgt.
 

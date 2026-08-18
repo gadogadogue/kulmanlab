@@ -39,7 +39,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | [Trim](./commands/trim/) | Yanke sashen layi a mahaɗarsa |
 | [Extend](./commands/extend/) | Tsawaita layi zuwa mahaɗar iyaka mafi kusa |
 | [Offset](./commands/offset/) | Ƙirƙiri kwafi mai daidaici na wani abu a nisan da aka bayar |
-| [Fillet](./commands/fillet/) | Zagaye kusurwa tsakanin layi biyu da baka mai taɓawa |
+| [Fillet](./commands/fillet/) | Zagaye kusurwa tsakanin sassa biyu na Line, Arc, ko Polyline da baka mai taɓawa |
 | [Chamfer](./commands/chamfer/) | Yanke kusurwar diagonal madaidaiciya tsakanin layi biyu ko polylines |
 | [Explode](./commands/explode/) | Yana rarraba polyline zuwa layuka da baka daban-daban |
 | [Undo](./commands/undo/) | Soke aikin ƙarshe |

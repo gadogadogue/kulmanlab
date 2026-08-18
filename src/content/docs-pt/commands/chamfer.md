@@ -77,4 +77,4 @@ A linha inserida herda as configurações atuais de espessura de linha, cor, cam
 | Tipo de canto | Corte reto | Arco arredondado |
 | Entrada | Duas distâncias (d1, d2) | Um raio |
 | Entidade inserida | Line | Arc |
-| Entidades suportadas | Line e Polyline | Apenas Line |
+| Entidades suportadas | Line e Polyline (apenas segmentos retos) | Line, Arc e Polyline (segmentos retos ou de arco) |

@@ -77,4 +77,4 @@ Den innsatte linjen arver gjeldende lineweight-, farge-, lag- og linetype-innsti
 | Hjørnetype | Rett kutt | Avrundet bue |
 | Inndata | To avstander (d1, d2) | Én radius |
 | Innsatt entitet | Line | Arc |
-| Støttede entiteter | Lines og Polylines | Kun Lines |
+| Støttede entiteter | Lines og Polylines (kun rette segmenter) | Lines, Arcs og Polylines (rette eller buesegmenter) |

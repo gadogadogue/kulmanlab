@@ -14,7 +14,7 @@ La commande `rectangle` trace un rectangle aligné sur les axes défini par deux
 
 1. Tapez `rectangle` dans le terminal ou cliquez sur le bouton **Rectangle** de la barre d'outils.
 2. **Cliquez sur le premier coin**, ou tapez `X,Y` et appuyez sur **Entrée** pour une coordonnée exacte.
-3. **Cliquez sur le coin opposé** — le rectangle est placé instantanément et la commande se termine. La saisie de coordonnées fonctionne ici aussi.
+3. **Cliquez sur le coin opposé** — le rectangle est placé instantanément et la commande se termine. La saisie de coordonnées fonctionne ici aussi. Ou appuyez plutôt sur `D` pour saisir une largeur et une hauteur exactes — voir [Saisie des dimensions](#saisie-des-dimensions) ci-dessous.
 
 ```
   ● (premier clic)────────────┐
@@ -35,13 +35,27 @@ Les deux clics peuvent être n'importe quelle paire de coins diagonalement oppos
 3. Tapez la valeur Y.
 4. Appuyez sur **Entrée** pour placer le coin.
 
+## Saisie des dimensions
+
+Au lieu de cliquer un second coin, appuyez sur `D` juste après le premier coin pour passer à la saisie tapée largeur × hauteur :
+
+1. **Tapez la largeur** et appuyez sur **Entrée**.
+2. **Tapez la hauteur** et appuyez sur **Entrée** — l'invite vous demande maintenant de choisir une direction pour le rectangle.
+3. **Déplacez le curseur** autour du premier coin — le rectangle s'affiche en direct dans celui des quatre quadrants (haut-gauche, haut-droite, bas-gauche, bas-droite) où se trouve le curseur.
+4. **Cliquez** pour le placer dans cette direction.
+
+Appuyez à nouveau sur `D` à l'étape de choix de direction pour ressaisir la largeur et la hauteur, pré-remplies avec ce que vous venez de taper.
+
+La largeur et la hauteur sont mémorisées depuis le dernier rectangle dimensionné : à chaque invite, la valeur précédente apparaît pré-remplie et prête à être confirmée avec **Entrée**, ou vous pouvez simplement commencer à taper pour la remplacer par un nouveau nombre.
+
 ## Référence clavier
 
 | Touche | Action |
 |--------|--------|
-| `0`–`9`, `.`, `-` | Démarrer la saisie de coordonnée X |
+| `0`–`9`, `.`, `-` | Démarrer la saisie de coordonnée X, ou (en mode Saisie des dimensions) le champ largeur/hauteur |
 | `,` | Verrouiller X et passer à la saisie Y |
-| `Entrée` | Confirmer la coordonnée saisie |
+| `D` | Après le premier coin, passer à la Saisie des dimensions ; à l'étape de direction, ressaisir largeur/hauteur |
+| `Entrée` | Confirmer la coordonnée, la largeur ou la hauteur saisie |
 | `Échap` | Annuler |
 
 Les côtés sont toujours horizontaux et verticaux — il n'y a pas de verrouillage d'angle pour la commande rectangle.

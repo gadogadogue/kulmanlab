@@ -39,7 +39,7 @@ order: 1
 | [Trim](./commands/trim/) | قص مقطع خط عند تقاطعاته |
 | [Extend](./commands/extend/) | تمديد خط إلى أقرب تقاطع حدودي |
 | [Offset](./commands/offset/) | إنشاء نسخة متوازية لعنصر على مسافة محددة |
-| [Fillet](./commands/fillet/) | تقريب زاوية بين خطين بقوس مماسي |
+| [Fillet](./commands/fillet/) | تقريب زاوية بين خطين أو قوسين أو مقطعَي خط متعدد بقوس مماسي |
 | [Chamfer](./commands/chamfer/) | شطب زاوية مائلة بين خطين أو خطوط متعددة |
 | [Explode](./commands/explode/) | يفكك الخطوط المتعددة إلى خطوط وأقواس منفصلة |
 | [Undo](./commands/undo/) | تراجع عن الإجراء الأخير |

@@ -77,4 +77,4 @@ La ligne insérée hérite des paramètres actuels d'épaisseur de trait, de cou
 | Type d'angle | Coupe droite | Arc arrondi |
 | Entrée | Deux distances (d1, d2) | Un rayon |
 | Entité insérée | Line | Arc |
-| Entités supportées | Lines et Polylines | Lines uniquement |
+| Entités supportées | Lines et Polylines (segments droits uniquement) | Lines, Arcs et Polylines (segments droits ou d'arc) |

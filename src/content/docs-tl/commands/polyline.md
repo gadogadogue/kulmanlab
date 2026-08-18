@@ -94,7 +94,7 @@ Dahil iisang entity ang polyline, ang crossing selection na humihipo sa anumang 
 
 ## Suportadong Edit Command
 
-Sinusuportahan ng mga polyline ang bawat general na transformation, kasama ang offset, trim, extend, at chamfer (para sa chamfer, straight segment lang ang binibilang):
+Sinusuportahan ng mga polyline ang bawat general na transformation, kasama ang offset, trim, extend, fillet, at chamfer (para sa chamfer, straight segment lang ang binibilang):
 
 | Command | Ano ang mangyayari sa polyline |
 |---------|------------------------------|
@@ -106,11 +106,12 @@ Sinusuportahan ng mga polyline ang bawat general na transformation, kasama ang o
 | [Offset](../offset/) | Gumagawa ng parallel na polyline sa fixed na perpendicular distance |
 | [Trim](../trim/) | Inaalis ang bahagi sa pagitan ng dalawang intersection, sa straight man o arc segment |
 | [Extend](../extend/) | Pinapahaba ang unang o huling segment hanggang sa susunod na boundary |
+| [Fillet](../fillet/) | Ini-round ang sulok sa pagitan ng dalawang **katabing** segment, straight man o arc, gamit ang tangent arc na isinisingit sa polyline bilang bagong bulge segment |
 | [Chamfer](../chamfer/) | Nag-be-bevel ng sulok sa pagitan ng dalawang katabing straight segment |
 | [Explode](../explode/) | Naghihiwalay sa polyline tungo sa mga independiyenteng line at arc entity, isa kada segment |
 | [Delete](../delete/) | Inaalis ang polyline sa drawing |
 
-Hindi kailanman sinusuportahan ng Fillet ang mga polyline.
+Kapag nag-fillet ka ng isang polyline segment laban sa iba na hindi ang sarili nitong katabing segment, hindi ito nananatiling simpleng in-place na pag-edit — tingnan ang [Fillet](../fillet/) para sa resulta (pagsasama sa iisang bagong polyline, na pinagdurugtong ng fillet arc).
 
 ## Properties
 

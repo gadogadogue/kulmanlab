@@ -19,7 +19,7 @@ Deux façons de l'exécuter, le même schéma que [Delete](../delete/) :
 **Sélectionner d'abord, puis exploser** — le chemin le plus rapide :
 
 1. Sélectionnez une ou plusieurs polylignes sur le canevas.
-2. Tapez `explode` dans le terminal, ou cliquez sur le bouton **Explode** de la barre d'outils (l'icône de bombe dans le panneau Edit).
+2. Tapez `explode` dans le terminal, ou cliquez sur le bouton **Explode** dans le panneau Edit.
 
 Les polylignes sélectionnées sont explosées instantanément — pas d'étape de confirmation séparée, puisque quelque chose est déjà sélectionné.
 

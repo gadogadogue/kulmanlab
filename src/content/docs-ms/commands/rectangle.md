@@ -14,7 +14,7 @@ Arahan `rectangle` melukis segi empat tepat sejajar paksi yang ditakrifkan oleh 
 
 1. Taip `rectangle` dalam terminal atau klik butang bar alat **Rectangle**.
 2. **Klik sudut pertama**, atau taip `X,Y` dan tekan **Enter** untuk koordinat tepat.
-3. **Klik sudut bertentangan** — segi empat tepat diletakkan serta-merta dan arahan keluar. Kemasukan koordinat juga berfungsi di sini.
+3. **Klik sudut bertentangan** — segi empat tepat diletakkan serta-merta dan arahan keluar. Kemasukan koordinat juga berfungsi di sini. Atau tekan `D` sebaliknya untuk menaip lebar dan tinggi yang tepat — lihat [Kemasukan Dimensi](#kemasukan-dimensi) di bawah.
 
 ```
   ● (klik pertama)────────────┐
@@ -35,13 +35,27 @@ Pada mana-mana langkah sudut anda boleh menaip kedudukan tepat:
 3. Taip nilai Y.
 4. Tekan **Enter** untuk meletakkan sudut.
 
+## Kemasukan Dimensi
+
+Selain mengklik sudut kedua, tekan `D` sejurus selepas sudut pertama untuk beralih kepada kemasukan lebar × tinggi yang ditaip:
+
+1. **Taip lebar** dan tekan **Enter**.
+2. **Taip tinggi** dan tekan **Enter** — gesaan kini meminta anda memilih arah untuk segi empat tepat.
+3. **Gerakkan kursor** di sekeliling sudut pertama — segi empat tepat dipratonton secara langsung dalam kuadran (atas-kiri, atas-kanan, bawah-kiri, bawah-kanan) yang sedang dituding oleh kursor.
+4. **Klik** untuk meletakkannya pada arah tersebut.
+
+Tekan `D` sekali lagi pada langkah pemilihan arah untuk menaip semula lebar dan tinggi, sudah diisi terlebih dahulu dengan apa yang baru anda taip.
+
+Lebar dan tinggi diingati daripada segi empat tepat terakhir yang anda tetapkan dimensinya: pada kedua-dua gesaan, nilai sebelumnya kelihatan diisi terlebih dahulu dan sedia disahkan dengan **Enter**, atau anda boleh terus menaip untuk menggantikannya dengan nombor baharu.
+
 ## Rujukan papan kekunci
 
 | Kekunci | Tindakan |
 |---------|---------|
-| `0`–`9`, `.`, `-` | Mula kemasukan koordinat X |
+| `0`–`9`, `.`, `-` | Mula kemasukan koordinat X, atau (dalam mod Kemasukan Dimensi) medan lebar/tinggi |
 | `,` | Kunci X dan beralih ke kemasukan Y |
-| `Enter` | Sahkan koordinat yang ditaip |
+| `D` | Selepas sudut pertama: beralih ke Kemasukan Dimensi; pada langkah arah: taip semula lebar/tinggi |
+| `Enter` | Sahkan koordinat, lebar, atau tinggi yang ditaip |
 | `Escape` | Batal |
 
 Sisi sentiasa mendatar dan menegak — tiada penguncian sudut untuk arahan segi empat tepat.

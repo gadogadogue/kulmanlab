@@ -14,7 +14,7 @@ The `rectangle` command draws an axis-aligned rectangle defined by two opposite 
 
 1. Type `rectangle` in the terminal or click the **Rectangle** toolbar button.
 2. **Click the first corner**, or type `X,Y` and press **Enter** for an exact coordinate.
-3. **Click the opposite corner** — the rectangle is placed instantly and the command exits. Coordinate entry works here too.
+3. **Click the opposite corner** — the rectangle is placed instantly and the command exits. Coordinate entry works here too. Or press `D` instead to type an exact width and height — see [Dimension entry](#dimension-entry) below.
 
 ```
   ● (first click)────────────┐
@@ -35,13 +35,27 @@ At either corner step you can type an exact position:
 3. Type the Y value.
 4. Press **Enter** to place the corner.
 
+## Dimension entry
+
+Instead of clicking a second corner, press `D` right after the first corner to switch to typed width × height entry:
+
+1. **Type the width** and press **Enter**.
+2. **Type the height** and press **Enter** — the prompt now asks you to pick a direction for the rectangle.
+3. **Move the cursor** around the first corner — the rectangle previews live in whichever of the four quadrants (up-left, up-right, down-left, down-right) the cursor is currently over.
+4. **Click** to place it in that direction.
+
+Press `D` again at the direction-pick step to re-enter the width and height, pre-filled with what you just typed.
+
+The width and height are remembered from the last rectangle you dimensioned: at either prompt the previous value appears pre-filled and ready to confirm with **Enter**, or you can just start typing to replace it with a new number.
+
 ## Keyboard reference
 
 | Key | Action |
 |-----|--------|
-| `0`–`9`, `.`, `-` | Start X coordinate entry |
+| `0`–`9`, `.`, `-` | Start X coordinate entry, or (in Dimension mode) the width/height field |
 | `,` | Lock X and move to Y entry |
-| `Enter` | Confirm typed coordinate |
+| `D` | After the first corner, switch to Dimension entry; at the direction-pick step, re-enter width/height |
+| `Enter` | Confirm the typed coordinate, width, or height |
 | `Escape` | Cancel |
 
 The sides are always horizontal and vertical — there is no angle locking for the rectangle command.

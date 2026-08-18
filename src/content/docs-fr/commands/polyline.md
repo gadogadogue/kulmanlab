@@ -94,7 +94,7 @@ Parce qu'une polyligne est une seule entité, une sélection par croisement qui 
 
 ## Commandes d'édition supportées
 
-Les polylignes supportent toute transformation générale, ainsi que l'offset, le trim, l'extend et le chamfer (pour le chamfer, seuls les segments droits comptent) :
+Les polylignes supportent toute transformation générale, ainsi que l'offset, le trim, l'extend, le fillet et le chamfer (pour le chamfer, seuls les segments droits comptent) :
 
 | Commande | Ce qui arrive à la polyligne |
 |----------|------------------------------|
@@ -106,11 +106,12 @@ Les polylignes supportent toute transformation générale, ainsi que l'offset, l
 | [Offset](../offset/) | Crée une polyligne parallèle à une distance perpendiculaire fixe |
 | [Trim](../trim/) | Supprime la portion entre deux intersections, segments droits ou d'arc indifféremment |
 | [Extend](../extend/) | Prolonge le premier ou dernier segment jusqu'à la limite suivante |
+| [Fillet](../fillet/) | Arrondit un coin entre deux segments **adjacents**, droits ou d'arc, avec un arc tangent intégré à la polyligne comme nouveau segment de bulge |
 | [Chamfer](../chamfer/) | Biseaute un coin entre deux segments droits adjacents |
 | [Explode](../explode/) | Décompose la polyligne en entités ligne et arc indépendantes, une par segment |
 | [Delete](../delete/) | Supprime la polyligne du dessin |
 
-Fillet ne supporte pas du tout les polylignes.
+Filleter un segment de polyligne contre autre chose que son propre segment voisin ne reste pas une simple modification sur place — voir [Fillet](../fillet/) pour le résultat (fusion en une seule nouvelle polyligne, reliée par l'arc de congé).
 
 ## Propriétés
 

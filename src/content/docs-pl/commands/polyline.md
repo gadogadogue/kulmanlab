@@ -94,7 +94,7 @@ Ponieważ polilinia jest jednym elementem, zaznaczenie przecinające dotykające
 
 ## Obsługiwane polecenia edycji
 
-Polilinie obsługują każdą ogólną transformację, a także odsunięcie, przycinanie, przedłużanie i fazowanie (przy fazowaniu liczą się tylko proste segmenty):
+Polilinie obsługują każdą ogólną transformację, a także odsunięcie, przycinanie, przedłużanie, zaokrąglanie i fazowanie (przy fazowaniu liczą się tylko proste segmenty):
 
 | Polecenie | Co dzieje się z polilinią |
 |-----------|--------------------------|
@@ -106,11 +106,12 @@ Polilinie obsługują każdą ogólną transformację, a także odsunięcie, prz
 | [Offset](../offset/) | Tworzy równoległą polilinię w stałej prostopadłej odległości |
 | [Trim](../trim/) | Usuwa fragment między dwoma przecięciami, zarówno dla segmentów prostych, jak i łukowych |
 | [Extend](../extend/) | Przedłuża pierwszy lub ostatni segment do kolejnej granicy |
+| [Fillet](../fillet/) | Zaokrągla narożnik między dwoma **sąsiednimi** segmentami, prostymi lub łukowymi, łukiem stycznym wstawianym do polilinii jako nowy segment bulge |
 | [Chamfer](../chamfer/) | Fazuje narożnik między dwoma sąsiednimi prostymi segmentami |
 | [Explode](../explode/) | Rozbija polilinię na niezależne encje linii i łuku, po jednej na segment |
 | [Delete](../delete/) | Usuwa polilinię z rysunku |
 
-Fillet w ogóle nie obsługuje polilinii.
+Zaokrąglanie segmentu polilinii względem czegoś innego niż jego własny sąsiedni segment nie pozostaje prostą edycją w miejscu — zobacz [Fillet](../fillet/), aby poznać wynik (połączenie w jedną nową polilinię, złączoną łukiem zaokrąglenia).
 
 ## Właściwości
 

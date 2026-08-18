@@ -39,7 +39,7 @@ order: 1
 | [Trim](./commands/trim/) | Kesişimlerde çizgi parçasını kırpar |
 | [Extend](./commands/extend/) | Çizgiyi en yakın sınır kesişimine kadar uzatır |
 | [Offset](./commands/offset/) | Belirli bir mesafede nesnenin paralel kopyasını oluşturur |
-| [Fillet](./commands/fillet/) | İki çizgi arasındaki köşeyi teğet yayla yuvarlar |
+| [Fillet](./commands/fillet/) | İki çizgi, yay veya çoklu çizgi segmenti arasındaki köşeyi teğet yayla yuvarlar |
 | [Chamfer](./commands/chamfer/) | İki çizgi veya çoklu çizgi arasına düz köşegen pah kesar |
 | [Explode](./commands/explode/) | Bir çoklu çizgiyi kendi tekil çizgi ve yay parçalarına ayırır |
 | [Undo](./commands/undo/) | Son işlemi geri alır |

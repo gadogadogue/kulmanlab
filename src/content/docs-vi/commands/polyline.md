@@ -35,6 +35,19 @@ Một đường đa đoạn được chọn có hai loại điểm kéo:
 
 Điểm kéo điểm giữa đoạn là duy nhất đối với đường đa đoạn — nó cho phép bạn trượt một đoạn riêng lẻ sang bên mà không thay đổi độ dài của nó.
 
+## Các lệnh chỉnh sửa được hỗ trợ
+
+Đường đa đoạn hỗ trợ mọi phép biến đổi chung, cùng với offset, trim, extend, fillet và chamfer (với chamfer, chỉ đoạn thẳng mới được tính):
+
+| Lệnh | Tác dụng với đường đa đoạn |
+|------|---------------------------|
+| [Fillet](../fillet/) | Bo tròn góc giữa hai đoạn **liền kề**, thẳng hoặc cung, bằng một cung tiếp tuyến được chèn vào polyline như một đoạn bulge mới |
+| [Chamfer](../chamfer/) | Vát góc giữa hai đoạn thẳng liền kề |
+| [Explode](../explode/) | Tách polyline thành các thực thể đường thẳng và cung độc lập, mỗi đoạn một thực thể |
+| [Delete](../delete/) | Xóa polyline khỏi bản vẽ |
+
+Fillet một đoạn polyline với thứ gì đó khác ngoài đoạn liền kề của chính nó sẽ không còn là một chỉnh sửa đơn giản tại chỗ nữa — xem [Fillet](../fillet/) để biết kết quả (hợp nhất thành một polyline mới, được nối bằng cung fillet).
+
 ## Tham khảo phím tắt
 
 | Phím | Hành động |

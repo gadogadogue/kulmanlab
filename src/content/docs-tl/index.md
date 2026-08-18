@@ -39,7 +39,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 | [Trim](./commands/trim/) | Putulin ang line segment sa mga intersection nito |
 | [Extend](./commands/extend/) | Palawigin ang linya hanggang sa pinakamalapit na boundary intersection |
 | [Offset](./commands/offset/) | Gumawa ng parallel na kopya ng entity sa tiyak na distansya |
-| [Fillet](./commands/fillet/) | I-round ang sulok sa pagitan ng dalawang linya gamit ang tangent arc |
+| [Fillet](./commands/fillet/) | I-round ang sulok sa pagitan ng dalawang linya, arc, o polyline segment gamit ang tangent arc |
 | [Chamfer](./commands/chamfer/) | Gumawa ng straight diagonal na sulok sa pagitan ng dalawang linya o polyline |
 | [Explode](./commands/explode/) | Naghihiwalay ng polyline sa mga indibidwal na linya at arko nito |
 | [Undo](./commands/undo/) | I-undo ang huling aksyon |

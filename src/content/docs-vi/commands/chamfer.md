@@ -75,4 +75,4 @@ Một đoạn cung của polyline không bao giờ được chọn để chamfer
 | Loại góc | Cắt thẳng | Cung tròn |
 | Đầu vào | Hai khoảng cách (d1, d2) | Một bán kính |
 | Thực thể được chèn | Line | Arc |
-| Thực thể được hỗ trợ | Lines và Polylines | Chỉ Lines |
+| Thực thể được hỗ trợ | Lines và Polylines (chỉ đoạn thẳng) | Lines, Arcs và Polylines (đoạn thẳng hoặc đoạn cung) |

@@ -13,7 +13,20 @@ Lệnh `rectangle` vẽ một hình chữ nhật căn chỉnh trục được x�
 
 1. Gõ `rectangle` trong terminal hoặc nhấp nút **Rectangle** trên thanh công cụ.
 2. **Nhấp góc đầu tiên**, hoặc gõ `X,Y` rồi nhấn **Enter** để nhập tọa độ chính xác.
-3. **Nhấp góc đối diện** — hình chữ nhật được đặt ngay lập tức và lệnh kết thúc.
+3. **Nhấp góc đối diện** — hình chữ nhật được đặt ngay lập tức và lệnh kết thúc. Hoặc nhấn `D` để thay vào đó nhập chiều rộng và chiều cao chính xác — xem [Nhập kích thước](#nhập-kích-thước) bên dưới.
+
+## Nhập kích thước
+
+Thay vì nhấp góc thứ hai, nhấn `D` ngay sau góc đầu tiên để chuyển sang nhập chiều rộng × chiều cao:
+
+1. **Nhập chiều rộng** và nhấn **Enter**.
+2. **Nhập chiều cao** và nhấn **Enter** — lời nhắc bây giờ yêu cầu bạn chọn hướng cho hình chữ nhật.
+3. **Di chuyển con trỏ** quanh góc đầu tiên — hình chữ nhật được xem trước trực tiếp tại góc phần tư (trên-trái, trên-phải, dưới-trái, dưới-phải) mà con trỏ đang ở trên.
+4. **Nhấp** để đặt nó theo hướng đó.
+
+Nhấn `D` một lần nữa ở bước chọn hướng để nhập lại chiều rộng và chiều cao, được điền sẵn với giá trị bạn vừa gõ.
+
+Chiều rộng và chiều cao được ghi nhớ từ hình chữ nhật cuối cùng bạn đã nhập kích thước: ở cả hai lời nhắc, giá trị trước đó xuất hiện điền sẵn và sẵn sàng để xác nhận bằng **Enter**, hoặc bạn có thể bắt đầu gõ để thay bằng số mới.
 
 ## Chỉnh sửa điểm kéo — định hình lại sau khi tạo
 
@@ -26,9 +39,10 @@ Lệnh `rectangle` vẽ một hình chữ nhật căn chỉnh trục được x�
 
 | Phím | Hành động |
 |------|-----------|
-| `0`–`9`, `.`, `-` | Bắt đầu nhập tọa độ X |
+| `0`–`9`, `.`, `-` | Bắt đầu nhập tọa độ X, hoặc (ở chế độ Nhập kích thước) trường chiều rộng/chiều cao |
 | `,` | Khóa X và chuyển sang nhập Y |
-| `Enter` | Xác nhận tọa độ đã gõ |
+| `D` | Sau góc đầu tiên: chuyển sang Nhập kích thước; ở bước chọn hướng: nhập lại chiều rộng/chiều cao |
+| `Enter` | Xác nhận tọa độ, chiều rộng hoặc chiều cao đã gõ |
 | `Escape` | Hủy |
 
 ## Các lệnh chỉnh sửa được hỗ trợ

@@ -94,7 +94,7 @@ Fordi en polylinje er én entitet, markerer en krydsningsmarkering, der rører e
 
 ## Understøttede redigeringskommandoer
 
-Polylinjer understøtter enhver generel transformation, plus offset, trim, extend og chamfer (ved chamfer tælles kun lige segmenter):
+Polylinjer understøtter enhver generel transformation, plus offset, trim, extend, fillet og chamfer (ved chamfer tælles kun lige segmenter):
 
 | Kommando | Hvad der sker med polylinjen |
 |---------|------------------------------|
@@ -106,11 +106,12 @@ Polylinjer understøtter enhver generel transformation, plus offset, trim, exten
 | [Offset](../offset/) | Opretter en parallel polylinje i en fast vinkelret afstand |
 | [Trim](../trim/) | Fjerner delen mellem to skæringspunkter, for lige og buesegmenter ens |
 | [Extend](../extend/) | Forlænger det første eller sidste segment til næste grænse |
+| [Fillet](../fillet/) | Afrunder et hjørne mellem to **tilstødende** segmenter, lige eller buer, med en tangentbue der indsættes i polylinjen som et nyt bulge-segment |
 | [Chamfer](../chamfer/) | Faser et hjørne mellem to tilstødende lige segmenter |
 | [Explode](../explode/) | Opdeler polylinjen i selvstændige linje- og bueelementer, ét pr. segment |
 | [Delete](../delete/) | Fjerner polylinjen fra tegningen |
 
-Fillet understøtter slet ikke polylinjer.
+At fillette et polylinjesegment mod noget andet end sit eget nabosegment forbliver ikke en simpel redigering på stedet — se [Fillet](../fillet/) for resultatet (sammenlægning til én ny polylinje, bundet sammen af fillet-buen).
 
 ## Egenskaber
 

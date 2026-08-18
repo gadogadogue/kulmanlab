@@ -94,7 +94,7 @@ Karena polyline adalah satu entitas, seleksi persilangan yang menyentuh segmen m
 
 ## Perintah edit yang didukung
 
-Polyline mendukung setiap transformasi umum, ditambah offset, trim, extend, dan chamfer (untuk chamfer hanya segmen lurus yang dihitung):
+Polyline mendukung setiap transformasi umum, ditambah offset, trim, extend, fillet, dan chamfer (untuk chamfer hanya segmen lurus yang dihitung):
 
 | Perintah | Apa yang terjadi pada polyline |
 |---------|------------------------------|
@@ -106,11 +106,12 @@ Polyline mendukung setiap transformasi umum, ditambah offset, trim, extend, dan 
 | [Offset](../offset/) | Membuat polyline paralel pada jarak tegak lurus yang tetap |
 | [Trim](../trim/) | Menghapus bagian antara dua perpotongan, pada segmen lurus maupun busur |
 | [Extend](../extend/) | Memperpanjang segmen pertama atau terakhir hingga batas berikutnya |
+| [Fillet](../fillet/) | Membulatkan sudut antara dua segmen **berdekatan**, lurus atau busur, dengan busur tangen yang disisipkan ke polyline sebagai segmen bulge baru |
 | [Chamfer](../chamfer/) | Membuat chamfer pada sudut antara dua segmen lurus yang berdekatan |
 | [Explode](../explode/) | Memecah polyline menjadi entitas garis dan busur yang berdiri sendiri, satu per segmen |
 | [Delete](../delete/) | Menghapus polyline dari gambar |
 
-Fillet sama sekali tidak mendukung polyline.
+Melakukan fillet pada segmen polyline terhadap sesuatu selain segmen tetangganya sendiri tidak akan tetap menjadi edit sederhana di tempat — lihat [Fillet](../fillet/) untuk hasilnya (penggabungan menjadi satu polyline baru, disatukan oleh busur fillet).
 
 ## Properti
 

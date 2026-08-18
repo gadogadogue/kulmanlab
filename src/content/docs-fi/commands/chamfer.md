@@ -77,4 +77,4 @@ Lisätty viiva perii nykyiset lineweight-, väri-, taso- ja linetype-asetukset.
 | Kulman tyyppi | Suora leikkaus | Pyöristetty kaari |
 | Syöte | Kaksi etäisyyttä (d1, d2) | Yksi säde |
 | Lisätty entiteetti | Line | Arc |
-| Tuetut entiteetit | Lines ja Polylines | Vain Lines |
+| Tuetut entiteetit | Lines ja Polylines (vain suorat segmentit) | Lines, Arcs ja Polylines (suorat tai kaarisegmentit) |

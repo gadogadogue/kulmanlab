@@ -77,4 +77,4 @@ Mstari uliowekwa unaurithi mzigo wa sasa wa mstari, rangi, safu, na mipangilio y
 | Aina ya kona | Mkato wa moja kwa moja | Upinde wa mviringo |
 | Uingizaji | Umbali mbili (d1, d2) | Radi moja |
 | Kipengele kilichowekwa | Line | Arc |
-| Vipengele vinavyosaidiwa | Lines na Polylines | Lines peke yake |
+| Vipengele vinavyosaidiwa | Line na Polyline (sehemu za moja kwa moja pekee) | Line, Arc, na Polyline (sehemu ya moja kwa moja au ya mviringo) |

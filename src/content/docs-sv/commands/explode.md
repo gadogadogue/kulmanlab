@@ -19,7 +19,7 @@ Två sätt att köra det, samma mönster som [Delete](../delete/):
 **Markera först, sedan explodera** — den snabbaste vägen:
 
 1. Markera en eller flera polylinjer på ritytan.
-2. Skriv `explode` i terminalen, eller klicka på verktygsfältsknappen **Explode** (bombikonen i Edit-panelen).
+2. Skriv `explode` i terminalen, eller klicka på knappen **Explode** i Edit-panelen.
 
 De markerade polylinjerna exploderas omedelbart — inget separat bekräftelsesteg, eftersom något redan är markerat.
 

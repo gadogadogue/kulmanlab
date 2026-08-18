@@ -94,7 +94,7 @@ Omdat een polylijn één entiteit is, selecteert een kruisende selectie die een 
 
 ## Ondersteunde bewerkingscommando's
 
-Polylijnen ondersteunen elke algemene transformatie, plus offset, trim, extend en chamfer (bij chamfer tellen alleen rechte segmenten mee):
+Polylijnen ondersteunen elke algemene transformatie, plus offset, trim, extend, fillet en chamfer (bij chamfer tellen alleen rechte segmenten mee):
 
 | Commando | Wat er gebeurt met de polylijn |
 |---------|------------------------------|
@@ -106,11 +106,12 @@ Polylijnen ondersteunen elke algemene transformatie, plus offset, trim, extend e
 | [Offset](../offset/) | Maakt een parallelle polylijn op een vaste loodrechte afstand |
 | [Trim](../trim/) | Verwijdert het deel tussen twee snijpunten, bij rechte en boogsegmenten gelijk |
 | [Extend](../extend/) | Verlengt het eerste of laatste segment tot de volgende rand |
+| [Fillet](../fillet/) | Rondt een hoek af tussen twee **aangrenzende** segmenten, recht of boog, met een raakboog die als nieuw bulge-segment in de polylijn wordt ingevoegd |
 | [Chamfer](../chamfer/) | Schuint een hoek af tussen twee aangrenzende rechte segmenten |
 | [Explode](../explode/) | Splitst de polylijn op in zelfstandige lijn- en boogentiteiten, één per segment |
 | [Delete](../delete/) | Verwijdert de polylijn uit de tekening |
 
-Chamfer's tegenhanger Fillet ondersteunt polylijnen helemaal niet.
+Een polylijnsegment filleten tegen iets anders dan zijn eigen buursegment blijft geen eenvoudige bewerking ter plekke — zie [Fillet](../fillet/) voor het resultaat (samenvoeging tot één nieuwe polylijn, verbonden door de fillet-boog).
 
 ## Eigenschappen
 

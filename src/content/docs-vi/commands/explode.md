@@ -19,7 +19,7 @@ Hai cách để chạy lệnh này, cùng mẫu với [Delete](../delete/):
 **Chọn trước, rồi explode** — cách nhanh nhất:
 
 1. Chọn một hoặc nhiều polyline trên canvas.
-2. Gõ `explode` trong terminal, hoặc nhấp nút **Explode** trên thanh công cụ (biểu tượng quả bom trong bảng Edit).
+2. Gõ `explode` trong terminal, hoặc nhấp nút **Explode** trong bảng Edit.
 
 Các polyline đã chọn được tách ngay lập tức — không có bước xác nhận riêng, vì đã có thứ được chọn sẵn.
 

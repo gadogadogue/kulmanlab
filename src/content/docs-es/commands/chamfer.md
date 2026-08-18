@@ -77,4 +77,4 @@ La línea insertada hereda el grosor de línea, color, capa y tipo de línea act
 | Tipo de esquina | Corte recto | Arco redondeado |
 | Entrada | Dos distancias (d1, d2) | Un radio |
 | Entidad insertada | Line | Arc |
-| Entidades compatibles | Lines y Polylines | Solo Lines |
+| Entidades compatibles | Lines y Polylines (solo segmentos rectos) | Lines, Arcs y Polylines (segmentos rectos o de arco) |

@@ -14,7 +14,7 @@ Ginuguhit ng `rectangle` command ang axis-aligned na rectangle na naitatakda ng 
 
 1. I-type ang `rectangle` sa terminal o i-click ang **Rectangle** button sa toolbar.
 2. **I-click ang unang sulok**, o i-type ang `X,Y` at pindutin ang **Enter** para sa eksaktong coordinate.
-3. **I-click ang kasalungat na sulok** — mailalagay agad ang rectangle at magsasara ang command. Gumagana rin dito ang coordinate entry.
+3. **I-click ang kasalungat na sulok** — mailalagay agad ang rectangle at magsasara ang command. Gumagana rin dito ang coordinate entry. O pindutin ang `D` sa halip para mag-type ng eksaktong width at height — tingnan ang [Dimension Entry](#dimension-entry) sa ibaba.
 
 ```
   ● (first click)────────────┐
@@ -35,13 +35,27 @@ Sa alinman sa dalawang sulok, puwede kang mag-type ng eksaktong posisyon:
 3. I-type ang value ng Y.
 4. Pindutin ang **Enter** para ilagay ang sulok.
 
+## Dimension Entry
+
+Sa halip na i-click ang ikalawang sulok, pindutin ang `D` kaagad pagkatapos ng unang sulok para lumipat sa pag-type ng width × height:
+
+1. **I-type ang width** at pindutin ang **Enter**.
+2. **I-type ang height** at pindutin ang **Enter** — hihilingin na ngayon ng prompt na pumili ka ng direksyon para sa rectangle.
+3. **Igalaw ang cursor** sa paligid ng unang sulok — na-p-preview nang live ang rectangle sa quadrant (upper-left, upper-right, lower-left, lower-right) kung saan naroon ang cursor.
+4. **I-click** para ilagay ito sa direksyong iyon.
+
+Pindutin ulit ang `D` sa hakbang ng pagpili ng direksyon para muling i-type ang width at height, na paunang puno na ng kaka-type mo lang.
+
+Naaalala ang width at height mula sa huling rectangle na binigyan mo ng dimension: sa parehong prompt, makikitang paunang puno na ang naunang value at handang kumpirmahin gamit ang **Enter**, o puwede ka nang mag-type para palitan ito ng bagong numero.
+
 ## Keyboard Reference
 
 | Key | Aksyon |
 |-----|--------|
-| `0`–`9`, `.`, `-` | Simulan ang X coordinate entry |
+| `0`–`9`, `.`, `-` | Simulan ang X coordinate entry, o (sa Dimension Entry mode) ang width/height field |
 | `,` | I-lock ang X at lumipat sa Y entry |
-| `Enter` | Kumpirmahin ang na-type na coordinate |
+| `D` | Pagkatapos ng unang sulok: lumipat sa Dimension Entry; sa hakbang ng direksyon: muling i-type ang width/height |
+| `Enter` | Kumpirmahin ang na-type na coordinate, width, o height |
 | `Escape` | Kanselahin |
 
 Palaging horizontal at vertical ang mga gilid — walang angle locking para sa rectangle command.

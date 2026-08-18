@@ -77,4 +77,4 @@ Garis yang disisipkan mewarisi pengaturan ketebalan garis, warna, layer, dan tip
 | Tipe sudut | Potongan lurus | Busur membulat |
 | Input | Dua jarak (d1, d2) | Satu radius |
 | Entitas yang disisipkan | Line | Arc |
-| Entitas yang didukung | Line dan Polyline | Hanya Line |
+| Entitas yang didukung | Line dan Polyline (hanya segmen lurus) | Line, Arc, dan Polyline (segmen lurus atau busur) |

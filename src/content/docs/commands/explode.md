@@ -19,7 +19,7 @@ Two ways to run it, the same pattern as [Delete](../delete/):
 **Pre-select, then explode** — the fastest path:
 
 1. Select one or more polylines on the canvas.
-2. Type `explode` in the terminal, or click the **Explode** toolbar button (the bomb icon in the Edit panel).
+2. Type `explode` in the terminal, or click the **Explode** toolbar button in the Edit panel.
 
 The selected polylines are exploded instantly — no separate confirmation step, since something is already selected.
 

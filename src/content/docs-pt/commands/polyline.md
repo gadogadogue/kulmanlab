@@ -94,7 +94,7 @@ Como uma polilinha é uma entidade, uma seleção cruzada que toca qualquer segm
 
 ## Comandos de edição suportados
 
-Polilinhas suportam toda transformação geral, além de offset, trim, extend e chamfer (no chamfer, apenas segmentos retos contam):
+Polilinhas suportam toda transformação geral, além de offset, trim, extend, fillet e chamfer (no chamfer, apenas segmentos retos contam):
 
 | Comando | O que acontece com a polilinha |
 |---------|-------------------------------|
@@ -106,11 +106,12 @@ Polilinhas suportam toda transformação geral, além de offset, trim, extend e 
 | [Offset](../offset/) | Cria uma polilinha paralela a uma distância perpendicular fixa |
 | [Trim](../trim/) | Remove a parte entre duas interseções, em segmentos retos ou de arco igualmente |
 | [Extend](../extend/) | Estende o primeiro ou último segmento até o próximo limite |
+| [Fillet](../fillet/) | Arredonda um canto entre dois segmentos **adjacentes**, retos ou de arco, com um arco tangente inserido na polilinha como um novo segmento de bulge |
 | [Chamfer](../chamfer/) | Chanfra um canto entre dois segmentos retos adjacentes |
 | [Explode](../explode/) | Decompõe a polilinha em entidades de linha e arco independentes, uma por segmento |
 | [Delete](../delete/) | Remove a polilinha do desenho |
 
-Fillet não suporta polilinhas de forma alguma.
+Filetar um segmento de uma polilinha contra algo diferente do seu próprio segmento vizinho não permanece uma simples edição no local — veja [Fillet](../fillet/) para o resultado (fusão em uma única nova polilinha, ligada pelo arco de filete).
 
 ## Polyline vs Linha — quando usar qual
 

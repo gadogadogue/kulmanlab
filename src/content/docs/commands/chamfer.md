@@ -75,4 +75,4 @@ The inserted line inherits the current lineweight, color, layer, and linetype se
 | Corner type | Straight cut | Rounded arc |
 | Input | Two distances (d1, d2) | One radius |
 | Inserted entity | Line | Arc |
-| Supported entities | Lines and Polylines | Lines only |
+| Supported entities | Lines and Polylines (straight segments only) | Lines, Arcs, and Polylines (straight or arc segments) |

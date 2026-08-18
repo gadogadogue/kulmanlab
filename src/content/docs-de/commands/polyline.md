@@ -94,7 +94,7 @@ Da eine Polylinie eine Entität ist, wählt eine schneidende Auswahl, die ein be
 
 ## Unterstützte Bearbeitungsbefehle
 
-Polylinien unterstützen jede allgemeine Transformation sowie Offset, Trim, Extend und Chamfer (bei Chamfer zählen nur gerade Segmente):
+Polylinien unterstützen jede allgemeine Transformation sowie Offset, Trim, Extend, Fillet und Chamfer (bei Chamfer zählen nur gerade Segmente):
 
 | Befehl | Wirkung auf die Polylinie |
 |--------|--------------------------|
@@ -106,11 +106,12 @@ Polylinien unterstützen jede allgemeine Transformation sowie Offset, Trim, Exte
 | [Offset](../offset/) | Erstellt eine parallele Polylinie in einem festen senkrechten Abstand |
 | [Trim](../trim/) | Entfernt den Abschnitt zwischen zwei Schnittpunkten, bei geraden wie Bogensegmenten gleichermaßen |
 | [Extend](../extend/) | Verlängert das erste oder letzte Segment bis zur nächsten Begrenzung |
+| [Fillet](../fillet/) | Rundet eine Ecke zwischen zwei **benachbarten** Segmenten, gerade oder Bogen, mit einem Tangentenbogen ab, der als neues Bulge-Segment in die Polylinie eingefügt wird |
 | [Chamfer](../chamfer/) | Fast eine Ecke zwischen zwei benachbarten geraden Segmenten ab |
 | [Explode](../explode/) | Zerlegt die Polylinie in eigenständige Linien- und Bogen-Entitäten, eine pro Segment |
 | [Delete](../delete/) | Entfernt die Polylinie aus der Zeichnung |
 
-Fillet unterstützt Polylinien überhaupt nicht.
+Wird eines der Segmente einer Polylinie gegen etwas anderes als sein eigenes Nachbarsegment gefillet, bleibt es keine einfache Änderung an Ort und Stelle — siehe [Fillet](../fillet/) für das Ergebnis (Zusammenführung zu einer einzigen neuen Polylinie, verbunden durch den Fillet-Bogen).
 
 ## Eigenschaften
 

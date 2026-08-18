@@ -39,7 +39,7 @@ Välkommen till **KulmanLab CAD**-kommandoreferensen. [KulmanLab CAD](https://ku
 | [Trim](./commands/trim/) | Klipp ett linjesegment vid dess skärningspunkter |
 | [Extend](./commands/extend/) | Förläng en linje till närmaste gränsskärning |
 | [Offset](./commands/offset/) | Skapa en parallell kopia av en entitet på ett givet avstånd |
-| [Fillet](./commands/fillet/) | Runda ett hörn mellan två linjer med en tangentiell båge |
+| [Fillet](./commands/fillet/) | Runda ett hörn mellan två linjer, bågar eller polylinjesegment med en tangentiell båge |
 | [Chamfer](./commands/chamfer/) | Skär av ett rakt diagonalt hörn mellan två linjer eller polylinjer |
 | [Explode](./commands/explode/) | Delar upp en polylinje i dess enskilda linjer och bågar |
 | [Undo](./commands/undo/) | Ångra den senaste åtgärden |

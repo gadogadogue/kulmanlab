@@ -94,7 +94,7 @@ Kwa sababu polyline ni kipande kimoja, uchaguzi wa kupita unaogusa sehemu yoyote
 
 ## Amri za uhariri zinazosaidiwa
 
-Polylines zinasaidia kila mabadiliko ya kawaida, pamoja na offset, trim, extend, na chamfer (kwa chamfer ni sehemu za moja kwa moja pekee zinazohesabiwa):
+Polylines zinasaidia kila mabadiliko ya kawaida, pamoja na offset, trim, extend, chamfer, na fillet (kwa chamfer ni sehemu za moja kwa moja pekee zinazohesabiwa, wakati fillet inashughulikia sehemu za moja kwa moja na za mviringo):
 
 | Amri | Kinachotokea kwa polyline |
 |------|--------------------------|
@@ -107,10 +107,9 @@ Polylines zinasaidia kila mabadiliko ya kawaida, pamoja na offset, trim, extend,
 | [Trim](../trim/) | Huondoa sehemu kati ya makutano mawili, kwa sehemu za moja kwa moja au mviringo sawa |
 | [Extend](../extend/) | Hunyoosha sehemu ya kwanza au ya mwisho hadi mpaka unaofuata |
 | [Chamfer](../chamfer/) | Hupinda kona kati ya sehemu mbili za moja kwa moja zilizo jirani |
+| [Fillet](../fillet/) | Hupinda kona kati ya sehemu mbili zilizo jirani (za moja kwa moja au za mviringo) za polyline moja kama bulge ya upinde wa tangent; kupinda kwenye polyline nyingine iliyo wazi au kipengele huru cha Line/Arc huunganisha vyote viwili kuwa polyline mpya |
 | [Explode](../explode/) | Inavunja polyline kuwa entiti huru za mstari na mkunjo, moja kwa kila sehemu |
 | [Delete](../delete/) | Huondoa polyline kutoka kwa mchoro |
-
-Fillet hazitumiki kabisa kwa polylines.
 
 ## Sifa
 

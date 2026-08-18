@@ -14,7 +14,7 @@ Il comando `rectangle` disegna un rettangolo allineato agli assi definito da due
 
 1. Digita `rectangle` nel terminale o clicca il pulsante **Rectangle** nella barra degli strumenti.
 2. **Clicca il primo angolo**, oppure digita `X,Y` e premi **Invio** per una coordinata esatta.
-3. **Clicca l'angolo opposto** — il rettangolo viene posizionato istantaneamente e il comando termina. Anche qui è disponibile l'inserimento coordinate.
+3. **Clicca l'angolo opposto** — il rettangolo viene posizionato istantaneamente e il comando termina. Anche qui è disponibile l'inserimento coordinate. Oppure premi `D` per digitare invece larghezza e altezza esatte — vedi [Inserimento dimensioni](#inserimento-dimensioni) più sotto.
 
 ```
   ● (primo clic)──────────────────┐
@@ -35,13 +35,27 @@ In entrambi i passi degli angoli puoi digitare una posizione esatta:
 3. Digita il valore Y.
 4. Premi **Invio** per posizionare l'angolo.
 
+## Inserimento dimensioni
+
+Invece di cliccare un secondo angolo, premi `D` subito dopo il primo angolo per passare all'inserimento digitato di larghezza × altezza:
+
+1. **Digita la larghezza** e premi **Invio**.
+2. **Digita l'altezza** e premi **Invio** — il prompt ora chiede di scegliere una direzione per il rettangolo.
+3. **Sposta il cursore** intorno al primo angolo — il rettangolo viene anteprima in tempo reale nel quadrante (alto-sinistra, alto-destra, basso-sinistra, basso-destra) su cui si trova il cursore.
+4. **Clicca** per posizionarlo in quella direzione.
+
+Premi di nuovo `D` nel passaggio di scelta della direzione per reinserire larghezza e altezza, precompilate con quanto appena digitato.
+
+Larghezza e altezza vengono ricordate dall'ultimo rettangolo dimensionato: a entrambi i prompt il valore precedente appare precompilato e pronto per essere confermato con **Invio**, oppure puoi semplicemente iniziare a digitare per sostituirlo con un nuovo numero.
+
 ## Riferimento tastiera
 
 | Tasto | Azione |
 |-------|--------|
-| `0`–`9`, `.`, `-` | Inizia l'inserimento coordinata X |
+| `0`–`9`, `.`, `-` | Inizia l'inserimento coordinata X, oppure (in modalità Inserimento dimensioni) il campo larghezza/altezza |
 | `,` | Blocca X e passa all'inserimento Y |
-| `Invio` | Conferma la coordinata digitata |
+| `D` | Dopo il primo angolo, passa a Inserimento dimensioni; nel passaggio di direzione, reinserisce larghezza/altezza |
+| `Invio` | Conferma la coordinata, larghezza o altezza digitata |
 | `Esc` | Annulla |
 
 I lati sono sempre orizzontali e verticali — non c'è blocco angolo per il comando rettangolo.

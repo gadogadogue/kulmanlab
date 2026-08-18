@@ -14,7 +14,7 @@ order: 3
 
 1. Terminale `rectangle` yazın veya araç çubuğundaki **Rectangle** düğmesine tıklayın.
 2. **Birinci köşeyi tıklayın** veya tam koordinat için `X,Y` yazıp **Enter** tuşuna basın.
-3. **Karşıt köşeyi tıklayın** — dikdörtgen anında yerleştirilir ve komut çıkar. Koordinat girişi burada da çalışır.
+3. **Karşıt köşeyi tıklayın** — dikdörtgen anında yerleştirilir ve komut çıkar. Koordinat girişi burada da çalışır. Ya da tam bir genişlik ve yükseklik girmek için bunun yerine `D` tuşuna basın — aşağıdaki [Ölçü Girişi](#ölçü-girişi) bölümüne bakın.
 
 ```
   ● (birinci tıklama)────────────┐
@@ -35,13 +35,27 @@ Her iki köşe adımında da tam konum yazabilirsiniz:
 3. Y değerini yazın.
 4. Köşeyi yerleştirmek için **Enter** tuşuna basın.
 
+## Ölçü Girişi
+
+İkinci bir köşeyi tıklamak yerine, yazılı genişlik × yükseklik girişine geçmek için birinci köşeden hemen sonra `D` tuşuna basın:
+
+1. **Genişliği yazın** ve **Enter** tuşuna basın.
+2. **Yüksekliği yazın** ve **Enter** tuşuna basın — istem artık dikdörtgen için bir yön seçmenizi ister.
+3. **İmleci** birinci köşe etrafında **hareket ettirin** — dikdörtgen, imlecin o an üzerinde bulunduğu çeyrekte (sol üst, sağ üst, sol alt, sağ alt) canlı olarak önizlenir.
+4. **Tıklayın** — o yönde yerleştirilir.
+
+Yön seçimi adımında genişlik ve yüksekliği, az önce yazdığınızla önceden doldurulmuş şekilde yeniden girmek için `D` tuşuna tekrar basın.
+
+Genişlik ve yükseklik, en son ölçülendirdiğiniz dikdörtgenden hatırlanır: her iki istemde de önceki değer önceden doldurulmuş ve **Enter** ile onaylanmaya hazır olarak görünür, ya da yeni bir sayıyla değiştirmek için doğrudan yazmaya başlayabilirsiniz.
+
 ## Klavye Referansı
 
 | Tuş | İşlem |
 |-----|--------|
-| `0`–`9`, `.`, `-` | X koordinatı girişini başlatır |
+| `0`–`9`, `.`, `-` | X koordinatı girişini, ya da (Ölçü Girişi modunda) genişlik/yükseklik alanını başlatır |
 | `,` | X'i kilitler ve Y girişine geçer |
-| `Enter` | Yazılan koordinatı onaylar |
+| `D` | Birinci köşeden sonra Ölçü Girişine geçer; yön adımında genişlik/yüksekliği yeniden girer |
+| `Enter` | Yazılan koordinatı, genişliği veya yüksekliği onaylar |
 | `Escape` | İptal eder |
 
 Kenarlar her zaman yatay ve dikeydir — dikdörtgen komutu için açı kilitleme yoktur.

@@ -94,7 +94,7 @@ Dado que una polilínea es una sola entidad, una selección cruzada que toca cua
 
 ## Comandos de edición admitidos
 
-Las polilíneas admiten toda transformación general, además de offset, trim, extend y chamfer (en chamfer solo cuentan los segmentos rectos):
+Las polilíneas admiten toda transformación general, además de offset, trim, extend, fillet y chamfer (en chamfer solo cuentan los segmentos rectos):
 
 | Comando | Qué ocurre con la polilínea |
 |---------|------------------------------|
@@ -106,11 +106,12 @@ Las polilíneas admiten toda transformación general, además de offset, trim, e
 | [Offset](../offset/) | Crea una polilínea paralela a una distancia perpendicular fija |
 | [Trim](../trim/) | Elimina la parte entre dos intersecciones, en segmentos rectos o de arco por igual |
 | [Extend](../extend/) | Extiende el primer o último segmento hasta el siguiente límite |
+| [Fillet](../fillet/) | Redondea una esquina entre dos segmentos **adyacentes**, rectos o de arco, con un arco tangente integrado en la polilínea como un nuevo segmento de bulge |
 | [Chamfer](../chamfer/) | Bisela una esquina entre dos segmentos rectos adyacentes |
 | [Explode](../explode/) | Descompone la polilínea en entidades de línea y arco independientes, una por segmento |
 | [Delete](../delete/) | Elimina la polilínea del dibujo |
 
-Fillet no admite polilíneas en absoluto.
+Filetear uno de los segmentos de una polilínea contra algo distinto de su propio segmento vecino no se queda como una simple edición en el lugar — consulta [Fillet](../fillet/) para ver el resultado (fusión en una sola polilínea nueva, unida por el arco de filete).
 
 ## Propiedades
 

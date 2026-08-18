@@ -39,7 +39,7 @@ order: 1
 | [Trim](./commands/trim/) | 交点で直線セグメントをトリムする |
 | [Extend](./commands/extend/) | 直線を最近傍の境界交点まで延長する |
 | [Offset](./commands/offset/) | 指定距離で平行コピーを作成する |
-| [Fillet](./commands/fillet/) | 2 直線の角を接線円弧で丸める |
+| [Fillet](./commands/fillet/) | 2 直線・円弧・ポリラインセグメントの角を接線円弧で丸める |
 | [Chamfer](./commands/chamfer/) | 2 直線またはポリラインの角を斜め直線で切り取る |
 | [Explode](./commands/explode/) | ポリラインを個々の直線と円弧に分解する |
 | [Undo](./commands/undo/) | 直前の操作を取り消す |

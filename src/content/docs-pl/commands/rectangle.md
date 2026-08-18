@@ -14,7 +14,7 @@ Polecenie `rectangle` rysuje prostokąt wyrównany do osi, zdefiniowany przez dw
 
 1. Wpisz `rectangle` w terminalu lub kliknij przycisk **Prostokąt** na pasku narzędzi.
 2. **Kliknij pierwszy narożnik** lub wpisz `X,Y` i naciśnij **Enter** dla dokładnej współrzędnej.
-3. **Kliknij przeciwny narożnik** — prostokąt jest natychmiast umieszczany i polecenie kończy się. Tutaj również działa wprowadzanie współrzędnych.
+3. **Kliknij przeciwny narożnik** — prostokąt jest natychmiast umieszczany i polecenie kończy się. Tutaj również działa wprowadzanie współrzędnych. Możesz też nacisnąć `D`, aby wpisać dokładną szerokość i wysokość — zobacz [Wprowadzanie wymiarów](#wprowadzanie-wymiarów) poniżej.
 
 ```
   ● (pierwsze kliknięcie)────────────┐
@@ -35,13 +35,27 @@ Na każdym kroku narożnika możesz wpisać dokładną pozycję:
 3. Wpisz wartość Y.
 4. Naciśnij **Enter**, aby umieścić narożnik.
 
+## Wprowadzanie wymiarów
+
+Zamiast klikać drugi narożnik, naciśnij `D` zaraz po pierwszym narożniku, aby przełączyć się na wpisywanie szerokości × wysokości:
+
+1. **Wpisz szerokość** i naciśnij **Enter**.
+2. **Wpisz wysokość** i naciśnij **Enter** — monit teraz prosi o wybranie kierunku dla prostokąta.
+3. **Przesuń kursor** wokół pierwszego narożnika — prostokąt jest podglądany na żywo w tej ćwiartce (lewy górny, prawy górny, lewy dolny, prawy dolny), nad którą aktualnie znajduje się kursor.
+4. **Kliknij**, aby umieścić go w tym kierunku.
+
+Naciśnij ponownie `D` w kroku wyboru kierunku, aby ponownie wprowadzić szerokość i wysokość, wstępnie wypełnione tym, co właśnie wpisano.
+
+Szerokość i wysokość są zapamiętywane z ostatniego wymiarowanego prostokąta: przy obu monitach poprzednia wartość pojawia się wstępnie wypełniona i gotowa do potwierdzenia klawiszem **Enter**, albo możesz po prostu zacząć pisać, aby zastąpić ją nową liczbą.
+
 ## Skróty klawiaturowe
 
 | Klawisz | Akcja |
 |---------|-------|
-| `0`–`9`, `.`, `-` | Rozpocznij wprowadzanie współrzędnej X |
+| `0`–`9`, `.`, `-` | Rozpocznij wprowadzanie współrzędnej X, lub (w trybie Wprowadzania wymiarów) pole szerokości/wysokości |
 | `,` | Zablokuj X i przejdź do wprowadzania Y |
-| `Enter` | Potwierdź wpisaną współrzędną |
+| `D` | Po pierwszym narożniku: przełącz na Wprowadzanie wymiarów; w kroku kierunku: wprowadź ponownie szerokość/wysokość |
+| `Enter` | Potwierdź wpisaną współrzędną, szerokość lub wysokość |
 | `Escape` | Anuluj |
 
 Boki są zawsze poziome i pionowe — nie ma blokowania kąta dla polecenia prostokąt.

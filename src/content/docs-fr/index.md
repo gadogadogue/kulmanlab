@@ -39,7 +39,7 @@ Bienvenue dans la référence des commandes **KulmanLab CAD**. [KulmanLab CAD](h
 | [Trim](./commands/trim/) | Raccorde un segment de ligne à ses intersections |
 | [Extend](./commands/extend/) | Prolonge une ligne jusqu'à l'intersection limite la plus proche |
 | [Offset](./commands/offset/) | Crée une copie parallèle d'une entité à une distance donnée |
-| [Fillet](./commands/fillet/) | Arrondit un angle entre deux lignes avec un arc tangent |
+| [Fillet](./commands/fillet/) | Arrondit un angle entre deux lignes, arcs ou segments de polyligne avec un arc tangent |
 | [Chamfer](./commands/chamfer/) | Coupe un angle diagonal droit entre deux lignes ou polylignes |
 | [Explode](./commands/explode/) | Décompose une polyligne en ses lignes et arcs individuels |
 | [Undo](./commands/undo/) | Annule la dernière action |

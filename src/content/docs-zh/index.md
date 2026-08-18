@@ -39,7 +39,7 @@ order: 1
 | [Trim](./commands/trim/) | 在交点处修剪线段 |
 | [Extend](./commands/extend/) | 将直线延伸到最近的边界交点 |
 | [Offset](./commands/offset/) | 以指定距离创建图元的平行副本 |
-| [Fillet](./commands/fillet/) | 用切弧将两条直线的角连接为圆角 |
+| [Fillet](./commands/fillet/) | 用切弧将两条直线、圆弧或多段线线段之间的角连接为圆角 |
 | [Chamfer](./commands/chamfer/) | 在两条直线或多段线之间切出直线斜角 |
 | [Explode](./commands/explode/) | 将多段线拆分为独立的直线和圆弧 |
 | [Undo](./commands/undo/) | 撤销上一步操作 |

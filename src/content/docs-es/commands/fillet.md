@@ -1,24 +1,24 @@
 ---
-title: Comando Fillet — Redondear una Esquina Entre Dos Líneas
-description: El comando Fillet conecta dos entidades Line con un arco tangente de un radio especificado, recortando cada línea hasta el punto de tangencia. Una vista previa de arco discontinuo ayuda a elegir la esquina correcta antes de hacer clic.
-keywords: [comando fillet CAD, redondear esquina CAD, arco de filete, arco tangente dos líneas, kulmanlab]
+title: Comando Fillet — Redondear una Esquina con un Arco Tangente
+description: El comando Fillet redondea una esquina entre dos segmentos Line, Arc o Polyline con un arco tangente de un radio especificado. Redondear la propia esquina de una polilínea inserta el arco directamente en ella; redondear a través de una polilínea abierta fusiona ambos lados en una nueva polilínea.
+keywords: [comando fillet CAD, redondear esquina CAD, arco de filete, arco tangente, filete de polilínea, filete de arco, kulmanlab]
 group: edit
 order: 11
 ---
 
 # Fillet
 
-El comando `fillet` redondea la esquina entre dos entidades [Line](../line/) insertando un arco tangente de un radio dado y recortando cada línea hasta el punto donde comienza el arco. El resultado es una esquina suave con radio que conecta ambas líneas.
+El comando `fillet` redondea una esquina entre dos segmentos [Line](../line/), [Arc](../arc/) o [Polyline](../polyline/) insertando un arco tangente de un radio dado, recortando (o fusionando) las entidades elegidas hasta ese punto.
 
-Fillet funciona **solo con entidades Line**.
+Fillet funciona con entidades **Line, Arc y Polyline** — incluyendo los segmentos rectos o de arco de una polilínea.
 
 ## Usar fillet
 
 1. Escribe `fillet` en el terminal o haz clic en el botón **Fillet** de la barra de herramientas.
 2. **Escribe el radio del filete** y presiona **Enter**.
-3. **Haz clic en la primera línea** — la parte donde haces clic determina qué lado de cualquier intersección se mantiene.
-4. **Pasa el cursor sobre la segunda línea** — una vista previa de arco discontinuo muestra el filete resultante. Mueve el cursor hacia el lado que quieres mantener.
-5. **Haz clic** para aplicar. Ambas líneas se recortan y el arco se inserta.
+3. **Haz clic en la primera línea, arco o segmento de polilínea** — la parte donde haces clic determina qué lado de cualquier intersección se mantiene.
+4. **Pasa el cursor sobre la segunda entidad** — una vista previa de arco discontinuo muestra el filete resultante. Mueve el cursor hacia el lado que quieres mantener.
+5. **Haz clic** para aplicar.
 
 ```
   Antes:                      Después del filete (radio r):
@@ -28,20 +28,26 @@ Fillet funciona **solo con entidades Line**.
                 │
 ```
 
-## Selección de lado para líneas que se intersectan
+## Selección de lado para entidades que se intersectan
 
-Cuando dos líneas se cruzan, el filete se aplica en la esquina definida por las posiciones de clic — la parte de cada línea en el **mismo lado que el cursor** se mantiene.
+Cuando dos entidades se cruzan, el filete se aplica en la esquina definida por las posiciones de clic — la parte de cada entidad en el **mismo lado que el cursor** se mantiene.
 
-- Haz clic cerca de un extremo de la primera línea para seleccionar esa mitad.
-- Mueve el cursor hacia la mitad deseada de la segunda línea — la vista previa discontinua se actualiza en vivo.
+- Haz clic cerca de un extremo de la primera entidad para seleccionar esa mitad.
+- Mueve el cursor hacia la mitad deseada de la segunda entidad — la vista previa discontinua se actualiza en vivo.
 
 ## Qué crea el comando
 
-- El extremo de la primera línea más cercano a la intersección se mueve al punto de tangencia **T1**.
-- El extremo de la segunda línea más cercano a la intersección se mueve al punto de tangencia **T2**.
-- Se inserta una nueva entidad Arc desde **T1** hasta **T2**, tangente a ambas líneas.
+Lo que resulta depende de lo que hayas elegido:
 
-El arco insertado hereda el grosor de línea, color, capa y tipo de línea actuales.
+- **Dos Lines/Arcs independientes**, o cualquier par que no involucre una polilínea abierta: ambos se recortan hasta los puntos de tangencia **T1**/**T2**, y se inserta una nueva entidad Arc entre ellos.
+- **Dos segmentos de la misma polilínea que comparten un vértice de esquina**: ninguna entidad nueva — el filete pasa a formar parte de la propia polilínea. El vértice de la esquina se reemplaza por los dos puntos de tangencia, y el arco entre ellos se almacena como el bulge de esa arista, exactamente como una esquina de polilínea redondeada hace el viaje de ida y vuelta a través de DXF.
+- **Cualquier otro caso que involucre una polilínea abierta** — dos polilíneas abiertas distintas, o una polilínea abierta y una Line/Arc independiente: ambas se fusionan en una **sola polilínea nueva**, conservando cada lado hasta su punto de tangencia y uniéndolas con el arco de filete como un segmento de bulge adicional, reemplazando las entidades originales.
+
+El arco insertado o extendido hereda el grosor de línea, color, capa y tipo de línea actuales (o los de la propia polilínea, cuando pasa a formar parte de ella).
+
+## Esquinas sin un ángulo real que redondear
+
+Si los dos segmentos elegidos ya se encuentran tangencialmente en un vértice compartido — una esquina de polilínea recta, o una línea que se prolonga suavemente en un segmento de arco de continuación tangencial — no hay una esquina real que un círculo pueda redondear. Fillet detecta esto y se niega con `cannot fillet: no tangent circle fits there` en lugar de trazar un bucle no deseado.
 
 ## Referencia de teclado
 
@@ -49,15 +55,17 @@ El arco insertado hereda el grosor de línea, color, capa y tipo de línea actua
 |-------|--------|
 | `0`–`9`, `.` | Agregar dígito al valor del radio |
 | `Backspace` | Eliminar el último carácter escrito |
-| `Enter` | Confirmar el radio escrito y pasar a la selección de línea |
+| `Enter` / `Espacio` | Confirmar el radio escrito y pasar a la selección de entidad |
 | `Escape` | Cancelar y restablecer |
 
 ## Entidades compatibles
 
 | Entidad | Compatible |
 |---------|------------|
-| Line | Sí — tanto como primera como segunda entidad |
-| Arc, Circle, Ellipse, Polyline | No |
+| Line | Sí |
+| Arc | Sí |
+| Polyline (segmento recto o de arco) | Sí |
+| Circle, Ellipse | No |
 | Text, Spline, Dimension, Leader | No |
 
 ## Fillet vs Chamfer
@@ -67,4 +75,4 @@ El arco insertado hereda el grosor de línea, color, capa y tipo de línea actua
 | Tipo de esquina | Arco redondeado | Corte recto |
 | Entrada | Un radio | Dos distancias (d1, d2) |
 | Entidad insertada | Arc | Line |
-| Entidades compatibles | Solo Lines | Lines y Polylines |
+| Entidades compatibles | Lines, Arcs y Polylines (segmentos rectos o de arco) | Lines y Polylines (solo segmentos rectos) |

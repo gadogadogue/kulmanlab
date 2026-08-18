@@ -19,7 +19,7 @@ Dwa sposoby uruchomienia, ten sam wzorzec co [Delete](../delete/):
 **Najpierw zaznacz, potem rozbij** — najszybsza ścieżka:
 
 1. Zaznacz jedną lub więcej polilinii na płótnie.
-2. Wpisz `explode` w terminalu lub kliknij przycisk **Explode** na pasku narzędzi (ikona bomby w panelu Edit).
+2. Wpisz `explode` w terminalu lub kliknij przycisk **Explode** w panelu Edit.
 
 Zaznaczone polilinie są natychmiast rozbijane — bez osobnego kroku potwierdzenia, ponieważ coś jest już zaznaczone.
 

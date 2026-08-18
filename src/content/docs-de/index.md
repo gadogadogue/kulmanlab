@@ -39,7 +39,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 | [Trim](./commands/trim/) | Liniensegment an seinen Schnittpunkten kürzen |
 | [Extend](./commands/extend/) | Linie bis zur nächsten Begrenzungsschnittlinie verlängern |
 | [Offset](./commands/offset/) | Parallele Kopie eines Elements in einem bestimmten Abstand erstellen |
-| [Fillet](./commands/fillet/) | Ecke zwischen zwei Linien mit einem Tangentenbogen abrunden |
+| [Fillet](./commands/fillet/) | Ecke zwischen zwei Linien, Bögen oder Polylinien-Segmenten mit einem Tangentenbogen abrunden |
 | [Chamfer](./commands/chamfer/) | Gerade diagonale Ecke zwischen zwei Linien oder Polylinien schneiden |
 | [Explode](./commands/explode/) | Zerlegt eine Polylinie in ihre einzelnen Linien- und Bogenelemente |
 | [Undo](./commands/undo/) | Letzte Aktion rückgängig machen |

@@ -19,7 +19,7 @@ Kaksi tapaa suorittaa se, sama kaava kuin [Delete](../delete/):ssä:
 **Valitse ensin, sitten pilko** — nopein reitti:
 
 1. Valitse yksi tai useampi polyline piirtoalueelta.
-2. Kirjoita `explode` terminaaliin, tai napsauta työkalurivin **Explode**-painiketta (pommikuvake Edit-paneelissa).
+2. Kirjoita `explode` terminaaliin, tai napsauta **Explode**-painiketta Edit-paneelissa.
 
 Valitut polylinet pilkotaan välittömästi — ei erillistä vahvistusvaihetta, koska jotain on jo valittuna.
 

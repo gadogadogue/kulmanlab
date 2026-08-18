@@ -14,7 +14,7 @@ order: 3
 
 1. Skriv `rectangle` i terminalen eller klicka på **Rectangle**-knappen i verktygsfältet.
 2. **Klicka på det första hörnet**, eller skriv `X,Y` och tryck **Enter** för en exakt koordinat.
-3. **Klicka på det motstående hörnet** — rektangeln placeras omedelbart och kommandot avslutas. Koordinatinmatning fungerar även här.
+3. **Klicka på det motstående hörnet** — rektangeln placeras omedelbart och kommandot avslutas. Koordinatinmatning fungerar även här. Eller tryck på `D` istället för att skriva in en exakt bredd och höjd — se [Måttinmatning](#måttinmatning) nedan.
 
 ```
   ● (first click)────────────┐
@@ -35,13 +35,27 @@ Vid vilket hörnsteg som helst kan du skriva en exakt position:
 3. Skriv Y-värdet.
 4. Tryck **Enter** för att placera hörnet.
 
+## Måttinmatning
+
+Istället för att klicka på ett andra hörn, tryck på `D` direkt efter det första hörnet för att växla till inskriven bredd-×-höjd-inmatning:
+
+1. **Skriv in bredden** och tryck på **Enter**.
+2. **Skriv in höjden** och tryck på **Enter** — uppmaningen ber dig nu välja en riktning för rektangeln.
+3. **Flytta markören** runt det första hörnet — rektangeln förhandsvisas live i den kvadrant (uppe till vänster, uppe till höger, nere till vänster, nere till höger) som markören för tillfället befinner sig över.
+4. **Klicka** för att placera den i den riktningen.
+
+Tryck på `D` igen vid riktningsvalssteget för att skriva in bredd och höjd på nytt, förifyllda med det du just skrev.
+
+Bredden och höjden kommer ihåg från den senaste rektangeln du mått­satte: vid båda uppmaningarna visas det tidigare värdet förifyllt och redo att bekräftas med **Enter**, eller så kan du bara börja skriva för att ersätta det med ett nytt tal.
+
 ## Tangentbordsreferens
 
 | Tangent | Åtgärd |
 |-----|--------|
-| `0`–`9`, `.`, `-` | Starta X-koordinatinmatning |
+| `0`–`9`, `.`, `-` | Starta X-koordinatinmatning, eller (i måttinmatningsläge) bredd-/höjdfältet |
 | `,` | Lås X och gå till Y-inmatning |
-| `Enter` | Bekräfta inmatad koordinat |
+| `D` | Efter det första hörnet: växla till måttinmatning; vid riktningssteget: skriv in bredd/höjd på nytt |
+| `Enter` | Bekräfta inmatad koordinat, bredd eller höjd |
 | `Escape` | Avbryt |
 
 Sidorna är alltid horisontella och vertikala — det finns ingen vinkellåsning för rectangle-kommandot.

@@ -14,7 +14,7 @@ Kommandoen `rectangle` tegner et akse-justeret rektangel defineret af to modsatt
 
 1. Skriv `rectangle` i terminalen eller klik på **Rectangle**-knappen i værktøjslinjen.
 2. **Klik det første hjørne**, eller skriv `X,Y` og tryk **Enter** for en eksakt koordinat.
-3. **Klik det modsatte hjørne** — rektanglet placeres øjeblikkeligt, og kommandoen afsluttes. Koordinatindtastning fungerer også her.
+3. **Klik det modsatte hjørne** — rektanglet placeres øjeblikkeligt, og kommandoen afsluttes. Koordinatindtastning fungerer også her. Eller tryk `D` i stedet for at indtaste en eksakt bredde og højde — se [Målindtastning](#målindtastning) nedenfor.
 
 ```
   ● (første klik)────────────┐
@@ -35,13 +35,27 @@ Ved hvert hjørnetrin kan du indtaste en eksakt position:
 3. Skriv Y-værdien.
 4. Tryk **Enter** for at placere hjørnet.
 
+## Målindtastning
+
+I stedet for at klikke et andet hjørne, tryk `D` lige efter det første hjørne for at skifte til indtastet bredde-×-højde:
+
+1. **Indtast bredden** og tryk **Enter**.
+2. **Indtast højden** og tryk **Enter** — prompten beder dig nu vælge en retning for rektanglet.
+3. **Flyt markøren** rundt om det første hjørne — rektanglet vises live i den kvadrant (øverst til venstre, øverst til højre, nederst til venstre, nederst til højre), som markøren aktuelt er over.
+4. **Klik** for at placere det i den retning.
+
+Tryk `D` igen ved retningsvalgstrinnet for at genindtaste bredde og højde, forudfyldt med det, du lige har skrevet.
+
+Bredden og højden huskes fra det seneste rektangel, du målsatte: ved begge prompter vises den forrige værdi forudfyldt og klar til at bekræftes med **Enter**, eller du kan bare begynde at skrive for at erstatte den med et nyt tal.
+
 ## Tastaturreference
 
 | Tast | Handling |
 |-----|--------|
-| `0`–`9`, `.`, `-` | Start X-koordinatindtastning |
+| `0`–`9`, `.`, `-` | Start X-koordinatindtastning, eller (i Målindtastning-tilstand) bredde-/højdefeltet |
 | `,` | Lås X og gå til Y-indtastning |
-| `Enter` | Bekræft indtastet koordinat |
+| `D` | Efter det første hjørne: skift til Målindtastning; ved retningstrinnet: genindtast bredde/højde |
+| `Enter` | Bekræft indtastet koordinat, bredde eller højde |
 | `Escape` | Annullér |
 
 Siderne er altid horisontale og vertikale — der er ingen vinkellås for rectangle-kommandoen.

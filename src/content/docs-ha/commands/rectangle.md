@@ -14,7 +14,7 @@ Umarnin `rectangle` yana zana murabbaʼi mai daidaici da axis wanda aka bayyana 
 
 1. Rubuta `rectangle` a tashar umarni ko danna maɓallin kayan aiki na **Rectangle**.
 2. **Danna kusurwa ta farko**, ko rubuta `X,Y` ka danna **Enter** don daidaitawa madaidaiciya.
-3. **Danna kusurwa mai adawa** — ana sanya murabbaʼi nan take kuma umarnin yana fita. Shigar da daidaitawa yana aiki a nan ma.
+3. **Danna kusurwa mai adawa** — ana sanya murabbaʼi nan take kuma umarnin yana fita. Shigar da daidaitawa yana aiki a nan ma. Don faɗi/tsayi madaidaici, duba [Dimension entry](#dimension-entry) a ƙasa.
 
 ```
   ● (dannawa ta farko)────────────┐
@@ -35,12 +35,26 @@ A kowace kusurwa za ka iya rubuta matsayi madaidaici:
 3. Rubuta ƙimar Y.
 4. Danna **Enter** don sanya kusurwar.
 
+## Dimension entry
+
+Bayan sanya kusurwa ta farko, danna **D** a kowane lokaci don rubuta faɗi da tsayin murabbaʼi madaidaici maimakon neman kusurwa mai adawa ta dannawa mai zaman kanta:
+
+1. **Rubuta faɗi** ka danna **Enter**.
+2. **Rubuta tsayi** ka danna **Enter**.
+3. Motsa mai nuni — murabbaʼi yanzu an daure shi zuwa kusurwa ta farko a girman da aka rubuta, sai dai shugabancin da yake miƙewa zuwa ga kwatar mai nuni ne kaɗai yake canzawa.
+4. **Danna** don sanya murabbaʼi a wannan shugabanci.
+
+Sake danna **D** a mataki na zaɓen shugabanci yana mayar da faɗi/tsayin da aka rubuta a matsayin ƙima da aka riga aka sanya kuma za a iya gyarawa, don haka za a iya gyara ƙimomin kafin zaɓen shugabanci.
+
+Ana **tunawa da** faɗi da tsayin da aka rubuta kuma suna bayyana a matsayin ƙima da aka riga aka sanya a karo na gaba da za a yi amfani da Dimension entry.
+
 ## Marfe na maɓallan madannai
 
 | Maɓalli | Aiki |
 |-----|--------|
 | `0`–`9`, `.`, `-` | Fara shigar da daidaitawar X |
 | `,` | Kulle X ka koma shigar da Y |
+| `D` | Shiga yanayin Dimension entry (bayan sanya kusurwa ta farko), ko sake gyara ƙimomin da aka rubuta a mataki na zaɓen shugabanci |
 | `Enter` | Tabbatar da daidaitawar da aka rubuta |
 | `Escape` | Soke |
 

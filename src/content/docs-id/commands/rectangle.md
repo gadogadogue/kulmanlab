@@ -14,7 +14,7 @@ Perintah `rectangle` menggambar persegi panjang sejajar sumbu yang ditentukan ol
 
 1. Ketik `rectangle` di terminal atau klik tombol toolbar **Rectangle**.
 2. **Klik sudut pertama**, atau ketik `X,Y` dan tekan **Enter** untuk koordinat tepat.
-3. **Klik sudut yang berlawanan** — persegi panjang ditempatkan seketika dan perintah keluar. Entri koordinat juga berfungsi di sini.
+3. **Klik sudut yang berlawanan** — persegi panjang ditempatkan seketika dan perintah keluar. Entri koordinat juga berfungsi di sini. Atau tekan `D` untuk mengetik lebar dan tinggi yang tepat — lihat [Entri Dimensi](#entri-dimensi) di bawah.
 
 ```
   ● (klik pertama)────────────┐
@@ -35,13 +35,27 @@ Pada langkah sudut mana pun, Anda dapat mengetik posisi tepat:
 3. Ketik nilai Y.
 4. Tekan **Enter** untuk menempatkan sudut.
 
+## Entri Dimensi
+
+Alih-alih mengklik sudut kedua, tekan `D` tepat setelah sudut pertama untuk beralih ke entri lebar × tinggi yang diketik:
+
+1. **Ketik lebar** dan tekan **Enter**.
+2. **Ketik tinggi** dan tekan **Enter** — prompt sekarang meminta Anda memilih arah untuk persegi panjang.
+3. **Gerakkan kursor** di sekitar sudut pertama — persegi panjang dipratinjau secara langsung di kuadran (kiri atas, kanan atas, kiri bawah, kanan bawah) tempat kursor berada saat ini.
+4. **Klik** untuk menempatkannya pada arah tersebut.
+
+Tekan `D` lagi pada langkah pemilihan arah untuk memasukkan ulang lebar dan tinggi, sudah terisi dengan apa yang baru saja Anda ketik.
+
+Lebar dan tinggi diingat dari persegi panjang terakhir yang Anda beri dimensi: pada kedua prompt, nilai sebelumnya muncul terisi sebelumnya dan siap dikonfirmasi dengan **Enter**, atau Anda bisa langsung mulai mengetik untuk menggantinya dengan angka baru.
+
 ## Referensi keyboard
 
 | Tombol | Aksi |
 |-----|--------|
-| `0`–`9`, `.`, `-` | Mulai entri koordinat X |
+| `0`–`9`, `.`, `-` | Mulai entri koordinat X, atau (dalam mode Entri Dimensi) field lebar/tinggi |
 | `,` | Kunci X dan pindah ke entri Y |
-| `Enter` | Konfirmasi koordinat yang diketik |
+| `D` | Setelah sudut pertama: beralih ke Entri Dimensi; pada langkah arah: masukkan ulang lebar/tinggi |
+| `Enter` | Konfirmasi koordinat, lebar, atau tinggi yang diketik |
 | `Escape` | Batal |
 
 Sisi selalu horizontal dan vertikal — tidak ada penguncian sudut untuk perintah persegi panjang.

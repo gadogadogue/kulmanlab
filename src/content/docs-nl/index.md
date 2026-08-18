@@ -39,7 +39,7 @@ Welkom bij de **KulmanLab CAD**-opdrachtreferentie. [KulmanLab CAD](https://kulm
 | [Trim](./commands/trim/) | Snijd een lijnsegment bij zijn snijpunten |
 | [Extend](./commands/extend/) | Verleng een lijn tot het dichtstbijzijnde snijpunt |
 | [Offset](./commands/offset/) | Maak een parallelle kopie van een entiteit op een bepaalde afstand |
-| [Fillet](./commands/fillet/) | Rond een hoek tussen twee lijnen af met een raakboog |
+| [Fillet](./commands/fillet/) | Rond een hoek tussen twee lijnen, bogen of polylijnsegmenten af met een raakboog |
 | [Chamfer](./commands/chamfer/) | Snijd een rechte diagonale hoek tussen twee lijnen of polylijnen |
 | [Explode](./commands/explode/) | Splitst een polylijn op in de afzonderlijke lijnen en bogen |
 | [Undo](./commands/undo/) | Maak de laatste actie ongedaan |

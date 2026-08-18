@@ -39,7 +39,7 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | [Trim](./commands/trim/) | Kata sehemu ya mstari katika makutano yake |
 | [Extend](./commands/extend/) | Ongeza mstari hadi makutano ya mpaka wa karibu |
 | [Offset](./commands/offset/) | Unda nakili sambamba ya kipengele kwa umbali fulani |
-| [Fillet](./commands/fillet/) | Pinda kona kati ya mistari miwili kwa upinde unaogusa |
+| [Fillet](./commands/fillet/) | Pinda kona kati ya sehemu mbili za Line, Arc, au Polyline kwa upinde unaogusa |
 | [Chamfer](./commands/chamfer/) | Kata kona ya mstari wa diagonal kati ya mistari miwili au polylines |
 | [Explode](./commands/explode/) | Inavunja polyline kuwa mistari na mikunjo binafsi |
 | [Undo](./commands/undo/) | Tendua hatua ya mwisho |

@@ -94,7 +94,7 @@ Koska polylinja on yksi entiteetti, risteysvalinta, joka koskettaa mitä tahansa
 
 ## Tuetut muokkauskomennot
 
-Polylinjat tukevat jokaista yleistä muunnosta sekä offsetia, trimiä, extendiä ja chamferia (chamferissa lasketaan vain suorat segmentit):
+Polylinjat tukevat jokaista yleistä muunnosta sekä offsetia, trimiä, extendiä, filletiä ja chamferia (chamferissa lasketaan vain suorat segmentit):
 
 | Komento | Mitä polylinjalle tapahtuu |
 |---------|------------------------------|
@@ -106,11 +106,12 @@ Polylinjat tukevat jokaista yleistä muunnosta sekä offsetia, trimiä, extendi�
 | [Offset](../offset/) | Luo rinnakkaisen polylinjan kiinteällä kohtisuoralla etäisyydellä |
 | [Trim](../trim/) | Poistaa osan kahden leikkauspisteen välillä, sekä suorilla että kaarisegmenteillä |
 | [Extend](../extend/) | Jatkaa ensimmäistä tai viimeistä segmenttiä seuraavaan rajaan |
+| [Fillet](../fillet/) | Pyöristää kulman kahden **vierekkäisen** segmentin välillä, suoran tai kaaren, tangenttikaarella, joka lisätään polylinjaan uutena bulge-segmenttinä |
 | [Chamfer](../chamfer/) | Viistää kulman kahden vierekkäisen suoran segmentin välillä |
 | [Explode](../explode/) | Pilkkoo polylinen itsenäisiksi viiva- ja kaarielementeiksi, yksi per segmentti |
 | [Delete](../delete/) | Poistaa polylinjan piirustuksesta |
 
-Fillet ei tue polylinjoja lainkaan.
+Polylinjan segmentin filletointi jotain muuta kuin sen omaa naapurisegmenttiä vastaan ei jää yksinkertaiseksi muokkaukseksi paikallaan — katso [Fillet](../fillet/) lopputuloksesta (yhdistyminen yhdeksi uudeksi polylinjaksi, jonka fillet-kaari yhdistää).
 
 ## Ominaisuudet
 
