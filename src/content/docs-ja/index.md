@@ -100,6 +100,7 @@ order: 1
 |---------|------|
 | [Match Properties](./commands/match-properties/) | 色・レイヤーなどのプロパティをエンティティ間でコピーする |
 | [Font Manager](./commands/font-manager/) | フォントを閲覧・選択し、カスタム TTF フォントをアップロードする |
+| [Font+](./commands/font-add/) | カスタム TTF フォントをターミナルから直接アップロードする |
 | [Hatch Manager](./commands/hatch-manager/) | hatch パターンライブラリを閲覧し、.pat ファイルをアップロードする |
 
 ## ファイル

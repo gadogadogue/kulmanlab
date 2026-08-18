@@ -3,7 +3,7 @@ title: "פקודת Hatch Manager — עיון והעלאה של דוגמאות .
 description: "פקודת Hatch Manager פותחת חלון דו-שיח לעיון בדוגמאות hatch עם תצוגה מקדימה חיה של דוגמית, ולהעלאת קבצי דוגמה .pat משלכם. קבצים שהועלו נשמרים בדפדפן ומאפילים על דוגמאות מובנות בעלות אותו שם."
 keywords: [hatch manager, דוגמת hatch מותאמת אישית CAD, העלאת קובץ pat, acad.pat, ספריית דוגמאות hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

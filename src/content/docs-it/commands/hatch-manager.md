@@ -3,7 +3,7 @@ title: Comando Hatch Manager — Sfoglia e carica motivi .pat
 description: Il comando Hatch Manager apre una finestra di dialogo per sfogliare i motivi hatch con anteprima dal vivo dei campioni, e per caricare i tuoi file di motivi .pat. I file caricati vengono salvati nel browser e oscurano i motivi integrati con lo stesso nome.
 keywords: [hatch manager, motivo hatch personalizzato CAD, carica file pat, acad.pat, libreria motivi hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

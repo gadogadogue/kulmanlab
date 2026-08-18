@@ -3,7 +3,7 @@ title: Commande Hatch Manager — Parcourir et téléverser des motifs .pat
 description: La commande Hatch Manager ouvre une boîte de dialogue pour parcourir les motifs de hachures avec un aperçu d'échantillon en direct, et pour téléverser vos propres fichiers de motifs .pat. Les fichiers téléversés sont enregistrés dans le navigateur et supplantent les motifs intégrés portant le même nom.
 keywords: [hatch manager, motif de hachures personnalisé CAD, téléverser fichier pat, acad.pat, bibliothèque de motifs de hachures, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

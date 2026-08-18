@@ -3,7 +3,7 @@ title: Amri ya Hatch Manager — Vinjari na Pakia Muundo za .pat
 description: Amri ya Hatch Manager hufungua kisanduku cha mazungumzo cha kuvinjari muundo za hatch kwa muhtasari wa sampuli wa moja kwa moja, na kupakia faili zako mwenyewe za muundo za .pat. Faili zilizopakiwa huhifadhiwa kwenye kivinjari na kufunika muundo zilizojengwa ndani zenye jina lile lile.
 keywords: [hatch manager, muundo wa hatch maalum CAD, pakia faili ya pat, acad.pat, maktaba ya muundo wa hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

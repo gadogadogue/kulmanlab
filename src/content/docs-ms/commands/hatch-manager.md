@@ -3,7 +3,7 @@ title: Arahan Hatch Manager — Semak Imbas dan Muat Naik Corak .pat
 description: Arahan Hatch Manager membuka dialog untuk menyemak imbas corak hatch dengan pratonton swatch langsung, dan untuk memuat naik fail corak .pat anda sendiri. Fail yang dimuat naik disimpan dalam pelayar dan mengatasi corak terbina dalam dengan nama yang sama.
 keywords: [hatch manager, corak hatch tersuai CAD, muat naik fail pat, acad.pat, pustaka corak hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

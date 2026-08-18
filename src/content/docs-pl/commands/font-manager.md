@@ -28,7 +28,7 @@ Kliknij dowolną czcionkę na liście, aby zobaczyć jej podgląd po prawej stro
 
 ## Przesyłanie niestandardowej czcionki
 
-1. Kliknij **Add Font** w stopce okna dialogowego (lub wpisz `Font+` w terminalu, aby bezpośrednio otworzyć okno wyboru pliku).
+1. Kliknij **Add Font** w stopce okna dialogowego (lub wpisz [`Font+`](../font-add/) w terminalu, aby bezpośrednio otworzyć okno wyboru pliku).
 2. Wybierz plik `.ttf`. Obsługiwane są tylko czcionki TrueType — `.otf` oraz `.woff`/`.woff2` nie są obsługiwane.
 3. Nazwa pliku (bez rozszerzenia) staje się nazwą czcionki w grupie **User**. Na przykład przesłanie `MyFont.ttf` dodaje czcionkę o nazwie `MyFont`.
 

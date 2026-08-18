@@ -3,7 +3,7 @@ title: Hatch Manager Command — Browse and Upload .pat Patterns
 description: The Hatch Manager command opens a dialog for browsing hatch patterns with a live swatch preview, and for uploading your own .pat pattern files. Uploaded files are saved in the browser and shadow built-in patterns of the same name.
 keywords: [hatch manager, custom hatch pattern CAD, upload pat file, acad.pat, hatch pattern library, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

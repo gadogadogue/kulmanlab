@@ -28,7 +28,7 @@ Danna kowane font a jerin don dubawarsa a dama — suna, misalin haruffa, pangra
 
 ## Loda font na musamman
 
-1. Danna **Add Font** a ƙasan akwatin tattaunawa (ko rubuta `Font+` a tashar umarni don buɗe mai zaɓen fayil kai tsaye).
+1. Danna **Add Font** a ƙasan akwatin tattaunawa (ko rubuta [`Font+`](../font-add/) a tashar umarni don buɗe mai zaɓen fayil kai tsaye).
 2. Zaɓi fayil na `.ttf`. Fonts na TrueType kaɗai ake goyon baya — `.otf` da `.woff`/`.woff2` ba a goyon baya.
 3. Sunan fayil (ba tare da ƙari ba) ya zama sunan font a ƙungiyar **User**. Misali, loda `MyFont.ttf` yana ƙara font mai suna `MyFont`.
 

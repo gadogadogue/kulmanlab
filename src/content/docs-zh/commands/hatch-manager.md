@@ -3,7 +3,7 @@ title: Hatch Manager 命令 —— 浏览并上传 .pat 图案
 description: Hatch Manager 命令会打开一个对话框，用于浏览带有实时样本预览的 hatch 图案，以及上传你自己的 .pat 图案文件。上传的文件会保存在浏览器中，并覆盖同名的内置图案。
 keywords: [hatch manager, 自定义 hatch 图案 CAD, 上传 pat 文件, acad.pat, hatch 图案库, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

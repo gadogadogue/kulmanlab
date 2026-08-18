@@ -100,6 +100,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | একটি সত্তা থেকে অন্যদের কাছে রঙ, লেয়ার এবং অন্যান্য বৈশিষ্ট্য কপি করুন |
 | [Font Manager](./commands/font-manager/) | ফন্ট ব্রাউজ করুন, নির্বাচন করুন এবং কাস্টম TTF ফন্ট আপলোড করুন |
+| [Font+](./commands/font-add/) | টার্মিনাল থেকে সরাসরি কাস্টম TTF ফন্ট আপলোড করুন |
 | [Hatch Manager](./commands/hatch-manager/) | hatch প্যাটার্ন লাইব্রেরি ব্রাউজ করুন এবং .pat ফাইল আপলোড করুন |
 
 ## ফাইল

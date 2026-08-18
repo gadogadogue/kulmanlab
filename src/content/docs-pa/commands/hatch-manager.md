@@ -3,7 +3,7 @@ title: Hatch Manager ਕਮਾਂਡ — .pat ਪੈਟਰਨ ਬ੍ਰਾਊਜ
 description: Hatch Manager ਕਮਾਂਡ ਲਾਈਵ ਸਵੈਚ ਪ੍ਰੀਵਿਊ ਨਾਲ hatch ਪੈਟਰਨ ਬ੍ਰਾਊਜ਼ ਕਰਨ ਲਈ, ਅਤੇ ਆਪਣੀਆਂ ਖੁਦ ਦੀਆਂ .pat ਪੈਟਰਨ ਫਾਈਲਾਂ ਅੱਪਲੋਡ ਕਰਨ ਲਈ ਇੱਕ ਡਾਇਲਾਗ ਖੋਲ੍ਹਦੀ ਹੈ। ਅੱਪਲੋਡ ਕੀਤੀਆਂ ਫਾਈਲਾਂ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਸੇਵ ਹੁੰਦੀਆਂ ਹਨ ਅਤੇ ਉਸੇ ਨਾਮ ਵਾਲੇ ਬਿਲਟ-ਇਨ ਪੈਟਰਨ ਨੂੰ ਢੱਕ ਦਿੰਦੀਆਂ ਹਨ।
 keywords: [hatch manager, ਕਸਟਮ hatch ਪੈਟਰਨ CAD, pat ਫਾਈਲ ਅੱਪਲੋਡ ਕਰੋ, acad.pat, hatch ਪੈਟਰਨ ਲਾਇਬ੍ਰੇਰੀ, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

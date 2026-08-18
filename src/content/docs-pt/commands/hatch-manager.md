@@ -3,7 +3,7 @@ title: Comando Hatch Manager — Navegar e enviar padrões .pat
 description: O comando Hatch Manager abre uma caixa de diálogo para navegar por padrões de hatch com pré-visualização de amostra ao vivo, e para enviar seus próprios arquivos de padrão .pat. Arquivos enviados são salvos no navegador e substituem padrões integrados com o mesmo nome.
 keywords: [hatch manager, padrão de hatch personalizado CAD, enviar arquivo pat, acad.pat, biblioteca de padrões de hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

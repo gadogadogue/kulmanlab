@@ -100,6 +100,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | एक ऑब्जेक्ट से दूसरे ऑब्जेक्ट में रंग, लेयर और अन्य गुण कॉपी करें |
 | [Font Manager](./commands/font-manager/) | फ़ॉन्ट ब्राउज़ करें, चुनें, और कस्टम TTF फ़ॉन्ट अपलोड करें |
+| [Font+](./commands/font-add/) | टर्मिनल से सीधे कस्टम TTF फ़ॉन्ट अपलोड करें |
 | [Hatch Manager](./commands/hatch-manager/) | hatch पैटर्न लाइब्रेरी ब्राउज़ करें और .pat फ़ाइलें अपलोड करें |
 
 ## फ़ाइल

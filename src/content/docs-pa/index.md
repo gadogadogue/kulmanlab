@@ -99,6 +99,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | ਇੱਕ ਇਕਾਈ ਤੋਂ ਦੂਜੀਆਂ ਵਿੱਚ ਰੰਗ, ਲੇਅਰ ਅਤੇ ਹੋਰ ਗੁਣ ਕਾਪੀ ਕਰੋ |
 | [Font Manager](./commands/font-manager/) | ਫੌਂਟ ਬ੍ਰਾਊਜ਼ ਕਰੋ, ਚੁਣੋ, ਅਤੇ ਕਸਟਮ TTF ਫੌਂਟ ਅੱਪਲੋਡ ਕਰੋ |
+| [Font+](./commands/font-add/) | ਟਰਮੀਨਲ ਤੋਂ ਸਿੱਧਾ ਕਸਟਮ TTF ਫੌਂਟ ਅੱਪਲੋਡ ਕਰੋ |
 | [Hatch Manager](./commands/hatch-manager/) | hatch ਪੈਟਰਨ ਲਾਇਬ੍ਰੇਰੀ ਬ੍ਰਾਊਜ਼ ਕਰੋ ਅਤੇ .pat ਫਾਈਲਾਂ ਅੱਪਲੋਡ ਕਰੋ |
 
 ## ਫ਼ਾਈਲ

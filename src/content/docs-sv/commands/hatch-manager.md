@@ -3,7 +3,7 @@ title: Hatch Manager-kommando — Bläddra och ladda upp .pat-mönster
 description: Hatch Manager-kommandot öppnar en dialogruta för att bläddra bland hatch-mönster med en live swatch-förhandsvisning, och för att ladda upp dina egna .pat-mönsterfiler. Uppladdade filer sparas i webbläsaren och skuggar inbyggda mönster med samma namn.
 keywords: [hatch manager, anpassat hatch-mönster CAD, ladda upp pat-fil, acad.pat, hatch-mönsterbibliotek, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

@@ -100,6 +100,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | העתקת צבע, שכבה ותכונות אחרות מישות אחת לאחרות |
 | [Font Manager](./commands/font-manager/) | עיון, בחירה והעלאה של גופני TTF מותאמים אישית |
+| [Font+](./commands/font-add/) | העלאת גופן TTF מותאם אישית ישירות מהמסוף |
 | [Hatch Manager](./commands/hatch-manager/) | עיון בספריית דוגמאות ה-hatch והעלאת קבצי .pat |
 
 ## קובץ

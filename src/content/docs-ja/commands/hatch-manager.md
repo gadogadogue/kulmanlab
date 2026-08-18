@@ -3,7 +3,7 @@ title: Hatch Manager コマンド — .pat パターンの閲覧とアップロ�
 description: Hatch Manager コマンドは、ライブスウォッチプレビュー付きで hatch パターンを閲覧し、独自の .pat パターンファイルをアップロードするダイアログを開きます。アップロードされたファイルはブラウザに保存され、同名の組み込みパターンより優先されます。
 keywords: [hatch manager, カスタム hatch パターン CAD, pat ファイル アップロード, acad.pat, hatch パターンライブラリ, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

@@ -100,6 +100,7 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopioi väri, taso ja muut ominaisuudet entiteetistä toisiin |
 | [Font Manager](./commands/font-manager/) | Selaa, valitse ja lataa omia TTF-fontteja |
+| [Font+](./commands/font-add/) | Lataa oma TTF-fontti suoraan terminaalista |
 | [Hatch Manager](./commands/hatch-manager/) | Selaa hatch-kuviokirjastoa ja lataa .pat-tiedostoja |
 
 ## Tiedosto

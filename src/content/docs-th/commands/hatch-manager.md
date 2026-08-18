@@ -3,7 +3,7 @@ title: คำสั่ง Hatch Manager — เรียกดูและอั
 description: คำสั่ง Hatch Manager จะเปิดกล่องโต้ตอบสำหรับเรียกดูลวดลาย hatch พร้อมตัวอย่างสีแบบสด และสำหรับอัปโหลดไฟล์ลวดลาย .pat ของคุณเอง ไฟล์ที่อัปโหลดจะถูกบันทึกในเบราว์เซอร์และบดบังลวดลายในตัวที่มีชื่อเดียวกัน
 keywords: [hatch manager, ลวดลาย hatch กำหนดเอง CAD, อัปโหลดไฟล์ pat, acad.pat, ไลบรารีลวดลาย hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

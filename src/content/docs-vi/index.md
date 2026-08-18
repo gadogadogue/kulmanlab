@@ -100,6 +100,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 |------|-----------|
 | [Match Properties](./commands/match-properties/) | Sao chép màu sắc, lớp và các thuộc tính khác từ một đối tượng sang đối tượng khác |
 | [Font Manager](./commands/font-manager/) | Duyệt, chọn và tải lên phông chữ TTF tùy chỉnh |
+| [Font+](./commands/font-add/) | Tải lên phông chữ TTF tùy chỉnh trực tiếp từ terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Duyệt thư viện mẫu hatch và tải lên tệp .pat |
 
 ## Tệp

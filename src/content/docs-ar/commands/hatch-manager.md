@@ -3,7 +3,7 @@ title: أمر Hatch Manager — تصفح ورفع أنماط .pat
 description: يفتح أمر Hatch Manager نافذة لتصفح أنماط التظليل مع معاينة عينة حية، ولرفع ملفات نمط .pat الخاصة بك. الملفات المرفوعة تُحفظ في المتصفح وتُظلِّل الأنماط المدمجة التي تحمل الاسم نفسه.
 keywords: [hatch manager, نمط تظليل مخصص CAD, رفع ملف pat, acad.pat, مكتبة أنماط التظليل, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

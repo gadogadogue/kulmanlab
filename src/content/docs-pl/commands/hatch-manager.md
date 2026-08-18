@@ -3,7 +3,7 @@ title: Polecenie Hatch Manager — Przeglądaj i przesyłaj wzory .pat
 description: Polecenie Hatch Manager otwiera okno dialogowe do przeglądania wzorów hatch z podglądem próbki na żywo oraz do przesyłania własnych plików wzorów .pat. Przesłane pliki są zapisywane w przeglądarce i przesłaniają wbudowane wzory o tej samej nazwie.
 keywords: [hatch manager, niestandardowy wzór hatch CAD, przesyłanie pliku pat, acad.pat, biblioteka wzorów hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

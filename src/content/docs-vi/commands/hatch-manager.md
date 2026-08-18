@@ -3,7 +3,7 @@ title: Lệnh Hatch Manager — Duyệt và Tải Lên Mẫu .pat
 description: Lệnh Hatch Manager mở hộp thoại để duyệt các mẫu hatch với bản xem trước mẫu vải trực tiếp, và để tải lên các tệp mẫu .pat của riêng bạn. Các tệp đã tải lên được lưu trong trình duyệt và che khuất các mẫu tích hợp cùng tên.
 keywords: [hatch manager, mẫu hatch tùy chỉnh CAD, tải lên tệp pat, acad.pat, thư viện mẫu hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

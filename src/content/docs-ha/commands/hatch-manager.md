@@ -3,7 +3,7 @@ title: Umarnin Hatch Manager — Bincika da Loda Pattern na .pat
 description: Umarnin Hatch Manager yana bude akwatin tattaunawa don bincika pattern na hatch tare da preview na swatch kai tsaye, da kuma loda fayilolin pattern na .pat naka. Fayilolin da aka loda ana ajiye su a cikin browser kuma suna rufe pattern din da aka gina wanda ke da suna daya.
 keywords: [hatch manager, pattern na hatch na musamman CAD, loda fayil na pat, acad.pat, laburaren pattern na hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

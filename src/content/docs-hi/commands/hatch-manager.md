@@ -3,7 +3,7 @@ title: "Hatch Manager कमांड — .pat पैटर्न ब्रा�
 description: "Hatch Manager कमांड लाइव स्वैच पूर्वावलोकन के साथ hatch पैटर्न ब्राउज़ करने के लिए, और अपनी खुद की .pat पैटर्न फ़ाइलें अपलोड करने के लिए एक डायलॉग खोलता है। अपलोड की गई फ़ाइलें ब्राउज़र में सहेजी जाती हैं और समान नाम वाले अंतर्निहित पैटर्न को छाया देती हैं।"
 keywords: [hatch manager, कस्टम hatch पैटर्न CAD, pat फ़ाइल अपलोड करें, acad.pat, hatch पैटर्न लाइब्रेरी, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

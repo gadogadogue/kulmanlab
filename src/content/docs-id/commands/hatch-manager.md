@@ -3,7 +3,7 @@ title: Perintah Hatch Manager — Jelajahi dan Unggah Pola .pat
 description: Perintah Hatch Manager membuka dialog untuk menjelajahi pola hatch dengan pratinjau swatch langsung, dan untuk mengunggah file pola .pat Anda sendiri. File yang diunggah disimpan di browser dan menggantikan pola bawaan dengan nama yang sama.
 keywords: [hatch manager, pola hatch kustom CAD, unggah file pat, acad.pat, pustaka pola hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

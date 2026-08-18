@@ -100,6 +100,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 |-----------|---------|
 | [Match Properties](./commands/match-properties/) | Kopiuje kolor, warstwę i inne właściwości z jednego elementu na inne |
 | [Font Manager](./commands/font-manager/) | Przeglądaj, wybieraj i przesyłaj własne czcionki TTF |
+| [Font+](./commands/font-add/) | Prześlij własną czcionkę TTF bezpośrednio z terminala |
 | [Hatch Manager](./commands/hatch-manager/) | Przeglądaj bibliotekę wzorów hatch i przesyłaj pliki .pat |
 
 ## Plik

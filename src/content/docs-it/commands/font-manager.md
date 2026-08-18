@@ -28,7 +28,7 @@ Clicca su un font qualsiasi nell'elenco per visualizzarne l'anteprima a destra â
 
 ## Caricare un font personalizzato
 
-1. Clicca **Add Font** in fondo alla finestra di dialogo (oppure digita `Font+` nel terminale per aprire direttamente il selettore file).
+1. Clicca **Add Font** in fondo alla finestra di dialogo (oppure digita [`Font+`](../font-add/) nel terminale per aprire direttamente il selettore file).
 2. Scegli un file `.ttf`. Sono supportati solo i font TrueType â€” `.otf` e `.woff`/`.woff2` non lo sono.
 3. Il nome del file (senza estensione) diventa il nome del font nel gruppo **User**. Ad esempio, caricando `MyFont.ttf` viene aggiunto un font chiamato `MyFont`.
 

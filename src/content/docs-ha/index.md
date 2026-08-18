@@ -100,6 +100,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kwafi launi, layer, da wasu abubuwa daga wani abu zuwa wasu |
 | [Font Manager](./commands/font-manager/) | Bincika, zaɓi, da loda fonts na TTF na musamman |
+| [Font+](./commands/font-add/) | Loda font na TTF na musamman kai tsaye daga tashar umarni |
 | [Hatch Manager](./commands/hatch-manager/) | Bincika laburaren pattern na hatch kuma loda fayilolin .pat |
 
 ## Fayil

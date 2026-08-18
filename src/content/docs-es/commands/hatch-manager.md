@@ -3,7 +3,7 @@ title: Comando Hatch Manager — Explorar y subir patrones .pat
 description: El comando Hatch Manager abre un diálogo para explorar patrones de hatch con vista previa en vivo, y para subir tus propios archivos de patrón .pat. Los archivos subidos se guardan en el navegador y sustituyen a los patrones incorporados con el mismo nombre.
 keywords: [hatch manager, patrón de hatch personalizado CAD, subir archivo pat, acad.pat, biblioteca de patrones de hatch, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

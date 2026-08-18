@@ -28,7 +28,7 @@ Napsauta mitä tahansa fonttia listassa esikatsellaksesi sitä oikealla — nimi
 
 ## Oman fontin lataaminen
 
-1. Napsauta **Add Font** valintaikkunan alatunnisteessa (tai kirjoita `Font+` terminaaliin avataksesi tiedostovalitsimen suoraan).
+1. Napsauta **Add Font** valintaikkunan alatunnisteessa (tai kirjoita [`Font+`](../font-add/) terminaaliin avataksesi tiedostovalitsimen suoraan).
 2. Valitse `.ttf`-tiedosto. Vain TrueType-fontit tuetaan — `.otf` ja `.woff`/`.woff2` eivät tuettu.
 3. Tiedostonimestä (ilman tiedostopäätettä) tulee fontin nimi **User**-ryhmässä. Esimerkiksi `MyFont.ttf`:n lataaminen lisää fontin nimeltä `MyFont`.
 

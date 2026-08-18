@@ -3,7 +3,7 @@ title: Hatch Manager-kommando — Bla gjennom og last opp .pat-mønstre
 description: Hatch Manager-kommandoen åpner en dialog for å bla gjennom hatch-mønstre med en live swatch-forhåndsvisning, og for å laste opp dine egne .pat-mønsterfiler. Opplastede filer lagres i nettleseren og overskygger innebygde mønstre med samme navn.
 keywords: [hatch manager, tilpasset hatch-mønster CAD, last opp pat-fil, acad.pat, hatch-mønsterbibliotek, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

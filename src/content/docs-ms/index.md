@@ -100,6 +100,7 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 |--------|-----------|
 | [Match Properties](./commands/match-properties/) | Salin warna, lapisan, dan sifat lain dari satu entiti ke entiti lain |
 | [Font Manager](./commands/font-manager/) | Semak imbas, pilih, dan muat naik fon TTF tersuai |
+| [Font+](./commands/font-add/) | Muat naik fon TTF kustom terus dari terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Semak imbas pustaka corak hatch dan muat naik fail .pat |
 
 ## Fail

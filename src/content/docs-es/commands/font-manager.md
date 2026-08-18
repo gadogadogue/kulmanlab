@@ -28,7 +28,7 @@ Haz clic en cualquier fuente de la lista para ver su vista previa a la derecha �
 
 ## Subir una fuente personalizada
 
-1. Haz clic en **Add Font** en la parte inferior del diálogo (o escribe `Font+` en el terminal para abrir el selector de archivos directamente).
+1. Haz clic en **Add Font** en la parte inferior del diálogo (o escribe [`Font+`](../font-add/) en el terminal para abrir el selector de archivos directamente).
 2. Elige un archivo `.ttf`. Solo se admiten fuentes TrueType — `.otf` y `.woff`/`.woff2` no son compatibles.
 3. El nombre del archivo (sin la extensión) se convierte en el nombre de la fuente dentro del grupo **User**. Por ejemplo, al subir `MyFont.ttf` se añade una fuente llamada `MyFont`.
 

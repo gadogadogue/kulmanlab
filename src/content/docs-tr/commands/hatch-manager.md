@@ -3,7 +3,7 @@ title: Hatch Manager Komutu — .pat Desenlerine Göz Atın ve Yükleyin
 description: Hatch Manager komutu, canlı örnek önizlemesiyle hatch desenlerine göz atmak ve kendi .pat desen dosyalarınızı yüklemek için bir iletişim kutusu açar. Yüklenen dosyalar tarayıcıda saklanır ve aynı ada sahip yerleşik desenlerin önüne geçer.
 keywords: [hatch manager, özel hatch deseni CAD, pat dosyası yükleme, acad.pat, hatch desen kitaplığı, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

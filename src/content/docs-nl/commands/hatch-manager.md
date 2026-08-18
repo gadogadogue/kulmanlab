@@ -3,7 +3,7 @@ title: Hatch Manager-commando — .pat-patronen doorbladeren en uploaden
 description: Het Hatch Manager-commando opent een dialoogvenster om hatch-patronen te doorbladeren met een live swatch-voorbeeld, en om uw eigen .pat-patroonbestanden te uploaden. Geüploade bestanden worden opgeslagen in de browser en overschaduwen ingebouwde patronen met dezelfde naam.
 keywords: [hatch manager, aangepast hatch-patroon CAD, pat-bestand uploaden, acad.pat, hatch-patroonbibliotheek, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

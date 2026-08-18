@@ -100,6 +100,7 @@ order: 1
 |---------|-----------|
 | [Match Properties](./commands/match-properties/) | คัดลอกสี เลเยอร์ และคุณสมบัติอื่นๆ จากวัตถุหนึ่งไปยังวัตถุอื่น |
 | [Font Manager](./commands/font-manager/) | เรียกดู เลือก และอัปโหลดฟอนต์ TTF ที่กำหนดเอง |
+| [Font+](./commands/font-add/) | อัปโหลดฟอนต์ TTF กำหนดเองโดยตรงจากเทอร์มินัล |
 | [Hatch Manager](./commands/hatch-manager/) | เรียกดูไลบรารีลวดลาย hatch และอัปโหลดไฟล์ .pat |
 
 ## ไฟล์

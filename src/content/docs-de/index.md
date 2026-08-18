@@ -100,6 +100,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 |--------|----------|
 | [Match Properties](./commands/match-properties/) | Farbe, Ebene und andere Eigenschaften von einem Element auf andere übertragen |
 | [Font Manager](./commands/font-manager/) | Schriftarten durchsuchen, auswählen und eigene TTF-Dateien hochladen |
+| [Font+](./commands/font-add/) | Eigene TTF-Schriftart direkt aus dem Terminal hochladen |
 | [Hatch Manager](./commands/hatch-manager/) | Die Hatch-Musterbibliothek durchsuchen und .pat-Dateien hochladen |
 
 ## Datei

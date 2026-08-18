@@ -3,7 +3,7 @@ title: "Hatch Manager কমান্ড — .pat প্যাটার্ন �
 description: "Hatch Manager কমান্ড লাইভ সোয়াচ প্রিভিউ সহ hatch প্যাটার্ন ব্রাউজ করার এবং আপনার নিজের .pat প্যাটার্ন ফাইল আপলোড করার জন্য একটি ডায়ালগ খোলে। আপলোড করা ফাইল ব্রাউজারে সংরক্ষিত হয় এবং একই নামের বিল্ট-ইন প্যাটার্নকে ছাপিয়ে যায়।"
 keywords: [hatch manager, কাস্টম hatch প্যাটার্ন CAD, pat ফাইল আপলোড, acad.pat, hatch প্যাটার্ন লাইব্রেরি, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

@@ -100,6 +100,7 @@ Benvenuto nel riferimento comandi di **KulmanLab CAD**. [KulmanLab CAD](https://
 |---------|---------|
 | [Match Properties](./commands/match-properties/) | Copia il colore, il livello e altre proprietà da un'entità ad altre |
 | [Font Manager](./commands/font-manager/) | Sfoglia, seleziona e carica font TTF personalizzati |
+| [Font+](./commands/font-add/) | Carica un font TTF personalizzato direttamente dal terminale |
 | [Hatch Manager](./commands/hatch-manager/) | Sfoglia la libreria di motivi hatch e carica file .pat |
 
 ## File

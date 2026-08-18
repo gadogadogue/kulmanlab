@@ -100,6 +100,7 @@ order: 1
 |-------|----------|
 | [Match Properties](./commands/match-properties/) | نسخ اللون والطبقة وخصائص أخرى من عنصر إلى عناصر أخرى |
 | [Font Manager](./commands/font-manager/) | تصفح واختر الخطوط، وارفع خطوط TTF مخصصة |
+| [Font+](./commands/font-add/) | ارفع خط TTF مخصص مباشرةً من المحطة |
 | [Hatch Manager](./commands/hatch-manager/) | تصفح مكتبة أنماط التظليل وارفع ملفات .pat |
 
 ## الملف

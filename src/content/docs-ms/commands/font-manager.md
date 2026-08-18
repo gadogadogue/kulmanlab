@@ -28,7 +28,7 @@ Klik mana-mana fon dalam senarai untuk pratonton di sebelah kanan — nama, samp
 
 ## Memuat naik fon kustom
 
-1. Klik **Add Font** pada footer dialog (atau taip `Font+` dalam terminal untuk membuka pemilih fail secara terus).
+1. Klik **Add Font** pada footer dialog (atau taip [`Font+`](../font-add/) dalam terminal untuk membuka pemilih fail secara terus).
 2. Pilih fail `.ttf`. Hanya fon TrueType disokong — `.otf` dan `.woff`/`.woff2` tidak disokong.
 3. Nama fail (tanpa sambungan) menjadi nama fon dalam kumpulan **User**. Sebagai contoh, memuat naik `MyFont.ttf` menambah fon bernama `MyFont`.
 

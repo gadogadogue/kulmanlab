@@ -3,7 +3,7 @@ title: Hatch Manager 명령 — .pat 패턴 찾아보기 및 업로드
 description: Hatch Manager 명령은 실시간 스와치 미리보기와 함께 hatch 패턴을 찾아보고, 자체 .pat 패턴 파일을 업로드하는 대화 상자를 엽니다. 업로드된 파일은 브라우저에 저장되며 같은 이름의 내장 패턴을 덮어씁니다.
 keywords: [hatch manager, 사용자 지정 hatch 패턴 CAD, pat 파일 업로드, acad.pat, hatch 패턴 라이브러리, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

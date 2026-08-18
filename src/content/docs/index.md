@@ -100,6 +100,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Copy color, layer, and other properties from one entity to others |
 | [Font Manager](./commands/font-manager/) | Browse, select, and upload custom TTF fonts |
+| [Font+](./commands/font-add/) | Upload a custom TTF font directly from the terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Browse the hatch pattern library and upload .pat files |
 
 ## File

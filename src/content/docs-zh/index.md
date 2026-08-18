@@ -100,6 +100,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | 将颜色、图层及其他特性从一个图元复制到其他图元 |
 | [Font Manager](./commands/font-manager/) | 浏览、选择字体，并上传自定义 TTF 字体 |
+| [Font+](./commands/font-add/) | 直接从命令行上传自定义 TTF 字体 |
 | [Hatch Manager](./commands/hatch-manager/) | 浏览 hatch 图案库并上传 .pat 文件 |
 
 ## 文件

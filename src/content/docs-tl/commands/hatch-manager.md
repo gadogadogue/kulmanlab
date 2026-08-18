@@ -3,7 +3,7 @@ title: Hatch Manager Command — Mag-browse at Mag-upload ng .pat Patterns
 description: Ang Hatch Manager command ay nagbubukas ng dialog para mag-browse ng hatch patterns na may live swatch preview, at para mag-upload ng sarili mong .pat pattern files. Ang mga na-upload na file ay naka-save sa browser at binabalewala ang built-in patterns na may parehong pangalan.
 keywords: [hatch manager, custom hatch pattern CAD, mag-upload ng pat file, acad.pat, hatch pattern library, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

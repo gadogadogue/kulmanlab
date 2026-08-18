@@ -100,6 +100,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | ایک شے سے دوسروں تک رنگ، پرت، اور دیگر خصوصیات نقل کریں |
 | [Font Manager](./commands/font-manager/) | فونٹس براؤز کریں، منتخب کریں، اور کسٹم TTF فونٹس اپ لوڈ کریں |
+| [Font+](./commands/font-add/) | ٹرمینل سے براہ راست کسٹم TTF فونٹ اپ لوڈ کریں |
 | [Hatch Manager](./commands/hatch-manager/) | hatch پیٹرن لائبریری براؤز کریں اور .pat فائلیں اپ لوڈ کریں |
 
 ## فائل

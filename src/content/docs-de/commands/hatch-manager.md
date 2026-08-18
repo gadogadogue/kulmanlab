@@ -3,7 +3,7 @@ title: Hatch Manager-Befehl — .pat-Muster durchsuchen und hochladen
 description: Der Hatch Manager-Befehl öffnet einen Dialog zum Durchsuchen von Hatch-Mustern mit einer Live-Vorschau und zum Hochladen eigener .pat-Musterdateien. Hochgeladene Dateien werden im Browser gespeichert und überlagern eingebaute Muster mit demselben Namen.
 keywords: [hatch manager, benutzerdefiniertes hatch-muster CAD, pat-datei hochladen, acad.pat, hatch-musterbibliothek, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

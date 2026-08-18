@@ -28,7 +28,7 @@ order: 2
 
 ## Özel Yazı Tipi Yükleme
 
-1. İletişim kutusunun altındaki **Add Font** düğmesine tıklayın (veya dosya seçiciyi doğrudan açmak için terminale `Font+` yazın).
+1. İletişim kutusunun altındaki **Add Font** düğmesine tıklayın (veya dosya seçiciyi doğrudan açmak için terminale [`Font+`](../font-add/) yazın).
 2. Bir `.ttf` dosyası seçin. Yalnızca TrueType yazı tipleri desteklenir — `.otf` ve `.woff`/`.woff2` desteklenmez.
 3. Dosya adı (uzantısı olmadan) **User** grubunda yazı tipinin adı olur. Örneğin, `MyFont.ttf` dosyasını yüklemek `MyFont` adlı bir yazı tipi ekler.
 

@@ -3,7 +3,7 @@ title: Hatch Manager-kommando — Gennemse og upload .pat-mønstre
 description: Hatch Manager-kommandoen åbner en dialog til at gennemse hatch-mønstre med en live swatch-forhåndsvisning og til at uploade dine egne .pat-mønsterfiler. Uploadede filer gemmes i browseren og overskygger indbyggede mønstre med samme navn.
 keywords: [hatch manager, brugerdefineret hatch-mønster CAD, upload pat-fil, acad.pat, hatch-mønsterbibliotek, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

@@ -3,7 +3,7 @@ title: "Hatch Manager کمانڈ — .pat پیٹرن براؤز اور اپ لو
 description: "Hatch Manager کمانڈ لائیو سوواچ پیش نظارے کے ساتھ hatch پیٹرن براؤز کرنے کے لیے، اور اپنی خود کی .pat پیٹرن فائلیں اپ لوڈ کرنے کے لیے ایک ڈائیلاگ کھولتی ہے۔ اپ لوڈ کی گئی فائلیں براؤزر میں محفوظ ہوتی ہیں اور اسی نام والے بلٹ ان پیٹرن کو ڈھانپ لیتی ہیں۔"
 keywords: [hatch manager, کسٹم hatch پیٹرن CAD, pat فائل اپ لوڈ کریں, acad.pat, hatch پیٹرن لائبریری, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

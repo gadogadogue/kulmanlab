@@ -3,7 +3,7 @@ title: Hatch Manager -komento — Selaa ja lataa .pat-kuvioita
 description: Hatch Manager -komento avaa valintaikkunan hatch-kuvioiden selaamiseen suoralla näyteesikatselulla, ja omien .pat-kuviotiedostojen lataamiseen. Ladatut tiedostot tallennetaan selaimeen ja ne peittävät samannimiset sisäänrakennetut kuviot.
 keywords: [hatch manager, mukautettu hatch-kuvio CAD, lataa pat-tiedosto, acad.pat, hatch-kuviokirjasto, ANSI31, kulmanlab]
 group: style
-order: 3
+order: 4
 ---
 
 # Hatch Manager

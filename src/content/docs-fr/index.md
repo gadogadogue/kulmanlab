@@ -100,6 +100,7 @@ Bienvenue dans la référence des commandes **KulmanLab CAD**. [KulmanLab CAD](h
 |----------|----------------|
 | [Match Properties](./commands/match-properties/) | Copie la couleur, le calque et d'autres propriétés d'une entité vers d'autres |
 | [Font Manager](./commands/font-manager/) | Parcourez, sélectionnez et téléversez des polices TTF personnalisées |
+| [Font+](./commands/font-add/) | Téléversez une police TTF personnalisée directement depuis le terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Parcourez la bibliothèque de motifs de hachures et téléversez des fichiers .pat |
 
 ## Fichier

@@ -100,6 +100,7 @@ order: 1
 |--------|------|
 | [Match Properties](./commands/match-properties/) | 한 객체에서 다른 객체로 색상, 레이어 및 기타 특성 복사 |
 | [Font Manager](./commands/font-manager/) | 글꼴 찾아보기, 선택 및 사용자 지정 TTF 글꼴 업로드 |
+| [Font+](./commands/font-add/) | 터미널에서 바로 사용자 지정 TTF 글꼴 업로드 |
 | [Hatch Manager](./commands/hatch-manager/) | hatch 패턴 라이브러리 찾아보기 및 .pat 파일 업로드 |
 
 ## 파일
