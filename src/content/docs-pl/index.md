@@ -64,6 +64,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 
 | Polecenie | Co robi |
 |-----------|---------|
+| [LayerManager](./commands/layer-manager/) | Dodawaj warstwy i edytuj dla każdej zamrożenie, blokadę, wydruk, kolor, grubość i typ linii |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Ustawia bieżącą warstwę na warstwę klikniętego elementu |
 | [LayerMatch](./commands/layer-match/) | Przypisuje zaznaczone elementy do warstwy elementu źródłowego |
 | [LayerIsolate](./commands/layer-isolate/) | Zamraża wszystkie warstwy oprócz warstw zaznaczonych elementów |

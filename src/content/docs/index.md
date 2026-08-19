@@ -64,6 +64,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 
 | Command | What it does |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | Add layers and edit freeze, lock, plot, color, lineweight, and linetype for each |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Set the current layer to match a clicked entity's layer |
 | [LayerMatch](./commands/layer-match/) | Reassign selected entities to match the layer of a source entity |
 | [LayerIsolate](./commands/layer-isolate/) | Freeze all layers except those of the selected entities |

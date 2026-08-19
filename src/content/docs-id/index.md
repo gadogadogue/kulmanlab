@@ -64,6 +64,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 
 | Perintah | Fungsi |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | Tambah layer dan edit status beku, kunci, plot, warna, ketebalan, dan tipe garis untuk masing-masing |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Mengatur layer saat ini agar sesuai dengan layer entitas yang diklik |
 | [LayerMatch](./commands/layer-match/) | Menetapkan ulang entitas yang dipilih agar sesuai dengan layer entitas sumber |
 | [LayerIsolate](./commands/layer-isolate/) | Membekukan semua layer kecuali layer entitas yang dipilih |

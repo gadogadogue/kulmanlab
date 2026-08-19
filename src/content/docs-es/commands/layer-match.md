@@ -3,12 +3,12 @@ title: LayerMatch — Reasignar capas de entidades según una fuente
 description: El comando LayerMatch reasigna la capa de una o más entidades de destino para que coincida con la capa de una entidad fuente en la que haces clic.
 keywords: [coincidir capa, igualar capa CAD, reasignar capa kulmanlab, gestión de capas CAD]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-El comando `LayerMatch` reasigna la capa de las entidades seleccionadas para que coincida con la capa de una entidad fuente en la que haces clic. Es la forma más rápida de mover un grupo de objetos a la capa correcta sin abrir el Administrador de Capas.
+El comando `LayerMatch` reasigna la capa de las entidades seleccionadas para que coincida con la capa de una entidad fuente en la que haces clic. Es la forma más rápida de mover un grupo de objetos a la capa correcta sin abrir el [Administrador de Capas](../layer-manager/).
 
 ## Flujo de trabajo
 

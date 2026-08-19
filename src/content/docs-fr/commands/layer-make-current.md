@@ -3,7 +3,7 @@ title: LayerMakeCurrent — Définir le calque d'une entité comme courant
 description: La commande LayerMakeCurrent définit le calque de dessin courant pour correspondre au calque de l'entité sur laquelle vous cliquez.
 keywords: [définir calque courant, calque courant CAO, gestion calques kulmanlab]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

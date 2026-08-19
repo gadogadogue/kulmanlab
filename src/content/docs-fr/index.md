@@ -64,6 +64,7 @@ Bienvenue dans la référence des commandes **KulmanLab CAD**. [KulmanLab CAD](h
 
 | Commande | Ce qu'elle fait |
 |----------|----------------|
+| [LayerManager](./commands/layer-manager/) | Ajoutez des calques et modifiez pour chacun le gel, le verrouillage, le tracé, la couleur, l'épaisseur et le type de ligne |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Définit le calque actif pour qu'il corresponde au calque de l'entité cliquée |
 | [LayerMatch](./commands/layer-match/) | Réassigne les entités sélectionnées au calque d'une entité source |
 | [LayerIsolate](./commands/layer-isolate/) | Gèle tous les calques sauf ceux des entités sélectionnées |

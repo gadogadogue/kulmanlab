@@ -3,7 +3,7 @@ title: LayerUnfreezeAll — הפשרת כל השכבות ב-KulmanLab CAD
 description: פקודת LayerUnfreezeAll מנקה את דגל ההקפאה בכל שכבה בשרטוט בצעד אחד.
 keywords: [layer unfreeze, הפשרת כל השכבות CAD, ניהול שכבות kulmanlab]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

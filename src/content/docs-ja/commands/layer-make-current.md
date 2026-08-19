@@ -3,7 +3,7 @@ title: LayerMakeCurrent コマンド — エンティティのレイヤーをカ
 description: LayerMakeCurrent コマンドはクリックしたエンティティのレイヤーを現在の作図レイヤーとして設定します。
 keywords: [レイヤーをカレントに設定, カレントレイヤー CAD, kulmanlab レイヤー管理]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

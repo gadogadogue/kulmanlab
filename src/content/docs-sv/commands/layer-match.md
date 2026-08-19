@@ -3,12 +3,12 @@ title: LayerMatch — Omtilldela entiteters lager för att matcha en källa
 description: LayerMatch-kommandot omtilldelar lagret för en eller flera målentiteter så att det matchar lagret för en källentitet du klickar på.
 keywords: [lagermatchning, matcha lager CAD, omtilldela lager kulmanlab, CAD-lagerhantering]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-`LayerMatch`-kommandot omtilldelar lagret för markerade entiteter så att det matchar lagret för en källentitet du klickar på. Det är det snabbaste sättet att flytta en grupp objekt till rätt lager utan att öppna Layer Manager.
+`LayerMatch`-kommandot omtilldelar lagret för markerade entiteter så att det matchar lagret för en källentitet du klickar på. Det är det snabbaste sättet att flytta en grupp objekt till rätt lager utan att öppna [Layer Manager](../layer-manager/).
 
 ## Arbetsflöde
 

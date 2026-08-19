@@ -3,12 +3,12 @@ title: LayerMatch — Menetapkan Ulang Layer Entitas Sesuai Sumber
 description: Perintah LayerMatch menetapkan ulang layer satu atau lebih entitas target agar sesuai dengan layer entitas sumber yang Anda klik.
 keywords: [layer match, cocokkan layer CAD, tetapkan ulang layer kulmanlab, manajemen layer CAD]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Perintah `LayerMatch` menetapkan ulang layer entitas yang dipilih agar sesuai dengan layer entitas sumber yang Anda klik. Ini adalah cara tercepat untuk memindahkan sekelompok objek ke layer yang benar tanpa membuka Layer Manager.
+Perintah `LayerMatch` menetapkan ulang layer entitas yang dipilih agar sesuai dengan layer entitas sumber yang Anda klik. Ini adalah cara tercepat untuk memindahkan sekelompok objek ke layer yang benar tanpa membuka [Layer Manager](../layer-manager/).
 
 ## Alur kerja
 

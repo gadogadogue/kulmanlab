@@ -3,7 +3,7 @@ title: LayerUnfreezeAll — Alle Lagen Ontdooien in KulmanLab CAD
 description: Het LayerUnfreezeAll-commando wist de bevriezingsvlag op elke laag in de tekening in één stap.
 keywords: [laag ontdooien, alle lagen ontdooien CAD, kulmanlab laagbeheer]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

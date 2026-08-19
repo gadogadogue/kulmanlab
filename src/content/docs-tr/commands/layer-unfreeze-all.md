@@ -3,7 +3,7 @@ title: LayerUnfreezeAll Komutu — KulmanLab CAD'de Tüm Katmanları Çöz
 description: LayerUnfreezeAll komutu, çizimdeki tüm katmanları tek adımda çözer. Genellikle LayerIsolate sonrasında tam görünürlüğü geri yüklemek için kullanılır. Kilitleme ve yazdırma bayrakları değiştirilmez.
 keywords: [CAD layer unfreeze all komutu, katmanları çöz CAD, tüm katmanları göster CAD, kulmanlab]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

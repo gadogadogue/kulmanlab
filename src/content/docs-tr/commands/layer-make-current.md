@@ -3,7 +3,7 @@ title: LayerMakeCurrent Komutu — Geçerli Katmanı Nesneye Göre Ayarla
 description: LayerMakeCurrent komutu, tıkladığınız nesnenin katmanına göre geçerli aktif katmanı ayarlar. Katman yöneticisini açmadan katmanlar arasında geçiş yapmak için kullanışlıdır.
 keywords: [CAD layer make current komutu, geçerli katmanı ayarla CAD, katman değiştir CAD, kulmanlab]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent
@@ -21,7 +21,7 @@ Komut tıklamadan hemen sonra tamamlanır.
 
 - Birden fazla katmanınız var ve mevcut bir nesneyle aynı katmanda çizmek istiyorsunuz.
 - Katman adını hatırlamıyorsunuz — o katmandaki nesneye tıklamanız yeterli.
-- Katman yöneticisini açıp ada göre aramaktan daha hızlı.
+- [Layer Manager](../layer-manager/)'ı açıp ada göre aramaktan daha hızlı.
 
 ## İlgili Katman Komutları
 

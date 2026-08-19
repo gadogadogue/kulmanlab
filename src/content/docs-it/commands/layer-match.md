@@ -3,12 +3,12 @@ title: LayerMatch — Riassegna i Layer delle Entità a una Sorgente
 description: Il comando LayerMatch riassegna il layer di una o più entità target per corrispondere al layer di un'entità sorgente che clicchi.
 keywords: [layer match, corrispondenza layer CAD, riassegna layer kulmanlab, gestione layer CAD]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Il comando `LayerMatch` riassegna il layer delle entità selezionate per corrispondere al layer di un'entità sorgente che clicchi. È il modo più veloce per spostare un gruppo di oggetti sul layer corretto senza aprire il Gestore Layer.
+Il comando `LayerMatch` riassegna il layer delle entità selezionate per corrispondere al layer di un'entità sorgente che clicchi. È il modo più veloce per spostare un gruppo di oggetti sul layer corretto senza aprire il [Gestore Layer](../layer-manager/).
 
 ## Flusso di lavoro
 

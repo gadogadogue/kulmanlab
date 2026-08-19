@@ -3,12 +3,12 @@ title: LayerMatch — I-reassign ang Layer ng Entity Ayon sa Source
 description: Nire-reassign ng LayerMatch command ang layer ng isa o higit pang target entities para tumugma sa layer ng source entity na kine-click mo.
 keywords: [layer match, i-match ang layer CAD, i-reassign ang layer kulmanlab, CAD layer management]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Nire-reassign ng `LayerMatch` command ang layer ng mga napiling entities para tumugma sa layer ng source entity na kine-click mo. Ito ang pinakamabilis na paraan para ilipat ang isang grupo ng objects sa tamang layer nang hindi binubuksan ang Layer Manager.
+Nire-reassign ng `LayerMatch` command ang layer ng mga napiling entities para tumugma sa layer ng source entity na kine-click mo. Ito ang pinakamabilis na paraan para ilipat ang isang grupo ng objects sa tamang layer nang hindi binubuksan ang [Layer Manager](../layer-manager/).
 
 ## Workflow
 

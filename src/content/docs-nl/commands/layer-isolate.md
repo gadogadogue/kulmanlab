@@ -3,7 +3,7 @@ title: LayerIsolate — Bevries Alle Lagen Behalve Geselecteerde
 description: Het LayerIsolate-commando bevriest elke laag behalve die van de geselecteerde objecten, zodat u zich kunt focussen op specifieke geometrie zonder iets te verwijderen.
 keywords: [laag isoleren, lagen bevriezen CAD, laag isoleren kulmanlab, CAD laagbeheer]
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

@@ -3,7 +3,7 @@ title: LayerMakeCurrent — Ställ in en entitets lager som aktuellt
 description: LayerMakeCurrent-kommandot ställer in det aktuella ritningslagret så att det matchar lagret för en klickad entitet.
 keywords: [ställ in aktuellt lager, ange aktuellt lager CAD, kulmanlab lagerhantering]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

@@ -3,7 +3,7 @@ title: LayerIsolate — הקפאת כל השכבות מלבד הנבחרות ב-
 description: פקודת LayerIsolate מקפיאה כל שכבה מלבד אלה שבשימוש האובייקטים הנבחרים, ומאפשרת לכם להתמקד בגיאומטריה ספציפית בלי למחוק דבר.
 keywords: [בידוד שכבה, הקפאת שכבות CAD, בידוד שכבה kulmanlab, ניהול שכבות CAD]
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

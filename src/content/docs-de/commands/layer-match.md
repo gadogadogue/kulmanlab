@@ -3,12 +3,12 @@ title: LayerMatch — Entitätslayer an eine Quelllayer anpassen
 description: Der Befehl LayerMatch weist den Layer einer oder mehrerer Zielentitäten neu zu, sodass er mit dem Layer einer von Ihnen angeklickten Quellentität übereinstimmt.
 keywords: [Layer angleichen, Layer anpassen CAD, Layer neu zuweisen kulmanlab, CAD-Layerverwaltung]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Der Befehl `LayerMatch` weist den Layer ausgewählter Entitäten neu zu, sodass er mit dem Layer einer von Ihnen angeklickten Quellentität übereinstimmt. Dies ist der schnellste Weg, eine Gruppe von Objekten auf den richtigen Layer zu verschieben, ohne den Layer-Manager öffnen zu müssen.
+Der Befehl `LayerMatch` weist den Layer ausgewählter Entitäten neu zu, sodass er mit dem Layer einer von Ihnen angeklickten Quellentität übereinstimmt. Dies ist der schnellste Weg, eine Gruppe von Objekten auf den richtigen Layer zu verschieben, ohne den [Layer Manager](../layer-manager/) öffnen zu müssen.
 
 ## Arbeitsablauf
 

@@ -3,7 +3,7 @@ title: LayerUnfreezeAll — Frys upp alla lager i KulmanLab CAD
 description: LayerUnfreezeAll-kommandot rensar den frysta flaggan på alla lager i ritningen i ett steg.
 keywords: [lager upptining, frys upp alla lager CAD, kulmanlab lagerhantering]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

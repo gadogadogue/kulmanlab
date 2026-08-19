@@ -3,7 +3,7 @@ title: LayerUnfreezeAll コマンド — すべてのレイヤーのフリーズ
 description: LayerUnfreezeAll コマンドは図面内のすべてのレイヤーのフリーズフラグを 1 ステップでクリアします。
 keywords: [レイヤーフリーズ解除, 全レイヤー解除 CAD, kulmanlab レイヤー管理]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

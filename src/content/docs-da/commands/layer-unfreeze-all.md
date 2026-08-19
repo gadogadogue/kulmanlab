@@ -3,7 +3,7 @@ title: LayerUnfreezeAll — Fjern Frysning af Alle Lag i KulmanLab CAD
 description: LayerUnfreezeAll-kommandoen fjerner det frosne flag på hvert lag i tegningen i ét trin.
 keywords: [fjern lagfrysning, fjern frysning af alle lag CAD, kulmanlab lagadministration]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

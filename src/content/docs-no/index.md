@@ -64,6 +64,7 @@ Velkommen til **KulmanLab CAD**s kommandoreferanse. [KulmanLab CAD](https://kulm
 
 | Kommando | Hva den gjør |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | Legg til lag og rediger for hvert frysing, låsing, plot, farge, linjetykkelse og linetype |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Sett gjeldende lag til å samsvare med en klikket entitets lag |
 | [LayerMatch](./commands/layer-match/) | Tildel markerte entiteter på nytt til laget for en kildeentitet |
 | [LayerIsolate](./commands/layer-isolate/) | Frys alle lag unntatt de markerte entitetenes |

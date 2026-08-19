@@ -64,6 +64,7 @@ Benvenuto nel riferimento comandi di **KulmanLab CAD**. [KulmanLab CAD](https://
 
 | Comando | Cosa fa |
 |---------|---------|
+| [LayerManager](./commands/layer-manager/) | Aggiungi livelli e modifica per ciascuno congelamento, blocco, stampa, colore, spessore e tipo linea |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Imposta il livello attivo per corrispondere al livello dell'entità cliccata |
 | [LayerMatch](./commands/layer-match/) | Riassegna le entità selezionate al livello di un'entità sorgente |
 | [LayerIsolate](./commands/layer-isolate/) | Congela tutti i livelli tranne quelli delle entità selezionate |

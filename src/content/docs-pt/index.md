@@ -64,6 +64,7 @@ Bem-vindo à referência de comandos do **KulmanLab CAD**. O [KulmanLab CAD](htt
 
 | Comando | O que faz |
 |---------|-----------|
+| [LayerManager](./commands/layer-manager/) | Adicione camadas e edite para cada uma o congelamento, o bloqueio, a impressão, a cor, a espessura e o tipo de linha |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Define a camada ativa para corresponder à camada da entidade clicada |
 | [LayerMatch](./commands/layer-match/) | Reatribui as entidades selecionadas à camada de uma entidade de origem |
 | [LayerIsolate](./commands/layer-isolate/) | Congela todas as camadas exceto as das entidades selecionadas |

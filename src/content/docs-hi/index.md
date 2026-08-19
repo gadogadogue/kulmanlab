@@ -64,6 +64,7 @@ order: 1
 
 | कमांड | क्या करती है |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | लेयर जोड़ें और प्रत्येक की फ्रीज, लॉक, प्लॉट, रंग, मोटाई और लाइनटाइप संपादित करें |
 | [LayerMakeCurrent](./commands/layer-make-current/) | क्लिक किए गए ऑब्जेक्ट की लेयर को वर्तमान लेयर के रूप में सेट करें |
 | [LayerMatch](./commands/layer-match/) | चयनित ऑब्जेक्ट को स्रोत ऑब्जेक्ट की लेयर पर असाइन करें |
 | [LayerIsolate](./commands/layer-isolate/) | चयनित ऑब्जेक्ट की लेयर को छोड़कर सभी लेयर फ्रीज करें |

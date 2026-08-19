@@ -3,7 +3,7 @@ title: LayerIsolate — ซ่อนเลเยอร์ทั้งหมด�
 description: คำสั่ง LayerIsolate ซ่อนทุกเลเยอร์ยกเว้นเลเยอร์ที่ใช้โดยวัตถุที่เลือก ให้คุณโฟกัสกับเรขาคณิตเฉพาะโดยไม่ลบอะไร
 keywords: [layer isolate, ซ่อนเลเยอร์ CAD, isolate layer kulmanlab, การจัดการเลเยอร์ CAD]
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

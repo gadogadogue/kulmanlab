@@ -2,7 +2,7 @@
 title: LayerMakeCurrent — Đặt Lớp của Thực Thể Làm Lớp Hiện Tại
 description: Lệnh LayerMakeCurrent đặt lớp vẽ hiện tại khớp với lớp của thực thể được nhấp.
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

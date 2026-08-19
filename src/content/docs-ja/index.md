@@ -64,6 +64,7 @@ order: 1
 
 | コマンド | 機能 |
 |---------|------|
+| [LayerManager](./commands/layer-manager/) | レイヤーを追加し、各レイヤーのフリーズ・ロック・プロット・色・線幅・線種を編集する |
 | [LayerMakeCurrent](./commands/layer-make-current/) | クリックしたエンティティのレイヤーをカレントレイヤーに設定する |
 | [LayerMatch](./commands/layer-match/) | 選択エンティティをソースエンティティのレイヤーに合わせて変更する |
 | [LayerIsolate](./commands/layer-isolate/) | 選択エンティティのレイヤー以外をすべてフリーズする |

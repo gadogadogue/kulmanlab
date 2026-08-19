@@ -64,6 +64,7 @@ order: 1
 
 | פקודה | מה היא עושה |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | הוספת שכבות ועריכת הקפאה, נעילה, הדפסה, צבע, עובי וסוג קו עבור כל אחת |
 | [LayerMakeCurrent](./commands/layer-make-current/) | הגדרת השכבה הנוכחית כך שתתאים לשכבה של ישות שנלחצה |
 | [LayerMatch](./commands/layer-match/) | שיוך מחדש של ישויות נבחרות כדי להתאים לשכבה של ישות מקור |
 | [LayerIsolate](./commands/layer-isolate/) | הקפאת כל השכבות מלבד אלה של הישויות הנבחרות |

@@ -3,12 +3,12 @@ title: LayerMatch — Reassign Entity Layers to Match a Source
 description: The LayerMatch command reassigns the layer of one or more target entities to match the layer of a source entity you click.
 keywords: [layer match, match layer CAD, reassign layer kulmanlab, CAD layer management]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-The `LayerMatch` command reassigns the layer of selected entities to match the layer of a source entity you click. It is the fastest way to move a group of objects onto the correct layer without opening the Layer Manager.
+The `LayerMatch` command reassigns the layer of selected entities to match the layer of a source entity you click. It is the fastest way to move a group of objects onto the correct layer without opening the [Layer Manager](../layer-manager/).
 
 ## Workflow
 

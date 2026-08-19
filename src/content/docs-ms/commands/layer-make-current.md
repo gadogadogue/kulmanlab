@@ -3,7 +3,7 @@ title: LayerMakeCurrent — Tetapkan Lapisan Entiti sebagai Semasa
 description: Arahan LayerMakeCurrent menetapkan lapisan lukisan semasa agar sepadan dengan lapisan entiti yang diklik.
 keywords: [buat lapisan semasa, tetapkan lapisan semasa CAD, pengurusan lapisan kulmanlab]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

@@ -64,6 +64,7 @@ order: 1
 
 | Komut | Ne yapar |
 |-------|----------|
+| [LayerManager](./commands/layer-manager/) | Katman ekleyin ve her biri için dondurma, kilitleme, yazdırma, renk, kalınlık ve çizgi türünü düzenleyin |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Tıklanan nesneye göre geçerli katmanı ayarlar |
 | [LayerMatch](./commands/layer-match/) | Seçili nesneleri kaynak nesnenin katmanına yeniden atar |
 | [LayerIsolate](./commands/layer-isolate/) | Seçili nesnelerin katmanları dışındaki tüm katmanları dondurur |

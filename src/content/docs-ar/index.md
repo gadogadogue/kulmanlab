@@ -64,6 +64,7 @@ order: 1
 
 | الأمر | ما يفعله |
 |-------|----------|
+| [LayerManager](./commands/layer-manager/) | أضف طبقات وحرِّر لكل منها التجميد والقفل والطباعة واللون والعرض ونوع الخط |
 | [LayerMakeCurrent](./commands/layer-make-current/) | تعيين الطبقة الحالية لتطابق طبقة عنصر منقور |
 | [LayerMatch](./commands/layer-match/) | إعادة تعيين العناصر المحددة لتطابق طبقة عنصر مصدر |
 | [LayerIsolate](./commands/layer-isolate/) | تجميد جميع الطبقات باستثناء طبقات العناصر المحددة |

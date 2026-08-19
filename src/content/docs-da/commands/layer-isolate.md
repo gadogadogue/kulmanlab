@@ -3,7 +3,7 @@ title: LayerIsolate — Frys Alle Lag Undtagen Markerede i KulmanLab CAD
 description: LayerIsolate-kommandoen fryser hvert lag undtagen dem der bruges af de markerede objekter, så du kan fokusere på specifik geometri uden at slette noget.
 keywords: [lagisolering, frys lag CAD, isolér lag kulmanlab, CAD lagadministration]
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

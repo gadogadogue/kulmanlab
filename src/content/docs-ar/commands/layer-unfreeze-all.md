@@ -3,7 +3,7 @@ title: LayerUnfreezeAll — إلغاء تجميد جميع الطبقات في K
 description: يمسح أمر LayerUnfreezeAll علامة التجميد على كل طبقة في الرسم في خطوة واحدة.
 keywords: [إلغاء تجميد طبقة, إلغاء تجميد جميع الطبقات CAD, إدارة طبقات kulmanlab]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

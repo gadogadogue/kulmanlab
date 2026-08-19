@@ -3,7 +3,7 @@ title: LayerIsolate — Congelar Todas as Camadas Exceto as Selecionadas
 description: O comando LayerIsolate congela todas as camadas exceto as usadas pelos objetos selecionados, permitindo focar em geometria específica sem excluir nada.
 keywords: [layer isolate, congelar camadas CAD, isolar camada kulmanlab, gerenciamento de camadas CAD]
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

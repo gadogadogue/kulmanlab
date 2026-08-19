@@ -3,7 +3,7 @@ title: LayerMakeCurrent — Sett en Entitets Lag som Gjeldende
 description: LayerMakeCurrent-kommandoen setter gjeldende tegnelag til å samsvare med laget til en klikket entitet.
 keywords: [lag gjeldende, sett gjeldende lag CAD, kulmanlab lagadministrasjon]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

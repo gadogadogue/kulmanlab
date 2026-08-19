@@ -3,7 +3,7 @@ title: LayerUnfreezeAll — Nyahbeku Semua Lapisan dalam KulmanLab CAD
 description: Arahan LayerUnfreezeAll mengosongkan bendera beku pada setiap lapisan dalam lukisan dalam satu langkah.
 keywords: [nyahbeku lapisan, nyahbeku semua lapisan CAD, pengurusan lapisan kulmanlab]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

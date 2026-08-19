@@ -3,12 +3,12 @@ title: LayerMatch — Kohdista Entiteettien Tasot Uudelleen Lähteeseen
 description: LayerMatch-komento kohdistaa yhden tai useamman kohde-entiteetin tason uudelleen vastaamaan napsauttamasi lähde-entiteetin tasoa.
 keywords: [lagmatch, kohdista taso CAD, kohdista taso uudelleen kulmanlab, CAD tasojen hallinta]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Komento `LayerMatch` kohdistaa valittujen entiteettien tason uudelleen vastaamaan napsauttamasi lähde-entiteetin tasoa. Se on nopein tapa siirtää objektiryhmä oikealle tasolle avaamatta Layer Manageria.
+Komento `LayerMatch` kohdistaa valittujen entiteettien tason uudelleen vastaamaan napsauttamasi lähde-entiteetin tasoa. Se on nopein tapa siirtää objektiryhmä oikealle tasolle avaamatta [Layer Manageria](../layer-manager/).
 
 ## Työnkulku
 

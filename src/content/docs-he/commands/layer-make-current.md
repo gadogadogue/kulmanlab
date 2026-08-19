@@ -3,7 +3,7 @@ title: LayerMakeCurrent — הגדרת שכבת ישות כפעילה
 description: פקודת LayerMakeCurrent מגדירה את שכבת השרטוט הנוכחית כך שתתאים לשכבה של ישות שנלחצה.
 keywords: [layer make current, הגדרת שכבה נוכחית CAD, ניהול שכבות kulmanlab]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

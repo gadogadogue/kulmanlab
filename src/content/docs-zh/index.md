@@ -64,6 +64,7 @@ order: 1
 
 | 命令 | 功能 |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | 添加图层并为每个图层编辑冻结、锁定、打印、颜色、线宽和线型 |
 | [LayerMakeCurrent](./commands/layer-make-current/) | 将单击图元所在图层设为当前图层 |
 | [LayerMatch](./commands/layer-match/) | 将选中图元的图层重新指定为与源图元相同 |
 | [LayerIsolate](./commands/layer-isolate/) | 冻结除选中图元所在图层以外的所有图层 |

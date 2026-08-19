@@ -3,7 +3,7 @@ title: Команда LayerIsolate — Заморозити всі шари кр
 description: Команда LayerIsolate заморожує всі шари, крім тих, на яких знаходяться вибрані об'єкти. Вибір автоматично очищається. Використовуйте LayerUnfreezeAll для відновлення.
 keywords: [CAD команда layer isolate, ізолювати шар CAD, заморозити шари CAD, показати лише поточний шар, kulmanlab]
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

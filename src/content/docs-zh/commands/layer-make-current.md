@@ -3,7 +3,7 @@ title: LayerMakeCurrent — 在 KulmanLab CAD 中将图元的图层设为当前�
 description: 置为当前图层命令将当前绘图图层设置为单击图元所在的图层。
 keywords: [置为当前图层, 设置当前图层 CAD, kulmanlab 图层管理, kulmanlab]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

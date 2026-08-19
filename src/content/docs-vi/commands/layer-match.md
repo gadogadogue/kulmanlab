@@ -2,12 +2,12 @@
 title: LayerMatch — Gán Lại Lớp Thực Thể để Khớp với Nguồn
 description: Lệnh LayerMatch gán lại lớp của một hoặc nhiều thực thể mục tiêu để khớp với lớp của thực thể nguồn bạn nhấp.
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Lệnh `LayerMatch` gán lại lớp của các thực thể đã chọn để khớp với lớp của thực thể nguồn bạn nhấp. Đây là cách nhanh nhất để di chuyển một nhóm đối tượng lên đúng lớp mà không cần mở Trình Quản Lý Lớp.
+Lệnh `LayerMatch` gán lại lớp của các thực thể đã chọn để khớp với lớp của thực thể nguồn bạn nhấp. Đây là cách nhanh nhất để di chuyển một nhóm đối tượng lên đúng lớp mà không cần mở [Layer Manager](../layer-manager/).
 
 ## Quy trình làm việc
 

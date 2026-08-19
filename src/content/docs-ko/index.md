@@ -64,6 +64,7 @@ order: 1
 
 | 명령어 | 기능 |
 |--------|------|
+| [LayerManager](./commands/layer-manager/) | 레이어를 추가하고 각각의 동결, 잠금, 플롯, 색상, 두께, 선종류를 편집 |
 | [LayerMakeCurrent](./commands/layer-make-current/) | 클릭한 객체의 레이어를 현재 레이어로 설정 |
 | [LayerMatch](./commands/layer-match/) | 선택한 객체의 레이어를 원본 객체의 레이어에 맞게 재지정 |
 | [LayerIsolate](./commands/layer-isolate/) | 선택한 객체의 레이어를 제외한 모든 레이어 동결 |

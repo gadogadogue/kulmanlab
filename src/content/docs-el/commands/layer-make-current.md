@@ -3,7 +3,7 @@ title: LayerMakeCurrent — Ορισμός Επιπέδου Οντότητας �
 description: Η εντολή LayerMakeCurrent ορίζει το τρέχον επίπεδο σχεδίου ώστε να ταιριάζει με το επίπεδο της οντότητας που κλικάρατε.
 keywords: [layer make current, ορισμός τρέχοντος επιπέδου CAD, kulmanlab layer management]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

@@ -3,12 +3,12 @@ title: LayerMatch — Tildel Entitetslag på Ny til at Matche en Kilde
 description: LayerMatch-kommandoen tildeler laget for én eller flere målentiteter på ny til at matche laget for en kildeentitet du klikker.
 keywords: [lagmatch, match lag CAD, tildel lag på ny kulmanlab, CAD lagadministration]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Kommandoen `LayerMatch` tildeler laget for markerede entiteter på ny til at matche laget for en kildeentitet, du klikker. Det er den hurtigste måde at flytte en gruppe objekter til det korrekte lag på uden at åbne Layer Manager.
+Kommandoen `LayerMatch` tildeler laget for markerede entiteter på ny til at matche laget for en kildeentitet, du klikker. Det er den hurtigste måde at flytte en gruppe objekter til det korrekte lag på uden at åbne [Layer Manager](../layer-manager/).
 
 ## Arbejdsgang
 

@@ -64,6 +64,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 
 | Befehl | Funktion |
 |--------|----------|
+| [LayerManager](./commands/layer-manager/) | Ebenen hinzufügen und für jede Freeze, Lock, Plot, Farbe, Linienstärke und Linientyp bearbeiten |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Aktuelle Ebene auf die Ebene des angeklickten Elements setzen |
 | [LayerMatch](./commands/layer-match/) | Ausgewählte Elemente der Ebene eines Quellelements zuweisen |
 | [LayerIsolate](./commands/layer-isolate/) | Alle Ebenen außer denen der ausgewählten Elemente einfrieren |

@@ -3,7 +3,7 @@ title: LayerIsolate — Congela Tutti i Layer Tranne quelli Selezionati
 description: Il comando LayerIsolate congela ogni layer tranne quelli usati dagli oggetti selezionati, permettendoti di concentrarti su geometria specifica senza eliminare nulla.
 keywords: [layer isolate, congela layer CAD, isola layer kulmanlab, gestione layer CAD]
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

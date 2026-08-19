@@ -3,7 +3,7 @@ title: LayerMakeCurrent — Sæt en Entitets Lag som Aktuelt
 description: LayerMakeCurrent-kommandoen sætter det aktuelle tegnelag til at matche laget for en klikket entitet.
 keywords: [lag aktuelt, sæt aktuelt lag CAD, kulmanlab lagadministration]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

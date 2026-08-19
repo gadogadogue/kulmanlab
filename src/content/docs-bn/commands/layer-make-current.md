@@ -3,7 +3,7 @@ title: "LayerMakeCurrent — একটি এন্টিটির লেয়�
 description: "LayerMakeCurrent কমান্ড বর্তমান ড্রয়িং লেয়ারকে ক্লিক করা এন্টিটির লেয়ারের সাথে মিলিয়ে সেট করে।"
 keywords: [লেয়ার মেক কারেন্ট, বর্তমান লেয়ার সেট CAD, kulmanlab লেয়ার ম্যানেজমেন্ট]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

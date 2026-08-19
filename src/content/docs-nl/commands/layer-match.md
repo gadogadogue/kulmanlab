@@ -3,12 +3,12 @@ title: LayerMatch — Entiteitlagen Aanpassen aan een Bron
 description: Het LayerMatch-commando wijst de laag van een of meer doelentiteiten opnieuw toe aan de laag van een bronentiteit die u aanklikt.
 keywords: [laag matchen, laag matchen CAD, laag opnieuw toewijzen kulmanlab, CAD laagbeheer]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Het `LayerMatch`-commando wijst de laag van geselecteerde entiteiten opnieuw toe aan de laag van een bronentiteit die u aanklikt. Het is de snelste manier om een groep objecten naar de juiste laag te verplaatsen zonder de Layer Manager te openen.
+Het `LayerMatch`-commando wijst de laag van geselecteerde entiteiten opnieuw toe aan de laag van een bronentiteit die u aanklikt. Het is de snelste manier om een groep objecten naar de juiste laag te verplaatsen zonder de [Layer Manager](../layer-manager/) te openen.
 
 ## Werkwijze
 

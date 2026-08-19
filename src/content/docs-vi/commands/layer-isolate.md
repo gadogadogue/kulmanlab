@@ -2,7 +2,7 @@
 title: LayerIsolate — Đóng Băng Tất Cả Lớp Trừ Lớp Đã Chọn
 description: Lệnh LayerIsolate đóng băng mọi lớp trừ những lớp được sử dụng bởi các đối tượng đã chọn, giúp bạn tập trung vào hình học cụ thể mà không xóa bất cứ thứ gì.
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

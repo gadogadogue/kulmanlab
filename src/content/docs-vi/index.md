@@ -64,6 +64,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 
 | Lệnh | Chức năng |
 |------|-----------|
+| [LayerManager](./commands/layer-manager/) | Thêm lớp và chỉnh sửa cho từng lớp trạng thái đóng băng, khóa, in, màu sắc, độ dày và kiểu đường |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Đặt lớp hiện tại theo lớp của đối tượng được bấm |
 | [LayerMatch](./commands/layer-match/) | Gán lại các đối tượng được chọn về lớp của đối tượng nguồn |
 | [LayerIsolate](./commands/layer-isolate/) | Đóng băng tất cả các lớp trừ những lớp của đối tượng được chọn |

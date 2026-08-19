@@ -64,6 +64,7 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 
 | Arahan | Fungsinya |
 |--------|-----------|
+| [LayerManager](./commands/layer-manager/) | Tambah lapisan dan edit status beku, kunci, plot, warna, ketebalan, dan jenis garis untuk setiap satu |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Tetapkan lapisan semasa agar sepadan dengan lapisan entiti yang diklik |
 | [LayerMatch](./commands/layer-match/) | Tugaskan semula entiti yang dipilih untuk memadankan lapisan entiti sumber |
 | [LayerIsolate](./commands/layer-isolate/) | Bekukan semua lapisan kecuali lapisan entiti yang dipilih |

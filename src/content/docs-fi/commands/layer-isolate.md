@@ -3,7 +3,7 @@ title: LayerIsolate — Jäädytä Tasot Paitsi Valitut KulmanLab CAD:issa
 description: LayerIsolate-komento jäädyttää jokaisen tason paitsi ne, joita valitut objektit käyttävät, antaen sinun keskittyä tiettyyn geometriaan poistamatta mitään.
 keywords: [tason eristäminen, jäädytä tasot CAD, eristä taso kulmanlab, CAD tasojen hallinta]
 group: layer
-order: 3
+order: 4
 ---
 
 # LayerIsolate

@@ -3,7 +3,7 @@ title: LayerMakeCurrent — ऑब्जेक्ट की लेयर वर�
 description: LayerMakeCurrent कमांड वर्तमान ड्राइंग लेयर को क्लिक किए गए ऑब्जेक्ट की लेयर से मिलाने के लिए सेट करती है।
 keywords: [लेयर वर्तमान बनाएं, वर्तमान लेयर सेट करें CAD, kulmanlab लेयर प्रबंधन]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

@@ -3,7 +3,7 @@ title: LayerMatch Komutu — Nesneleri Başka Bir Nesnenin Katmanına Taşı
 description: LayerMatch komutu, seçili nesneleri kaynak nesnenin katmanına taşır. Önce komutu etkinleştirin — hedefleri seçmek için tıklayın veya sürükleyin — ardından kaynağı tıklayın. Komut otomatik olarak tamamlanır.
 keywords: [CAD layer match komutu, nesneleri katmana taşı CAD, nesne katmanını yeniden ata, kulmanlab]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch

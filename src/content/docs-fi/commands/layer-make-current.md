@@ -3,7 +3,7 @@ title: LayerMakeCurrent — Aseta Entiteetin Taso Nykyiseksi
 description: LayerMakeCurrent-komento asettaa nykyisen piirustustason vastaamaan napsautetun entiteetin tasoa.
 keywords: [taso nykyiseksi, aseta nykyinen taso CAD, kulmanlab tasojen hallinta]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

@@ -64,6 +64,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 
 | Command | Ano ang ginagawa nito |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | Magdagdag ng layer at i-edit ang freeze, lock, plot, kulay, lineweight, at linetype ng bawat isa |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Itakda ang kasalukuyang layer para tumugma sa layer ng na-click na entity |
 | [LayerMatch](./commands/layer-match/) | Baguhin ang layer ng mga napiling entity para tumugma sa layer ng source entity |
 | [LayerIsolate](./commands/layer-isolate/) | I-freeze ang lahat ng layer maliban sa mga layer ng napiling entity |

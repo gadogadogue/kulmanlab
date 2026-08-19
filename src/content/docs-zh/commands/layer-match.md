@@ -3,12 +3,12 @@ title: LayerMatch — 在 KulmanLab CAD 中将图元图层重新指定为与源�
 description: 图层匹配命令将一个或多个目标图元的图层重新指定为与您单击的源图元的图层相匹配。
 keywords: [图层匹配, 匹配图层 CAD, 重新指定图层 kulmanlab, CAD 图层管理, kulmanlab]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-`LayerMatch`（图层匹配）命令将选中图元的图层重新指定为与您单击的源图元的图层相匹配。这是将一组对象移动到正确图层最快的方式，无需打开图层管理器。
+`LayerMatch`（图层匹配）命令将选中图元的图层重新指定为与您单击的源图元的图层相匹配。这是将一组对象移动到正确图层最快的方式，无需打开 [Layer Manager](../layer-manager/)。
 
 ## 工作流程
 

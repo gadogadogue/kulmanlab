@@ -64,6 +64,7 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 
 | Komento | Mitä se tekee |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | Lisää tasoja ja muokkaa kunkin jäädytystä, lukitusta, tulostusta, väriä, viivanpaksuutta ja viivatyyppiä |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Aseta nykyinen taso vastaamaan napsautetun entiteetin tasoa |
 | [LayerMatch](./commands/layer-match/) | Kohdista valitut entiteetit uudelleen lähdeentiteetin tasolle |
 | [LayerIsolate](./commands/layer-isolate/) | Jäädytä kaikki tasot paitsi valittujen entiteettien tasot |

@@ -64,6 +64,7 @@ Welkom bij de **KulmanLab CAD**-opdrachtreferentie. [KulmanLab CAD](https://kulm
 
 | Commando | Wat het doet |
 |---------|-------------|
+| [LayerManager](./commands/layer-manager/) | Voeg lagen toe en bewerk voor elke laag bevriezing, vergrendeling, plot, kleur, lijndikte en lijntype |
 | [LayerMakeCurrent](./commands/layer-make-current/) | Stel de huidige laag in op de laag van een aangeklikte entiteit |
 | [LayerMatch](./commands/layer-match/) | Wijs geselecteerde entiteiten opnieuw toe aan de laag van een brontentiteit |
 | [LayerIsolate](./commands/layer-isolate/) | Bevries alle lagen behalve die van de geselecteerde entiteiten |

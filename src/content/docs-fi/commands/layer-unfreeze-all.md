@@ -3,7 +3,7 @@ title: LayerUnfreezeAll — Poista Tasojen Jäädytys KulmanLab CAD:issa
 description: LayerUnfreezeAll-komento poistaa jäädytyslipun jokaiselta piirustuksen tasolta yhdessä vaiheessa.
 keywords: [poista tason jäädytys, poista kaikkien tasojen jäädytys CAD, kulmanlab tasojen hallinta]
 group: layer
-order: 4
+order: 5
 ---
 
 # LayerUnfreezeAll

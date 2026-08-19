@@ -3,7 +3,7 @@ title: LayerMakeCurrent — Laag van een Entiteit Actief Maken
 description: Het LayerMakeCurrent-commando stelt de huidige tekenlaag in op de laag van een aangeklikte entiteit.
 keywords: [laag actief maken, huidige laag instellen CAD, kulmanlab laagbeheer]
 group: layer
-order: 1
+order: 2
 ---
 
 # LayerMakeCurrent

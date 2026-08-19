@@ -3,12 +3,12 @@ title: LayerMatch — Reatribuir Camadas de Entidades a uma Fonte
 description: O comando LayerMatch reatribui a camada de uma ou mais entidades alvo para corresponder à camada de uma entidade fonte que você clica.
 keywords: [layer match, correspondência de camada CAD, reatribuir camada kulmanlab, gerenciamento de camadas CAD]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-O comando `LayerMatch` reatribui a camada das entidades selecionadas para corresponder à camada de uma entidade fonte que você clica. É a maneira mais rápida de mover um grupo de objetos para a camada correta sem abrir o Gerenciador de Camadas.
+O comando `LayerMatch` reatribui a camada das entidades selecionadas para corresponder à camada de uma entidade fonte que você clica. É a maneira mais rápida de mover um grupo de objetos para a camada correta sem abrir o [Gerenciador de Camadas](../layer-manager/).
 
 ## Fluxo de trabalho
 

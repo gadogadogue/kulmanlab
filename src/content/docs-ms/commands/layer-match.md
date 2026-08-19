@@ -3,12 +3,12 @@ title: LayerMatch — Tugaskan Semula Lapisan Entiti Sepadan Sumber
 description: Arahan LayerMatch menugaskan semula lapisan satu atau lebih entiti sasaran agar sepadan dengan lapisan entiti sumber yang anda klik.
 keywords: [padankan lapisan, padankan lapisan CAD, tugaskan semula lapisan kulmanlab, pengurusan lapisan CAD]
 group: layer
-order: 2
+order: 3
 ---
 
 # LayerMatch
 
-Arahan `LayerMatch` menugaskan semula lapisan entiti yang dipilih agar sepadan dengan lapisan entiti sumber yang anda klik. Ia adalah cara terpantas untuk memindahkan sekumpulan objek ke lapisan yang betul tanpa membuka Pengurus Lapisan.
+Arahan `LayerMatch` menugaskan semula lapisan entiti yang dipilih agar sepadan dengan lapisan entiti sumber yang anda klik. Ia adalah cara terpantas untuk memindahkan sekumpulan objek ke lapisan yang betul tanpa membuka [Layer Manager](../layer-manager/).
 
 ## Aliran kerja
 
