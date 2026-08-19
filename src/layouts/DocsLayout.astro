@@ -21,11 +21,13 @@ const base = lang === 'en' ? '/docs' : `/${lang}/docs`;
 const canonical = `https://kulmanlab.com${base}${entrySlug ? '/' + entrySlug : ''}/`;
 const currentPath = Astro.url.pathname.replace(/\/$/, '');
 
-// Section/group titles and non-command interface labels are centralized in
-// src/i18n/translations.ts (docsNav.* keys) alongside the rest of the site's
-// copy. Command names (Move, Align, LayerIsolate, ...) are deliberately kept
-// in English for every language — they mirror the literal tokens typed into
-// the in-app terminal, which the docs content itself never translates either.
+// Section/group titles are centralized in src/i18n/translations.ts
+// (docsNav.* keys) alongside the rest of the site's copy. Every nav *item*
+// label (commands and interface pages alike -- Move, Align, LayerIsolate,
+// Grid & Snap, Selection Filter, ...) is deliberately kept in English for
+// every language: command names mirror the literal tokens typed into the
+// in-app terminal, and interface page names follow the same convention for
+// consistency, even though the docs content and page titles are translated.
 const t = translations[lang] ?? translations['en'];
 const s = {
   overview: t['docsNav.overview'],
@@ -40,10 +42,6 @@ const s = {
   style: t['docsNav.style'],
   file: t['docsNav.file'],
   iface: t['docsNav.iface'],
-  gridSnap: t['docsNav.gridSnap'],
-  linetype: t['docsNav.linetype'],
-  lineweight: t['docsNav.lineweight'],
-  textEditor: t['docsNav.textEditor'],
 };
 
 // Command names are deliberately kept in English for every language — they
@@ -78,8 +76,8 @@ const commandLabels: Record<string, string> = {
   'commands/undo': 'Undo',
   'commands/redo': 'Redo',
   'commands/leader': 'Leader',
-  'commands/leader-add': 'Leader+',
-  'commands/leader-remove': 'Leader−',
+  'commands/leader-add': 'LeaderAdd',
+  'commands/leader-remove': 'LeaderRemove',
   'commands/dim-linear': 'Dim Linear',
   'commands/dim-aligned': 'Dim Aligned',
   'commands/dim-continue': 'Dim Continue',
@@ -90,6 +88,7 @@ const commandLabels: Record<string, string> = {
   'commands/layer-match': 'LayerMatch',
   'commands/layer-isolate': 'LayerIsolate',
   'commands/layer-unfreeze-all': 'LayerUnfreezeAll',
+  'commands/layer-manager': 'LayerManager',
   'commands/viewport-rectangle': 'ViewportRectangle',
   'commands/viewport-copy': 'ViewportCopy',
   'commands/page-manager': 'PageManager',
@@ -101,6 +100,7 @@ const commandLabels: Record<string, string> = {
   'commands/angle': 'Angle',
   'commands/area': 'Area',
   'commands/match-properties': 'Match Properties',
+  'commands/font-add': 'FontAdd',
   'commands/font-manager': 'Font Manager',
   'commands/hatch-manager': 'Hatch Manager',
   'commands/import': 'Import',
@@ -110,20 +110,16 @@ const commandLabels: Record<string, string> = {
   'commands/export-manager': 'Export Manager',
   'commands/wipestorage': 'WipeStorage',
   'interface/vector-pins': 'Vector Pins',
-};
-
-// Interface (non-command) labels do get translated — their content headings
-// are translated too — sourced from the same docsNav.* keys as the group titles.
-const interfaceLabels: Record<string, string> = {
-  'interface/grid-snap': s.gridSnap,
-  'interface/linetype': s.linetype,
-  'interface/lineweight': s.lineweight,
-  'interface/text-editor': s.textEditor,
+  'interface/selection-filter': 'Selection Filter',
+  'interface/grid-snap': 'Grid & Snap',
+  'interface/linetype': 'Linetype',
+  'interface/lineweight': 'Lineweight',
+  'interface/text-editor': 'Text Editor',
 };
 
 function labelFor(id: string, title: string): string {
   if (id === 'index') return s.ref;
-  return interfaceLabels[id] ?? commandLabels[id] ?? title;
+  return commandLabels[id] ?? title;
 }
 
 // Sidebar grouping/ordering is data-driven from each page's `group` and
