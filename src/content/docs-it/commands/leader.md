@@ -107,8 +107,8 @@ Vedi [Editor di Testo — rich mode](../../interface/text-editor/#rich-mode) per
 
 ## Aggiungere e rimuovere bracci
 
-- Per aggiungere un braccio con freccia extra a un leader esistente: [Leader+](../leader-add/)
-- Per rimuovere un braccio da un leader con due o più: [Leader−](../leader-remove/)
+- Per aggiungere un braccio con freccia extra a un leader esistente: [LeaderAdd](../leader-add/)
+- Per rimuovere un braccio da un leader con due o più: [LeaderRemove](../leader-remove/)
 
 ## DXF — solo importazione
 

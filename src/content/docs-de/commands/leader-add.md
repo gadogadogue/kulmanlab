@@ -1,18 +1,18 @@
 ---
-title: Leader+ — Pfeilspitzen-Arm zu vorhandener Mehrfachführungslinie
-description: Der Befehl Leader+ fügt einer vorhandenen Mehrfachführungslinie einen neuen Pfeilspitzen-Arm hinzu. Der neue Arm teilt Knickpunkt, Text und alle Stileigenschaften der ausgewählten Führungslinie. Zwei Klicks — Führungslinie auswählen, neue Spitze platzieren.
-keywords: [CAD Führungslinie Arm hinzufügen, leader+ Befehl, Pfeil zur Führungslinie hinzufügen, Mehrfachführungslinie Arm, kulmanlab]
+title: LeaderAdd — Pfeilspitzen-Arm zu vorhandener Mehrfachführungslinie
+description: Der Befehl LeaderAdd fügt einer vorhandenen Mehrfachführungslinie einen neuen Pfeilspitzen-Arm hinzu. Der neue Arm teilt Knickpunkt, Text und alle Stileigenschaften der ausgewählten Führungslinie. Zwei Klicks — Führungslinie auswählen, neue Spitze platzieren.
+keywords: [CAD Führungslinie Arm hinzufügen, leaderadd Befehl, Pfeil zur Führungslinie hinzufügen, Mehrfachführungslinie Arm, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Der Befehl `leader+` fügt einer vorhandenen Mehrfachführungslinie einen neuen Pfeilspitzen-Arm hinzu. Der neue Arm zeigt vom vorhandenen Knickpunkt der Führungslinie zu einer neuen Pfeilspitze, die Sie anklicken. Alle Stileigenschaften — Knickposition, Text, Pfeilspitzentyp und Größe — werden von der ausgewählten Führungslinie übernommen.
+Der Befehl `LeaderAdd` fügt einer vorhandenen Mehrfachführungslinie einen neuen Pfeilspitzen-Arm hinzu. Der neue Arm zeigt vom vorhandenen Knickpunkt der Führungslinie zu einer neuen Pfeilspitze, die Sie anklicken. Alle Stileigenschaften — Knickposition, Text, Pfeilspitzentyp und Größe — werden von der ausgewählten Führungslinie übernommen.
 
 ## Einen Arm hinzufügen
 
-1. Geben Sie `leader+` im Terminal ein.
+1. Geben Sie `LeaderAdd` im Terminal ein.
 2. **Klicken Sie auf eine vorhandene Mehrfachführungslinie**, um sie auszuwählen.
 3. **Klicken Sie auf die neue Pfeilspitze** oder geben Sie `X,Y` ein und drücken Sie **Enter** für eine genaue Koordinate. Eine Vorschaulinie zeigt vom Cursor zum Knickpunkt der Führungslinie.
 
@@ -57,4 +57,4 @@ Anstelle eines Klicks können Sie eine genaue Position eingeben:
 | Befehl | Funktion |
 |--------|----------|
 | [Leader](../leader/) | Eine neue Mehrfachführungslinie von Grund auf erstellen |
-| [Leader−](../leader-remove/) | Einen Arm von einer Mehrfachführungslinie mit zwei oder mehr Armen entfernen |
+| [LeaderRemove](../leader-remove/) | Einen Arm von einer Mehrfachführungslinie mit zwei oder mehr Armen entfernen |

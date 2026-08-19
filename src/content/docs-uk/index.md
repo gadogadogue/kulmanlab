@@ -51,8 +51,8 @@ order: 1
 | Команда | Що робить |
 |---------|-----------|
 | [Leader](./commands/leader/) | Намалювати мультивиноску зі стрілкою та текстом |
-| [Leader+](./commands/leader-add/) | Додати додаткове плече до існуючої мультивиноски |
-| [Leader−](./commands/leader-remove/) | Видалити плече з існуючої мультивиноски |
+| [LeaderAdd](./commands/leader-add/) | Додати додаткове плече до існуючої мультивиноски |
+| [LeaderRemove](./commands/leader-remove/) | Видалити плече з існуючої мультивиноски |
 | [Dimension Linear](./commands/dim-linear/) | Додати горизонтальний або вертикальний розмір |
 | [Dimension Aligned](./commands/dim-aligned/) | Додати розмір, вирівняний по двох точках |
 | [Dimension Continue](./commands/dim-continue/) | Приєднати новий розмір до попереднього |
@@ -101,7 +101,7 @@ order: 1
 |---------|-----------|
 | [Match Properties](./commands/match-properties/) | Скопіювати колір, шар та інші властивості від одного об'єкта до інших |
 | [Font Manager](./commands/font-manager/) | Переглядайте, вибирайте та завантажуйте власні шрифти TTF |
-| [Font+](./commands/font-add/) | Завантажте власний шрифт TTF безпосередньо з терміналу |
+| [FontAdd](./commands/font-add/) | Завантажте власний шрифт TTF безпосередньо з терміналу |
 | [Hatch Manager](./commands/hatch-manager/) | Переглядайте бібліотеку патернів штрихування та завантажуйте файли .pat |
 
 ## Файл

@@ -1,18 +1,18 @@
 ---
-title: Leader+ — Dodawanie ramienia z grotem do linii wielokierunkowej
-description: Polecenie Leader+ dodaje nowe ramię z grotem do istniejącej linii wielokierunkowej. Nowe ramię dzieli dogleg, tekst i całe formatowanie wybranej linii prowadzącej. Dwa kliknięcia — zaznacz linię prowadzącą, umieść nowy grot.
-keywords: [CAD dodawanie ramienia linii prowadzącej, polecenie leader+, dodaj strzałkę do linii prowadzącej, ramię linii wielokierunkowej, kulmanlab]
+title: LeaderAdd — Dodawanie ramienia z grotem do linii wielokierunkowej
+description: Polecenie LeaderAdd dodaje nowe ramię z grotem do istniejącej linii wielokierunkowej. Nowe ramię dzieli dogleg, tekst i całe formatowanie wybranej linii prowadzącej. Dwa kliknięcia — zaznacz linię prowadzącą, umieść nowy grot.
+keywords: [CAD dodawanie ramienia linii prowadzącej, polecenie leaderadd, dodaj strzałkę do linii prowadzącej, ramię linii wielokierunkowej, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Polecenie `leader+` dodaje nowe ramię z grotem do istniejącej linii wielokierunkowej. Nowe ramię wskazuje od istniejącego doglegs linii prowadzącej do nowego grota, który klikasz. Całe formatowanie — pozycja doglegs, tekst, typ grota i rozmiar — jest dziedziczone z wybranej linii prowadzącej.
+Polecenie `LeaderAdd` dodaje nowe ramię z grotem do istniejącej linii wielokierunkowej. Nowe ramię wskazuje od istniejącego doglegs linii prowadzącej do nowego grota, który klikasz. Całe formatowanie — pozycja doglegs, tekst, typ grota i rozmiar — jest dziedziczone z wybranej linii prowadzącej.
 
 ## Dodawanie ramienia
 
-1. Wpisz `leader+` w terminalu.
+1. Wpisz `LeaderAdd` w terminalu.
 2. **Kliknij istniejącą linię wielokierunkową**, aby ją zaznaczyć.
 3. **Kliknij nowy grot strzałki** lub wpisz `X,Y` i naciśnij **Enter** dla dokładnej współrzędnej. Linia podglądu pokazuje od kursora do doglegs linii prowadzącej.
 
@@ -57,4 +57,4 @@ Zamiast klikać możesz wpisać dokładną pozycję:
 | Polecenie | Co robi |
 |-----------|---------|
 | [Leader](../leader/) | Tworzenie zupełnie nowej linii wielokierunkowej od zera |
-| [Leader−](../leader-remove/) | Usuwanie ramienia z linii wielokierunkowej mającej dwa lub więcej |
+| [LeaderRemove](../leader-remove/) | Usuwanie ramienia z linii wielokierunkowej mającej dwa lub więcej |

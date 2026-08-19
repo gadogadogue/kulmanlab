@@ -28,7 +28,7 @@ Klik font mana pun dalam daftar untuk melihat pratinjaunya di sebelah kanan — 
 
 ## Mengunggah font kustom
 
-1. Klik **Add Font** di footer dialog (atau ketik [`Font+`](../font-add/) di terminal untuk langsung membuka pemilih file).
+1. Klik **Add Font** di footer dialog (atau ketik [`FontAdd`](../font-add/) di terminal untuk langsung membuka pemilih file).
 2. Pilih file `.ttf`. Hanya font TrueType yang didukung — `.otf` dan `.woff`/`.woff2` tidak didukung.
 3. Nama file (tanpa ekstensi) menjadi nama font di grup **User**. Misalnya, mengunggah `MyFont.ttf` menambahkan font bernama `MyFont`.
 

@@ -1,18 +1,18 @@
 ---
-title: Font+ Command — Upload a Custom TTF Font from the Terminal
-description: The Font+ command opens your system's file picker to upload a .ttf font, without opening the Font Manager dialog first. It's the same upload the Font Manager's Add Font button triggers, available as its own terminal command.
-keywords: [CAD font add command, font+ command, upload ttf terminal, custom font CAD, kulmanlab]
+title: FontAdd Command — Upload a Custom TTF Font from the Terminal
+description: The FontAdd command opens your system's file picker to upload a .ttf font, without opening the Font Manager dialog first. It's the same upload the Font Manager's Add Font button triggers, available as its own terminal command.
+keywords: [CAD font add command, fontadd command, upload ttf terminal, custom font CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-The `Font+` command opens your system's file picker to upload a custom `.ttf` font, without opening the [Font Manager](../font-manager/) dialog first. It's the same upload the Font Manager's **Add Font** button triggers — Font+ is just a direct way to reach it from the terminal.
+The `FontAdd` command opens your system's file picker to upload a custom `.ttf` font, without opening the [Font Manager](../font-manager/) dialog first. It's the same upload the Font Manager's **Add Font** button triggers — FontAdd is just a direct way to reach it from the terminal.
 
 ## Uploading a font
 
-1. Type `Font+` in the terminal, or click **Add Font** in the [Font Manager](../font-manager/) dialog footer.
+1. Type `FontAdd` in the terminal, or click **Add Font** in the [Font Manager](../font-manager/) dialog footer.
 2. Choose a `.ttf` file in the system picker. Only TrueType fonts are supported — `.otf` and `.woff`/`.woff2` are not.
 
 The command finishes as soon as the file picker opens — there's no further prompt, click, or terminal input. The font is registered and appears in the **User** group as soon as the file is selected.
@@ -25,7 +25,7 @@ The command finishes as soon as the file picker opens — there's no further pro
 
 ## Keyboard reference
 
-Font+ has no keyboard interaction of its own — the entire command is the browser's native file-picker dialog. Cancelling that dialog (or picking no file) leaves the font list unchanged.
+FontAdd has no keyboard interaction of its own — the entire command is the browser's native file-picker dialog. Cancelling that dialog (or picking no file) leaves the font list unchanged.
 
 ## Related commands
 

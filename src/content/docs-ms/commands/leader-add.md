@@ -1,18 +1,18 @@
 ---
-title: Leader+ — Tambah Lengan Anak Panah pada Multileader Sedia Ada
-description: Arahan Leader+ menambah lengan kepala anak panah baharu pada pelbagai pemimpin sedia ada. Lengan baharu berkongsi dogleg, teks, dan semua gaya pemimpin yang dipilih. Dua klik — pilih pemimpin, letakkan hujung baharu.
-keywords: [CAD tambah lengan pemimpin, arahan leader+, tambah anak panah ke pemimpin, lengan pelbagai pemimpin, kulmanlab]
+title: LeaderAdd — Tambah Lengan Anak Panah pada Multileader Sedia Ada
+description: Arahan LeaderAdd menambah lengan kepala anak panah baharu pada pelbagai pemimpin sedia ada. Lengan baharu berkongsi dogleg, teks, dan semua gaya pemimpin yang dipilih. Dua klik — pilih pemimpin, letakkan hujung baharu.
+keywords: [CAD tambah lengan pemimpin, arahan leaderadd, tambah anak panah ke pemimpin, lengan pelbagai pemimpin, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Arahan `leader+` menambah lengan kepala anak panah baharu pada pelbagai pemimpin sedia ada. Lengan baharu menunjuk dari dogleg pemimpin sedia ada ke hujung kepala anak panah baharu yang anda klik. Semua gaya — kedudukan dogleg, teks, jenis kepala anak panah, dan saiz — diwarisi dari pemimpin yang dipilih.
+Arahan `LeaderAdd` menambah lengan kepala anak panah baharu pada pelbagai pemimpin sedia ada. Lengan baharu menunjuk dari dogleg pemimpin sedia ada ke hujung kepala anak panah baharu yang anda klik. Semua gaya — kedudukan dogleg, teks, jenis kepala anak panah, dan saiz — diwarisi dari pemimpin yang dipilih.
 
 ## Menambah lengan
 
-1. Taip `leader+` dalam terminal.
+1. Taip `LeaderAdd` dalam terminal.
 2. **Klik pelbagai pemimpin sedia ada** untuk memilihnya.
 3. **Klik hujung kepala anak panah baharu**, atau taip `X,Y` dan tekan **Enter** untuk koordinat tepat. Garis pratonton menunjukkan dari kursor ke dogleg pemimpin.
 
@@ -57,4 +57,4 @@ Daripada mengklik, anda boleh menaip kedudukan tepat:
 | Arahan | Fungsinya |
 |--------|-----------|
 | [Leader](../leader/) | Cipta pelbagai pemimpin baharu dari awal |
-| [Leader−](../leader-remove/) | Buang lengan dari pelbagai pemimpin yang mempunyai dua atau lebih |
+| [LeaderRemove](../leader-remove/) | Buang lengan dari pelbagai pemimpin yang mempunyai dua atau lebih |

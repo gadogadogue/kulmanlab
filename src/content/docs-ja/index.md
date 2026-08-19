@@ -51,8 +51,8 @@ order: 1
 | コマンド | 機能 |
 |---------|------|
 | [Leader](./commands/leader/) | 矢印とテキストを持つ引出線注釈を描く |
-| [Leader+](./commands/leader-add/) | 既存の引出線にアームを追加する |
-| [Leader−](./commands/leader-remove/) | 既存の引出線からアームを削除する |
+| [LeaderAdd](./commands/leader-add/) | 既存の引出線にアームを追加する |
+| [LeaderRemove](./commands/leader-remove/) | 既存の引出線からアームを削除する |
 | [Dimension Linear](./commands/dim-linear/) | 水平または垂直寸法を追加する |
 | [Dimension Aligned](./commands/dim-aligned/) | 2 点に整列した寸法を追加する |
 | [Dimension Continue](./commands/dim-continue/) | 直前の寸法から連続寸法を追加する |
@@ -101,7 +101,7 @@ order: 1
 |---------|------|
 | [Match Properties](./commands/match-properties/) | 色・レイヤーなどのプロパティをエンティティ間でコピーする |
 | [Font Manager](./commands/font-manager/) | フォントを閲覧・選択し、カスタム TTF フォントをアップロードする |
-| [Font+](./commands/font-add/) | カスタム TTF フォントをターミナルから直接アップロードする |
+| [FontAdd](./commands/font-add/) | カスタム TTF フォントをターミナルから直接アップロードする |
 | [Hatch Manager](./commands/hatch-manager/) | hatch パターンライブラリを閲覧し、.pat ファイルをアップロードする |
 
 ## ファイル

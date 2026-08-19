@@ -1,18 +1,18 @@
 ---
-title: "Leader− — Rimuovere un Braccio con Freccia da un Multileader"
-description: "Il comando Leader− rimuove un braccio con freccia da un multileader che ne ha due o più. Passa il cursore vicino al braccio da rimuovere — il braccio più vicino viene evidenziato. Il dogleg, il testo e i bracci rimanenti vengono conservati."
-keywords: [CAD leader rimuovi braccio, comando leader-, rimuovi freccia dal leader, elimina braccio multileader, kulmanlab]
+title: "LeaderRemove — Rimuovere un Braccio con Freccia da un Multileader"
+description: "Il comando LeaderRemove rimuove un braccio con freccia da un multileader che ne ha due o più. Passa il cursore vicino al braccio da rimuovere — il braccio più vicino viene evidenziato. Il dogleg, il testo e i bracci rimanenti vengono conservati."
+keywords: [CAD leader rimuovi braccio, comando leaderremove, rimuovi freccia dal leader, elimina braccio multileader, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-Il comando `leader-` rimuove un braccio con freccia da un multileader esistente. L'etichetta di testo, il dogleg e tutti i bracci rimanenti vengono conservati — viene eliminato solo il braccio selezionato. Un multileader con un solo braccio non può avere il suo braccio rimosso.
+Il comando `LeaderRemove` rimuove un braccio con freccia da un multileader esistente. L'etichetta di testo, il dogleg e tutti i bracci rimanenti vengono conservati — viene eliminato solo il braccio selezionato. Un multileader con un solo braccio non può avere il suo braccio rimosso.
 
 ## Rimozione di un braccio
 
-1. Digita `leader-` nel terminale.
+1. Digita `LeaderRemove` nel terminale.
 2. **Clicca un multileader** con due o più bracci. Se il leader cliccato ha un solo braccio, il terminale mostra un errore e attende una selezione valida.
 3. **Sposta il cursore vicino al braccio** che vuoi rimuovere — il braccio più vicino viene evidenziato con un indicatore.
 4. **Clicca** per rimuovere quel braccio.
@@ -49,4 +49,4 @@ Il comando misura la distanza perpendicolare dal cursore ai segmenti di linea di
 | Comando | Funzione |
 |---------|---------|
 | [Leader](../leader/) | Crea un nuovo multileader da zero |
-| [Leader+](../leader-add/) | Aggiunge un braccio a un multileader esistente |
+| [LeaderAdd](../leader-add/) | Aggiunge un braccio a un multileader esistente |

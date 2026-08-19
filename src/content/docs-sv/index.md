@@ -51,8 +51,8 @@ Välkommen till **KulmanLab CAD**-kommandoreferensen. [KulmanLab CAD](https://ku
 | Kommando | Vad det gör |
 |---------|-------------|
 | [Leader](./commands/leader/) | Rita en multileader-annotation med pilhuvud och text |
-| [Leader+](./commands/leader-add/) | Lägg till en extra arm till en befintlig multileader |
-| [Leader−](./commands/leader-remove/) | Ta bort en arm från en befintlig multileader |
+| [LeaderAdd](./commands/leader-add/) | Lägg till en extra arm till en befintlig multileader |
+| [LeaderRemove](./commands/leader-remove/) | Ta bort en arm från en befintlig multileader |
 | [Dimension Linear](./commands/dim-linear/) | Lägg till en horisontell eller vertikal måttsättning |
 | [Dimension Aligned](./commands/dim-aligned/) | Lägg till en måttsättning som är justerad mot två punkter |
 | [Dimension Continue](./commands/dim-continue/) | Kedja en ny måttsättning från den föregående |
@@ -101,7 +101,7 @@ Välkommen till **KulmanLab CAD**-kommandoreferensen. [KulmanLab CAD](https://ku
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopiera färg, lager och andra egenskaper från en entitet till andra |
 | [Font Manager](./commands/font-manager/) | Bläddra bland, välj och ladda upp anpassade TTF-typsnitt |
-| [Font+](./commands/font-add/) | Ladda upp ett anpassat TTF-typsnitt direkt från terminalen |
+| [FontAdd](./commands/font-add/) | Ladda upp ett anpassat TTF-typsnitt direkt från terminalen |
 | [Hatch Manager](./commands/hatch-manager/) | Bläddra i hatch-mönsterbiblioteket och ladda upp .pat-filer |
 
 ## Fil

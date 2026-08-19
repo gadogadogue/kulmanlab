@@ -51,8 +51,8 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | Polecenie | Co robi |
 |-----------|---------|
 | [Leader](./commands/leader/) | Rysuje adnotację z grotem i tekstem |
-| [Leader+](./commands/leader-add/) | Dodaje dodatkowe ramię do istniejącej linii prowadzącej |
-| [Leader−](./commands/leader-remove/) | Usuwa ramię z istniejącej linii prowadzącej |
+| [LeaderAdd](./commands/leader-add/) | Dodaje dodatkowe ramię do istniejącej linii prowadzącej |
+| [LeaderRemove](./commands/leader-remove/) | Usuwa ramię z istniejącej linii prowadzącej |
 | [Dimension Linear](./commands/dim-linear/) | Dodaje wymiar poziomy lub pionowy |
 | [Dimension Aligned](./commands/dim-aligned/) | Dodaje wymiar wyrównany do dwóch punktów |
 | [Dimension Continue](./commands/dim-continue/) | Łączy nowy wymiar z poprzednim |
@@ -101,7 +101,7 @@ Witaj w dokumentacji poleceń **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 |-----------|---------|
 | [Match Properties](./commands/match-properties/) | Kopiuje kolor, warstwę i inne właściwości z jednego elementu na inne |
 | [Font Manager](./commands/font-manager/) | Przeglądaj, wybieraj i przesyłaj własne czcionki TTF |
-| [Font+](./commands/font-add/) | Prześlij własną czcionkę TTF bezpośrednio z terminala |
+| [FontAdd](./commands/font-add/) | Prześlij własną czcionkę TTF bezpośrednio z terminala |
 | [Hatch Manager](./commands/hatch-manager/) | Przeglądaj bibliotekę wzorów hatch i przesyłaj pliki .pat |
 
 ## Plik

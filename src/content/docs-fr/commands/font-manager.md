@@ -28,7 +28,7 @@ Cliquez sur n'importe quelle police de la liste pour afficher son aperçu à dro
 
 ## Téléverser une police personnalisée
 
-1. Cliquez sur **Add Font** en bas du dialogue (ou tapez [`Font+`](../font-add/) dans le terminal pour ouvrir directement le sélecteur de fichiers).
+1. Cliquez sur **Add Font** en bas du dialogue (ou tapez [`FontAdd`](../font-add/) dans le terminal pour ouvrir directement le sélecteur de fichiers).
 2. Choisissez un fichier `.ttf`. Seules les polices TrueType sont prises en charge — `.otf` et `.woff`/`.woff2` ne le sont pas.
 3. Le nom du fichier (sans l'extension) devient le nom de la police dans le groupe **User**. Par exemple, téléverser `MyFont.ttf` ajoute une police nommée `MyFont`.
 

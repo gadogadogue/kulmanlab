@@ -51,8 +51,8 @@ order: 1
 | פקודה | מה היא עושה |
 |---------|-------------|
 | [Leader](./commands/leader/) | שרטוט הערת מולטי-לידר עם ראש חץ וטקסט |
-| [Leader+](./commands/leader-add/) | הוספת זרוע נוספת למולטי-לידר קיים |
-| [Leader−](./commands/leader-remove/) | הסרת זרוע ממולטי-לידר קיים |
+| [LeaderAdd](./commands/leader-add/) | הוספת זרוע נוספת למולטי-לידר קיים |
+| [LeaderRemove](./commands/leader-remove/) | הסרת זרוע ממולטי-לידר קיים |
 | [Dimension Linear](./commands/dim-linear/) | הוספת מידה אופקית או אנכית |
 | [Dimension Aligned](./commands/dim-aligned/) | הוספת מידה המיושרת לשתי נקודות |
 | [Dimension Continue](./commands/dim-continue/) | שרשור מידה חדשה מהאחרונה |
@@ -101,7 +101,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | העתקת צבע, שכבה ותכונות אחרות מישות אחת לאחרות |
 | [Font Manager](./commands/font-manager/) | עיון, בחירה והעלאה של גופני TTF מותאמים אישית |
-| [Font+](./commands/font-add/) | העלאת גופן TTF מותאם אישית ישירות מהמסוף |
+| [FontAdd](./commands/font-add/) | העלאת גופן TTF מותאם אישית ישירות מהמסוף |
 | [Hatch Manager](./commands/hatch-manager/) | עיון בספריית דוגמאות ה-hatch והעלאת קבצי .pat |
 
 ## קובץ

@@ -51,8 +51,8 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 | Umarni | Abin da yake yi |
 |---------|-------------|
 | [Leader](./commands/leader/) | Zana bayanin multileader tare da kibiya da rubutu |
-| [Leader+](./commands/leader-add/) | Ƙara ƙarin hannu zuwa multileader da ke akwai |
-| [Leader−](./commands/leader-remove/) | Cire hannu daga multileader da ke akwai |
+| [LeaderAdd](./commands/leader-add/) | Ƙara ƙarin hannu zuwa multileader da ke akwai |
+| [LeaderRemove](./commands/leader-remove/) | Cire hannu daga multileader da ke akwai |
 | [Dimension Linear](./commands/dim-linear/) | Ƙara girma-girma a kwance ko a tsaye |
 | [Dimension Aligned](./commands/dim-aligned/) | Ƙara girma-girma mai daidaici da tabo biyu |
 | [Dimension Continue](./commands/dim-continue/) | Sarƙa sabuwar girma-girma daga ta ƙarshe |
@@ -100,7 +100,7 @@ Barka da zuwa jerin umarni na **KulmanLab CAD**. [KulmanLab CAD](https://kulmanl
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kwafi launi, layer, da wasu abubuwa daga wani abu zuwa wasu |
 | [Font Manager](./commands/font-manager/) | Bincika, zaɓi, da loda fonts na TTF na musamman |
-| [Font+](./commands/font-add/) | Loda font na TTF na musamman kai tsaye daga tashar umarni |
+| [FontAdd](./commands/font-add/) | Loda font na TTF na musamman kai tsaye daga tashar umarni |
 | [Hatch Manager](./commands/hatch-manager/) | Bincika laburaren pattern na hatch kuma loda fayilolin .pat |
 
 ## Fayil

@@ -1,18 +1,18 @@
 ---
-title: Font+ — Loda Font na TTF na Musamman daga Tashar Umarni
-description: Umarnin Font+ yana buɗe mai zaɓen fayil na tsarin don loda font na .ttf, ba tare da fara buɗe akwatin tattaunawa na Font Manager ba. Wannan shine loda iri ɗaya wanda maɓallin "Add Font" a Font Manager ke kunnawa, wanda anan ake bayarwa a matsayin umarnin tashar umarni na kansa.
-keywords: [umarnin font add, umarnin font+, loda ttf tashar umarni, font na musamman CAD, kulmanlab]
+title: FontAdd — Loda Font na TTF na Musamman daga Tashar Umarni
+description: Umarnin FontAdd yana buɗe mai zaɓen fayil na tsarin don loda font na .ttf, ba tare da fara buɗe akwatin tattaunawa na Font Manager ba. Wannan shine loda iri ɗaya wanda maɓallin "Add Font" a Font Manager ke kunnawa, wanda anan ake bayarwa a matsayin umarnin tashar umarni na kansa.
+keywords: [umarnin font add, umarnin fontadd, loda ttf tashar umarni, font na musamman CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Umarnin `Font+` yana buɗe mai zaɓen fayil na tsarin don loda font na `.ttf` na musamman, ba tare da fara buɗe akwatin tattaunawa na [Font Manager](../font-manager/) ba. Wannan shine loda iri ɗaya wanda maɓallin **Add Font** a Font Manager ke kunnawa — Font+ hanya kai tsaye ce kawai zuwa can daga tashar umarni.
+Umarnin `FontAdd` yana buɗe mai zaɓen fayil na tsarin don loda font na `.ttf` na musamman, ba tare da fara buɗe akwatin tattaunawa na [Font Manager](../font-manager/) ba. Wannan shine loda iri ɗaya wanda maɓallin **Add Font** a Font Manager ke kunnawa — FontAdd hanya kai tsaye ce kawai zuwa can daga tashar umarni.
 
 ## Loda font
 
-1. Rubuta `Font+` a tashar umarni, ko danna **Add Font** a ƙasan akwatin tattaunawa na [Font Manager](../font-manager/).
+1. Rubuta `FontAdd` a tashar umarni, ko danna **Add Font** a ƙasan akwatin tattaunawa na [Font Manager](../font-manager/).
 2. Zaɓi fayil na `.ttf` a mai zaɓen tsarin. Fonts na TrueType kaɗai ake goyon baya — `.otf` da `.woff`/`.woff2` ba a goyon baya.
 
 Umarni yana ƙarewa nan take mai zaɓen fayil ya buɗe — babu wata dannawa ko shigarwa a tashar umarni bayan haka. Ana rijistar font kuma yana bayyana a ƙungiyar **User** nan take an zaɓi fayil.
@@ -25,7 +25,7 @@ Umarni yana ƙarewa nan take mai zaɓen fayil ya buɗe — babu wata dannawa ko 
 
 ## Marfe na maɓallan madannai
 
-Font+ ba shi da hulɗar madannai na kansa — dukkan umarnin ya ƙunshi akwatin tattaunawa na asali na mai zaɓen fayil na burauza. Sokewar wannan akwatin (ko rashin zaɓen wani fayil) yana barin jerin fonts ba tare da canzawa ba.
+FontAdd ba shi da hulɗar madannai na kansa — dukkan umarnin ya ƙunshi akwatin tattaunawa na asali na mai zaɓen fayil na burauza. Sokewar wannan akwatin (ko rashin zaɓen wani fayil) yana barin jerin fonts ba tare da canzawa ba.
 
 ## Umarni masu alaƙa
 

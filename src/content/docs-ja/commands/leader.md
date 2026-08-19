@@ -107,8 +107,8 @@ order: 1
 
 ## アームの追加と削除
 
-- 既存の引出線に矢印アームを追加するには：[Leader+](../leader-add/)
-- 2 本以上のアームを持つ引出線からアームを削除するには：[Leader−](../leader-remove/)
+- 既存の引出線に矢印アームを追加するには：[LeaderAdd](../leader-add/)
+- 2 本以上のアームを持つ引出線からアームを削除するには：[LeaderRemove](../leader-remove/)
 
 ## DXF — インポートのみ
 

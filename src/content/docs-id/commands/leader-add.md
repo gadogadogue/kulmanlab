@@ -1,18 +1,18 @@
 ---
-title: Leader+ — Menambahkan Lengan Kepala Panah ke Multileader yang Ada
-description: Perintah Leader+ menambahkan lengan kepala panah baru ke multileader yang ada. Lengan baru berbagi dogleg, teks, dan semua gaya dari leader yang dipilih. Dua klik — pilih leader, tempatkan ujung baru.
-keywords: [CAD tambah lengan leader, perintah leader+, tambah panah ke leader, lengan multileader, kulmanlab]
+title: LeaderAdd — Menambahkan Lengan Kepala Panah ke Multileader yang Ada
+description: Perintah LeaderAdd menambahkan lengan kepala panah baru ke multileader yang ada. Lengan baru berbagi dogleg, teks, dan semua gaya dari leader yang dipilih. Dua klik — pilih leader, tempatkan ujung baru.
+keywords: [CAD tambah lengan leader, perintah leaderadd, tambah panah ke leader, lengan multileader, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Perintah `leader+` menambahkan lengan kepala panah baru ke multileader yang ada. Lengan baru menunjuk dari dogleg leader yang ada ke ujung kepala panah baru yang Anda klik. Semua gaya — posisi dogleg, teks, tipe kepala panah, dan ukuran — diwarisi dari leader yang dipilih.
+Perintah `LeaderAdd` menambahkan lengan kepala panah baru ke multileader yang ada. Lengan baru menunjuk dari dogleg leader yang ada ke ujung kepala panah baru yang Anda klik. Semua gaya — posisi dogleg, teks, tipe kepala panah, dan ukuran — diwarisi dari leader yang dipilih.
 
 ## Menambahkan lengan
 
-1. Ketik `leader+` di terminal.
+1. Ketik `LeaderAdd` di terminal.
 2. **Klik multileader yang ada** untuk memilihnya.
 3. **Klik ujung kepala panah baru**, atau ketik `X,Y` dan tekan **Enter** untuk koordinat tepat. Garis pratinjau ditampilkan dari kursor ke dogleg leader.
 
@@ -57,4 +57,4 @@ Alih-alih mengklik, Anda dapat mengetik posisi tepat:
 | Perintah | Fungsi |
 |---------|-------------|
 | [Leader](../leader/) | Membuat multileader baru dari awal |
-| [Leader−](../leader-remove/) | Menghapus lengan dari multileader yang memiliki dua atau lebih |
+| [LeaderRemove](../leader-remove/) | Menghapus lengan dari multileader yang memiliki dua atau lebih |

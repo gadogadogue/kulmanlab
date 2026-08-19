@@ -51,8 +51,8 @@ order: 1
 | الأمر | ما يفعله |
 |-------|----------|
 | [Leader](./commands/leader/) | رسم خط إشارة متعدد الرأس مع سهم ونص |
-| [Leader+](./commands/leader-add/) | إضافة ذراع إضافية إلى خط إشارة موجود |
-| [Leader−](./commands/leader-remove/) | حذف ذراع من خط إشارة موجود |
+| [LeaderAdd](./commands/leader-add/) | إضافة ذراع إضافية إلى خط إشارة موجود |
+| [LeaderRemove](./commands/leader-remove/) | حذف ذراع من خط إشارة موجود |
 | [Dimension Linear](./commands/dim-linear/) | إضافة بُعد أفقي أو رأسي |
 | [Dimension Aligned](./commands/dim-aligned/) | إضافة بُعد محاذٍ لنقطتين |
 | [Dimension Continue](./commands/dim-continue/) | تسلسل بُعد جديد من آخر بُعد |
@@ -101,7 +101,7 @@ order: 1
 |-------|----------|
 | [Match Properties](./commands/match-properties/) | نسخ اللون والطبقة وخصائص أخرى من عنصر إلى عناصر أخرى |
 | [Font Manager](./commands/font-manager/) | تصفح واختر الخطوط، وارفع خطوط TTF مخصصة |
-| [Font+](./commands/font-add/) | ارفع خط TTF مخصص مباشرةً من المحطة |
+| [FontAdd](./commands/font-add/) | ارفع خط TTF مخصص مباشرةً من المحطة |
 | [Hatch Manager](./commands/hatch-manager/) | تصفح مكتبة أنماط التظليل وارفع ملفات .pat |
 
 ## الملف

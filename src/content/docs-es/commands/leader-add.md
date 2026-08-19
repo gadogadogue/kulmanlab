@@ -1,18 +1,18 @@
 ---
-title: Leader+ — Añadir un brazo de flecha a una multireferencia
-description: El comando Leader+ añade un nuevo brazo de punta de flecha a una multireferencia existente. El nuevo brazo comparte el quiebre, el texto y todo el estilo de la referencia seleccionada. Dos clics — selecciona la referencia, coloca la nueva punta.
-keywords: [añadir brazo a referencia CAD, comando leader+, añadir flecha a referencia, brazo de multireferencia, kulmanlab]
+title: LeaderAdd — Añadir un brazo de flecha a una multireferencia
+description: El comando LeaderAdd añade un nuevo brazo de punta de flecha a una multireferencia existente. El nuevo brazo comparte el quiebre, el texto y todo el estilo de la referencia seleccionada. Dos clics — selecciona la referencia, coloca la nueva punta.
+keywords: [añadir brazo a referencia CAD, comando leaderadd, añadir flecha a referencia, brazo de multireferencia, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-El comando `leader+` añade un nuevo brazo de punta de flecha a una multireferencia existente. El nuevo brazo apunta desde el quiebre existente de la referencia hacia una nueva punta de flecha que haces clic. Todo el estilo — posición del quiebre, texto, tipo de punta de flecha y tamaño — se hereda de la referencia seleccionada.
+El comando `LeaderAdd` añade un nuevo brazo de punta de flecha a una multireferencia existente. El nuevo brazo apunta desde el quiebre existente de la referencia hacia una nueva punta de flecha que haces clic. Todo el estilo — posición del quiebre, texto, tipo de punta de flecha y tamaño — se hereda de la referencia seleccionada.
 
 ## Añadir un brazo
 
-1. Escribe `leader+` en el terminal.
+1. Escribe `LeaderAdd` en el terminal.
 2. **Haz clic en una multireferencia existente** para seleccionarla.
 3. **Haz clic en la nueva punta de flecha**, o escribe `X,Y` y presiona **Enter** para una coordenada exacta. Una línea de vista previa se muestra desde el cursor hasta el quiebre de la referencia.
 
@@ -57,4 +57,4 @@ En lugar de hacer clic, puedes escribir una posición exacta:
 | Comando | Qué hace |
 |---------|-------------|
 | [Leader](../leader/) | Crear una nueva multireferencia desde cero |
-| [Leader−](../leader-remove/) | Eliminar un brazo de una multireferencia que tiene dos o más |
+| [LeaderRemove](../leader-remove/) | Eliminar un brazo de una multireferencia que tiene dos o más |

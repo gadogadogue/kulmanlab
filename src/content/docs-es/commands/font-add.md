@@ -1,18 +1,18 @@
 ---
-title: Font+ — Subir una fuente TTF personalizada desde el terminal
-description: El comando Font+ abre el selector de archivos del sistema para subir una fuente .ttf, sin abrir antes el diálogo Font Manager. Es la misma subida que activa el botón «Add Font» del Font Manager, disponible aquí como comando de terminal independiente.
-keywords: [comando font add, comando font+, subir ttf terminal, fuente personalizada CAD, kulmanlab]
+title: FontAdd — Subir una fuente TTF personalizada desde el terminal
+description: El comando FontAdd abre el selector de archivos del sistema para subir una fuente .ttf, sin abrir antes el diálogo Font Manager. Es la misma subida que activa el botón «Add Font» del Font Manager, disponible aquí como comando de terminal independiente.
+keywords: [comando font add, comando fontadd, subir ttf terminal, fuente personalizada CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-El comando `Font+` abre el selector de archivos del sistema para subir una fuente `.ttf` personalizada, sin abrir antes el diálogo [Font Manager](../font-manager/). Es la misma subida que activa el botón **Add Font** del Font Manager — Font+ es solo un acceso directo desde el terminal.
+El comando `FontAdd` abre el selector de archivos del sistema para subir una fuente `.ttf` personalizada, sin abrir antes el diálogo [Font Manager](../font-manager/). Es la misma subida que activa el botón **Add Font** del Font Manager — FontAdd es solo un acceso directo desde el terminal.
 
 ## Subir una fuente
 
-1. Escribe `Font+` en el terminal, o haz clic en **Add Font** en la parte inferior del diálogo [Font Manager](../font-manager/).
+1. Escribe `FontAdd` en el terminal, o haz clic en **Add Font** en la parte inferior del diálogo [Font Manager](../font-manager/).
 2. Elige un archivo `.ttf` en el selector del sistema. Solo se admiten fuentes TrueType — `.otf` y `.woff`/`.woff2` no son compatibles.
 
 El comando termina en cuanto se abre el selector de archivos — no hay clic ni entrada de terminal adicional. La fuente se registra y aparece en el grupo **User** en cuanto se elige el archivo.
@@ -25,7 +25,7 @@ El comando termina en cuanto se abre el selector de archivos — no hay clic ni 
 
 ## Referencia de teclado
 
-Font+ no tiene interacción de teclado propia — todo el comando consiste en el selector de archivos nativo del navegador. Cancelar ese diálogo (o no elegir ningún archivo) deja la lista de fuentes sin cambios.
+FontAdd no tiene interacción de teclado propia — todo el comando consiste en el selector de archivos nativo del navegador. Cancelar ese diálogo (o no elegir ningún archivo) deja la lista de fuentes sin cambios.
 
 ## Comandos relacionados
 

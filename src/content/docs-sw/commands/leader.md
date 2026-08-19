@@ -107,8 +107,8 @@ Angalia [Text Editor — hali tajiri](../../interface/text-editor/#rich-mode) kw
 
 ## Kuongeza na kuondoa mikono
 
-- Ili kuongeza mkono wa mshale wa ziada kwenye kiongozi kilichopo: [Leader+](../leader-add/)
-- Ili kuondoa mkono kutoka kwa kiongozi chenye mikono miwili au zaidi: [Leader−](../leader-remove/)
+- Ili kuongeza mkono wa mshale wa ziada kwenye kiongozi kilichopo: [LeaderAdd](../leader-add/)
+- Ili kuondoa mkono kutoka kwa kiongozi chenye mikono miwili au zaidi: [LeaderRemove](../leader-remove/)
 
 ## DXF — uagizaji tu
 

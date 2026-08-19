@@ -1,18 +1,18 @@
 ---
-title: Leader+ — Lägg till en pilspetsarm på en befintlig multileader
-description: Leader+-kommandot lägger till en ny pilspetsarm på en befintlig multileader. Den nya armen delar dogleg, text och all styling med den valda leadern. Två klick — välj leadern, placera den nya spetsen.
-keywords: [CAD lägg till leader-arm, leader+-kommando, lägg till pil på leader, multileader-arm, kulmanlab]
+title: LeaderAdd — Lägg till en pilspetsarm på en befintlig multileader
+description: LeaderAdd-kommandot lägger till en ny pilspetsarm på en befintlig multileader. Den nya armen delar dogleg, text och all styling med den valda leadern. Två klick — välj leadern, placera den nya spetsen.
+keywords: [CAD lägg till leader-arm, leaderadd-kommando, lägg till pil på leader, multileader-arm, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-`leader+`-kommandot lägger till en ny pilspetsarm på en befintlig multileader. Den nya armen pekar från leaderns befintliga dogleg-punkt till en ny pilspets du klickar på. All styling — dogleg-position, text, pilspetstyp och storlek — ärvs från den valda leadern.
+`LeaderAdd`-kommandot lägger till en ny pilspetsarm på en befintlig multileader. Den nya armen pekar från leaderns befintliga dogleg-punkt till en ny pilspets du klickar på. All styling — dogleg-position, text, pilspetstyp och storlek — ärvs från den valda leadern.
 
 ## Lägga till en arm
 
-1. Skriv `leader+` i terminalen.
+1. Skriv `LeaderAdd` i terminalen.
 2. **Klicka på en befintlig multileader** för att markera den.
 3. **Klicka på den nya pilspetsen**, eller skriv `X,Y` och tryck **Enter** för en exakt koordinat. En förhandsvisningslinje visas från markören till leaderns dogleg-punkt.
 
@@ -57,4 +57,4 @@ Istället för att klicka kan du skriva en exakt position:
 | Kommando | Vad det gör |
 |---------|-------------|
 | [Leader](../leader/) | Skapa en helt ny multileader från grunden |
-| [Leader−](../leader-remove/) | Ta bort en arm från en multileader som har två eller fler |
+| [LeaderRemove](../leader-remove/) | Ta bort en arm från en multileader som har två eller fler |

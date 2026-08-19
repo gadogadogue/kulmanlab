@@ -51,8 +51,8 @@ Welkom bij de **KulmanLab CAD**-opdrachtreferentie. [KulmanLab CAD](https://kulm
 | Commando | Wat het doet |
 |---------|-------------|
 | [Leader](./commands/leader/) | Teken een multileader-annotatie met pijlpunt en tekst |
-| [Leader+](./commands/leader-add/) | Voeg een extra arm toe aan een bestaande multileader |
-| [Leader−](./commands/leader-remove/) | Verwijder een arm van een bestaande multileader |
+| [LeaderAdd](./commands/leader-add/) | Voeg een extra arm toe aan een bestaande multileader |
+| [LeaderRemove](./commands/leader-remove/) | Verwijder een arm van een bestaande multileader |
 | [Dimension Linear](./commands/dim-linear/) | Voeg een horizontale of verticale maatvoering toe |
 | [Dimension Aligned](./commands/dim-aligned/) | Voeg een maatvoering toe uitgelijnd op twee punten |
 | [Dimension Continue](./commands/dim-continue/) | Ketting een nieuwe maatvoering aan de vorige |
@@ -101,7 +101,7 @@ Welkom bij de **KulmanLab CAD**-opdrachtreferentie. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopieer kleur, laag en andere eigenschappen van de ene entiteit naar andere |
 | [Font Manager](./commands/font-manager/) | Blader door, selecteer en upload aangepaste TTF-lettertypen |
-| [Font+](./commands/font-add/) | Upload een aangepast TTF-lettertype rechtstreeks vanuit de terminal |
+| [FontAdd](./commands/font-add/) | Upload een aangepast TTF-lettertype rechtstreeks vanuit de terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Blader door de hatch-patroonbibliotheek en upload .pat-bestanden |
 
 ## Bestand

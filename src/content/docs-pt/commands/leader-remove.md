@@ -1,18 +1,18 @@
 ---
-title: "Comando Leader− — Remover um Braço com Seta de um Multileader"
-description: "O comando Leader− remove um braço com seta de um multileader que tem dois ou mais. Passe o cursor próximo ao braço a remover — o braço mais próximo é destacado. O dogleg, o texto e os braços restantes são preservados."
-keywords: [CAD leader remover braço, comando leader-, remover seta do leader, excluir braço multileader, kulmanlab]
+title: "Comando LeaderRemove — Remover um Braço com Seta de um Multileader"
+description: "O comando LeaderRemove remove um braço com seta de um multileader que tem dois ou mais. Passe o cursor próximo ao braço a remover — o braço mais próximo é destacado. O dogleg, o texto e os braços restantes são preservados."
+keywords: [CAD leader remover braço, comando leaderremove, remover seta do leader, excluir braço multileader, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-O comando `leader-` remove um braço com seta de um multileader existente. A etiqueta de texto, o dogleg e todos os braços restantes são preservados — apenas o braço selecionado é excluído. Um multileader com apenas um braço não pode ter seu braço removido.
+O comando `LeaderRemove` remove um braço com seta de um multileader existente. A etiqueta de texto, o dogleg e todos os braços restantes são preservados — apenas o braço selecionado é excluído. Um multileader com apenas um braço não pode ter seu braço removido.
 
 ## Removendo um braço
 
-1. Digite `leader-` no terminal.
+1. Digite `LeaderRemove` no terminal.
 2. **Clique em um multileader** com dois ou mais braços. Se o leader clicado tiver apenas um braço, o terminal mostra um erro e aguarda uma seleção válida.
 3. **Mova o cursor próximo ao braço** que deseja remover — o braço mais próximo é destacado com um marcador.
 4. **Clique** para remover esse braço.
@@ -49,4 +49,4 @@ O comando mede a distância perpendicular do cursor aos segmentos de linha de ca
 | Comando | Função |
 |---------|--------|
 | [Leader](../leader/) | Cria um novo multileader do zero |
-| [Leader+](../leader-add/) | Adiciona um braço a um multileader existente |
+| [LeaderAdd](../leader-add/) | Adiciona um braço a um multileader existente |

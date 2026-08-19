@@ -51,8 +51,8 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 | Command | Ano ang ginagawa nito |
 |---------|-------------|
 | [Leader](./commands/leader/) | Gumuhit ng multileader annotation na may arrowhead at text |
-| [Leader+](./commands/leader-add/) | Magdagdag ng extra na arm sa umiiral na multileader |
-| [Leader−](./commands/leader-remove/) | Alisin ang isang arm mula sa umiiral na multileader |
+| [LeaderAdd](./commands/leader-add/) | Magdagdag ng extra na arm sa umiiral na multileader |
+| [LeaderRemove](./commands/leader-remove/) | Alisin ang isang arm mula sa umiiral na multileader |
 | [Dimension Linear](./commands/dim-linear/) | Magdagdag ng horizontal o vertical na dimension |
 | [Dimension Aligned](./commands/dim-aligned/) | Magdagdag ng dimension na naka-align sa dalawang punto |
 | [Dimension Continue](./commands/dim-continue/) | Ikadena ang bagong dimension mula sa huling dimension |
@@ -101,7 +101,7 @@ Maligayang pagdating sa command reference ng **KulmanLab CAD**. Ang [KulmanLab C
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopyahin ang kulay, layer, at iba pang property mula sa isang entity papunta sa iba |
 | [Font Manager](./commands/font-manager/) | I-browse, piliin, at mag-upload ng custom na TTF font |
-| [Font+](./commands/font-add/) | Mag-upload ng custom na TTF font direkta mula sa terminal |
+| [FontAdd](./commands/font-add/) | Mag-upload ng custom na TTF font direkta mula sa terminal |
 | [Hatch Manager](./commands/hatch-manager/) | I-browse ang hatch pattern library at mag-upload ng .pat files |
 
 ## File

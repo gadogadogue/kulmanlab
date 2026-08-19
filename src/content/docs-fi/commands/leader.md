@@ -107,8 +107,8 @@ Katso [Tekstieditori — rikas tila](../../interface/text-editor/#rich-mode) tä
 
 ## Haarojen lisääminen ja poistaminen
 
-- Lisätäksesi ylimääräisen nuolenkärkihaaran olemassa olevaan johtimeen: [Leader+](../leader-add/)
-- Poistaaksesi haaran johtimesta, jossa on kaksi tai useampi: [Leader−](../leader-remove/)
+- Lisätäksesi ylimääräisen nuolenkärkihaaran olemassa olevaan johtimeen: [LeaderAdd](../leader-add/)
+- Poistaaksesi haaran johtimesta, jossa on kaksi tai useampi: [LeaderRemove](../leader-remove/)
 
 ## DXF — vain tuonti
 

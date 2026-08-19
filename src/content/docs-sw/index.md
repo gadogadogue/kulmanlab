@@ -51,8 +51,8 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | Amri | Inachofanya |
 |------|------------|
 | [Leader](./commands/leader/) | Chora maelezo ya multileader yenye ncha ya mshale na maandishi |
-| [Leader+](./commands/leader-add/) | Ongeza mkono wa ziada kwenye multileader iliyopo |
-| [Leader−](./commands/leader-remove/) | Ondoa mkono kutoka kwenye multileader iliyopo |
+| [LeaderAdd](./commands/leader-add/) | Ongeza mkono wa ziada kwenye multileader iliyopo |
+| [LeaderRemove](./commands/leader-remove/) | Ondoa mkono kutoka kwenye multileader iliyopo |
 | [Dimension Linear](./commands/dim-linear/) | Ongeza kipimo cha usawa au wima |
 | [Dimension Aligned](./commands/dim-aligned/) | Ongeza kipimo kilicholingana na pointi mbili |
 | [Dimension Continue](./commands/dim-continue/) | Unganisha kipimo kipya kutoka kwa cha mwisho |
@@ -100,7 +100,7 @@ Karibu kwenye marejeo ya amri za **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 |------|------------|
 | [Match Properties](./commands/match-properties/) | Nakili rangi, safu, na mali nyingine kutoka kipengele kimoja hadi vingine |
 | [Font Manager](./commands/font-manager/) | Vinjari, chagua, na pakia fonti maalum za TTF |
-| [Font+](./commands/font-add/) | Pakia fonti maalum ya TTF moja kwa moja kutoka terminal |
+| [FontAdd](./commands/font-add/) | Pakia fonti maalum ya TTF moja kwa moja kutoka terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Vinjari maktaba ya muundo wa hatch na pakia faili za .pat |
 
 ## Faili

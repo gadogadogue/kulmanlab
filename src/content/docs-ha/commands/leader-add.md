@@ -1,18 +1,18 @@
 ---
-title: "Leader+ — Ƙara Hannu na Kibiya zuwa Multileader da ke Akwai"
-description: "Umarnin Leader+ yana ƙara sabon hannu na kibiya zuwa multileader da ke akwai. Sabon hannu yana raba dogleg, rubutu, da dukkan salo na leader da aka zaɓa. Dannawa biyu — zaɓi leader, sanya sabon ƙarshe."
-keywords: [ƙara hannu leader CAD, umarnin leader+, ƙara kibiya zuwa leader, hannu multileader, kulmanlab]
+title: "LeaderAdd — Ƙara Hannu na Kibiya zuwa Multileader da ke Akwai"
+description: "Umarnin LeaderAdd yana ƙara sabon hannu na kibiya zuwa multileader da ke akwai. Sabon hannu yana raba dogleg, rubutu, da dukkan salo na leader da aka zaɓa. Dannawa biyu — zaɓi leader, sanya sabon ƙarshe."
+keywords: [ƙara hannu leader CAD, umarnin leaderadd, ƙara kibiya zuwa leader, hannu multileader, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Umarnin `leader+` yana ƙara sabon hannu na kibiya zuwa multileader da ke akwai. Sabon hannu yana nuna daga dogleg na leader da ke akwai zuwa sabon ƙarshen kibiya da ka danna. Dukkan salo — matsayin dogleg, rubutu, nauʼin kibiya, da girma — an gada shi daga leader da aka zaɓa.
+Umarnin `LeaderAdd` yana ƙara sabon hannu na kibiya zuwa multileader da ke akwai. Sabon hannu yana nuna daga dogleg na leader da ke akwai zuwa sabon ƙarshen kibiya da ka danna. Dukkan salo — matsayin dogleg, rubutu, nauʼin kibiya, da girma — an gada shi daga leader da aka zaɓa.
 
 ## Ƙara hannu
 
-1. Rubuta `leader+` a tashar umarni.
+1. Rubuta `LeaderAdd` a tashar umarni.
 2. **Danna multileader da ke akwai** don zaɓe ta.
 3. **Danna sabon ƙarshen kibiya**, ko rubuta `X,Y` ka danna **Enter** don daidaitawa madaidaiciya. Preview na layi yana nunawa daga mai nuni zuwa dogleg na leader.
 
@@ -57,4 +57,4 @@ Maimakon dannawa, za ka iya rubuta madaidaicin matsayi:
 | Umarni | Abin da yake yi |
 |---------|-------------|
 | [Leader](../leader/) | Ƙirƙira sabon multileader gaba ɗaya daga fara |
-| [Leader−](../leader-remove/) | Cire hannu daga multileader wanda yake da biyu ko fiye |
+| [LeaderRemove](../leader-remove/) | Cire hannu daga multileader wanda yake da biyu ko fiye |

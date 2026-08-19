@@ -27,7 +27,7 @@ Nhấp vào bất kỳ phông chữ nào trong danh sách để xem trước ở
 
 ## Tải lên phông chữ tùy chỉnh
 
-1. Nhấp **Add Font** ở cuối hộp thoại (hoặc gõ [`Font+`](../font-add/) trong terminal để mở trực tiếp hộp thoại chọn tệp).
+1. Nhấp **Add Font** ở cuối hộp thoại (hoặc gõ [`FontAdd`](../font-add/) trong terminal để mở trực tiếp hộp thoại chọn tệp).
 2. Chọn một tệp `.ttf`. Chỉ hỗ trợ phông chữ TrueType — `.otf` và `.woff`/`.woff2` không được hỗ trợ.
 3. Tên tệp (không có phần mở rộng) trở thành tên phông chữ trong nhóm **User**. Ví dụ: tải lên `MyFont.ttf` sẽ thêm một phông chữ tên là `MyFont`.
 

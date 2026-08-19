@@ -1,18 +1,18 @@
 ---
-title: Leader+ Command — Add an Arrowhead Arm to an Existing Multileader
-description: The Leader+ command adds a new arrowhead arm to an existing multileader. The new arm shares the dogleg, text, and all styling of the selected leader. Two clicks — select the leader, place the new tip.
-keywords: [CAD leader add arm, leader+ command, add arrow to leader, multileader arm, kulmanlab]
+title: LeaderAdd Command — Add an Arrowhead Arm to an Existing Multileader
+description: The LeaderAdd command adds a new arrowhead arm to an existing multileader. The new arm shares the dogleg, text, and all styling of the selected leader. Two clicks — select the leader, place the new tip.
+keywords: [CAD leader add arm, leaderadd command, add arrow to leader, multileader arm, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-The `leader+` command adds a new arrowhead arm to an existing multileader. The new arm points from the leader's existing dogleg to a new arrowhead tip you click. All styling — dogleg position, text, arrowhead type, and size — is inherited from the selected leader.
+The `LeaderAdd` command adds a new arrowhead arm to an existing multileader. The new arm points from the leader's existing dogleg to a new arrowhead tip you click. All styling — dogleg position, text, arrowhead type, and size — is inherited from the selected leader.
 
 ## Adding an arm
 
-1. Type `leader+` in the terminal.
+1. Type `LeaderAdd` in the terminal.
 2. **Click an existing multileader** to select it.
 3. **Click the new arrowhead tip**, or type `X,Y` and press **Enter** for an exact coordinate. A preview line shows from the cursor to the leader's dogleg.
 
@@ -57,4 +57,4 @@ Instead of clicking, you can type an exact position:
 | Command | What it does |
 |---------|-------------|
 | [Leader](../leader/) | Create a brand-new multileader from scratch |
-| [Leader−](../leader-remove/) | Remove an arm from a multileader that has two or more |
+| [LeaderRemove](../leader-remove/) | Remove an arm from a multileader that has two or more |

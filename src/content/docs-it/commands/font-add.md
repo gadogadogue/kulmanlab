@@ -1,18 +1,18 @@
 ---
-title: Font+ — Caricare un font TTF personalizzato dal terminale
-description: Il comando Font+ apre il selettore file del sistema per caricare un font .ttf, senza prima aprire la finestra di dialogo Font Manager. È lo stesso caricamento attivato dal pulsante «Add Font» del Font Manager, disponibile qui come comando di terminale a sé stante.
-keywords: [comando font add, comando font+, caricare ttf terminale, font personalizzato CAD, kulmanlab]
+title: FontAdd — Caricare un font TTF personalizzato dal terminale
+description: Il comando FontAdd apre il selettore file del sistema per caricare un font .ttf, senza prima aprire la finestra di dialogo Font Manager. È lo stesso caricamento attivato dal pulsante «Add Font» del Font Manager, disponibile qui come comando di terminale a sé stante.
+keywords: [comando font add, comando fontadd, caricare ttf terminale, font personalizzato CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Il comando `Font+` apre il selettore file del sistema per caricare un font `.ttf` personalizzato, senza prima aprire la finestra di dialogo [Font Manager](../font-manager/). È lo stesso caricamento attivato dal pulsante **Add Font** del Font Manager — Font+ è solo un modo diretto per raggiungerlo dal terminale.
+Il comando `FontAdd` apre il selettore file del sistema per caricare un font `.ttf` personalizzato, senza prima aprire la finestra di dialogo [Font Manager](../font-manager/). È lo stesso caricamento attivato dal pulsante **Add Font** del Font Manager — FontAdd è solo un modo diretto per raggiungerlo dal terminale.
 
 ## Caricare un font
 
-1. Digita `Font+` nel terminale, oppure clicca **Add Font** in fondo alla finestra di dialogo [Font Manager](../font-manager/).
+1. Digita `FontAdd` nel terminale, oppure clicca **Add Font** in fondo alla finestra di dialogo [Font Manager](../font-manager/).
 2. Scegli un file `.ttf` nel selettore di sistema. Sono supportati solo i font TrueType — `.otf` e `.woff`/`.woff2` non lo sono.
 
 Il comando termina non appena si apre il selettore file — non segue nessun altro clic o input da terminale. Il font viene registrato e compare nel gruppo **User** non appena il file viene scelto.
@@ -25,7 +25,7 @@ Il comando termina non appena si apre il selettore file — non segue nessun alt
 
 ## Riferimento tastiera
 
-Font+ non ha un'interazione da tastiera propria — l'intero comando consiste nel selettore file nativo del browser. Annullare quella finestra di dialogo (o non scegliere alcun file) lascia invariato l'elenco dei font.
+FontAdd non ha un'interazione da tastiera propria — l'intero comando consiste nel selettore file nativo del browser. Annullare quella finestra di dialogo (o non scegliere alcun file) lascia invariato l'elenco dei font.
 
 ## Comandi correlati
 

@@ -1,18 +1,18 @@
 ---
-title: Font+ — Last opp en egendefinert TTF-skrift fra terminalen
-description: Font+-kommandoen åpner systemets filvelger for å laste opp en .ttf-skrift, uten å først åpne Font Manager-dialogen. Det er den samme opplastingen som knappen «Add Font» i Font Manager utløser, tilgjengelig her som en egen terminalkommando.
-keywords: [font add kommando, font+ kommando, laste opp ttf terminal, egendefinert skrift CAD, kulmanlab]
+title: FontAdd — Last opp en egendefinert TTF-skrift fra terminalen
+description: FontAdd-kommandoen åpner systemets filvelger for å laste opp en .ttf-skrift, uten å først åpne Font Manager-dialogen. Det er den samme opplastingen som knappen «Add Font» i Font Manager utløser, tilgjengelig her som en egen terminalkommando.
+keywords: [font add kommando, fontadd kommando, laste opp ttf terminal, egendefinert skrift CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Kommandoen `Font+` åpner systemets filvelger for å laste opp en egendefinert `.ttf`-skrift, uten å først åpne [Font Manager](../font-manager/)-dialogen. Det er den samme opplastingen som knappen **Add Font** i Font Manager utløser — Font+ er bare en direkte vei dit fra terminalen.
+Kommandoen `FontAdd` åpner systemets filvelger for å laste opp en egendefinert `.ttf`-skrift, uten å først åpne [Font Manager](../font-manager/)-dialogen. Det er den samme opplastingen som knappen **Add Font** i Font Manager utløser — FontAdd er bare en direkte vei dit fra terminalen.
 
 ## Laste opp en skrift
 
-1. Skriv `Font+` i terminalen, eller klikk **Add Font** i bunnteksten på [Font Manager](../font-manager/)-dialogen.
+1. Skriv `FontAdd` i terminalen, eller klikk **Add Font** i bunnteksten på [Font Manager](../font-manager/)-dialogen.
 2. Velg en `.ttf`-fil i systemets filvelger. Kun TrueType-skrifter støttes — `.otf` og `.woff`/`.woff2` støttes ikke.
 
 Kommandoen avsluttes så snart filvelgeren åpnes — det følger ikke noe videre klikk eller terminalinntasting. Skriften registreres og vises i **User**-gruppen så snart filen er valgt.
@@ -25,7 +25,7 @@ Kommandoen avsluttes så snart filvelgeren åpnes — det følger ikke noe vider
 
 ## Tastaturreferanse
 
-Font+ har ingen egen tastaturinteraksjon — hele kommandoen består av nettleserens innebygde filvelgerdialog. Å avbryte den dialogen (eller ikke velge noen fil) lar skriftlisten være uendret.
+FontAdd har ingen egen tastaturinteraksjon — hele kommandoen består av nettleserens innebygde filvelgerdialog. Å avbryte den dialogen (eller ikke velge noen fil) lar skriftlisten være uendret.
 
 ## Relaterte kommandoer
 

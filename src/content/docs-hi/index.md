@@ -51,8 +51,8 @@ order: 1
 | कमांड | क्या करती है |
 |---------|-------------|
 | [Leader](./commands/leader/) | तीर और टेक्स्ट के साथ मल्टीलीडर एनोटेशन बनाएं |
-| [Leader+](./commands/leader-add/) | मौजूदा मल्टीलीडर में अतिरिक्त भुजा जोड़ें |
-| [Leader−](./commands/leader-remove/) | मौजूदा मल्टीलीडर से एक भुजा हटाएं |
+| [LeaderAdd](./commands/leader-add/) | मौजूदा मल्टीलीडर में अतिरिक्त भुजा जोड़ें |
+| [LeaderRemove](./commands/leader-remove/) | मौजूदा मल्टीलीडर से एक भुजा हटाएं |
 | [Dimension Linear](./commands/dim-linear/) | क्षैतिज या ऊर्ध्वाधर माप जोड़ें |
 | [Dimension Aligned](./commands/dim-aligned/) | दो बिंदुओं पर संरेखित माप जोड़ें |
 | [Dimension Continue](./commands/dim-continue/) | पिछले माप से नई माप जोड़ें |
@@ -101,7 +101,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | एक ऑब्जेक्ट से दूसरे ऑब्जेक्ट में रंग, लेयर और अन्य गुण कॉपी करें |
 | [Font Manager](./commands/font-manager/) | फ़ॉन्ट ब्राउज़ करें, चुनें, और कस्टम TTF फ़ॉन्ट अपलोड करें |
-| [Font+](./commands/font-add/) | टर्मिनल से सीधे कस्टम TTF फ़ॉन्ट अपलोड करें |
+| [FontAdd](./commands/font-add/) | टर्मिनल से सीधे कस्टम TTF फ़ॉन्ट अपलोड करें |
 | [Hatch Manager](./commands/hatch-manager/) | hatch पैटर्न लाइब्रेरी ब्राउज़ करें और .pat फ़ाइलें अपलोड करें |
 
 ## फ़ाइल

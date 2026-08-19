@@ -28,7 +28,7 @@ Klicka på valfritt typsnitt i listan för att förhandsgranska det till höger 
 
 ## Ladda upp ett anpassat typsnitt
 
-1. Klicka på **Add Font** i dialogrutans sidfot (eller skriv [`Font+`](../font-add/) i terminalen för att öppna filväljaren direkt).
+1. Klicka på **Add Font** i dialogrutans sidfot (eller skriv [`FontAdd`](../font-add/) i terminalen för att öppna filväljaren direkt).
 2. Välj en `.ttf`-fil. Endast TrueType-typsnitt stöds — `.otf` och `.woff`/`.woff2` stöds inte.
 3. Filnamnet (utan filändelsen) blir typsnittets namn i gruppen **User**. Att till exempel ladda upp `MyFont.ttf` lägger till ett typsnitt med namnet `MyFont`.
 

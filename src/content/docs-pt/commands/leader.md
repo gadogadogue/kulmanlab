@@ -107,8 +107,8 @@ Consulte [Editor de Texto — rich mode](../../interface/text-editor/#rich-mode)
 
 ## Adicionando e removendo braços
 
-- Para adicionar um braço com seta extra a um leader existente: [Leader+](../leader-add/)
-- Para remover um braço de um leader com dois ou mais: [Leader−](../leader-remove/)
+- Para adicionar um braço com seta extra a um leader existente: [LeaderAdd](../leader-add/)
+- Para remover um braço de um leader com dois ou mais: [LeaderRemove](../leader-remove/)
 
 ## DXF — somente importação
 

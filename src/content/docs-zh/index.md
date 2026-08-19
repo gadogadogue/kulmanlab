@@ -51,8 +51,8 @@ order: 1
 | 命令 | 功能 |
 |---------|-------------|
 | [Leader](./commands/leader/) | 绘制带箭头和文字的多重引线标注 |
-| [Leader+](./commands/leader-add/) | 向已有多重引线添加额外的引线臂 |
-| [Leader−](./commands/leader-remove/) | 从已有多重引线中删除一条引线臂 |
+| [LeaderAdd](./commands/leader-add/) | 向已有多重引线添加额外的引线臂 |
+| [LeaderRemove](./commands/leader-remove/) | 从已有多重引线中删除一条引线臂 |
 | [Dimension Linear](./commands/dim-linear/) | 添加水平或垂直标注 |
 | [Dimension Aligned](./commands/dim-aligned/) | 添加与两点对齐的标注 |
 | [Dimension Continue](./commands/dim-continue/) | 从上一个标注链接新标注 |
@@ -101,7 +101,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | 将颜色、图层及其他特性从一个图元复制到其他图元 |
 | [Font Manager](./commands/font-manager/) | 浏览、选择字体，并上传自定义 TTF 字体 |
-| [Font+](./commands/font-add/) | 直接从命令行上传自定义 TTF 字体 |
+| [FontAdd](./commands/font-add/) | 直接从命令行上传自定义 TTF 字体 |
 | [Hatch Manager](./commands/hatch-manager/) | 浏览 hatch 图案库并上传 .pat 文件 |
 
 ## 文件

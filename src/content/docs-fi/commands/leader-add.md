@@ -1,18 +1,18 @@
 ---
-title: Leader+-komento — Lisää Haara Olemassa Olevaan Multileaderiin
-description: Leader+-komento lisää uuden nuolenkärkihaaran olemassa olevaan multileaderiin. Uusi haara jakaa doglegin, tekstin ja kaiken tyylin valitun johtimen kanssa. Kaksi napsautusta — valitse johdin, sijoita uusi kärki.
-keywords: [CAD lisää johtimen haara, leader+-komento, lisää nuoli johtimeen, multileader-haara, kulmanlab]
+title: LeaderAdd-komento — Lisää Haara Olemassa Olevaan Multileaderiin
+description: LeaderAdd-komento lisää uuden nuolenkärkihaaran olemassa olevaan multileaderiin. Uusi haara jakaa doglegin, tekstin ja kaiken tyylin valitun johtimen kanssa. Kaksi napsautusta — valitse johdin, sijoita uusi kärki.
+keywords: [CAD lisää johtimen haara, leaderadd-komento, lisää nuoli johtimeen, multileader-haara, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Komento `leader+` lisää uuden nuolenkärkihaaran olemassa olevaan multileaderiin. Uusi haara osoittaa johtimen olemassa olevasta doglegista uuteen nuolenkärkeen, jonka napsautat. Kaikki tyyli — doglegin sijainti, teksti, nuolenkärjen tyyppi ja koko — periytyy valitusta johtimesta.
+Komento `LeaderAdd` lisää uuden nuolenkärkihaaran olemassa olevaan multileaderiin. Uusi haara osoittaa johtimen olemassa olevasta doglegista uuteen nuolenkärkeen, jonka napsautat. Kaikki tyyli — doglegin sijainti, teksti, nuolenkärjen tyyppi ja koko — periytyy valitusta johtimesta.
 
 ## Haaran lisääminen
 
-1. Kirjoita `leader+` terminaaliin.
+1. Kirjoita `LeaderAdd` terminaaliin.
 2. **Napsauta olemassa olevaa multileaderia** valitaksesi sen.
 3. **Napsauta uutta nuolenkärkeä**, tai kirjoita `X,Y` ja paina **Enter** tarkkaa koordinaattia varten. Esikatseluviiva näkyy kohdistimesta johtimen doglegiin.
 
@@ -57,4 +57,4 @@ Napsauttamisen sijaan voit kirjoittaa tarkan sijainnin:
 | Komento | Mitä se tekee |
 |---------|-------------|
 | [Leader](../leader/) | Luo täysin uusi multileader alusta |
-| [Leader−](../leader-remove/) | Poista haara multileaderista, jossa on kaksi tai useampi |
+| [LeaderRemove](../leader-remove/) | Poista haara multileaderista, jossa on kaksi tai useampi |

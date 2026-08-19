@@ -1,18 +1,18 @@
 ---
-title: Leader+-kommando — Legg til en Pilspissarm på en Multileader
-description: Leader+-kommandoen legger til en ny pilspissarm på en eksisterende multileader. Den nye armen deler dogleg, tekst og all styling med den valgte lederen. To klikk — velg lederen, plasser den nye spissen.
-keywords: [CAD legg til lederarm, leader+-kommando, legg til pil på leder, multileader-arm, kulmanlab]
+title: LeaderAdd-kommando — Legg til en Pilspissarm på en Multileader
+description: LeaderAdd-kommandoen legger til en ny pilspissarm på en eksisterende multileader. Den nye armen deler dogleg, tekst og all styling med den valgte lederen. To klikk — velg lederen, plasser den nye spissen.
+keywords: [CAD legg til lederarm, leaderadd-kommando, legg til pil på leder, multileader-arm, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Kommandoen `leader+` legger til en ny pilspissarm på en eksisterende multileader. Den nye armen peker fra lederens eksisterende dogleg til en ny pilspiss du klikker. All styling — dogleg-posisjon, tekst, pilspisstype og størrelse — arves fra den valgte lederen.
+Kommandoen `LeaderAdd` legger til en ny pilspissarm på en eksisterende multileader. Den nye armen peker fra lederens eksisterende dogleg til en ny pilspiss du klikker. All styling — dogleg-posisjon, tekst, pilspisstype og størrelse — arves fra den valgte lederen.
 
 ## Legge til en arm
 
-1. Skriv `leader+` i terminalen.
+1. Skriv `LeaderAdd` i terminalen.
 2. **Klikk en eksisterende multileader** for å velge den.
 3. **Klikk den nye pilspissen**, eller skriv `X,Y` og trykk **Enter** for en eksakt koordinat. En forhåndsvisningslinje vises fra markøren til lederens dogleg.
 
@@ -57,4 +57,4 @@ I stedet for å klikke kan du skrive inn en eksakt posisjon:
 | Kommando | Hva den gjør |
 |---------|-------------|
 | [Leader](../leader/) | Opprett en helt ny multileader fra bunnen av |
-| [Leader−](../leader-remove/) | Fjern en arm fra en multileader som har to eller flere |
+| [LeaderRemove](../leader-remove/) | Fjern en arm fra en multileader som har to eller flere |

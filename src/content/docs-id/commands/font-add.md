@@ -1,18 +1,18 @@
 ---
-title: Font+ Command — Unggah Font TTF Kustom dari Terminal
-description: Perintah Font+ membuka pemilih file sistem untuk mengunggah font .ttf, tanpa membuka dialog Font Manager terlebih dahulu. Ini adalah unggahan yang sama dengan yang dipicu tombol "Add Font" di Font Manager, tersedia di sini sebagai perintah terminal tersendiri.
-keywords: [perintah font add, perintah font+, unggah ttf terminal, font kustom CAD, kulmanlab]
+title: FontAdd Command — Unggah Font TTF Kustom dari Terminal
+description: Perintah FontAdd membuka pemilih file sistem untuk mengunggah font .ttf, tanpa membuka dialog Font Manager terlebih dahulu. Ini adalah unggahan yang sama dengan yang dipicu tombol "Add Font" di Font Manager, tersedia di sini sebagai perintah terminal tersendiri.
+keywords: [perintah font add, perintah fontadd, unggah ttf terminal, font kustom CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Perintah `Font+` membuka pemilih file sistem untuk mengunggah font `.ttf` kustom, tanpa membuka dialog [Font Manager](../font-manager/) terlebih dahulu. Ini adalah unggahan yang sama dengan yang dipicu tombol **Add Font** di Font Manager — Font+ hanyalah jalan langsung ke sana dari terminal.
+Perintah `FontAdd` membuka pemilih file sistem untuk mengunggah font `.ttf` kustom, tanpa membuka dialog [Font Manager](../font-manager/) terlebih dahulu. Ini adalah unggahan yang sama dengan yang dipicu tombol **Add Font** di Font Manager — FontAdd hanyalah jalan langsung ke sana dari terminal.
 
 ## Mengunggah font
 
-1. Ketik `Font+` di terminal, atau klik **Add Font** di footer dialog [Font Manager](../font-manager/).
+1. Ketik `FontAdd` di terminal, atau klik **Add Font** di footer dialog [Font Manager](../font-manager/).
 2. Pilih file `.ttf` di pemilih sistem. Hanya font TrueType yang didukung — `.otf` dan `.woff`/`.woff2` tidak didukung.
 
 Perintah selesai segera setelah pemilih file terbuka — tidak ada klik atau input terminal lebih lanjut. Font terdaftar dan muncul di grup **User** segera setelah file dipilih.
@@ -25,7 +25,7 @@ Perintah selesai segera setelah pemilih file terbuka — tidak ada klik atau inp
 
 ## Referensi keyboard
 
-Font+ tidak memiliki interaksi keyboard sendiri — seluruh perintah terdiri dari dialog pemilih file bawaan browser. Membatalkan dialog tersebut (atau tidak memilih file apa pun) membuat daftar font tidak berubah.
+FontAdd tidak memiliki interaksi keyboard sendiri — seluruh perintah terdiri dari dialog pemilih file bawaan browser. Membatalkan dialog tersebut (atau tidak memilih file apa pun) membuat daftar font tidak berubah.
 
 ## Perintah terkait
 

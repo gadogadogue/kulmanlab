@@ -28,7 +28,7 @@ Bonyeza fonti yoyote kwenye orodha ili kuiona kwa hakiki upande wa kulia — jin
 
 ## Kupakia fonti maalum
 
-1. Bonyeza **Add Font** chini ya mazungumzo (au andika [`Font+`](../font-add/) kwenye terminal ili kufungua kichagua faili moja kwa moja).
+1. Bonyeza **Add Font** chini ya mazungumzo (au andika [`FontAdd`](../font-add/) kwenye terminal ili kufungua kichagua faili moja kwa moja).
 2. Chagua faili ya `.ttf`. Fonti za TrueType pekee ndizo zinazotumika — `.otf` na `.woff`/`.woff2` hazitumiki.
 3. Jina la faili (bila kiambishi) linakuwa jina la fonti kwenye kikundi cha **User**. Kwa mfano, kupakia `MyFont.ttf` huongeza fonti iitwayo `MyFont`.
 

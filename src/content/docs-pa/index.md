@@ -50,8 +50,8 @@ order: 1
 | ਕਮਾਂਡ | ਇਹ ਕੀ ਕਰਦੀ ਹੈ |
 |---------|-------------|
 | [Leader](./commands/leader/) | ਤੀਰ ਅਤੇ ਟੈਕਸਟ ਵਾਲਾ ਮਲਟੀਲੀਡਰ ਐਨੋਟੇਸ਼ਨ ਬਣਾਓ |
-| [Leader+](./commands/leader-add/) | ਮੌਜੂਦਾ ਮਲਟੀਲੀਡਰ ਵਿੱਚ ਵਾਧੂ ਬਾਂਹ ਜੋੜੋ |
-| [Leader−](./commands/leader-remove/) | ਮੌਜੂਦਾ ਮਲਟੀਲੀਡਰ ਵਿੱਚੋਂ ਬਾਂਹ ਹਟਾਓ |
+| [LeaderAdd](./commands/leader-add/) | ਮੌਜੂਦਾ ਮਲਟੀਲੀਡਰ ਵਿੱਚ ਵਾਧੂ ਬਾਂਹ ਜੋੜੋ |
+| [LeaderRemove](./commands/leader-remove/) | ਮੌਜੂਦਾ ਮਲਟੀਲੀਡਰ ਵਿੱਚੋਂ ਬਾਂਹ ਹਟਾਓ |
 | [Dimension Linear](./commands/dim-linear/) | ਖਿਤਿਜੀ ਜਾਂ ਲੰਬਕਾਰੀ ਮਾਪ ਜੋੜੋ |
 | [Dimension Aligned](./commands/dim-aligned/) | ਦੋ ਬਿੰਦੂਆਂ ਦੇ ਅਨੁਸਾਰ ਸੰਰੇਖਿਤ ਮਾਪ ਜੋੜੋ |
 | [Dimension Continue](./commands/dim-continue/) | ਆਖਰੀ ਮਾਪ ਤੋਂ ਨਵਾਂ ਮਾਪ ਜੋੜੋ |
@@ -99,7 +99,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | ਇੱਕ ਇਕਾਈ ਤੋਂ ਦੂਜੀਆਂ ਵਿੱਚ ਰੰਗ, ਲੇਅਰ ਅਤੇ ਹੋਰ ਗੁਣ ਕਾਪੀ ਕਰੋ |
 | [Font Manager](./commands/font-manager/) | ਫੌਂਟ ਬ੍ਰਾਊਜ਼ ਕਰੋ, ਚੁਣੋ, ਅਤੇ ਕਸਟਮ TTF ਫੌਂਟ ਅੱਪਲੋਡ ਕਰੋ |
-| [Font+](./commands/font-add/) | ਟਰਮੀਨਲ ਤੋਂ ਸਿੱਧਾ ਕਸਟਮ TTF ਫੌਂਟ ਅੱਪਲੋਡ ਕਰੋ |
+| [FontAdd](./commands/font-add/) | ਟਰਮੀਨਲ ਤੋਂ ਸਿੱਧਾ ਕਸਟਮ TTF ਫੌਂਟ ਅੱਪਲੋਡ ਕਰੋ |
 | [Hatch Manager](./commands/hatch-manager/) | hatch ਪੈਟਰਨ ਲਾਇਬ੍ਰੇਰੀ ਬ੍ਰਾਊਜ਼ ਕਰੋ ਅਤੇ .pat ਫਾਈਲਾਂ ਅੱਪਲੋਡ ਕਰੋ |
 
 ## ਫ਼ਾਈਲ

@@ -28,7 +28,7 @@ I-click ang alinmang font sa listahan para i-preview ito sa kanan — pangalan, 
 
 ## Pag-upload ng Custom Font
 
-1. I-click ang **Add Font** sa footer ng dialog (o i-type ang [`Font+`](../font-add/) sa terminal para direktang buksan ang file picker).
+1. I-click ang **Add Font** sa footer ng dialog (o i-type ang [`FontAdd`](../font-add/) sa terminal para direktang buksan ang file picker).
 2. Pumili ng `.ttf` file. TrueType fonts lang ang suportado — hindi suportado ang `.otf` at `.woff`/`.woff2`.
 3. Ang pangalan ng file (walang extension) ang magiging pangalan ng font sa grupong **User**. Halimbawa, ang pag-upload ng `MyFont.ttf` ay magdaragdag ng font na pinangalanang `MyFont`.
 

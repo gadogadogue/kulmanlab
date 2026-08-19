@@ -1,18 +1,18 @@
 ---
-title: Font+ — Przesyłanie własnej czcionki TTF z terminala
-description: Polecenie Font+ otwiera systemowe okno wyboru pliku, aby przesłać czcionkę .ttf, bez wcześniejszego otwierania okna dialogowego Font Manager. To ten sam mechanizm przesyłania, który uruchamia przycisk „Add Font” w Font Manager, dostępny tutaj jako osobne polecenie terminala.
-keywords: [polecenie font add, polecenie font+, przesyłanie ttf terminal, niestandardowa czcionka CAD, kulmanlab]
+title: FontAdd — Przesyłanie własnej czcionki TTF z terminala
+description: Polecenie FontAdd otwiera systemowe okno wyboru pliku, aby przesłać czcionkę .ttf, bez wcześniejszego otwierania okna dialogowego Font Manager. To ten sam mechanizm przesyłania, który uruchamia przycisk „Add Font” w Font Manager, dostępny tutaj jako osobne polecenie terminala.
+keywords: [polecenie font add, polecenie fontadd, przesyłanie ttf terminal, niestandardowa czcionka CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Polecenie `Font+` otwiera systemowe okno wyboru pliku, aby przesłać własną czcionkę `.ttf`, bez wcześniejszego otwierania okna dialogowego [Font Manager](../font-manager/). To ten sam mechanizm przesyłania, który uruchamia przycisk **Add Font** w Font Manager — Font+ to po prostu bezpośrednia droga do niego z terminala.
+Polecenie `FontAdd` otwiera systemowe okno wyboru pliku, aby przesłać własną czcionkę `.ttf`, bez wcześniejszego otwierania okna dialogowego [Font Manager](../font-manager/). To ten sam mechanizm przesyłania, który uruchamia przycisk **Add Font** w Font Manager — FontAdd to po prostu bezpośrednia droga do niego z terminala.
 
 ## Przesyłanie czcionki
 
-1. Wpisz `Font+` w terminalu lub kliknij **Add Font** w stopce okna dialogowego [Font Manager](../font-manager/).
+1. Wpisz `FontAdd` w terminalu lub kliknij **Add Font** w stopce okna dialogowego [Font Manager](../font-manager/).
 2. Wybierz plik `.ttf` w systemowym oknie wyboru. Obsługiwane są tylko czcionki TrueType — `.otf` oraz `.woff`/`.woff2` nie są obsługiwane.
 
 Polecenie kończy się, gdy tylko otworzy się okno wyboru pliku — nie ma dalszego kliknięcia ani wpisywania w terminalu. Czcionka zostaje zarejestrowana i pojawia się w grupie **User** zaraz po wybraniu pliku.
@@ -25,7 +25,7 @@ Polecenie kończy się, gdy tylko otworzy się okno wyboru pliku — nie ma dals
 
 ## Skróty klawiaturowe
 
-Font+ nie ma własnej obsługi klawiatury — całe polecenie sprowadza się do natywnego okna wyboru pliku przeglądarki. Anulowanie tego okna (lub niewybranie pliku) pozostawia listę czcionek bez zmian.
+FontAdd nie ma własnej obsługi klawiatury — całe polecenie sprowadza się do natywnego okna wyboru pliku przeglądarki. Anulowanie tego okna (lub niewybranie pliku) pozostawia listę czcionek bez zmian.
 
 ## Powiązane polecenia
 

@@ -51,8 +51,8 @@ Bienvenue dans la référence des commandes **KulmanLab CAD**. [KulmanLab CAD](h
 | Commande | Ce qu'elle fait |
 |----------|----------------|
 | [Leader](./commands/leader/) | Trace une annotation multi-repère avec pointe de flèche et texte |
-| [Leader+](./commands/leader-add/) | Ajoute un bras supplémentaire à un multi-repère existant |
-| [Leader−](./commands/leader-remove/) | Supprime un bras d'un multi-repère existant |
+| [LeaderAdd](./commands/leader-add/) | Ajoute un bras supplémentaire à un multi-repère existant |
+| [LeaderRemove](./commands/leader-remove/) | Supprime un bras d'un multi-repère existant |
 | [Dimension Linear](./commands/dim-linear/) | Ajoute une cote horizontale ou verticale |
 | [Dimension Aligned](./commands/dim-aligned/) | Ajoute une cote alignée sur deux points |
 | [Dimension Continue](./commands/dim-continue/) | Enchaîne une nouvelle cote à partir de la dernière |
@@ -101,7 +101,7 @@ Bienvenue dans la référence des commandes **KulmanLab CAD**. [KulmanLab CAD](h
 |----------|----------------|
 | [Match Properties](./commands/match-properties/) | Copie la couleur, le calque et d'autres propriétés d'une entité vers d'autres |
 | [Font Manager](./commands/font-manager/) | Parcourez, sélectionnez et téléversez des polices TTF personnalisées |
-| [Font+](./commands/font-add/) | Téléversez une police TTF personnalisée directement depuis le terminal |
+| [FontAdd](./commands/font-add/) | Téléversez une police TTF personnalisée directement depuis le terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Parcourez la bibliothèque de motifs de hachures et téléversez des fichiers .pat |
 
 ## Fichier

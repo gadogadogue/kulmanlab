@@ -1,17 +1,17 @@
 ---
-title: Lệnh Leader+ — Thêm Cánh Tay Mũi Tên vào Đường Dẫn Đa
-description: Lệnh Leader+ thêm một cánh tay mũi tên mới vào đường dẫn đa hiện có. Cánh tay mới chia sẻ đoạn gấp khúc, văn bản và tất cả kiểu dáng của đường dẫn đã chọn. Hai lần nhấp — chọn đường dẫn, đặt đầu mũi tên mới.
+title: Lệnh LeaderAdd — Thêm Cánh Tay Mũi Tên vào Đường Dẫn Đa
+description: Lệnh LeaderAdd thêm một cánh tay mũi tên mới vào đường dẫn đa hiện có. Cánh tay mới chia sẻ đoạn gấp khúc, văn bản và tất cả kiểu dáng của đường dẫn đã chọn. Hai lần nhấp — chọn đường dẫn, đặt đầu mũi tên mới.
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Lệnh `leader+` thêm một cánh tay mũi tên mới vào một đường dẫn đa hiện có. Cánh tay mới chỉ từ đoạn gấp khúc hiện có của đường dẫn đến đầu mũi tên mới bạn nhấp. Tất cả kiểu dáng đều được kế thừa từ đường dẫn đã chọn.
+Lệnh `LeaderAdd` thêm một cánh tay mũi tên mới vào một đường dẫn đa hiện có. Cánh tay mới chỉ từ đoạn gấp khúc hiện có của đường dẫn đến đầu mũi tên mới bạn nhấp. Tất cả kiểu dáng đều được kế thừa từ đường dẫn đã chọn.
 
 ## Thêm cánh tay
 
-1. Gõ `leader+` trong terminal.
+1. Gõ `LeaderAdd` trong terminal.
 2. **Nhấp một đường dẫn đa hiện có** để chọn nó.
 3. **Nhấp đầu mũi tên mới**, hoặc gõ `X,Y` rồi nhấn **Enter** để nhập tọa độ chính xác. Đường xem trước hiển thị từ con trỏ đến đoạn gấp khúc của đường dẫn.
 
@@ -38,4 +38,4 @@ Cánh tay được đặt và lệnh vẫn hoạt động — bạn có thể ng
 | Lệnh | Tác dụng |
 |------|---------|
 | [Leader](../leader/) | Tạo một đường dẫn đa hoàn toàn mới |
-| [Leader−](../leader-remove/) | Xóa một cánh tay khỏi đường dẫn đa có từ hai cánh tay trở lên |
+| [LeaderRemove](../leader-remove/) | Xóa một cánh tay khỏi đường dẫn đa có từ hai cánh tay trở lên |

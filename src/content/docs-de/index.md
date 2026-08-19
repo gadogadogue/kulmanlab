@@ -51,8 +51,8 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 | Befehl | Funktion |
 |--------|----------|
 | [Leader](./commands/leader/) | Mehrfach-Hinweislinie mit Pfeilspitze und Text zeichnen |
-| [Leader+](./commands/leader-add/) | Zusätzlichen Arm zu einer vorhandenen Mehrfach-Hinweislinie hinzufügen |
-| [Leader−](./commands/leader-remove/) | Arm von einer vorhandenen Mehrfach-Hinweislinie entfernen |
+| [LeaderAdd](./commands/leader-add/) | Zusätzlichen Arm zu einer vorhandenen Mehrfach-Hinweislinie hinzufügen |
+| [LeaderRemove](./commands/leader-remove/) | Arm von einer vorhandenen Mehrfach-Hinweislinie entfernen |
 | [Dimension Linear](./commands/dim-linear/) | Horizontale oder vertikale Bemaßung hinzufügen |
 | [Dimension Aligned](./commands/dim-aligned/) | An zwei Punkte ausgerichtete Bemaßung hinzufügen |
 | [Dimension Continue](./commands/dim-continue/) | Neue Bemaßung an die letzte anschließen |
@@ -101,7 +101,7 @@ Willkommen bei der **KulmanLab CAD** Befehlsreferenz. [KulmanLab CAD](https://ku
 |--------|----------|
 | [Match Properties](./commands/match-properties/) | Farbe, Ebene und andere Eigenschaften von einem Element auf andere übertragen |
 | [Font Manager](./commands/font-manager/) | Schriftarten durchsuchen, auswählen und eigene TTF-Dateien hochladen |
-| [Font+](./commands/font-add/) | Eigene TTF-Schriftart direkt aus dem Terminal hochladen |
+| [FontAdd](./commands/font-add/) | Eigene TTF-Schriftart direkt aus dem Terminal hochladen |
 | [Hatch Manager](./commands/hatch-manager/) | Die Hatch-Musterbibliothek durchsuchen und .pat-Dateien hochladen |
 
 ## Datei

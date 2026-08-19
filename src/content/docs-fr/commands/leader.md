@@ -107,8 +107,8 @@ Voir [Éditeur de texte — rich mode](../../interface/text-editor/#rich-mode) p
 
 ## Ajouter et supprimer des bras
 
-- Pour ajouter un bras de pointe de flèche supplémentaire à un répère existant : [Leader+](../leader-add/)
-- Pour supprimer un bras d'un répère qui en a deux ou plus : [Leader−](../leader-remove/)
+- Pour ajouter un bras de pointe de flèche supplémentaire à un répère existant : [LeaderAdd](../leader-add/)
+- Pour supprimer un bras d'un répère qui en a deux ou plus : [LeaderRemove](../leader-remove/)
 
 ## DXF — importation uniquement
 

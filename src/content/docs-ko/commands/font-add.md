@@ -1,18 +1,18 @@
 ---
-title: Font+ 명령어 — 터미널에서 사용자 지정 TTF 폰트 업로드
-description: Font+ 명령어는 먼저 Font Manager 대화 상자를 열지 않고 .ttf 폰트를 업로드할 수 있도록 시스템 파일 선택 창을 엽니다. Font Manager의 "Add Font" 버튼이 실행하는 것과 동일한 업로드를, 여기서는 독립된 터미널 명령어로 제공합니다.
-keywords: [font add 명령어, font+ 명령어, ttf 업로드 터미널, 사용자 지정 폰트 CAD, kulmanlab]
+title: FontAdd 명령어 — 터미널에서 사용자 지정 TTF 폰트 업로드
+description: FontAdd 명령어는 먼저 Font Manager 대화 상자를 열지 않고 .ttf 폰트를 업로드할 수 있도록 시스템 파일 선택 창을 엽니다. Font Manager의 "Add Font" 버튼이 실행하는 것과 동일한 업로드를, 여기서는 독립된 터미널 명령어로 제공합니다.
+keywords: [font add 명령어, fontadd 명령어, ttf 업로드 터미널, 사용자 지정 폰트 CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-`Font+` 명령어는 먼저 [Font Manager](../font-manager/) 대화 상자를 열지 않고 사용자 지정 `.ttf` 폰트를 업로드할 수 있도록 시스템 파일 선택 창을 엽니다. Font Manager의 **Add Font** 버튼이 실행하는 것과 동일한 업로드입니다 — Font+는 터미널에서 그곳으로 바로 가는 경로일 뿐입니다.
+`FontAdd` 명령어는 먼저 [Font Manager](../font-manager/) 대화 상자를 열지 않고 사용자 지정 `.ttf` 폰트를 업로드할 수 있도록 시스템 파일 선택 창을 엽니다. Font Manager의 **Add Font** 버튼이 실행하는 것과 동일한 업로드입니다 — FontAdd는 터미널에서 그곳으로 바로 가는 경로일 뿐입니다.
 
 ## 폰트 업로드
 
-1. 터미널에 `Font+`를 입력하거나, [Font Manager](../font-manager/) 대화 상자 하단의 **Add Font**를 클릭합니다.
+1. 터미널에 `FontAdd`를 입력하거나, [Font Manager](../font-manager/) 대화 상자 하단의 **Add Font**를 클릭합니다.
 2. 시스템 선택 창에서 `.ttf` 파일을 선택합니다. TrueType 폰트만 지원됩니다 — `.otf` 및 `.woff`/`.woff2`는 지원되지 않습니다.
 
 파일 선택 창이 열리는 즉시 명령어가 종료됩니다 — 이후 별도의 클릭이나 터미널 입력은 없습니다. 파일을 선택하는 즉시 폰트가 등록되어 **User** 그룹에 나타납니다.
@@ -25,7 +25,7 @@ order: 3
 
 ## 키보드 참고
 
-Font+에는 자체적인 키보드 조작이 없습니다 — 명령어 전체가 브라우저의 기본 파일 선택 대화 상자로 구성됩니다. 이 대화 상자를 취소하거나(또는 파일을 선택하지 않으면) 폰트 목록은 변경되지 않습니다.
+FontAdd에는 자체적인 키보드 조작이 없습니다 — 명령어 전체가 브라우저의 기본 파일 선택 대화 상자로 구성됩니다. 이 대화 상자를 취소하거나(또는 파일을 선택하지 않으면) 폰트 목록은 변경되지 않습니다.
 
 ## 관련 명령어
 

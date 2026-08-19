@@ -107,8 +107,8 @@ Zie [Teksteditor — rijke modus](../../interface/text-editor/#rich-mode) voor d
 
 ## Armen toevoegen en verwijderen
 
-- Om een extra pijlpuntarm toe te voegen aan een bestaande leader: [Leader+](../leader-add/)
-- Om een arm te verwijderen van een leader met twee of meer: [Leader−](../leader-remove/)
+- Om een extra pijlpuntarm toe te voegen aan een bestaande leader: [LeaderAdd](../leader-add/)
+- Om een arm te verwijderen van een leader met twee of meer: [LeaderRemove](../leader-remove/)
 
 ## DXF — alleen import
 

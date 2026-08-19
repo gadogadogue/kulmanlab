@@ -1,18 +1,18 @@
 ---
-title: Leader+ — Aggiungere un Braccio con Freccia a un Multileader
-description: Il comando Leader+ aggiunge un nuovo braccio con punta di freccia a un multileader esistente. Il nuovo braccio condivide il dogleg, il testo e tutto lo stile del leader selezionato. Due clic — seleziona il leader, posiziona la nuova punta.
-keywords: [CAD leader aggiungi braccio, comando leader+, aggiungi freccia al leader, braccio multileader, kulmanlab]
+title: LeaderAdd — Aggiungere un Braccio con Freccia a un Multileader
+description: Il comando LeaderAdd aggiunge un nuovo braccio con punta di freccia a un multileader esistente. Il nuovo braccio condivide il dogleg, il testo e tutto lo stile del leader selezionato. Due clic — seleziona il leader, posiziona la nuova punta.
+keywords: [CAD leader aggiungi braccio, comando leaderadd, aggiungi freccia al leader, braccio multileader, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Il comando `leader+` aggiunge un nuovo braccio con punta di freccia a un multileader esistente. Il nuovo braccio parte dal dogleg esistente del leader fino a una nuova punta di freccia che clicchi. Tutto lo stile — posizione del dogleg, testo, tipo di freccia e dimensione — viene ereditato dal leader selezionato.
+Il comando `LeaderAdd` aggiunge un nuovo braccio con punta di freccia a un multileader esistente. Il nuovo braccio parte dal dogleg esistente del leader fino a una nuova punta di freccia che clicchi. Tutto lo stile — posizione del dogleg, testo, tipo di freccia e dimensione — viene ereditato dal leader selezionato.
 
 ## Aggiungere un braccio
 
-1. Digita `leader+` nel terminale.
+1. Digita `LeaderAdd` nel terminale.
 2. **Clicca un multileader esistente** per selezionarlo.
 3. **Clicca la nuova punta della freccia**, oppure digita `X,Y` e premi **Invio** per una coordinata esatta. Una linea di anteprima mostra dal cursore al dogleg del leader.
 
@@ -57,4 +57,4 @@ Invece di cliccare, puoi digitare una posizione esatta:
 | Comando | Funzione |
 |---------|---------|
 | [Leader](../leader/) | Crea un nuovo multileader da zero |
-| [Leader−](../leader-remove/) | Rimuove un braccio da un multileader con due o più bracci |
+| [LeaderRemove](../leader-remove/) | Rimuove un braccio da un multileader con due o più bracci |

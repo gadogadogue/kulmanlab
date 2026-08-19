@@ -51,8 +51,8 @@ order: 1
 | 명령어 | 기능 |
 |--------|------|
 | [Leader](./commands/leader/) | 화살표와 텍스트가 있는 다중 지시선 주석 그리기 |
-| [Leader+](./commands/leader-add/) | 기존 다중 지시선에 화살표 팔 추가 |
-| [Leader−](./commands/leader-remove/) | 기존 다중 지시선에서 팔 제거 |
+| [LeaderAdd](./commands/leader-add/) | 기존 다중 지시선에 화살표 팔 추가 |
+| [LeaderRemove](./commands/leader-remove/) | 기존 다중 지시선에서 팔 제거 |
 | [Dimension Linear](./commands/dim-linear/) | 수평 또는 수직 치수 추가 |
 | [Dimension Aligned](./commands/dim-aligned/) | 두 점에 정렬된 치수 추가 |
 | [Dimension Continue](./commands/dim-continue/) | 마지막 치수에서 새 치수를 연속으로 추가 |
@@ -101,7 +101,7 @@ order: 1
 |--------|------|
 | [Match Properties](./commands/match-properties/) | 한 객체에서 다른 객체로 색상, 레이어 및 기타 특성 복사 |
 | [Font Manager](./commands/font-manager/) | 글꼴 찾아보기, 선택 및 사용자 지정 TTF 글꼴 업로드 |
-| [Font+](./commands/font-add/) | 터미널에서 바로 사용자 지정 TTF 글꼴 업로드 |
+| [FontAdd](./commands/font-add/) | 터미널에서 바로 사용자 지정 TTF 글꼴 업로드 |
 | [Hatch Manager](./commands/hatch-manager/) | hatch 패턴 라이브러리 찾아보기 및 .pat 파일 업로드 |
 
 ## 파일

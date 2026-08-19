@@ -51,8 +51,8 @@ Velkommen til **KulmanLab CAD**s kommandoreference. [KulmanLab CAD](https://kulm
 | Kommando | Hvad den gør |
 |---------|-------------|
 | [Leader](./commands/leader/) | Tegn en multileader-annotation med pilespids og tekst |
-| [Leader+](./commands/leader-add/) | Tilføj en ekstra arm på en eksisterende multileader |
-| [Leader−](./commands/leader-remove/) | Fjern en arm fra en eksisterende multileader |
+| [LeaderAdd](./commands/leader-add/) | Tilføj en ekstra arm på en eksisterende multileader |
+| [LeaderRemove](./commands/leader-remove/) | Fjern en arm fra en eksisterende multileader |
 | [Dimension Linear](./commands/dim-linear/) | Tilføj et horisontalt eller vertikalt mål |
 | [Dimension Aligned](./commands/dim-aligned/) | Tilføj et mål justeret mod to punkter |
 | [Dimension Continue](./commands/dim-continue/) | Kæd et nyt mål fra det forrige |
@@ -101,7 +101,7 @@ Velkommen til **KulmanLab CAD**s kommandoreference. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopiér farve, lag og andre egenskaber fra én entitet til andre |
 | [Font Manager](./commands/font-manager/) | Gennemse, vælg og upload egne TTF-skrifttyper |
-| [Font+](./commands/font-add/) | Upload en brugerdefineret TTF-skrifttype direkte fra terminalen |
+| [FontAdd](./commands/font-add/) | Upload en brugerdefineret TTF-skrifttype direkte fra terminalen |
 | [Hatch Manager](./commands/hatch-manager/) | Gennemse hatch-mønsterbiblioteket, og upload .pat-filer |
 
 ## Fil

@@ -51,8 +51,8 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 | Arahan | Fungsinya |
 |--------|-----------|
 | [Leader](./commands/leader/) | Lukis anotasi pelbagai pemimpin dengan kepala anak panah dan teks |
-| [Leader+](./commands/leader-add/) | Tambah lengan tambahan pada pelbagai pemimpin sedia ada |
-| [Leader−](./commands/leader-remove/) | Buang lengan daripada pelbagai pemimpin sedia ada |
+| [LeaderAdd](./commands/leader-add/) | Tambah lengan tambahan pada pelbagai pemimpin sedia ada |
+| [LeaderRemove](./commands/leader-remove/) | Buang lengan daripada pelbagai pemimpin sedia ada |
 | [Dimension Linear](./commands/dim-linear/) | Tambah dimensi mendatar atau menegak |
 | [Dimension Aligned](./commands/dim-aligned/) | Tambah dimensi yang selaras dengan dua titik |
 | [Dimension Continue](./commands/dim-continue/) | Rantai dimensi baru dari yang terakhir |
@@ -101,7 +101,7 @@ Selamat datang ke rujukan arahan **KulmanLab CAD**. [KulmanLab CAD](https://kulm
 |--------|-----------|
 | [Match Properties](./commands/match-properties/) | Salin warna, lapisan, dan sifat lain dari satu entiti ke entiti lain |
 | [Font Manager](./commands/font-manager/) | Semak imbas, pilih, dan muat naik fon TTF tersuai |
-| [Font+](./commands/font-add/) | Muat naik fon TTF kustom terus dari terminal |
+| [FontAdd](./commands/font-add/) | Muat naik fon TTF kustom terus dari terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Semak imbas pustaka corak hatch dan muat naik fail .pat |
 
 ## Fail

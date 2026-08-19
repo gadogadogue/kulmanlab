@@ -51,8 +51,8 @@ order: 1
 | کمانڈ | یہ کیا کرتا ہے |
 |---------|-------------|
 | [Leader](./commands/leader/) | تیر کے سر اور متن کے ساتھ ایک ملٹی لیڈر تشریح کھینچیں |
-| [Leader+](./commands/leader-add/) | موجودہ ملٹی لیڈر میں ایک اضافی بازو شامل کریں |
-| [Leader−](./commands/leader-remove/) | موجودہ ملٹی لیڈر سے ایک بازو ہٹائیں |
+| [LeaderAdd](./commands/leader-add/) | موجودہ ملٹی لیڈر میں ایک اضافی بازو شامل کریں |
+| [LeaderRemove](./commands/leader-remove/) | موجودہ ملٹی لیڈر سے ایک بازو ہٹائیں |
 | [Dimension Linear](./commands/dim-linear/) | افقی یا عمودی پیمائش شامل کریں |
 | [Dimension Aligned](./commands/dim-aligned/) | دو نقاط سے سیدھ میں پیمائش شامل کریں |
 | [Dimension Continue](./commands/dim-continue/) | آخری پیمائش سے نئی پیمائش کو جوڑیں |
@@ -100,7 +100,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | ایک شے سے دوسروں تک رنگ، پرت، اور دیگر خصوصیات نقل کریں |
 | [Font Manager](./commands/font-manager/) | فونٹس براؤز کریں، منتخب کریں، اور کسٹم TTF فونٹس اپ لوڈ کریں |
-| [Font+](./commands/font-add/) | ٹرمینل سے براہ راست کسٹم TTF فونٹ اپ لوڈ کریں |
+| [FontAdd](./commands/font-add/) | ٹرمینل سے براہ راست کسٹم TTF فونٹ اپ لوڈ کریں |
 | [Hatch Manager](./commands/hatch-manager/) | hatch پیٹرن لائبریری براؤز کریں اور .pat فائلیں اپ لوڈ کریں |
 
 ## فائل

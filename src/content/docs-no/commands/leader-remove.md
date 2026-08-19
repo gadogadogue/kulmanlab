@@ -1,18 +1,18 @@
 ---
-title: "Leader−-kommando — Fjern en Pilspissarm fra en Multileader"
-description: "Leader−-kommandoen fjerner én pilspissarm fra en multileader som har to eller flere. Hold markøren nær armen du vil fjerne — den nærmeste armen uthevet. Doglegen, teksten og de resterende armene bevares."
-keywords: [CAD fjern lederarm, leader--kommando, fjern pil fra leder, slett multileader-arm, kulmanlab]
+title: "LeaderRemove-kommando — Fjern en Pilspissarm fra en Multileader"
+description: "LeaderRemove-kommandoen fjerner én pilspissarm fra en multileader som har to eller flere. Hold markøren nær armen du vil fjerne — den nærmeste armen uthevet. Doglegen, teksten og de resterende armene bevares."
+keywords: [CAD fjern lederarm, leaderremove-kommando, fjern pil fra leder, slett multileader-arm, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-Kommandoen `leader-` fjerner én pilspissarm fra en eksisterende multileader. Tekstetiketten, doglegen og alle gjenværende armer bevares — kun den valgte armen slettes. En multileader med kun én arm kan ikke få armen sin fjernet.
+Kommandoen `LeaderRemove` fjerner én pilspissarm fra en eksisterende multileader. Tekstetiketten, doglegen og alle gjenværende armer bevares — kun den valgte armen slettes. En multileader med kun én arm kan ikke få armen sin fjernet.
 
 ## Fjerne en arm
 
-1. Skriv `leader-` i terminalen.
+1. Skriv `LeaderRemove` i terminalen.
 2. **Klikk en multileader** som har to eller flere armer. Hvis den klikkede lederen kun har én arm, viser terminalen en feilmelding og venter på en gyldig markering.
 3. **Flytt markøren nær armen** du vil fjerne — den nærmeste armen uthevet med en markør.
 4. **Klikk** for å fjerne den armen.
@@ -49,4 +49,4 @@ Kommandoen måler den vinkelrette avstanden fra markøren til hver arms linjeseg
 | Kommando | Hva den gjør |
 |---------|-------------|
 | [Leader](../leader/) | Opprett en ny multileader fra bunnen av |
-| [Leader+](../leader-add/) | Legg til en arm på en eksisterende multileader |
+| [LeaderAdd](../leader-add/) | Legg til en arm på en eksisterende multileader |

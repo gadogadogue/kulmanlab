@@ -107,8 +107,8 @@ Duba [Naʼurar Gyaran Rubutu — rich mode](../../interface/text-editor/#rich-mo
 
 ## Ƙarawa da cirewa na hannaye
 
-- Don ƙara ƙarin hannu na kibiya zuwa leader da ke akwai: [Leader+](../leader-add/)
-- Don cire hannu daga leader wanda yake da biyu ko fiye: [Leader−](../leader-remove/)
+- Don ƙara ƙarin hannu na kibiya zuwa leader da ke akwai: [LeaderAdd](../leader-add/)
+- Don cire hannu daga leader wanda yake da biyu ko fiye: [LeaderRemove](../leader-remove/)
 
 ## DXF — shigo da shi kawai
 

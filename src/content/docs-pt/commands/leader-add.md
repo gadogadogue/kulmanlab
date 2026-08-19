@@ -1,18 +1,18 @@
 ---
-title: Comando Leader+ — Adicionar um Braço com Seta a um Multileader
-description: O comando Leader+ adiciona um novo braço com ponta de seta a um multileader existente. O novo braço compartilha o dogleg, texto e todo o estilo do leader selecionado. Dois cliques — selecione o leader, posicione a nova ponta.
-keywords: [CAD leader adicionar braço, comando leader+, adicionar seta ao leader, braço multileader, kulmanlab]
+title: Comando LeaderAdd — Adicionar um Braço com Seta a um Multileader
+description: O comando LeaderAdd adiciona um novo braço com ponta de seta a um multileader existente. O novo braço compartilha o dogleg, texto e todo o estilo do leader selecionado. Dois cliques — selecione o leader, posicione a nova ponta.
+keywords: [CAD leader adicionar braço, comando leaderadd, adicionar seta ao leader, braço multileader, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-O comando `leader+` adiciona um novo braço com ponta de seta a um multileader existente. O novo braço parte do dogleg existente do leader até uma nova ponta de seta que você clica. Todo o estilo — posição do dogleg, texto, tipo de seta e tamanho — é herdado do leader selecionado.
+O comando `LeaderAdd` adiciona um novo braço com ponta de seta a um multileader existente. O novo braço parte do dogleg existente do leader até uma nova ponta de seta que você clica. Todo o estilo — posição do dogleg, texto, tipo de seta e tamanho — é herdado do leader selecionado.
 
 ## Adicionando um braço
 
-1. Digite `leader+` no terminal.
+1. Digite `LeaderAdd` no terminal.
 2. **Clique em um multileader existente** para selecioná-lo.
 3. **Clique na nova ponta da seta**, ou digite `X,Y` e pressione **Enter** para uma coordenada exata. Uma linha de prévia é exibida do cursor ao dogleg do leader.
 
@@ -57,4 +57,4 @@ Em vez de clicar, você pode digitar uma posição exata:
 | Comando | Função |
 |---------|--------|
 | [Leader](../leader/) | Cria um novo multileader do zero |
-| [Leader−](../leader-remove/) | Remove um braço de um multileader com dois ou mais braços |
+| [LeaderRemove](../leader-remove/) | Remove um braço de um multileader com dois ou mais braços |

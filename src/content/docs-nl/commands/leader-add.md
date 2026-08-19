@@ -1,18 +1,18 @@
 ---
-title: Leader+ Commando — Pijlpuntarm Toevoegen aan een Multileader
-description: Het Leader+-commando voegt een nieuwe pijlpuntarm toe aan een bestaande multileader. De nieuwe arm deelt de dogleg, tekst en alle opmaak van de geselecteerde leader. Twee klikken — leader selecteren, nieuwe tip plaatsen.
-keywords: [CAD leader arm toevoegen, leader+ commando, pijl toevoegen aan leader, multileader arm, kulmanlab]
+title: LeaderAdd Commando — Pijlpuntarm Toevoegen aan een Multileader
+description: Het LeaderAdd-commando voegt een nieuwe pijlpuntarm toe aan een bestaande multileader. De nieuwe arm deelt de dogleg, tekst en alle opmaak van de geselecteerde leader. Twee klikken — leader selecteren, nieuwe tip plaatsen.
+keywords: [CAD leader arm toevoegen, leaderadd commando, pijl toevoegen aan leader, multileader arm, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Het `leader+`-commando voegt een nieuwe pijlpuntarm toe aan een bestaande multileader. De nieuwe arm loopt van de bestaande dogleg van de leader naar een nieuwe pijlpunt-tip die u aanklikt. Alle opmaak — dogleg-positie, tekst, pijlpunttype en grootte — wordt overgenomen van de geselecteerde leader.
+Het `LeaderAdd`-commando voegt een nieuwe pijlpuntarm toe aan een bestaande multileader. De nieuwe arm loopt van de bestaande dogleg van de leader naar een nieuwe pijlpunt-tip die u aanklikt. Alle opmaak — dogleg-positie, tekst, pijlpunttype en grootte — wordt overgenomen van de geselecteerde leader.
 
 ## Een arm toevoegen
 
-1. Typ `leader+` in de terminal.
+1. Typ `LeaderAdd` in de terminal.
 2. **Klik op een bestaande multileader** om deze te selecteren.
 3. **Klik de nieuwe pijlpunt-tip**, of typ `X,Y` en druk op **Enter** voor een exacte coördinaat. Een previewlijn loopt van de cursor naar de dogleg van de leader.
 
@@ -57,4 +57,4 @@ In plaats van klikken kunt u een exacte positie typen:
 | Commando | Wat het doet |
 |---------|-------------|
 | [Leader](../leader/) | Maak een gloednieuwe multileader vanaf nul |
-| [Leader−](../leader-remove/) | Verwijder een arm van een multileader met twee of meer |
+| [LeaderRemove](../leader-remove/) | Verwijder een arm van een multileader met twee of meer |

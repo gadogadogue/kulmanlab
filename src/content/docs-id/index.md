@@ -51,8 +51,8 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 | Perintah | Fungsi |
 |---------|-------------|
 | [Leader](./commands/leader/) | Menggambar anotasi multileader dengan kepala panah dan teks |
-| [Leader+](./commands/leader-add/) | Menambahkan lengan tambahan ke multileader yang ada |
-| [Leader−](./commands/leader-remove/) | Menghapus lengan dari multileader yang ada |
+| [LeaderAdd](./commands/leader-add/) | Menambahkan lengan tambahan ke multileader yang ada |
+| [LeaderRemove](./commands/leader-remove/) | Menghapus lengan dari multileader yang ada |
 | [Dimension Linear](./commands/dim-linear/) | Menambahkan dimensi horizontal atau vertikal |
 | [Dimension Aligned](./commands/dim-aligned/) | Menambahkan dimensi yang sejajar dengan dua titik |
 | [Dimension Continue](./commands/dim-continue/) | Merantai dimensi baru dari dimensi terakhir |
@@ -101,7 +101,7 @@ Selamat datang di referensi perintah **KulmanLab CAD**. [KulmanLab CAD](https://
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Menyalin warna, layer, dan properti lain dari satu entitas ke entitas lainnya |
 | [Font Manager](./commands/font-manager/) | Jelajahi, pilih, dan unggah font TTF khusus |
-| [Font+](./commands/font-add/) | Unggah font TTF kustom langsung dari terminal |
+| [FontAdd](./commands/font-add/) | Unggah font TTF kustom langsung dari terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Jelajahi pustaka pola hatch dan unggah file .pat |
 
 ## File

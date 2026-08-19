@@ -28,7 +28,7 @@ Klik en hvilken som helst skrifttype i listen for at forhåndsvise den til højr
 
 ## Uploade en brugerdefineret skrifttype
 
-1. Klik **Add Font** i dialogens fodtekst (eller skriv [`Font+`](../font-add/) i terminalen for at åbne filvælgeren direkte).
+1. Klik **Add Font** i dialogens fodtekst (eller skriv [`FontAdd`](../font-add/) i terminalen for at åbne filvælgeren direkte).
 2. Vælg en `.ttf`-fil. Kun TrueType-skrifttyper understøttes — `.otf` og `.woff`/`.woff2` understøttes ikke.
 3. Filnavnet (uden filtypen) bliver skrifttypens navn i **User**-gruppen. For eksempel tilføjer upload af `MyFont.ttf` en skrifttype ved navn `MyFont`.
 

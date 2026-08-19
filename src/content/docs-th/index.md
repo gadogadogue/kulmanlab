@@ -51,8 +51,8 @@ order: 1
 | คำสั่ง | สิ่งที่ทำ |
 |---------|-----------|
 | [Leader](./commands/leader/) | วาดคำอธิบายหลายหัวลูกศรพร้อมหัวลูกศรและข้อความ |
-| [Leader+](./commands/leader-add/) | เพิ่มแขนพิเศษให้กับหัวลูกศรหลายหัวที่มีอยู่ |
-| [Leader−](./commands/leader-remove/) | ลบแขนออกจากหัวลูกศรหลายหัว |
+| [LeaderAdd](./commands/leader-add/) | เพิ่มแขนพิเศษให้กับหัวลูกศรหลายหัวที่มีอยู่ |
+| [LeaderRemove](./commands/leader-remove/) | ลบแขนออกจากหัวลูกศรหลายหัว |
 | [Dimension Linear](./commands/dim-linear/) | เพิ่มมิติแนวนอนหรือแนวตั้ง |
 | [Dimension Aligned](./commands/dim-aligned/) | เพิ่มมิติที่ตรงกับสองจุด |
 | [Dimension Continue](./commands/dim-continue/) | ต่อเชื่อมมิติใหม่จากมิติล่าสุด |
@@ -101,7 +101,7 @@ order: 1
 |---------|-----------|
 | [Match Properties](./commands/match-properties/) | คัดลอกสี เลเยอร์ และคุณสมบัติอื่นๆ จากวัตถุหนึ่งไปยังวัตถุอื่น |
 | [Font Manager](./commands/font-manager/) | เรียกดู เลือก และอัปโหลดฟอนต์ TTF ที่กำหนดเอง |
-| [Font+](./commands/font-add/) | อัปโหลดฟอนต์ TTF กำหนดเองโดยตรงจากเทอร์มินัล |
+| [FontAdd](./commands/font-add/) | อัปโหลดฟอนต์ TTF กำหนดเองโดยตรงจากเทอร์มินัล |
 | [Hatch Manager](./commands/hatch-manager/) | เรียกดูไลบรารีลวดลาย hatch และอัปโหลดไฟล์ .pat |
 
 ## ไฟล์

@@ -1,18 +1,18 @@
 ---
-title: คำสั่ง Leader+ — เพิ่มแขนหัวลูกศรให้กับ Multileader ที่มีอยู่
-description: คำสั่ง Leader+ เพิ่มแขนหัวลูกศรใหม่ให้กับ multileader ที่มีอยู่ แขนใหม่แชร์ dogleg ข้อความ และสไตล์ทั้งหมดของ leader ที่เลือก สองคลิก — เลือก leader วาง tip ใหม่
-keywords: [CAD leader เพิ่มแขน, คำสั่ง leader+, เพิ่มลูกศรให้ leader, แขน multileader, kulmanlab]
+title: คำสั่ง LeaderAdd — เพิ่มแขนหัวลูกศรให้กับ Multileader ที่มีอยู่
+description: คำสั่ง LeaderAdd เพิ่มแขนหัวลูกศรใหม่ให้กับ multileader ที่มีอยู่ แขนใหม่แชร์ dogleg ข้อความ และสไตล์ทั้งหมดของ leader ที่เลือก สองคลิก — เลือก leader วาง tip ใหม่
+keywords: [CAD leader เพิ่มแขน, คำสั่ง leaderadd, เพิ่มลูกศรให้ leader, แขน multileader, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-คำสั่ง `leader+` เพิ่มแขนหัวลูกศรใหม่ให้กับ multileader ที่มีอยู่ แขนใหม่ชี้จาก dogleg ที่มีอยู่ของ leader ไปยัง tip หัวลูกศรใหม่ที่คุณคลิก สไตล์ทั้งหมด — ตำแหน่ง dogleg ข้อความ ประเภทหัวลูกศร และขนาด — ถูกรับทอดจาก leader ที่เลือก
+คำสั่ง `LeaderAdd` เพิ่มแขนหัวลูกศรใหม่ให้กับ multileader ที่มีอยู่ แขนใหม่ชี้จาก dogleg ที่มีอยู่ของ leader ไปยัง tip หัวลูกศรใหม่ที่คุณคลิก สไตล์ทั้งหมด — ตำแหน่ง dogleg ข้อความ ประเภทหัวลูกศร และขนาด — ถูกรับทอดจาก leader ที่เลือก
 
 ## การเพิ่มแขน
 
-1. พิมพ์ `leader+` ในเทอร์มินัล
+1. พิมพ์ `LeaderAdd` ในเทอร์มินัล
 2. **คลิก multileader ที่มีอยู่** เพื่อเลือก
 3. **คลิก tip หัวลูกศรใหม่** หรือพิมพ์ `X,Y` แล้วกด **Enter** เพื่อป้อนพิกัดที่แน่นอน เส้นตัวอย่างแสดงจากเคอร์เซอร์ไปยัง dogleg ของ leader
 
@@ -57,4 +57,4 @@ order: 2
 | คำสั่ง | สิ่งที่ทำ |
 |--------|-----------|
 | [Leader](../leader/) | สร้าง multileader ใหม่ทั้งหมดตั้งแต่ต้น |
-| [Leader−](../leader-remove/) | ลบแขนจาก multileader ที่มีสองแขนหรือมากกว่า |
+| [LeaderRemove](../leader-remove/) | ลบแขนจาก multileader ที่มีสองแขนหรือมากกว่า |

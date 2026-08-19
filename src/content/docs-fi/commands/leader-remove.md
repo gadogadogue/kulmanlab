@@ -1,18 +1,18 @@
 ---
-title: "Leader−-komento — Poista Nuolenkärkihaara Multileaderista"
-description: "Leader−-komento poistaa yhden nuolenkärkihaaran multileaderista, jossa on kaksi tai useampi. Pidä kohdistinta lähellä poistettavaa haaraa — lähin haara korostuu. Dogleg, teksti ja jäljellä olevat haarat säilyvät."
-keywords: [CAD poista johtimen haara, leader--komento, poista nuoli johtimesta, poista multileader-haara, kulmanlab]
+title: "LeaderRemove-komento — Poista Nuolenkärkihaara Multileaderista"
+description: "LeaderRemove-komento poistaa yhden nuolenkärkihaaran multileaderista, jossa on kaksi tai useampi. Pidä kohdistinta lähellä poistettavaa haaraa — lähin haara korostuu. Dogleg, teksti ja jäljellä olevat haarat säilyvät."
+keywords: [CAD poista johtimen haara, leaderremove-komento, poista nuoli johtimesta, poista multileader-haara, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-Komento `leader-` poistaa yhden nuolenkärkihaaran olemassa olevasta multileaderista. Tekstimerkintä, dogleg ja kaikki jäljellä olevat haarat säilyvät — vain valittu haara poistetaan. Multileaderista, jossa on vain yksi haara, ei voida poistaa sen haaraa.
+Komento `LeaderRemove` poistaa yhden nuolenkärkihaaran olemassa olevasta multileaderista. Tekstimerkintä, dogleg ja kaikki jäljellä olevat haarat säilyvät — vain valittu haara poistetaan. Multileaderista, jossa on vain yksi haara, ei voida poistaa sen haaraa.
 
 ## Haaran poistaminen
 
-1. Kirjoita `leader-` terminaaliin.
+1. Kirjoita `LeaderRemove` terminaaliin.
 2. **Napsauta multileaderia**, jossa on kaksi tai useampi haara. Jos napsautetulla johtimella on vain yksi haara, terminaali näyttää virheen ja odottaa kelvollista valintaa.
 3. **Siirrä kohdistin lähelle haaraa**, jonka haluat poistaa — lähin haara korostuu merkillä.
 4. **Napsauta** poistaaksesi kyseisen haaran.
@@ -49,4 +49,4 @@ Komento mittaa kohtisuoran etäisyyden kohdistimesta jokaisen haaran viivasegmen
 | Komento | Mitä se tekee |
 |---------|-------------|
 | [Leader](../leader/) | Luo uusi multileader alusta |
-| [Leader+](../leader-add/) | Lisää haara olemassa olevaan multileaderiin |
+| [LeaderAdd](../leader-add/) | Lisää haara olemassa olevaan multileaderiin |

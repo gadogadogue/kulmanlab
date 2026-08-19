@@ -28,7 +28,7 @@ Klicken Sie auf eine beliebige Schriftart in der Liste, um sie rechts in der Vor
 
 ## Eigene Schriftart hochladen
 
-1. Klicken Sie im Fußbereich des Dialogs auf **Add Font** (oder geben Sie [`Font+`](../font-add/) im Terminal ein, um die Dateiauswahl direkt zu öffnen).
+1. Klicken Sie im Fußbereich des Dialogs auf **Add Font** (oder geben Sie [`FontAdd`](../font-add/) im Terminal ein, um die Dateiauswahl direkt zu öffnen).
 2. Wählen Sie eine `.ttf`-Datei aus. Es werden nur TrueType-Schriftarten unterstützt — `.otf` sowie `.woff`/`.woff2` nicht.
 3. Der Dateiname (ohne Erweiterung) wird zum Namen der Schriftart in der Gruppe **User**. Wenn Sie beispielsweise `MyFont.ttf` hochladen, wird eine Schriftart namens `MyFont` hinzugefügt.
 

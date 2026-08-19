@@ -1,18 +1,18 @@
 ---
-title: "Leader− — Eliminar un brazo de flecha de una multireferencia"
-description: "El comando Leader− elimina un brazo de punta de flecha de una multireferencia que tiene dos o más. Sitúa el cursor cerca del brazo a eliminar — el brazo más cercano se resalta. El quiebre, el texto y los brazos restantes se conservan."
-keywords: [eliminar brazo de referencia CAD, comando leader-, eliminar flecha de referencia, eliminar brazo de multireferencia, kulmanlab]
+title: "LeaderRemove — Eliminar un brazo de flecha de una multireferencia"
+description: "El comando LeaderRemove elimina un brazo de punta de flecha de una multireferencia que tiene dos o más. Sitúa el cursor cerca del brazo a eliminar — el brazo más cercano se resalta. El quiebre, el texto y los brazos restantes se conservan."
+keywords: [eliminar brazo de referencia CAD, comando leaderremove, eliminar flecha de referencia, eliminar brazo de multireferencia, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-El comando `leader-` elimina un brazo de punta de flecha de una multireferencia existente. La etiqueta de texto, el quiebre y todos los brazos restantes se conservan — solo se elimina el brazo seleccionado. Una multireferencia con un solo brazo no puede tener su brazo eliminado.
+El comando `LeaderRemove` elimina un brazo de punta de flecha de una multireferencia existente. La etiqueta de texto, el quiebre y todos los brazos restantes se conservan — solo se elimina el brazo seleccionado. Una multireferencia con un solo brazo no puede tener su brazo eliminado.
 
 ## Eliminar un brazo
 
-1. Escribe `leader-` en el terminal.
+1. Escribe `LeaderRemove` en el terminal.
 2. **Haz clic en una multireferencia** que tenga dos o más brazos. Si la referencia en la que hiciste clic tiene solo un brazo, el terminal muestra un error y espera una selección válida.
 3. **Mueve el cursor cerca del brazo** que deseas eliminar — el brazo más cercano se resalta con un marcador.
 4. **Haz clic** para eliminar ese brazo.
@@ -49,4 +49,4 @@ El comando mide la distancia perpendicular desde el cursor hasta los segmentos d
 | Comando | Qué hace |
 |---------|-------------|
 | [Leader](../leader/) | Crear una nueva multireferencia desde cero |
-| [Leader+](../leader-add/) | Añadir un brazo a una multireferencia existente |
+| [LeaderAdd](../leader-add/) | Añadir un brazo a una multireferencia existente |

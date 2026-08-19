@@ -28,7 +28,7 @@ Klik op een lettertype in de lijst om het rechts te bekijken — naam, alfabetvo
 
 ## Een aangepast lettertype uploaden
 
-1. Klik op **Add Font** onderaan het dialoogvenster (of typ [`Font+`](../font-add/) in de terminal om de bestandskiezer direct te openen).
+1. Klik op **Add Font** onderaan het dialoogvenster (of typ [`FontAdd`](../font-add/) in de terminal om de bestandskiezer direct te openen).
 2. Kies een `.ttf`-bestand. Alleen TrueType-lettertypen worden ondersteund — `.otf` en `.woff`/`.woff2` niet.
 3. De bestandsnaam (zonder extensie) wordt de naam van het lettertype in de groep **User**. Als u bijvoorbeeld `MyFont.ttf` uploadt, wordt een lettertype met de naam `MyFont` toegevoegd.
 

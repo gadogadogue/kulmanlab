@@ -1,18 +1,18 @@
 ---
-title: "Leader− — Usuwanie ramienia z grotem z linii wielokierunkowej"
-description: "Polecenie Leader− usuwa jedno ramię z grotem z linii wielokierunkowej mającej dwa lub więcej. Najedź kursorem blisko ramienia do usunięcia — najbliższe ramię jest podświetlane. Dogleg, tekst i pozostałe ramiona są zachowywane."
-keywords: [CAD usuwanie ramienia linii prowadzącej, polecenie leader-, usuń strzałkę z linii prowadzącej, usuwanie ramienia linii wielokierunkowej, kulmanlab]
+title: "LeaderRemove — Usuwanie ramienia z grotem z linii wielokierunkowej"
+description: "Polecenie LeaderRemove usuwa jedno ramię z grotem z linii wielokierunkowej mającej dwa lub więcej. Najedź kursorem blisko ramienia do usunięcia — najbliższe ramię jest podświetlane. Dogleg, tekst i pozostałe ramiona są zachowywane."
+keywords: [CAD usuwanie ramienia linii prowadzącej, polecenie leaderremove, usuń strzałkę z linii prowadzącej, usuwanie ramienia linii wielokierunkowej, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-Polecenie `leader-` usuwa jedno ramię z grotem z istniejącej linii wielokierunkowej. Etykieta tekstowa, dogleg i wszystkie pozostałe ramiona są zachowywane — usuwane jest tylko zaznaczone ramię. Linia wielokierunkowa z tylko jednym ramieniem nie może mieć usuniętego ramienia.
+Polecenie `LeaderRemove` usuwa jedno ramię z grotem z istniejącej linii wielokierunkowej. Etykieta tekstowa, dogleg i wszystkie pozostałe ramiona są zachowywane — usuwane jest tylko zaznaczone ramię. Linia wielokierunkowa z tylko jednym ramieniem nie może mieć usuniętego ramienia.
 
 ## Usuwanie ramienia
 
-1. Wpisz `leader-` w terminalu.
+1. Wpisz `LeaderRemove` w terminalu.
 2. **Kliknij linię wielokierunkową** mającą dwa lub więcej ramion. Jeśli kliknięta linia prowadząca ma tylko jedno ramię, terminal pokazuje błąd i czeka na prawidłowe zaznaczenie.
 3. **Przesuń kursor blisko ramienia**, które chcesz usunąć — najbliższe ramię jest podświetlane znacznikiem.
 4. **Kliknij**, aby usunąć to ramię.
@@ -49,4 +49,4 @@ Polecenie mierzy prostopadłą odległość od kursora do segmentów linii każd
 | Polecenie | Co robi |
 |-----------|---------|
 | [Leader](../leader/) | Tworzenie nowej linii wielokierunkowej od zera |
-| [Leader+](../leader-add/) | Dodawanie ramienia do istniejącej linii wielokierunkowej |
+| [LeaderAdd](../leader-add/) | Dodawanie ramienia do istniejącej linii wielokierunkowej |

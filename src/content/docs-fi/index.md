@@ -51,8 +51,8 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 | Komento | Mitä se tekee |
 |---------|-------------|
 | [Leader](./commands/leader/) | Piirrä monijohdinmerkintä nuolenkärjellä ja tekstillä |
-| [Leader+](./commands/leader-add/) | Lisää ylimääräinen haara olemassa olevaan monijohtimeen |
-| [Leader−](./commands/leader-remove/) | Poista haara olemassa olevasta monijohtimesta |
+| [LeaderAdd](./commands/leader-add/) | Lisää ylimääräinen haara olemassa olevaan monijohtimeen |
+| [LeaderRemove](./commands/leader-remove/) | Poista haara olemassa olevasta monijohtimesta |
 | [Dimension Linear](./commands/dim-linear/) | Lisää vaakasuora tai pystysuora mitta |
 | [Dimension Aligned](./commands/dim-aligned/) | Lisää kahteen pisteeseen kohdistettu mitta |
 | [Dimension Continue](./commands/dim-continue/) | Ketjuta uusi mitta edellisestä |
@@ -101,7 +101,7 @@ Tervetuloa **KulmanLab CAD**:in komentoreferenssiin. [KulmanLab CAD](https://kul
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Kopioi väri, taso ja muut ominaisuudet entiteetistä toisiin |
 | [Font Manager](./commands/font-manager/) | Selaa, valitse ja lataa omia TTF-fontteja |
-| [Font+](./commands/font-add/) | Lataa oma TTF-fontti suoraan terminaalista |
+| [FontAdd](./commands/font-add/) | Lataa oma TTF-fontti suoraan terminaalista |
 | [Hatch Manager](./commands/hatch-manager/) | Selaa hatch-kuviokirjastoa ja lataa .pat-tiedostoja |
 
 ## Tiedosto

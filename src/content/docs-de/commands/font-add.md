@@ -1,18 +1,18 @@
 ---
-title: Font+ — TTF-Schriftart direkt aus dem Terminal hochladen
-description: Der Befehl Font+ öffnet die Dateiauswahl des Systems zum Hochladen einer .ttf-Schriftart, ohne zuvor den Font-Manager-Dialog zu öffnen. Es ist derselbe Upload, den die Schaltfläche „Add Font" im Font Manager auslöst, hier als eigener Terminal-Befehl.
-keywords: [font add befehl, font+ befehl, ttf hochladen terminal, benutzerdefinierte schriftart CAD, kulmanlab]
+title: FontAdd — TTF-Schriftart direkt aus dem Terminal hochladen
+description: Der Befehl FontAdd öffnet die Dateiauswahl des Systems zum Hochladen einer .ttf-Schriftart, ohne zuvor den Font-Manager-Dialog zu öffnen. Es ist derselbe Upload, den die Schaltfläche „Add Font" im Font Manager auslöst, hier als eigener Terminal-Befehl.
+keywords: [font add befehl, fontadd befehl, ttf hochladen terminal, benutzerdefinierte schriftart CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Der Befehl `Font+` öffnet die Dateiauswahl des Systems zum Hochladen einer eigenen `.ttf`-Schriftart, ohne zuvor den [Font Manager](../font-manager/)-Dialog zu öffnen. Es ist derselbe Upload, den die Schaltfläche **Add Font** im Font Manager auslöst — Font+ ist nur ein direkter Weg dorthin über das Terminal.
+Der Befehl `FontAdd` öffnet die Dateiauswahl des Systems zum Hochladen einer eigenen `.ttf`-Schriftart, ohne zuvor den [Font Manager](../font-manager/)-Dialog zu öffnen. Es ist derselbe Upload, den die Schaltfläche **Add Font** im Font Manager auslöst — FontAdd ist nur ein direkter Weg dorthin über das Terminal.
 
 ## Eine Schriftart hochladen
 
-1. Geben Sie `Font+` im Terminal ein, oder klicken Sie im Fußbereich des [Font-Manager](../font-manager/)-Dialogs auf **Add Font**.
+1. Geben Sie `FontAdd` im Terminal ein, oder klicken Sie im Fußbereich des [Font-Manager](../font-manager/)-Dialogs auf **Add Font**.
 2. Wählen Sie eine `.ttf`-Datei in der Systemauswahl. Es werden nur TrueType-Schriftarten unterstützt — `.otf` sowie `.woff`/`.woff2` nicht.
 
 Der Befehl endet, sobald die Dateiauswahl geöffnet wird — es folgt kein weiterer Klick oder Terminal-Eingabe. Die Schriftart wird registriert und erscheint in der Gruppe **User**, sobald die Datei ausgewählt wurde.
@@ -25,7 +25,7 @@ Der Befehl endet, sobald die Dateiauswahl geöffnet wird — es folgt kein weite
 
 ## Tastaturkürzel
 
-Font+ hat keine eigene Tastaturinteraktion — der gesamte Befehl besteht aus dem nativen Dateiauswahl-Dialog des Browsers. Wird dieser Dialog abgebrochen (oder keine Datei ausgewählt), bleibt die Schriftartliste unverändert.
+FontAdd hat keine eigene Tastaturinteraktion — der gesamte Befehl besteht aus dem nativen Dateiauswahl-Dialog des Browsers. Wird dieser Dialog abgebrochen (oder keine Datei ausgewählt), bleibt die Schriftartliste unverändert.
 
 ## Verwandte Befehle
 

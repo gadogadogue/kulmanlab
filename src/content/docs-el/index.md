@@ -51,8 +51,8 @@ order: 1
 | Εντολή | Τι κάνει |
 |--------|----------|
 | [Leader](./commands/leader/) | Σχεδιάζει σύνθετη γραμμή οδήγησης με βέλος και κείμενο |
-| [Leader+](./commands/leader-add/) | Προσθέτει επιπλέον βραχίονα σε υπάρχουσα γραμμή οδήγησης |
-| [Leader−](./commands/leader-remove/) | Αφαιρεί βραχίονα από υπάρχουσα γραμμή οδήγησης |
+| [LeaderAdd](./commands/leader-add/) | Προσθέτει επιπλέον βραχίονα σε υπάρχουσα γραμμή οδήγησης |
+| [LeaderRemove](./commands/leader-remove/) | Αφαιρεί βραχίονα από υπάρχουσα γραμμή οδήγησης |
 | [Dimension Linear](./commands/dim-linear/) | Προσθέτει οριζόντια ή κατακόρυφη διάσταση |
 | [Dimension Aligned](./commands/dim-aligned/) | Προσθέτει διάσταση ευθυγραμμισμένη με δύο σημεία |
 | [Dimension Continue](./commands/dim-continue/) | Αλυσιδώνει νέα διάσταση από την τελευταία |
@@ -101,7 +101,7 @@ order: 1
 |--------|----------|
 | [Match Properties](./commands/match-properties/) | Αντιγράφει χρώμα, επίπεδο και άλλες ιδιότητες από ένα αντικείμενο σε άλλα |
 | [Font Manager](./commands/font-manager/) | Περιηγηθείτε, επιλέξτε και μεταφορτώστε προσαρμοσμένες γραμματοσειρές TTF |
-| [Font+](./commands/font-add/) | Μεταφορτώστε μια προσαρμοσμένη γραμματοσειρά TTF απευθείας από το τερματικό |
+| [FontAdd](./commands/font-add/) | Μεταφορτώστε μια προσαρμοσμένη γραμματοσειρά TTF απευθείας από το τερματικό |
 | [Hatch Manager](./commands/hatch-manager/) | Περιηγηθείτε στη βιβλιοθήκη μοτίβων hatch και ανεβάστε αρχεία .pat |
 
 ## Αρχείο

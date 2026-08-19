@@ -1,18 +1,18 @@
 ---
-title: Leader− Komutu — KulmanLab CAD'de Göstergeden Ok Kolu Kaldır
-description: Leader− komutu, iki veya daha fazla kollu çok segmentli göstergeden bir ok kolunu kaldırır. Kaldırılacak kola imleci yaklaştırın — en yakın kol vurgulanır. Geçiş bölgesi, metin ve diğer tüm kollar korunur.
+title: LeaderRemove Komutu — KulmanLab CAD'de Göstergeden Ok Kolu Kaldır
+description: LeaderRemove komutu, iki veya daha fazla kollu çok segmentli göstergeden bir ok kolunu kaldırır. Kaldırılacak kola imleci yaklaştırın — en yakın kol vurgulanır. Geçiş bölgesi, metin ve diğer tüm kollar korunur.
 keywords: [CAD leader remove komutu, gösterge kolu kaldır CAD, MLEADER oku sil, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-`leader-` komutu, mevcut çok segmentli göstergeden bir ok kolunu kaldırır. Metin etiketi, geçiş bölgesi ve diğer tüm koller korunur — yalnızca seçilen kol kaldırılır. Tek kollu çok segmentli göstergenin bu kolu kaldırılamaz.
+`LeaderRemove` komutu, mevcut çok segmentli göstergeden bir ok kolunu kaldırır. Metin etiketi, geçiş bölgesi ve diğer tüm koller korunur — yalnızca seçilen kol kaldırılır. Tek kollu çok segmentli göstergenin bu kolu kaldırılamaz.
 
 ## Kol Kaldırma
 
-1. Terminale `leader-` yazın.
+1. Terminale `LeaderRemove` yazın.
 2. İki veya daha fazla kollu **çok segmentli göstergeye tıklayın**. Tıklanan göstergenin yalnızca bir kolu varsa, terminal hata gösterir ve doğru seçimi bekler.
 3. **İmleci kaldırmak istediğiniz kola yaklaştırın** — en yakın kol işaretleyiciyle vurgulanır.
 4. **Tıklayın** ve o kolu kaldırın.
@@ -49,4 +49,4 @@ Komut, imlecten her kolun segmentlerine (son kol noktasından geçiş bölgesine
 | Komut | Ne yapar |
 |-------|----------|
 | [Leader](../leader/) | Sıfırdan yeni gösterge oluşturur |
-| [Leader+](../leader-add/) | Mevcut göstergeye kol ekler |
+| [LeaderAdd](../leader-add/) | Mevcut göstergeye kol ekler |

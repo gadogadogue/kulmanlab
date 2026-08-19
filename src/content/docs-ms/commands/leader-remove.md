@@ -1,18 +1,18 @@
 ---
-title: "Leader− — Buang Lengan Kepala Anak Panah daripada Multileader"
-description: "Arahan Leader− membuang satu lengan kepala anak panah dari pelbagai pemimpin yang mempunyai dua atau lebih. Tuding berhampiran lengan yang ingin dibuang — lengan yang paling hampir diserlahkan. Dogleg, teks, dan lengan yang tinggal dipelihara."
-keywords: [CAD buang lengan pemimpin, arahan leader-, buang anak panah dari pemimpin, padam lengan pelbagai pemimpin, kulmanlab]
+title: "LeaderRemove — Buang Lengan Kepala Anak Panah daripada Multileader"
+description: "Arahan LeaderRemove membuang satu lengan kepala anak panah dari pelbagai pemimpin yang mempunyai dua atau lebih. Tuding berhampiran lengan yang ingin dibuang — lengan yang paling hampir diserlahkan. Dogleg, teks, dan lengan yang tinggal dipelihara."
+keywords: [CAD buang lengan pemimpin, arahan leaderremove, buang anak panah dari pemimpin, padam lengan pelbagai pemimpin, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-Arahan `leader-` membuang satu lengan kepala anak panah daripada pelbagai pemimpin sedia ada. Label teks, dogleg, dan semua lengan yang tinggal dipelihara — hanya lengan yang dipilih dipadam. Pelbagai pemimpin dengan hanya satu lengan tidak boleh dibuang lengannya.
+Arahan `LeaderRemove` membuang satu lengan kepala anak panah daripada pelbagai pemimpin sedia ada. Label teks, dogleg, dan semua lengan yang tinggal dipelihara — hanya lengan yang dipilih dipadam. Pelbagai pemimpin dengan hanya satu lengan tidak boleh dibuang lengannya.
 
 ## Membuang lengan
 
-1. Taip `leader-` dalam terminal.
+1. Taip `LeaderRemove` dalam terminal.
 2. **Klik pelbagai pemimpin** yang mempunyai dua atau lebih lengan. Jika pemimpin yang diklik hanya mempunyai satu lengan, terminal menunjukkan ralat dan menunggu pemilihan yang sah.
 3. **Gerakkan kursor berhampiran lengan** yang ingin dibuang — lengan yang paling hampir diserlahkan dengan penanda.
 4. **Klik** untuk membuang lengan tersebut.
@@ -49,4 +49,4 @@ Arahan mengukur jarak tegak lurus dari kursor ke setiap segmen garis lengan (ter
 | Arahan | Fungsinya |
 |--------|-----------|
 | [Leader](../leader/) | Cipta pelbagai pemimpin baharu dari awal |
-| [Leader+](../leader-add/) | Tambah lengan pada pelbagai pemimpin sedia ada |
+| [LeaderAdd](../leader-add/) | Tambah lengan pada pelbagai pemimpin sedia ada |

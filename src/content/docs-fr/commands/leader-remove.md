@@ -1,18 +1,18 @@
 ---
-title: "Leader− — Supprimer un bras de pointe de flèche d'un multirépère"
-description: "La commande Leader− supprime un bras de pointe de flèche d'un multirépère qui en a deux ou plus. Placez le curseur près du bras à supprimer — le bras le plus proche est mis en évidence. La brisure, le texte et les bras restants sont conservés."
-keywords: [supprimer bras répère CAO, commande leader-, supprimer flèche répère, supprimer bras multirépère, kulmanlab]
+title: "LeaderRemove — Supprimer un bras de pointe de flèche d'un multirépère"
+description: "La commande LeaderRemove supprime un bras de pointe de flèche d'un multirépère qui en a deux ou plus. Placez le curseur près du bras à supprimer — le bras le plus proche est mis en évidence. La brisure, le texte et les bras restants sont conservés."
+keywords: [supprimer bras répère CAO, commande leaderremove, supprimer flèche répère, supprimer bras multirépère, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-La commande `leader-` supprime un bras de pointe de flèche d'un multirépère existant. Le libellé de texte, la brisure et tous les bras restants sont conservés — seul le bras sélectionné est supprimé. Un multirépère avec un seul bras ne peut pas avoir son bras supprimé.
+La commande `LeaderRemove` supprime un bras de pointe de flèche d'un multirépère existant. Le libellé de texte, la brisure et tous les bras restants sont conservés — seul le bras sélectionné est supprimé. Un multirépère avec un seul bras ne peut pas avoir son bras supprimé.
 
 ## Supprimer un bras
 
-1. Tapez `leader-` dans le terminal.
+1. Tapez `LeaderRemove` dans le terminal.
 2. **Cliquez sur un multirépère** qui a deux bras ou plus. Si le répère sur lequel vous avez cliqué n'a qu'un seul bras, le terminal affiche une erreur et attend une sélection valide.
 3. **Déplacez le curseur près du bras** que vous souhaitez supprimer — le bras le plus proche est mis en évidence avec un marqueur.
 4. **Cliquez** pour supprimer ce bras.
@@ -49,4 +49,4 @@ La commande mesure la distance perpendiculaire du curseur aux segments de ligne 
 | Commande | Action |
 |----------|--------|
 | [Leader](../leader/) | Créer un nouveau multirépère depuis zéro |
-| [Leader+](../leader-add/) | Ajouter un bras à un multirépère existant |
+| [LeaderAdd](../leader-add/) | Ajouter un bras à un multirépère existant |

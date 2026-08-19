@@ -107,8 +107,8 @@ order: 1
 
 ## 添加和删除引线臂
 
-- 要为已有引线添加额外的箭头臂：[Leader+](../leader-add/)
-- 要从拥有两条或以上引线臂的引线中删除一条：[Leader−](../leader-remove/)
+- 要为已有引线添加额外的箭头臂：[LeaderAdd](../leader-add/)
+- 要从拥有两条或以上引线臂的引线中删除一条：[LeaderRemove](../leader-remove/)
 
 ## DXF — 仅支持导入
 

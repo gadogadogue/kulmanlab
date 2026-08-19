@@ -1,18 +1,18 @@
 ---
-title: Leader+ Komutu — KulmanLab CAD'de Mevcut Göstergeye Ok Kolu Ekle
-description: Leader+ komutu, mevcut çok segmentli göstergeye yeni bir ok kolu ekler. Yeni kol, seçilen göstergenin geçiş bölgesini, metnini ve tüm stilini devralır. İki tıklama — göstergeyi seçin, yeni ok ucunu yerleştirin.
+title: LeaderAdd Komutu — KulmanLab CAD'de Mevcut Göstergeye Ok Kolu Ekle
+description: LeaderAdd komutu, mevcut çok segmentli göstergeye yeni bir ok kolu ekler. Yeni kol, seçilen göstergenin geçiş bölgesini, metnini ve tüm stilini devralır. İki tıklama — göstergeyi seçin, yeni ok ucunu yerleştirin.
 keywords: [CAD leader add komutu, gösterge kolu ekle CAD, MLEADER çoklu ok, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-`leader+` komutu, mevcut çok segmentli göstergeye yeni bir ok kolu ekler. Yeni kol, mevcut göstergenin geçiş bölgesinden tıkladığınız yeni ok ucuna uzanır. Tüm stil — geçiş bölgesi konumu, metin, ok tipi ve boyut — seçilen göstergeden devralınır.
+`LeaderAdd` komutu, mevcut çok segmentli göstergeye yeni bir ok kolu ekler. Yeni kol, mevcut göstergenin geçiş bölgesinden tıkladığınız yeni ok ucuna uzanır. Tüm stil — geçiş bölgesi konumu, metin, ok tipi ve boyut — seçilen göstergeden devralınır.
 
 ## Kol Ekleme
 
-1. Terminale `leader+` yazın.
+1. Terminale `LeaderAdd` yazın.
 2. Seçmek için **mevcut çok segmentli göstergeye tıklayın**.
 3. **Yeni ok ucunu tıklayın** veya kesin koordinat için `X,Y` yazıp **Enter** tuşuna basın. Önizleme çizgisi imleçten göstergenin geçiş bölgesine uzanır.
 
@@ -57,4 +57,4 @@ Tıklamak yerine kesin konum girebilirsiniz:
 | Komut | Ne yapar |
 |-------|----------|
 | [Leader](../leader/) | Sıfırdan yeni gösterge oluşturur |
-| [Leader−](../leader-remove/) | İki veya daha fazla kollu göstergeden kol kaldırır |
+| [LeaderRemove](../leader-remove/) | İki veya daha fazla kollu göstergeden kol kaldırır |

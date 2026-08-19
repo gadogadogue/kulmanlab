@@ -1,18 +1,18 @@
 ---
-title: Leader+-kommando — Tilføj en Pilespidsarm på en Multileader
-description: Leader+-kommandoen tilføjer en ny pilespidsarm på en eksisterende multileader. Den nye arm deler dogleg, tekst og al styling med den valgte leder. To klik — vælg lederen, placér den nye spids.
-keywords: [CAD tilføj lederarm, leader+-kommando, tilføj pil til leder, multileader-arm, kulmanlab]
+title: LeaderAdd-kommando — Tilføj en Pilespidsarm på en Multileader
+description: LeaderAdd-kommandoen tilføjer en ny pilespidsarm på en eksisterende multileader. Den nye arm deler dogleg, tekst og al styling med den valgte leder. To klik — vælg lederen, placér den nye spids.
+keywords: [CAD tilføj lederarm, leaderadd-kommando, tilføj pil til leder, multileader-arm, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Kommandoen `leader+` tilføjer en ny pilespidsarm på en eksisterende multileader. Den nye arm peger fra lederens eksisterende dogleg til en ny pilespids, du klikker. Al styling — dogleg-position, tekst, pilespidstype og størrelse — arves fra den valgte leder.
+Kommandoen `LeaderAdd` tilføjer en ny pilespidsarm på en eksisterende multileader. Den nye arm peger fra lederens eksisterende dogleg til en ny pilespids, du klikker. Al styling — dogleg-position, tekst, pilespidstype og størrelse — arves fra den valgte leder.
 
 ## Tilføje en arm
 
-1. Skriv `leader+` i terminalen.
+1. Skriv `LeaderAdd` i terminalen.
 2. **Klik en eksisterende multileader** for at vælge den.
 3. **Klik den nye pilespids**, eller skriv `X,Y` og tryk **Enter** for en eksakt koordinat. En forhåndsvisningslinje vises fra markøren til lederens dogleg.
 
@@ -57,4 +57,4 @@ I stedet for at klikke kan du indtaste en eksakt position:
 | Kommando | Hvad den gør |
 |---------|-------------|
 | [Leader](../leader/) | Opret en helt ny multileader fra bunden |
-| [Leader−](../leader-remove/) | Fjern en arm fra en multileader der har to eller flere |
+| [LeaderRemove](../leader-remove/) | Fjern en arm fra en multileader der har to eller flere |

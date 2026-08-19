@@ -1,18 +1,18 @@
 ---
-title: "Leader− Command — Alisin ang Arrowhead Arm mula sa Multileader"
-description: "Inaalis ng Leader− command ang isang arrowhead arm mula sa multileader na may dalawa o higit pa. I-hover malapit sa arm na aalisin — ma-highlight ang pinakamalapit na arm. Napapanatili ang dogleg, text, at natitirang mga arm."
-keywords: [CAD leader remove arm, leader- command, alisin ang arrow mula sa leader, multileader arm delete, kulmanlab]
+title: "LeaderRemove Command — Alisin ang Arrowhead Arm mula sa Multileader"
+description: "Inaalis ng LeaderRemove command ang isang arrowhead arm mula sa multileader na may dalawa o higit pa. I-hover malapit sa arm na aalisin — ma-highlight ang pinakamalapit na arm. Napapanatili ang dogleg, text, at natitirang mga arm."
+keywords: [CAD leader remove arm, leaderremove command, alisin ang arrow mula sa leader, multileader arm delete, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-Inaalis ng `leader-` command ang isang arrowhead arm mula sa umiiral na multileader. Napapanatili ang text label, dogleg, at lahat ng natitirang arm — ang napiling arm lamang ang tinatanggal. Hindi puwedeng alisin ang arm ng multileader na may isang arm lamang.
+Inaalis ng `LeaderRemove` command ang isang arrowhead arm mula sa umiiral na multileader. Napapanatili ang text label, dogleg, at lahat ng natitirang arm — ang napiling arm lamang ang tinatanggal. Hindi puwedeng alisin ang arm ng multileader na may isang arm lamang.
 
 ## Pag-alis ng Arm
 
-1. I-type ang `leader-` sa terminal.
+1. I-type ang `LeaderRemove` sa terminal.
 2. **I-click ang multileader** na may dalawa o higit pang arm. Kung isa lang ang arm ng na-click na leader, magpapakita ang terminal ng error at maghihintay ng valid na seleksyon.
 3. **Igalaw ang cursor malapit sa arm** na gusto mong alisin — ma-highlight ang pinakamalapit na arm ng isang marker.
 4. **I-click** para alisin ang arm na iyon.
@@ -49,4 +49,4 @@ Sinusukat ng command ang perpendicular na distansya mula sa cursor papunta sa li
 | Command | Ano ang ginagawa nito |
 |---------|-------------|
 | [Leader](../leader/) | Gumawa ng bagong multileader mula sa simula |
-| [Leader+](../leader-add/) | Magdagdag ng arm sa umiiral na multileader |
+| [LeaderAdd](../leader-add/) | Magdagdag ng arm sa umiiral na multileader |

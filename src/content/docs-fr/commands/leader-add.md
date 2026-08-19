@@ -1,18 +1,18 @@
 ---
-title: Leader+ — Ajouter un bras de flèche à un multirépère existant
-description: La commande Leader+ ajoute un nouveau bras de pointe de flèche à un multirépère existant. Le nouveau bras partage la brisure, le texte et tout le style du répère sélectionné. Deux clics — sélectionner le répère, placer la nouvelle pointe.
-keywords: [ajouter bras répère CAO, commande leader+, ajouter flèche répère, bras multirépère, kulmanlab]
+title: LeaderAdd — Ajouter un bras de flèche à un multirépère existant
+description: La commande LeaderAdd ajoute un nouveau bras de pointe de flèche à un multirépère existant. Le nouveau bras partage la brisure, le texte et tout le style du répère sélectionné. Deux clics — sélectionner le répère, placer la nouvelle pointe.
+keywords: [ajouter bras répère CAO, commande leaderadd, ajouter flèche répère, bras multirépère, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-La commande `leader+` ajoute un nouveau bras de pointe de flèche à un multirépère existant. Le nouveau bras pointe depuis la brisure existante du répère vers une nouvelle pointe de flèche sur laquelle vous cliquez. Tout le style — position de la brisure, texte, type de pointe de flèche et taille — est hérité du répère sélectionné.
+La commande `LeaderAdd` ajoute un nouveau bras de pointe de flèche à un multirépère existant. Le nouveau bras pointe depuis la brisure existante du répère vers une nouvelle pointe de flèche sur laquelle vous cliquez. Tout le style — position de la brisure, texte, type de pointe de flèche et taille — est hérité du répère sélectionné.
 
 ## Ajouter un bras
 
-1. Tapez `leader+` dans le terminal.
+1. Tapez `LeaderAdd` dans le terminal.
 2. **Cliquez sur un multirépère existant** pour le sélectionner.
 3. **Cliquez sur la nouvelle pointe de flèche**, ou tapez `X,Y` et appuyez sur **Entrée** pour une coordonnée exacte. Une ligne d'aperçu s'affiche du curseur jusqu'à la brisure du répère.
 
@@ -57,4 +57,4 @@ Au lieu de cliquer, vous pouvez taper une position exacte :
 | Commande | Action |
 |----------|--------|
 | [Leader](../leader/) | Créer un nouveau multirépère depuis zéro |
-| [Leader−](../leader-remove/) | Supprimer un bras d'un multirépère qui en a deux ou plus |
+| [LeaderRemove](../leader-remove/) | Supprimer un bras d'un multirépère qui en a deux ou plus |

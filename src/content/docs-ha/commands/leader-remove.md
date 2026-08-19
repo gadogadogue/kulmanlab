@@ -1,18 +1,18 @@
 ---
-title: "Leader− — Cire Hannu na Kibiya daga Multileader"
-description: "Umarnin Leader− yana cire hannu na kibiya ɗaya daga multileader wanda yake da biyu ko fiye. Riƙe mai nuni kusa da hannun don cirewa — hannu mafi kusa an haskaka shi. Ana kiyaye dogleg, rubutu, da hannayen da suka rage."
-keywords: [cire hannu leader CAD, umarnin leader-, cire kibiya daga leader, share hannu multileader, kulmanlab]
+title: "LeaderRemove — Cire Hannu na Kibiya daga Multileader"
+description: "Umarnin LeaderRemove yana cire hannu na kibiya ɗaya daga multileader wanda yake da biyu ko fiye. Riƙe mai nuni kusa da hannun don cirewa — hannu mafi kusa an haskaka shi. Ana kiyaye dogleg, rubutu, da hannayen da suka rage."
+keywords: [cire hannu leader CAD, umarnin leaderremove, cire kibiya daga leader, share hannu multileader, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-Umarnin `leader-` yana cire hannu na kibiya ɗaya daga multileader da ke akwai. Ana kiyaye alamar rubutu, dogleg, da dukkan hannayen da suka rage — hannun da aka zaɓa kaɗai ake share shi. Ba za a iya cire hannu daga multileader mai hannu ɗaya kawai ba.
+Umarnin `LeaderRemove` yana cire hannu na kibiya ɗaya daga multileader da ke akwai. Ana kiyaye alamar rubutu, dogleg, da dukkan hannayen da suka rage — hannun da aka zaɓa kaɗai ake share shi. Ba za a iya cire hannu daga multileader mai hannu ɗaya kawai ba.
 
 ## Cire hannu
 
-1. Rubuta `leader-` a tashar umarni.
+1. Rubuta `LeaderRemove` a tashar umarni.
 2. **Danna multileader** wanda yake da hannaye biyu ko fiye. Idan leader ɗin da aka danna yana da hannu ɗaya kaɗai, tashar umarni tana nuna kuskure kuma tana jira zaɓi mai inganci.
 3. **Motsa mai nuni kusa da hannun** da kake son cirewa — hannu mafi kusa an haskaka shi da alama.
 4. **Danna** don cire wannan hannun.
@@ -49,4 +49,4 @@ Umarnin yana auna nisan ta hankalta daga mai nuni zuwa sassan layin kowace hannu
 | Umarni | Abin da yake yi |
 |---------|-------------|
 | [Leader](../leader/) | Ƙirƙira sabon multileader daga fara |
-| [Leader+](../leader-add/) | Ƙara hannu zuwa multileader da ke akwai |
+| [LeaderAdd](../leader-add/) | Ƙara hannu zuwa multileader da ke akwai |

@@ -1,18 +1,18 @@
 ---
-title: Font+ — Téléverser une police TTF personnalisée depuis le terminal
-description: La commande Font+ ouvre le sélecteur de fichiers du système pour téléverser une police .ttf, sans ouvrir d'abord le dialogue Font Manager. C'est le même téléversement que déclenche le bouton « Add Font » du Font Manager, disponible ici comme commande de terminal à part entière.
-keywords: [commande font add, commande font+, téléverser ttf terminal, police personnalisée CAO, kulmanlab]
+title: FontAdd — Téléverser une police TTF personnalisée depuis le terminal
+description: La commande FontAdd ouvre le sélecteur de fichiers du système pour téléverser une police .ttf, sans ouvrir d'abord le dialogue Font Manager. C'est le même téléversement que déclenche le bouton « Add Font » du Font Manager, disponible ici comme commande de terminal à part entière.
+keywords: [commande font add, commande fontadd, téléverser ttf terminal, police personnalisée CAO, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-La commande `Font+` ouvre le sélecteur de fichiers du système pour téléverser une police `.ttf` personnalisée, sans ouvrir d'abord le dialogue [Font Manager](../font-manager/). C'est le même téléversement que déclenche le bouton **Add Font** du Font Manager — Font+ n'est qu'un raccourci direct depuis le terminal.
+La commande `FontAdd` ouvre le sélecteur de fichiers du système pour téléverser une police `.ttf` personnalisée, sans ouvrir d'abord le dialogue [Font Manager](../font-manager/). C'est le même téléversement que déclenche le bouton **Add Font** du Font Manager — FontAdd n'est qu'un raccourci direct depuis le terminal.
 
 ## Téléverser une police
 
-1. Tapez `Font+` dans le terminal, ou cliquez sur **Add Font** en bas du dialogue [Font Manager](../font-manager/).
+1. Tapez `FontAdd` dans le terminal, ou cliquez sur **Add Font** en bas du dialogue [Font Manager](../font-manager/).
 2. Choisissez un fichier `.ttf` dans le sélecteur système. Seules les polices TrueType sont prises en charge — `.otf` et `.woff`/`.woff2` ne le sont pas.
 
 La commande se termine dès que le sélecteur de fichiers s'ouvre — il n'y a ni clic ni saisie terminal supplémentaire. La police est enregistrée et apparaît dans le groupe **User** dès que le fichier est choisi.
@@ -25,7 +25,7 @@ La commande se termine dès que le sélecteur de fichiers s'ouvre — il n'y a n
 
 ## Référence clavier
 
-Font+ n'a pas d'interaction clavier propre — toute la commande consiste en le sélecteur de fichiers natif du navigateur. Annuler ce dialogue (ou ne choisir aucun fichier) laisse la liste des polices inchangée.
+FontAdd n'a pas d'interaction clavier propre — toute la commande consiste en le sélecteur de fichiers natif du navigateur. Annuler ce dialogue (ou ne choisir aucun fichier) laisse la liste des polices inchangée.
 
 ## Commandes associées
 

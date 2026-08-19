@@ -51,8 +51,8 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 | Lệnh | Chức năng |
 |------|-----------|
 | [Leader](./commands/leader/) | Vẽ chú thích đa đầu mũi tên với đầu mũi và văn bản |
-| [Leader+](./commands/leader-add/) | Thêm một cánh tay vào chú thích đa đầu mũi tên hiện có |
-| [Leader−](./commands/leader-remove/) | Xóa một cánh tay khỏi chú thích đa đầu mũi tên |
+| [LeaderAdd](./commands/leader-add/) | Thêm một cánh tay vào chú thích đa đầu mũi tên hiện có |
+| [LeaderRemove](./commands/leader-remove/) | Xóa một cánh tay khỏi chú thích đa đầu mũi tên |
 | [Dimension Linear](./commands/dim-linear/) | Thêm kích thước ngang hoặc dọc |
 | [Dimension Aligned](./commands/dim-aligned/) | Thêm kích thước căn chỉnh theo hai điểm |
 | [Dimension Continue](./commands/dim-continue/) | Tiếp nối kích thước mới từ kích thước cuối |
@@ -101,7 +101,7 @@ Chào mừng bạn đến với tài liệu tham khảo lệnh **KulmanLab CAD**
 |------|-----------|
 | [Match Properties](./commands/match-properties/) | Sao chép màu sắc, lớp và các thuộc tính khác từ một đối tượng sang đối tượng khác |
 | [Font Manager](./commands/font-manager/) | Duyệt, chọn và tải lên phông chữ TTF tùy chỉnh |
-| [Font+](./commands/font-add/) | Tải lên phông chữ TTF tùy chỉnh trực tiếp từ terminal |
+| [FontAdd](./commands/font-add/) | Tải lên phông chữ TTF tùy chỉnh trực tiếp từ terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Duyệt thư viện mẫu hatch và tải lên tệp .pat |
 
 ## Tệp

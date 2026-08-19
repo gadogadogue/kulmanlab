@@ -1,17 +1,17 @@
 ---
-title: Lệnh Font+ — Tải Lên Phông Chữ TTF Tùy Chỉnh Từ Terminal
-description: Lệnh Font+ mở hộp thoại chọn tệp của hệ thống để tải lên phông chữ .ttf, mà không cần mở hộp thoại Font Manager trước. Đây chính là thao tác tải lên mà nút "Add Font" trong Font Manager kích hoạt, ở đây được cung cấp như một lệnh terminal độc lập.
+title: Lệnh FontAdd — Tải Lên Phông Chữ TTF Tùy Chỉnh Từ Terminal
+description: Lệnh FontAdd mở hộp thoại chọn tệp của hệ thống để tải lên phông chữ .ttf, mà không cần mở hộp thoại Font Manager trước. Đây chính là thao tác tải lên mà nút "Add Font" trong Font Manager kích hoạt, ở đây được cung cấp như một lệnh terminal độc lập.
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Lệnh `Font+` mở hộp thoại chọn tệp của hệ thống để tải lên phông chữ `.ttf` tùy chỉnh, mà không cần mở hộp thoại [Font Manager](../font-manager/) trước. Đây chính là thao tác tải lên mà nút **Add Font** trong Font Manager kích hoạt — Font+ chỉ là một lối đi trực tiếp đến đó từ terminal.
+Lệnh `FontAdd` mở hộp thoại chọn tệp của hệ thống để tải lên phông chữ `.ttf` tùy chỉnh, mà không cần mở hộp thoại [Font Manager](../font-manager/) trước. Đây chính là thao tác tải lên mà nút **Add Font** trong Font Manager kích hoạt — FontAdd chỉ là một lối đi trực tiếp đến đó từ terminal.
 
 ## Tải lên phông chữ
 
-1. Gõ `Font+` trong terminal, hoặc nhấp **Add Font** ở cuối hộp thoại [Font Manager](../font-manager/).
+1. Gõ `FontAdd` trong terminal, hoặc nhấp **Add Font** ở cuối hộp thoại [Font Manager](../font-manager/).
 2. Chọn một tệp `.ttf` trong hộp thoại chọn tệp của hệ thống. Chỉ hỗ trợ phông chữ TrueType — `.otf` và `.woff`/`.woff2` không được hỗ trợ.
 
 Lệnh kết thúc ngay khi hộp thoại chọn tệp mở ra — không có thao tác nhấp chuột hay nhập terminal nào tiếp theo. Phông chữ được đăng ký và xuất hiện trong nhóm **User** ngay khi tệp được chọn.
@@ -24,7 +24,7 @@ Lệnh kết thúc ngay khi hộp thoại chọn tệp mở ra — không có th
 
 ## Tham khảo phím tắt
 
-Font+ không có thao tác bàn phím riêng — toàn bộ lệnh chỉ là hộp thoại chọn tệp gốc của trình duyệt. Hủy hộp thoại đó (hoặc không chọn tệp nào) sẽ giữ nguyên danh sách phông chữ.
+FontAdd không có thao tác bàn phím riêng — toàn bộ lệnh chỉ là hộp thoại chọn tệp gốc của trình duyệt. Hủy hộp thoại đó (hoặc không chọn tệp nào) sẽ giữ nguyên danh sách phông chữ.
 
 ## Các lệnh liên quan
 

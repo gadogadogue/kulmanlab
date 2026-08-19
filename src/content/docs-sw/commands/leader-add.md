@@ -1,18 +1,18 @@
 ---
-title: "Leader+ — Ongeza Mkono wa Mshale kwenye Multileader Iliyopo"
-description: "Amri ya Leader+ inaongeza mkono mpya wa mshale kwenye multileader iliyopo. Mkono mpya unashiriki dogleg, maandishi, na mtindo wote wa kiongozi kilichochaguliwa. Mibonyezo miwili — chagua kiongozi, weka ncha mpya."
-keywords: [CAD leader add arm, leader+ command, add arrow to leader, multileader arm, kulmanlab]
+title: "LeaderAdd — Ongeza Mkono wa Mshale kwenye Multileader Iliyopo"
+description: "Amri ya LeaderAdd inaongeza mkono mpya wa mshale kwenye multileader iliyopo. Mkono mpya unashiriki dogleg, maandishi, na mtindo wote wa kiongozi kilichochaguliwa. Mibonyezo miwili — chagua kiongozi, weka ncha mpya."
+keywords: [CAD leader add arm, leaderadd command, add arrow to leader, multileader arm, kulmanlab]
 group: markup
 order: 2
 ---
 
-# Leader+
+# LeaderAdd
 
-Amri ya `leader+` inaongeza mkono mpya wa mshale kwenye multileader iliyopo. Mkono mpya unaoelekea kutoka kwenye dogleg iliyopo ya kiongozi hadi ncha mpya ya mshale unayobonyeza. Mtindo wote — nafasi ya dogleg, maandishi, aina ya mshale, na ukubwa — unaarithi kutoka kwa kiongozi kilichochaguliwa.
+Amri ya `LeaderAdd` inaongeza mkono mpya wa mshale kwenye multileader iliyopo. Mkono mpya unaoelekea kutoka kwenye dogleg iliyopo ya kiongozi hadi ncha mpya ya mshale unayobonyeza. Mtindo wote — nafasi ya dogleg, maandishi, aina ya mshale, na ukubwa — unaarithi kutoka kwa kiongozi kilichochaguliwa.
 
 ## Kuongeza mkono
 
-1. Andika `leader+` kwenye terminal.
+1. Andika `LeaderAdd` kwenye terminal.
 2. **Bonyeza multileader iliyopo** kuichagua.
 3. **Bonyeza ncha mpya ya mshale**, au andika `X,Y` na bonyeza **Enter** kwa kuratibu sahihi. Mstari wa mwanga unaonyeshwa kutoka kwa mshale hadi kwenye dogleg ya kiongozi.
 
@@ -57,4 +57,4 @@ Badala ya kubonyeza, unaweza kuandika nafasi sahihi:
 | Amri | Inafanya nini |
 |------|--------------|
 | [Leader](../leader/) | Unda multileader mpya kabisa kutoka mwanzo |
-| [Leader−](../leader-remove/) | Ondoa mkono kutoka kwa multileader yenye mikono miwili au zaidi |
+| [LeaderRemove](../leader-remove/) | Ondoa mkono kutoka kwa multileader yenye mikono miwili au zaidi |

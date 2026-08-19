@@ -107,8 +107,8 @@ Se [Tekstredigering — rig tilstand](../../interface/text-editor/#rich-mode) fo
 
 ## Tilføje og fjerne arme
 
-- For at tilføje en ekstra pilespidsarm på en eksisterende leder: [Leader+](../leader-add/)
-- For at fjerne en arm fra en leder der har to eller flere: [Leader−](../leader-remove/)
+- For at tilføje en ekstra pilespidsarm på en eksisterende leder: [LeaderAdd](../leader-add/)
+- For at fjerne en arm fra en leder der har to eller flere: [LeaderRemove](../leader-remove/)
 
 ## DXF — kun import
 

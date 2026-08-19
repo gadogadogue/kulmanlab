@@ -51,8 +51,8 @@ order: 1
 | কমান্ড | এটি কী করে |
 |---------|-------------|
 | [Leader](./commands/leader/) | তীরমাথা এবং টেক্সট সহ একটি মাল্টিলিডার টীকা আঁকুন |
-| [Leader+](./commands/leader-add/) | একটি বিদ্যমান মাল্টিলিডারে একটি অতিরিক্ত বাহু যোগ করুন |
-| [Leader−](./commands/leader-remove/) | একটি বিদ্যমান মাল্টিলিডার থেকে একটি বাহু সরান |
+| [LeaderAdd](./commands/leader-add/) | একটি বিদ্যমান মাল্টিলিডারে একটি অতিরিক্ত বাহু যোগ করুন |
+| [LeaderRemove](./commands/leader-remove/) | একটি বিদ্যমান মাল্টিলিডার থেকে একটি বাহু সরান |
 | [Dimension Linear](./commands/dim-linear/) | একটি অনুভূমিক বা উল্লম্ব মাত্রা যোগ করুন |
 | [Dimension Aligned](./commands/dim-aligned/) | দুটি পয়েন্টের সাথে সারিবদ্ধ একটি মাত্রা যোগ করুন |
 | [Dimension Continue](./commands/dim-continue/) | শেষটি থেকে একটি নতুন মাত্রা শৃঙ্খলিত করুন |
@@ -101,7 +101,7 @@ order: 1
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | একটি সত্তা থেকে অন্যদের কাছে রঙ, লেয়ার এবং অন্যান্য বৈশিষ্ট্য কপি করুন |
 | [Font Manager](./commands/font-manager/) | ফন্ট ব্রাউজ করুন, নির্বাচন করুন এবং কাস্টম TTF ফন্ট আপলোড করুন |
-| [Font+](./commands/font-add/) | টার্মিনাল থেকে সরাসরি কাস্টম TTF ফন্ট আপলোড করুন |
+| [FontAdd](./commands/font-add/) | টার্মিনাল থেকে সরাসরি কাস্টম TTF ফন্ট আপলোড করুন |
 | [Hatch Manager](./commands/hatch-manager/) | hatch প্যাটার্ন লাইব্রেরি ব্রাউজ করুন এবং .pat ফাইল আপলোড করুন |
 
 ## ফাইল

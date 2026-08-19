@@ -107,8 +107,8 @@ Se [Textredigerare — rikt läge](../../interface/text-editor/#rich-mode) för 
 
 ## Lägga till och ta bort armar
 
-- För att lägga till en extra pilspetsarm på en befintlig leader: [Leader+](../leader-add/)
-- För att ta bort en arm från en leader som har två eller fler: [Leader−](../leader-remove/)
+- För att lägga till en extra pilspetsarm på en befintlig leader: [LeaderAdd](../leader-add/)
+- För att ta bort en arm från en leader som har två eller fler: [LeaderRemove](../leader-remove/)
 
 ## DXF — endast import
 

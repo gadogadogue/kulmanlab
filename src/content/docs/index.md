@@ -51,8 +51,8 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 | Command | What it does |
 |---------|-------------|
 | [Leader](./commands/leader/) | Draw a multileader annotation with arrowhead and text |
-| [Leader+](./commands/leader-add/) | Add an extra arm to an existing multileader |
-| [Leader−](./commands/leader-remove/) | Remove an arm from an existing multileader |
+| [LeaderAdd](./commands/leader-add/) | Add an extra arm to an existing multileader |
+| [LeaderRemove](./commands/leader-remove/) | Remove an arm from an existing multileader |
 | [Dimension Linear](./commands/dim-linear/) | Add a horizontal or vertical dimension |
 | [Dimension Aligned](./commands/dim-aligned/) | Add a dimension aligned to two points |
 | [Dimension Continue](./commands/dim-continue/) | Chain a new dimension from the last one |
@@ -101,7 +101,7 @@ Welcome to the **KulmanLab CAD** command reference. [KulmanLab CAD](https://kulm
 |---------|-------------|
 | [Match Properties](./commands/match-properties/) | Copy color, layer, and other properties from one entity to others |
 | [Font Manager](./commands/font-manager/) | Browse, select, and upload custom TTF fonts |
-| [Font+](./commands/font-add/) | Upload a custom TTF font directly from the terminal |
+| [FontAdd](./commands/font-add/) | Upload a custom TTF font directly from the terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Browse the hatch pattern library and upload .pat files |
 
 ## File

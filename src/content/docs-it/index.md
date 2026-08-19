@@ -51,8 +51,8 @@ Benvenuto nel riferimento comandi di **KulmanLab CAD**. [KulmanLab CAD](https://
 | Comando | Cosa fa |
 |---------|---------|
 | [Leader](./commands/leader/) | Traccia un'annotazione multilinea guida con punta di freccia e testo |
-| [Leader+](./commands/leader-add/) | Aggiunge un braccio aggiuntivo a una linea guida multipla esistente |
-| [Leader−](./commands/leader-remove/) | Rimuove un braccio da una linea guida multipla esistente |
+| [LeaderAdd](./commands/leader-add/) | Aggiunge un braccio aggiuntivo a una linea guida multipla esistente |
+| [LeaderRemove](./commands/leader-remove/) | Rimuove un braccio da una linea guida multipla esistente |
 | [Dimension Linear](./commands/dim-linear/) | Aggiunge una quota orizzontale o verticale |
 | [Dimension Aligned](./commands/dim-aligned/) | Aggiunge una quota allineata a due punti |
 | [Dimension Continue](./commands/dim-continue/) | Concatena una nuova quota dall'ultima |
@@ -101,7 +101,7 @@ Benvenuto nel riferimento comandi di **KulmanLab CAD**. [KulmanLab CAD](https://
 |---------|---------|
 | [Match Properties](./commands/match-properties/) | Copia il colore, il livello e altre proprietà da un'entità ad altre |
 | [Font Manager](./commands/font-manager/) | Sfoglia, seleziona e carica font TTF personalizzati |
-| [Font+](./commands/font-add/) | Carica un font TTF personalizzato direttamente dal terminale |
+| [FontAdd](./commands/font-add/) | Carica un font TTF personalizzato direttamente dal terminale |
 | [Hatch Manager](./commands/hatch-manager/) | Sfoglia la libreria di motivi hatch e carica file .pat |
 
 ## File

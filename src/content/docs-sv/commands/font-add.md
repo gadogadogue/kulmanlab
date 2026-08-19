@@ -1,18 +1,18 @@
 ---
-title: Font+ — Ladda upp ett anpassat TTF-typsnitt från terminalen
-description: Font+-kommandot öppnar systemets filväljare för att ladda upp ett .ttf-typsnitt, utan att först öppna dialogrutan Font Manager. Det är samma uppladdning som knappen "Add Font" i Font Manager utlöser, tillgänglig här som ett eget terminalkommando.
-keywords: [font add kommando, font+ kommando, ladda upp ttf terminal, anpassat typsnitt CAD, kulmanlab]
+title: FontAdd — Ladda upp ett anpassat TTF-typsnitt från terminalen
+description: FontAdd-kommandot öppnar systemets filväljare för att ladda upp ett .ttf-typsnitt, utan att först öppna dialogrutan Font Manager. Det är samma uppladdning som knappen "Add Font" i Font Manager utlöser, tillgänglig här som ett eget terminalkommando.
+keywords: [font add kommando, fontadd kommando, ladda upp ttf terminal, anpassat typsnitt CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Kommandot `Font+` öppnar systemets filväljare för att ladda upp ett anpassat `.ttf`-typsnitt, utan att först öppna dialogrutan [Font Manager](../font-manager/). Det är samma uppladdning som knappen **Add Font** i Font Manager utlöser — Font+ är bara en direkt väg dit från terminalen.
+Kommandot `FontAdd` öppnar systemets filväljare för att ladda upp ett anpassat `.ttf`-typsnitt, utan att först öppna dialogrutan [Font Manager](../font-manager/). Det är samma uppladdning som knappen **Add Font** i Font Manager utlöser — FontAdd är bara en direkt väg dit från terminalen.
 
 ## Ladda upp ett typsnitt
 
-1. Skriv `Font+` i terminalen, eller klicka på **Add Font** i sidfoten på dialogrutan [Font Manager](../font-manager/).
+1. Skriv `FontAdd` i terminalen, eller klicka på **Add Font** i sidfoten på dialogrutan [Font Manager](../font-manager/).
 2. Välj en `.ttf`-fil i systemets filväljare. Endast TrueType-typsnitt stöds — `.otf` och `.woff`/`.woff2` stöds inte.
 
 Kommandot avslutas så snart filväljaren öppnas — det följs inte av något ytterligare klick eller terminalinmatning. Typsnittet registreras och visas i gruppen **User** så snart filen har valts.
@@ -25,7 +25,7 @@ Kommandot avslutas så snart filväljaren öppnas — det följs inte av något 
 
 ## Tangentbordsreferens
 
-Font+ har ingen egen tangentbordsinteraktion — hela kommandot består av webbläsarens inbyggda filväljardialog. Att avbryta den dialogrutan (eller inte välja någon fil) lämnar typsnittslistan oförändrad.
+FontAdd har ingen egen tangentbordsinteraktion — hela kommandot består av webbläsarens inbyggda filväljardialog. Att avbryta den dialogrutan (eller inte välja någon fil) lämnar typsnittslistan oförändrad.
 
 ## Relaterade kommandon
 

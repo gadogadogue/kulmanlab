@@ -107,8 +107,8 @@ order: 1
 
 ## 팔 추가 및 제거
 
-- 기존 지시선에 추가 화살표 팔을 추가하려면: [Leader+](../leader-add/)
-- 두 개 이상의 팔이 있는 지시선에서 팔을 제거하려면: [Leader−](../leader-remove/)
+- 기존 지시선에 추가 화살표 팔을 추가하려면: [LeaderAdd](../leader-add/)
+- 두 개 이상의 팔이 있는 지시선에서 팔을 제거하려면: [LeaderRemove](../leader-remove/)
 
 ## DXF — 가져오기 전용
 

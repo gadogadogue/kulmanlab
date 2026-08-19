@@ -51,8 +51,8 @@ Bem-vindo à referência de comandos do **KulmanLab CAD**. O [KulmanLab CAD](htt
 | Comando | O que faz |
 |---------|-----------|
 | [Leader](./commands/leader/) | Desenha uma anotação multileader com ponta de seta e texto |
-| [Leader+](./commands/leader-add/) | Adiciona um braço extra a um multileader existente |
-| [Leader−](./commands/leader-remove/) | Remove um braço de um multileader existente |
+| [LeaderAdd](./commands/leader-add/) | Adiciona um braço extra a um multileader existente |
+| [LeaderRemove](./commands/leader-remove/) | Remove um braço de um multileader existente |
 | [Dimension Linear](./commands/dim-linear/) | Adiciona uma cota horizontal ou vertical |
 | [Dimension Aligned](./commands/dim-aligned/) | Adiciona uma cota alinhada a dois pontos |
 | [Dimension Continue](./commands/dim-continue/) | Encadeia uma nova cota a partir da última |
@@ -101,7 +101,7 @@ Bem-vindo à referência de comandos do **KulmanLab CAD**. O [KulmanLab CAD](htt
 |---------|-----------|
 | [Match Properties](./commands/match-properties/) | Copia cor, camada e outras propriedades de uma entidade para outras |
 | [Font Manager](./commands/font-manager/) | Navegue, selecione e envie fontes TTF personalizadas |
-| [Font+](./commands/font-add/) | Envie uma fonte TTF personalizada diretamente pelo terminal |
+| [FontAdd](./commands/font-add/) | Envie uma fonte TTF personalizada diretamente pelo terminal |
 | [Hatch Manager](./commands/hatch-manager/) | Navegue pela biblioteca de padrões de hatch e envie arquivos .pat |
 
 ## Arquivo

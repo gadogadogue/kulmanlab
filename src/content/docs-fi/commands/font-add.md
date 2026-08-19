@@ -1,18 +1,18 @@
 ---
-title: Font+ — Lataa oma TTF-fontti suoraan terminaalista
-description: Font+ -komento avaa järjestelmän tiedostovalitsimen .ttf-fontin lataamiseksi avaamatta ensin Font Manager -valintaikkunaa. Se on sama lataus, jonka Font Managerin "Add Font" -painike käynnistää, täällä omana terminaalikomentonaan.
-keywords: [font add komento, font+ komento, lataa ttf terminaali, oma fontti CAD, kulmanlab]
+title: FontAdd — Lataa oma TTF-fontti suoraan terminaalista
+description: FontAdd-komento avaa järjestelmän tiedostovalitsimen .ttf-fontin lataamiseksi avaamatta ensin Font Manager -valintaikkunaa. Se on sama lataus, jonka Font Managerin "Add Font" -painike käynnistää, täällä omana terminaalikomentonaan.
+keywords: [font add komento, fontadd komento, lataa ttf terminaali, oma fontti CAD, kulmanlab]
 group: style
 order: 3
 ---
 
-# Font+
+# FontAdd
 
-Komento `Font+` avaa järjestelmän tiedostovalitsimen oman `.ttf`-fontin lataamiseksi avaamatta ensin [Font Manager](../font-manager/) -valintaikkunaa. Se on sama lataus, jonka Font Managerin **Add Font** -painike käynnistää — Font+ on vain suora reitti sinne terminaalista.
+Komento `FontAdd` avaa järjestelmän tiedostovalitsimen oman `.ttf`-fontin lataamiseksi avaamatta ensin [Font Manager](../font-manager/) -valintaikkunaa. Se on sama lataus, jonka Font Managerin **Add Font** -painike käynnistää — FontAdd on vain suora reitti sinne terminaalista.
 
 ## Fontin lataaminen
 
-1. Kirjoita `Font+` terminaaliin tai napsauta **Add Font** [Font Manager](../font-manager/) -valintaikkunan alatunnisteessa.
+1. Kirjoita `FontAdd` terminaaliin tai napsauta **Add Font** [Font Manager](../font-manager/) -valintaikkunan alatunnisteessa.
 2. Valitse `.ttf`-tiedosto järjestelmän valitsimesta. Vain TrueType-fontit tuetaan — `.otf` ja `.woff`/`.woff2` eivät ole tuettuja.
 
 Komento päättyy heti kun tiedostovalitsin avautuu — sen jälkeen ei tarvita napsautusta eikä terminaalisyötettä. Fontti rekisteröityy ja ilmestyy **User**-ryhmään heti kun tiedosto on valittu.
@@ -25,7 +25,7 @@ Komento päättyy heti kun tiedostovalitsin avautuu — sen jälkeen ei tarvita 
 
 ## Näppäinreferenssi
 
-Font+ -komennolla ei ole omaa näppäimistövuorovaikutusta — koko komento koostuu selaimen natiivista tiedostovalitsimesta. Kyseisen valintaikkunan peruuttaminen (tai tiedoston valitsematta jättäminen) jättää fonttilistan ennalleen.
+FontAdd-komennolla ei ole omaa näppäimistövuorovaikutusta — koko komento koostuu selaimen natiivista tiedostovalitsimesta. Kyseisen valintaikkunan peruuttaminen (tai tiedoston valitsematta jättäminen) jättää fonttilistan ennalleen.
 
 ## Liittyvät komennot
 

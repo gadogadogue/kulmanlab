@@ -107,8 +107,8 @@ Tingnan ang [Text Editor — rich mode](../../interface/text-editor/#rich-mode) 
 
 ## Pagdagdag at Pagtanggal ng mga Arm
 
-- Para magdagdag ng extra arrowhead arm sa umiiral na leader: [Leader+](../leader-add/)
-- Para tanggalin ang isang arm mula sa leader na may dalawa o higit pang arm: [Leader−](../leader-remove/)
+- Para magdagdag ng extra arrowhead arm sa umiiral na leader: [LeaderAdd](../leader-add/)
+- Para tanggalin ang isang arm mula sa leader na may dalawa o higit pang arm: [LeaderRemove](../leader-remove/)
 
 ## DXF — Import Only
 

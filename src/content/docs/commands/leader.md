@@ -107,8 +107,8 @@ See [Text Editor — rich mode](../../interface/text-editor/#rich-mode) for the 
 
 ## Adding and removing arms
 
-- To add an extra arrowhead arm to an existing leader: [Leader+](../leader-add/)
-- To remove an arm from a leader that has two or more: [Leader−](../leader-remove/)
+- To add an extra arrowhead arm to an existing leader: [LeaderAdd](../leader-add/)
+- To remove an arm from a leader that has two or more: [LeaderRemove](../leader-remove/)
 
 ## DXF — import only
 

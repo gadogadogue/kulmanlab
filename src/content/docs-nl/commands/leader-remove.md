@@ -1,18 +1,18 @@
 ---
-title: "Leader− Commando — Verwijder een Pijlarm van een Multileader"
-description: "Het Leader−-commando verwijdert één pijlarm van een multileader die er twee of meer heeft. Beweeg de cursor naar de te verwijderen arm — de dichtstbijzijnde arm wordt gemarkeerd. De knik, tekst en overige armen blijven behouden."
-keywords: [CAD leader arm verwijderen, leader- commando, pijl verwijderen van leader, multileader arm verwijderen, kulmanlab]
+title: "LeaderRemove Commando — Verwijder een Pijlarm van een Multileader"
+description: "Het LeaderRemove-commando verwijdert één pijlarm van een multileader die er twee of meer heeft. Beweeg de cursor naar de te verwijderen arm — de dichtstbijzijnde arm wordt gemarkeerd. De knik, tekst en overige armen blijven behouden."
+keywords: [CAD leader arm verwijderen, leaderremove commando, pijl verwijderen van leader, multileader arm verwijderen, kulmanlab]
 group: markup
 order: 3
 ---
 
-# Leader−
+# LeaderRemove
 
-Het `leader-`-commando verwijdert één pijlarm van een bestaande multileader. Het tekstlabel, de knik en alle overige armen blijven behouden — alleen de geselecteerde arm wordt verwijderd. Van een multileader met slechts één arm kan de arm niet worden verwijderd.
+Het `LeaderRemove`-commando verwijdert één pijlarm van een bestaande multileader. Het tekstlabel, de knik en alle overige armen blijven behouden — alleen de geselecteerde arm wordt verwijderd. Van een multileader met slechts één arm kan de arm niet worden verwijderd.
 
 ## Een arm verwijderen
 
-1. Typ `leader-` in de terminal.
+1. Typ `LeaderRemove` in de terminal.
 2. **Klik op een multileader** die twee of meer armen heeft. Als de aangeklikte leader slechts één arm heeft, toont de terminal een foutmelding en wacht op een geldige selectie.
 3. **Beweeg de cursor naar de arm** die u wilt verwijderen — de dichtstbijzijnde arm wordt gemarkeerd met een marker.
 4. **Klik** om die arm te verwijderen.
@@ -49,4 +49,4 @@ Het commando meet de loodrechte afstand van de cursor tot de lijnsegmenten van e
 | Commando | Wat het doet |
 |---------|-------------|
 | [Leader](../leader/) | Maak een nieuwe multileader vanaf nul |
-| [Leader+](../leader-add/) | Voeg een arm toe aan een bestaande multileader |
+| [LeaderAdd](../leader-add/) | Voeg een arm toe aan een bestaande multileader |

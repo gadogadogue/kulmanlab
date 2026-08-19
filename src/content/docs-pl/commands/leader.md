@@ -107,8 +107,8 @@ Zobacz [Edytor tekstu — tryb rich](../../interface/text-editor/#rich-mode) w c
 
 ## Dodawanie i usuwanie ramion
 
-- Aby dodać dodatkowe ramię z grotem do istniejącej linii prowadzącej: [Leader+](../leader-add/)
-- Aby usunąć ramię z linii prowadzącej mającej dwa lub więcej: [Leader−](../leader-remove/)
+- Aby dodać dodatkowe ramię z grotem do istniejącej linii prowadzącej: [LeaderAdd](../leader-add/)
+- Aby usunąć ramię z linii prowadzącej mającej dwa lub więcej: [LeaderRemove](../leader-remove/)
 
 ## DXF — tylko import
 

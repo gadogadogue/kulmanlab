@@ -107,8 +107,8 @@ Se [Tekstredigering — rik modus](../../interface/text-editor/#rich-mode) for d
 
 ## Legge til og fjerne armer
 
-- For å legge til en ekstra pilspissarm på en eksisterende leder: [Leader+](../leader-add/)
-- For å fjerne en arm fra en leder som har to eller flere: [Leader−](../leader-remove/)
+- For å legge til en ekstra pilspissarm på en eksisterende leder: [LeaderAdd](../leader-add/)
+- For å fjerne en arm fra en leder som har to eller flere: [LeaderRemove](../leader-remove/)
 
 ## DXF — kun import
 
