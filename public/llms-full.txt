@@ -1874,7 +1874,7 @@ Click any font in the list to preview it on the right — name, alphabet sample,
 
 ## Uploading a custom font
 
-1. Click **Add Font** in the dialog footer (or type `Font+` in the terminal to open the file picker directly).
+1. Click **Add Font** in the dialog footer (or type `FontAdd` in the terminal to open the file picker directly).
 2. Choose a `.ttf` file. Only TrueType fonts are supported — `.otf` and `.woff`/`.woff2` are not.
 3. The file name (without the extension) becomes the font's name in the **User** group. For example, uploading `MyFont.ttf` adds a font named `MyFont`.
 
@@ -2263,13 +2263,13 @@ Typically used after [LayerIsolate](./layer-isolate) to restore all layers to th
 
 ---
 
-# Leader+
+# LeaderAdd
 
-The `leader+` command adds a new arrowhead arm to an existing multileader. The new arm points from the leader's existing dogleg to a new arrowhead tip you click. All styling — dogleg position, text, arrowhead type, and size — is inherited from the selected leader.
+The `LeaderAdd` command adds a new arrowhead arm to an existing multileader. The new arm points from the leader's existing dogleg to a new arrowhead tip you click. All styling — dogleg position, text, arrowhead type, and size — is inherited from the selected leader.
 
 ## Adding an arm
 
-1. Type `leader+` in the terminal.
+1. Type `LeaderAdd` in the terminal.
 2. **Click an existing multileader** to select it.
 3. **Click the new arrowhead tip** — a preview line shows from the cursor to the leader's dogleg. Click to place.
 
@@ -2301,17 +2301,17 @@ The command finishes automatically after placing the arm.
 | Command | What it does |
 |---------|-------------|
 | [Leader](./leader) | Create a brand-new multileader from scratch |
-| [Leader−](./leader-remove) | Remove an arm from a multileader that has two or more |
+| [LeaderRemove](./leader-remove) | Remove an arm from a multileader that has two or more |
 
 ---
 
-# Leader−
+# LeaderRemove
 
-The `leader-` command removes one arrowhead arm from an existing multileader. The text label, dogleg, and all remaining arms are preserved — only the selected arm is deleted. A multileader with only one arm cannot have its arm removed.
+The `LeaderRemove` command removes one arrowhead arm from an existing multileader. The text label, dogleg, and all remaining arms are preserved — only the selected arm is deleted. A multileader with only one arm cannot have its arm removed.
 
 ## Removing an arm
 
-1. Type `leader-` in the terminal.
+1. Type `LeaderRemove` in the terminal.
 2. **Click a multileader** that has two or more arms. If the clicked leader has only one arm, the terminal shows an error and waits for a valid selection.
 3. **Move the cursor near the arm** you want to remove — the closest arm is highlighted with a marker.
 4. **Click** to remove that arm.
@@ -2345,7 +2345,7 @@ The command measures the perpendicular distance from the cursor to each arm's li
 | Command | What it does |
 |---------|-------------|
 | [Leader](./leader) | Create a new multileader from scratch |
-| [Leader+](./leader-add) | Add an arm to an existing multileader |
+| [LeaderAdd](./leader-add) | Add an arm to an existing multileader |
 
 ---
 
@@ -2404,8 +2404,8 @@ No manual adjustment needed — move the cursor to the side where you want the l
 
 ## Adding and removing arms
 
-- To add an extra arrowhead arm to an existing leader: [Leader+](./leader-add)
-- To remove an arm from a leader that has two or more: [Leader−](./leader-remove)
+- To add an extra arrowhead arm to an existing leader: [LeaderAdd](./leader-add)
+- To remove an arm from a leader that has two or more: [LeaderRemove](./leader-remove)
 
 ## DXF — import only
 
